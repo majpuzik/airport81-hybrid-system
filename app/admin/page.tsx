@@ -8,28 +8,27 @@ export default function AdminDashboard() {
             Airport81 Admin Dashboard
           </h1>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {/* WordPress CSS Editor */}
             <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">✈️</span>
-                <h2 className="text-xl font-semibold text-purple-800">WordPress CSS Editor</h2>
+                <h2 className="text-xl font-semibold text-purple-800">WordPress CSS</h2>
               </div>
               <p className="text-purple-700 mb-4">
-                <strong>Pro klienty/designery</strong> - jednoduché změny barev, fontů a základních stylů přes WordPress admin.
+                <strong>Pro klienty</strong> - jednoduché změny barev a fontů.
               </p>
               <ul className="text-sm text-purple-600 mb-4 space-y-1">
-                <li>✅ Okamžité změny (5s)</li>
-                <li>✅ Bez restartu serveru</li>
-                <li>✅ Bezpečné pro klienty</li>
-                <li>✅ Příklady a nápověda</li>
+                <li>✅ Okamžité změny</li>
+                <li>✅ Bezpečné</li>
+                <li>✅ S nápovědou</li>
               </ul>
               <a 
                 href="http://localhost:8081/wp-admin/admin.php?page=airport81-hybrid"
                 target="_blank"
-                className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700"
+                className="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-purple-700"
               >
-                Otevřít WordPress CSS
+                Otevřít →
               </a>
             </div>
 
@@ -37,22 +36,46 @@ export default function AdminDashboard() {
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">🎨</span>
-                <h2 className="text-xl font-semibold text-blue-800">Custom CSS Editor</h2>
+                <h2 className="text-xl font-semibold text-blue-800">Custom CSS</h2>
               </div>
               <p className="text-blue-700 mb-4">
-                <strong>Pro programátory/pokročilé designery</strong> - přímá editace custom.css s pokročilými možnostmi.
+                <strong>Pro programátory</strong> - pokročilé CSS úpravy.
               </p>
               <ul className="text-sm text-blue-600 mb-4 space-y-1">
-                <li>✅ Pokročilé CSS (3D, animace)</li>
-                <li>✅ Direkt přístup k souboru</li>
+                <li>✅ 3D, animace</li>
+                <li>✅ Přímý přístup</li>
                 <li>✅ CSS snippets</li>
-                <li>⚠️ Nutný restart po změně</li>
               </ul>
               <a 
                 href="/admin/css-editor"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700"
+                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700"
               >
-                Otevřít Custom CSS
+                Otevřít →
+              </a>
+            </div>
+
+            {/* AI CSS Designer */}
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-lg border-2 border-pink-300 relative overflow-hidden">
+              <div className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">
+                NEW
+              </div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🤖</span>
+                <h2 className="text-xl font-semibold text-pink-800">AI Designer</h2>
+              </div>
+              <p className="text-pink-700 mb-4">
+                <strong>Pro designéry</strong> - AI vytvoří CSS podle vašeho přání.
+              </p>
+              <ul className="text-sm text-pink-600 mb-4 space-y-1">
+                <li>✨ Mluvte česky</li>
+                <li>✨ Živý náhled</li>
+                <li>✨ Automatické CSS</li>
+              </ul>
+              <a 
+                href="/admin/ai-designer"
+                className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600"
+              >
+                Spustit AI →
               </a>
             </div>
           </div>
