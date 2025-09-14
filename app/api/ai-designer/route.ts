@@ -228,7 +228,7 @@ const CSS_PATTERNS = {
   `
 };
 
-// Funkce pro analýzu promptu a generování CSS
+// Pokročilá analýza češtiny a generování CSS
 function analyzePrompt(prompt: string): {
   css: string;
   changes: string[];
@@ -239,47 +239,194 @@ function analyzePrompt(prompt: string): {
   const changes: string[] = [];
   let confidence = 0;
   
-  // Hledáme shody s našimi vzory
-  for (const [pattern, css] of Object.entries(CSS_PATTERNS)) {
-    // Kontrola, zda prompt obsahuje klíčová slova ze vzoru
-    const keywords = pattern.split(' ');
-    const matches = keywords.filter(keyword => 
-      lowerPrompt.includes(keyword)
-    );
-    
-    if (matches.length > 0) {
-      generatedCSS += css + '\n';
-      changes.push(`✓ Aplikován styl: ${pattern}`);
-      confidence += (matches.length / keywords.length) * 100;
+  // Rozpoznání barev v češtině
+  const colorMap: { [key: string]: string } = {
+    'červen': '#ff0000',
+    'modr': '#0066cc',
+    'zelen': '#00cc00',
+    'žlut': '#ffff00',
+    'fialov': '#a855f7',
+    'růžov': '#ff69b4',
+    'oranžov': '#ff8800',
+    'čern': '#000000',
+    'bíl': '#ffffff',
+    'šed': '#808080',
+    'hnědý': '#8B4513',
+    'modrobíl': '#0066cc, #ffffff',
+    'modrobile': '#0066cc, #ffffff',
+    'zlatý': '#FFD700',
+    'stříbrn': '#C0C0C0'
+  };
+  
+  // Rozpoznání vzorů
+  const patternMap: { [key: string]: string } = {
+    'pruhovan': 'repeating-linear-gradient(45deg, $color1, $color1 10px, $color2 10px, $color2 20px)',
+    'pruhy': 'repeating-linear-gradient(90deg, $color1, $color1 20px, $color2 20px, $color2 40px)',
+    'gradient': 'linear-gradient(135deg, $color1, $color2)',
+    'přechod': 'linear-gradient(135deg, $color1, $color2)',
+    'šachovnic': 'repeating-conic-gradient($color1 0deg 90deg, $color2 90deg 180deg)',
+    'tečky': 'radial-gradient(circle, $color1 30%, transparent 30%), radial-gradient(circle, $color2 30%, transparent 30%)',
+    'vlnky': 'repeating-linear-gradient(45deg, transparent, transparent 35px, $color1 35px, $color1 70px)',
+    'duhov': 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)'
+  };
+  
+  // Rozpoznání elementů
+  const elementMap: { [key: string]: string } = {
+    'pozadí': 'body',
+    'pozadi': 'body',
+    'stránk': 'body',
+    'domů': 'body',
+    'domu': 'body',
+    'hlavní': 'body',
+    'kart': '.dock-card',
+    'tlačítk': 'button',
+    'nadpis': 'h1, h2',
+    'text': 'p, span',
+    'odkaz': 'a',
+    'menu': '.nav',
+    'navigac': '.nav'
+  };
+  
+  // Analýza požadavku
+  let targetElement = 'body';
+  let colors: string[] = [];
+  let pattern = '';
+  
+  // Najdeme element
+  for (const [key, selector] of Object.entries(elementMap)) {
+    if (lowerPrompt.includes(key)) {
+      targetElement = selector;
+      changes.push(`✓ Cílový element: ${key} → ${selector}`);
+      confidence += 20;
+      break;
     }
   }
   
-  // Pokud nic nenajdeme, zkusíme obecné přístupy
-  if (generatedCSS === '') {
-    if (lowerPrompt.includes('modern')) {
-      generatedCSS = CSS_PATTERNS['neonové efekty'] + CSS_PATTERNS['3d efekty'];
-      changes.push('✓ Aplikován moderní styl s efekty');
-      confidence = 70;
-    } else if (lowerPrompt.includes('elegantní') || lowerPrompt.includes('luxus')) {
-      generatedCSS = CSS_PATTERNS['zlatý luxusní styl'];
-      changes.push('✓ Aplikován elegantní luxusní styl');
-      confidence = 80;
-    } else if (lowerPrompt.includes('jednoduch')) {
-      generatedCSS = CSS_PATTERNS['minimalistický'];
-      changes.push('✓ Aplikován minimalistický styl');
-      confidence = 75;
-    } else {
-      // Výchozí fallback
-      generatedCSS = `
-        /* AI vygenerované CSS na základě: "${prompt}" */
-        /* Nepodařilo se přesně interpretovat požadavek */
-        body {
-          transition: all 0.3s ease;
-        }
-      `;
-      changes.push('⚠️ Požadavek nebyl jasně rozpoznán');
-      confidence = 20;
+  // Najdeme barvy
+  for (const [key, color] of Object.entries(colorMap)) {
+    if (lowerPrompt.includes(key)) {
+      if (color.includes(',')) {
+        colors.push(...color.split(',').map(c => c.trim()));
+      } else {
+        colors.push(color);
+      }
+      changes.push(`✓ Rozpoznána barva: ${key} → ${color}`);
+      confidence += 20;
     }
+  }
+  
+  // Pokud nejsou barvy, použijeme výchozí
+  if (colors.length === 0) {
+    colors = ['#3b82f6', '#a855f7'];
+    changes.push('ℹ️ Použity výchozí barvy');
+  } else if (colors.length === 1) {
+    // Pokud je jen jedna barva, přidáme bílou pro kontrast
+    if (lowerPrompt.includes('bíl') || lowerPrompt.includes('bile')) {
+      colors.push('#ffffff');
+    } else {
+      colors.push('#ffffff');
+    }
+  }
+  
+  // Najdeme vzor
+  for (const [key, cssPattern] of Object.entries(patternMap)) {
+    if (lowerPrompt.includes(key)) {
+      // Zajistíme, že máme dvě barvy pro vzor
+      const color1 = colors[0] || '#0066cc';
+      const color2 = colors[1] || (colors[0] ? '#ffffff' : '#ffffff');
+      
+      pattern = cssPattern
+        .replace(/\$color1/g, color1)
+        .replace(/\$color2/g, color2);
+      changes.push(`✓ Aplikován vzor: ${key} (${color1} + ${color2})`);
+      confidence += 30;
+      break;
+    }
+  }
+  
+  // Pokud není vzor, použijeme gradient
+  if (!pattern && colors.length > 0) {
+    if (lowerPrompt.includes('pruh') || lowerPrompt.includes('pruhy')) {
+      pattern = `repeating-linear-gradient(45deg, ${colors[0]}, ${colors[0]} 20px, ${colors[1] || '#ffffff'} 20px, ${colors[1] || '#ffffff'} 40px)`;
+      changes.push('✓ Vytvořen pruhovaný vzor');
+      confidence += 25;
+    } else {
+      pattern = `linear-gradient(135deg, ${colors.join(', ')})`;
+      changes.push('✓ Vytvořen barevný přechod');
+      confidence += 20;
+    }
+  }
+  
+  // Generujeme CSS
+  if (pattern) {
+    generatedCSS = `
+/* AI Designer - Inteligentní zpracování požadavku */
+/* Požadavek: "${prompt}" */
+
+${targetElement} {
+  background: ${pattern};
+  background-size: ${lowerPrompt.includes('tečky') ? '50px 50px' : 'cover'};
+  ${lowerPrompt.includes('animov') ? 'animation: backgroundMove 10s ease infinite;' : ''}
+}
+
+${lowerPrompt.includes('animov') ? `
+@keyframes backgroundMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}` : ''}
+`;
+  }
+  
+  // Speciální případy
+  if (lowerPrompt.includes('tmav')) {
+    generatedCSS += CSS_PATTERNS['tmavý režim'];
+    changes.push('✓ Aplikován tmavý režim');
+    confidence += 20;
+  }
+  
+  if (lowerPrompt.includes('neon')) {
+    generatedCSS += CSS_PATTERNS['neonové efekty'];
+    changes.push('✓ Přidány neonové efekty');
+    confidence += 20;
+  }
+  
+  if (lowerPrompt.includes('3d')) {
+    generatedCSS += CSS_PATTERNS['3d efekty'];
+    changes.push('✓ Přidány 3D efekty');
+    confidence += 20;
+  }
+  
+  // Pokud stále nemáme CSS, zkusíme pattern matching
+  if (!generatedCSS) {
+    for (const [pattern, css] of Object.entries(CSS_PATTERNS)) {
+      const keywords = pattern.split(' ');
+      const matches = keywords.filter(keyword => 
+        lowerPrompt.includes(keyword)
+      );
+      
+      if (matches.length > 0) {
+        generatedCSS += css + '\n';
+        changes.push(`✓ Aplikován styl: ${pattern}`);
+        confidence += (matches.length / keywords.length) * 50;
+      }
+    }
+  }
+  
+  // Finální fallback
+  if (!generatedCSS) {
+    generatedCSS = `
+/* AI Designer - Experimentální CSS */
+/* Požadavek: "${prompt}" */
+/* Zkouším interpretovat váš požadavek... */
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+}
+`;
+    changes.push('⚠️ Vytvořen experimentální návrh - zkuste upřesnit požadavek');
+    confidence = 30;
   }
   
   return {
