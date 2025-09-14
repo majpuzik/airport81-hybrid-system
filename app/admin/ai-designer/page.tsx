@@ -23,7 +23,7 @@ export default function AIDesignerPage() {
 
   // Načtení aktuálního CSS
   useEffect(() => {
-    fetch('/api/css/custom')
+    fetch('/api/ai-designer')
       .then(res => res.json())
       .then(data => {
         setCurrentCSS(data.css || '');
@@ -182,13 +182,32 @@ export default function AIDesignerPage() {
     setIsProcessing(true);
     setHistory([...history, prompt]);
 
-    // Simulace AI zpracování
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      // Volání skutečného AI API
+      const response = await fetch('/api/ai-designer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt })
+      });
 
-    const response = await generateAICSS(prompt);
-    setAIResponse(response);
-    setPreviewCSS(response.preview);
-    setShowPreview(true);
+      const data = await response.json();
+      
+      if (data.success) {
+        setAIResponse({
+          css: data.css,
+          preview: currentCSS + '\n\n/* AI ZMĚNY */\n' + data.css,
+          explanation: data.explanation,
+          changes: data.changes
+        });
+        setPreviewCSS(currentCSS + '\n\n/* AI ZMĚNY */\n' + data.css);
+        setShowPreview(true);
+      } else {
+        alert('Chyba při generování CSS');
+      }
+    } catch (error) {
+      alert('Chyba při komunikaci s AI API');
+    }
+    
     setIsProcessing(false);
   };
 
@@ -196,20 +215,29 @@ export default function AIDesignerPage() {
   const applyChanges = async () => {
     if (!aiResponse) return;
 
-    const newCSS = currentCSS + '\n\n' + aiResponse.css;
-    
-    const response = await fetch('/api/css/custom', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ css: newCSS })
-    });
+    try {
+      const response = await fetch('/api/ai-designer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          action: 'apply',
+          css: aiResponse.css 
+        })
+      });
 
-    if (response.ok) {
-      setCurrentCSS(newCSS);
-      alert('✅ CSS změny byly úspěšně aplikovány!');
-      setAIResponse(null);
-      setPrompt('');
-      setShowPreview(false);
+      const data = await response.json();
+      
+      if (data.success) {
+        setCurrentCSS(currentCSS + '\n\n' + aiResponse.css);
+        alert('✅ CSS změny byly úspěšně aplikovány!');
+        setAIResponse(null);
+        setPrompt('');
+        setShowPreview(false);
+      } else {
+        alert('Chyba při ukládání CSS');
+      }
+    } catch (error) {
+      alert('Chyba při aplikaci změn');
     }
   };
 
