@@ -1,0 +1,672 @@
+{
+  "timestamp": "20250824_172820",
+  "configuration": {
+    "sample_size": 100,
+    "use_ocr": true,
+    "use_ml": true
+  },
+  "statistics": {
+    "recognized": 87,
+    "unrecognized": 13,
+    "errors": 0,
+    "success_rate": 87.0,
+    "avg_confidence": 35.059480225217754,
+    "elapsed_seconds": 574.4151618480682,
+    "seconds_per_document": 5.744151618480682
+  },
+  "categories": {
+    "PUBLIKACE": 18,
+    "ZDRAVOTNÍ": 22,
+    "ÚŘEDNÍ": 18,
+    "FINANČNÍ": 17,
+    "OBČANSKÉ": 5,
+    "FIREMNÍ": 7
+  },
+  "subtypes": {
+    "newsletter": 10,
+    "publikace_obecný": 5,
+    "zdravotní_obecný": 17,
+    "úřední_obecný": 12,
+    "faktura": 3,
+    "účtenka": 8,
+    "občanské_obecný": 5,
+    "časopis": 2,
+    "finanční_obecný": 5,
+    "firemní_obecný": 5,
+    "předpis": 4,
+    "výpověď": 2,
+    "vyšetření": 1,
+    "policie": 5,
+    "soud": 1,
+    "výpis": 1,
+    "kniha": 1
+  },
+  "methods": {
+    "ml": 82,
+    "text_extraction:pdftotext": 82,
+    "filename": 12,
+    "ocr": 5
+  },
+  "new_categories_count": {
+    "ÚŘEDNÍ": 18,
+    "ZDRAVOTNÍ": 22,
+    "PRÁVNÍ": 0,
+    "FIREMNÍ": 7,
+    "OBČANSKÉ": 5
+  },
+  "examples": {
+    "recognized": [
+      {
+        "file": "20250507-🧠Something Magical in a Minute — Coming May 12-489.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 15.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "SOFAR 3-12KTLX-G3_User Manual_2022-05-08_V1.0_cs-CZ.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "publikace_obecný",
+        "confidence": 30.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:obsah",
+          "text:závěr"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250411- Canvit Probio – opět skladem!  -5412.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "publikace_obecný",
+        "confidence": 70.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:lék",
+          "text:tablety",
+          "regex:\\d+\\s*ml",
+          "text:obsah",
+          "regex:No\\.\\s*\\d+",
+          "text:odhlásit",
+          "text:přihlásit"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 55.0,
+          "PUBLIKACE": 70.0
+        }
+      },
+      {
+        "file": "nahled-XXVEK01.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:plat",
+          "text:obsah"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250415-Neuer Treffer für deine Volkswagen, Bis zu 50.000 -4668.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:gericht",
+          "text:plat"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "FIREMNÍ": 15.0
+        }
+      },
+      {
+        "file": "Pledgebox Invoice Rokid.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "faktura",
+        "confidence": 45.0,
+        "methods": [
+          "ml",
+          "filename",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "filename:invoice",
+          "text:ct",
+          "text:lease",
+          "text:receipt"
+        ],
+        "all_scores": {
+          "FINANČNÍ": 45.0,
+          "ZDRAVOTNÍ": 15.0,
+          "OBČANSKÉ": 15.0
+        }
+      },
+      {
+        "file": "20250322-🎮HP says Windows is too bad to make a gaming hand-8703.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 45.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:execution",
+          "text:ct",
+          "text:newsletter",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 45.0
+        }
+      },
+      {
+        "file": "20250513-[Novinky o úloze] 13 May 2025 news roundup-42812.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "účtenka",
+        "confidence": 40.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:eet",
+          "regex:EET",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "FINANČNÍ": 40.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250416-Google Alert – tesla-4393.pdf",
+        "category": "OBČANSKÉ",
+        "subtype": "občanské_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:verkauf"
+        ],
+        "all_scores": {
+          "OBČANSKÉ": 15.0
+        }
+      },
+      {
+        "file": "20250322-🛠 7 capteurs géniaux pour ton Raspberry Pi-8689.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:ct"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0
+        }
+      },
+      {
+        "file": "Ethernet Connection.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 30.0,
+        "methods": [
+          "ml",
+          "ocr",
+          "filename",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "filename:ct"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 30.0
+        }
+      },
+      {
+        "file": "FA-2018914.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 25.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "regex:\\d+\\s*ml",
+          "text:kredit",
+          "text:rechnung"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 25.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 15.0
+        }
+      },
+      {
+        "file": "117489-pegboard-system-hangers-72e0a929-0a55-4538-9b0b-77477fbdfa08.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "účtenka",
+        "confidence": 40.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:eet",
+          "regex:EET"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FINANČNÍ": 40.0
+        }
+      },
+      {
+        "file": "20250506-🚘 2 neue Fahrzeuge für Dich-818.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:gericht",
+          "text:fik"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "FINANČNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250325-Wired Science Hub #45-8387.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "časopis",
+        "confidence": 60.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:laboratorní",
+          "text:dič",
+          "text:magazín",
+          "text:vydání",
+          "text:newsletter",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FINANČNÍ": 15.0,
+          "PUBLIKACE": 60.0
+        }
+      },
+      {
+        "file": "20250509-⚠ POZOR! DNY BAZÉNŮ A NÁBYTKU končí již tuto neděl-191.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "finanční_obecný",
+        "confidence": 80.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:předpis",
+          "text:plat",
+          "regex:IČO:\\s*\\d{8}",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:ičo",
+          "text:dič",
+          "regex:IČO:\\s*\\d{8}",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 65.0,
+          "FINANČNÍ": 80.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "Faktura_MND_VS_6824155658_Softel_Consulting_s.r.o._vystaveno_10062024.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "faktura",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "filename",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "filename:faktura",
+          "text:soud",
+          "text:soudní",
+          "text:výsledek",
+          "text:plat",
+          "regex:IČO:\\s*\\d{8}",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:faktura",
+          "text:vyúčtování",
+          "text:ičo"
+        ],
+        "all_scores": {
+          "FINANČNÍ": 195.0,
+          "ÚŘEDNÍ": 30.0,
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 65.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250428-Arbeiten ohne Grenzen – mit Wireless-Produkten von-2244.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:gericht",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250423-Dopřejte si luxus s vozy CUPRA již od 4.833 Kč měs-3241.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "publikace_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "Puzik lekarska zprava Diabetes + Urolog.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 85.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext"
+        ],
+        "patterns": [
+          "regex:\\d+\\s*mg",
+          "regex:\\d+\\s*ml",
+          "institution:hospital"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 85.0
+        }
+      }
+    ],
+    "unrecognized": [
+      {
+        "file": "X-plus（Hardware）(1).pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250321-Sommerurlaub inkl. Flug-8898.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250428-[192.168.10.35] Plánovač úloh dokončil naplánovano-2338.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250424-Mit AIDA auf Europatournee-3002.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "Sofar registry.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250325-[192.168.10.35] V zařízení NAS5 byla zjištěna bezp-8235.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250315-Krb nad 68C-9766.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250508-Knihy, které nesmí zůstat zapomenuté 📖-415.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ocr",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250407-[192.168.10.35] Kontejner paperless-web v nástroji-6252.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250320-Watches & Wonders mit Montblanc-9108.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      }
+    ],
+    "official": [
+      {
+        "file": "20250415-Neuer Treffer für deine Volkswagen, Bis zu 50.000 -4668.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht",
+          "text:plat"
+        ]
+      },
+      {
+        "file": "20250506-🚘 2 neue Fahrzeuge für Dich-818.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht",
+          "text:fik"
+        ]
+      },
+      {
+        "file": "20250428-Arbeiten ohne Grenzen – mit Wireless-Produkten von-2244.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht",
+          "text:newsletter"
+        ]
+      },
+      {
+        "file": "20250512-🚘 1 neues Fahrzeug für Dich-42597.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht",
+          "text:fik"
+        ]
+      },
+      {
+        "file": "20250319-Neuer Treffer für deine Volkswagen, Bis zu 50.000 -9162.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht"
+        ]
+      }
+    ],
+    "medical": [
+      {
+        "file": "nahled-XXVEK01.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct",
+          "text:plat",
+          "text:obsah"
+        ]
+      },
+      {
+        "file": "20250322-🛠 7 capteurs géniaux pour ton Raspberry Pi-8689.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct"
+        ]
+      },
+      {
+        "file": "Ethernet Connection.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 30.0,
+        "patterns": [
+          "filename:ct"
+        ]
+      },
+      {
+        "file": "FA-2018914.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 25.0,
+        "patterns": [
+          "regex:\\d+\\s*ml",
+          "text:kredit",
+          "text:rechnung"
+        ]
+      },
+      {
+        "file": "Puzik lekarska zprava Diabetes + Urolog.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 85.0,
+        "patterns": [
+          "regex:\\d+\\s*mg",
+          "regex:\\d+\\s*ml",
+          "institution:hospital"
+        ]
+      }
+    ],
+    "legal": []
+  }
+}

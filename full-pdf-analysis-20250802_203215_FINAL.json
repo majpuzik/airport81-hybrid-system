@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total_files": 43198,
+    "processed": 43198,
+    "successful": 43198,
+    "errors": 0,
+    "success_rate": 100.0,
+    "processing_time_minutes": 5.992026301225026
+  },
+  "document_types": {
+    "invoice": 22337,
+    "order": 7854,
+    "receipt": 1338,
+    "unknown": 7678,
+    "notification": 1622,
+    "contract": 468,
+    "subscription": 855,
+    "shipping": 943,
+    "bank_statement": 103
+  },
+  "timestamps": {
+    "start": "2025-08-02T20:32:15.748807",
+    "end": "2025-08-02T20:38:15.270395"
+  }
+}

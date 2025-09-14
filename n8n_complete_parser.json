@@ -1,0 +1,268 @@
+{
+  "name": "Complete Document Parser with Paperless",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "filepath",
+              "value": "/Users/m.a.j.puzik/Desktop/scan_20250808_094531_ocr.pdf"
+            }
+          ]
+        }
+      },
+      "id": "setFile",
+      "name": "Set File",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "=https://api.pdf.co/v1/file/upload/get-presigned-url?name={{$json.filepath.split('/').pop()}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "getPresignedUrl",
+      "name": "Get Upload URL",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "filePath": "={{ $node['setFile'].json.filepath }}"
+      },
+      "id": "readFile",
+      "name": "Read PDF",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $node['getPresignedUrl'].json.presignedUrl }}",
+        "requestMethod": "PUT",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/pdf"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "options": {}
+      },
+      "id": "uploadFile",
+      "name": "Upload File",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.pdf.co/v1/pdf/convert/to/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyType": "json",
+        "jsonBody": "={\"url\": \"{{$node['getPresignedUrl'].json.url}}\", \"inline\": true}",
+        "options": {}
+      },
+      "id": "extractText",
+      "name": "Extract Text",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = ($json.body || $json.text || '');\nconst textLower = text.toLowerCase();\nconst filename = $node['setFile'].json.filepath.split('/').pop();\nconst filepath = $node['setFile'].json.filepath;\n\n// KLASIFIKACE TYPU DOKUMENTU\nlet docType = 'unknown';\nif (textLower.includes('vyúčtování') || textLower.includes('vyuctovani')) docType = 'vyuctovani';\nelse if (textLower.includes('faktura') || textLower.includes('invoice') || textLower.includes('daňový doklad')) docType = 'faktura';\nelse if (textLower.includes('účtenka') || textLower.includes('uctenka') || textLower.includes('receipt')) docType = 'uctenka';\nelse if (textLower.includes('výpis') || textLower.includes('vypis') || textLower.includes('statement')) docType = 'vypis';\nelse if (textLower.includes('smlouva') || textLower.includes('contract') || textLower.includes('dohoda')) docType = 'smlouva';\nelse if (textLower.includes('objednávka') || textLower.includes('order')) docType = 'objednavka';\nelse if (textLower.includes('dodací list')) docType = 'dodaci_list';\nelse if (textLower.includes('potvrzení') || textLower.includes('confirmation')) docType = 'potvrzeni';\n\n// PARSOVÁNÍ VŠECH DŮLEŽITÝCH ÚDAJŮ\nconst customFields = {};\nconst tags = [];\n\n// === FAKTURA / VYÚČTOVÁNÍ ===\nif (docType === 'faktura' || docType === 'vyuctovani') {\n  \n  // DODAVATEL/VYSTAVITEL\n  let dodavatel = null;\n  const dodavatelPatterns = [\n    /dodavatel[:\\s]+([^\\n]+)/i,\n    /vystavitel[:\\s]+([^\\n]+)/i,\n    /prodávající[:\\s]+([^\\n]+)/i,\n    /firma[:\\s]+([^\\n]+)/i\n  ];\n  for (const pattern of dodavatelPatterns) {\n    const match = text.match(pattern);\n    if (match) {\n      dodavatel = match[1].trim();\n      break;\n    }\n  }\n  if (!dodavatel && textLower.includes('bezdodavatele')) {\n    dodavatel = 'BezDodavatele.cz s.r.o.';\n  }\n  if (dodavatel) {\n    customFields.dodavatel = dodavatel;\n    tags.push('dodavatel-' + dodavatel.toLowerCase().replace(/[\\s.]/g, '-'));\n  }\n  \n  // ODBĚRATEL\n  const odberatelMatch = text.match(/(?:odběratel|zákazník|kupující)[:\\s]+([^\\n]+(?:\\n[^\\n]+)?)/i);\n  if (odberatelMatch) {\n    customFields.odberatel = odberatelMatch[1].trim().replace(/\\n/g, ', ');\n  }\n  // Specificky pro BezDodavatele\n  if (!customFields.odberatel) {\n    const zakaznikMatch = text.match(/Zákazník\\s+Adresát\\s+([^\\n]+)\\s+([^\\n]+)/i);\n    if (zakaznikMatch) {\n      customFields.odberatel = zakaznikMatch[1].trim();\n    }\n  }\n  \n  // IČO DODAVATELE\n  const icoMatch = text.match(/IČO?[:\\s]+(\\d{8})/i);\n  if (icoMatch) {\n    customFields.ico_dodavatel = icoMatch[1];\n    tags.push('ico-' + icoMatch[1]);\n  }\n  \n  // DIČ DODAVATELE\n  const dicMatch = text.match(/DIČ[:\\s]+(CZ\\d{8,10})/i);\n  if (dicMatch) {\n    customFields.dic_dodavatel = dicMatch[1];\n    tags.push('dic-' + dicMatch[1].toLowerCase());\n  }\n  \n  // ČÍSLO FAKTURY\n  const invoicePatterns = [\n    /(?:vyúčtování|vyuctovani).*č\\.?\\s*(\\d+)/i,\n    /(?:číslo faktury|invoice number|faktura č\\.?)[:\\s]*(\\S+)/i,\n    /(?:evidenční číslo)[:\\s]*(\\S+)/i,\n    /(?:doklad č\\.?)[:\\s]*(\\S+)/i\n  ];\n  for (const pattern of invoicePatterns) {\n    const match = text.match(pattern);\n    if (match) {\n      customFields.cislo_faktury = match[1];\n      tags.push('faktura-' + match[1]);\n      break;\n    }\n  }\n  \n  // VARIABILNÍ SYMBOL\n  const vsMatch = text.match(/(?:VS|variabilní symbol|var\\.\\s*symbol)[:\\s]*(\\d+)/i);\n  if (vsMatch) {\n    customFields.variabilni_symbol = vsMatch[1];\n    tags.push('vs-' + vsMatch[1]);\n  }\n  \n  // ČÁSTKA CELKEM\n  const amountPatterns = [\n    /celkem s dph[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk|eur)/i,\n    /celkem k úhradě[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk|eur)/i,\n    /celkem[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk|eur)/i,\n    /total[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk|eur)/i\n  ];\n  for (const pattern of amountPatterns) {\n    const match = text.match(pattern);\n    if (match) {\n      customFields.castka_celkem = match[1].replace(/\\s/g, '');\n      const amount = parseFloat(match[1].replace(/\\s/g, '').replace(',', '.'));\n      if (amount > 50000) tags.push('vysoka-castka');\n      else if (amount > 10000) tags.push('velka-faktura');\n      else if (amount > 1000) tags.push('stredni-faktura');\n      else tags.push('mala-faktura');\n      break;\n    }\n  }\n  \n  // ČÁSTKA BEZ DPH\n  const bezDphMatch = text.match(/(?:bez dph|základ daně)[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (bezDphMatch) {\n    customFields.castka_bez_dph = bezDphMatch[1].replace(/\\s/g, '');\n  }\n  \n  // DPH\n  const dphMatch = text.match(/(?:dph|daň)[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (dphMatch) {\n    customFields.dph_castka = dphMatch[1].replace(/\\s/g, '');\n  }\n  \n  // SAZBA DPH\n  const sazbaDphMatch = text.match(/(\\d{1,2})\\s*%/i);\n  if (sazbaDphMatch) {\n    customFields.dph_sazba = sazbaDphMatch[1] + '%';\n    tags.push('dph-' + sazbaDphMatch[1]);\n  }\n  \n  // MĚNA\n  let mena = 'CZK';\n  if (textLower.includes('eur')) mena = 'EUR';\n  else if (textLower.includes('usd')) mena = 'USD';\n  customFields.mena = mena;\n  tags.push('mena-' + mena.toLowerCase());\n  \n  // DATUM VYSTAVENÍ\n  const datePatterns = [\n    /(?:datum vystavení|date of issue|vystaveno|odesláno)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i,\n    /(?:datum zdanitelného plnění|duzp)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i\n  ];\n  for (const pattern of datePatterns) {\n    const match = text.match(pattern);\n    if (match) {\n      customFields.datum_vystaveni = match[1];\n      break;\n    }\n  }\n  \n  // DATUM SPLATNOSTI\n  const dueMatch = text.match(/(?:datum splatnosti|due date|splatnost|splatno)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (dueMatch) {\n    customFields.datum_splatnosti = dueMatch[1];\n  }\n  \n  // OBDOBÍ (pro vyúčtování)\n  const periodMatch = text.match(/(?:období|period|za období)[:\\s]*([^\\n]+)/i);\n  if (periodMatch) {\n    customFields.obdobi = periodMatch[1].trim();\n  }\n  \n  // PŘEDMĚT/POPIS\n  const predmetMatch = text.match(/(?:předmět|popis|description)[:\\s]*([^\\n]+)/i);\n  if (predmetMatch) {\n    customFields.predmet = predmetMatch[1].trim();\n  }\n  \n  // MNOŽSTVÍ (pro energie)\n  const mnozstviMatch = text.match(/(?:množství|spotřeba)[:\\s]*([\\d,.]+ \\w+)/i);\n  if (mnozstviMatch) {\n    customFields.mnozstvi = mnozstviMatch[1];\n  }\n  \n  // BANKOVNÍ ÚČET\n  const ucetMatch = text.match(/(\\d{2,6}[\\-\\/]?\\d{4,10}\\/\\d{4})/i);\n  if (ucetMatch) {\n    customFields.cislo_uctu = ucetMatch[1];\n  }\n  \n  // ZPŮSOB PLATBY\n  if (textLower.includes('převodem') || textLower.includes('bankovní převod')) {\n    customFields.zpusob_platby = 'Bankovní převod';\n  } else if (textLower.includes('hotově') || textLower.includes('hotovost')) {\n    customFields.zpusob_platby = 'Hotově';\n  } else if (textLower.includes('kartou')) {\n    customFields.zpusob_platby = 'Platební karta';\n  }\n}\n\n// === BANKOVNÍ VÝPIS ===\nif (docType === 'vypis') {\n  // Číslo účtu\n  const accountMatch = text.match(/(?:číslo účtu|account number|č\\.ú\\.)[:\\s]*([\\d\\-\\/]+)/i);\n  if (accountMatch) {\n    customFields.cislo_uctu = accountMatch[1];\n    tags.push('ucet-' + accountMatch[1].replace(/[\\-\\/]/g, ''));\n  }\n  \n  // Období\n  const periodMatch = text.match(/(?:období|period|za období)[:\\s]*([\\d.]+\\s*-\\s*[\\d.]+)/i);\n  if (periodMatch) {\n    customFields.obdobi = periodMatch[1];\n  }\n  \n  // Počáteční zůstatek\n  const startMatch = text.match(/(?:počáteční zůstatek|opening balance)[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (startMatch) {\n    customFields.pocatecni_zustatek = startMatch[1].replace(/\\s/g, '');\n  }\n  \n  // Konečný zůstatek\n  const endMatch = text.match(/(?:konečný zůstatek|closing balance|nový zůstatek)[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (endMatch) {\n    customFields.konecny_zustatek = endMatch[1].replace(/\\s/g, '');\n  }\n  \n  // Banka\n  const banks = ['čsob', 'česká spořitelna', 'komerční banka', 'raiffeisenbank', 'moneta', 'fio', 'airbank'];\n  for (const bank of banks) {\n    if (textLower.includes(bank)) {\n      customFields.banka = bank.charAt(0).toUpperCase() + bank.slice(1);\n      tags.push('banka-' + bank.replace(/\\s+/g, '-'));\n      break;\n    }\n  }\n}\n\n// === ÚČTENKA ===\nif (docType === 'uctenka') {\n  // EET kód\n  const eetMatch = text.match(/(?:BKP|FIK|PKP)[:\\s]*([A-Z0-9\\-]+)/i);\n  if (eetMatch) {\n    customFields.eet_kod = eetMatch[1];\n    tags.push('eet');\n  }\n  \n  // Částka\n  const receiptAmountMatch = text.match(/(?:celkem|total|suma|k platbě)[:\\s]*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (receiptAmountMatch) {\n    customFields.castka = receiptAmountMatch[1].replace(/\\s/g, '');\n  }\n  \n  // Datum a čas\n  const dateTimeMatch = text.match(/(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})\\s+(\\d{1,2}:\\d{2})/i);\n  if (dateTimeMatch) {\n    customFields.datum = dateTimeMatch[1];\n    customFields.cas = dateTimeMatch[2];\n  }\n  \n  // Pokladna\n  const cashRegMatch = text.match(/(?:pokladna|kasa|terminal|pos)[:\\s]*([\\d\\w]+)/i);\n  if (cashRegMatch) {\n    customFields.pokladna = cashRegMatch[1];\n  }\n  \n  // Prodejce\n  const sellerMatch = text.match(/(?:prodejce|obchodník|firma)[:\\s]*([^\\n]+)/i);\n  if (sellerMatch) {\n    customFields.prodejce = sellerMatch[1].trim();\n  }\n}\n\n// === SMLOUVA ===\nif (docType === 'smlouva') {\n  // Číslo smlouvy\n  const contractMatch = text.match(/(?:číslo smlouvy|contract number|č\\.s\\.)[:\\s]*([A-Z0-9\\-\\/]+)/i);\n  if (contractMatch) {\n    customFields.cislo_smlouvy = contractMatch[1];\n    tags.push('smlouva-' + contractMatch[1]);\n  }\n  \n  // Smluvní strany\n  const stranyMatch = text.match(/(?:smluvní strany|mezi)[:\\s]*([^\\n]+(?:\\n[^\\n]+)?)/i);\n  if (stranyMatch) {\n    customFields.smluvni_strany = stranyMatch[1].trim();\n  }\n  \n  // Datum uzavření\n  const signDateMatch = text.match(/(?:uzavřeno dne|signed on|datum uzavření)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (signDateMatch) {\n    customFields.datum_uzavreni = signDateMatch[1];\n  }\n  \n  // Platnost od\n  const validFromMatch = text.match(/(?:platnost od|valid from|účinnost od)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (validFromMatch) {\n    customFields.platnost_od = validFromMatch[1];\n  }\n  \n  // Platnost do\n  const validToMatch = text.match(/(?:platnost do|valid to|účinnost do)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (validToMatch) {\n    customFields.platnost_do = validToMatch[1];\n  }\n  \n  // Předmět smlouvy\n  const subjectMatch = text.match(/(?:předmět smlouvy|subject)[:\\s]*([^\\n]+)/i);\n  if (subjectMatch) {\n    customFields.predmet_smlouvy = subjectMatch[1].trim();\n  }\n}\n\n// === OBJEDNÁVKA ===\nif (docType === 'objednavka') {\n  // Číslo objednávky\n  const orderMatch = text.match(/(?:číslo objednávky|order number|obj\\. č\\.)[:\\s]*([A-Z0-9\\-\\/]+)/i);\n  if (orderMatch) {\n    customFields.cislo_objednavky = orderMatch[1];\n    tags.push('objednavka-' + orderMatch[1]);\n  }\n  \n  // Datum objednávky\n  const orderDateMatch = text.match(/(?:datum objednávky|order date)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (orderDateMatch) {\n    customFields.datum_objednavky = orderDateMatch[1];\n  }\n  \n  // Termín dodání\n  const deliveryMatch = text.match(/(?:termín dodání|delivery date)[:\\s]*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (deliveryMatch) {\n    customFields.termin_dodani = deliveryMatch[1];\n  }\n}\n\n// OBECNÉ TAGY\ntags.push(docType);\n\n// Rok\nconst yearMatch = text.match(/20(2[3-5])/g);\nif (yearMatch && yearMatch.length > 0) {\n  const year = '20' + yearMatch[0].substring(2);\n  tags.push(year);\n  customFields.rok = year;\n}\n\n// Měsíc (pro české názvy)\nconst months = {\n  'leden': '01', 'únor': '02', 'březen': '03', 'duben': '04',\n  'květen': '05', 'červen': '06', 'červenec': '07', 'srpen': '08',\n  'září': '09', 'říjen': '10', 'listopad': '11', 'prosinec': '12'\n};\nfor (const [month, num] of Object.entries(months)) {\n  if (textLower.includes(month)) {\n    tags.push('mesic-' + num);\n    customFields.mesic = month;\n    break;\n  }\n}\n\n// Určení korespondenta (pokud ještě není)\nlet correspondent = customFields.dodavatel || customFields.prodejce || customFields.banka || 'Unknown';\n\nreturn [{\n  json: {\n    // Původní data\n    filepath: filepath,\n    filename: filename,\n    extracted_text: text,\n    \n    // Klasifikace\n    document_type: docType,\n    correspondent: correspondent,\n    \n    // Všechny extrahované údaje\n    custom_fields: customFields,\n    \n    // Tagy pro Paperless\n    tags: [...new Set(tags)], // unique tags\n    \n    // Metadata pro Paperless\n    paperless_data: {\n      title: `${docType.charAt(0).toUpperCase() + docType.slice(1)} - ${customFields.cislo_faktury || customFields.cislo_smlouvy || customFields.cislo_objednavky || filename}`,\n      document_type: docType,\n      correspondent: correspondent,\n      tags: [...new Set(tags)].join(','),\n      custom_fields: JSON.stringify(customFields)\n    },\n    \n    // Debug info\n    text_length: text.length,\n    fields_extracted: Object.keys(customFields).length,\n    tags_count: tags.length\n  }\n}];"
+      },
+      "id": "parseComplete",
+      "name": "Complete Parser",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 9d51c86467e7b7e17a8748722ff1a24226c94a7e"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{ $json.paperless_data.title }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $json.paperless_data.document_type }}"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{ $json.paperless_data.correspondent }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.paperless_data.tags }}"
+            },
+            {
+              "name": "custom_fields",
+              "value": "={{ $json.paperless_data.custom_fields }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "uploadPaperless",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1650, 300],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const parseData = $node['parseComplete'].json;\nconst uploadResult = $json;\n\nif (uploadResult.error) {\n  return [{\n    json: {\n      '❌ STATUS': 'UPLOAD FAILED',\n      '📄 File': parseData.filename,\n      '⚠️ Error': uploadResult.message || 'Paperless upload failed',\n      '📑 Type': parseData.document_type,\n      '👤 Correspondent': parseData.correspondent,\n      '📝 Fields Extracted': parseData.fields_extracted,\n      '🏷️ Tags': parseData.tags.join(', ')\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    '✅ STATUS': 'COMPLETE SUCCESS',\n    '📄 File': parseData.filename,\n    '📑 Type': parseData.document_type,\n    '👤 Correspondent': parseData.correspondent,\n    '📝 Fields Extracted': parseData.fields_extracted,\n    '🏷️ Tags': parseData.tags.join(', '),\n    '💰 Částka': parseData.custom_fields.castka_celkem || parseData.custom_fields.castka || 'N/A',\n    '📅 Datum': parseData.custom_fields.datum_vystaveni || parseData.custom_fields.datum || 'N/A',\n    '🔢 Číslo dokladu': parseData.custom_fields.cislo_faktury || parseData.custom_fields.cislo_smlouvy || 'N/A',\n    '🏢 Dodavatel': parseData.custom_fields.dodavatel || 'N/A',\n    '👤 Odběratel': parseData.custom_fields.odberatel || 'N/A',\n    '💳 VS': parseData.custom_fields.variabilni_symbol || 'N/A',\n    '🆔 IČO': parseData.custom_fields.ico_dodavatel || 'N/A',\n    '💱 Měna': parseData.custom_fields.mena || 'CZK',\n    '📊 Všechny údaje': JSON.stringify(parseData.custom_fields, null, 2),\n    '🚀 Paperless ID': uploadResult.id || 'Uploaded'\n  }\n}];"
+      },
+      "id": "displayResults",
+      "name": "Display Results",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1850, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Set File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set File": {
+      "main": [
+        [
+          {
+            "node": "Get Upload URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Upload URL": {
+      "main": [
+        [
+          {
+            "node": "Read PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read PDF": {
+      "main": [
+        [
+          {
+            "node": "Upload File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload File": {
+      "main": [
+        [
+          {
+            "node": "Extract Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Text": {
+      "main": [
+        [
+          {
+            "node": "Complete Parser",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Complete Parser": {
+      "main": [
+        [
+          {
+            "node": "Upload to Paperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload to Paperless": {
+      "main": [
+        [
+          {
+            "node": "Display Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "complete_parser"
+}

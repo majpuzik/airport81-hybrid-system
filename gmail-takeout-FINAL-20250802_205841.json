@@ -1,0 +1,514 @@
+{
+  "summary": {
+    "total_emails": 11100,
+    "processed": 11100,
+    "successful": 11100,
+    "errors": 0,
+    "success_rate": 100.0,
+    "processing_time_minutes": 5.84925666252772
+  },
+  "document_types": {
+    "invoice": 1112,
+    "order": 2564,
+    "notification": 6691,
+    "unknown": 481,
+    "receipt": 142,
+    "shipping": 42,
+    "subscription": 63,
+    "contract": 5
+  },
+  "years": {
+    "2025": 2363,
+    "2024": 8700,
+    "2014": 9,
+    "2016": 9,
+    "2015": 1,
+    "2020": 1,
+    "2009": 1,
+    "2011": 2,
+    "2018": 2,
+    "2012": 3,
+    "2007": 3,
+    "2005": 1,
+    "2023": 2,
+    "2013": 1
+  },
+  "top_domains": {
+    "gmail.com": 483,
+    "google.com": 474,
+    "epochtimes.de": 399,
+    "fing.com": 378,
+    "skrz.cz": 371,
+    "academia-mail.com": 339,
+    "intl.paypal.com": 310,
+    "email.cnet.com": 299,
+    "medium.com": 254,
+    "rtm.autoscout24.com": 229,
+    "epochtimes.cz": 221,
+    "aukro.cz": 209,
+    "news.ashampoo.com": 201,
+    "notice.aliexpress.com": 171,
+    "manageitapp.com": 160,
+    "deals.aliexpress.com": 143,
+    "decovry.com": 136,
+    "edm.xtool.com": 126,
+    "myheritage.com": 116,
+    "slevomat.cz": 112
+  },
+  "office_samples": [
+    {
+      "email_index": 0,
+      "subject": "=?utf-8?q?Chip=2Ecz=3A_Windows_10_o_rok_d=C3=A9le=2C_zpoplatn=C4=9Bn=C3=BD_W?=\r\n =?utf-8?q?hatsApp_a",
+      "from": "chip.cz",
+      "date": "2025",
+      "type": "invoice",
+      "score": 26,
+      "text_length": 8264
+    },
+    {
+      "email_index": 1,
+      "subject": "The timeline is on, the teleprompter is here, and so is video regenerate",
+      "from": "marketing.descript.com",
+      "date": "2025",
+      "type": "order",
+      "score": 36,
+      "text_length": 16980
+    },
+    {
+      "email_index": 3,
+      "subject": "Daily Overview for Bressner",
+      "from": "manageitapp.com",
+      "date": "2025",
+      "type": "order",
+      "score": 45,
+      "text_length": 14082
+    },
+    {
+      "email_index": 4,
+      "subject": "=?UTF-8?q?=F0=9F=92=99_Start_Wimbledonu_i_tipy_na_filmy?=",
+      "from": "moje.sledovanitv.cz",
+      "date": "2025",
+      "type": "invoice",
+      "score": 16,
+      "text_length": 15877
+    },
+    {
+      "email_index": 12,
+      "subject": "=?UTF-8?Q?K=C3=B6nnte_Russland_von_einem_anhaltend?=\r\n =?UTF-8?Q?en_Krieg_zwischen_Israel_und_dem_Ir",
+      "from": "epochtimes.de",
+      "date": "2025",
+      "type": "order",
+      "score": 318,
+      "text_length": 94660
+    },
+    {
+      "email_index": 13,
+      "subject": "=?utf-8?Q?P=C5=99ipravte_se_s_n=C3=A1mi_na_filmov=C3=BD_festi?=\r\n =?utf-8?Q?val_v_Karlov=C3=BDch_Var",
+      "from": "newsletter.profimed.cz",
+      "date": "2025",
+      "type": "invoice",
+      "score": 76,
+      "text_length": 18293
+    },
+    {
+      "email_index": 14,
+      "subject": "=?UTF-8?B?QsOhamXEjW7DqSBrbmloeSBuYSBwcsOhemRuaW55IHYgbmE=?=\r\n\t=?UTF-8?B?YsOtZGNlIHUgYWZvbHRhIEF1a3J",
+      "from": "afolt.cz",
+      "date": "2025",
+      "type": "invoice",
+      "score": 25,
+      "text_length": 4993
+    },
+    {
+      "email_index": 16,
+      "subject": "Stonehenge: Ein Monument zwischen Mythen, Ideologie und Wahrheit",
+      "from": "epochtimes.de",
+      "date": "2025",
+      "type": "order",
+      "score": 290,
+      "text_length": 88910
+    },
+    {
+      "email_index": 17,
+      "subject": "4 =?UTF-8?B?cHJvYmzDqW3Frw==?= konzistence nalezeno na Puzikovi Web\r\n Site (26. =?UTF-8?B?xI1lcnZuYQ",
+      "from": "myheritage.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 4,
+      "text_length": 5107
+    },
+    {
+      "email_index": 18,
+      "subject": "=?UTF-8?B?U3R2cnplbmthIHphIHZhxaFpIHBsYXRidSBwxZnDrWplbWNpIFdpeC5jb20g?=\r\n  =?UTF-8?B?THV4ZW1ib3VyZy",
+      "from": "intl.paypal.com",
+      "date": "2025",
+      "type": "order",
+      "score": 82,
+      "text_length": 29488
+    },
+    {
+      "email_index": 19,
+      "subject": "Dalsi faktura",
+      "from": "gmail.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 252
+    },
+    {
+      "email_index": 20,
+      "subject": "Prompting For Veo 3",
+      "from": "m.leonardo.ai",
+      "date": "2025",
+      "type": "order",
+      "score": 30,
+      "text_length": 16528
+    },
+    {
+      "email_index": 27,
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_GitHub=2C?=\r\n  =?UTF-8?Q?_Inc=2E?=",
+      "from": "intl.paypal.com",
+      "date": "2025",
+      "type": "order",
+      "score": 89,
+      "text_length": 30410
+    },
+    {
+      "email_index": 29,
+      "subject": "=?utf-8?B?Rnc6IFDFmWlwcmF2IHNlIG5hIEdhbGF4eSBVbnBhY2tlZA==?=",
+      "from": "gmail.com",
+      "date": "2025",
+      "type": "receipt",
+      "score": 16,
+      "text_length": 10161
+    },
+    {
+      "email_index": 31,
+      "subject": "Order #17123 confirmed",
+      "from": "winscase.com",
+      "date": "2025",
+      "type": "order",
+      "score": 22,
+      "text_length": 4183
+    },
+    {
+      "email_index": 36,
+      "subject": "Buzic",
+      "from": "gmail.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 4,
+      "text_length": 5966
+    },
+    {
+      "email_index": 37,
+      "subject": "=?UTF-8?Q?=E2=80=9ESt=C3=A4rkste_Armee_Europas?=\r\n =?UTF-8?Q?=E2=80=9C=3A_Wie_Merz=E2=80=98_Bundeswe",
+      "from": "epochtimes.de",
+      "date": "2025",
+      "type": "order",
+      "score": 313,
+      "text_length": 91569
+    },
+    {
+      "email_index": 38,
+      "subject": "Order 3054530029016343: delivery update",
+      "from": "notice.aliexpress.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 23,
+      "text_length": 3251
+    },
+    {
+      "email_index": 39,
+      "subject": "=?utf-8?q?Upgraded_Fire_Rated_Downlight_with_Cost-Efficient_Solution?=",
+      "from": "uniqueledlight.com",
+      "date": "2025",
+      "type": "order",
+      "score": 1,
+      "text_length": 994
+    },
+    {
+      "email_index": 42,
+      "subject": "=?UTF-8?Q?Ov=C4=9B=C5=99te_si_stav_Va=C5=A1=C3=AD_platby_(4548917936)?=",
+      "from": "payu.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 20,
+      "text_length": 6477
+    },
+    {
+      "email_index": 1003,
+      "subject": "=?UTF-8?Q?Obl=C3=A1=C4=8Dek?=",
+      "from": "epochtimes.cz",
+      "date": "2025",
+      "type": "order",
+      "score": 439,
+      "text_length": 58211
+    },
+    {
+      "email_index": 1013,
+      "subject": "TASTE, No. 4: Let The Mirage Guide You",
+      "from": "m.leonardo.ai",
+      "date": "2025",
+      "type": "order",
+      "score": 19,
+      "text_length": 6875
+    },
+    {
+      "email_index": 1016,
+      "subject": "Re: Dopis PVS-PVK - 05-2025. nahrada skody",
+      "from": "outlook.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 3,
+      "text_length": 8071
+    },
+    {
+      "email_index": 1019,
+      "subject": "Reservierung der Rufnummer 493052014448",
+      "from": "zadarma.com",
+      "date": "2025",
+      "type": "order",
+      "score": 17,
+      "text_length": 4073
+    },
+    {
+      "email_index": 1021,
+      "subject": "=?UTF-8?Q?=F0=9F=96=A5=EF=B8=8F_Microsoft_should_borrow_these_features_?=\r\n =?UTF-8?Q?from_macOS_Tah",
+      "from": "xda-developers.com",
+      "date": "2025",
+      "type": "order",
+      "score": 199,
+      "text_length": 71189
+    },
+    {
+      "email_index": 1026,
+      "subject": "=?UTF-8?Q?=F0=9F=92=BB_Lots_of_new_laptops_are_coming,_but_not_Microsoft?=\r\n =?UTF-8?Q?'s_coolest_on",
+      "from": "xda-developers.com",
+      "date": "2025",
+      "type": "order",
+      "score": 206,
+      "text_length": 71240
+    },
+    {
+      "email_index": 1027,
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_Google_Payment?=\r\n  =?UTF-8?Q?_Ireland_Lt",
+      "from": "intl.paypal.com",
+      "date": "2025",
+      "type": "order",
+      "score": 61,
+      "text_length": 27107
+    },
+    {
+      "email_index": 1032,
+      "subject": "=?utf-8?B?Rm90b2dyYWbFr3Ygcm9rIPCfk4UgxI1hcyB6YXNhZGl0IFpQ?=\r\n =?utf-8?B?UyBYIGJyenkgc2tvbsSNw60=?=",
+      "from": "zoner.cz",
+      "date": "2025",
+      "type": "order",
+      "score": 164,
+      "text_length": 35449
+    },
+    {
+      "email_index": 1034,
+      "subject": "=?UTF-8?Q?=F0=9F=92=BB_HP_is_looking_to_preinstall_eSIMs_on_laptops_?=\r\n =?UTF-8?Q?=F0=9F=92=B0_Some",
+      "from": "xda-developers.com",
+      "date": "2025",
+      "type": "order",
+      "score": 189,
+      "text_length": 66485
+    },
+    {
+      "email_index": 1036,
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_Google_Payment?=\r\n  =?UTF-8?Q?_Irela=2E=2",
+      "from": "intl.paypal.com",
+      "date": "2025",
+      "type": "order",
+      "score": 63,
+      "text_length": 27546
+    },
+    {
+      "email_index": 1038,
+      "subject": "=?UTF-8?Q?NATO-Gipfel=3A_F=C3=BCnf-Prozent-Ziel_be?=\r\n =?UTF-8?Q?schlossen_=E2=80=93_Merz_warnt_Russ",
+      "from": "epochtimes.de",
+      "date": "2025",
+      "type": "order",
+      "score": 304,
+      "text_length": 91880
+    },
+    {
+      "email_index": 1039,
+      "subject": "=?utf-8?B?RW50ZGVja2UgdmVyYm9yZ2VuZSBEYQ==?=\r\n =?utf-8?B?dGVuIMO8YmVyIERlaW4gTnV0enVuZ3M=?=\r\n =?utf-",
+      "from": "news.ashampoo.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 14,
+      "text_length": 7142
+    },
+    {
+      "email_index": 1041,
+      "subject": "=?UTF-8?B?VsOhxaEgw7rEjWV0IEdvb2dsZSBieWwgw7pzcMSbxaFuxJsgb2Jub3Zlbg==?=",
+      "from": "accounts.google.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 1537
+    },
+    {
+      "email_index": 1043,
+      "subject": "=?UTF-8?Q?GMKJ_3030_EMC_LED_pro_Tesla_=2D_LED_pouli=C4=8Dn=C3=AD_sv=C3=ADtid?=\r\n\t=?UTF-8?Q?lo_pro_os",
+      "from": "gmail.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 2,
+      "text_length": 1855
+    },
+    {
+      "email_index": 1046,
+      "subject": "Your Home Assistant Cloud trial will end soon!",
+      "from": "nabucasa.com",
+      "date": "2025",
+      "type": "order",
+      "score": 24,
+      "text_length": 9223
+    },
+    {
+      "email_index": 1047,
+      "subject": "zajic - 3 =?UTF-8?B?bm92w71jaCB2w71zbGVka8Wv?=",
+      "from": "myheritage.com",
+      "date": "2025",
+      "type": "subscription",
+      "score": 2,
+      "text_length": 5348
+    },
+    {
+      "email_index": 1048,
+      "subject": "=?UTF-8?Q?EU_navrhla_klimatick=C3=BD_c=C3=ADl_pro_?=\r\n =?UTF-8?Q?rok_2040=3B_USA_pozastavily_dod=C3=",
+      "from": "epochtimes.cz",
+      "date": "2025",
+      "type": "order",
+      "score": 622,
+      "text_length": 95729
+    },
+    {
+      "email_index": 1049,
+      "subject": "Urosante | =?utf-8?Q?objednan=C3=A1_n=C3=A1v=C5=A1t=C4=9Bva?= -\r\n 19.5.2025",
+      "from": "urosante.cz",
+      "date": "2025",
+      "type": "order",
+      "score": 3,
+      "text_length": 2428
+    },
+    {
+      "email_index": 1051,
+      "subject": "Notion 2.51: AI Meeting Notes, faster search, and more! ",
+      "from": "mail.notion.so",
+      "date": "2025",
+      "type": "invoice",
+      "score": 28,
+      "text_length": 13921
+    },
+    {
+      "email_index": 1055,
+      "subject": "Blokace",
+      "from": "gmail.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 2,
+      "text_length": 224
+    },
+    {
+      "email_index": 2003,
+      "subject": "=?UTF-8?B?U3R2cnplbmthIHphIHZhxaFpIHBsYXRidSBwxZnDrWplbWNpIFByb3RvbiBF?=\r\n  =?UTF-8?B?dXJvcGUgUy7DoC",
+      "from": "intl.paypal.com",
+      "date": "2025",
+      "type": "order",
+      "score": 82,
+      "text_length": 29237
+    },
+    {
+      "email_index": 2010,
+      "subject": "Was ist von Trump zu erwarten?",
+      "from": "epochtimes.de",
+      "date": "2024",
+      "type": "order",
+      "score": 338,
+      "text_length": 96225
+    },
+    {
+      "email_index": 2015,
+      "subject": "=?utf-8?q?Is_Denmark_or_Germany_better_for_immigration=3F?=",
+      "from": "quora.com",
+      "date": "2024",
+      "type": "order",
+      "score": 8,
+      "text_length": 11892
+    },
+    {
+      "email_index": 2016,
+      "subject": "=?UTF-8?Q?Google_Alert_=E2=80=93_tesla?=",
+      "from": "google.com",
+      "date": "2025",
+      "type": "receipt",
+      "score": 7,
+      "text_length": 12345
+    },
+    {
+      "email_index": 2017,
+      "subject": "=?utf-8?B?8J+boCBQb8WZacSPdGUgc3bDocWZZcSNY2Uga8OhbW/FoWUu?=",
+      "from": "news.uni-max.cz",
+      "date": "2025",
+      "type": "invoice",
+      "score": 176,
+      "text_length": 28779
+    },
+    {
+      "email_index": 2019,
+      "subject": "=?UTF-8?Q?=C3=8Dr=C3=A1nsk=C3=BD_program_jadern?=\r\n =?UTF-8?Q?=C3=BDch_zbran=C3=AD=3B_V=C4=9B=C4=8Dn",
+      "from": "epochtimes.cz",
+      "date": "2024",
+      "type": "order",
+      "score": 569,
+      "text_length": 89941
+    },
+    {
+      "email_index": 2022,
+      "subject": "Order ULANZI135284 confirmed",
+      "from": "t.shopifyemail.com",
+      "date": "2025",
+      "type": "invoice",
+      "score": 28,
+      "text_length": 3359
+    },
+    {
+      "email_index": 2026,
+      "subject": "=?UTF-8?q?Join_HeyGen=E2=80=99s_new_online_community_hub!?=",
+      "from": "heygen.com",
+      "date": "2024",
+      "type": "invoice",
+      "score": 28,
+      "text_length": 9416
+    },
+    {
+      "email_index": 2031,
+      "subject": "=?UTF-8?B?8J+Xk++4jw==?= The Summary: Your free reads next week",
+      "from": "mail.blinkist.com",
+      "date": "2024",
+      "type": "order",
+      "score": 20,
+      "text_length": 23435
+    },
+    {
+      "email_index": 2032,
+      "subject": "=?UTF-8?Q?Americk=C3=A9_ministerstvo_zdravotnictv?=\r\n =?UTF-8?Q?=C3=AD_zkoum=C3=A1_p=C5=99=C3=AD=C4=",
+      "from": "epochtimes.cz",
+      "date": "2025",
+      "type": "order",
+      "score": 702,
+      "text_length": 96843
+    }
+  ],
+  "timestamps": {
+    "start": "2025-08-02T20:52:50.537314",
+    "end": "2025-08-02T20:58:41.492722"
+  }
+}

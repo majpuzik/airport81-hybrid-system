@@ -1,0 +1,162 @@
+{
+  "batch_start": 5000,
+  "batch_end": 6000,
+  "timestamp": "2025-08-02T20:33:05.879619",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 538,
+    "receipt": 32,
+    "unknown": 179,
+    "order": 171,
+    "shipping": 12,
+    "notification": 45,
+    "contract": 8,
+    "subscription": 14,
+    "bank_statement": 1
+  },
+  "metadata_samples": [
+    {
+      "file": "Festival Fun-202504140946-_The MICHELIN Guide_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 975
+    },
+    {
+      "file": "Ndax _ Scheduled Maintenance - October 19th-202410182130-_Ndax_.pdf",
+      "type": "receipt",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2548
+    },
+    {
+      "file": "Hlídačův pátek 13. 12.-202412131003-Hlídač státu z.ú..pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 3515
+    },
+    {
+      "file": "Re_Smenka-202503061506-_Jan Mosinger_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 871
+    },
+    {
+      "file": "Puzik, unleash the power of 2D and 3D CAD.-202405280851-_Kathleen from Autodesk_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2273
+    },
+    {
+      "file": "Aktualizace produktu_ MMA - Snímače teploty zásuvn-202409251935-_Kobold Messring - Kobold Group_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1689
+    },
+    {
+      "file": "Save on Hunting Scope and Rangefinder Combo-202412301523-_SIG SAUER, Inc._.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 4413
+    },
+    {
+      "file": "Ähnliche Angebote wie Suchauftrag 06.07.24-202501061615-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2124
+    },
+    {
+      "file": "Ethereum ETFs have launched-202407241825-_Blockchain.com_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3727
+    },
+    {
+      "file": "Mr. Accede GRATIS por tiempo limitado 🔑-202504101127-_Speak Up_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1421
+    },
+    {
+      "file": "🎃 Boost Your Halloween Projects with DFRobot Elec-202410180814-_DFRobot Service_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2600
+    },
+    {
+      "file": "ABRA Flexi se dá přizpůsobit. Dokonale.-202501211404-_ABRA Flexi_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2166
+    },
+    {
+      "file": "It's amazing, Milan! This handheld device allows y-202411292030-_Pocket Translator_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2003
+    },
+    {
+      "file": "Comica Audio CVM-VS07 mini kardioidní mikrofon na -202404210923-_M.AJ. Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 442
+    },
+    {
+      "file": "Krio Tongues, British Blooms_ How Sierra Leonean C-202412110750-_Medium Daily Digest_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3711
+    },
+    {
+      "file": "Mzdy-202403-202404021743-Daniela Pauknerová.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 429
+    },
+    {
+      "file": "Statistic Varná deska-202407040005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 251
+    },
+    {
+      "file": "Poslali jsme Vám peníze za výkup l9xfnoc3-202501201600-_alza-vykup.cz_.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1047
+    },
+    {
+      "file": "[Komunita Svět Androida] Shrnutí-202505072057-Komunita Svět Androida.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 5598
+    },
+    {
+      "file": "🐐 Víte , jak Vám kozy zefektivní a usnadní práci_-202503130943-_Radim z uni-maxu_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2565
+    }
+  ],
+  "error_count": 0
+}

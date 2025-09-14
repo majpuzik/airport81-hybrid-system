@@ -1,0 +1,127 @@
+{
+  "paperless": {
+    "url": "http://localhost:8000",
+    "token": "YOUR_PAPERLESS_API_TOKEN_HERE",
+    "webhook_secret": "optional_webhook_secret"
+  },
+  
+  "matcher": {
+    "scan_interval": 3600,
+    "queue_size": 100,
+    "worker_threads": 2,
+    "cache_ttl": 86400
+  },
+  
+  "tags": {
+    "proforma_invoice": {
+      "name": "Proforma Invoice",
+      "color": "#FFA500",
+      "match_type": "proforma"
+    },
+    "awaiting_payment": {
+      "name": "Awaiting Payment", 
+      "color": "#FF6347",
+      "match_type": "proforma"
+    },
+    "payment_received": {
+      "name": "Payment Received",
+      "color": "#32CD32", 
+      "match_type": "proforma"
+    },
+    "invoice_issued": {
+      "name": "Invoice Issued",
+      "color": "#228B22",
+      "match_type": "proforma"
+    },
+    "bank_statement": {
+      "name": "Bank Statement",
+      "color": "#4169E1",
+      "match_type": "bank"
+    },
+    "matched_payment": {
+      "name": "Matched Payment",
+      "color": "#9370DB",
+      "match_type": "bank"
+    }
+  },
+  
+  "document_types": {
+    "proforma": "Proforma Invoice",
+    "invoice": "Invoice", 
+    "bank_statement": "Bank Statement"
+  },
+  
+  "detection": {
+    "proforma_keywords": [
+      "proforma faktura",
+      "zálohová faktura",
+      "proforma invoice",
+      "advance invoice",
+      "pro forma"
+    ],
+    "bank_keywords": [
+      "výpis z účtu",
+      "bankovní výpis", 
+      "account statement",
+      "výpis č.",
+      "pohyby na účtu"
+    ],
+    "vs_patterns": [
+      "variabilní\\s*symbol[:\\s]*(\\d+)",
+      "var\\.\\s*symbol[:\\s]*(\\d+)",
+      "VS[:\\s]*(\\d+)",
+      "variable\\s*symbol[:\\s]*(\\d+)"
+    ]
+  },
+  
+  "banks": {
+    "csob": {
+      "name": "Československá obchodní banka",
+      "patterns": ["čsob", "\\b0300\\b"],
+      "transaction_regex": "(\\d{1,2}\\.\\d{1,2}\\.\\d{4})\\s+(.+?)\\s+VS:\\s*(\\d+)\\s+.*?([+-]?\\d+[,.]?\\d*)"
+    },
+    "kb": {
+      "name": "Komerční banka",
+      "patterns": ["komerční banka", "\\bkb\\b", "\\b0100\\b"],
+      "transaction_regex": "(\\d{1,2}\\.\\d{1,2}\\.\\d{4})\\s+(.+?)\\s+(\\d{10})\\s+([+-]?\\d+[,.]?\\d*)"
+    },
+    "cs": {
+      "name": "Česká spořitelna",
+      "patterns": ["česká spořitelna", "\\b0800\\b"],
+      "transaction_regex": "(\\d{1,2}\\.\\d{1,2}\\.\\d{4})\\s+(.+?)\\s+VS\\s*(\\d+)\\s+([+-]?\\d+[,.]?\\d*)"
+    },
+    "fio": {
+      "name": "Fio banka",
+      "patterns": ["fio banka", "\\b2010\\b"],
+      "transaction_regex": "(\\d{1,2}\\.\\d{1,2}\\.\\d{4})\\s+(.+?)\\s+(\\d+)\\s+([+-]?\\d+[,.]?\\d*)"
+    }
+  },
+  
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587,
+      "from_email": "paperless@example.com",
+      "to_emails": ["admin@example.com"]
+    },
+    "webhook": {
+      "enabled": false,
+      "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+    }
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "file": "/var/log/payment-matcher/app.log",
+    "max_size": "10MB",
+    "backup_count": 5
+  },
+  
+  "tasks": {
+    "auto_create": true,
+    "due_days": 3,
+    "assignee": null,
+    "template": "Issue invoice for paid proforma - VS: {vs}"
+  }
+}

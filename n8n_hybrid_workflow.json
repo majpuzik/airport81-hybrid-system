@@ -1,0 +1,237 @@
+{
+  "name": "Hybrid Document Processing with Custom Fields and Tags",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "process-document",
+        "options": {
+          "responseMode": "lastNode"
+        }
+      },
+      "id": "webhook-trigger",
+      "name": "Document Upload Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// HYBRIDNÍ VALIDAČNÍ ENGINE\n// Kombinuje business rules s AI parsováním\n\nconst pdfText = items[0].json.text || '';\nconst fileName = items[0].json.fileName || '';\n\n// 1. VALIDACE: Je to skutečný dokument nebo email o dokumentu?\nconst emailPatterns = [\n  /from\\s*:\\s*[^\\n]+/i,\n  /subject\\s*:\\s*[^\\n]+/i,\n  /s\\s*pozdravem/i,\n  /zasíláme\\s*vám/i,\n  /v\\s*příloze/i,\n  /přikládáme/i,\n  /dobrý\\s*den/i\n];\n\nconst isEmail = emailPatterns.some(pattern => pattern.test(pdfText));\n\n// 2. DETEKCE TYPU DOKUMENTU\nlet documentType = 'unknown';\nlet confidence = 0;\nlet extractedData = {};\n\nif (!isEmail) {\n  // Detekce faktury\n  const invoicePatterns = [\n    /faktura\\s*č/i,\n    /invoice\\s*number/i,\n    /daňový\\s*doklad/i\n  ];\n  \n  const invoiceFields = {\n    invoiceNumber: /(?:faktura|invoice)\\s*(?:č\\.|číslo|number)\\s*:?\\s*([A-Z0-9\\-\\/]+)/i,\n    ico: /ičo?\\s*:?\\s*(\\d{8})/i,\n    dic: /dič?\\s*:?\\s*(CZ\\d{8,10})/i,\n    amount: /(?:celkem|total)\\s*:?\\s*([\\d\\s,]+[,.]?\\d*)\\s*(?:kč|czk)/i,\n    vs: /(?:variabilní\\s*symbol|vs)\\s*:?\\s*(\\d+)/i,\n    dueDate: /(?:datum\\s*splatnosti|due\\s*date)\\s*:?\\s*(\\d{1,2}[\\.\\-\\/]\\d{1,2}[\\.\\-\\/]\\d{2,4})/i\n  };\n  \n  let invoiceScore = 0;\n  \n  // Extrahuj data\n  for (const [field, pattern] of Object.entries(invoiceFields)) {\n    const match = pdfText.match(pattern);\n    if (match) {\n      extractedData[field] = match[1];\n      invoiceScore += 25;\n    }\n  }\n  \n  if (invoiceScore >= 75) {\n    documentType = 'invoice';\n    confidence = invoiceScore;\n  }\n  \n  // Detekce bankovního výpisu\n  if (documentType === 'unknown') {\n    const bankPatterns = [\n      /výpis\\s*z\\s*účtu/i,\n      /account\\s*statement/i,\n      /kontoauszug/i\n    ];\n    \n    if (bankPatterns.some(p => p.test(pdfText))) {\n      documentType = 'bank_statement';\n      confidence = 85;\n      \n      // Extrahuj bankovní data\n      const accountMatch = pdfText.match(/(?:číslo\\s*účtu|account)\\s*:?\\s*([\\d\\-\\/]+)/i);\n      if (accountMatch) extractedData.accountNumber = accountMatch[1];\n    }\n  }\n  \n  // Detekce účtenky\n  if (documentType === 'unknown') {\n    const receiptPatterns = [\n      /účtenka/i,\n      /receipt/i,\n      /paragon/i,\n      /pokladní\\s*doklad/i\n    ];\n    \n    if (receiptPatterns.some(p => p.test(pdfText))) {\n      documentType = 'receipt';\n      confidence = 80;\n    }\n  }\n  \n  // Detekce smlouvy\n  if (documentType === 'unknown') {\n    const contractPatterns = [\n      /smlouva/i,\n      /contract/i,\n      /dohoda/i,\n      /agreement/i\n    ];\n    \n    if (contractPatterns.some(p => p.test(pdfText))) {\n      documentType = 'contract';\n      confidence = 75;\n    }\n  }\n}\n\n// 3. GENEROVÁNÍ TAGŮ\nconst tags = [];\n\n// Typ dokumentu\nif (documentType !== 'unknown') {\n  tags.push(`type:${documentType}`);\n}\n\n// IČO\nif (extractedData.ico) {\n  tags.push(`ico:${extractedData.ico}`);\n}\n\n// DIČ\nif (extractedData.dic) {\n  tags.push(`dic:${extractedData.dic}`);\n}\n\n// Variabilní symbol\nif (extractedData.vs) {\n  tags.push(`vs:${extractedData.vs}`);\n}\n\n// Částka\nif (extractedData.amount) {\n  const amount = parseFloat(extractedData.amount.replace(/\\s/g, '').replace(',', '.'));\n  if (!isNaN(amount)) {\n    tags.push(`amount:${Math.floor(amount)}`);\n    \n    if (amount < 1000) tags.push('amount:small');\n    else if (amount < 10000) tags.push('amount:medium');\n    else if (amount < 100000) tags.push('amount:large');\n    else tags.push('amount:huge');\n  }\n}\n\n// Rok a měsíc\nconst currentYear = new Date().getFullYear();\nconst currentMonth = String(new Date().getMonth() + 1).padStart(2, '0');\ntags.push(`year:${currentYear}`);\ntags.push(`month:${currentMonth}`);\n\n// 4. ROZHODNUTÍ O ZPRACOVÁNÍ\nif (isEmail) {\n  return {\n    json: {\n      decision: 'REJECT',\n      reason: 'Email nebo průvodní dopis, ne skutečný dokument',\n      documentType: 'email',\n      confidence: 0,\n      extractedData: {},\n      tags: [],\n      customFields: {}\n    }\n  };\n} else if (confidence >= 50) {\n  return {\n    json: {\n      decision: 'ACCEPT',\n      reason: `Validní ${documentType} s confidence ${confidence}%`,\n      documentType: documentType,\n      confidence: confidence,\n      extractedData: extractedData,\n      tags: tags,\n      customFields: extractedData,\n      fileName: fileName,\n      originalText: pdfText\n    }\n  };\n} else {\n  return {\n    json: {\n      decision: 'MANUAL_REVIEW',\n      reason: 'Nízká confidence, vyžaduje manuální kontrolu',\n      documentType: documentType,\n      confidence: confidence,\n      extractedData: extractedData,\n      tags: tags,\n      customFields: extractedData\n    }\n  };\n}"
+      },
+      "id": "validation-engine",
+      "name": "Hybrid Validation Engine",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.decision}}",
+              "value2": "ACCEPT"
+            }
+          ]
+        }
+      },
+      "id": "decision-router",
+      "name": "Route by Decision",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token d1d7a1e87c502dd10d7d5eb55afd8683701dbfdc"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "document",
+              "parameterType": "formBinaryData",
+              "inputDataFieldName": "data"
+            },
+            {
+              "name": "title",
+              "value": "={{$json.fileName}}"
+            },
+            {
+              "name": "content",
+              "value": "=== HYBRIDNÍ METADATA ===\n{{JSON.stringify($json.extractedData, null, 2)}}\n\nTAGY: {{$json.tags.join(', ')}}\n=== KONEC METADAT ===\n\n{{$json.originalText}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "paperless-upload",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [850, 250]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Připrav custom fields data pro Paperless\nconst documentId = items[0].json.id;\nconst customFields = $node[\"validation-engine\"].json.customFields;\nconst tags = $node[\"validation-engine\"].json.tags;\n\n// Vytvoř tagy v Paperless\nconst tagIds = [];\nfor (const tagName of tags) {\n  // Zde by byl API call pro vytvoření/získání tagu\n  // Pro ukázku jen připravíme strukturu\n  tagIds.push(tagName);\n}\n\nreturn {\n  json: {\n    documentId: documentId,\n    updateData: {\n      custom_fields: customFields,\n      tags: tagIds\n    }\n  }\n};"
+      },
+      "id": "prepare-update",
+      "name": "Prepare Custom Fields & Tags",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1050, 250]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=http://localhost:8050/api/documents/{{$json.documentId}}/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token d1d7a1e87c502dd10d7d5eb55afd8683701dbfdc"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "custom_fields",
+              "value": "={{JSON.stringify($json.updateData.custom_fields)}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "update-custom-fields",
+      "name": "Update Custom Fields",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1250, 250]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Zpracuj odmítnuté dokumenty\nconst reason = $json.reason;\nconst documentType = $json.documentType;\n\n// Log pro monitoring\nconsole.log(`Document rejected: ${reason}`);\n\nreturn {\n  json: {\n    status: 'rejected',\n    reason: reason,\n    documentType: documentType,\n    message: 'Dokument byl odmítnut validačním enginem'\n  }\n};"
+      },
+      "id": "handle-rejection",
+      "name": "Handle Rejection",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 400]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Finální zpracování\nconst success = $json.status === 200 || $json.status === 204;\n\nif (success) {\n  return {\n    json: {\n      status: 'success',\n      message: 'Dokument úspěšně zpracován',\n      documentId: $node[\"prepare-update\"].json.documentId,\n      extractedFields: Object.keys($node[\"validation-engine\"].json.extractedData).length,\n      tags: $node[\"validation-engine\"].json.tags.length,\n      customFields: Object.keys($node[\"validation-engine\"].json.customFields).length\n    }\n  };\n} else {\n  return {\n    json: {\n      status: 'partial_success',\n      message: 'Dokument nahrán, ale custom fields se nepodařilo uložit',\n      documentId: $node[\"prepare-update\"].json.documentId,\n      note: 'Data jsou uložena v content field a tazích'\n    }\n  };\n}"
+      },
+      "id": "final-response",
+      "name": "Final Response",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1450, 300]
+    }
+  ],
+  "connections": {
+    "webhook-trigger": {
+      "main": [
+        [
+          {
+            "node": "validation-engine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "validation-engine": {
+      "main": [
+        [
+          {
+            "node": "decision-router",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "decision-router": {
+      "main": [
+        [
+          {
+            "node": "paperless-upload",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "handle-rejection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "paperless-upload": {
+      "main": [
+        [
+          {
+            "node": "prepare-update",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "prepare-update": {
+      "main": [
+        [
+          {
+            "node": "update-custom-fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "update-custom-fields": {
+      "main": [
+        [
+          {
+            "node": "final-response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "instanceId": "hybrid-document-processor"
+  },
+  "tags": [
+    {
+      "name": "document-processing",
+      "createdAt": "2025-08-31",
+      "updatedAt": "2025-08-31"
+    }
+  ]
+}

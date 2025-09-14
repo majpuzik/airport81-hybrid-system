@@ -1,0 +1,162 @@
+{
+  "batch_start": 21000,
+  "batch_end": 22000,
+  "timestamp": "2025-08-02T20:35:18.541076",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 525,
+    "unknown": 178,
+    "order": 183,
+    "receipt": 38,
+    "contract": 13,
+    "bank_statement": 3,
+    "shipping": 16,
+    "notification": 20,
+    "subscription": 24
+  },
+  "metadata_samples": [
+    {
+      "file": "Dein Merkzettel_ Wichtiges Update zum Porsche Maca-202502072212-_AutoScout24_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2106
+    },
+    {
+      "file": "Cyber security CEO dies at 54 as company reveals t-202501051440-_Best of MSN (MSN Unfold)_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1588
+    },
+    {
+      "file": "Sen. Mullin tells Kaitlan Collins she is DEAD WRON-202504302256-_PolitiBrawl_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 7837
+    },
+    {
+      "file": "Tady ano! Objevte místa, kde vám to bude na jaře s-202502131233-Už bude jaro_.pdf",
+      "type": "invoice",
+      "score": 21,
+      "metadata": {},
+      "text_length": 4960
+    },
+    {
+      "file": "Meet Andrea, our quality controller 🤩-202406231712-_Nino & Assim_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1868
+    },
+    {
+      "file": "Statistic L3-202501220027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 225
+    },
+    {
+      "file": "ICTK Portable Dryer - Ending Soon On Kickstarter-202504272335-_Backer-Update_.pdf",
+      "type": "order",
+      "score": 10,
+      "metadata": {},
+      "text_length": 2302
+    },
+    {
+      "file": "SNAPPY_ Super Stable Ergonomic Battery Grip for Mo-202410141803-_PledgeBox_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1604
+    },
+    {
+      "file": "M.A.J._ Více než 30 nových pracovních příležitostí-202406222158-Upozornění na nové pracovní příležitosti LinkedIn.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1687
+    },
+    {
+      "file": "Petr Krajcigr EFA reagoval(a) na příspěvek od auto-202505071915-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2475
+    },
+    {
+      "file": "Democrats scramble to limit damage after Biden's w-202406281611-_Start Daily_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1482
+    },
+    {
+      "file": "🌟 Flash Weekend Sale_ Free Shipping on 2+ Sensibo-202407051452-_Sensibo_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 932
+    },
+    {
+      "file": "Welcome to Verbalate™-202412241806-Verbalate™.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1789
+    },
+    {
+      "file": "Next Level Mini PC - Games, Content Creation & Dat-202504231843-_PledgeBox_.pdf",
+      "type": "receipt",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1688
+    },
+    {
+      "file": "Společnost Veolia pochybila, uznal Ústavní soud; P-202412200559-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 4217
+    },
+    {
+      "file": "What's new in RealityMAX_ Check out our latest upd-202407180707-_The RealityMAX crew_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1846
+    },
+    {
+      "file": "M.A.J., top price drops in Athens, selected for yo-202502100049-_Agoda Price Alerts_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1591
+    },
+    {
+      "file": "Take advantage of SignalWire's limited-time MMS pr-202408011858-_SignalWire_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1612
+    },
+    {
+      "file": "Jak a čím dráždit bradavky_-202408161103-🍒 od Sexshop.cz.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2051
+    },
+    {
+      "file": "Improve your prompts-202503101332-_Prompt Perfect_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 525
+    }
+  ],
+  "error_count": 0
+}

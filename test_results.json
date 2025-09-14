@@ -1,0 +1,57 @@
+{
+  "správně_pozitivní": 5,
+  "falešně_negativní": 0,
+  "správně_negativní": 3,
+  "falešně_pozitivní": 0,
+  "bez_textu": 0,
+  "detaily": [
+    {
+      "soubor": "Vaše faktura.pdf",
+      "typ": "faktura",
+      "rozpoznáno": true,
+      "jistota": 100
+    },
+    {
+      "soubor": "SIKO - Daňový doklad za platbu - 8010232404.pdf",
+      "typ": "faktura",
+      "rozpoznáno": true,
+      "jistota": 100
+    },
+    {
+      "soubor": "Fwd- Faktura (daňový doklad) 3160155351.pdf",
+      "typ": "faktura",
+      "rozpoznáno": true,
+      "jistota": 100
+    },
+    {
+      "soubor": "Your DeepL Pro invoice-202503221347-_DeepL__4.pdf",
+      "typ": "faktura",
+      "rozpoznáno": true,
+      "jistota": 50
+    },
+    {
+      "soubor": "Platební faktura od datacarekart.com-.pdf",
+      "typ": "faktura",
+      "rozpoznáno": true,
+      "jistota": 100
+    },
+    {
+      "soubor": "března 2025 Monthly report for System 56921.pdf",
+      "typ": "ne-faktura",
+      "rozpoznáno": false,
+      "jistota": 35
+    },
+    {
+      "soubor": "dubna 2025 Monthly report for System 56921.pdf",
+      "typ": "ne-faktura",
+      "rozpoznáno": false,
+      "jistota": 35
+    },
+    {
+      "soubor": "května 2025 Monthly report for System 56921.pdf",
+      "typ": "ne-faktura",
+      "rozpoznáno": false,
+      "jistota": 35
+    }
+  ]
+}

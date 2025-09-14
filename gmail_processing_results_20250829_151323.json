@@ -1,0 +1,11 @@
+{
+  "statistics": {
+    "total_emails": 5,
+    "processed_emails": 5,
+    "classified_documents": 0,
+    "uploaded_to_paperless": 0,
+    "errors": 0,
+    "document_types": {
+      "unclear": 5
+    },
+    "processing_start": 

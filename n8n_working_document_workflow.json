@@ -1,0 +1,67 @@
+{
+  "name": "Document Classifier Working Version",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {
+          "timeout": 30000
+        },
+        "bodyParametersJson": "{\n  \"model\": \"czech-finance:latest\",\n  \"prompt\": \"Klasifikuj tento dokument do kategorie:\\n\\nKategorie: faktura, smlouva, platba, bankovni_vypis, soudni_obesilka, policejni_obesilka, uredni_korespondence, objednavka, upominka, obchodni_korespondence, nabidka, ostatni\\n\\nText:\\n{{ $json.text || 'Faktura č. 2024/001' }}\\n\\nOdpověz POUZE názvem kategorie:\",\n  \"stream\": false,\n  \"temperature\": 0.1\n}"
+      },
+      "id": "ollama",
+      "name": "Ollama Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Parse Ollama response\nconst response = $input.item.json;\nlet classification = 'ostatni';\n\nif (response.response) {\n  classification = response.response.trim().toLowerCase().split(/[\\s,\\.]+/)[0];\n}\n\n// Map classification to folder\nconst folders = {\n  'faktura': 'faktury',\n  'smlouva': 'smlouvy',\n  'platba': 'platby',\n  'bankovni_vypis': 'bankovni_vypisy',\n  'soudni_obesilka': 'soudni_dokumenty',\n  'policejni_obesilka': 'policejni_dokumenty',\n  'uredni_korespondence': 'uredni_korespondence',\n  'objednavka': 'objednavky',\n  'upominka': 'upominky',\n  'obchodni_korespondence': 'obchodni_korespondence',\n  'nabidka': 'nabidky_reklamy',\n  'ostatni': 'ostatni'\n};\n\nconst outputFolder = folders[classification] || 'ostatni';\n\nreturn {\n  json: {\n    classification: classification,\n    outputFolder: `/Users/m.a.j.puzik/classified_documents/${outputFolder}`,\n    originalText: $node[\"manual\"].json.text || 'Test document',\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "process",
+      "name": "Process Result",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [800, 300]
+    }
+  ],
+  "connections": {
+    "manual": {
+      "main": [
+        [
+          {
+            "node": "ollama",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ollama": {
+      "main": [
+        [
+          {
+            "node": "process",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

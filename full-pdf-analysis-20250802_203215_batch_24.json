@@ -1,0 +1,164 @@
+{
+  "batch_start": 24000,
+  "batch_end": 25000,
+  "timestamp": "2025-08-02T20:35:43.659500",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 179,
+    "notification": 47,
+    "order": 162,
+    "invoice": 526,
+    "subscription": 15,
+    "receipt": 38,
+    "shipping": 24,
+    "contract": 7,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Statistic Bazénová technologie-202408230005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 280
+    },
+    {
+      "file": "Upozornění_ začátek události je sobota, ledna 4, 2-202501042045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 521
+    },
+    {
+      "file": "Vertical Wind Turbine-202408041438-_Instructables_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2242
+    },
+    {
+      "file": "Está pasando 27_08_2024 -202408270944-_idealista_news_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 9728
+    },
+    {
+      "file": "FW_ Softel-202406281045-Pavel Brzák.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 403
+    },
+    {
+      "file": "New! HTML Editor for Google Drive 👨💻-202504291615-_cloudHQ_.pdf",
+      "type": "subscription",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1598
+    },
+    {
+      "file": "M.A.J. Puzik, máte více než 10 nových pozvání a oz-202406061920-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1848
+    },
+    {
+      "file": ", sledujte Katerina Ferbyova – Majitel ze společno-202410112022-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 1539
+    },
+    {
+      "file": "Genetically, how different are Russians, Ukrainian-202504080837-_Quora Digest_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 5262
+    },
+    {
+      "file": "License Not Yet Required-202412300053-_Free Speech Daily Sponsor_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2146
+    },
+    {
+      "file": "🎧 [Novinky] Lži, vražda & jiné shnilé věci 🩸-202503141742-_Audioteka_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2791
+    },
+    {
+      "file": "Povánoční nadílka od Kokiskashop.cz.-202412261035-_Kokiskashop.cz_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1233
+    },
+    {
+      "file": "2 New Three Stars!-202406171200-_The MICHELIN Guide_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1171
+    },
+    {
+      "file": "Is AI part of your workflow yet_ Try our AI DAM fe-202504141127-_ACDSee_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2779
+    },
+    {
+      "file": "To pair with what you purchased-202504121051-_AliExpress_.pdf",
+      "type": "invoice",
+      "score": 19,
+      "metadata": {},
+      "text_length": 1206
+    },
+    {
+      "file": "Statistic Dům-202411040005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 228
+    },
+    {
+      "file": "🔥Sleva až 25 % v cílové destinaci!-202505021137-Invia _ dovolená.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {
+        "ico": "26702924"
+      },
+      "text_length": 1628
+    },
+    {
+      "file": "Mrazivá sleva_ napětí o 50 % levněji-202412151137-_KNIHCENTRUM.cz_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {},
+      "text_length": 2922
+    },
+    {
+      "file": "Let's get in contact! _ Lustica Bay-202410221510-_Dieke van Bolderen_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 858
+    },
+    {
+      "file": "Zamítnutá platba za odběr souboru prima+ filmy a T-202502020838-_Google Play_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1133
+    }
+  ],
+  "error_count": 0
+}

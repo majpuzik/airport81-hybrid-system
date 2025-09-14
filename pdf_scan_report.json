@@ -1,0 +1,81 @@
+{
+  "scan_time": "po 14. \u010dervence 2025 18:57:59 CEST",
+  "total_stats": {
+    "total_files": 2209218,
+    "pdf_files": 769299,
+    "convertible": 30878,
+    "count_.md": 6953,
+    "count_.txt": 8494,
+    "count_.doc": 1689,
+    "count_.docx": 2835,
+    "count_.rtf": 304,
+    "count_.odt": 22,
+    "count_.html": 3267,
+    "count_.htm": 615,
+    "count_.tex": 14,
+    "count_.epub": 281,
+    "count_.xml": 6404
+  },
+  "paths_scanned": [
+    "/Users/m.a.j.puzik/Documents",
+    "/Users/m.a.j.puzik/Desktop",
+    "/Users/m.a.j.puzik/Downloads",
+    "/Users/m.a.j.puzik/Dropbox",
+    "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed",
+    "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed(2)",
+    "/Users/m.a.j.puzik/Google Drive",
+    "/Users/m.a.j.puzik/OneDrive",
+    "/Users/m.a.j.puzik/Library/CloudStorage"
+  ],
+  "sample_files": {
+    ".md": [
+      "/Users/m.a.j.puzik/Documents/beaming-bog/README.md",
+      "/Users/m.a.j.puzik/Documents/beaming-bog/python_env/lib/python3.13/site-packages/soupsieve-2.7.dist-info/licenses/LICENSE.md",
+      "/Users/m.a.j.puzik/Documents/beaming-bog/python_env/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.md"
+    ],
+    ".txt": [
+      "/Users/m.a.j.puzik/Documents/beaming-bog/vystup.txt",
+      "/Users/m.a.j.puzik/Documents/beaming-bog/python_env/lib/python3.13/site-packages/pip-25.1.1.dist-info/entry_points.txt",
+      "/Users/m.a.j.puzik/Documents/beaming-bog/python_env/lib/python3.13/site-packages/pip-25.1.1.dist-info/top_level.txt",
+      "/Users/m.a.j.puzik/Documents/beaming-bog/python_env/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/LICENSE.txt",
+      "/Users/m.a.j.puzik/Documents/beaming-bog/python_env/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/AUTHORS.txt",
+      "/Users/m.a.j.puzik/Dropbox/Instructions.txt",
+      "/Users/m.a.j.puzik/Dropbox/martinpuzik_cinetranslate-5-0-0-sanet-st-part1-rar_2025-02-14_1915/Instructions.txt",
+      "/Users/m.a.j.puzik/Dropbox/1M4 backup/env.txt",
+      "/Users/m.a.j.puzik/Dropbox/1M4 backup/_n8n_logs (1).txt"
+    ],
+    ".docx": [
+      "/Users/m.a.j.puzik/Desktop/Nova\u0301 sloz\u030cka s\u00a0poloz\u030ckami/Dolni Chabry/SC_opatr\u030ceni\u0301 proti nec\u030cinnosti a sti\u0301z\u030cnosti.docx",
+      "/Users/m.a.j.puzik/Desktop/Nova\u0301 sloz\u030cka s\u00a0poloz\u030ckami/Dolni Chabry/SC_Vyja\u0301dr\u030ceni\u0301 k Pr\u030cedkladu k Magistra\u0301tu_230509.docx",
+      "/Users/m.a.j.puzik/Dropbox/Zuzanka.docx",
+      "/Users/m.a.j.puzik/Dropbox/Zuzanka_3696749527041071252.docx",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/Plna moc majp.docx",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/Softel ISC FA-2018087-majNuc8.docx",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/Timpex.docx",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/Adresa ATU.docx",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/Softel ISC FA-2018104.docx",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed(2)/Plna moc majp.docx"
+    ],
+    ".html": [
+      "/Users/m.a.j.puzik/Downloads/Takeout 2/Archiv_U\u0308bersicht.html",
+      "/Users/m.a.j.puzik/Downloads/Takeout 4/Archiv_U\u0308bersicht.html",
+      "/Users/m.a.j.puzik/Downloads/Takeout/Archiv_\u00dcbersicht.html",
+      "/Users/m.a.j.puzik/Dropbox/index.html stary.html",
+      "/Users/m.a.j.puzik/Dropbox/Thunderbird-pdf/All Mail_20250519-1052/All Mail/index.html",
+      "/Users/m.a.j.puzik/Dropbox/1M4 backup/paperless-web.html",
+      "/Users/m.a.j.puzik/Dropbox/1M4 backup/deepseek_html_20250514_8fbd89.html"
+    ],
+    ".epub": [
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/vsechny-vune-afriky.epub",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed/marx-a-satan.epub",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed(2)/vsechny-vune-afriky.epub",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobn\u00ed(2)/marx-a-satan.epub",
+      "/Users/m.a.j.puzik/Google Drive/Mu\u030aj disk/vsechny-vune-afriky.epub",
+      "/Users/m.a.j.puzik/Google Drive/Mu\u030aj disk/marx-a-satan.epub",
+      "/Users/m.a.j.puzik/OneDrive/vsechny-vune-afriky.epub",
+      "/Users/m.a.j.puzik/OneDrive/marx-a-satan.epub",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobni\u0301/vsechny-vune-afriky.epub",
+      "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobni\u0301/marx-a-satan.epub"
+    ]
+  }
+}

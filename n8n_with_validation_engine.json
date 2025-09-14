@@ -1,0 +1,222 @@
+{
+  "name": "PDF Parser s validačním enginem",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Výběr PDF souboru",
+        "formDescription": "Vyberte PDF dokument pro zpracování a validaci",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Vyberte soubor",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "name": "MBW Faktura LEONARDO.AI",
+                    "value": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/MBW • Faktura za služby LEONARDO.AI pro rok 2024-202504101640-Martin Pužík_2.pdf"
+                  },
+                  {
+                    "name": "MBW Faktura STK",
+                    "value": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/MBW • Faktura za STK náklady 8000 Kč-202504091306-Martin Pužík_1.pdf"
+                  },
+                  {
+                    "name": "Úvodní dopis - účetnictví",
+                    "value": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/Re_Ucetnictvi MBWs za 2023-202406251508-Pavel Brzák.pdf"
+                  },
+                  {
+                    "name": "Desktop scan test",
+                    "value": "/Users/m.a.j.puzik/Desktop/scan_20250808_094531_ocr.pdf"
+                  }
+                ]
+              },
+              "name": "selectedFile"
+            }
+          ]
+        },
+        "respondWith": "allAnswers",
+        "options": {
+          "formSubmitButtonLabel": "Zpracovat dokument"
+        }
+      },
+      "id": "form_selector",
+      "name": "Výběr dokumentu",
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 2.1,
+      "position": [420, 300]
+    },
+    {
+      "parameters": {
+        "filePath": "={{ $json.selectedFile }}"
+      },
+      "id": "read_binary",
+      "name": "Načíst PDF",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [620, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Validation Engine pro obchodní dokumenty\n// Implementuje business rules místo keyword matchingu\n\nconst content = items[0].binary.data ? Buffer.from(items[0].binary.data, 'base64').toString('utf-8') : '';\nconst filename = items[0].json.selectedFile?.split('/').pop() || 'unknown.pdf';\n\n// Validační pravidla pro každý typ dokumentu\nconst validationRules = {\n  faktura: {\n    requiredFields: 4,\n    mandatoryPatterns: [\n      /(?:faktura|invoice)/i,\n      /\\d+[,.]?\\d*\\s*k?č/i\n    ],\n    forbiddenPatterns: [\n      /(?:s\\s*pozdravem|best\\s*regards)/i,\n      /(?:příloha|attachment)/i,\n      /(?:zasíláme\\s*vám|posíláme)/i\n    ],\n    fieldPatterns: {\n      cislo_faktury: /(?:faktura|invoice)\\s*č\\.?\\s*:?\\s*([A-Z0-9\\-\\/]+)/i,\n      datum_vystaveni: /datum\\s*vystavení\\s*:?\\s*(\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{4})/i,\n      celkova_castka: /(?:celkem|total|k\\s*úhradě)\\s*:?\\s*([\\d\\s,]+[,.]?\\d*)\\s*k?č/i,\n      ico: /ičo?\\s*:?\\s*(\\d{8})/i,\n      dic: /dič?\\s*:?\\s*(cz\\d{8,10})/i,\n      vs: /(?:variabilní\\s*symbol|vs)\\s*:?\\s*(\\d+)/i\n    },\n    confidenceThreshold: 0.7\n  },\n  \n  bankovni_vypis: {\n    requiredFields: 5,\n    mandatoryPatterns: [\n      /(?:výpis|statement)/i,\n      /(?:zůstatek|balance)/i,\n      /(?:transakce|pohyb|operace)/i,\n      /\\d{2,6}[\\-\\/]?\\d{4}/\n    ],\n    forbiddenPatterns: [\n      /(?:s\\s*pozdravem|best\\s*regards)/i,\n      /(?:zasíláme\\s*výpis|posíláme)/i,\n      /(?:v\\s*příloze|attachment)/i\n    ],\n    fieldPatterns: {\n      cislo_uctu: /(?:číslo\\s*účtu|účet)\\s*:?\\s*([\\d\\-\\/\\s]+)/i,\n      obdobi_od: /období\\s*od\\s*:?\\s*(\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{4})/i,\n      obdobi_do: /období\\s*do\\s*:?\\s*(\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{4})/i,\n      pocatecni_zustatek: /počáteční\\s*zůstatek\\s*:?\\s*([-]?[\\d\\s,]+[,.]?\\d*)\\s*k?č/i,\n      konecny_zustatek: /konečný\\s*zůstatek\\s*:?\\s*([-]?[\\d\\s,]+[,.]?\\d*)\\s*k?č/i\n    },\n    confidenceThreshold: 0.8\n  },\n  \n  uvodni_dopis: {\n    requiredFields: 1,\n    mandatoryPatterns: [\n      /(?:s\\s*pozdravem|best\\s*regards|dear|vážen[ýá])/i\n    ],\n    forbiddenPatterns: [],\n    fieldPatterns: {\n      predmet: /(?:předmět|subject)\\s*:?\\s*(.+?)(?:\\n|$)/i,\n      datum: /(\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{4})/\n    },\n    confidenceThreshold: 0.5\n  }\n};\n\n// Funkce pro validaci dokumentu\nfunction validateDocument(content, rules) {\n  let score = 0;\n  let extractedFields = {};\n  let failedTests = [];\n  \n  // 1. Test povinných vzorů\n  let mandatoryPassed = 0;\n  for (const pattern of rules.mandatoryPatterns) {\n    if (pattern.test(content)) {\n      mandatoryPassed++;\n    } else {\n      failedTests.push(`Missing mandatory pattern: ${pattern}`);\n    }\n  }\n  \n  // Pokud chybí povinné vzory, confidence = 0\n  if (mandatoryPassed < rules.mandatoryPatterns.length) {\n    return { confidence: 0, fields: {}, failedTests };\n  }\n  \n  // 2. Test zakázaných vzorů\n  for (const pattern of rules.forbiddenPatterns) {\n    if (pattern.test(content)) {\n      failedTests.push(`Contains forbidden pattern: ${pattern}`);\n      return { confidence: 0, fields: {}, failedTests };\n    }\n  }\n  \n  // 3. Extrakce polí\n  let fieldCount = 0;\n  for (const [fieldName, pattern] of Object.entries(rules.fieldPatterns)) {\n    const match = content.match(pattern);\n    if (match) {\n      extractedFields[fieldName] = match[1]?.trim();\n      fieldCount++;\n    }\n  }\n  \n  // 4. Výpočet confidence\n  const mandatoryWeight = 0.6;\n  const fieldWeight = 0.4;\n  \n  const mandatoryConfidence = mandatoryPassed / rules.mandatoryPatterns.length;\n  let fieldConfidence = fieldCount / Object.keys(rules.fieldPatterns).length;\n  \n  // Penalizace za nedostatek polí\n  if (fieldCount < rules.requiredFields) {\n    fieldConfidence *= 0.5;\n    failedTests.push(`Only ${fieldCount} fields found, required: ${rules.requiredFields}`);\n  }\n  \n  const confidence = (mandatoryConfidence * mandatoryWeight) + (fieldConfidence * fieldWeight);\n  \n  return { confidence, fields: extractedFields, failedTests };\n}\n\n// Strukturální analýza dokumentu\nfunction analyzeStructure(content) {\n  return {\n    length: content.length,\n    lines: content.split('\\n').length,\n    words: content.split(/\\s+/).length,\n    hasNumbers: /\\d/.test(content),\n    hasDates: /\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{4}/.test(content),\n    hasAmounts: /\\d+[,.]?\\d*\\s*k?č/i.test(content),\n    hasICO: /ičo?\\s*:?\\s*\\d{8}/i.test(content),\n    hasAccount: /\\d{2,6}[\\-\\/]?\\d{4}/.test(content),\n    isLetter: /(?:s\\s*pozdravem|dear|vážen)/i.test(content),\n    isAttachmentRef: /(?:v\\s*příloze|příloha|attachment)/i.test(content),\n    hasSignature: /(?:podpis|signature)/i.test(content)\n  };\n}\n\n// Hlavní klasifikace\nlet results = [];\n\nfor (const [docType, rules] of Object.entries(validationRules)) {\n  const validation = validateDocument(content, rules);\n  results.push({\n    type: docType,\n    confidence: validation.confidence,\n    fields: validation.fields,\n    failedTests: validation.failedTests\n  });\n}\n\n// Seřadit podle confidence\nresults.sort((a, b) => b.confidence - a.confidence);\n\nconst bestMatch = results[0];\nconst structure = analyzeStructure(content);\n\n// Určení finálního typu\nlet finalType = 'neznamy';\nlet finalConfidence = bestMatch.confidence;\nlet finalFields = bestMatch.fields;\n\nif (bestMatch.confidence >= validationRules[bestMatch.type].confidenceThreshold) {\n  finalType = bestMatch.type;\n} else if (structure.isLetter && structure.isAttachmentRef) {\n  finalType = 'uvodni_dopis';\n  finalConfidence = 0.9;\n}\n\n// Příprava výstupu\nreturn [\n  {\n    json: {\n      filename: filename,\n      documentType: finalType,\n      confidence: finalConfidence,\n      extractedFields: finalFields,\n      structure: structure,\n      validationResults: results,\n      timestamp: new Date().toISOString(),\n      validationEngine: 'Business Rules v2.0'\n    }\n  }\n];"
+      },
+      "id": "validation_engine",
+      "name": "Validační Engine",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [820, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extrakce textu z PDF pomocí lokálních nástrojů\n// Fallback když AnyParser není dostupný\n\nconst { exec } = require('child_process');\nconst util = require('util');\nconst execAsync = util.promisify(exec);\nconst fs = require('fs').promises;\nconst path = require('path');\n\nconst filepath = items[0].json.selectedFile;\nconst filename = path.basename(filepath);\n\ntry {\n  // Pokus o extrakci textu pomocí pdftotext\n  const { stdout, stderr } = await execAsync(`pdftotext -layout \"${filepath}\" -`, {\n    maxBuffer: 10 * 1024 * 1024 // 10MB buffer\n  });\n  \n  const extractedText = stdout || '';\n  \n  // Pokud text je prázdný, zkus OCR\n  let finalText = extractedText;\n  if (extractedText.length < 100) {\n    console.log('Text příliš krátký, zkouším OCR...');\n    \n    // Konverze PDF na obrázek a OCR\n    const tempImage = `/tmp/${filename}.png`;\n    await execAsync(`convert -density 300 \"${filepath}[0]\" \"${tempImage}\"`);\n    \n    const { stdout: ocrText } = await execAsync(`tesseract \"${tempImage}\" - -l ces+eng`, {\n      maxBuffer: 10 * 1024 * 1024\n    });\n    \n    finalText = ocrText || extractedText;\n    \n    // Smaž dočasný soubor\n    try {\n      await fs.unlink(tempImage);\n    } catch (e) {}\n  }\n  \n  return [\n    {\n      json: {\n        filename: filename,\n        filepath: filepath,\n        extractedText: finalText,\n        textLength: finalText.length,\n        extractionMethod: finalText.length > extractedText.length ? 'OCR' : 'pdftotext'\n      },\n      binary: {\n        data: Buffer.from(finalText).toString('base64')\n      }\n    }\n  ];\n  \n} catch (error) {\n  return [\n    {\n      json: {\n        filename: filename,\n        filepath: filepath,\n        error: error.message,\n        extractedText: '',\n        extractionMethod: 'failed'\n      }\n    }\n  ];\n}"
+      },
+      "id": "text_extractor",
+      "name": "Text Extractor",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [820, 500]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 9d51c86467e7b7e17a8748722ff1a24226c94a7e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "document",
+              "value": "={{ $binary.data }}",
+              "parameterType": "formBinaryData"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.documentType }} - {{ $json.filename }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $json.documentType === 'faktura' ? 1 : $json.documentType === 'bankovni_vypis' ? 2 : 3 }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.documentType }},{{ Object.keys($json.extractedFields).join(',') }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "paperless_upload",
+      "name": "Upload do Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1220, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Příprava dat pro Paperless API\n// Mapování validation engine výstupu na Paperless formát\n\nconst validation = items[0].json;\nconst fields = validation.extractedFields || {};\n\n// Příprava tagů podle typu dokumentu a extrahovaných polí\nlet tags = [validation.documentType];\n\n// Přidej tagy podle obsahu\nif (fields.ico) tags.push(`ico-${fields.ico}`);\nif (fields.dic) tags.push(`dic-${fields.dic}`);\nif (fields.vs) tags.push(`vs-${fields.vs}`);\nif (fields.cislo_faktury) tags.push(`inv-${fields.cislo_faktury}`);\nif (fields.cislo_uctu) tags.push(`account-${fields.cislo_uctu.replace(/[\\s\\/]/g, '')}`);\n\n// Přidej tagy podle confidence\nif (validation.confidence >= 0.9) tags.push('high-confidence');\nelse if (validation.confidence >= 0.7) tags.push('medium-confidence');\nelse tags.push('low-confidence');\n\n// Přidej strukturální tagy\nif (validation.structure.isLetter) tags.push('letter');\nif (validation.structure.isAttachmentRef) tags.push('has-attachment');\n\n// Určení korespondenta podle názvu souboru nebo obsahu\nlet correspondent = 'Unknown';\nif (validation.filename.includes('MBW')) correspondent = 'MyBrainWorks s.r.o.';\nelse if (fields.dodavatel) correspondent = fields.dodavatel;\n\n// Sestavení poznámky s extrahovanými daty\nlet notes = `Validation Engine v2.0\\n`;\nnotes += `Document Type: ${validation.documentType}\\n`;\nnotes += `Confidence: ${(validation.confidence * 100).toFixed(1)}%\\n`;\nnotes += `\\nExtracted Fields:\\n`;\n\nfor (const [key, value] of Object.entries(fields)) {\n  notes += `- ${key}: ${value}\\n`;\n}\n\nnotes += `\\nValidation Results:\\n`;\nfor (const result of validation.validationResults) {\n  notes += `- ${result.type}: ${(result.confidence * 100).toFixed(1)}%\\n`;\n  if (result.failedTests.length > 0) {\n    notes += `  Failed: ${result.failedTests[0]}\\n`;\n  }\n}\n\nreturn [\n  {\n    json: {\n      title: `${validation.documentType.toUpperCase()} - ${validation.filename}`,\n      document_type: validation.documentType,\n      correspondent: correspondent,\n      tags: tags.join(','),\n      notes: notes,\n      custom_fields: fields,\n      confidence: validation.confidence,\n      filename: validation.filename\n    }\n  }\n];"
+      },
+      "id": "prepare_paperless",
+      "name": "Příprava pro Paperless",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1020, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Finální statistiky a report\n\nconst validation = items[0].json;\nconst paperlessData = items[1]?.json || {};\n\nconst report = {\n  summary: {\n    filename: validation.filename,\n    documentType: validation.documentType,\n    confidence: `${(validation.confidence * 100).toFixed(1)}%`,\n    extractedFields: Object.keys(validation.extractedFields || {}).length,\n    validationEngine: 'Business Rules v2.0'\n  },\n  \n  classification: {\n    detected: validation.documentType,\n    isCorrect: validation.confidence >= 0.7,\n    reason: validation.confidence < 0.7 ? \n      'Low confidence - manual review recommended' : \n      'High confidence - automated classification'\n  },\n  \n  extractedData: validation.extractedFields || {},\n  \n  structuralAnalysis: {\n    isLetter: validation.structure.isLetter,\n    isAttachmentReference: validation.structure.isAttachmentRef,\n    hasSignature: validation.structure.hasSignature,\n    documentLength: validation.structure.length,\n    hasICO: validation.structure.hasICO,\n    hasAmounts: validation.structure.hasAmounts\n  },\n  \n  validationDetails: validation.validationResults.map(r => ({\n    type: r.type,\n    confidence: `${(r.confidence * 100).toFixed(1)}%`,\n    fieldsFound: Object.keys(r.fields).length,\n    issues: r.failedTests.length > 0 ? r.failedTests[0] : 'None'\n  })),\n  \n  paperlessUpload: paperlessData.id ? {\n    status: 'Success',\n    documentId: paperlessData.id,\n    url: `http://localhost:8050/documents/${paperlessData.id}/`\n  } : {\n    status: 'Pending',\n    message: 'Document ready for upload'\n  },\n  \n  processingTime: new Date().toISOString()\n};\n\n// Výstup pro zobrazení\nconsole.log('\\n' + '='.repeat(60));\nconsole.log('📊 VALIDATION ENGINE REPORT');\nconsole.log('='.repeat(60));\nconsole.log(`📄 File: ${report.summary.filename}`);\nconsole.log(`📝 Type: ${report.summary.documentType} (${report.summary.confidence})`);\nconsole.log(`✅ Classification: ${report.classification.isCorrect ? 'CORRECT' : 'NEEDS REVIEW'}`);\nconsole.log(`🔍 Extracted Fields: ${report.summary.extractedFields}`);\n\nif (Object.keys(report.extractedData).length > 0) {\n  console.log('\\n📋 Extracted Data:');\n  for (const [key, value] of Object.entries(report.extractedData)) {\n    console.log(`   ${key}: ${value}`);\n  }\n}\n\nconsole.log('\\n📊 Validation Scores:');\nfor (const detail of report.validationDetails) {\n  console.log(`   ${detail.type}: ${detail.confidence}`);\n}\n\nconsole.log('='.repeat(60));\n\nreturn [\n  {\n    json: report\n  }\n];"
+      },
+      "id": "final_report",
+      "name": "Finální Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1420, 300]
+    }
+  ],
+  "connections": {
+    "form_selector": {
+      "main": [
+        [
+          {
+            "node": "read_binary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "read_binary": {
+      "main": [
+        [
+          {
+            "node": "text_extractor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "text_extractor": {
+      "main": [
+        [
+          {
+            "node": "validation_engine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "validation_engine": {
+      "main": [
+        [
+          {
+            "node": "prepare_paperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "prepare_paperless": {
+      "main": [
+        [
+          {
+            "node": "paperless_upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "paperless_upload": {
+      "main": [
+        [
+          {
+            "node": "final_report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "validation-engine-v2"
+  },
+  "tags": []
+}

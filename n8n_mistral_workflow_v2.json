@@ -1,0 +1,122 @@
+{
+  "name": "Mistral Document Classification CZ v2",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "mistral-classify-v2"
+      },
+      "id": "webhook-v2",
+      "name": "Webhook Document Input",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "webhookId": "mistral-classify-v2"
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/classify",
+        "method": "POST",
+        "bodyParametersJson": "={{ JSON.stringify({\n  text: $json.text,\n  filename: $json.filename,\n  model: 'mistral',\n  language: 'cs'\n}) }}",
+        "headerParametersJson": "={\"Content-Type\": \"application/json\"}"
+      },
+      "id": "mcp-classify",
+      "name": "MCP Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Process classification results\nconst input = items[0].json;\nlet classification = input.classification || 'ostatni';\nlet confidence = input.confidence || 0.5;\nlet tags = input.tags || [];\n\n// Validate category\nconst validCategories = [\n  'faktura', 'platba', 'vypis', 'reklama', 'smlouva',\n  'soudni', 'policie', 'urad', 'korespondence', 'nabidka', 'ostatni'\n];\n\nif (!validCategories.includes(classification)) {\n  classification = 'ostatni';\n  confidence = 0.3;\n}\n\n// Check for priority documents\nlet priority = 'normal';\nif (['soudni', 'policie', 'urad'].includes(classification)) {\n  priority = 'high';\n  tags.push('urgent');\n} else if (['faktura', 'platba'].includes(classification)) {\n  priority = 'medium';\n}\n\n// Skip advertisements\nlet action = 'process';\nif (classification === 'reklama') {\n  action = 'skip';\n}\n\nreturn [{\n  json: {\n    classification: classification,\n    confidence: confidence,\n    tags: [...new Set(tags)],\n    priority: priority,\n    action: action,\n    folder: classification,\n    timestamp: new Date().toISOString(),\n    filename: input.filename\n  }\n}];"
+      },
+      "id": "process-results",
+      "name": "Process Classification",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status",
+              "value": "={{ $json.action === 'skip' ? 'skipped' : 'processed' }}"
+            },
+            {
+              "name": "message",
+              "value": "={{ $json.action === 'skip' ? 'Advertisement detected - skipped' : 'Document classified as ' + $json.classification }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "response",
+      "name": "Send Response",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Webhook Document Input": {
+      "main": [
+        [
+          {
+            "node": "MCP Classify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Classify": {
+      "main": [
+        [
+          {
+            "node": "Process Classification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Classification": {
+      "main": [
+        [
+          {
+            "node": "Send Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "saveDataSuccessExecution": "all",
+    "saveExecutionProgress": true,
+    "saveManualExecutions": true,
+    "executionTimeout": 300
+  },
+  "versionId": "mistral-cz-v2",
+  "meta": {
+    "instanceId": "document-classifier-v2"
+  },
+  "tags": [
+    {
+      "name": "document-processing",
+      "createdAt": "2025-08-08T10:00:00.000Z"
+    },
+    {
+      "name": "mistral-ai",
+      "createdAt": "2025-08-08T10:00:00.000Z"
+    },
+    {
+      "name": "czech-documents",
+      "createdAt": "2025-08-08T10:00:00.000Z"
+    }
+  ]
+}

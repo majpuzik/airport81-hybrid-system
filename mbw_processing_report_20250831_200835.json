@@ -1,0 +1,1719 @@
+{
+  "timestamp": "2025-08-31T20:08:35.202430",
+  "stats": {
+    "total": 100,
+    "processed": 64,
+    "invoices": 0,
+    "receipts": 0,
+    "bank_statements": 0,
+    "contracts": 0,
+    "unknown": 4,
+    "rejected": 4,
+    "uploaded": 0,
+    "failed": 96
+  },
+  "results": [
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdfx (kopie 2)/DrMax.cz_ Vaše faktura k objednávce č. 5640782259.-202405171217-_Dr.Max_.pdf",
+      "filename": "DrMax.cz_ Vaše faktura k objednávce č. 5640782259.-202405171217-_Dr.Max_.pdf",
+      "status": "rejected",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nízká confidence (0%) nebo neznámý typ",
+      "confidence": 0
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdfx (kopie 2)/Upomínka platby za fakturu 830100440881 ze dne 31.-202504010530-_Elli_.pdf",
+      "filename": "Upomínka platby za fakturu 830100440881 ze dne 31.-202504010530-_Elli_.pdf",
+      "status": "rejected",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nízká confidence (0%) nebo neznámý typ",
+      "confidence": 0
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dealersk%C3%A1%20smlouva%20Cubee[43].pdf",
+      "filename": "Dealersk%C3%A1%20smlouva%20Cubee[43].pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "07906081",
+        "supplier_dic": "CZ07906081",
+        "issue_date": "8.8.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:07906081",
+        "dic:CZ07906081",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 35
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dolni Chabry smlouva2 Engel.pdf",
+      "filename": "Dolni Chabry smlouva2 Engel.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250316-Your receipt from HeyGen Technology Inc. #2207-452-9681.pdf",
+      "filename": "20250316-Your receipt from HeyGen Technology Inc. #2207-452-9681.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250320-Poslední upomínka platby za fakturu 823000005229 z-9143.pdf",
+      "filename": "20250320-Poslední upomínka platby za fakturu 823000005229 z-9143.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250320-Poslední upomínka platby za fakturu 823000007416 z-9142.pdf",
+      "filename": "20250320-Poslední upomínka platby za fakturu 823000007416 z-9142.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250320-Poslední upomínka platby za fakturu 823000008579 z-9141.pdf",
+      "filename": "20250320-Poslední upomínka platby za fakturu 823000008579 z-9141.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250320-Poslední upomínka platby za fakturu 823000009654 z-9140.pdf",
+      "filename": "20250320-Poslední upomínka platby za fakturu 823000009654 z-9140.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250321-Poslední upomínka platby za fakturu 823000010727 z-8967.pdf",
+      "filename": "20250321-Poslední upomínka platby za fakturu 823000010727 z-8967.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250321-Poslední upomínka platby za fakturu 871100000051 z-8966.pdf",
+      "filename": "20250321-Poslední upomínka platby za fakturu 871100000051 z-8966.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250321-Poslední upomínka platby za fakturu 871100002343 z-8965.pdf",
+      "filename": "20250321-Poslední upomínka platby za fakturu 871100002343 z-8965.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100002343",
+        "issue_date": "02.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100002343",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250321-Poslední upomínka platby za fakturu 871100004471 z-8964.pdf",
+      "filename": "20250321-Poslední upomínka platby za fakturu 871100004471 z-8964.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250321-Poslední upomínka platby za fakturu 871100006523 z-8963.pdf",
+      "filename": "20250321-Poslední upomínka platby za fakturu 871100006523 z-8963.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250322-Splatnost faktury 802528835 [Active24]-8776.pdf",
+      "filename": "20250322-Splatnost faktury 802528835 [Active24]-8776.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250322-Your DeepL Pro invoice-8718.pdf",
+      "filename": "20250322-Your DeepL Pro invoice-8718.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "P",
+        "issue_date": "22.03.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:03",
+        "invoice:P",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250322-Your receipt from Eleven Labs Inc. #2642-9475-8682.pdf",
+      "filename": "20250322-Your receipt from Eleven Labs Inc. #2642-9475-8682.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250327-Your receipt from Celonis Inc. #2640-4648-7927.pdf",
+      "filename": "20250327-Your receipt from Celonis Inc. #2640-4648-7927.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250409-Fwd_ Problém s fakturací-5854.pdf",
+      "filename": "20250409-Fwd_ Problém s fakturací-5854.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "issue_date": "09.04.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:04",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250412-Upozornění na nově vystavenou fakturu v ESCO Portá-5254.pdf",
+      "filename": "20250412-Upozornění na nově vystavenou fakturu v ESCO Portá-5254.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_name": "Od: ČEZ ESCO, a.s. <info@cezesco.cz>",
+        "issue_date": "12.04.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:04",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250413-Your receipt from ZEMITH.COM #2415-7573-4994.pdf",
+      "filename": "20250413-Your receipt from ZEMITH.COM #2415-7573-4994.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250415-2. Upomínka platby za fakturu 830100440881 ze dne -4791.pdf",
+      "filename": "20250415-2. Upomínka platby za fakturu 830100440881 ze dne -4791.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250417-Your receipt from Stability AI Ltd #2217-1178-4164.pdf",
+      "filename": "20250417-Your receipt from Stability AI Ltd #2217-1178-4164.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250418-Home Assistant Cloud subscription receipt-4140.pdf",
+      "filename": "20250418-Home Assistant Cloud subscription receipt-4140.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250419-Potvrzení objednávky č. 12144956 _ Zálohová faktur-3885.pdf",
+      "filename": "20250419-Potvrzení objednávky č. 12144956 _ Zálohová faktur-3885.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "260815289",
+        "supplier_ico": "26004216",
+        "supplier_dic": "CZ26004216",
+        "supplier_name": "Od: \"TONERMAX, s.r.o. - www.tonermax.cz\" <objednavka@tonermax.eu>",
+        "issue_date": "19.04.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:04",
+        "invoice:260815289",
+        "ico:26004216",
+        "dic:CZ26004216",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 90
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250422-Your DeepL Pro invoice-3386.pdf",
+      "filename": "20250422-Your DeepL Pro invoice-3386.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "P",
+        "issue_date": "22.04.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:04",
+        "invoice:P",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250422-Your Pocket Wi-Fi solution is 70% off—no contracts-3323.pdf",
+      "filename": "20250422-Your Pocket Wi-Fi solution is 70% off—no contracts-3323.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250422-Your receipt from Eleven Labs Inc. #2460-3168-3302.pdf",
+      "filename": "20250422-Your receipt from Eleven Labs Inc. #2460-3168-3302.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250427-Your receipt from Celonis Inc. #2709-5043-2356.pdf",
+      "filename": "20250427-Your receipt from Celonis Inc. #2709-5043-2356.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250427-Your receipt from KREA.AI, Inc. #2800-3135-2354.pdf",
+      "filename": "20250427-Your receipt from KREA.AI, Inc. #2800-3135-2354.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250429-FW_ Your receipt from Celonis Inc. #2709-5043-1979.pdf",
+      "filename": "20250429-FW_ Your receipt from Celonis Inc. #2709-5043-1979.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250429-Poslední upomínka platby za fakturu 830100440881 z-2162.pdf",
+      "filename": "20250429-Poslední upomínka platby za fakturu 830100440881 z-2162.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250502-Prohlédněte si fakturu za Microsoft 365 Business B-1245.pdf",
+      "filename": "20250502-Prohlédněte si fakturu za Microsoft 365 Business B-1245.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250505-Your receipt from Midjourney Inc #2311-4012-7052-902.pdf",
+      "filename": "20250505-Your receipt from Midjourney Inc #2311-4012-7052-902.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250509-Provádíme změny v právních smlouvách ke službám Pa-89.pdf",
+      "filename": "20250509-Provádíme změny v právních smlouvách ke službám Pa-89.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250509-Stilmanufaktur ade ...-209.pdf",
+      "filename": "20250509-Stilmanufaktur ade ...-209.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/20250511-Uhrazená faktura č. 2595059610-42558.pdf",
+      "filename": "20250511-Uhrazená faktura č. 2595059610-42558.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "2595059610",
+        "issue_date": "11.05.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:05",
+        "invoice:2595059610",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/Dolni Chabry smlouva2 Engel.pdf",
+      "filename": "Dolni Chabry smlouva2 Engel.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/1vsechna-pdf/PO_PFO_smlouva.pdf",
+      "filename": "PO_PFO_smlouva.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-01.pdf",
+      "filename": "statement-2024-01.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.01.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:01",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-02.pdf",
+      "filename": "statement-2024-02.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.02.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-03.pdf",
+      "filename": "statement-2024-03.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.03.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-04.pdf",
+      "filename": "statement-2024-04.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.04.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:04",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-05.pdf",
+      "filename": "statement-2024-05.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.05.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-06.pdf",
+      "filename": "statement-2024-06.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.06.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:06",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-07.pdf",
+      "filename": "statement-2024-07.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.07.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-08.pdf",
+      "filename": "statement-2024-08.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.08.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-09.pdf",
+      "filename": "statement-2024-09.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.09.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:09",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-10.pdf",
+      "filename": "statement-2024-10.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.10.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-11.pdf",
+      "filename": "statement-2024-11.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.11.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Dropbox-backup/statement-2024-12.pdf",
+      "filename": "statement-2024-12.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "issue_date": "01.12.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 823000005229 ze dne 31.03.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 823000005229 ze dne 31.03.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000005229",
+        "issue_date": "31.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "invoice:823000005229",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 823000007416 ze dne 30.06.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 823000007416 ze dne 30.06.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000007416",
+        "issue_date": "30.06.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:06",
+        "invoice:823000007416",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 823000008579 ze dne 31.07.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 823000008579 ze dne 31.07.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000008579",
+        "issue_date": "31.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "invoice:823000008579",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 823000009654 ze dne 31.08.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 823000009654 ze dne 31.08.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000009654",
+        "issue_date": "31.08.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "invoice:823000009654",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 823000010727 ze dne 30.09.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 823000010727 ze dne 30.09.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000010727",
+        "issue_date": "30.09.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:09",
+        "invoice:823000010727",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 830100357229 ze dne 28.02.2025.pdf",
+      "filename": "2. Upomínka platby za fakturu 830100357229 ze dne 28.02.2025.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "830100357229",
+        "issue_date": "28.02.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:02",
+        "invoice:830100357229",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 871100000051 ze dne 05.11.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 871100000051 ze dne 05.11.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100000051",
+        "issue_date": "05.11.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "invoice:871100000051",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 871100002343 ze dne 02.12.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 871100002343 ze dne 02.12.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100002343",
+        "issue_date": "02.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100002343",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 871100003216 ze dne 13.12.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 871100003216 ze dne 13.12.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100003216",
+        "issue_date": "13.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100003216",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 871100004471 ze dne 31.12.2024.pdf",
+      "filename": "2. Upomínka platby za fakturu 871100004471 ze dne 31.12.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100004471",
+        "issue_date": "31.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100004471",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/2. Upomínka platby za fakturu 871100006523 ze dne 31.01.2025.pdf",
+      "filename": "2. Upomínka platby za fakturu 871100006523 ze dne 31.01.2025.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100006523",
+        "issue_date": "31.01.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:01",
+        "invoice:871100006523",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Aleš Kartal - faktury a vyplacené peníze (03_2025).pdf",
+      "filename": "Aleš Kartal - faktury a vyplacené peníze (03_2025).pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {},
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/ČEZ ESCO – MĚSÍČNÍ fakturace za výkup elektřiny (Self-billing).pdf",
+      "filename": "ČEZ ESCO – MĚSÍČNÍ fakturace za výkup elektřiny (Self-billing).pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {},
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Re_ AIU - faktura po splatnosti.pdf",
+      "filename": "Re_ AIU - faktura po splatnosti.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_name": "Odesláno:              úterý 31. prosince 2024 3:24"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Re_ My Brain Works - nejasné položky - vydané faktury.pdf",
+      "filename": "Re_ My Brain Works - nejasné položky - vydané faktury.pdf",
+      "status": "rejected",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nízká confidence (0%) nebo neznámý typ",
+      "confidence": 0
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Re_ My Brain Works - nejasné položky - vydané faktury(1).pdf",
+      "filename": "Re_ My Brain Works - nejasné položky - vydané faktury(1).pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {},
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/RE_ My Brain Works - nejasné položky - vydané faktury(2).pdf",
+      "filename": "RE_ My Brain Works - nejasné položky - vydané faktury(2).pdf",
+      "status": "rejected",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nízká confidence (0%) nebo neznámý typ",
+      "confidence": 0
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 823000005229 ze dne 31.03.2024.pdf",
+      "filename": "Upomínka platby za fakturu 823000005229 ze dne 31.03.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000005229",
+        "issue_date": "31.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "invoice:823000005229",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 823000007416 ze dne 30.06.2024.pdf",
+      "filename": "Upomínka platby za fakturu 823000007416 ze dne 30.06.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000007416",
+        "issue_date": "30.06.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:06",
+        "invoice:823000007416",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 823000008579 ze dne 31.07.2024.pdf",
+      "filename": "Upomínka platby za fakturu 823000008579 ze dne 31.07.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000008579",
+        "issue_date": "31.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "invoice:823000008579",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 823000009654 ze dne 31.08.2024.pdf",
+      "filename": "Upomínka platby za fakturu 823000009654 ze dne 31.08.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000009654",
+        "issue_date": "31.08.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "invoice:823000009654",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 823000010727 ze dne 30.09.2024.pdf",
+      "filename": "Upomínka platby za fakturu 823000010727 ze dne 30.09.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "823000010727",
+        "issue_date": "30.09.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:09",
+        "invoice:823000010727",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 830100357229 ze dne 28.02.2025.pdf",
+      "filename": "Upomínka platby za fakturu 830100357229 ze dne 28.02.2025.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "830100357229",
+        "issue_date": "28.02.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:02",
+        "invoice:830100357229",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 871100000051 ze dne 05.11.2024.pdf",
+      "filename": "Upomínka platby za fakturu 871100000051 ze dne 05.11.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100000051",
+        "issue_date": "05.11.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "invoice:871100000051",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 871100002343 ze dne 02.12.2024.pdf",
+      "filename": "Upomínka platby za fakturu 871100002343 ze dne 02.12.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100002343",
+        "issue_date": "02.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100002343",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 871100003216 ze dne 13.12.2024.pdf",
+      "filename": "Upomínka platby za fakturu 871100003216 ze dne 13.12.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100003216",
+        "issue_date": "13.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100003216",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 871100004471 ze dne 31.12.2024.pdf",
+      "filename": "Upomínka platby za fakturu 871100004471 ze dne 31.12.2024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100004471",
+        "issue_date": "31.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:871100004471",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upomínka platby za fakturu 871100006523 ze dne 31.01.2025.pdf",
+      "filename": "Upomínka platby za fakturu 871100006523 ze dne 31.01.2025.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "871100006523",
+        "issue_date": "31.01.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:01",
+        "invoice:871100006523",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 55
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Upozornění na nově vystavenou fakturu v ESCO Portál.pdf",
+      "filename": "Upozornění na nově vystavenou fakturu v ESCO Portál.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_name": "Od:                       ČEZ ESCO, a.s. <info@cezesco.cz>"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email atta/Your DeepL Pro invoice.pdf",
+      "filename": "Your DeepL Pro invoice.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "P"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "invoice:P",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email attachments from Flow/3191142832faktura.pdf",
+      "filename": "3191142832faktura.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "64949320",
+        "supplier_dic": "CZ64949320",
+        "variable_symbol": "3191142832",
+        "supplier_name": "AXIGON a.s.",
+        "issue_date": "17.07.2019"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2019",
+        "month:07",
+        "ico:64949320",
+        "dic:CZ64949320",
+        "vs:3191142832",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 90
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email attachments from Flow/faktura_id_190941.pdf",
+      "filename": "faktura_id_190941.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "25757377",
+        "supplier_dic": "CZ25757377",
+        "total_amount": 14520.0,
+        "variable_symbol": "190941",
+        "due_date": "09.08.2019",
+        "supplier_name": "Dodavatel: NB účetnictví s.r.o.                                               FAKTURA - daňový doklad                              190941",
+        "issue_date": "26.07.2019"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2019",
+        "month:07",
+        "ico:25757377",
+        "dic:CZ25757377",
+        "vs:190941",
+        "amount:14520",
+        "amount:large",
+        "status:overdue",
+        "urgent",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email attachments from Flow/faktura-62130326.pdf",
+      "filename": "faktura-62130326.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "26058774",
+        "supplier_dic": "CZ26058774",
+        "total_amount": 456.0,
+        "variable_symbol": "62130326",
+        "supplier_name": "Web4U s.r.o.                                                              ISC Communication Czech a.s.",
+        "issue_date": "15.10.2019"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2019",
+        "month:10",
+        "ico:26058774",
+        "dic:CZ26058774",
+        "vs:62130326",
+        "amount:456",
+        "amount:small",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email attachments from Flow/fakturace-v-praxi.pdf",
+      "filename": "fakturace-v-praxi.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_name": "EDUZONE, s.r.o. | info@eduzone.cz | +420 602 156 391 | www.eduzone.cz | U státní dráhy 252/8, Praha 6",
+        "issue_date": "29.10.2019"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2019",
+        "month:10",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 90
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email attachments from Flow/invoice-7804.pdf",
+      "filename": "invoice-7804.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "GERU",
+        "supplier_name": "Tesla Lighting s.r.o.   Order Number:    7804"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "invoice:GERU",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Email attachments from Flow/Vydana faktura - 20190026.pdf",
+      "filename": "Vydana faktura - 20190026.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "05017777",
+        "supplier_dic": "CZ05017777",
+        "total_amount": 18634.0,
+        "supplier_name": "Créer s.r.o.",
+        "issue_date": "02.07.2019"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2019",
+        "month:07",
+        "ico:05017777",
+        "dic:CZ05017777",
+        "amount:18634",
+        "amount:large",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 80
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/bezdod elektrina 1.2025Detail_faktura_VS_7917002906_vystaveno_11022025_EAN_859182400605132996.pdf",
+      "filename": "bezdod elektrina 1.2025Detail_faktura_VS_7917002906_vystaveno_11022025_EAN_859182400605132996.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "variable_symbol": "7917002906",
+        "issue_date": "01.01.2025"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:01",
+        "vs:7917002906",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/emaily jako pdfEDC_smlouva_2652720241102 (1).pdf",
+      "filename": "emaily jako pdfEDC_smlouva_2652720241102 (1).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Nová smlouva - dodávky - firma(1).pdf",
+      "filename": "Nová smlouva - dodávky - firma(1).pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {},
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 40
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Nová smlouva - domácnost.pdf",
+      "filename": "Nová smlouva - domácnost.pdf",
+      "status": "failed",
+      "document_type": "contract",
+      "extracted_data": {},
+      "tags": [
+        "type:contract",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 45
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/smlouvy/EDC_smlouva_2652720241102.pdf",
+      "filename": "EDC_smlouva_2652720241102.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Vyuctovaci_faktura_bD_VS_7916009694_vystaveno_07082024.pdf",
+      "filename": "Vyuctovaci_faktura_bD_VS_7916009694_vystaveno_07082024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "08934061",
+        "supplier_dic": "CZ08934061",
+        "variable_symbol": "7916009694"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:08934061",
+        "dic:CZ08934061",
+        "vs:7916009694",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 60
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Vyuctovaci_faktura_bD_VS_7916011070_vystaveno_06092024.pdf",
+      "filename": "Vyuctovaci_faktura_bD_VS_7916011070_vystaveno_06092024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "08934061",
+        "supplier_dic": "CZ08934061"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:08934061",
+        "dic:CZ08934061",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 40
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Vyuctovaci_faktura_bD_VS_7916012603_vystaveno_05102024.pdf",
+      "filename": "Vyuctovaci_faktura_bD_VS_7916012603_vystaveno_05102024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "08934061",
+        "supplier_dic": "CZ08934061",
+        "variable_symbol": "7916012603"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:08934061",
+        "dic:CZ08934061",
+        "vs:7916012603",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 60
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Vyuctovaci_faktura_bD_VS_7916015756_vystaveno_06122024.pdf",
+      "filename": "Vyuctovaci_faktura_bD_VS_7916015756_vystaveno_06122024.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "08934061",
+        "supplier_dic": "CZ08934061",
+        "variable_symbol": "7916015756"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:08934061",
+        "dic:CZ08934061",
+        "vs:7916015756",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 60
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Elektrina/Vyuctovaci_faktura_bD_VS_7917002906_vystaveno_11022025[36].pdf",
+      "filename": "Vyuctovaci_faktura_bD_VS_7917002906_vystaveno_11022025[36].pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "08934061",
+        "supplier_dic": "CZ08934061",
+        "variable_symbol": "7917002906"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:08934061",
+        "dic:CZ08934061",
+        "vs:7917002906",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 60
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Plyn/faktura.pdf",
+      "filename": "faktura.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {},
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "confidence:low"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 30
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/Energie/Plyn/smlouva.pdf",
+      "filename": "smlouva.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240131_1_MCZB.pdf",
+      "filename": "269290450_20240131_1_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "opening_balance": 10392.82,
+        "closing_balance": 2429.22,
+        "issue_date": "30.12.2023"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2023",
+        "month:12",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    }
+  ]
+}

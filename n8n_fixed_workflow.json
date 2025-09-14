@@ -1,0 +1,324 @@
+{
+  "name": "PDF Parser Fixed No Undefined",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "filepath",
+              "value": "/Users/m.a.j.puzik/Desktop/scan_20250808_094531_ocr.pdf"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "setFilePath",
+      "name": "Set File Path",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "filePath": "={{ $json.filepath }}"
+      },
+      "id": "readBinary",
+      "name": "Read PDF",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.pdf.co/v1/file/upload/get-presigned-url",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "name",
+              "value": "={{ $json.filepath.split('/').pop() }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "getPresignedUrl",
+      "name": "Get Upload URL",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "={{ $json.presignedUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/pdf"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "options": {}
+      },
+      "id": "uploadFile",
+      "name": "Upload to S3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.pdf.co/v1/pdf/convert/to/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\"url\": \"{{ $node['getPresignedUrl'].json.url }}\", \"inline\": true, \"lang\": \"ces+eng\"}",
+        "options": {}
+      },
+      "id": "extractText",
+      "name": "Extract Text",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get data from previous nodes\nconst text = $json.body || $json.text || '';\nconst textLower = text.toLowerCase();\nconst filepath = $node['setFilePath'].json.filepath;\nconst filename = filepath.split('/').pop();\n\n// Document type detection\nlet docType = 'unknown';\nlet confidence = 0;\n\nconst scores = {\n  faktura: 0,\n  vypis: 0,\n  smlouva: 0,\n  objednavka: 0,\n  uctenka: 0\n};\n\n// Score calculation\nif (textLower.includes('faktura') || textLower.includes('invoice')) scores.faktura += 30;\nif (textLower.includes('daňový doklad')) scores.faktura += 30;\nif (textLower.includes('vyúčtování')) scores.faktura += 25;\nif (text.match(/IČO?:?\\s*\\d{8}/i)) scores.faktura += 15;\nif (text.match(/DIČ:?\\s*CZ\\d{8,10}/i)) scores.faktura += 15;\n\nif (textLower.includes('výpis') || textLower.includes('vypis')) scores.vypis += 30;\nif (textLower.includes('zůstatek')) scores.vypis += 20;\nif (text.match(/\\d{2,6}[-/]?\\d{4,10}\\/\\d{4}/)) scores.vypis += 10;\n\nif (textLower.includes('smlouva')) scores.smlouva += 30;\nif (textLower.includes('smluvní strany')) scores.smlouva += 25;\n\nif (textLower.includes('objednávka')) scores.objednavka += 30;\nif (textLower.includes('termín dodání')) scores.objednavka += 20;\n\nif (textLower.includes('účtenka')) scores.uctenka += 30;\nif (text.match(/(?:BKP|FIK|PKP):?\\s*[A-Z0-9-]+/i)) scores.uctenka += 30;\n\n// Determine type\nlet maxScore = 0;\nfor (const [type, score] of Object.entries(scores)) {\n  if (score > maxScore) {\n    maxScore = score;\n    docType = type;\n    confidence = Math.min(100, score);\n  }\n}\n\n// Extract fields\nconst customFields = {};\nconst tags = [];\n\nif (docType === 'faktura' || textLower.includes('vyúčtování')) {\n  // Invoice number\n  const invoiceMatch = text.match(/(?:faktura|vyúčtování).*?č\\.?\\s*(\\d+)/i);\n  if (invoiceMatch) {\n    customFields.cislo_faktury = invoiceMatch[1];\n    tags.push('faktura-' + invoiceMatch[1]);\n  }\n  \n  // IČO\n  const icoMatch = text.match(/IČO?:?\\s*(\\d{8})/i);\n  if (icoMatch) {\n    customFields.ico = icoMatch[1];\n    tags.push('ico-' + icoMatch[1]);\n  }\n  \n  // DIČ\n  const dicMatch = text.match(/DIČ:?\\s*(CZ\\d{8,10})/i);\n  if (dicMatch) {\n    customFields.dic = dicMatch[1];\n    tags.push('dic-' + dicMatch[1].toLowerCase());\n  }\n  \n  // Variable symbol\n  const vsMatch = text.match(/(?:VS|variabilní symbol):?\\s*(\\d+)/i);\n  if (vsMatch) {\n    customFields.variabilni_symbol = vsMatch[1];\n    tags.push('vs-' + vsMatch[1]);\n  }\n  \n  // Amount\n  const amountMatch = text.match(/celkem.*?([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (amountMatch) {\n    customFields.castka_celkem = amountMatch[1].replace(/\\s/g, '');\n    const amount = parseFloat(amountMatch[1].replace(/\\s/g, '').replace(',', '.'));\n    if (amount > 10000) tags.push('velka-faktura');\n    else tags.push('mala-faktura');\n  }\n  \n  // Dates\n  const dateMatch = text.match(/(?:datum vystavení|vystaveno):?\\s*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (dateMatch) {\n    customFields.datum_vystaveni = dateMatch[1];\n  }\n  \n  const dueMatch = text.match(/(?:datum splatnosti|splatnost):?\\s*(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (dueMatch) {\n    customFields.datum_splatnosti = dueMatch[1];\n  }\n  \n  // Supplier\n  const dodavatelMatch = text.match(/(?:dodavatel|vystavitel):?\\s*([^\\n]+)/i);\n  if (dodavatelMatch) {\n    customFields.dodavatel = dodavatelMatch[1].trim();\n  }\n  \n  // Customer\n  const odberatelMatch = text.match(/(?:odběratel|zákazník):?\\s*([^\\n]+)/i);\n  if (odberatelMatch) {\n    customFields.odberatel = odberatelMatch[1].trim();\n  }\n}\n\nif (docType === 'vypis') {\n  // Account number\n  const accountMatch = text.match(/(?:číslo účtu|č\\.ú\\.):?\\s*([\\d\\-\\/]+)/i);\n  if (accountMatch) {\n    customFields.cislo_uctu = accountMatch[1];\n    tags.push('ucet-' + accountMatch[1].replace(/[\\-\\/]/g, ''));\n  }\n  \n  // Bank\n  const banks = ['čsob', 'česká spořitelna', 'komerční banka', 'raiffeisenbank'];\n  for (const bank of banks) {\n    if (textLower.includes(bank)) {\n      customFields.banka = bank.toUpperCase();\n      tags.push('banka-' + bank.replace(/\\s+/g, '-'));\n      break;\n    }\n  }\n  \n  // Period\n  const periodMatch = text.match(/(?:období|za období):?\\s*([^\\n]+)/i);\n  if (periodMatch) {\n    customFields.obdobi = periodMatch[1].trim();\n  }\n  \n  // Balance\n  const balanceMatch = text.match(/(?:konečný zůstatek|zůstatek):?\\s*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (balanceMatch) {\n    customFields.zustatek = balanceMatch[1].replace(/\\s/g, '');\n  }\n}\n\nif (docType === 'uctenka') {\n  // EET\n  const eetMatch = text.match(/(?:BKP|FIK|PKP):?\\s*([A-Z0-9\\-]+)/i);\n  if (eetMatch) {\n    customFields.eet_kod = eetMatch[1];\n    tags.push('eet');\n  }\n  \n  // Amount\n  const amountMatch = text.match(/(?:celkem|total):?\\s*([\\d\\s]+[,.]?\\d*)\\s*(?:kč|czk)/i);\n  if (amountMatch) {\n    customFields.castka = amountMatch[1].replace(/\\s/g, '');\n  }\n  \n  // Date\n  const dateMatch = text.match(/(\\d{1,2}[.\\-]\\d{1,2}[.\\-]\\d{4})/i);\n  if (dateMatch) {\n    customFields.datum = dateMatch[1];\n  }\n}\n\n// Add year tags\nconst yearMatch = text.match(/20(2[3-9])/g);\nif (yearMatch && yearMatch.length > 0) {\n  const year = '20' + yearMatch[0].substring(2);\n  tags.push(year);\n  customFields.rok = year;\n}\n\n// Add document type tag\ntags.push(docType);\n\n// Determine correspondent\nlet correspondent = customFields.dodavatel || customFields.banka || 'Unknown';\nif (textLower.includes('bezdodavatele')) correspondent = 'BezDodavatele';\n\n// Create title\nconst title = `${docType.charAt(0).toUpperCase() + docType.slice(1)} - ${customFields.cislo_faktury || filename}`;\n\n// Return result\nreturn [{\n  json: {\n    // Original data\n    filepath: filepath,\n    filename: filename,\n    extracted_text: text.substring(0, 1000),\n    text_length: text.length,\n    \n    // Classification\n    document_type: docType,\n    confidence: confidence,\n    correspondent: correspondent,\n    \n    // Extracted fields\n    custom_fields: customFields,\n    fields_count: Object.keys(customFields).length,\n    \n    // Tags\n    tags: [...new Set(tags)],\n    \n    // Paperless data\n    paperless_data: {\n      title: title,\n      document_type: docType,\n      correspondent: correspondent,\n      tags: [...new Set(tags)].join(','),\n      custom_fields: JSON.stringify(customFields)\n    }\n  }\n}];"
+      },
+      "id": "parseDocument",
+      "name": "Parse Document",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1450, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 9d51c86467e7b7e17a8748722ff1a24226c94a7e"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{ $json.paperless_data.title }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $json.paperless_data.document_type }}"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{ $json.paperless_data.correspondent }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.paperless_data.tags }}"
+            },
+            {
+              "name": "custom_fields",
+              "value": "={{ $json.paperless_data.custom_fields }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "uploadPaperless",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1650, 300],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status",
+              "value": "={{ $json.id ? 'SUCCESS' : 'FAILED' }}"
+            },
+            {
+              "name": "message",
+              "value": "={{ $json.id ? 'Document uploaded to Paperless' : ($json.error || 'Upload failed') }}"
+            },
+            {
+              "name": "document_id",
+              "value": "={{ $json.id || 'N/A' }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $node['parseDocument'].json.document_type }}"
+            },
+            {
+              "name": "confidence",
+              "value": "={{ $node['parseDocument'].json.confidence }}%"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{ $node['parseDocument'].json.correspondent }}"
+            },
+            {
+              "name": "fields_extracted",
+              "value": "={{ $node['parseDocument'].json.fields_count }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $node['parseDocument'].json.tags.join(', ') }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "finalResult",
+      "name": "Final Result",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [1850, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Set File Path",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set File Path": {
+      "main": [
+        [
+          {
+            "node": "Read PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read PDF": {
+      "main": [
+        [
+          {
+            "node": "Get Upload URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Upload URL": {
+      "main": [
+        [
+          {
+            "node": "Upload to S3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload to S3": {
+      "main": [
+        [
+          {
+            "node": "Extract Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Text": {
+      "main": [
+        [
+          {
+            "node": "Parse Document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Document": {
+      "main": [
+        [
+          {
+            "node": "Upload to Paperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload to Paperless": {
+      "main": [
+        [
+          {
+            "node": "Final Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "fixed-v1",
+  "id": "pdf-parser-fixed"
+}

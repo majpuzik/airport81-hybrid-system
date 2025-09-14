@@ -1,0 +1,164 @@
+{
+  "batch_start": 39000,
+  "batch_end": 40000,
+  "timestamp": "2025-08-02T20:37:48.144466",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 521,
+    "unknown": 189,
+    "order": 181,
+    "notification": 35,
+    "subscription": 21,
+    "receipt": 24,
+    "shipping": 16,
+    "contract": 10,
+    "bank_statement": 3
+  },
+  "metadata_samples": [
+    {
+      "file": "Sloučenina, která může prodloužit život; Přínos ba-202409111628-Zdraví od Epoch Times.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 5135
+    },
+    {
+      "file": "News 5th September 2024-202409052102-_Blockchain.com_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2573
+    },
+    {
+      "file": "Neuer Treffer für deine Mercedes-Benz GLC (alle), -202503142150-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 4633
+    },
+    {
+      "file": "http___videoredefined.com___media___js_netsoltrade-202408220204-_WordPress_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 574
+    },
+    {
+      "file": "Give your child cleaner air, automatically 🍃-202504101803-_Sensibo_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1458
+    },
+    {
+      "file": "🌸 Jaro klepe na dveře - připravte se na svěží zač-202502250957-🛠 HobyNaradi.cz.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 3027
+    },
+    {
+      "file": "SLEVA 15 % na střelecké příslušenství ⏰ Platí jen -202406251300-_Marek z Balistas_.pdf",
+      "type": "invoice",
+      "score": 19,
+      "metadata": {
+        "ico": "28618475"
+      },
+      "text_length": 4632
+    },
+    {
+      "file": "Kiiory Graphene Bomber Jacket & Gravity Pick Plus -202412170624-_Backer-Update_.pdf",
+      "type": "order",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2271
+    },
+    {
+      "file": "Upozornění_ začátek události je neděle, duben 20, -202504202045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 525
+    },
+    {
+      "file": "Aktivujte si roční Smart!-202411271011-_Allegro_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1314
+    },
+    {
+      "file": "Nejnižší ceny v kategorii Zdraví a krása-202408301235-_Allegro_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2281
+    },
+    {
+      "file": "Want a Simple iPad_ This Should Be Your Pick-202503241802-_CNET Insider_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2711
+    },
+    {
+      "file": "Get Ready for Big Rewards! The Holiday Festivities-202412160913-_Vidnoz AI_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 843
+    },
+    {
+      "file": "Das gute Gefühl, alles geregelt zu haben, wenn umf-202503021103-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 5760
+    },
+    {
+      "file": "Top 5 nejlepších článků-202410131030-Juraj Skovajsa _ Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3037
+    },
+    {
+      "file": "Získejte dárek k nápoji Premiant Drink-202501211434-_Penco.cz_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1861
+    },
+    {
+      "file": "Potvrzení objednávky Google Play ze dne 16. 12. 20-202412160622-_Google Play_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3343
+    },
+    {
+      "file": " Šťastný nový rok Vám i Vašemu pejskovi! -202501011232-_Pethome.cz_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 3815
+    },
+    {
+      "file": "Jak by dopadly eurovolby, kdyby měl každý dva hlas-202405180957-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2365
+    },
+    {
+      "file": "BLACK WEEK 🖤 Sleva 25 %-202411250950-_Tchibo Newsletter_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2979
+    }
+  ],
+  "error_count": 0
+}

@@ -1,0 +1,162 @@
+{
+  "batch_start": 16000,
+  "batch_end": 17000,
+  "timestamp": "2025-08-02T20:34:37.866636",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "receipt": 23,
+    "unknown": 177,
+    "invoice": 533,
+    "order": 170,
+    "notification": 41,
+    "contract": 12,
+    "bank_statement": 4,
+    "subscription": 20,
+    "shipping": 20
+  },
+  "metadata_samples": [
+    {
+      "file": "Jarní Dny Marianne se blíží - vyberte si z naší na-202504090712-_Profimed.cz_.pdf",
+      "type": "receipt",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2469
+    },
+    {
+      "file": "Samsung Days jsou opět tady💥-202504071726-_Samsung_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 902
+    },
+    {
+      "file": "QNAP Supercharges Qsirch with AI-Powered RAG Searc-202503312023-_QNAP Systems, Inc._.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 4681
+    },
+    {
+      "file": "Last chance_ Join our webinar Thursday with Autode-202412101604-_Productboard_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1568
+    },
+    {
+      "file": "Last Call - Survey closes on Jan 8-202501022348-_Yubico_.pdf",
+      "type": "receipt",
+      "score": 1,
+      "metadata": {},
+      "text_length": 667
+    },
+    {
+      "file": "🎄 Vánoční dárek od hobynaradi.cz🎄-202412241109-🛠 HobyNaradi.cz.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2523
+    },
+    {
+      "file": "Steps to Submitting your First Campaign-202501011907-_SignalWire_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 2033
+    },
+    {
+      "file": "Kompendium @365tipů recommended Páteční koktejl Ko-202505161819-_Substack_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 726
+    },
+    {
+      "file": "Mzdy-202405-202406050959-Daniela Pauknerová.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 429
+    },
+    {
+      "file": "Podívejte se, na jaké knížky se můžete těšit! -202505010934-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 1830
+    },
+    {
+      "file": "Frühjahrsputz 🧹-202501091003-_Jonas von Foto Erhardt_.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {},
+      "text_length": 3627
+    },
+    {
+      "file": "BIG Google Maps News — This Is A Huge Upgrade-202411012014-_Tom's Guide_.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2531
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-beat v nástroj-202505142029-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 568
+    },
+    {
+      "file": "These 12 States Are Banning the Sale of Gas-Powere-202405221233-_CNET Cars_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2462
+    },
+    {
+      "file": "Following up... I found a solution to your irritat-202502112240-_Lisa Augustin puzik_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 3828
+    },
+    {
+      "file": "Späte Mahlzeiten und Darmkrebsrisiko _ Wie gut sin-202406101632-_Medscape Nachrichten_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2824
+    },
+    {
+      "file": "🛠 Přinášíme Vám víkendovou slevu 10% na vše... pr-202502150738-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 2643
+    },
+    {
+      "file": "Welcome to the eToro community!-202412211757-_eToro_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 3092
+    },
+    {
+      "file": "Hi, M.A.J., we saved it-202504070118-_AliExpress_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 1104
+    },
+    {
+      "file": "ASA vs. Other Filaments_ Find Out What Sets It Apa-202405311027-_SainSmart_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1613
+    }
+  ],
+  "error_count": 0
+}

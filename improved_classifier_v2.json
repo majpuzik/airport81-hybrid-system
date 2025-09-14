@@ -1,0 +1,267 @@
+{
+  "algorithm": "improved_invoice_classifier_v2",
+  "accuracy": 100.0,
+  "patterns": {
+    "invoice": {
+      "domain_patterns": {
+        "aerohostin.cz": 5,
+        "fakturace@": 3,
+        "billing@": 3,
+        "invoice@": 3
+      },
+      "subject_patterns": [
+        [
+          "faktura\\s+č\\.?\\s*\\d+",
+          5
+        ],
+        [
+          "invoice\\s+#?\\s*\\d+",
+          5
+        ],
+        [
+          "proforma\\s+faktura",
+          4
+        ],
+        [
+          "daňový\\s+doklad",
+          4
+        ],
+        [
+          "tax\\s+invoice",
+          4
+        ],
+        [
+          "faktura",
+          3
+        ],
+        [
+          "invoice",
+          3
+        ],
+        [
+          "bill",
+          2
+        ],
+        [
+          "účet\\s+k\\s+úhradě",
+          3
+        ],
+        [
+          "faktura.*s\\.r\\.o\\.?",
+          2
+        ],
+        [
+          "invoice.*ltd\\.?",
+          2
+        ]
+      ],
+      "body_patterns": [
+        [
+          "variabilní\\s+symbol",
+          3
+        ],
+        [
+          "IČO?\\s*:?\\s*\\d{8}",
+          2
+        ],
+        [
+          "DIČ\\s*:?\\s*CZ\\d{8}",
+          2
+        ],
+        [
+          "splatnost",
+          2
+        ],
+        [
+          "due\\s+date",
+          2
+        ],
+        [
+          "celkem\\s+k\\s+úhradě",
+          3
+        ],
+        [
+          "total\\s+amount",
+          3
+        ]
+      ],
+      "negative_patterns": [
+        [
+          "newsletter",
+          -5
+        ],
+        [
+          "marketing",
+          -4
+        ],
+        [
+          "reklam",
+          -4
+        ],
+        [
+          "sleva\\s+\\d+%",
+          -3
+        ],
+        [
+          "akce",
+          -3
+        ],
+        [
+          "nabídka",
+          -3
+        ]
+      ]
+    },
+    "receipt": {
+      "domain_patterns": {
+        "tesco.cz": 4,
+        "kaufland.cz": 4,
+        "lidl.cz": 4,
+        "albert.cz": 4,
+        "billa.cz": 4,
+        "penny.cz": 4,
+        "globus.cz": 4,
+        "makro.cz": 4,
+        "ikea.com": 3,
+        "alza.cz": 3,
+        "mall.cz": 3,
+        "czc.cz": 3
+      },
+      "subject_patterns": [
+        [
+          "účtenka\\s+č\\.?\\s*\\d+",
+          5
+        ],
+        [
+          "účtenka.*nákup",
+          5
+        ],
+        [
+          "receipt\\s+#?\\s*\\d+",
+          5
+        ],
+        [
+          "pokladní\\s+doklad",
+          5
+        ],
+        [
+          "paragon",
+          4
+        ],
+        [
+          "účtenka",
+          3
+        ],
+        [
+          "receipt",
+          3
+        ],
+        [
+          "nákup.*potravin",
+          3
+        ],
+        [
+          "elektronická\\s+účtenka",
+          4
+        ],
+        [
+          "tesco|kaufland|lidl|albert|billa|penny",
+          2
+        ]
+      ],
+      "body_patterns": [
+        [
+          "EET\\s*:",
+          3
+        ],
+        [
+          "FIK\\s*:",
+          3
+        ],
+        [
+          "BKP\\s*:",
+          3
+        ],
+        [
+          "čas\\s+prodeje",
+          2
+        ],
+        [
+          "prodejna\\s*:",
+          2
+        ],
+        [
+          "pokladna\\s*:",
+          2
+        ],
+        [
+          "položek\\s*:",
+          2
+        ]
+      ],
+      "negative_patterns": [
+        [
+          "faktura",
+          -3
+        ],
+        [
+          "invoice",
+          -3
+        ],
+        [
+          "smlouva",
+          -4
+        ],
+        [
+          "newsletter",
+          -5
+        ]
+      ]
+    }
+  },
+  "special_cases": {
+    "hosting_invoice": {
+      "patterns": [
+        [
+          "hosting|webhosting|server",
+          2
+        ],
+        [
+          "domén|domain",
+          2
+        ],
+        [
+          "prodloužení|renewal",
+          2
+        ],
+        [
+          "ssl\\s+certifikát",
+          2
+        ]
+      ],
+      "type": "invoice"
+    },
+    "retail_receipt": {
+      "patterns": [
+        [
+          "supermarket|hypermarket",
+          2
+        ],
+        [
+          "potraviny|groceries",
+          2
+        ],
+        [
+          "drogerie|pharmacy",
+          2
+        ],
+        [
+          "elektronika|electronics",
+          2
+        ]
+      ],
+      "type": "receipt"
+    }
+  },
+  "created": "2025-08-02T12:16:25.192644"
+}

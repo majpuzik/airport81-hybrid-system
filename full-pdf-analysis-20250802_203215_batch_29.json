@@ -1,0 +1,165 @@
+{
+  "batch_start": 29000,
+  "batch_end": 30000,
+  "timestamp": "2025-08-02T20:36:25.799392",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "notification": 44,
+    "unknown": 170,
+    "invoice": 529,
+    "order": 180,
+    "subscription": 20,
+    "receipt": 30,
+    "contract": 8,
+    "shipping": 17,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Daily Digest (Friday, 10 January 2025)-202501100901-_Remember The Milk Digest_.pdf",
+      "type": "notification",
+      "score": 1,
+      "metadata": {},
+      "text_length": 546
+    },
+    {
+      "file": "http___daniellemeshorer.org___media___js_netsoltra-202407142206-_WordPress_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 767
+    },
+    {
+      "file": "New Arrival_ High Precision Gravity Linear _ Analo-202406132024-_DFRobot Service_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2786
+    },
+    {
+      "file": "Už to chystáme. _ Obj. č. 542464512-202504011936-_Alza.cz_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {
+        "ico": "27082440",
+        "vs": "542464512"
+      },
+      "text_length": 2018
+    },
+    {
+      "file": "Jak na investicích vydělat víc_-202407301457-_Fondee_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3693
+    },
+    {
+      "file": "Nahrabte si v Dobro.Hraboši 🤩-202409271006-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 2377
+    },
+    {
+      "file": "📄 _Řeka Ohře ve světle vědeckých a praktických ry-202409221447-_PDF By Nina Milotova_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2197
+    },
+    {
+      "file": "Ndax is excited to welcome APT and TAO! Trading is-202503131530-_Ndax_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 4103
+    },
+    {
+      "file": "An Icon Since 1972_ Chronograph 1 – All Black Numb-202412131807-_Porsche Design_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2942
+    },
+    {
+      "file": "⚡ The Homey Energy Dongle is now available-202504081734-_Homey_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1936
+    },
+    {
+      "file": "FSU student who saw gunman fire first few shots re-202504181319-_MSN Daily_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1384
+    },
+    {
+      "file": "Příklad použití_ DUC - Ultrazvukový průtokoměr CZ1-202505151016-_Kobold Messring - Kobold Group_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2155
+    },
+    {
+      "file": "Vaše vzpomínky z tohoto dne-202502061219-_OneDrive_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 760
+    },
+    {
+      "file": "Está pasando 11_09_2024 -202409110935-_idealista_news_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 9629
+    },
+    {
+      "file": "Re_The Beekeeper im Heimkino_ Ein Mann gegen die R-202404262120-Martin Pužík.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 553
+    },
+    {
+      "file": "Golem.de_ Rezension_ Deadpool & Wolverine - Crowds-202407241256-_Golem.de Redaktion_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 10683
+    },
+    {
+      "file": "Write a review and get $5-202412301206-_ULANZI_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 516
+    },
+    {
+      "file": "Jak mohou hackeři napadnout solární systémy; Trump-202502120545-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3344
+    },
+    {
+      "file": "Offer ends soon_ up to 80% off-202407282004-_Business Insider_.pdf",
+      "type": "subscription",
+      "score": 1,
+      "metadata": {},
+      "text_length": 617
+    },
+    {
+      "file": "Fw_ Re_ Fw_ Ihre Anfrage Ray-Ban - CAS-2522908-J9J-202410311805-_M.AJ. Puzik_.pdf",
+      "type": "invoice",
+      "score": 36,
+      "metadata": {},
+      "text_length": 6712
+    }
+  ],
+  "error_count": 0
+}

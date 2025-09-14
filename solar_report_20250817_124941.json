@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-08-17T12:49:41.183437",
+  "system_info": {
+    "total_panels": 60,
+    "panel_wp": 410,
+    "total_wp": 24600,
+    "configuration": {
+      "Solax X3-ULT": {
+        "MPPT1": "String 1 - Východ (15 panelů)",
+        "MPPT2": "String 2 - Jih (15 panelů)",
+        "MPPT3": "String 3 + 4 - Západ + Sever (30 panelů spojené)"
+      }
+    }
+  },
+  "current_data": {
+    "inverterSN": "H3BC25K5144023",
+    "sn": "SNNTF49WK7",
+    "acpower": 7346.0,
+    "yieldtoday": 22.7,
+    "yieldtotal": 959.7,
+    "feedinpower": 16.0,
+    "feedinenergy": 0.8,
+    "consumeenergy": 1016.61,
+    "feedinpowerM2": 0.0,
+    "soc": 93.0,
+    "peps1": 0.0,
+    "peps2": 0.0,
+    "peps3": 0.0,
+    "inverterType": "25",
+    "inverterStatus": null,
+    "uploadTime": "2025-08-17 12:49:31",
+    "batPower": 3493.0,
+    "powerdc1": 2216.0,
+    "powerdc2": 4247.0,
+    "powerdc3": 4486.0,
+    "powerdc4": null,
+    "batStatus": "0",
+    "utcDateTime": "2025-08-17T04:49:31Z"
+  },
+  "expected_power": {
+    "String 1 (Východ)": 4443.375,
+    "String 2 (Jih)": 5227.5,
+    "String 3 (Západ)": 4443.375,
+    "String 4 (Sever)": 3136.5,
+    "Total": 17250.75
+  },
+  "problems": [
+    {
+      "severity": "HIGH",
+      "issue": "MPPT3 má významně nižší výkon než očekáváno",
+      "detail": "MPPT3: 4486W pro 30 panelů vs MPPT1+2: 6463W pro 30 panelů",
+      "solution": "Spojení stringů s různou orientací (Západ+Sever) způsobuje ztráty"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "Celkový výkon je pod 70% očekávané hodnoty",
+      "detail": "Skutečný: 10949W, Očekávaný: 17251W",
+      "solution": "Zkontrolujte zastínění, znečištění panelů nebo vadné optimizéry"
+    }
+  ],
+  "analysis_date": "2025-08-17 12:49:41"
+}

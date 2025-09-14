@@ -1,0 +1,47 @@
+{
+  "timestamp": "20250824_154625",
+  "models_available": {
+    "transformers": true,
+    "layoutlm": true,
+    "donut": true,
+    "tesseract": true,
+    "easyocr": false,
+    "sklearn": true
+  },
+  "results": [
+    {
+      "file": "Cisteni vozu_scan_040.pdf",
+      "status": "ROZPOZNÁNO",
+      "type": "ÚČTENKA",
+      "subtype": "čištění vozu",
+      "confidence": 95,
+      "method": "enhanced_filename"
+    },
+    {
+      "file": "scan_043.jpg",
+      "status": "NEROZPOZNÁNO",
+      "max_confidence": 40,
+      "reason": "Nízká jistota klasifikace"
+    },
+    {
+      "file": "scan_044.jpg",
+      "status": "NEROZPOZNÁNO",
+      "max_confidence": 48,
+      "reason": "Nízká jistota klasifikace"
+    },
+    {
+      "file": "Cisteni vozu_scan_040.jpg",
+      "status": "ROZPOZNÁNO",
+      "type": "ÚČTENKA",
+      "subtype": "čištění vozu",
+      "confidence": 95,
+      "method": "enhanced_filename"
+    }
+  ],
+  "summary": {
+    "recognized": 2,
+    "partially": 0,
+    "unrecognized": 2,
+    "errors": 0
+  }
+}

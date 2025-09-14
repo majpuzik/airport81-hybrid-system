@@ -1,0 +1,30 @@
+[
+  {
+    "model": "llama3.1:8b-instruct-q4_0",
+    "question": "Jaká je teplota v pokoji pro hosty?",
+    "response": "Teplota v pokoji pro hosty je 24.2°C.",
+    "duration": 0.9013059139251709,
+    "success": true
+  },
+  {
+    "model": "llama3.1:8b-instruct-q4_0",
+    "question": "Zapni světlo v obýváku",
+    "response": "Světlo v obývacím pokoji zapnuto.",
+    "duration": 0.4569840431213379,
+    "success": true
+  },
+  {
+    "model": "mistral:7b-instruct",
+    "question": "Jaká je teplota v pokoji pro hosty?",
+    "response": "Teplota v pokoji pro hosty je 24,2°C.",
+    "duration": 3.024752140045166,
+    "success": true
+  },
+  {
+    "model": "mistral:7b-instruct",
+    "question": "Zapni světlo v obýváku",
+    "response": "Zapnuto světlo v obývacím pokoji.",
+    "duration": 0.48282599449157715,
+    "success": true
+  }
+]

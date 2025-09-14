@@ -1,0 +1,23 @@
+{
+  "dashboard": {
+    "title": "Test Teploty",
+    "panels": [
+      {
+        "id": 1,
+        "type": "timeseries",
+        "title": "Demo Graf",
+        "gridPos": {"x": 0, "y": 0, "w": 24, "h": 12},
+        "datasource": {
+          "type": "influxdb",
+          "uid": "influxdb"
+        },
+        "targets": [
+          {
+            "refId": "A",
+            "query": "from(bucket: \"homeassistant\") |> range(start: -1h)"
+          }
+        ]
+      }
+    ]
+  }
+}

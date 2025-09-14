@@ -1,0 +1,72 @@
+{
+  "name": "Document Classifier with LM Studio",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "document-classifier",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook-1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:1234/v1/chat/completions",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "{\n  \"model\": \"local-model\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Jsi expert na klasifikaci českých dokumentů. Klasifikuj dokumenty do kategorií: faktura, smlouva, platba, bankovni_vypis, soudni_obesilka, uredni_korespondence, objednavka, upominka, reklama, ostatni. Odpovídej POUZE názvem kategorie.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Klasifikuj: {{ $json.text || $json.testText || 'No text' }}\"\n    }\n  ],\n  \"temperature\": 0.1,\n  \"max_tokens\": 10\n}"
+      },
+      "id": "lmstudio-1",
+      "name": "LM Studio Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Parse LM Studio response\nconst response = $input.item.json;\nconst classification = response.choices?.[0]?.message?.content?.trim().toLowerCase() || 'ostatni';\n\n// Map to correct format\nconst validTypes = [\n  'faktura', 'smlouva', 'platba', 'bankovni_vypis',\n  'soudni_obesilka', 'uredni_korespondence', 'objednavka',\n  'upominka', 'reklama', 'ostatni'\n];\n\nconst docType = validTypes.includes(classification) ? classification : 'ostatni';\n\nreturn {\n  json: {\n    success: true,\n    classification: {\n      type: docType,\n      model: 'lmstudio',\n      confidence: 0.95\n    },\n    originalText: $node[\"webhook-1\"].json.text || $node[\"webhook-1\"].json.testText,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "process-1",
+      "name": "Process Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "webhook-1": {
+      "main": [
+        [
+          {
+            "node": "lmstudio-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "lmstudio-1": {
+      "main": [
+        [
+          {
+            "node": "process-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": []
+}

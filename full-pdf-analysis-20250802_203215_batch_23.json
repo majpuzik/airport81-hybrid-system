@@ -1,0 +1,162 @@
+{
+  "batch_start": 23000,
+  "batch_end": 24000,
+  "timestamp": "2025-08-02T20:35:35.063615",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 517,
+    "unknown": 192,
+    "receipt": 24,
+    "order": 182,
+    "subscription": 17,
+    "contract": 11,
+    "shipping": 17,
+    "bank_statement": 3,
+    "notification": 37
+  },
+  "metadata_samples": [
+    {
+      "file": "NDAX _ July 1st Canada Day Bank Hours-202406281915-_Ndax_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2398
+    },
+    {
+      "file": "iUmeni.cz - aktuální informace ze světa umění 2025-202505060912-_iUmeni.cz_.pdf",
+      "type": "invoice",
+      "score": 48,
+      "metadata": {},
+      "text_length": 11096
+    },
+    {
+      "file": "Statistic Dům-202410300005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 229
+    },
+    {
+      "file": "🎄 Veselé Vánoce přeje 3DJake! 🎅-202412240932-3DJake Česká republika.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1725
+    },
+    {
+      "file": "Statistic Garáž-202502110027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 234
+    },
+    {
+      "file": "NEU_ Slip-On Pro - Mit einem Schritt im Schuh!-202410200815-_Giesswein_.pdf",
+      "type": "receipt",
+      "score": 10,
+      "metadata": {},
+      "text_length": 1905
+    },
+    {
+      "file": "Account Balance_ 1.2822 BTC ($99352.07)-202504301627-_BITCOIN WALLET_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 654
+    },
+    {
+      "file": "Sdílím s vámi soubor OTH_RD_ČERNOŠICE_30_10-202411022241-_Milan Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 284
+    },
+    {
+      "file": "Heute meistgelesen_ «The Atlantic» veröffentlicht -202503271640-Neue Zürcher Zeitung.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3674
+    },
+    {
+      "file": "Mit Hype gegen den Hype_ Jung von Matt launcht hoc-202502120808-_PAGE_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 4941
+    },
+    {
+      "file": "Meet your new obsession_ the Pulse collection-202406291512-_Ray-Ban_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1777
+    },
+    {
+      "file": "Back up and restore entire Windows systems - Backu-202405291401-_Ashampoo News_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 5673
+    },
+    {
+      "file": "Project Update #24_ Rokid AR Lite, Your First AR G-202501221000-_Kickstarter_.pdf",
+      "type": "order",
+      "score": 14,
+      "metadata": {},
+      "text_length": 3353
+    },
+    {
+      "file": "Doctor_ Never eat this food (kills your liver & ca-202501141923-_Free Speech Daily Sponsor_.pdf",
+      "type": "subscription",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1530
+    },
+    {
+      "file": "M.A.J._ Více než 30 nových pracovních příležitostí-202406232146-Upozornění na nové pracovní příležitosti LinkedIn.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1670
+    },
+    {
+      "file": "Granule Ibero Grain Free + 2 kg ZDARMA navíc v bal-202502031402-_Pethome.cz_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 3127
+    },
+    {
+      "file": "Steuerfreie Transaktion mit Adobe-202405241543-_Adobe_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1175
+    },
+    {
+      "file": "We're updating our Terms and Conditions-202406050130-_Airalo_.pdf",
+      "type": "contract",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1193
+    },
+    {
+      "file": "A Recommended Recipe on IFTTT_ Google Drive Camera-202501021800-_IFTTT via IFTTT_.pdf",
+      "type": "subscription",
+      "score": 3,
+      "metadata": {},
+      "text_length": 384
+    },
+    {
+      "file": "[Access granted] Your request to access model meta-202501281437-_huggingface_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 633
+    }
+  ],
+  "error_count": 0
+}

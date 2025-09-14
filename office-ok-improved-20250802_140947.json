@@ -1,0 +1,4224 @@
+[
+  {
+    "id": 7,
+    "subject": "[Novinky o úloze] Latest global news summary",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 43,
+    "subject": "Ověřte si stav Vaší platby (4548917936)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 80,
+    "subject": "[Novinky o úloze] Latest news updates from EU and beyond",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 92,
+    "subject": "[Novinky o úloze] Top political and economic stories",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 110,
+    "subject": "[Novinky o úloze] 10. EU, US, and",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 111,
+    "subject": "[Novinky o úloze] Denní přehled světových zpráv 11 května",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 136,
+    "subject": "[Novinky o úloze] Israel, Iran conflict update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 229,
+    "subject": "[Novinky o úloze] Latest global news summary",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 231,
+    "subject": "[Novinky o úloze] Latest on Israel, Iran, and economy",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 235,
+    "subject": "[Novinky o úloze] Dnešní zprávy z USA EU Číny Ruska",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 251,
+    "subject": "[Novinky o úloze] Top global events to know today",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 255,
+    "subject": "[Novinky o úloze] Latest global news update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 267,
+    "subject": "[Novinky o úloze] AI news update with surprising twists",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 277,
+    "subject": "Datové schránky: Nová zpráva (schránka: 7ujzhir)",
+    "sender": "\"notifikace@mojedatovaschranka.cz\" <notifikace@mojedatovaschranka.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 4,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 306,
+    "subject": "Vyřízení objednávky + daňový doklad",
+    "sender": "\" Marimex CZ  shop@marimex.cz\" <shop@marimex.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 311,
+    "subject": "[Novinky o úloze] Latest global news update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 319,
+    "subject": "[Novinky o úloze] Latest global news summary for May 17",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 331,
+    "subject": "DOPRAVA ZDARMA pro všechny objednávky nad 300 Kč! POUZE DNES!",
+    "sender": "\"Levnoshop.cz\" <novinky@levnoshop.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 4,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 351,
+    "subject": "[Novinky o úloze] Breaking news: June 17 insights across regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 362,
+    "subject": "[Novinky o úloze] Key updates from major regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 364,
+    "subject": "Potvrzení objednávky Google Play ze dne 4. 6. 2025",
+    "sender": "Google Play <googleplay-noreply@google.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 2,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 374,
+    "subject": "[Novinky o úloze] Latest global updates for June 23",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 427,
+    "subject": "[Novinky o úloze] AI píše rozsudky i obrazy",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 439,
+    "subject": "[Novinky o úloze] 13 May 2025 news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 453,
+    "subject": "Faktura 825035097 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 0.6666666666666666,
+      "all_scores": {
+        "invoice": 10,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 530,
+    "subject": "[Novinky o úloze] Latest news from around the world",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 532,
+    "subject": "Splatnost faktury 802528835 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 14,
+      "confidence": 0.9333333333333333,
+      "all_scores": {
+        "invoice": 14,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 546,
+    "subject": "Nur noch 7 Tage Zeit, um CZK 1.250 zu verdienen 💰",
+    "sender": "\"Revolut\" <no-reply@revolut.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 8
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 549,
+    "subject": "[Novinky o úloze] Latest global news highlights for June 21",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 589,
+    "subject": "Universal ballasts for photovoltaic systems on flat roofs: compatible with all\r\n panels and surfaces.",
+    "sender": "Sun Ballast <info@sunballast.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 590,
+    "subject": "Our new Discord for paid users",
+    "sender": "Andrew Lee <andrew@shortwave.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 592,
+    "subject": "[Novinky o úloze] Latest global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 594,
+    "subject": "[Novinky o úloze] Přehled: politika ekonomika bezpečnost věda",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 628,
+    "subject": "[Novinky o úloze] Dnešní zprávy se nepodařilo načíst",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 631,
+    "subject": "[Novinky o úloze] May 28 2025 news highlights",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 635,
+    "subject": "WP Engine Invoice  - MAJ Puzik",
+    "sender": "WP Engine Billing <billing@billing.wpengine.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 8,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 636,
+    "subject": "WP Engine Invoice  - MAJ Puzik",
+    "sender": "WP Engine Billing <billing@billing.wpengine.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 8,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 659,
+    "subject": "[Novinky o úloze] US-Iran tensions and economic impacts",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 693,
+    "subject": "[Novinky o úloze] Key news from EU, USA, and more",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 694,
+    "subject": "[Novinky o úloze] Today's global headlines at a glance",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 707,
+    "subject": "Splatnost  výzvy  k  platbě 802528835 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 14,
+      "confidence": 0.9333333333333333,
+      "all_scores": {
+        "invoice": 14,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 718,
+    "subject": "[Novinky o úloze] May 19th news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 790,
+    "subject": "ChatGPT – tvůj nový plán",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 839,
+    "subject": "[Novinky o úloze] 9. AI trends and surprises",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 879,
+    "subject": "[Novinky o úloze] Latest global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 892,
+    "subject": "[Novinky o úloze] Daily news summary from global regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 956,
+    "subject": "[Novinky o úloze] Global update: politics, economy, and security",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1028,
+    "subject": "[Novinky o úloze] Global news summary for June 9",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1044,
+    "subject": "[Novinky o úloze] Latest global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1050,
+    "subject": "[Novinky o úloze] Latest global news insights",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1066,
+    "subject": "[Novinky o úloze] Přehled světových zpráv k 10. květnu",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1083,
+    "subject": "[GitHub] Payment Receipt for majpuzik",
+    "sender": "GitHub <noreply@github.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 2,
+        "receipt": 3,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 1099,
+    "subject": "Vaše objednávka na Hornbach.cz",
+    "sender": "\"Hornbach.cz (no reply)\" <no-reply@hornbach.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 3,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1149,
+    "subject": "[Novinky o úloze] Pošli denní přehled zpráv s datem",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1214,
+    "subject": "[Novinky o úloze] AI breakthroughs shaking up industries",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1226,
+    "subject": "Výzva  k  platbě  802528835 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 0.6666666666666666,
+      "all_scores": {
+        "invoice": 10,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 1287,
+    "subject": "FAKTURACE (Express) na SoftDent - prosím jakmile to půjde",
+    "sender": "=?UTF-8?B?TWFydGluIFB1xb7DrWs=?= <martin.puzik@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 7,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 1309,
+    "subject": "[Novinky o úloze] May 18th global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1377,
+    "subject": "[Novinky o úloze] Daily global news summary",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1400,
+    "subject": "[Novinky o úloze] Pošli denní přehled zpráv",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1447,
+    "subject": "[Novinky o úloze] Global news update June 12 2025",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1518,
+    "subject": "[Novinky o úloze] Daily news summary for May 18",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1685,
+    "subject": "[Novinky o úloze] Global economic updates: EU, US, China",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1794,
+    "subject": "[Novinky o úloze] May 20th global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1825,
+    "subject": "[Novinky o úloze] Latest global news update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1830,
+    "subject": "[Novinky o úloze] Today’s news from key regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1831,
+    "subject": "[Novinky o úloze] Key news from EU to USA",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1913,
+    "subject": "[Novinky o úloze] Daily news update from global regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1981,
+    "subject": "[Novinky o úloze] Key updates from multiple regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 1986,
+    "subject": "[Novinky o úloze] Key updates on global politics     economy",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 2228,
+    "subject": "[Novinky o úloze] Breaking global headlines today",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 2244,
+    "subject": "[Novinky o úloze] Ranní přehled světových zpráv 30. 4.",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 2329,
+    "subject": "Upozornění na nutnost úhrady domény mybrainworks.cz / Reminder to settle fees for the mybrainworks.cz domain",
+    "sender": "podpora@nic.cz",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 3001,
+    "subject": "Ověřte si stav Vaší platby (4090899903)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 3234,
+    "subject": "[Novinky o úloze] Přehled světových zpráv k 11 květnu",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3369,
+    "subject": "Faktura  č.  24FVH36785",
+    "sender": "\"AppleMix.cz\" <objednavky@applemix.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 0.6666666666666666,
+      "all_scores": {
+        "invoice": 10,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 3410,
+    "subject": "Zasloužíte si to 🏆",
+    "sender": "\"Revolut\" <no-reply@revolut.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 8
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3491,
+    "subject": "Přijali jsme objednávku č. 8810493836",
+    "sender": "\"AppleMix.cz\" <objednavky@applemix.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3617,
+    "subject": "Vaše objednávka 8810493836 byla odeslána",
+    "sender": "\"AppleMix.cz\" <objednavky@applemix.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3698,
+    "subject": "Vaše objednávka  z datacarekart.com/: Platba přijata",
+    "sender": "\"2Checkout (now Verifone) Support\" <support@2checkout.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 3,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3874,
+    "subject": "Noch schnell und einfach die Steuererklärung für 2023 erledigen",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3891,
+    "subject": "Schnell und einfach zur Steuererklärung für 2023",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 3968,
+    "subject": "Google Alert – tesla",
+    "sender": "Google Alerts <googlealerts-noreply@google.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4000,
+    "subject": "[Novinky o úloze] Key political and economic news today",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4136,
+    "subject": "Ověřte si stav Vaší platby (3988229029)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 4183,
+    "subject": "[Novinky o úloze] May 19 news round-up",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4208,
+    "subject": "Změna hesla proběhla úspěšně",
+    "sender": "Spotify <no-reply@spotify.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4491,
+    "subject": "[Novinky o úloze] Key updates from EU, Middle East, and more",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4578,
+    "subject": "Upozornění Google – iot",
+    "sender": "Google Alerts <googlealerts-noreply@google.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4620,
+    "subject": "Schnell und einfach die Steuererklärung für 2023 erledigen",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4629,
+    "subject": "Delivery Status Notification (Failure)",
+    "sender": "Mail Delivery Subsystem <mailer-daemon@googlemail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 4679,
+    "subject": "[Novinky o úloze] Global news update for July 1",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 4837,
+    "subject": "FAKTURA - DAŇOVÝ DOKLAD",
+    "sender": "=?utf-8?Q?Online_Kv=C4=9Btiny_Praha_-_Rozvoz_kv=C4=9Btin_do_?=\r\n =?utf-8?Q?120_minut=2E?= <info@onlinekvetinypraha.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 9,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 7308,
+    "subject": "📦 🥳 Potvrzení o přijetí vaší objednávky",
+    "sender": "Kaufland Marketplace <noreply@kaufland-marketplace.cz>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 7818,
+    "subject": "Darum sind  Privatverkäufe  in der Regel steuerfrei",
+    "sender": "eBay <ebay@reply.ebay.de>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 8132,
+    "subject": "Ověřte si stav Vaší platby (3801410421)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 8391,
+    "subject": "Ověřte si stav Vaší platby (3801000570)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 8699,
+    "subject": "Ohodnoťte Kaufland.cz na základě vašeho nákupu",
+    "sender": "\"Kaufland.cz\" <kaufland@overenozakazniky.cz>",
+    "classification": {
+      "type": "receipt",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 6
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 8884,
+    "subject": "Fwd: Faktura (daňový doklad) 3160155351",
+    "sender": "Marketa Kunst <marketa.kunst@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 9,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 8919,
+    "subject": "Aktualizace našich všeobecných obchodních podmínek",
+    "sender": "Kaufland.cz <noreply@kaufland-online.cz>",
+    "classification": {
+      "type": "contract",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 4,
+        "contract": 9,
+        "tax_document": 3
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9163,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9233,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9485,
+    "subject": "RE: NB ",
+    "sender": "=?iso-8859-2?Q?Pavel_Brz=E1k?= <pavelb@nbucetnictvi.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9497,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9498,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9805,
+    "subject": "Chip.cz: falešné zprávy z finančáku, nové podmínky WhatsAppu nebo soukromá větrná elektrárna",
+    "sender": "=?utf-8?q?=C4=8Casopis_CHIP?= <magazin@chip.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 3,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9824,
+    "subject": "Immobilien auf Mallorca / Real Estate in Majorca / Inmuebles en\r\n Mallorca",
+    "sender": "\"Minkner & Bonitz, Mallorca Immobilien\" <newsletter@minkner.eu>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9831,
+    "subject": "Be the first to know: Nomad New Product Release, eSIM Discount and\r\n Taylor Swift Tour Tips!",
+    "sender": "Nomad <hello@getnomad.app>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10039,
+    "subject": "FW: Daňový doklad společnosti ALBIXON a.s. (číslo dokladu: 160860345)",
+    "sender": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 10168,
+    "subject": "Re: Isc at - bmw claus prefakturace",
+    "sender": "\"M.A.J. Puzik\" <puzik@outlook.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 3,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10262,
+    "subject": "Aktualizujeme naše smluvní podmínky a zásady ochrany osobních údajů.",
+    "sender": "\"=?utf-8?q?Pinterest?=\" <recommendations@inspire.pinterest.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10329,
+    "subject": "Oznámení o prodloužení platnosti domény davos.cz / Domain name davos.cz renew notification",
+    "sender": "podpora@nic.cz",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 10388,
+    "subject": "FW: neuhrazené faktury",
+    "sender": "\"Ing. Zuzana Puzikova\" <zuzana.puzikova@isccz.eu>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 10416,
+    "subject": "Fw: Loxone proforma",
+    "sender": "\"M.A.J. Puzik \" <puzik@outlook.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 5,
+        "receipt": 0,
+        "bank_statement": 9
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 10586,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10587,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10616,
+    "subject": "Schnell und einfach zur Steuererklärung für 2023",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10710,
+    "subject": "SIKO - Daňový doklad za platbu - 8010232404",
+    "sender": "=?utf-8?Q?=22Z=C3=A1kaznick=C3=BD_servis_SIKO=2ECZ=22?= <shop@siko.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 10903,
+    "subject": "[Novinky o úloze] AI šoky týdne v kostce",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10912,
+    "subject": "[Novinky o úloze] Světové zprávy 7. května v kostce",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 10942,
+    "subject": "[Novinky o úloze] \"Top international headlines today\"",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11050,
+    "subject": "Fwd: Moje O2 - vyúčtování za služby",
+    "sender": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 7,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 11061,
+    "subject": "[Novinky o úloze] Latest global news digest",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11081,
+    "subject": "[Novinky o úloze] Pošli denní přehled zpráv s datem",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11105,
+    "subject": "[Novinky o úloze] Latest global news summary",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11141,
+    "subject": "Ověřte si stav Vaší platby (4548917936)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11178,
+    "subject": "[Novinky o úloze] Latest news updates from EU and beyond",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11190,
+    "subject": "[Novinky o úloze] Top political and economic stories",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11208,
+    "subject": "[Novinky o úloze] 10. EU, US, and",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11209,
+    "subject": "[Novinky o úloze] Denní přehled světových zpráv 11 května",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11234,
+    "subject": "[Novinky o úloze] Israel, Iran conflict update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11327,
+    "subject": "[Novinky o úloze] Latest global news summary",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11329,
+    "subject": "[Novinky o úloze] Latest on Israel, Iran, and economy",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11333,
+    "subject": "[Novinky o úloze] Dnešní zprávy z USA EU Číny Ruska",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11349,
+    "subject": "[Novinky o úloze] Top global events to know today",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11353,
+    "subject": "[Novinky o úloze] Latest global news update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11365,
+    "subject": "[Novinky o úloze] AI news update with surprising twists",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11375,
+    "subject": "Datové schránky: Nová zpráva (schránka: 7ujzhir)",
+    "sender": "\"notifikace@mojedatovaschranka.cz\" <notifikace@mojedatovaschranka.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 4,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11404,
+    "subject": "Vyřízení objednávky + daňový doklad",
+    "sender": "\" Marimex CZ  shop@marimex.cz\" <shop@marimex.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 11409,
+    "subject": "[Novinky o úloze] Latest global news update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11417,
+    "subject": "[Novinky o úloze] Latest global news summary for May 17",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11429,
+    "subject": "DOPRAVA ZDARMA pro všechny objednávky nad 300 Kč! POUZE DNES!",
+    "sender": "\"Levnoshop.cz\" <novinky@levnoshop.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 4,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11449,
+    "subject": "[Novinky o úloze] Breaking news: June 17 insights across regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11460,
+    "subject": "[Novinky o úloze] Key updates from major regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11462,
+    "subject": "Potvrzení objednávky Google Play ze dne 4. 6. 2025",
+    "sender": "Google Play <googleplay-noreply@google.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 2,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11472,
+    "subject": "[Novinky o úloze] Latest global updates for June 23",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11525,
+    "subject": "[Novinky o úloze] AI píše rozsudky i obrazy",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11537,
+    "subject": "[Novinky o úloze] 13 May 2025 news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11551,
+    "subject": "Faktura 825035097 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 0.6666666666666666,
+      "all_scores": {
+        "invoice": 10,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11628,
+    "subject": "[Novinky o úloze] Latest news from around the world",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11630,
+    "subject": "Splatnost faktury 802528835 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 14,
+      "confidence": 0.9333333333333333,
+      "all_scores": {
+        "invoice": 14,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11644,
+    "subject": "Nur noch 7 Tage Zeit, um CZK 1.250 zu verdienen 💰",
+    "sender": "\"Revolut\" <no-reply@revolut.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 8
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11647,
+    "subject": "[Novinky o úloze] Latest global news highlights for June 21",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11687,
+    "subject": "Universal ballasts for photovoltaic systems on flat roofs: compatible with all\r\n panels and surfaces.",
+    "sender": "Sun Ballast <info@sunballast.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11688,
+    "subject": "Our new Discord for paid users",
+    "sender": "Andrew Lee <andrew@shortwave.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11690,
+    "subject": "[Novinky o úloze] Latest global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11692,
+    "subject": "[Novinky o úloze] Přehled: politika ekonomika bezpečnost věda",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11726,
+    "subject": "[Novinky o úloze] Dnešní zprávy se nepodařilo načíst",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11729,
+    "subject": "[Novinky o úloze] May 28 2025 news highlights",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11733,
+    "subject": "WP Engine Invoice  - MAJ Puzik",
+    "sender": "WP Engine Billing <billing@billing.wpengine.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 8,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11734,
+    "subject": "WP Engine Invoice  - MAJ Puzik",
+    "sender": "WP Engine Billing <billing@billing.wpengine.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 8,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11757,
+    "subject": "[Novinky o úloze] US-Iran tensions and economic impacts",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11791,
+    "subject": "[Novinky o úloze] Key news from EU, USA, and more",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11792,
+    "subject": "[Novinky o úloze] Today's global headlines at a glance",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11805,
+    "subject": "Splatnost  výzvy  k  platbě 802528835 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 14,
+      "confidence": 0.9333333333333333,
+      "all_scores": {
+        "invoice": 14,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 11816,
+    "subject": "[Novinky o úloze] May 19th news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11888,
+    "subject": "ChatGPT – tvůj nový plán",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11937,
+    "subject": "[Novinky o úloze] 9. AI trends and surprises",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11977,
+    "subject": "[Novinky o úloze] Latest global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 11990,
+    "subject": "[Novinky o úloze] Daily news summary from global regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12054,
+    "subject": "[Novinky o úloze] Global update: politics, economy, and security",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12126,
+    "subject": "[Novinky o úloze] Global news summary for June 9",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12142,
+    "subject": "[Novinky o úloze] Latest global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12148,
+    "subject": "[Novinky o úloze] Latest global news insights",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12164,
+    "subject": "[Novinky o úloze] Přehled světových zpráv k 10. květnu",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12181,
+    "subject": "[GitHub] Payment Receipt for majpuzik",
+    "sender": "GitHub <noreply@github.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 2,
+        "receipt": 3,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 12197,
+    "subject": "Vaše objednávka na Hornbach.cz",
+    "sender": "\"Hornbach.cz (no reply)\" <no-reply@hornbach.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 3,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12247,
+    "subject": "[Novinky o úloze] Pošli denní přehled zpráv s datem",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12312,
+    "subject": "[Novinky o úloze] AI breakthroughs shaking up industries",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12324,
+    "subject": "Výzva  k  platbě  802528835 [Active24]",
+    "sender": "=?utf-8?Q?T=C3=BDm?= Active24 <helpdesk@active24.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 0.6666666666666666,
+      "all_scores": {
+        "invoice": 10,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 12385,
+    "subject": "FAKTURACE (Express) na SoftDent - prosím jakmile to půjde",
+    "sender": "=?UTF-8?B?TWFydGluIFB1xb7DrWs=?= <martin.puzik@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 7,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 12407,
+    "subject": "[Novinky o úloze] May 18th global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12475,
+    "subject": "[Novinky o úloze] Daily global news summary",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12498,
+    "subject": "[Novinky o úloze] Pošli denní přehled zpráv",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12545,
+    "subject": "[Novinky o úloze] Global news update June 12 2025",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12616,
+    "subject": "[Novinky o úloze] Daily news summary for May 18",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12783,
+    "subject": "[Novinky o úloze] Global economic updates: EU, US, China",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12892,
+    "subject": "[Novinky o úloze] May 20th global news roundup",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12923,
+    "subject": "[Novinky o úloze] Latest global news update",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12928,
+    "subject": "[Novinky o úloze] Today’s news from key regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 12929,
+    "subject": "[Novinky o úloze] Key news from EU to USA",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 13011,
+    "subject": "[Novinky o úloze] Daily news update from global regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 13079,
+    "subject": "[Novinky o úloze] Key updates from multiple regions",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 13084,
+    "subject": "[Novinky o úloze] Key updates on global politics     economy",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 13326,
+    "subject": "[Novinky o úloze] Breaking global headlines today",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 13342,
+    "subject": "[Novinky o úloze] Ranní přehled světových zpráv 30. 4.",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 13427,
+    "subject": "Upozornění na nutnost úhrady domény mybrainworks.cz / Reminder to settle fees for the mybrainworks.cz domain",
+    "sender": "podpora@nic.cz",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 14099,
+    "subject": "Ověřte si stav Vaší platby (4090899903)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 14332,
+    "subject": "[Novinky o úloze] Přehled světových zpráv k 11 květnu",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 14467,
+    "subject": "Faktura  č.  24FVH36785",
+    "sender": "\"AppleMix.cz\" <objednavky@applemix.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 0.6666666666666666,
+      "all_scores": {
+        "invoice": 10,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 14508,
+    "subject": "Zasloužíte si to 🏆",
+    "sender": "\"Revolut\" <no-reply@revolut.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.5333333333333333,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 8
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 14589,
+    "subject": "Přijali jsme objednávku č. 8810493836",
+    "sender": "\"AppleMix.cz\" <objednavky@applemix.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 14715,
+    "subject": "Vaše objednávka 8810493836 byla odeslána",
+    "sender": "\"AppleMix.cz\" <objednavky@applemix.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 14796,
+    "subject": "Vaše objednávka  z datacarekart.com/: Platba přijata",
+    "sender": "\"2Checkout (now Verifone) Support\" <support@2checkout.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 3,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 14972,
+    "subject": "Noch schnell und einfach die Steuererklärung für 2023 erledigen",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 14989,
+    "subject": "Schnell und einfach zur Steuererklärung für 2023",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15066,
+    "subject": "Google Alert – tesla",
+    "sender": "Google Alerts <googlealerts-noreply@google.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15098,
+    "subject": "[Novinky o úloze] Key political and economic news today",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15234,
+    "subject": "Ověřte si stav Vaší platby (3988229029)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 15281,
+    "subject": "[Novinky o úloze] May 19 news round-up",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15306,
+    "subject": "Změna hesla proběhla úspěšně",
+    "sender": "Spotify <no-reply@spotify.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15589,
+    "subject": "[Novinky o úloze] Key updates from EU, Middle East, and more",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15676,
+    "subject": "Upozornění Google – iot",
+    "sender": "Google Alerts <googlealerts-noreply@google.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15718,
+    "subject": "Schnell und einfach die Steuererklärung für 2023 erledigen",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15727,
+    "subject": "Delivery Status Notification (Failure)",
+    "sender": "Mail Delivery Subsystem <mailer-daemon@googlemail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 15777,
+    "subject": "[Novinky o úloze] Global news update for July 1",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 15935,
+    "subject": "FAKTURA - DAŇOVÝ DOKLAD",
+    "sender": "=?utf-8?Q?Online_Kv=C4=9Btiny_Praha_-_Rozvoz_kv=C4=9Btin_do_?=\r\n =?utf-8?Q?120_minut=2E?= <info@onlinekvetinypraha.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 9,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 18406,
+    "subject": "📦 🥳 Potvrzení o přijetí vaší objednávky",
+    "sender": "Kaufland Marketplace <noreply@kaufland-marketplace.cz>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 18916,
+    "subject": "Darum sind  Privatverkäufe  in der Regel steuerfrei",
+    "sender": "eBay <ebay@reply.ebay.de>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 19230,
+    "subject": "Ověřte si stav Vaší platby (3801410421)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 19489,
+    "subject": "Ověřte si stav Vaší platby (3801000570)",
+    "sender": "PayU <service@payu.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 19797,
+    "subject": "Ohodnoťte Kaufland.cz na základě vašeho nákupu",
+    "sender": "\"Kaufland.cz\" <kaufland@overenozakazniky.cz>",
+    "classification": {
+      "type": "receipt",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 6
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 19982,
+    "subject": "Fwd: Faktura (daňový doklad) 3160155351",
+    "sender": "Marketa Kunst <marketa.kunst@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 9,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 20017,
+    "subject": "Aktualizace našich všeobecných obchodních podmínek",
+    "sender": "Kaufland.cz <noreply@kaufland-online.cz>",
+    "classification": {
+      "type": "contract",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 4,
+        "contract": 9,
+        "tax_document": 3
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20261,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20331,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20583,
+    "subject": "RE: NB ",
+    "sender": "=?iso-8859-2?Q?Pavel_Brz=E1k?= <pavelb@nbucetnictvi.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20595,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20596,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20903,
+    "subject": "Chip.cz: falešné zprávy z finančáku, nové podmínky WhatsAppu nebo soukromá větrná elektrárna",
+    "sender": "=?utf-8?q?=C4=8Casopis_CHIP?= <magazin@chip.cz>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 3,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20922,
+    "subject": "Immobilien auf Mallorca / Real Estate in Majorca / Inmuebles en\r\n Mallorca",
+    "sender": "\"Minkner & Bonitz, Mallorca Immobilien\" <newsletter@minkner.eu>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 20929,
+    "subject": "Be the first to know: Nomad New Product Release, eSIM Discount and\r\n Taylor Swift Tour Tips!",
+    "sender": "Nomad <hello@getnomad.app>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "bank_statement": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 21137,
+    "subject": "FW: Daňový doklad společnosti ALBIXON a.s. (číslo dokladu: 160860345)",
+    "sender": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 21266,
+    "subject": "Re: Isc at - bmw claus prefakturace",
+    "sender": "\"M.A.J. Puzik\" <puzik@outlook.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 3,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 21360,
+    "subject": "Aktualizujeme naše smluvní podmínky a zásady ochrany osobních údajů.",
+    "sender": "\"=?utf-8?q?Pinterest?=\" <recommendations@inspire.pinterest.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 21427,
+    "subject": "Oznámení o prodloužení platnosti domény davos.cz / Domain name davos.cz renew notification",
+    "sender": "podpora@nic.cz",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 21486,
+    "subject": "FW: neuhrazené faktury",
+    "sender": "\"Ing. Zuzana Puzikova\" <zuzana.puzikova@isccz.eu>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 21514,
+    "subject": "Fw: Loxone proforma",
+    "sender": "\"M.A.J. Puzik \" <puzik@outlook.com>",
+    "classification": {
+      "type": "bank_statement",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 5,
+        "receipt": 0,
+        "bank_statement": 9
+      }
+    },
+    "has_attachments": true,
+    "attachment_count": 1
+  },
+  {
+    "id": 21684,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 21685,
+    "subject": "Toto je Vaše potvrzení o platbě",
+    "sender": "\"Booking.com\" <noreply-payments@booking.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 9
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 21714,
+    "subject": "Schnell und einfach zur Steuererklärung für 2023",
+    "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+    "classification": {
+      "type": "tax_document",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "tax_document": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 21808,
+    "subject": "SIKO - Daňový doklad za platbu - 8010232404",
+    "sender": "=?utf-8?Q?=22Z=C3=A1kaznick=C3=BD_servis_SIKO=2ECZ=22?= <shop@siko.cz>",
+    "classification": {
+      "type": "invoice",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 6,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 22001,
+    "subject": "[Novinky o úloze] AI šoky týdne v kostce",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 22010,
+    "subject": "[Novinky o úloze] Světové zprávy 7. května v kostce",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 22040,
+    "subject": "[Novinky o úloze] \"Top international headlines today\"",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 22148,
+    "subject": "Fwd: Moje O2 - vyúčtování za služby",
+    "sender": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+    "classification": {
+      "type": "invoice",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 7,
+        "receipt": 0
+      },
+      "algorithm": "improved_v2"
+    },
+    "has_attachments": true,
+    "attachment_count": 2
+  },
+  {
+    "id": 22159,
+    "subject": "[Novinky o úloze] Latest global news digest",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 22179,
+    "subject": "[Novinky o úloze] Pošli denní přehled zpráv s datem",
+    "sender": "OpenAI <noreply@tm.openai.com>",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "receipt": 0,
+        "contract": 6
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  }
+]

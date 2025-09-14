@@ -1,0 +1,163 @@
+{
+  "batch_start": 43000,
+  "batch_end": 43198,
+  "timestamp": "2025-08-02T20:38:15.268644",
+  "processed": 198,
+  "successful": 198,
+  "errors": 0,
+  "document_types": {
+    "invoice": 102,
+    "unknown": 40,
+    "notification": 12,
+    "order": 27,
+    "contract": 4,
+    "receipt": 5,
+    "subscription": 2,
+    "shipping": 6
+  },
+  "metadata_samples": [
+    {
+      "file": "Přehled nejoblíbenějšího zpravodajství za rok 2024-202412291016-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3140
+    },
+    {
+      "file": "Network alert on AZURO2G-202504270357-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 927
+    },
+    {
+      "file": "Statistic Dům-202501100027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 228
+    },
+    {
+      "file": "WIRED BEST z uplynulého týdne-202505020718-_WIRED_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 4799
+    },
+    {
+      "file": "10 case singolari in vendita-202408271601-_idealista_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 753
+    },
+    {
+      "file": "Až 3x více zooBodů k nákupu!-202408251032-zoohit nabídky.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 970
+    },
+    {
+      "file": "Ordinals. Rusko. Mañana.-202503131313-_Dominika z Coinmate_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 6640
+    },
+    {
+      "file": "Run Windows from USB on Any PC to Work Remotely, R-202410231150-_EaseUS_.pdf",
+      "type": "notification",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3191
+    },
+    {
+      "file": "Noch haben Sie Zeit, um das perfekte Geschenk zu f-202412271603-_Montblanc Happy Holidays_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2665
+    },
+    {
+      "file": "Easy News – May (includes release notes)-202505151248-_Jakub, Easy Redmine_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 4126
+    },
+    {
+      "file": "🏷 Sleva 10 % na všechny puškohledy Valiant! 🎯-202505131333-_Balistas_.pdf",
+      "type": "invoice",
+      "score": 22,
+      "metadata": {
+        "ico": "28618475"
+      },
+      "text_length": 2730
+    },
+    {
+      "file": "🛄 Grand Hôtel Thalasso & Spa – Děkujeme! Vaše rez-202404061341-.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 3954
+    },
+    {
+      "file": "You’re invited_ See how Cypris scaled AI search-202503201603-_The Elastic Team_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1451
+    },
+    {
+      "file": "Sehr geehrte Frau Puzikova, Sie interessieren sich-202410111901-_HX - Hurtigruten Expeditions_.pdf",
+      "type": "contract",
+      "score": 4,
+      "metadata": {},
+      "text_length": 3354
+    },
+    {
+      "file": "Tiny PC-202408111444-_Instructables_.pdf",
+      "type": "order",
+      "score": 8,
+      "metadata": {},
+      "text_length": 2096
+    },
+    {
+      "file": "Upozornění Google – iot-202412182203-_Google Alerts_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 748
+    },
+    {
+      "file": "🎉 Nezapomeňte na Sobotní ČASOAKCI! ⏰-202409070829-🛠 HobyNaradi.cz.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {},
+      "text_length": 2761
+    },
+    {
+      "file": "Vaše faktura-202501221534-_Hornbach.cz (no reply)_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 889
+    },
+    {
+      "file": "Canonical nabírá na pozici Head of OEM Alliances-202406031456-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1589
+    },
+    {
+      "file": "Last 24 hours - PREMIUM+ for 11,99€-202409081116-_Sygic GPS Navigation_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1179
+    }
+  ],
+  "error_count": 0
+}

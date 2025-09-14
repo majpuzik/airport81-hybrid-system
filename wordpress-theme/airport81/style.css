@@ -1,0 +1,305 @@
+/*
+Theme Name: Airport81 - Hybridní kreativní agentura
+Theme URI: https://airport81.eu
+Author: Airport81 Creative Agency
+Author URI: https://airport81.eu
+Description: Hybridní WordPress téma s Elementor podporou pro kreativní agenturu Airport81. Kombinuje statický/dynamický obsah, custom CSS a drag-and-drop editaci.
+Version: 1.0.0
+License: GPL v2 or later
+Text Domain: airport81
+Tags: elementor, custom-css, hybrid, creative-agency, drone, photography
+*/
+
+/* ==========================================================================
+   GLOBÁLNÍ STYLY PRO ELEMENTOR
+   Tyto styly lze upravovat přímo v Elementor > Custom CSS
+   ========================================================================== */
+
+:root {
+  /* Brand barvy - Airport81 paleta */
+  --airport-primary: #3b82f6; /* Modrá */
+  --airport-secondary: #a855f7; /* Fialová */
+  --airport-accent: #10b981; /* Zelená */
+  --airport-dark: #1e293b;
+  --airport-light: #f8fafc;
+  
+  /* Gate barvy pro jednotlivé doky */
+  --gate-a1: #3b82f6; /* Drone - modrá */
+  --gate-b1: #a855f7; /* Foto - fialová */
+  --gate-b2: #10b981; /* Online - zelená */
+  --gate-c3: #ec4899; /* Design - růžová */
+}
+
+/* ==========================================================================
+   AIRPORT TERMINAL STYLY
+   ========================================================================== */
+
+.airport-terminal {
+  background: linear-gradient(135deg, var(--airport-dark) 0%, var(--airport-primary) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.departure-board {
+  background: #000;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.departure-board .gate {
+  border: 1px solid #444;
+  padding: 15px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.departure-board .gate:hover {
+  background: rgba(255,255,255,0.05);
+  transform: translateX(5px);
+}
+
+.gate-status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gate-status.boarding { color: #10b981; }
+.gate-status.on-time { color: #fbbf24; }
+.gate-status.check-in { color: #ec4899; }
+
+/* ==========================================================================
+   DOCK KARTY PRO ELEMENTOR
+   ========================================================================== */
+
+.dock-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dock-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.dock-card-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.dock-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dock-card:hover .dock-card-image img {
+  transform: scale(1.05);
+}
+
+.dock-card-content {
+  padding: 25px;
+}
+
+.dock-card-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--airport-primary);
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   ANIMACE LETIŠTNÍHO TERMINÁLU
+   ========================================================================== */
+
+@keyframes radar-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.radar-effect {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 50%;
+  animation: radar-pulse 3s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.runway-lights {
+  display: flex;
+  gap: 10px;
+}
+
+.runway-light {
+  width: 10px;
+  height: 10px;
+  background: #fbbf24;
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+.runway-light:nth-child(2) { animation-delay: 0.2s; }
+.runway-light:nth-child(3) { animation-delay: 0.4s; }
+.runway-light:nth-child(4) { animation-delay: 0.6s; }
+.runway-light:nth-child(5) { animation-delay: 0.8s; }
+
+/* ==========================================================================
+   ELEMENTOR CUSTOM WIDGETY
+   ========================================================================== */
+
+/* AI Terminal Widget */
+.ai-terminal-widget {
+  background: #0f172a;
+  color: #10b981;
+  font-family: 'Monaco', 'Courier New', monospace;
+  padding: 30px;
+  border-radius: 8px;
+  min-height: 400px;
+}
+
+.ai-terminal-input {
+  background: transparent;
+  border: 1px solid #10b981;
+  color: #10b981;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.ai-terminal-output {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+/* Drone Dock Special Effects */
+.drone-animation {
+  position: relative;
+}
+
+.drone-path {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.flying-drone {
+  position: absolute;
+  font-size: 30px;
+  animation: fly-around 15s infinite linear;
+}
+
+@keyframes fly-around {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(200px, -50px) rotate(90deg); }
+  50% { transform: translate(400px, 0) rotate(180deg); }
+  75% { transform: translate(200px, 50px) rotate(270deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+/* ==========================================================================
+   RESPONZIVNÍ ÚPRAVY PRO ELEMENTOR
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .departure-board {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .dock-card-image {
+    height: 180px;
+  }
+  
+  .ai-terminal-widget {
+    padding: 20px;
+    min-height: 300px;
+  }
+}
+
+/* ==========================================================================
+   UTILITY TŘÍDY PRO RYCHLÉ ÚPRAVY V ELEMENTORU
+   ========================================================================== */
+
+.airport-gradient-blue { background: linear-gradient(135deg, #3b82f6, #1e40af); }
+.airport-gradient-purple { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+.airport-gradient-green { background: linear-gradient(135deg, #10b981, #059669); }
+.airport-gradient-pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+
+.text-shadow-airport { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.box-shadow-airport { box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ==========================================================================
+   PŘEPÍNAČE PRO ELEMENTOR SEKCE
+   ========================================================================== */
+
+.elementor-section.airport-dark {
+  background: var(--airport-dark);
+  color: var(--airport-light);
+}
+
+.elementor-section.airport-terminal-bg {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.2) 0%, transparent 50%),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Speciální hover efekty pro Elementor buttons */
+.elementor-button.airport-hover {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.elementor-button.airport-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+  z-index: -1;
+}
+
+.elementor-button.airport-hover:hover::before {
+  left: 100%;
+}

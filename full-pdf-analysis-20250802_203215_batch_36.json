@@ -1,0 +1,165 @@
+{
+  "batch_start": 36000,
+  "batch_end": 37000,
+  "timestamp": "2025-08-02T20:37:23.793018",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "order": 191,
+    "invoice": 519,
+    "unknown": 170,
+    "contract": 14,
+    "subscription": 19,
+    "notification": 34,
+    "shipping": 28,
+    "receipt": 23,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "velká nabídka na Velký pátek-202504181346-_Adam z Knihy ABB_.pdf",
+      "type": "order",
+      "score": 15,
+      "metadata": {},
+      "text_length": 6143
+    },
+    {
+      "file": "Neue Treffer für deine Tesla Model X, Tesla Model -202503032133-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 2941
+    },
+    {
+      "file": "Doprava zdarma k Valentýnu-202502131011-_Paketo.cz_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {},
+      "text_length": 1543
+    },
+    {
+      "file": "📚 Objednejte si Rekurýra na neděli zdarma-202410251434-_Kamila z Reknih_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 357
+    },
+    {
+      "file": "Für dich_ Deals, Schnäppchen & weitere interessant-202406011125-_eBay_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {},
+      "text_length": 1744
+    },
+    {
+      "file": "Aktualisierung der Mercedes me connect und smart c-202210260131-.pdf",
+      "type": "contract",
+      "score": 11,
+      "metadata": {},
+      "text_length": 3065
+    },
+    {
+      "file": "Peek behind the technology of Aperty 👀-202407241716-_Maryna from Skylum_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2188
+    },
+    {
+      "file": "Vyhrajte krmení na rok!-202409181021-_SpokojenyPes.cz_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1478
+    },
+    {
+      "file": "Ihre Rechnung-202412171222-_Drei Rechnung_.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {},
+      "text_length": 973
+    },
+    {
+      "file": "Statistic Dům-202408100007-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 229
+    },
+    {
+      "file": "Must-reads_ Boomer stuff avalanche, Big Tech perks-202410312306-_Business Insider_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1532
+    },
+    {
+      "file": "Get a birthday reward on us-202407151812-_Ray-Ban_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 971
+    },
+    {
+      "file": "Kickstarter Projects - Weekly Feature-202503130726-_Backer-Update_.pdf",
+      "type": "order",
+      "score": 11,
+      "metadata": {},
+      "text_length": 3926
+    },
+    {
+      "file": "A Nation’s Forgotten Sons-202505081818-Gab 🐸.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 10046
+    },
+    {
+      "file": "Kolekce Numismatika Slovensko od IvoMakedonski 20.-202501071836-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2687
+    },
+    {
+      "file": "Vánoční dárky na poslední chvíli_-202412171358-Potten & Pannen - Staněk.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2001
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202505021448-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    },
+    {
+      "file": "The Case for A Segregated Internet-202503241745-Gab 🐸.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 6163
+    },
+    {
+      "file": "Statistic L3-202406280005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 225
+    },
+    {
+      "file": "Master Voice Control in Minutes—No Internet Needed-202410242044-_DFRobot Service_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3414
+    }
+  ],
+  "error_count": 0
+}

@@ -1,0 +1,37 @@
+{
+  "total": 10,
+  "recognized": 6,
+  "unknown": 4,
+  "success_rate": 0.6,
+  "by_type": {
+    "bank_statement": {
+      "count": 4,
+      "total_confidence": 2.1333333333333333,
+      "scores": [
+        9,
+        7,
+        9,
+        7
+      ]
+    },
+    "contract": {
+      "count": 1,
+      "total_confidence": 0.4,
+      "scores": [
+        6
+      ]
+    },
+    "tax_document": {
+      "count": 1,
+      "total_confidence": 0.4666666666666667,
+      "scores": [
+        7
+      ]
+    }
+  },
+  "confidence_distribution": {
+    "high": 0,
+    "medium": 2,
+    "low": 4
+  }
+}

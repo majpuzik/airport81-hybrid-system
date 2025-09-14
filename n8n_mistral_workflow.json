@@ -1,0 +1,220 @@
+{
+  "name": "Mistral Document Classification CZ",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "webhookId": "document-classifier"
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/classify",
+        "method": "POST",
+        "bodyParametersJson": "={{ JSON.stringify({\n  text: $json.text,\n  filename: $json.filename,\n  model: 'mistral',\n  language: 'cs'\n}) }}",
+        "headerParametersJson": "={\"Content-Type\": \"application/json\"}"
+      },
+      "id": "mcp-classify",
+      "name": "MCP Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "model": "mistral",
+        "prompt": "={{ `Klasifikuj tento dokument do jedné z kategorií:\n\nKATEGORIE:\n- faktura (invoice, rechnung, facture, factura)\n- platba (payment, zahlung, paiement, pago)\n- vypis (bank statement, kontoauszug, relevé, extracto)\n- reklama (advertisement, spam, marketing, werbung)\n- smlouva (contract, agreement, vertrag, contrat)\n- soudni (court document, soudní obsílka, předvolání)\n- policie (police document, trestní oznámení)\n- urad (úřední korespondence, governmental)\n- korespondence (correspondence, dopis, brief)\n- nabidka (offer, proposal, angebot, offre)\n- ostatni (other, jiné)\n\nROZPOZNÁVÁNÍ:\n1. Faktury: IČ, DIČ, částka, datum splatnosti, variabilní symbol\n2. Platby: transakce, částka, datum, reference\n3. Bankovní výpisy: zůstatek, pohyby, číslo účtu\n4. Reklamy: slova jako akce, sleva, nabídka, omezenou dobu\n5. Soudní: soudní příkaz, rozsudek, předvolání k soudu\n6. Policejní: trestní oznámení, protokol, pokuta\n7. Smlouvy: smluvní strany, předmět smlouvy, podpisy\n8. Obchodní korespondence: známý odesílatel, obchodní vztah\n9. Nabídky: cenová nabídka, neznámý odesílatel\n\nTEXT DOKUMENTU:\n${$json.text}\n\nFILENAME: ${$json.filename}\n\nOdpověz pouze názvem kategorie:` }}"
+      },
+      "id": "ollama-mistral",
+      "name": "Ollama Mistral",
+      "type": "n8n-nodes-base.ollama",
+      "typeVersion": 1,
+      "position": [650, 400],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "functionCode": "// Process classification results\nconst mcpResult = $('MCP Classify').first()?.json;\nconst ollamaResult = $('Ollama Mistral').first()?.json;\n\nlet classification = 'ostatni';\nlet confidence = 0;\nlet tags = [];\nlet source = 'unknown';\n\n// Check MCP result first\nif (mcpResult && mcpResult.classification) {\n  classification = mcpResult.classification;\n  confidence = mcpResult.confidence || 0.7;\n  tags = mcpResult.tags || [];\n  source = 'MCP';\n} \n// Fallback to Ollama\nelse if (ollamaResult && ollamaResult.response) {\n  classification = ollamaResult.response.trim().toLowerCase();\n  confidence = 0.5;\n  tags = [classification];\n  source = 'Ollama';\n}\n\n// Validate category\nconst validCategories = [\n  'faktura', 'platba', 'vypis', 'reklama', 'smlouva',\n  'soudni', 'policie', 'urad', 'korespondence', 'nabidka', 'ostatni'\n];\n\nif (!validCategories.includes(classification)) {\n  classification = 'ostatni';\n  confidence = 0.3;\n}\n\n// Special handling for known patterns\nconst text = items[0].json.text || '';\nconst filename = items[0].json.filename || '';\n\n// Check for court documents\nif (text.match(/soudní|obsílka|předvolání|rozsudek/i)) {\n  classification = 'soudni';\n  confidence = Math.max(confidence, 0.8);\n  tags.push('soudní');\n}\n\n// Check for police documents\nif (text.match(/policie|trestní|protokol|pokuta/i)) {\n  classification = 'policie';\n  confidence = Math.max(confidence, 0.8);\n  tags.push('policejní');\n}\n\n// Check for invoices\nif (text.match(/faktura|invoice|ič:|dič:|variabilní symbol/i)) {\n  classification = 'faktura';\n  confidence = Math.max(confidence, 0.8);\n  tags.push('faktura');\n}\n\n// Check for advertisements\nif (text.match(/akce|sleva|omezenou dobu|newsletter|unsubscribe/i)) {\n  classification = 'reklama';\n  confidence = Math.max(confidence, 0.9);\n  tags.push('reklama');\n}\n\n// Check for contracts\nif (text.match(/smlouva|smluvní strany|dohoda|contract/i)) {\n  classification = 'smlouva';\n  confidence = Math.max(confidence, 0.8);\n  tags.push('smlouva');\n}\n\nreturn [{\n  json: {\n    classification: classification,\n    confidence: confidence,\n    tags: [...new Set(tags)],\n    source: source,\n    language: 'cs',\n    filename: filename,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "process-results",
+      "name": "Process Results",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.classification }}",
+              "value2": "reklama"
+            }
+          ]
+        }
+      },
+      "id": "is-advertisement",
+      "name": "Is Advertisement?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Mark as spam/advertisement\nreturn [{\n  json: {\n    ...items[0].json,\n    action: 'skip',\n    reason: 'advertisement',\n    folder: 'reklama'\n  }\n}];"
+      },
+      "id": "skip-ad",
+      "name": "Skip Advertisement",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1250, 200]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Process important document\nconst classification = items[0].json.classification;\nconst tags = items[0].json.tags || [];\n\n// Add priority for important documents\nlet priority = 'normal';\nif (['soudni', 'policie', 'urad'].includes(classification)) {\n  priority = 'high';\n  tags.push('urgent');\n} else if (['faktura', 'platba'].includes(classification)) {\n  priority = 'medium';\n}\n\nreturn [{\n  json: {\n    ...items[0].json,\n    action: 'process',\n    priority: priority,\n    folder: classification,\n    tags: tags\n  }\n}];"
+      },
+      "id": "process-document",
+      "name": "Process Document",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1250, 400]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status",
+              "value": "success"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [1450, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "MCP Classify",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Ollama Mistral",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Classify": {
+      "main": [
+        [
+          {
+            "node": "Process Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Mistral": {
+      "main": [
+        [
+          {
+            "node": "Process Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Results": {
+      "main": [
+        [
+          {
+            "node": "Is Advertisement?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Advertisement?": {
+      "main": [
+        [
+          {
+            "node": "Skip Advertisement",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Process Document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Skip Advertisement": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Document": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "saveDataSuccessExecution": "all",
+    "saveExecutionProgress": true,
+    "saveManualExecutions": true,
+    "executionTimeout": 300
+  },
+  "versionId": "mistral-cz-v1",
+  "meta": {
+    "instanceId": "document-classifier"
+  },
+  "tags": [
+    {
+      "name": "document-processing",
+      "createdAt": "2025-08-08T10:00:00.000Z"
+    },
+    {
+      "name": "mistral-ai",
+      "createdAt": "2025-08-08T10:00:00.000Z"
+    },
+    {
+      "name": "czech-documents",
+      "createdAt": "2025-08-08T10:00:00.000Z"
+    }
+  ]
+}

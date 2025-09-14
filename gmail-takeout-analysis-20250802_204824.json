@@ -1,0 +1,843 @@
+{
+  "timestamp": "2025-08-02T20:48:24.913689",
+  "total_emails": 11100,
+  "analyzed_sample": 5000,
+  "errors": 2,
+  "document_types": {
+    "invoice": 1280,
+    "order": 3144,
+    "unknown": 383,
+    "receipt": 87,
+    "subscription": 99,
+    "contract": 6,
+    "bank_statement": 1
+  },
+  "years": {
+    "2025": 2048,
+    "2024": 2952
+  },
+  "top_domains": {
+    "gmail.com": 369,
+    "google.com": 183,
+    "intl.paypal.com": 169,
+    "fing.com": 154,
+    "notice.aliexpress.com": 130,
+    "epochtimes.cz": 127,
+    "epochtimes.de": 122,
+    "academia-mail.com": 118,
+    "email.cnet.com": 116,
+    "skrz.cz": 99,
+    "medium.com": 87,
+    "xtra-pc.com": 87,
+    "news.ashampoo.com": 70,
+    "rtm.autoscout24.com": 67,
+    "aukro.cz": 66,
+    "myheritage.com": 63,
+    "tm.openai.com": 61,
+    "manageitapp.com": 51,
+    "decovry.com": 48,
+    "mp1.tripadvisor.com": 48
+  },
+  "office_documents_sample": [
+    {
+      "subject": "=?utf-8?q?Chip=2Ecz=3A_Windows_10_o_rok_d=C3=A9le=2C_zpoplatn=C4=9Bn=C3=BD_W?=\r\n =?utf-8?q?hatsApp_a_bankomaty_jinak?=",
+      "from": "=?utf-8?q?=C4=8Casopis_CHIP?= <magazin@chip.cz>",
+      "date": "Thu, 03 Jul 2025 05:25:26 -0000",
+      "type": "invoice",
+      "score": 26,
+      "text_preview": "\r\n\r\n      Microsoft konečně přišel s informací, která jistě potěšila mnoho z nás. Podpora Windows 10, které mimochodem používá stále velký počet uživatelů, bude prodloužena – bezplatně.\r\n\r\n Zobrazit on-line \r\n\r\n Chip.cz: Windows 10 o rok déle, zpoplatněný WhatsApp a bankomaty jinak \r\n\r\n Microsoft ko..."
+    },
+    {
+      "subject": "The timeline is on, the teleprompter is here, and so is video regenerate",
+      "from": "\"Descript\" <updates@marketing.descript.com>",
+      "date": "Thu, 03 Jul 2025 15:36:51 +0000",
+      "type": "order",
+      "score": 36,
+      "text_preview": "Plus, free AI actions (still) with the new Underlord Plus, free\nAI actions (still) with the new Underlord\nDescript \n( https://clicks.descript.com/f/a/_q3YCy-fqYxa7VjF4_pj-A~~/AAQRxRA~/VqUMEWnKRGjtSm5g7Hvm7vauC-6fqYLBJ2p3-f-BWyg8P2hoVhI8A31mCqMieTEFKhTiXsRcTbFo1pxtmTCR0OVH0pTYvI0wLcYYPtxdexKO6j8qL-sa..."
+    },
+    {
+      "subject": "The End of Wireless Dead Zones? =?UTF-8?B?VC1Nb2JpbGXigJlz?= Starlink\r\n Service Launches in 3 Weeks",
+      "from": "CNET Mobile <team@email.cnet.com>",
+      "date": "Thu, 03 Jul 2025 10:30:28 +0000 (UTC)",
+      "type": "order",
+      "score": 23,
+      "text_preview": "\r\nSatellite data access through third-party apps like X and WhatsApp will be \r\navailable in October, T-Mobile says.  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ \r\n ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ \r\n ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ ..."
+    },
+    {
+      "subject": "Daily Overview for Bressner",
+      "from": "Manage It <noreply@manageitapp.com>",
+      "date": "Thu, 3 Jul 2025 09:36:42 +0000",
+      "type": "order",
+      "score": 45,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compat..."
+    },
+    {
+      "subject": "=?UTF-8?q?=F0=9F=92=99_Start_Wimbledonu_i_tipy_na_filmy?=",
+      "from": "=?utf-8?b?TWFydcWha2EgemUgU2xlZG92YW5pVFY=?= <info@moje.sledovanitv.cz>",
+      "date": "Fri, 27 Jun 2025 12:43:36 +0000",
+      "type": "invoice",
+      "score": 14,
+      "text_preview": "Nezobrazuje se vám e-mail správně? Klikněte sem [https://cdn.exponea.com/moderntv-cz-sk/e/.eJxtyD1LAmEAwHEyWiyiXIKGcA_vuUfvTrtNk_QqtUsNUyLueVHP8146n7MrJIKGpoImh1aDaIqGtr5FUy1C9QmiqYakxtr-_18o3O3VH2qPz4Uhfb8forfVweXNOXld-PwqvxTXkneL8_2xJmNORwYAE4ujvmNbVOOwbQLTJtS1WDeCDyMdA1Cw3PBbJJcu5Yia2UQaSylKUclWE..."
+    },
+    {
+      "subject": "Up to 50% Off Prime Day Deals! =?UTF-8?Q?=F0=9F=8E=89?=",
+      "from": "\"Creality EU\" <marketing@send.store.creality.com>",
+      "date": "Thu, 3 Jul 2025 12:52:51 +0200",
+      "type": "order",
+      "score": 8,
+      "text_preview": "Lowest price on K2 Plus Combo ever! Hurry!\r\n\r\nCreality official store\r\nhttps://link.creality.com/u/nrd.php?p=9WZlKY8JbI_10571_153342_1_2&ems_l=145563&i=1&d=MTMwNDY4Mjk%3D%7COVdabEtZOEpiSQ%3D%3D%7CMTM2NjRhYjc3NDg4MzhlNjZlYjczYjYyY2UwN2E3M2M%3D%7C&_esuh=_11_46800456faf5165d62653e6450804d77c060e46aa5ce..."
+    },
+    {
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Latest=20global=20news=20summary?=",
+      "from": "OpenAI <noreply@tm.openai.com>",
+      "date": "Mon, 30 Jun 2025 07:33:54 +0000",
+      "type": "order",
+      "score": 4,
+      "text_preview": "          \r\n                       Novinka o úloze z ChatGPT\r\n Latest global news summary\r\n \r\n\r\n \r\n\r\n            Zobrazit zprávu\r\n<https://chatgpt.com/c/6810c5a1-fce8-8009-befa-b9697ed60537>               \r\n Z e-mailů úlohy se můžeš odhlásit v nastavení\r\n<https://chatgpt.com/#settings/Notifications>..."
+    },
+    {
+      "subject": "A Recommended Recipe on IFTTT: arm arlo camera at night",
+      "from": "IFTTT via IFTTT <action@ifttt.com>",
+      "date": "Thu, 03 Jul 2025 17:00:18 +0000 (UTC)",
+      "type": "order",
+      "score": 2,
+      "text_preview": "\r\n\r\n            Manage\r\n\r\n    Unsubscribe\r\n       from these notifications or sign in to manage your\r\n    Email service.\r\n\r\n\r\n\r\n\r\nIFTTT\r\n\r\n\tManage on IFTTT:\r\n\thttps://ifttt.com/myrecipes/personal/137722751\r\n  \r\n \r\n   \r\n             96       \r\n     \r\n     \r\n     \r\n     \r\n     \r\n     \r\n     \r\n        ..."
+    },
+    {
+      "subject": "=?UTF-8?B?8J+bhCBQYXJrIElubiBieSBSYWRpc3NvbiBMaW56IOKAkyBExJtrdWplbWUh?=\r\n  =?UTF-8?B?IFZhxaFlIHJlemVydmFjZSBqZSBwb3R2cnplbmE=?=",
+      "from": "noreply@booking.com",
+      "date": "Thu, 26 Jun 2025 19:06:33 +0200",
+      "type": "invoice",
+      "score": 42,
+      "text_preview": "   Booking.com\n   Potvrzení rezervace: 5255784467\n   PIN kód: 0085 (Důvěrné)\n\nDěkujeme! Vaše rezervace v destinaci Linec je potvrzena.\n\n   [checkmark.png] Ubytování Park Inn by Radisson Linz vás bude očekávat\n   čt, 26. června\n   [checkmark.png] Pomocí několika kliknutí můžete rezervaci změnit nebo\n..."
+    },
+    {
+      "subject": "=?utf-8?Q?Ji=C5=BEn=C3=AD_Korea_a_Tchaj-wan_-_unik=C3=A1tn=C3=AD_tv=C3=A1=C5=99e_Asie?=",
+      "from": "ESO travel <info@esotravel.cz>",
+      "date": "Thu, 26 Jun 2025 10:21:36 +0000",
+      "type": "order",
+      "score": 203,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"cs\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width\" ..."
+    },
+    {
+      "subject": "=?utf-8?B?4pyoIENvbXBldGl0aXZlIEFuYWx5c2lzIGFuZCDwn4+hIDMgVXNlZnVsIEFJIEFnZW50cyBmb3IgUmVhbHRvcnM=?=",
+      "from": "Jacob Bank <jacob@send.relay.app>",
+      "date": "Thu, 26 Jun 2025 12:09:42 +0000",
+      "type": "receipt",
+      "score": 9,
+      "text_preview": "\r\nHi M.A.J.,\r\n \r\nFirst, I'll be hosting another \"build an AI agent with me\" session on Wednesday, July 2nd at 9:30am PST with our partner Sara\r\nCastellanos [https://www.linkedin.com/in/saraainotionmake/]. We'll show you how to build a simple finance tracker in Notion and\r\nkeep it to date automatical..."
+    },
+    {
+      "subject": "=?UTF-8?Q?K=C3=B6nnte_Russland_von_einem_anhaltend?=\r\n =?UTF-8?Q?en_Krieg_zwischen_Israel_und_dem_Iran_pr?=\r\n =?UTF-8?Q?ofitieren=3F?=",
+      "from": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "Fri, 27 Jun 2025 03:47:14 +0000",
+      "type": "order",
+      "score": 318,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"> <head> <!--[if gte mso 15]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/>..."
+    },
+    {
+      "subject": "=?utf-8?Q?P=C5=99ipravte_se_s_n=C3=A1mi_na_filmov=C3=BD_festi?=\r\n =?utf-8?Q?val_v_Karlov=C3=BDch_Varech?=",
+      "from": "\"Profimed.cz\" <info@newsletter.profimed.cz>",
+      "date": "Thu, 26 Jun 2025 18:15:20 +0200",
+      "type": "invoice",
+      "score": 74,
+      "text_preview": "Pečlivě vybráno pro vaše zdraví.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ..."
+    },
+    {
+      "subject": "=?UTF-8?B?QsOhamXEjW7DqSBrbmloeSBuYSBwcsOhemRuaW55IHYgbmE=?=\r\n\t=?UTF-8?B?YsOtZGNlIHUgYWZvbHRhIEF1a3JvLg==?=",
+      "from": "=?UTF-8?B?SmFyb3NsYXYgRm9sdMOhbmVr?= <info@afolt.cz>",
+      "date": "Sat, 21 Jun 2025 18:39:20 +0200",
+      "type": "invoice",
+      "score": 23,
+      "text_preview": "Informace pro sběratele antikvariátních knih.\r\n\r\nTato zpráva je osobní informace - obchodní sdělení pro klienty, kteří již u mne nakupovali knihy nebo se účastnili mých aukcí. \r\n\r\n Pokud  si nepřejete dostávat tyto informace, můžete se odhlásit po kliknutí na tento odkaz:\r\n\r\nodhlásit se. <https://kl..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Trump=3A_=E2=80=9EZw=C3=B6lftagekrieg?=\r\n =?UTF-8?Q?=E2=80=9C_ist_beendet=2C_Feuerpause_zwis?=\r\n =?UTF-8?Q?chen_Iran_und_Israel_ab_6_Uhr?=",
+      "from": "\"Epoch Times | TOP-AKTUELL\" <newsletter@epochtimes.de>",
+      "date": "Tue, 24 Jun 2025 04:49:27 +0000",
+      "type": "order",
+      "score": 48,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"> <head> <!--[if gte mso 15]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/>..."
+    },
+    {
+      "subject": "Stonehenge: Ein Monument zwischen Mythen, Ideologie und Wahrheit",
+      "from": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "Sun, 22 Jun 2025 04:00:45 +0000",
+      "type": "order",
+      "score": 290,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"> <head> <!--[if gte mso 15]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/>..."
+    },
+    {
+      "subject": "4 =?UTF-8?B?cHJvYmzDqW3Frw==?= konzistence nalezeno na Puzikovi Web\r\n Site (26. =?UTF-8?B?xI1lcnZuYQ==?= 2025)",
+      "from": "MyHeritage Tree Consistency Checker <notification@myheritage.com>",
+      "date": "Thu, 26 Jun 2025 17:22:38 +0000 (UTC)",
+      "type": "invoice",
+      "score": 4,
+      "text_preview": "\r\n    \r\n        \r\n                        \r\n            \r\n                \r\n                    \r\n                        \r\n                            \r\n                                \r\n\t\t        \t\t\t\t\t\r\n\t\t        \t\t\t\t\t    \r\n\t\t        \t\t\t\t\t\r\n\t\t        \t\t\t\t\t\r\n\t\t        \t\t\t\t\t    \r\n\t\t        \t\t\t\t\t    ..."
+    },
+    {
+      "subject": "=?UTF-8?B?U3R2cnplbmthIHphIHZhxaFpIHBsYXRidSBwxZnDrWplbWNpIFdpeC5jb20g?=\r\n  =?UTF-8?B?THV4ZW1ib3VyZyBTLi4u?=",
+      "from": "PayPal <service@intl.paypal.com>",
+      "date": "Tue, 17 Jun 2025 09:51:54 -0700",
+      "type": "order",
+      "score": 82,
+      "text_preview": "<html dir=\"ltr\" lang=\"cs\">\n\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no\" />\n    <title..."
+    },
+    {
+      "subject": "Dalsi faktura",
+      "from": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+      "date": "Wed, 18 Jun 2025 07:57:34 +0000",
+      "type": "invoice",
+      "score": 1,
+      "text_preview": "https://acrobat.adobe.com/id/urn:aaid:sc:EU:7e509f68-002c-4280-a27d-24c400775cfd\r\n\r\nM.A.J. Puzik\r\n  \r\n \r\n \r\n \r\n \r\n   https://acrobat.adobe.com/id/urn:aaid:sc:EU:7e509f68-002c-4280-a27d-24c400775cfd \r\n  \r\n \r\n \r\n \r\nM.A.J. Puzik \r\n \r\n \r\n \r\n Subject: Dalsi faktura From: \"M.A.J. Puzik\" <majpuzik@gmail.co..."
+    },
+    {
+      "subject": "Prompting For Veo 3",
+      "from": "\"Leonardo.Ai\" <hello@m.leonardo.ai>",
+      "date": "Fri, 13 Jun 2025 13:09:44 +0000",
+      "type": "order",
+      "score": 30,
+      "text_preview": "Learn From Our Creator Community    Leonardo.Ai \n( https://clicks.m.leonardo.ai/f/a/lwW8rlwSKVb3-M8hqkoFMw~~/AAQRxRA~/2R8cjRFpalo4uVGC_VnX0rAFcwTlxHARByebqXh2pq5sFYcEzLWL9cFIe0TGEmUh-VQpfTW82WyW7zX5nH-kpH1srkuYwUx2Ovp3EMhDfZCBLek_Y6gS5wHVpHVZH2FD )  Video & Prompts \n( https://clicks.m.leonardo.ai/f/..."
+    },
+    {
+      "subject": "=?UTF-8?Q?=F0=9F=93=84_=22Reemigration_of_the_Volhynian_Czechs=22?=\r\n =?UTF-8?Q?_by_Eva_Jansk=C3=A1?=",
+      "from": "=?UTF-8?B?UERGIEJ5IEV2YSBKYW5za8Oh?= <updates@academia-mail.com>",
+      "date": "Wed, 25 Jun 2025 12:47:19 +0000",
+      "type": "order",
+      "score": 11,
+      "text_preview": "You read the paper <a href=\"https://www.academia.edu/keypass/U1dhNWJJYVhtK2tpQ1VLR2pIMHpnWmxvekUzRkhDZGkvU01iVE1OMWlkMD0tLUNkVnNsNlg5eHh4encrcHJGRHFHVFE9PQ==--390012f1f6c3e19d1c5b4a3b59201ad61a9a3c7f/t/dFnFS-SFaEwsn-NMg9E/resource/work/118463931?email_work_card=interaction-paper\">Werner Cohn: Cikáni..."
+    },
+    {
+      "subject": "=?UTF-8?Q?=F0=9F=93=84_=22Evoluce_v_Hrdli=C4=8Dkov=C4=9B_muzeu?=\r\n =?UTF-8?Q?_=C4=8Dlov=C4=9Bka=22_by_Marco_Stella?=",
+      "from": "PDF By Marco Stella <updates@academia-mail.com>",
+      "date": "Thu, 3 Jul 2025 12:57:26 +0000",
+      "type": "order",
+      "score": 11,
+      "text_preview": "You read the paper <a href=\"https://www.academia.edu/keypass/M2tVWW0rNGJnZGw1bWpDbi9DOWQ5WHFvSDlubjJmd0VOdmlRanZPckluaz0tLWNJRHdja1E0QUY0ZmduaTNFUThrU2c9PQ==--2360a0de1f56332cc29472e5921fb54b6e6c8cd6/t/dFnFS-SF8KYkh-bhXz08/resource/work/33719662?email_work_card=interaction-paper\">Jahnův pomník v Che..."
+    },
+    {
+      "subject": "[Webinar] Register for Introducing Omni and Field Agents webinar",
+      "from": "\"The Airtable Team\" <team@mail.airtable.com>",
+      "date": "Tue, 01 Jul 2025 16:36:12 +0000",
+      "type": "order",
+      "score": 4,
+      "text_preview": "Find out how to deliver AI Apps in minutes\n\n\n\n <https://airtable.com/>\n\n\n\nIntroducing Omni and Field Agents\n\n\n\n \n<https://www.airtable.com/lp/resources/webinars/omni-field-agents?utm_ID=recQF8WoqugFCXNei&utm_source=lifecycle_team&utm_medium=email&utm_campaign=it_ss_wb_omni-and-field-agents-amer&utm_..."
+    },
+    {
+      "subject": "=?utf-8?Q?ChatGPT_for_Gmail_Now_Has_Team_Sharing_=F0=9F=9A=80?=",
+      "from": "cloudHQ <marketing.emails@cloudhq.net>",
+      "date": "Wed, 11 Jun 2025 17:19:30 +0000",
+      "type": "order",
+      "score": 1,
+      "text_preview": "  \r\n \r\n \r\n   \r\n     \r\n     96 \r\n   \r\n \r\n \r\n   \r\n   \r\n   \r\n      \r\n    \r\n  \r\n     \r\n      \r\n      @media only screen and (min-width: 620px) {\r\n        .u-row {\r\n          width: 600px !important;\r\n        }\r\n\r\n        .u-row .u-col {\r\n          vertical-align: top;\r\n        }\r\n\r\n        \r\n           ..."
+    },
+    {
+      "subject": "=?utf-8?B?UmV6ZXJ2YWNlIDUyNTU3ODQ0Njc6IG3DoW1lIHBybyBWw6FzIG5h?=\r\n\t=?utf-8?B?YsOtZGt5IG5hIHR1cmlzdGlja8OpIGF0cmFrY2UgdiBMaW5jaQ==?=",
+      "from": "\"Booking.com\" <noreply@booking.com>",
+      "date": "Thu, 26 Jun 2025 17:07:51 +0000",
+      "type": "order",
+      "score": 123,
+      "text_preview": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n<html\nlang=\"cs\"\n>\n<head>\n<title data-react-helmet=\"true\">Rezervace 5255784467: máme pro Vás nabídky na turistické atrakce v Linci</title>\n<meta data-react-helmet=\"true\" name=\"x-apple-disable-message-reformatting\"/><meta data-react-helme..."
+    },
+    {
+      "subject": "=?utf-8?q?OM_SYSTEM_Lens_Cashback_Aktion_=E2=98=80?=",
+      "from": "Paul von Foto Erhardt <newsletter@foto-erhardt.de>",
+      "date": "Thu, 03 Jul 2025 12:05:00 +0000",
+      "type": "order",
+      "score": 78,
+      "text_preview": "💳 PayPal Ratenzahlung \r\n\r\n⭐ 4,81 Trusted Shops Bewertung\r\n\r\n 📦 gratis Versand ab € 39,- \r\n\r\n\r\n[Zur Webansicht](https://6l3gx.r.sp1-brevo.net/mk/mr/sh/7nVTPdZCTJDXOdE3WBkPJP6dVR3qDtz/boVUzH-DnVlQ)\r\n\r\n\r\n[ KAMERAS](https://www.foto-erhardt.de/kameras.html \"Kameras\")\r\n\r\n[ OBJEKTIVE](https://www.foto-erh..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_GitHub=2C?=\r\n  =?UTF-8?Q?_Inc=2E?=",
+      "from": "PayPal <service@intl.paypal.com>",
+      "date": "Tue, 24 Jun 2025 10:50:21 -0700",
+      "type": "order",
+      "score": 89,
+      "text_preview": "<html dir=\"ltr\" lang=\"cs\">\n\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no\" />\n    <title..."
+    },
+    {
+      "subject": "Some Tesla Robotaxis Are Reportedly Behaving Badly, and Safety\r\n Officials Want to Know What's Up",
+      "from": "CNET Cars <team@email.cnet.com>",
+      "date": "Thu, 26 Jun 2025 10:30:22 +0000 (UTC)",
+      "type": "order",
+      "score": 10,
+      "text_preview": "\r\n  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ \r\n ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ \r\n ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ \r\n ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ ..."
+    },
+    {
+      "subject": "=?utf-8?B?Rnc6IFDFmWlwcmF2IHNlIG5hIEdhbGF4eSBVbnBhY2tlZA==?=",
+      "from": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+      "date": "Fri, 27 Jun 2025 13:24:19 +0000",
+      "type": "receipt",
+      "score": 16,
+      "text_preview": "\r\n\r\nM.A.J. Puzik\r\n________________________________\r\nFrom: Samsung <no-reply@m1.email.samsung.com>\r\nSent: Friday, June 27, 2025 12:15:36 PM\r\nTo: majpuzik@gmail.com <majpuzik@gmail.com>\r\nSubject: Připrav se na Galaxy Unpacked\r\n\r\nSoutěž o ceny v hodnotě více než 120 000 Kč + získej BONUS\r\n͏ ͏ ͏ ͏ ͏ ͏ ͏..."
+    },
+    {
+      "subject": "=?utf-8?B?UMWZaXByYXYgc2UgbmEgR2FsYXh5IFVucGFja2Vk?=",
+      "from": "\"Samsung\" <no-reply@m1.email.samsung.com>",
+      "date": "Fri, 27 Jun 2025 11:15:36 +0100",
+      "type": "receipt",
+      "score": 14,
+      "text_preview": "Soutěž o ceny v hodnotě více než 120 000 Kč + získej BONUS ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏..."
+    },
+    {
+      "subject": "Order #17123 confirmed",
+      "from": "Winscase <support@winscase.com>",
+      "date": "Tue, 17 Jun 2025 10:19:09 +0000 (UTC)",
+      "type": "order",
+      "score": 18,
+      "text_preview": "Thank you for your purchase!\r\n\r\n*****************************************************************\r\nWinscase \r\n( https://winscase.com?syclid=ab4f21c0-86be-4aab-8de2-f9921247c8e4 )\r\n\r\n*****************************************************************\r\n\r\nOrder #17123\r\n\r\n----------------------------\r\nTha..."
+    },
+    {
+      "subject": "=?utf-8?B?8J+amCA1IG5ldWUgRmFocnpldWdlIGbDvHIgRGljaA==?=",
+      "from": "\"mobile.de Suchauftrag\" <noreply@mein.mobile.de>",
+      "date": "Fri, 06 Jun 2025 21:05:26 +0100",
+      "type": "order",
+      "score": 18,
+      "text_preview": "Um den Inhalt dieser E-Mail anzusehen, klicke bitte auf folgenden Link: https://t.mein.mobile.de/r/?id=t1383072c,35798730,1d8a7b20&p1=%40ED4120opf44x99BGwA2CZ63x1N99q96uk%2FlnrMB6e7Q%3D\r\n \r\n  \r\n\r\n\r\n\r\n\r\n  \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n mobile.de \r\n \r\n.ReadMsgBody {width: 480px; }\r\n    \r\n    body { margin: 0..."
+    },
+    {
+      "subject": "=?UTF-8?B?UMWZaWhsw6HFoWVuw60geiBub3bDqWhvIHphxZnDrXplbsOt?= nebo\r\n =?UTF-8?B?bcOtc3Rh?=",
+      "from": "MyHeritage Notification <notify2@myheritage.com>",
+      "date": "Thu, 26 Jun 2025 06:46:23 +0000 (UTC)",
+      "type": "invoice",
+      "score": 8,
+      "text_preview": "\r\n    @media\r\n    only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 480px),\r\n    only screen and (-moz-min-device-pixel-ratio: 2) and (max-device-width: 480px),\r\n    only screen and (-o-min-device-pixel-ratio: 2/1) and (max-device-width: 480px),\r\n    only screen and (min-dev..."
+    },
+    {
+      "subject": "=?utf-8?Q?MCELY=20BOUQUET=20V=20SRDCI=20KRKONO=C5=A0?=",
+      "from": "Hotel Savoy | Hotel Soyka | Asten Hotels <matus.prikazsky@astenhotels.com>",
+      "date": "Fri, 27 Jun 2025 14:09:32 +0000",
+      "type": "order",
+      "score": 11,
+      "text_preview": "BIOKOSMETIKA Z CHATEAU MCELY VE ŠPINDLEROVĚ MLÝNĚ\r\n(https://savoy.astenhotels.com)\r\n\r\nMilé dámy, vážení pánové  .\r\n\r\nDopřejte si zámecký luxus v srdci Krkonoš. Vyzkoušejte nové aromaterapeutické masáže s přírodní kosmetikou Mcely Bouquet a nechte se hýčkat. Relaxujte u nás, nebo si produkty odvezte ..."
+    },
+    {
+      "subject": "Buzic",
+      "from": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+      "date": "Thu, 19 Jun 2025 19:18:28 +0000",
+      "type": "invoice",
+      "score": 4,
+      "text_preview": "Máte naprostou pravdu – **Buzicové (Buzici) nevymřeli** úplně, ale jejich krev pokračovala prostřednictvím **příbuzných rodů**, zejména **Švamberků (páni ze Švamberka)**, a dalších významných českých šlechtických větví. Děkuji za doplnění!\r\n\r\n### **Buzicové a jejich rozrody – kompletní přehled**\r\nRo..."
+    },
+    {
+      "subject": "=?UTF-8?Q?=E2=80=9ESt=C3=A4rkste_Armee_Europas?=\r\n =?UTF-8?Q?=E2=80=9C=3A_Wie_Merz=E2=80=98_Bundesweh?=\r\n =?UTF-8?Q?r-Vision_scheitern_k=C3=B6nnte?=",
+      "from": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "Thu, 29 May 2025 03:47:11 +0000",
+      "type": "order",
+      "score": 313,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"> <head> <!--[if gte mso 15]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/>..."
+    },
+    {
+      "subject": "Order 3054530029016343: delivery update",
+      "from": "AliExpress <transaction@notice.aliexpress.com>",
+      "date": "Thu, 29 May 2025 12:48:59 -0700 (PDT)",
+      "type": "invoice",
+      "score": 21,
+      "text_preview": "      \r\n \r\n   \r\n    \r\n     \r\n    \r\n    \r\n    \r\n   \r\n            #outlook a { padding:0; }\r\n            body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }\r\n            table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }\r\n            img ..."
+    },
+    {
+      "subject": "=?utf-8?q?Upgraded_Fire_Rated_Downlight_with_Cost-Efficient_Solution?=",
+      "from": "Judy Peng <judy@uniqueledlight.com>",
+      "date": "Tue, 1 Jul 2025 18:13:56 +0800 (CST)",
+      "type": "order",
+      "score": 1,
+      "text_preview": " \r\n    \r\n   \r\n     \r\n      Hi ,  Following our previous discussion about the  Versatile&nbsp;Fire Rated Downlight , we’re excited to introduce  a&nbsp;new cost-optimized version ! Now with&nbsp;a&nbsp; Lifud Non-dimmable LED Driver &nbsp;that cuts costs signicantly while keeping all critical feature..."
+    },
+    {
+      "subject": "=?UTF-8?q?=F0=9F=91=8B_Missed_the_Brizy_White_Label_Webinar=3F_Watch_the_?=\r\n =?UTF-8?q?Replay_Now!?=",
+      "from": "Dimi from Brizy <dimi@brizy.io>",
+      "date": "Thu, 26 Jun 2025 16:31:18 +0000",
+      "type": "order",
+      "score": 3,
+      "text_preview": "Image\r\n\r\nHey 👋\r\n\r\n \r\n\r\nThanks to everyone who joined us live for the Brizy White Label Webinar — what an incredible session!\r\n\r\nIf you couldn’t make it, or just want to rewatch and dive deeper into the details, we’ve got you covered👇\r\n\r\n👀 Watch Webinar Replay Here ( https://youtu.be/iz0LPP2Swxw )\r\nI..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Ov=C4=9B=C5=99te_si_stav_Va=C5=A1=C3=AD_platby_(4548917936)?=",
+      "from": "PayU <service@payu.com>",
+      "date": "Tue, 27 May 2025 11:35:55 +0200 (CEST)",
+      "type": "invoice",
+      "score": 18,
+      "text_preview": "Vážený zákazníku,\r\n\r\nzaregistrovali jsme příkaz k úhradě pro MARIMEX CZ , s.r.o. (http://www.marimex.cz).\r\nZda byla transakce uhrazena, můžete kdykoliv ověřit:\r\n\r\nOvěř aktuální stav transakce: https://secure.payu.com/front/transaction-info/?token=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJwYXl1LXRyYW5zYWN0aW9u..."
+    },
+    {
+      "subject": "=?UTF-8?B?WnZsw6HFoXRuw60gcG/FvmFkYXZlayA1NTQ3NzA3MTMy?=",
+      "from": "=?UTF-8?B?UGFyayBJbm4gYnkgUmFkaXNzb24gTGlueiBwxZllcyBCb29raW5nLmNvbQ==?= <5547707132-xz29.esku.zk5y.puvv@property.booking.com>",
+      "date": "Wed, 25 Jun 2025 18:14:13 +0200",
+      "type": "order",
+      "score": 4,
+      "text_preview": "   ##- Svou odpověď prosím napište nad tento řádek -##\n\n   Číslo rezervace: 5547707132 | Máte novou zprávu ohledně Vašeho\n   požadavku\n   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌\n   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌\n   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ..."
+    },
+    {
+      "subject": "Archivierung von Google-Daten angefordert",
+      "from": "Google <no-reply@accounts.google.com>",
+      "date": "Tue, 27 May 2025 13:17:27 GMT",
+      "type": "order",
+      "score": 5,
+      "text_preview": "[image: Google]\r\nArchivierung von Google-Daten angefordert für\r\n\r\n\r\nmajpuzik@gmail.com\r\n\r\nSie erhalten diese E-Mail, weil eine Archivierung Ihrer Google-Daten\r\nangefordert wurde.\r\n\r\nSollte diese Anfrage nicht von Ihnen stammen, versucht unter Umständen\r\njemand, auf Ihr Google-Konto zuzugreifen. Prüf..."
+    },
+    {
+      "subject": "A Recommended Recipe on IFTTT: DO Disarm Arlo",
+      "from": "IFTTT via IFTTT <action@ifttt.com>",
+      "date": "Thu, 22 May 2025 17:00:06 +0000 (UTC)",
+      "type": "order",
+      "score": 2,
+      "text_preview": "\r\n\r\n            Manage\r\n\r\n    Unsubscribe\r\n       from these notifications or sign in to manage your\r\n    Email service.\r\n\r\n\r\n\r\n\r\nIFTTT\r\n\r\n\tManage on IFTTT:\r\n\thttps://ifttt.com/myrecipes/personal/137722751\r\n  \r\n \r\n   \r\n             96       \r\n     \r\n     \r\n     \r\n     \r\n     \r\n     \r\n     \r\n        ..."
+    },
+    {
+      "subject": "=?UTF-8?b?WsOhc29idGUgc2UgcG90xZllYm7DvW0gdnliYXZlbsOtbSBhIHXFoWV0xZll?=\r\n =?UTF-8?b?dGUhIFZ5dcW+aWp0ZSBzbGV2dSA1MDAgS8SNIG5hIGRhbMWhw60gbsOha3Vw?=\r\n =?UTF-8?b?Lg==?=",
+      "from": "Expondo.cz <noreply@expondo.cz>",
+      "date": "Thu, 03 Jul 2025 11:11:00 +0000",
+      "type": "order",
+      "score": 25,
+      "text_preview": "Dobrý den!\r\n\r\nNakupujte chytře – získejte slevu 500 Kč na další objednávku v hodnotě alespoň 5030 Kč! Ať už sháníte základní nářadí nebo pokročilé vybavení, s tímto exkluzivním poukazem získáte ze svého rozpočtu maximum. Navíc lze uplatnit i na zboží ve výprodeji! \r\n\r\n*JU1L20_200_CZ* \r\n\r\n*Poukaz pla..."
+    },
+    {
+      "subject": "=?utf-8?B?U2xldmEgMTUgJSBuYSB6YWhyYWRuw60gb3N2xJt0bGVuw60ga29u?=\r\n\t=?utf-8?B?xI3DrSB1xb4gemEgcMOhciBkbsOtISDwn5Sl?=",
+      "from": "\"LEDVANCE e-shop\" <eshop@newsletter.ledvance.cz>",
+      "date": "Thu, 26 Jun 2025 14:55:15 +0000",
+      "type": "invoice",
+      "score": 21,
+      "text_preview": "Sloupkové, tradiční, solární nebo se senzorem? Stačí si vybrat.\n\nZobrazit webovou verzi [http://ecomail.ledvance.cz/f/a/OlFfj5l7_0e0XLuT65BL-Q~~/AAA-fBA~/wdlzrR4o6C9DJeyYxmNx_Q91ocPcUiw1T1xwipTV3VqXfvij_M7oEU-5MZ45Pg5qBpPIyfVtU-hXdnpeDTJ2GzI_4rplgezJ8yP9GgndV9ZCCFInP-sVB7wLl70yyFePIis72yVedwlUWLdMG5..."
+    },
+    {
+      "subject": "Sumptuously Soft Textiles, Luxurious Ponchos, and Much More!",
+      "from": "\"DECOVRY\" <info@decovry.com>",
+      "date": "Sun, 08 Jun 2025 15:38:38 +0000",
+      "type": "order",
+      "score": 3,
+      "text_preview": "[Decovry](https://shop.decovry.com/)\r\n\r\n[SHOP](https://shop.decovry.com/)\r\n[STORIES](https://shop.decovry.com/blogs/news)\r\n[ABOUT US](https://shop.decovry.com/pages/about-us)\r\n[LIFESTYLE](https://shop.decovry.com/collections)\r\n\r\n[Textiles That Speak in Softness](https://shop.decovry.com/collections/..."
+    },
+    {
+      "subject": "=?UTF-8?Q?=F0=9F=8C=B9_Your_May_Internet_Performance_Report?=",
+      "from": "Fing <noreply@fing.com>",
+      "date": "Thu, 22 May 2025 12:35:32 +0000",
+      "type": "order",
+      "score": 2,
+      "text_preview": " \r\n \r\n   \r\n     \r\n     \r\n     \r\n     \r\n     Your May Internet Performance Report \r\n     \r\n      a { text-decoration: none; outline: none; }\r\n      @media (max-width: 649px) {\r\n        .o_col-full { max-width: 100% !important; }\r\n        .o_col-half { max-width: 50% !important; }\r\n        .o_hide-lg ..."
+    },
+    {
+      "subject": "Webinar invitation - Release faster, scale smarter, stress less",
+      "from": "\"Jan, Easy Redmine\" <jan.rericha@mailing.easyredmine.com>",
+      "date": "Wed, 28 May 2025 10:19:59 +0000 (UTC)",
+      "type": "order",
+      "score": 32,
+      "text_preview": "See how HR, Finance, and even Sales are streamlining their work. Real\r\nteams. Real results.\r\n[https://mautic2018.easyredmine.com/r/6d1b3108a9616d962e79d8431?ct=YTo1OntzOjY6InNvdXJjZSI7YToyOntpOjA7czo1OiJlbWFpbCI7aToxO2k6MTEzMTt9czo1OiJlbWFpbCI7aToxMTMxO3M6NDoic3RhdCI7czoyMjoiNjgzNmUzNGVkNTY5MTk2MDE1..."
+    },
+    {
+      "subject": "=?utf-8?Q?Wow,_bis_zu_40%_Rabatt!_=F0=9F=94=A5?=",
+      "from": "ALPS RESORTS <hello@alps-resorts.com>",
+      "date": "Thu, 3 Jul 2025 18:51:52 +0200",
+      "type": "order",
+      "score": 25,
+      "text_preview": "Last-Minute-Deals und exklusive Specials für deinen Sommerurlaub.\r\n\r\nIm Browser anzeigen (https://hello.alps-resorts.com/e3t/Ctc/RL+113/djxJqW04/VVL3Cq1qSrtfW3nFkhD1k73xKW5_BCzp5yyzMrM7WCQR5m_5PW69t95C6lZ3lRW2Gt6Nd3jXpghW3q0qDr2ZbFvpW4lLQLx4S96VtW5bwRVV4g77rhN7gmCxynDt29W51MZcz8ghkNyW1tFVWg8ZVddDW61..."
+    },
+    {
+      "subject": "Turn your ideas into AI-powered apps",
+      "from": "Anthropic Team <team@email.anthropic.com>",
+      "date": "Thu, 26 Jun 2025 15:06:49 +0000",
+      "type": "order",
+      "score": 2,
+      "text_preview": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n <https://claude.ai/artifacts>\r\n\r\n\r\n\r\nHi there, \r\n\r\n\r\n\r\nWe've turned artifacts into something bigger—a space where your conversations \r\nwith Claude become interactive AI apps you can use and share.\r\n\r\n\r\n\r\nWhat’s new\r\n\r\n * Dedicated artifacts space to browse, organize, and customize cre..."
+    },
+    {
+      "subject": "=?utf-8?q?=E2=AD=95_[Je_vy=C5=BEadov=C3=A1na_akce]_Potvr=C4=8F_odb=C4=9Br?= =?utf-8?q?_newsletteru?=",
+      "from": "\"refurbed\" <peter@m.refurbed.com>",
+      "date": "Fri, 06 Jun 2025 20:56:46 +0000",
+      "type": "order",
+      "score": 8,
+      "text_preview": "[https://analytics-cdn.refurbed.com/production/e/.eJwTUlh6QlV8zeHn8n8vrvp-SmMLM0fDllkfdLmmFyRt91l81vWLlHhGSUlBsZW-fnl5uV5RalppUVJqil5ylRZTcrEhw-qO5qsCtxytBLiYSouFuJJy8vNzi1ITkzOsFIEiyULSLv6e8X6p5cU5qSUlqUXxwaVJxclFmQUlmfl5VlxAJblCLGk5-eVRFfr6SfkplfoliUk5qfolEHaRfkkKRCTaMBZTEJsImJ2SWYbCx2CDjQNzE5OszC..."
+    },
+    {
+      "subject": "GitHub Copilot coding agent is here, and more",
+      "from": "GitHub <no-reply@github.com>",
+      "date": "Tue, 10 Jun 2025 15:02:06 +0000",
+      "type": "order",
+      "score": 10,
+      "text_preview": "The latest launches from GitHub. See what’s new and how to get started.\r\n‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌\r\n\r\n( https://github.com?utm_source=github&utm_medium=email&utm_campaign=mpu_june2025 )\r\n\r\n************************\r\nGitHub release round-up,\r\nJune edition\r\n************************\r\n\r\nThe lat..."
+    },
+    {
+      "subject": "=?UTF-8?Q?EU-Parlament_versch=C3=A4rft_Kontrolle_?=\r\n =?UTF-8?Q?=C3=BCber_NGO-Finanzierung_=E2=80=93_EVP?=\r\n =?UTF-8?Q?_setzt_sich_mit_rechter_Hilfe_durch?=",
+      "from": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "Sat, 21 Jun 2025 03:46:53 +0000",
+      "type": "order",
+      "score": 322,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"> <head> <!--[if gte mso 15]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/>..."
+    },
+    {
+      "subject": "Your receipt from Midjourney Inc #2311-4012-7052",
+      "from": "Midjourney Inc <invoice+statements@midjourney.com>",
+      "date": "Mon, 5 May 2025 14:08:19 +0000",
+      "type": "invoice",
+      "score": 20,
+      "text_preview": "Midjourney Inc  (https://www.midjourney.com/)\r\n\r\nMidjourney Inc\r\n\r\nReceipt from Midjourney Inc $10.00 Paid May 5, 2025 (invoice illustration [https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]) Download invoice (https://pay.stripe.com/invoice/acct_1Klny6JavIy9pYdO/live_..."
+    },
+    {
+      "subject": "=?utf-8?B?8J+amCAyIG5ldWUgRmFocnpldWdlIGbDvHIgRGljaA==?=",
+      "from": "\"mobile.de Suchauftrag\" <noreply@mein.mobile.de>",
+      "date": "Thu, 26 Jun 2025 13:58:22 +0100",
+      "type": "order",
+      "score": 18,
+      "text_preview": "Um den Inhalt dieser E-Mail anzusehen, klicke bitte auf folgenden Link: https://t.mein.mobile.de/r/?id=t1eeb6001,35b5c43e,1da3d066&p1=%40BxWyL8ZzgLXYzSW3Gkvi6E3c723vvikQ0BoE9QdAp%2Fo%3D\r\n \r\n  \r\n\r\n\r\n\r\n\r\n  \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n mobile.de \r\n \r\n.ReadMsgBody {width: 480px; }\r\n    \r\n    body { margin: 0..."
+    },
+    {
+      "subject": "=?utf-8?B?Tm92w6kgZS1rbmloeSBwcsOhdsSbIGRvcmF6aWx5LCBuYWtybXRl?=\r\n\t=?utf-8?B?IHNpIMSNdGXEjWt1?=",
+      "from": "\"KnihyDobrovsky.cz\" <info@e.knihydobrovsky.cz>",
+      "date": "Sat, 14 Jun 2025 08:41:40 +0000",
+      "type": "order",
+      "score": 247,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"><head> <meta http-equiv=\"Content-Type\" content=\"text/html;..."
+    },
+    {
+      "subject": "IMPORTANT: Upcoming subscription upgrade for bressner.cz",
+      "from": "The Google Workspace Team <workspace-noreply@google.com>",
+      "date": "Mon, 26 May 2025 01:44:50 +0200",
+      "type": "order",
+      "score": 54,
+      "text_preview": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=Windows-1252\">\r\n</head>\r\n<body>\r\n<div>\r\n<meta name=\"viewport\" content=\"width=device-width\">\r\n<style>@media only screen{html{min-height:100%;background:#fafafa}}@media only screen and (max-width:640px){.small-float-center{mar..."
+    },
+    {
+      "subject": "RE: mas?",
+      "from": "M.A.J.Puzik <puzik@outlook.com>",
+      "date": "Sat, 7 Jun 2025 14:41:32 +0200",
+      "type": "order",
+      "score": 1,
+      "text_preview": "Nadherny servis..\r\n \r\nFrom: Martin Pužík <martin.puzik@gmail.com>\r\nSent: Saturday, June 22, 2024 1:51 PM\r\nTo: M.A.J. Puzik <puzik@outlook.com>\r\nSubject: Re: mas?\r\n \r\nzde\r\nhttps://we.tl/t-bXWfDCwu5Q <https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwe.tl%2Ft-bXWfDCwu5Q&data=05%7C02%..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_Netflix=2Ecom?=",
+      "from": "PayPal <service@intl.paypal.com>",
+      "date": "Tue, 01 Jul 2025 02:00:14 -0700",
+      "type": "order",
+      "score": 82,
+      "text_preview": "<html dir=\"ltr\" lang=\"cs\">\n\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no\" />\n    <title..."
+    },
+    {
+      "subject": "=?utf-8?B?SW5mb3JtYWNlIG8gb2JqZWRuw6F2Y2UgNTQ5NDg3Njky?=",
+      "from": "\"Alza.cz\" <sluzebnicek@alza.cz>",
+      "date": "6 Jun 2025 12:06:39 +0000",
+      "type": "order",
+      "score": 125,
+      "text_preview": "<!DOCTYPE html><html lang=\"cs\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1...."
+    },
+    {
+      "subject": "=?UTF-8?q?You=E2=80=99ve_never_seen_video_creation_like_this?=",
+      "from": "HeyGen <no_reply@email.heygen.com>",
+      "date": "Thu, 26 Jun 2025 16:05:50 +0000",
+      "type": "invoice",
+      "score": 17,
+      "text_preview": "͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏\r\n ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏ ..."
+    },
+    {
+      "subject": "=?utf-8?B?TmV3c2xldHRlciAtIE1vZGVybsOtIGJ5dA==?=",
+      "from": "=?utf-8?B?TW9kZXJuw60gYnl0?= <newsletter@modernibyt.cz>",
+      "date": "Fri, 23 May 2025 23:10:03 +0200",
+      "type": "order",
+      "score": 31,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<title>Newsletter</title>\r\n<meta name=\"x-apple-disable-..."
+    },
+    {
+      "subject": "Bestsellers worth a look",
+      "from": "AliExpress <promotion@aliexpress.com>",
+      "date": "Thu, 3 Jul 2025 07:37:03 -0700 (PDT)",
+      "type": "invoice",
+      "score": 28,
+      "text_preview": "                        #outlook a { padding:0; } body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; } table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; } img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-..."
+    },
+    {
+      "subject": "RFK Jr. Wants All Americans to Use Wearables to Track Their Health",
+      "from": "CNET Insider <team@email.cnet.com>",
+      "date": "Thu, 26 Jun 2025 17:00:32 +0000 (UTC)",
+      "type": "order",
+      "score": 13,
+      "text_preview": "Plus, information about AT&T's data breach settlement, and the best foods for \r\nheadaches and migraines. Plus, what to know about AT&T's data breach \r\nsettlement, and a look at a $1,299 robot dog. \r\n\r\n Not displaying correctly? View this newsletter online \r\n<https://links.email.cnet.com/s/vb/Z92zCVV..."
+    },
+    {
+      "subject": "Network alert on AZURO2G",
+      "from": "Fing Alert <alert@fing.com>",
+      "date": "Fri, 6 Jun 2025 14:17:59 +0000",
+      "type": "order",
+      "score": 1,
+      "text_preview": " \r\n \r\n   \r\n     \r\n     \r\n     \r\n     \r\n     Network alert on AZURO2G \r\n     \r\n      a { text-decoration: none; outline: none; }\r\n      @media (max-width: 649px) {\r\n        .o_col-full { max-width: 100% !important; }\r\n        .o_col-half { max-width: 50% !important; }\r\n        .o_hide-lg { display: i..."
+    },
+    {
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Latest=20news=20updates=20from=20EU=20and=20beyond?=",
+      "from": "OpenAI <noreply@tm.openai.com>",
+      "date": "Fri, 06 Jun 2025 07:37:27 +0000",
+      "type": "order",
+      "score": 4,
+      "text_preview": "          \r\n                       Novinka o úloze z ChatGPT\r\n Latest news updates from EU and beyond\r\n \r\n\r\n \r\n\r\n            Zobrazit zprávu\r\n<https://chatgpt.com/c/6810c5a1-fce8-8009-befa-b9697ed60537>               \r\n Z e-mailů úlohy se můžeš odhlásit v nastavení\r\n<https://chatgpt.com/#settings/No..."
+    },
+    {
+      "subject": "Order 3052437154846343: awaiting confirmation",
+      "from": "AliExpress <transaction@notice.aliexpress.com>",
+      "date": "Fri, 25 Apr 2025 05:52:53 -0700 (PDT)",
+      "type": "invoice",
+      "score": 11,
+      "text_preview": "      \r\n \r\n   \r\n    \r\n     \r\n    \r\n    \r\n    \r\n   \r\n            #outlook a { padding:0; }\r\n            body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }\r\n            table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }\r\n            img ..."
+    },
+    {
+      "subject": "Daily Overview for Bressner",
+      "from": "Manage It <noreply@manageitapp.com>",
+      "date": "Thu, 26 Jun 2025 09:41:49 +0000",
+      "type": "order",
+      "score": 45,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compat..."
+    },
+    {
+      "subject": "Your receipt from xAI, LLC #2997-9962",
+      "from": "\"xAI, LLC\" <invoice+statements+acct_1PksddHJohyvID2c@stripe.com>",
+      "date": "Mon, 16 Jun 2025 18:56:42 +0000",
+      "type": "invoice",
+      "score": 20,
+      "text_preview": "xAI, LLC  (https://x.ai/about)\r\n\r\nxAI, LLC\r\n\r\nReceipt from xAI, LLC $30.00 Paid June 16, 2025 (invoice illustration [https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]) Download invoice (https://pay.stripe.com/invoice/acct_1PksddHJohyvID2c/live_YWNjdF8xUGtzZGRISm9oeXZJR..."
+    },
+    {
+      "subject": "=?windows-1250?Q?FW:_Heute_meistgelesen:_Operation_=ABSpinnennetz=BB:_Neu?=\r\n =?windows-1250?Q?e_Aufnahmen_schaffen_Klarheit_=FCber_die_ukrainischen_Dr?=\r\n =?windows-1250?Q?ohnenangriffe?=",
+      "from": "Milan Puzik <puzik@outlook.com>",
+      "date": "Fri, 6 Jun 2025 19:57:26 +0200",
+      "type": "order",
+      "score": 213,
+      "text_preview": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1250\">\r\n</head>\r\n<body>\r\n<div dir=\"ltr\" style=\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt;\">\r\n<br>\r\n</div>\r\n<div dir=\"ltr\" style=\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12..."
+    },
+    {
+      "subject": "Your Stability AI Ltd subscription will renew soon",
+      "from": "Stability AI Ltd <upcoming-invoice+acct_1NbVCfF1JHbbkukL@stripe.com>",
+      "date": "Sat, 10 May 2025 17:45:15 +0000",
+      "type": "subscription",
+      "score": 7,
+      "text_preview": "Stability AI Ltd  (http://www.stability.ai)\r\n\r\nStability AI Ltd\r\n\r\nYour subscription will renew soon This is a friendly reminder that your Stability AI Ltd subscription for Stable Artisan & Assistant Membership - Standard Tier with Free Trial will automatically renew on May 17, 2025. Your mastercard..."
+    },
+    {
+      "subject": "=?UTF-8?B?WmUgc3bEm3RhIGtuaWggb2QgYWZvbHRhLiBaYWrDrW1hdg==?=\r\n\t=?UTF-8?B?w6kga25paHkgdiBuYWJpZGNlIHByb2RlamNlIGFmb2x0IEF1a3Jv?=",
+      "from": "=?UTF-8?B?SmFyb3NsYXYgRm9sdMOhbmVr?= <info@afolt.cz>",
+      "date": "Sat, 07 Jun 2025 17:34:31 +0200",
+      "type": "invoice",
+      "score": 23,
+      "text_preview": "Informace pro sběratele antikvariátních knih.\r\n\r\nTato zpráva je osobní informace - obchodní sdělení pro klienty, kteří již u mne nakupovali knihy nebo se účastnili mých aukcí. \r\n\r\n Pokud  si nepřejete dostávat tyto informace, můžete se odhlásit po kliknutí na tento odkaz:\r\n\r\nodhlásit se. <https://kl..."
+    },
+    {
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Top=20political=20and=20economic=20stories?=",
+      "from": "OpenAI <noreply@tm.openai.com>",
+      "date": "Fri, 06 Jun 2025 07:32:07 +0000",
+      "type": "order",
+      "score": 4,
+      "text_preview": "          \r\n                       Novinka o úloze z ChatGPT\r\n Top political and economic stories\r\n \r\n\r\n \r\n\r\n            Zobrazit zprávu\r\n<https://chatgpt.com/c/6810c5a1-fce8-8009-befa-b9697ed60537>               \r\n Z e-mailů úlohy se můžeš odhlásit v nastavení\r\n<https://chatgpt.com/#settings/Notifi..."
+    },
+    {
+      "subject": "=?iso-8859-2?Q?Anal=FDza_p=E1rov=E1ni_ucetnicti?=",
+      "from": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+      "date": "Sun, 18 May 2025 18:51:56 +0000",
+      "type": "invoice",
+      "score": 14,
+      "text_preview": "ted popisu, co budeme dlat. v pchozch emailech najdeme ve, co by mohl byt faktura, platba, upominka,nebo predplatne. To si oindexujeme, abychom mohli parovat s vpisy z banky. vpis z banky. Pro provn potebujeme Datum platby, et protistrany, cesta, typ hrady, Varibilni symbol, Specificky symbol, Poznm..."
+    },
+    {
+      "subject": "One trigger, endless possibilities with multi-action Applets!",
+      "from": "Chelsea with IFTTT <chelsea@ifttt.com>",
+      "date": "Thu, 26 Jun 2025 08:15:09 +0000 (UTC)",
+      "type": "invoice",
+      "score": 4,
+      "text_preview": "IFTTT Logo ( https://ifttt.com )\r\n\r\nWhy settle for one action when you can automate multiple? With multi-action Applets, a single trigger can do it all.\r\n\r\nHere’s what they can help you achieve—and we’ve even created some Applets to get you started:\r\n\r\n⭐️ Boost productivity: Stay on track with autom..."
+    },
+    {
+      "subject": "chabry kanalizace",
+      "from": "<puzik@outlook.com>",
+      "date": "Fri, 30 May 2025 11:42:21 +0200",
+      "type": "invoice",
+      "score": 2,
+      "text_preview": "Rozhodnutí o připojení ke kanalizaci v Dolních Chabrech (resp. obecně v rámci stavebních řízení a povolení) může mít různou podobu a platnost podle typu vydaného rozhodnutí a aktuální právní úpravy.\r\n• Územní rozhodnutí nebo územní souhlas: Pokud bylo vydáno územní rozhodnutí o umístění stavby (např..."
+    },
+    {
+      "subject": "=?UTF-8?B?QXVrY2UgMzk1IGtuaWgga29uxI3DrSBkbmVzIG9kIDExOjA=?=\r\n\t=?UTF-8?B?MC4gSmXFoXTEmyBtw6F0ZSDFoWFuY2kgcMWZw61ob2RpdCBhIHJhZG8=?=\r\n\t=?UTF-8?B?dmF0IHNlIHogdsO9aHJ5LiBLbmloeSBhZm9sdCBBdWtyby4=?=",
+      "from": "=?UTF-8?B?SmFyb3NsYXYgRm9sdMOhbmVr?= <info@afolt.cz>",
+      "date": "Tue, 10 Jun 2025 08:31:38 +0200",
+      "type": "invoice",
+      "score": 23,
+      "text_preview": "Informace pro sběratele antikvariátních knih.\r\n\r\nTato zpráva je osobní informace - obchodní sdělení pro klienty, kteří již u mne nakupovali knihy nebo se účastnili mých aukcí. \r\n\r\n Pokud  si nepřejete dostávat tyto informace, můžete se odhlásit po kliknutí na tento odkaz:\r\n\r\nodhlásit se. <https://kl..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Stojanov=C3=BD_ventil=C3=A1tor_jen_z?=\r\n =?UTF-8?Q?a_329_K=C4=8D_ihned_k_odesl=C3=A1n=C3=AD!?=",
+      "from": "=?UTF-8?Q?Levnoshop=2Ecz_-_70=25_sleva_na_vybran=C3=A9_produkty!?= <novinky@levnoshop.cz>",
+      "date": "Thu, 3 Jul 2025 05:15:48 +0000 (UTC)",
+      "type": "invoice",
+      "score": 84,
+      "text_preview": "Dámské plavky jen za 89,70 Kč? Se 70% extra slevou ano! ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ..."
+    },
+    {
+      "subject": "VojNem ",
+      "from": "Milan Puzik <puzik@outlook.com>",
+      "date": "Sun, 1 Jun 2025 15:33:07 +0200",
+      "type": "order",
+      "score": 1,
+      "text_preview": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n</head>\r\n<body>\r\n<br>\r\nMicrosoft Outlook Web Access: <a href=\"https://outlook.office365.com/owa/sct-15-20-8534-20-msonline-outlook-f44ed.templateTenant/?itemid=AQMkADAwATZiZmYAZC1hM2VjLTQ3YzQtMDACLTAwCgBGAAADIR7ZKge..."
+    },
+    {
+      "subject": "=?UTF-8?B?VXBvem9ybsSbbsOtIEdvb2dsZSDigJMgQml0Y29pbg==?=",
+      "from": "Google Alerts <googlealerts-noreply@google.com>",
+      "date": "Sat, 17 May 2025 14:07:41 -0700",
+      "type": "invoice",
+      "score": 5,
+      "text_preview": "=== Zprávy - 10 nových výsledků pro dotaz [Bitcoin] ===\r\n\r\nBitcoin zamíří na 1 milion dolarů, Hayes radí Evropě s finančním únikem\r\nkryptomagazin.cz\r\nVe svém posledním blogovém příspěvku bývalý šéf burzy BitMEX Arthur Hayes\r\nznova potvrdil svůj extrémně optimistický výhled na cenu BTC.\r\n<https://www..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Das_Erdmagnetfeld_anzapfen=3A_Kann_ein_M?=\r\n =?UTF-8?Q?etallzylinder_unser_Energieproblem_l?= =?UTF-8?Q?=C3=B6sen=3F?=",
+      "from": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "Mon, 28 Apr 2025 04:01:32 +0000",
+      "type": "order",
+      "score": 253,
+      "text_preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"> <head> <!--[if gte mso 15]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/>..."
+    },
+    {
+      "subject": "These 3 iOS Updates Are a Bigger Deal Than Liquid Glass",
+      "from": "CNET Insider <team@email.cnet.com>",
+      "date": "Thu, 12 Jun 2025 20:01:10 +0000 (UTC)",
+      "type": "order",
+      "score": 23,
+      "text_preview": "Plus, what to know about the Anker power bank recall, and why you should wait \r\nto buy a new iPhone. Plus, what to know about the Anker power bank recall, and \r\nwhy you should wait to buy a new iPhone. \r\n\r\n Not displaying correctly? View this newsletter online \r\n<https://links.email.cnet.com/s/vb/4C..."
+    },
+    {
+      "subject": "More devices. More savings!",
+      "from": "\"NVIDIA GeForce NOW\" <gaming@nvgaming.nvidia.com>",
+      "date": "Thu, 05 Jun 2025 14:34:10 -0600",
+      "type": "order",
+      "score": 75,
+      "text_preview": "<!doctype html><html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"><head><!--[if !mso]><!-- --><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><!--<![endif]--><meta http-equiv=\"Content-Type\" content=\"t..."
+    },
+    {
+      "subject": "=?utf-8?B?8J+amCAyIG5ldWUgRmFocnpldWdlIGbDvHIgRGljaA==?=",
+      "from": "\"mobile.de Suchauftrag\" <noreply@mein.mobile.de>",
+      "date": "Wed, 25 Jun 2025 21:17:16 +0100",
+      "type": "order",
+      "score": 18,
+      "text_preview": "Um den Inhalt dieser E-Mail anzusehen, klicke bitte auf folgenden Link: https://t.mein.mobile.de/r/?id=t1e4b3a7f,35b3d82c,1da30898&p1=%40hH12B3eBpKnj15D9CU6hYPFntBP2k72%2BE0ifdK0THqg%3D\r\n \r\n  \r\n\r\n\r\n\r\n\r\n  \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n mobile.de \r\n \r\n.ReadMsgBody {width: 480px; }\r\n    \r\n    body { margin: 0..."
+    },
+    {
+      "subject": "=?utf-8?B?8J+amCAyIG5ldWUgRmFocnpldWdlIGbDvHIgRGljaA==?=",
+      "from": "\"mobile.de Suchauftrag\" <noreply@mein.mobile.de>",
+      "date": "Wed, 25 Jun 2025 21:13:13 +0100",
+      "type": "order",
+      "score": 18,
+      "text_preview": "Um den Inhalt dieser E-Mail anzusehen, klicke bitte auf folgenden Link: https://t.mein.mobile.de/r/?id=t1e4af998,35b3d82c,1da30898&p1=%40o0YRuqjvhlH45D1Rdz7yBqfA04OO9veunbLC1TyOuVQ%3D\r\n \r\n  \r\n\r\n\r\n\r\n\r\n  \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n mobile.de \r\n \r\n.ReadMsgBody {width: 480px; }\r\n    \r\n    body { margin: 0 !..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_Adobe_Systems?=\r\n  =?UTF-8?Q?_Softwa=2E=2E=2E?=",
+      "from": "PayPal <service@intl.paypal.com>",
+      "date": "Tue, 24 Jun 2025 06:33:56 -0700",
+      "type": "order",
+      "score": 89,
+      "text_preview": "<html dir=\"ltr\" lang=\"cs\">\n\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no\" />\n    <title..."
+    },
+    {
+      "subject": "This Is the Best Free AI Chatbot I've Used So Far",
+      "from": "CNET Insider <team@email.cnet.com>",
+      "date": "Wed, 25 Jun 2025 20:00:55 +0000 (UTC)",
+      "type": "invoice",
+      "score": 13,
+      "text_preview": "Plus, what to know before working in scorching conditions, and the best healthy \r\nbeverages to keep you hydrated this summer. Plus, what to know before working \r\nin scorching conditions, and the best healthy beverages to keep you hydrated \r\nthis summer. \r\n\r\n Not displaying correctly? View this newsl..."
+    },
+    {
+      "subject": "GeForce NOW | Your June Game Arrivals",
+      "from": "\"NVIDIA GeForce NOW\" <gaming@nvgaming.nvidia.com>",
+      "date": "Fri, 06 Jun 2025 14:26:28 -0600",
+      "type": "order",
+      "score": 125,
+      "text_preview": "<!doctype html><html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"><head><title></title><!--[if !mso]><!-- --><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><!--<![endif]--><meta http-equiv=\"Content-T..."
+    },
+    {
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=2010.=20EU,=20US,=20and?=",
+      "from": "OpenAI <noreply@tm.openai.com>",
+      "date": "Tue, 13 May 2025 07:34:54 +0000",
+      "type": "order",
+      "score": 4,
+      "text_preview": "          \r\n                       Novinka o úloze z ChatGPT\r\n 10. EU, US, and\r\n \r\n\r\n \r\n\r\n            Zobrazit zprávu\r\n<https://chatgpt.com/c/6810c5a1-fce8-8009-befa-b9697ed60537>               \r\n Z e-mailů úlohy se můžeš odhlásit v nastavení\r\n<https://chatgpt.com/#settings/Notifications>. \r\n\r\n     ..."
+    },
+    {
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Denn=C3=AD=20p=C5=99ehled=20sv=C4=9Btov=C3=BDch=20zpr=C3=A1v=2011=20kv=C4=9Btna?=",
+      "from": "OpenAI <noreply@tm.openai.com>",
+      "date": "Sun, 11 May 2025 07:32:57 +0000",
+      "type": "order",
+      "score": 4,
+      "text_preview": "          \r\n                       Novinka o úloze z ChatGPT\r\n Denní přehled světových zpráv 11 května\r\n \r\n\r\n \r\n\r\n            Zobrazit zprávu\r\n<https://chatgpt.com/c/6810c5a1-fce8-8009-befa-b9697ed60537>               \r\n Z e-mailů úlohy se můžeš odhlásit v nastavení\r\n<https://chatgpt.com/#settings/N..."
+    },
+    {
+      "subject": "Access to the majpuzik-group group was granted",
+      "from": "GitLab <gitlab@mg.gitlab.com>",
+      "date": "Wed, 21 May 2025 20:16:30 +0000",
+      "type": "order",
+      "score": 3,
+      "text_preview": "\r\n\r\n\r\nYou have been granted access to the majpuzik-group group with the following role: Owner.\r\nThis is a default role.\r\n\r\nhttps://gitlab.com/groups/majpuzik-group\r\n\r\nIf this was a mistake you can leave the group.\r\n\r\nhttps://gitlab.com/majpuzik-group?leave=1\r\n\r\n-- \r\nYou're receiving this email becau..."
+    },
+    {
+      "subject": "Access to the majpuzik-group group was granted",
+      "from": "\"GitLab\" <gitlab@mg.gitlab.com>",
+      "date": "Wed, 21 May 2025 22:16:30 +0200",
+      "type": "order",
+      "score": 3,
+      "text_preview": "\r\n  <https://gitlab.com/assets/mailers/gitlab_logo-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png>\r\n\r\n\r\n\r\n\r\nYou have been granted access to the majpuzik-group \r\n<https://gitlab.com/groups/majpuzik-group>  group with the following role: \r\nOwner. This is a default role.\r\n\r\nIf thi..."
+    },
+    {
+      "subject": "Your DeepL Pro invoice",
+      "from": "DeepL <no-reply@deepl.com>",
+      "date": "Thu, 22 May 2025 14:47:17 +0200",
+      "type": "invoice",
+      "score": 4,
+      "text_preview": " \r\n \r\n \r\n \r\n \r\n @media only screen{html{min-height:100%;background:#fff}}@media only screen and (max-width:583px){.small-float-center{margin:0 auto!important;float:none!important;text-align:center!important}.small-text-center{text-align:center!important}.small-text-left{text-align:left!important}.sm..."
+    },
+    {
+      "subject": "$50 Off Storewide, Don't Miss Out | Plus VIP Sales, More!",
+      "from": "\"HDtracks\" <newsletters@hdtracks.com>",
+      "date": "28 May 2025 07:00:43 -0400",
+      "type": "order",
+      "score": 623,
+      "text_preview": "<!DOCTYPE html> <html lang=\"en\"> <!--[if (gte mso 9)|(IE)]><html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"/><![endif]--> <head> <title>$50 Off Storewide, Don't Miss Out | Plus VIP Sales, More!</title> <meta http-equ..."
+    },
+    {
+      "subject": "=?UTF-8?Q?Dok=C3=A1=C5=BEeme_to=3F?=",
+      "from": "=?UTF-8?Q?Jana_Novotn=C3=A1_/_Epoch_Times_=C4=8CR?=\r\n <newsletter@epochtimes.cz>",
+      "date": "Sun, 04 May 2025 08:31:37 +0000",
+      "type": "order",
+      "score": 419,
+      "text_preview": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional //EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\">\r\n<head>\r\n<!--[if gte mso 9]>\r\n<xml>\r\n  <o:..."
+    },
+    {
+      "subject": "=?utf-8?Q?Google_Drive_hat_dich_in_=23Google_Drive_erw=c3=a4hnt?=",
+      "from": "Slack <notification@slack.com>",
+      "date": "Sun, 27 Apr 2025 17:55:30 +0000",
+      "type": "order",
+      "score": 41,
+      "text_preview": "Hi M.A.J. Puzik!\r\n\r\nDu hast eine neue Erwähnung vom Workspace Bressner (https://bressnerworkspace.slack.com/x-p8797335145543-8797335145943-8815366523970/team).\r\n\r\n---\r\n\r\n\r\nIm Archiv ansehen: https://bressnerworkspace.slack.com/x-p8797335145543-8797335145943-8815366523970/archives/D08PFA02ABZ/p174577..."
+    },
+    {
+      "subject": "Claude Code: The Agentic Development Revolution That Made Me Cancel\r\n Cursor, Copilot, & ChatGPT =?UTF-8?B?4oCU4oCm?= | George Vetticaden",
+      "from": "Medium Daily Digest <noreply@medium.com>",
+      "date": "Wed, 18 Jun 2025 06:50:00 +0000 (UTC)",
+      "type": "order",
+      "score": 9,
+      "text_preview": "Stories for M.A.J. Puzik\r\n@majpuzik (https://medium.com/@majpuzik?source=email-156a41c5f11a-1750213224533-digest.reader-------------------------ea43ff9d_8602_461f_b030_b5d4a5df24d4)\r\n·Become a member (https://medium.com/plans?source=email-156a41c5f11a-1750213224533-digest.reader---------------------..."
+    },
+    {
+      "subject": "Not Just a Laser: Free Demos, AI Tools & Tips\r\n =?UTF-8?B?WW914oCZbGwgVXNlIPCfkYk=?=",
+      "from": "xTool EU <service.eu@xtool.com>",
+      "date": "Thu, 03 Jul 2025 12:04:25 +0000 (UTC)",
+      "type": "invoice",
+      "score": 4,
+      "text_preview": ">From choosing the right tool to selling your work – we’ve got you!\r\n\r\n[xTool](https://www.xtool.eu/)\r\n\r\n[Machines](https://www.xtool.eu/collections/machine)\r\n[Accessories](https://www.xtool.eu/collections/accessory)\r\n[Materials](https://www.xtool.eu/pages/xtool-selected-materialS)\r\n\r\n[More Than Jus..."
+    },
+    {
+      "subject": "A shipment from order #132424 is on the way",
+      "from": "Astropad <support@astropad.com>",
+      "date": "Tue, 10 Jun 2025 09:15:31 +0000 (UTC)",
+      "type": "order",
+      "score": 15,
+      "text_preview": "Your order is on the way\r\n\r\n*****************************************************************\r\nAstropad \r\n( https://shop.astropad.com?syclid=05d27a69-5dd7-4c6d-92d2-2f3a83a2664a )\r\n\r\n*****************************************************************\r\n\r\nOrder #132424\r\n\r\n------------------------\r\nYour ..."
+    },
+    {
+      "subject": "=?UTF-8?B?VXBvem9ybsSbbsOtIEdvb2dsZSDigJMgQml0Y29pbg==?=",
+      "from": "Google Alerts <googlealerts-noreply@google.com>",
+      "date": "Thu, 26 Jun 2025 14:11:05 -0700",
+      "type": "invoice",
+      "score": 9,
+      "text_preview": "=== Zprávy - 10 nových výsledků pro dotaz [Bitcoin] ===\r\n\r\nSledování ceny Bitcoinu: Krátkodobé vyčerpání roste—Je opětovný test na\r\nobzoru?\r\nBitcoin.com News\r\nBitcoin se obchodovalo za 107 312 dolarů dne 26. června, blížilo se k\r\nodporu na pozadí trvalého zájmu a zúžení intradenní volatility.\r\n<http..."
+    }
+  ]
+}

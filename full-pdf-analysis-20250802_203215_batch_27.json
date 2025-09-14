@@ -1,0 +1,167 @@
+{
+  "batch_start": 27000,
+  "batch_end": 28000,
+  "timestamp": "2025-08-02T20:36:09.185499",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 501,
+    "order": 197,
+    "unknown": 171,
+    "contract": 10,
+    "shipping": 19,
+    "subscription": 26,
+    "notification": 41,
+    "receipt": 33,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "🥂Fines bulles, nos coups de coeur à -20€, vins bi-202410010700-_Guide Hachette des Vins_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 1413
+    },
+    {
+      "file": "Dnes slevy až 90 % 🤑-202504040839-Trenýrkárna.cz.pdf",
+      "type": "invoice",
+      "score": 24,
+      "metadata": {
+        "ico": "24209139",
+        "dic": "CZ24209139"
+      },
+      "text_length": 2761
+    },
+    {
+      "file": "WebSite X5 evo - In 5 einfachen Schritten zur eige-202408231103-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3826
+    },
+    {
+      "file": "Neuer Treffer für deine Volkswagen, Bis zu 50.000 -202504151501-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "order",
+      "score": 17,
+      "metadata": {},
+      "text_length": 3370
+    },
+    {
+      "file": "NEU_ Retro Runner - Qualität im Kultformat-202501120815-_Giesswein_-1.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2189
+    },
+    {
+      "file": "Stvrzenka za vaši platbu příjemci Golem Media GmbH-202408010830-_service@intl.paypal.com_.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 1590
+    },
+    {
+      "file": "Statistic L3-202408100005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 226
+    },
+    {
+      "file": "Update identity documents-202407302301-_Paysera_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1023
+    },
+    {
+      "file": "Středoškolák a družice-202502090530-_Forbes Digest_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 846
+    },
+    {
+      "file": "[Filtrační Materiály - Eshop] Zapomenuté heslo-202412031606-Filtrační Materiály - Eshop.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 818
+    },
+    {
+      "file": "🔥 Poslední šance na dokonalý relax ve vířivce-202503101226-_Chlorito.cz_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {
+        "ico": "03389821"
+      },
+      "text_length": 3182
+    },
+    {
+      "file": "Výpověď v práci podle nových pravidel – co se mění-202504291006-Dostupný advokát.pdf",
+      "type": "contract",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2399
+    },
+    {
+      "file": "Fw_ Pes-202410272019-_Milan Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1437
+    },
+    {
+      "file": "DHL On Demand Delivery-202409171524-_DHL Express_.pdf",
+      "type": "shipping",
+      "score": 25,
+      "metadata": {},
+      "text_length": 1275
+    },
+    {
+      "file": "Pořád chci navázat spojení-202503040813-_Ami_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1355
+    },
+    {
+      "file": "WIRED Streamline 9_24-202409040731-_WIRED_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 7099
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202505021356-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    },
+    {
+      "file": "5 Brilliant Prompts I Wish Every Single ChatGPT Us-202412130750-_Medium Daily Digest_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3416
+    },
+    {
+      "file": "The Future is Here_ Pixlr's 2025 AI Features You M-202501230951-_Pixlr_.pdf",
+      "type": "subscription",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1677
+    },
+    {
+      "file": "Stroje s výraznou slevou-202502101558-Dobré stroje s.r.o..pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1090
+    }
+  ],
+  "error_count": 0
+}

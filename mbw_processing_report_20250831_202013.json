@@ -1,0 +1,1505 @@
+{
+  "timestamp": "2025-08-31T20:20:13.695526",
+  "stats": {
+    "total": 65,
+    "processed": 56,
+    "invoices": 0,
+    "receipts": 0,
+    "bank_statements": 0,
+    "contracts": 0,
+    "unknown": 1,
+    "rejected": 1,
+    "uploaded": 56,
+    "failed": 8
+  },
+  "results": [
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/scan_044 (5 files merged).pdf",
+      "filename": "scan_044 (5 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/FilmTechnika_scan_036 (2 files merged).pdf",
+      "filename": "FilmTechnika_scan_036 (2 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/WG34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf",
+      "filename": "WG34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "2495077747",
+        "supplier_ico": "16188047",
+        "supplier_dic": "CZ26159708",
+        "variable_symbol": "302205001",
+        "issue_date": "02.08.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "invoice:2495077747",
+        "ico:16188047",
+        "dic:CZ26159708",
+        "vs:302205001",
+        "confidence:medium"
+      ],
+      "document_id": "7d365d04-16bb-472b-b27c-485d1e9cefec",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/815d046a-8d38-44e5-a095-385d3ad6e911.pdf",
+      "filename": "815d046a-8d38-44e5-a095-385d3ad6e911.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ26159708",
+        "variable_symbol": "302205001",
+        "due_date": "14.11.2024",
+        "issue_date": "19.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:03981428",
+        "dic:CZ26159708",
+        "vs:302205001",
+        "confidence:medium"
+      ],
+      "document_id": "87e7039d-1569-4088-99c2-79a904de6dd6",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Cisteni vozu_scan_040.pdf",
+      "filename": "Cisteni vozu_scan_040.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/wg59a84f01-aa67-410a-8bdb-3b4df96c2586.pdf",
+      "filename": "wg59a84f01-aa67-410a-8bdb-3b4df96c2586.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "2495123107",
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ26159708",
+        "variable_symbol": "302205001",
+        "issue_date": "20.11.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "invoice:2495123107",
+        "ico:03981428",
+        "dic:CZ26159708",
+        "vs:302205001",
+        "confidence:medium"
+      ],
+      "document_id": "a0258213-ae73-4a03-88e7-afff4092387b",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/havas01-0324najem.pdf",
+      "filename": "havas01-0324najem.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "15/05/2024",
+        "issue_date": "15/04/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:04",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": "304d20c5-d64e-4de3-b6ae-25b933392065",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/aerohosting-proforma-224002311 (1).pdf",
+      "filename": "aerohosting-proforma-224002311 (1).pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "224002311",
+        "supplier_ico": "28589131",
+        "supplier_dic": "CZ28589131",
+        "variable_symbol": "224002311",
+        "due_date": "3.1.2025",
+        "issue_date": "20.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:224002311",
+        "ico:28589131",
+        "dic:CZ28589131",
+        "vs:224002311",
+        "confidence:medium"
+      ],
+      "document_id": "aea945d7-173a-4f94-a01b-5aab454c2083",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Sklenarstvi_02 (5 files merged).pdf",
+      "filename": "Sklenarstvi_02 (5 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/KancTechnika_scan_037.pdf",
+      "filename": "KancTechnika_scan_037.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Benzin_scan_035 (19 files merged).pdf",
+      "filename": "Benzin_scan_035 (19 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/havas-najem04-0624.pdf",
+      "filename": "havas-najem04-0624.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "07/08/2024",
+        "issue_date": "08/07/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": "3ffa986e-e591-4dd2-9089-112105f1bce0",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+      "filename": "Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/scan_044 (8 files merged).pdf",
+      "filename": "scan_044 (8 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/468d67ec-0b41-4067-a316-9c68fad3255c.pdf",
+      "filename": "468d67ec-0b41-4067-a316-9c68fad3255c.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "06/11/2024",
+        "issue_date": "07/10/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": "db0adf0a-ba44-41b7-bb1d-bbc78212ded1",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/f7f84e85-b71e-4389-bbaf-4247cc1763cc.pdf",
+      "filename": "f7f84e85-b71e-4389-bbaf-4247cc1763cc.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "06/11/2024",
+        "issue_date": "07/10/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": "f2f96999-fe56-4657-a8c3-866639aa3280",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/priloha_1554077270_0_Vyrozumění_k_prostudování_tr__spisu-Milan_PUŽÍK__Michal_Hrnčíř_ze_dne_18_7_2025.pdf",
+      "filename": "priloha_1554077270_0_Vyrozumění_k_prostudování_tr__spisu-Milan_PUŽÍK__Michal_Hrnčíř_ze_dne_18_7_2025.pdf",
+      "status": "rejected",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nízká confidence (0%) nebo neznámý typ",
+      "confidence": 0
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Sante_Faktura_110240606_ID_304391 (2).pdf",
+      "filename": "Sante_Faktura_110240606_ID_304391 (2).pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "61854093",
+        "supplier_dic": "CZ699003671",
+        "variable_symbol": "110240606",
+        "due_date": "15.03.2024",
+        "issue_date": "15.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "ico:61854093",
+        "dic:CZ699003671",
+        "vs:110240606",
+        "confidence:high"
+      ],
+      "document_id": "d704f785-a136-46b4-91a7-0e3e103cd950",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/NB Ucetnictvi_V_241029.pdf",
+      "filename": "NB Ucetnictvi_V_241029.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ03981428",
+        "variable_symbol": "241029",
+        "due_date": "23.07.2024",
+        "issue_date": "09.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "ico:03981428",
+        "dic:CZ03981428",
+        "vs:241029",
+        "confidence:medium"
+      ],
+      "document_id": "46f16163-9008-46d0-a775-f264c3a04316",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/RFIshop_202437341.pdf",
+      "filename": "RFIshop_202437341.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ08139105",
+        "total_amount": 0.0,
+        "variable_symbol": "577082",
+        "due_date": "04.01.2025",
+        "issue_date": "23.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "ico:03981428",
+        "dic:CZ08139105",
+        "vs:577082",
+        "confidence:medium"
+      ],
+      "document_id": "671310cc-a4ae-4083-8d63-8bf4312f8041",
+      "error": null,
+      "confidence": 80
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Potten und Pannen_1124115359.pdf",
+      "filename": "Potten und Pannen_1124115359.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "25730452",
+        "supplier_dic": "CZ25730452",
+        "variable_symbol": "8984615067"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:25730452",
+        "dic:CZ25730452",
+        "vs:8984615067",
+        "confidence:medium"
+      ],
+      "document_id": "57a22608-db1f-43dc-9080-86482389bce9",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2952181547.pdf",
+      "filename": "Alza_2952181547.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2174.0,
+        "variable_symbol": "5054274261",
+        "due_date": "16.04.2024",
+        "issue_date": "16.04.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:04",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5054274261",
+        "amount:2174",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "0551bf37-6b62-47bc-970b-ec0b663418ed",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2953935588.pdf",
+      "filename": "Alza_2953935588.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2198.0,
+        "variable_symbol": "5078215391",
+        "due_date": "16.05.2024",
+        "issue_date": "16.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5078215391",
+        "amount:2198",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "dc33b723-77dc-48ab-8661-334d038df963",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2951183978.pdf",
+      "filename": "Alza_2951183978.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2112.72,
+        "variable_symbol": "5040285141",
+        "due_date": "28.03.2024",
+        "issue_date": "28.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5040285141",
+        "amount:2112",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "444e695e-40a2-4515-b966-ac039a4a6973",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2951183979.pdf",
+      "filename": "Alza_2951183979.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 179.0,
+        "variable_symbol": "5040285152",
+        "due_date": "28.03.2024",
+        "issue_date": "28.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5040285152",
+        "amount:179",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "ae17ad6a-e941-4703-ab47-8b3392ddf313",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2948969515.pdf",
+      "filename": "Alza_2948969515.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 4139.33,
+        "variable_symbol": "5009066721",
+        "due_date": "16.02.2024",
+        "issue_date": "16.02.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5009066721",
+        "amount:4139",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "0964d923-edf3-4465-a58b-e0c5391584cf",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2954575008.pdf",
+      "filename": "Alza_2954575008.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 40.0,
+        "variable_symbol": "1269819141",
+        "due_date": "29.05.2024",
+        "issue_date": "28.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:1269819141",
+        "amount:40",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "1297f1bf-6006-4aed-9324-1c99372d3412",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2959006300.pdf",
+      "filename": "Alza_2959006300.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2824.1,
+        "variable_symbol": "5129073791",
+        "due_date": "06.08.2024",
+        "issue_date": "06.08.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5129073791",
+        "amount:2824",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "a3ff73c7-9f6a-4dfe-b3a5-97995be9c96f",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2954574204.pdf",
+      "filename": "Alza_2954574204.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 52.0,
+        "variable_symbol": "1269816651",
+        "due_date": "29.05.2024",
+        "issue_date": "28.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:1269816651",
+        "amount:52",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "cbd627ae-dd14-47ce-ad3b-2ff0e3787a03",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2957661862.pdf",
+      "filename": "Alza_2957661862.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 699.0,
+        "variable_symbol": "5129073802",
+        "due_date": "16.07.2024",
+        "issue_date": "16.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5129073802",
+        "amount:699",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "4a6056a5-4aaa-4055-bd20-ec4178db921d",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2954344013.pdf",
+      "filename": "Alza_2954344013.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2990.0,
+        "variable_symbol": "5083671211",
+        "due_date": "23.05.2024",
+        "issue_date": "23.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5083671211",
+        "amount:2990",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "b24ec97e-cc37-42f9-a1fd-38bb5e294078",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2957661865.pdf",
+      "filename": "Alza_2957661865.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 395.61,
+        "variable_symbol": "5129073813",
+        "due_date": "16.07.2024",
+        "issue_date": "16.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5129073813",
+        "amount:395",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "26e0370d-c8c2-4e98-8a8c-58e73c97a76b",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2962972780.pdf",
+      "filename": "Alza_2962972780.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 689.0,
+        "variable_symbol": "5202565991",
+        "due_date": "03.10.2024",
+        "issue_date": "03.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5202565991",
+        "amount:689",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "34c9d96d-af3a-45d1-a2a4-cdadb49420c7",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2964361092.pdf",
+      "filename": "Alza_2964361092.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 658.0,
+        "variable_symbol": "5221589972",
+        "due_date": "20.10.2024",
+        "issue_date": "20.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5221589972",
+        "amount:658",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "eceb07c2-97cc-428e-8f05-8a262efbb5df",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2964880864.pdf",
+      "filename": "Alza_2964880864.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 299.0,
+        "variable_symbol": "1278738841",
+        "due_date": "27.11.2024",
+        "issue_date": "28.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:1278738841",
+        "amount:299",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "224594d1-b993-4cd0-8d5c-b51252c72e98",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2953936374.pdf",
+      "filename": "Alza_2953936374.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 99.0,
+        "variable_symbol": "5078215402",
+        "due_date": "16.05.2024",
+        "issue_date": "16.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5078215402",
+        "amount:99",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "54fcee3b-b8b1-4d0c-8559-c8cab952cb56",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2964361091.pdf",
+      "filename": "Alza_2964361091.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 1922.2,
+        "variable_symbol": "5221589961",
+        "due_date": "20.10.2024",
+        "issue_date": "20.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5221589961",
+        "amount:1922",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "ac851bea-0499-4800-99c0-1afc8bc015d0",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2948803072.pdf",
+      "filename": "Alza_2948803072.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2660.11,
+        "variable_symbol": "5006701051",
+        "due_date": "13.02.2024",
+        "issue_date": "13.02.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5006701051",
+        "amount:2660",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "2fda1e69-f727-4362-b643-8ffe90a6d9c6",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2968364466.pdf",
+      "filename": "Alza_2968364466.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 371.0,
+        "variable_symbol": "5277282171",
+        "due_date": "01.12.2024",
+        "issue_date": "01.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5277282171",
+        "amount:371",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": "f26fb01c-a125-4c1f-90b5-0f95799650d7",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2949397329.pdf",
+      "filename": "Alza_2949397329.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2318.52,
+        "variable_symbol": "5015142221",
+        "due_date": "24.02.2024",
+        "issue_date": "24.02.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5015142221",
+        "amount:2318",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": "9e8d3ca7-9f16-48b0-82d8-bbc7adfb7c3c",
+      "error": null,
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/prijem/bitfaktura.pdf",
+      "filename": "bitfaktura.pdf",
+      "status": "success",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "FV2024/12/1",
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ26717484",
+        "total_amount": 88400.0,
+        "variable_symbol": "2024121",
+        "due_date": "15.01.2025",
+        "issue_date": "19.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:FV2024121",
+        "ico:03981428",
+        "dic:CZ26717484",
+        "vs:2024121",
+        "amount:88400",
+        "amount:large",
+        "confidence:high"
+      ],
+      "document_id": "78e35a3d-b898-4077-82be-f89f44206ed2",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240731_7_MCZB.pdf",
+      "filename": "269290450_20240731_7_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "13.07.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "9c577908-90c3-4cb8-8733-15ca9631aa59",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240331_3_MCZB.pdf",
+      "filename": "269290450_20240331_3_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "23.03.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "ba81fa49-f035-4f98-b23d-7fa29d32a3fa",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20241231_12_MCZB.pdf",
+      "filename": "297465924_20241231_12_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "c8aeb543-3b9f-444a-9886-5e50f443ecdd",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240229_2_MCZB.pdf",
+      "filename": "297465924_20240229_2_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "07a70970-2848-4b3c-9aa4-b184d7a91d23",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20241130_11_MCZB.pdf",
+      "filename": "297465924_20241130_11_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "32ff3102-5750-4b48-acf3-57565f9d8583",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240630_6_MCZB.pdf",
+      "filename": "297465924_20240630_6_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "a1673f81-5038-4e8b-a776-6436521f93dd",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240131_1_MCZB.pdf",
+      "filename": "269290450_20240131_1_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "30.12.2023"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2023",
+        "month:12",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "0314061f-49b4-4969-812e-e3386741e181",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240831_8_MCZB.pdf",
+      "filename": "269290450_20240831_8_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "31.07.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "c1d64985-159c-46e5-b0cf-f58ab6e0bb79",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240531_5_MCZB.pdf",
+      "filename": "269290450_20240531_5_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "13.05.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "account:269290450",
+        "bank:csob",
+        "confidence:medium"
+      ],
+      "document_id": "d1e54c33-b39d-4bf6-8f5b-552b38ad7c49",
+      "error": null,
+      "confidence": 75
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240930_9_MCZB.pdf",
+      "filename": "297465924_20240930_9_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "a5e648c4-afac-492f-bd41-370d282133e5",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240430_4_MCZB.pdf",
+      "filename": "297465924_20240430_4_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "a04e2edf-2461-4998-a60e-a16c624b07cc",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20241031_10_MCZB.pdf",
+      "filename": "297465924_20241031_10_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "fdc8a112-9d52-4131-8a9a-38574f7011a5",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240630_6_MCZB.pdf",
+      "filename": "269290450_20240630_6_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "03.06.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:06",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "ccfffe98-2fb2-4a4f-9188-1822afabfffd",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20241130_11_MCZB.pdf",
+      "filename": "269290450_20241130_11_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "04.11.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "c64bfeae-874b-43aa-8a71-c009277d621c",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240229_2_MCZB.pdf",
+      "filename": "269290450_20240229_2_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "09.02.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "fe56c483-e598-4eb4-9dd3-e26ddcd1e340",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240331_3_MCZB.pdf",
+      "filename": "297465924_20240331_3_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "766017df-09da-4420-bd9b-4ebd64bebca1",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240731_7_MCZB.pdf",
+      "filename": "297465924_20240731_7_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "addb47d8-3e9e-4afd-bc8d-26fae13cf332",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20241231_12_MCZB.pdf",
+      "filename": "269290450_20241231_12_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "01.12.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "83f272cd-e1f9-4b39-b610-18c23508404c",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240430_4_MCZB.pdf",
+      "filename": "269290450_20240430_4_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "28.03.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "9e35c6da-f624-4656-adce-072d671bf383",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240930_9_MCZB.pdf",
+      "filename": "269290450_20240930_9_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "30.08.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "c66e0491-3675-4b12-9d6c-1900ba2cb172",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20241031_10_MCZB.pdf",
+      "filename": "269290450_20241031_10_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "02.10.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "37fc8f90-ce65-4fd6-a680-ee874d107b85",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240531_5_MCZB.pdf",
+      "filename": "297465924_20240531_5_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "0d0927b7-9074-4955-916d-5d5ecb92840f",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240831_8_MCZB.pdf",
+      "filename": "297465924_20240831_8_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "30639e27-5ece-4204-b6b5-3626f26a983d",
+      "error": null,
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240131_1_MCZB.pdf",
+      "filename": "297465924_20240131_1_MCZB.pdf",
+      "status": "success",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": "01e566d0-66c3-4794-a768-96fb4ad58b6b",
+      "error": null,
+      "confidence": 100
+    }
+  ]
+}

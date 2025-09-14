@@ -1,0 +1,253 @@
+{
+  "name": "Mistral Document Classifier for Czech Documents",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 10
+            }
+          ]
+        }
+      },
+      "id": "scheduleTrigger",
+      "name": "Check Documents Every 10min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [100, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "message",
+        "operation": "getAll",
+        "q": "is:unread has:attachment",
+        "format": "full",
+        "additionalFields": {
+          "maxResults": 20
+        }
+      },
+      "id": "gmailFetch",
+      "name": "Fetch Gmail with Attachments",
+      "type": "n8n-nodes-base.gmail",
+      "position": [300, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Advanced Spam & Advertisement Filter for Czech/EU market\nconst spamPatterns = {\n  // Czech spam keywords\n  czechSpam: [\n    'odhlásit', 'odhlášení', 'newsletter', 'zpravodaj',\n    'sleva', 'akce', 'výprodej', 'zdarma', 'vyhrajte',\n    'soutěž', 'kupón', 'reklamní', 'nabídka dne',\n    'black friday', 'cyber monday'\n  ],\n  \n  // German spam keywords (1% of docs)\n  germanSpam: [\n    'abmelden', 'newsletter', 'angebot', 'rabatt',\n    'kostenlos', 'gewinnspiel', 'werbung'\n  ],\n  \n  // English spam keywords\n  englishSpam: [\n    'unsubscribe', 'promotional', 'sale', 'discount',\n    'free', 'winner', 'click here', 'act now'\n  ],\n  \n  // Marketing domains to filter\n  marketingDomains: [\n    'mailchimp', 'sendgrid', 'mailgun', 'constantcontact',\n    'salesforce', 'hubspot', 'marketo', 'facebook.com',\n    'linkedin.com', 'twitter.com', 'instagram.com'\n  ],\n  \n  // Trusted financial/business domains (never filter)\n  trustedDomains: [\n    // Czech banks\n    'csob.cz', 'kb.cz', 'csas.cz', 'moneta.cz', 'airbank.cz',\n    'fio.cz', 'mbank.cz', 'unicreditbank.cz', 'rb.cz',\n    \n    // EU banks\n    'revolut.com', 'n26.com', 'wise.com',\n    \n    // Czech utilities\n    'cez.cz', 'eon.cz', 'pre.cz', 'innogy.cz', 'prazskaplynarska.cz',\n    \n    // Czech telco\n    'o2.cz', 't-mobile.cz', 'vodafone.cz',\n    \n    // Government\n    'gov.cz', 'mfcr.cz', 'cssz.cz', 'cuzk.cz',\n    \n    // Trusted businesses\n    'alza.cz', 'czc.cz', 'datart.cz'\n  ]\n};\n\nconst items = [];\n\nfor (const item of $input.all()) {\n  const email = item.json;\n  const headers = email.payload?.headers || [];\n  \n  const subject = headers.find(h => h.name === 'Subject')?.value || '';\n  const from = headers.find(h => h.name === 'From')?.value || '';\n  const listUnsubscribe = headers.find(h => h.name === 'List-Unsubscribe')?.value;\n  const precedence = headers.find(h => h.name === 'Precedence')?.value;\n  \n  const fromDomain = from.match(/@([^\\s>]+)/)?.[1]?.toLowerCase() || '';\n  \n  let spamScore = 0;\n  const spamReasons = [];\n  \n  // Check for unsubscribe header (strong spam indicator)\n  if (listUnsubscribe) {\n    spamScore += 50;\n    spamReasons.push('Has unsubscribe link');\n  }\n  \n  // Check precedence bulk\n  if (precedence === 'bulk' || precedence === 'list') {\n    spamScore += 30;\n    spamReasons.push('Bulk email');\n  }\n  \n  // Check spam keywords\n  const textToCheck = (subject + ' ' + from).toLowerCase();\n  \n  [...spamPatterns.czechSpam, ...spamPatterns.germanSpam, ...spamPatterns.englishSpam].forEach(keyword => {\n    if (textToCheck.includes(keyword.toLowerCase())) {\n      spamScore += 15;\n      spamReasons.push(`Spam keyword: ${keyword}`);\n    }\n  });\n  \n  // Check marketing domains\n  if (spamPatterns.marketingDomains.some(domain => fromDomain.includes(domain))) {\n    spamScore += 40;\n    spamReasons.push('Marketing platform');\n  }\n  \n  // Trusted domain reduces score significantly\n  if (spamPatterns.trustedDomains.some(domain => fromDomain.includes(domain))) {\n    spamScore = Math.max(0, spamScore - 60);\n    spamReasons.push('Trusted sender');\n  }\n  \n  // No-reply addresses\n  if (from.toLowerCase().includes('no-reply') || from.toLowerCase().includes('noreply')) {\n    spamScore += 20;\n    spamReasons.push('No-reply address');\n  }\n  \n  email.spamAnalysis = {\n    score: Math.min(100, spamScore),\n    isSpam: spamScore > 40,\n    isTrusted: spamPatterns.trustedDomains.some(domain => fromDomain.includes(domain)),\n    reasons: spamReasons,\n    fromDomain: fromDomain\n  };\n  \n  items.push({json: email});\n}\n\nreturn items;"
+      },
+      "id": "spamFilter",
+      "name": "Advanced Spam Filter",
+      "type": "n8n-nodes-base.code",
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.spamAnalysis.isSpam }}",
+              "rightValue": false,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ]
+        }
+      },
+      "id": "filterSpam",
+      "name": "Remove Advertisements",
+      "type": "n8n-nodes-base.filter",
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract and prepare documents for Mistral analysis\nconst items = [];\n\nfor (const item of $input.all()) {\n  const email = item.json;\n  const headers = email.payload?.headers || [];\n  \n  // Extract metadata\n  const subject = headers.find(h => h.name === 'Subject')?.value || '';\n  const from = headers.find(h => h.name === 'From')?.value || '';\n  const date = headers.find(h => h.name === 'Date')?.value || '';\n  \n  // Extract attachments\n  const attachments = [];\n  \n  function processEmailParts(parts) {\n    if (!parts) return;\n    \n    for (const part of parts) {\n      if (part.parts) {\n        processEmailParts(part.parts);\n      }\n      \n      if (part.filename) {\n        const extension = part.filename.split('.').pop().toLowerCase();\n        attachments.push({\n          filename: part.filename,\n          mimeType: part.mimeType,\n          size: part.body?.size || 0,\n          attachmentId: part.body?.attachmentId,\n          extension: extension,\n          isPDF: extension === 'pdf',\n          isImage: ['jpg', 'jpeg', 'png', 'tiff', 'bmp'].includes(extension),\n          isDocument: ['pdf', 'doc', 'docx', 'odt'].includes(extension),\n          isSpreadsheet: ['xls', 'xlsx', 'csv', 'ods'].includes(extension),\n          isXML: ['xml', 'isdoc'].includes(extension)\n        });\n      }\n    }\n  }\n  \n  processEmailParts(email.payload?.parts);\n  \n  // Extract email body text\n  let emailText = '';\n  function extractText(parts) {\n    if (!parts) return;\n    for (const part of parts) {\n      if (part.mimeType === 'text/plain' && part.body?.data) {\n        emailText += Buffer.from(part.body.data, 'base64').toString('utf8');\n      } else if (part.parts) {\n        extractText(part.parts);\n      }\n    }\n  }\n  \n  if (email.payload?.parts) {\n    extractText(email.payload.parts);\n  } else if (email.payload?.body?.data) {\n    emailText = Buffer.from(email.payload.body.data, 'base64').toString('utf8');\n  }\n  \n  // Prepare document for classification\n  const document = {\n    id: email.id,\n    subject: subject,\n    from: from,\n    date: date,\n    emailText: emailText.substring(0, 3000),\n    attachments: attachments,\n    hasAttachments: attachments.length > 0,\n    attachmentTypes: [...new Set(attachments.map(a => a.extension))],\n    needsOCR: attachments.some(a => a.isPDF || a.isImage),\n    hasXML: attachments.some(a => a.isXML),\n    language: detectLanguage(subject + ' ' + emailText)\n  };\n  \n  items.push({json: document});\n}\n\nfunction detectLanguage(text) {\n  const czechWords = ['faktura', 'platba', 'účet', 'daňový', 'výpis', 'smlouva'];\n  const germanWords = ['rechnung', 'zahlung', 'konto', 'steuer', 'vertrag'];\n  const englishWords = ['invoice', 'payment', 'account', 'tax', 'contract'];\n  \n  const lowerText = text.toLowerCase();\n  \n  const czechCount = czechWords.filter(w => lowerText.includes(w)).length;\n  const germanCount = germanWords.filter(w => lowerText.includes(w)).length;\n  const englishCount = englishWords.filter(w => lowerText.includes(w)).length;\n  \n  if (czechCount > germanCount && czechCount > englishCount) return 'cs';\n  if (germanCount > englishCount) return 'de';\n  if (englishCount > 0) return 'en';\n  return 'cs'; // Default to Czech\n}\n\nreturn items;"
+      },
+      "id": "documentExtractor",
+      "name": "Document Extractor",
+      "type": "n8n-nodes-base.code",
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "method": "POST",
+        "body": {
+          "model": "mistral:latest",
+          "prompt": "Analyzuj následující dokument a urči jeho typ. Odpověz POUZE jedním z následujících typů:\n\nFAKTURA - daňový doklad, invoice\nPROFORMA - proforma faktura, draft invoice\nPLATBA - potvrzení platby, payment confirmation\nBANKOVNI_VYPIS - výpis z účtu, bank statement\nSMLOUVA - contract, agreement\nOBJEDNAVKA - purchase order\nDODACÍ_LIST - delivery note\nUPOMINKA - payment reminder\nREKLAMA - advertisement, marketing\nOSTATNI - other\n\nDokument:\nPředmět: {{ $json.subject }}\nOdesílatel: {{ $json.from }}\nText: {{ $json.emailText }}\nPřílohy: {{ $json.attachmentTypes.join(', ') }}\n\nTyp dokumentu:",
+          "stream": false,
+          "options": {
+            "temperature": 0.1,
+            "top_p": 0.9,
+            "num_predict": 50
+          }
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "mistralClassification",
+      "name": "Mistral Document Classification",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1100, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Process Mistral response and extract key information\nconst items = [];\n\nfor (const item of $input.all()) {\n  const document = item.json;\n  \n  // Parse Mistral response\n  const mistralResponse = document.response || '';\n  const classifiedType = mistralResponse.trim().toUpperCase();\n  \n  // Map to standardized types\n  const typeMapping = {\n    'FAKTURA': 'invoice',\n    'PROFORMA': 'proforma',\n    'PLATBA': 'payment',\n    'BANKOVNI_VYPIS': 'bank_statement',\n    'SMLOUVA': 'contract',\n    'OBJEDNAVKA': 'order',\n    'DODACÍ_LIST': 'delivery_note',\n    'UPOMINKA': 'reminder',\n    'REKLAMA': 'advertisement',\n    'OSTATNI': 'other'\n  };\n  \n  const documentType = typeMapping[classifiedType] || 'unknown';\n  \n  // Determine priority and action\n  const priorityTypes = {\n    'invoice': 1,\n    'payment': 1,\n    'bank_statement': 1,\n    'reminder': 2,\n    'proforma': 2,\n    'order': 3,\n    'contract': 3,\n    'delivery_note': 4,\n    'other': 5,\n    'advertisement': 10,\n    'unknown': 10\n  };\n  \n  const priority = priorityTypes[documentType] || 5;\n  \n  // Extract numbers and identifiers using regex\n  const text = document.subject + ' ' + document.emailText;\n  \n  const extractedData = {\n    invoiceNumbers: text.match(/(?:faktura|invoice|č\\.|no\\.?)\\s*[:：]?\\s*([A-Z0-9\\-\\/]+)/gi) || [],\n    amounts: text.match(/(?:celkem|total|částka)\\s*[:：]?\\s*([0-9\\s,\\.]+)\\s*(?:Kč|CZK|EUR|USD)/gi) || [],\n    variableSymbol: text.match(/(?:variabilní symbol|VS|var\\.\\s*symbol)\\s*[:：]?\\s*([0-9]+)/gi) || [],\n    dates: text.match(/\\d{1,2}[\\.\\/\\-]\\d{1,2}[\\.\\/\\-]\\d{2,4}/g) || [],\n    iban: text.match(/[A-Z]{2}\\d{2}[A-Z0-9]{4}\\d{7}[A-Z0-9]{0,16}/g) || [],\n    ico: text.match(/(?:IČO|IČ)\\s*[:：]?\\s*([0-9]{8})/gi) || [],\n    dic: text.match(/(?:DIČ)\\s*[:：]?\\s*(CZ[0-9]{8,10})/gi) || []\n  };\n  \n  // Prepare final classification result\n  const result = {\n    ...document,\n    classification: {\n      type: documentType,\n      originalType: classifiedType,\n      priority: priority,\n      confidence: documentType !== 'unknown' ? 0.85 : 0.3,\n      language: document.language,\n      needsOCR: document.needsOCR,\n      extractedData: extractedData,\n      requiresAction: priority <= 2,\n      isAdvertisement: documentType === 'advertisement',\n      timestamp: new Date().toISOString()\n    }\n  };\n  \n  items.push({json: result});\n}\n\nreturn items;"
+      },
+      "id": "processClassification",
+      "name": "Process Classification",
+      "type": "n8n-nodes-base.code",
+      "position": [1300, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.classification.priority }}",
+              "rightValue": 3,
+              "operator": {
+                "type": "number",
+                "operation": "smallerEqual"
+              }
+            }
+          ]
+        }
+      },
+      "id": "priorityFilter",
+      "name": "High Priority Documents",
+      "type": "n8n-nodes-base.filter",
+      "position": [1500, 200]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "paperlessNgxApi",
+        "method": "POST",
+        "body": {
+          "title": "={{ $json.subject }}",
+          "document_type": "={{ $json.classification.type }}",
+          "tags": ["={{ $json.classification.type }}", "={{ $json.classification.language }}"],
+          "custom_fields": [
+            {
+              "name": "mistral_confidence",
+              "value": "={{ $json.classification.confidence }}"
+            },
+            {
+              "name": "extracted_amount",
+              "value": "={{ $json.classification.extractedData.amounts[0] || '' }}"
+            },
+            {
+              "name": "variable_symbol",
+              "value": "={{ $json.classification.extractedData.variableSymbol[0] || '' }}"
+            }
+          ]
+        }
+      },
+      "id": "paperlessUpload",
+      "name": "Upload to Paperless-ngx",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1700, 200]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "message",
+        "operation": "addLabel",
+        "messageId": "={{ $json.id }}",
+        "labelIds": ["PROCESSED"]
+      },
+      "id": "markAsProcessed",
+      "name": "Mark Email as Processed",
+      "type": "n8n-nodes-base.gmail",
+      "position": [1900, 200]
+    },
+    {
+      "parameters": {
+        "message": "Document Classification Alert",
+        "description": "New high-priority document received",
+        "additionalFields": {
+          "priority": "high",
+          "tags": "invoice,payment",
+          "clickAction": "https://your-paperless-instance.com/documents/{{ $json.id }}"
+        }
+      },
+      "id": "notification",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.pushover",
+      "position": [1700, 100]
+    },
+    {
+      "parameters": {
+        "resource": "document",
+        "operation": "create",
+        "collection": "unprocessed_documents",
+        "document": {
+          "email_id": "={{ $json.id }}",
+          "type": "={{ $json.classification.type }}",
+          "priority": "={{ $json.classification.priority }}",
+          "subject": "={{ $json.subject }}",
+          "from": "={{ $json.from }}",
+          "date": "={{ $json.date }}",
+          "needs_review": true,
+          "created_at": "={{ new Date().toISOString() }}"
+        }
+      },
+      "id": "mongoBackup",
+      "name": "Store in MongoDB",
+      "type": "n8n-nodes-base.mongoDb",
+      "position": [1500, 400]
+    }
+  ],
+  "connections": {
+    "scheduleTrigger": {
+      "main": [[{"node": "gmailFetch", "type": "main", "index": 0}]]
+    },
+    "gmailFetch": {
+      "main": [[{"node": "spamFilter", "type": "main", "index": 0}]]
+    },
+    "spamFilter": {
+      "main": [[{"node": "filterSpam", "type": "main", "index": 0}]]
+    },
+    "filterSpam": {
+      "main": [[{"node": "documentExtractor", "type": "main", "index": 0}]]
+    },
+    "documentExtractor": {
+      "main": [[{"node": "mistralClassification", "type": "main", "index": 0}]]
+    },
+    "mistralClassification": {
+      "main": [[{"node": "processClassification", "type": "main", "index": 0}]]
+    },
+    "processClassification": {
+      "main": [[
+        {"node": "priorityFilter", "type": "main", "index": 0},
+        {"node": "mongoBackup", "type": "main", "index": 0}
+      ]]
+    },
+    "priorityFilter": {
+      "main": [[
+        {"node": "paperlessUpload", "type": "main", "index": 0},
+        {"node": "notification", "type": "main", "index": 0}
+      ]]
+    },
+    "paperlessUpload": {
+      "main": [[{"node": "markAsProcessed", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  }
+}

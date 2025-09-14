@@ -1,0 +1,165 @@
+{
+  "batch_start": 19000,
+  "batch_end": 20000,
+  "timestamp": "2025-08-02T20:35:02.153054",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "order": 196,
+    "invoice": 505,
+    "shipping": 19,
+    "receipt": 36,
+    "unknown": 175,
+    "notification": 35,
+    "subscription": 24,
+    "contract": 6,
+    "bank_statement": 4
+  },
+  "metadata_samples": [
+    {
+      "file": "Magnetic lifehacks-202502261145-_DECOVRY_.pdf",
+      "type": "order",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1132
+    },
+    {
+      "file": "Last-Minute buyers!  xTool is still here for you💡-202412231703-_xTool_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2861
+    },
+    {
+      "file": "⌛ LAST CHANCE! 25% Off Your Subscription 🖤-202412011711-_Lychee_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 2254
+    },
+    {
+      "file": "Rev up your driving experience with Traffic Sign R-202502271021-_Sygic GPS Navigation_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1736
+    },
+    {
+      "file": "Jak v létě ušetřit ☀-202505110851-_Skyscanner_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1666
+    },
+    {
+      "file": "Tak jo! 60% sleva jako LEV 🦁 jede dál! Platí pro -202503100838-LevnoShop.cz - Nejlevnější e-shop v ČR!.pdf",
+      "type": "invoice",
+      "score": 53,
+      "metadata": {
+        "ico": "04676408",
+        "dic": "CZ04676408"
+      },
+      "text_length": 5890
+    },
+    {
+      "file": "💬 M.A.J., navažte spojení s Věra Babišová-202504252114-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1515
+    },
+    {
+      "file": "Our warehouse that ships to your area has too much-202503312032-_Olivia at ThePhotoStick_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2437
+    },
+    {
+      "file": "Hot Kickstarter Projects Special Pick up for You-202502041618-_PledgeBox_.pdf",
+      "type": "order",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2094
+    },
+    {
+      "file": "Role Senior Product Manager ve společnosti Microso-202406211502-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1643
+    },
+    {
+      "file": "Bienvenue!-202404191905-_Transkriptor_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 594
+    },
+    {
+      "file": "Entdecken Sie unsere Meisterstück Neuheiten-202501291204-_Montblanc_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1841
+    },
+    {
+      "file": "Your Limitless_Rewind round-up_ Audio Playback, AP-202503180058-_Limitless Support_.pdf",
+      "type": "shipping",
+      "score": 10,
+      "metadata": {},
+      "text_length": 3808
+    },
+    {
+      "file": "M.A.J._ Více než 30 nových pracovních příležitostí-202502010216-Upozornění na nové pracovní příležitosti LinkedIn.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1905
+    },
+    {
+      "file": "Nintendo Switch 2 Preorders Delayed in US Due to T-202504041757-_CNET Insider_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3137
+    },
+    {
+      "file": "_Elegir cortinas es un problema, y este es mi truc-202407041408-_Revista El Mueble_.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2089
+    },
+    {
+      "file": "Potvrzení objednávky Google Play ze dne 21. 8. 202-202408271854-_Google Play_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3313
+    },
+    {
+      "file": "Animoto Rewind_ Everything we released in 2024-202501091710-_Animoto_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1745
+    },
+    {
+      "file": "Re_Fw_ Re_ Fw_ Ihre Anfrage Ray-Ban - CAS-2522908--202410311815-Martin Pužík.pdf",
+      "type": "invoice",
+      "score": 36,
+      "metadata": {},
+      "text_length": 6846
+    },
+    {
+      "file": "[192.168.10.34] Na svazku 1 na zařízení NAS4 dochá-202502261839-_NAS4 - Synology DiskStation_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 540
+    }
+  ],
+  "error_count": 0
+}

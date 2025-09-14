@@ -1,0 +1,101 @@
+[
+  {
+    "file": "/tmp/doc_588.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 588,
+    "title": "PuzikPenzeSberbank"
+  },
+  {
+    "file": "/tmp/doc_592.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 592,
+    "title": "Pensionsversicherung Bank"
+  },
+  {
+    "file": "/tmp/doc_596.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 596,
+    "title": "GORE-Protective-Vents-Lighting-Enclosures-Brochure_en_(2)"
+  },
+  {
+    "file": "/tmp/doc_601.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 601,
+    "title": "Document AI _ Google Cloud"
+  },
+  {
+    "file": "/tmp/doc_602.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 602,
+    "title": "Potvrzení objednávky Temu (#PO-053-19186993562231109)"
+  },
+  {
+    "file": "/tmp/doc_603.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 603,
+    "title": "_    Důležité informace k vašemu předplatnému Microsoft Copilot Pro"
+  },
+  {
+    "file": "/tmp/doc_606.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 606,
+    "title": "Faktura za objednávku č. 579126"
+  },
+  {
+    "file": "/tmp/doc_619.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 619,
+    "title": "bank_statement_account-statement_2025-01-01_2025-01-01_cs-cz_a1cb79"
+  },
+  {
+    "file": "/tmp/doc_625.pdf",
+    "doc_type": null,
+    "language": null,
+    "is_valid": false,
+    "confidence": 0,
+    "validation_details": {},
+    "error": "Unknown field for AnnotateImageResponse: pages",
+    "doc_id": 625,
+    "title": "Připomenutí nevyužité zdravotní služby-202408310805-Lékárna.cz"
+  }
+]

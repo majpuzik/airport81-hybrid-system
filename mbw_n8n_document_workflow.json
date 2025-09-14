@@ -1,0 +1,446 @@
+{
+  "name": "MBW Document Processor - CLAUDE.md Rules",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "a1b2c3d4-start",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "path": "/Users/m.a.j.puzik/mbw_100_documents",
+        "recursive": false,
+        "fileFilter": "*.pdf"
+      },
+      "id": "e5f6g7h8-files",
+      "name": "📁 Read PDF Files",
+      "type": "n8n-nodes-base.readBinaryFiles",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// STAGE 1: FILENAME ANALYSIS\nconst filename = $binary.data.fileName.toLowerCase();\nlet filenameScore = 0;\nlet predictedType = 'unknown';\nlet company = 'unknown';\n\n// Bodování podle názvu (+30 bodů)\nif (filename.includes('faktura') || filename.includes('invoice')) {\n  filenameScore += 30;\n  predictedType = 'invoice';\n} else if (filename.includes('vypis') || filename.includes('statement')) {\n  filenameScore += 30;\n  predictedType = 'bank_statement';\n} else if (filename.includes('smlouva') || filename.includes('contract')) {\n  filenameScore += 30;\n  predictedType = 'contract';\n}\n\n// Detekce společnosti\nif (filename.includes('mbw')) {\n  company = 'Media Bohemia World';\n} else if (filename.includes('csob') || filename.includes('čsob')) {\n  company = 'ČSOB';\n} else if (filename.includes('alza')) {\n  company = 'Alza';\n}\n\n// Předej data dál\nreturn {\n  json: {\n    filename: $binary.data.fileName,\n    filenameScore: filenameScore,\n    predictedType: predictedType,\n    company: company,\n    filePath: $binary.data.filePath\n  },\n  binary: $binary\n};"
+      },
+      "id": "i9j0k1l2-filename",
+      "name": "📝 Filename Analysis",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{$json.mcp_available}}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "m3n4o5p6-mcpcheck",
+      "name": "MCP Available?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:5002/call",
+        "method": "POST",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "tool",
+              "value": "anyparser_parse_invoice"
+            },
+            {
+              "name": "arguments",
+              "value": "={{JSON.stringify({file_base64: $binary.data.base64, extract_fields: ['invoice_number', 'vendor', 'amount', 'vat', 'date']})}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "q7r8s9t0-anyparser",
+      "name": "🔍 AnyParser API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1050, 200]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:5002/call",
+        "method": "POST",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "tool",
+              "value": "pdf_convert_to_text"
+            },
+            {
+              "name": "arguments",
+              "value": "={{JSON.stringify({file_base64: $binary.data.base64, pages: '1-5'})}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "u1v2w3x4-pdfco",
+      "name": "📄 PDF.co API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1050, 350],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "command": "pdftotext -layout -nopgbrk '{{$json.filePath}}' -",
+        "cwd": "/Users/m.a.j.puzik"
+      },
+      "id": "y5z6a7b8-pdftotext",
+      "name": "🖥️ Local pdftotext",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1050, 500]
+    },
+    {
+      "parameters": {
+        "functionCode": "// STAGE 3: PATTERN MATCHING & CZECH INVOICE DETECTION\nconst text = $json.text || '';\nconst textLower = text.toLowerCase();\nlet totalScore = $json.filenameScore || 0;\nlet scoreMap = {};\nlet documentType = 'unknown';\nlet category = 'unclear';\nlet czechInvoiceData = {};\n\n// České faktury - povinné náležitosti (min 80 bodů)\nif (text.match(/faktura|daňový\\s+doklad|tax\\s+document/i)) {\n  scoreMap.invoice_label = 30;\n  totalScore += 30;\n}\n\nconst icoMatch = text.match(/IČO?\\s*:?\\s*(\\d{8})/i);\nif (icoMatch) {\n  scoreMap.ico = 25;\n  totalScore += 25;\n  czechInvoiceData.ico = icoMatch[1];\n}\n\nconst dicMatch = text.match(/DIČ\\s*:?\\s*(CZ\\d{8,10})/i);\nif (dicMatch) {\n  scoreMap.dic = 25;\n  totalScore += 25;\n  czechInvoiceData.dic = dicMatch[1];\n}\n\nif (text.match(/datum\\s+vystavení|date\\s+of\\s+issue|vystaveno/i)) {\n  scoreMap.issue_date = 15;\n  totalScore += 15;\n}\n\nif (text.match(/DUZP|datum\\s+uskutečnění|zdanitelné\\s+plnění/i)) {\n  scoreMap.duzp = 15;\n  totalScore += 15;\n}\n\nif (text.match(/číslo\\s+faktury|invoice\\s+number|č\\.\\s*faktury/i)) {\n  scoreMap.invoice_number = 20;\n  totalScore += 20;\n}\n\nif (text.match(/dodavatel|supplier|prodávající/i)) {\n  scoreMap.supplier = 15;\n  totalScore += 15;\n}\n\nif (text.match(/DPH|VAT|daň\\s+z\\s+přidané/i)) {\n  scoreMap.vat = 20;\n  totalScore += 20;\n}\n\nconst amountMatch = text.match(/celkem:?\\s*([\\d\\s]+[,.]?\\d*)\\s*(?:Kč|CZK)/i);\nif (amountMatch) {\n  scoreMap.total_amount = 15;\n  totalScore += 15;\n  czechInvoiceData.amount = amountMatch[1];\n}\n\n// Rozhodnutí o české faktuře\nif (totalScore >= 80) {\n  documentType = 'invoice';\n  category = 'invoices';\n  czechInvoiceData.is_czech_invoice = true;\n  czechInvoiceData.score = totalScore;\n  czechInvoiceData.score_map = scoreMap;\n}\n// Bankovní výpisy (min 50 bodů)\nelse {\n  let bankScore = 0;\n  if (textLower.includes('výpis') || textLower.includes('statement')) bankScore += 25;\n  if (textLower.includes('zůstatek') || textLower.includes('balance')) bankScore += 25;\n  if (text.match(/IBAN|CZ\\d{22}/)) bankScore += 20;\n  \n  if (bankScore >= 50) {\n    documentType = 'bank_statement';\n    category = 'banking';\n    totalScore += bankScore;\n  }\n  // Smlouvy\n  else {\n    let contractScore = 0;\n    if (textLower.includes('smlouva') || textLower.includes('contract')) contractScore += 30;\n    if (textLower.includes('smluvní strany')) contractScore += 25;\n    \n    if (contractScore >= 50) {\n      documentType = 'contract';\n      category = 'contracts';\n      totalScore += contractScore;\n    }\n  }\n}\n\n// Confidence výpočet\nconst confidence = Math.min(95, 50 + Math.floor(totalScore / 4));\n\nreturn {\n  json: {\n    ...($json),\n    text: text,\n    documentType: documentType,\n    category: category,\n    totalScore: totalScore,\n    confidence: confidence,\n    scoreMap: scoreMap,\n    czechInvoiceData: czechInvoiceData\n  }\n};"
+      },
+      "id": "c9d0e1f2-patterns",
+      "name": "🔍 Pattern Matching",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// STAGE 5: CORRESPONDENT DETECTION\nconst text = ($json.text || '').toLowerCase();\nconst filename = ($json.filename || '').toLowerCase();\nlet correspondent = null;\n\n// Domain mapping\nconst domainMap = {\n  'csob.cz': 'ČSOB',\n  'kb.cz': 'Komerční banka',\n  'csas.cz': 'Česká spořitelna',\n  'rb.cz': 'Raiffeisenbank',\n  'moneta.cz': 'Moneta',\n  'alza.cz': 'Alza',\n  'amazon.com': 'Amazon',\n  'mbw.cz': 'Media Bohemia World',\n  'media-bohemia.cz': 'Media Bohemia World'\n};\n\n// Kontrola domén v textu\nfor (const [domain, name] of Object.entries(domainMap)) {\n  if (text.includes(domain) || filename.includes(domain.split('.')[0])) {\n    correspondent = name;\n    break;\n  }\n}\n\n// Specifické detekce\nif (!correspondent) {\n  if (filename.includes('mbw') || text.includes('media bohemia')) {\n    correspondent = 'Media Bohemia World';\n  } else if (filename.includes('alza') || text.includes('alza')) {\n    correspondent = 'Alza';\n  } else if (filename.includes('csob') || filename.includes('čsob')) {\n    correspondent = 'ČSOB';\n  }\n}\n\n// IČO databáze\nif (!correspondent && $json.czechInvoiceData && $json.czechInvoiceData.ico) {\n  const icoDatabase = {\n    '26178370': 'Media Bohemia World',\n    '27082440': 'Alza.cz',\n    '00001350': 'ČSOB'\n  };\n  correspondent = icoDatabase[$json.czechInvoiceData.ico] || null;\n}\n\nreturn {\n  json: {\n    ...($json),\n    correspondent: correspondent || $json.company || 'unknown'\n  }\n};"
+      },
+      "id": "g3h4i5j6-correspondent",
+      "name": "🏢 Correspondent Detection",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1450, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// STAGE 6: TAG GENERATION podle CLAUDE.md\nconst tags = [];\nconst now = new Date();\n\n// CLAUDE.md kategorie mapping\nconst CATEGORIES = {\n  'banking': 'paperless-ngx-bankovnictvi',\n  'invoices': 'paperless-ngx-faktury',\n  'office': 'paperless-ngx-office',\n  'contracts': 'paperless-ngx-smlouvy',\n  'official': 'paperless-ngx-uredni-sdeleni',\n  'medical': 'paperless-ngx-lekarske-zpravy',\n  'subscriptions': 'paperless-ngx-predplatna',\n  'bills_tv': 'paperless-ngx-platby-za-tv',\n  'bills_internet': 'paperless-ngx-platby-za-internet',\n  'bills_services': 'paperless-ngx-platby-za-sluzby',\n  'commercial': 'paperless-ngx-obchodni-nabidky',\n  'ecommerce': 'paperless-ngx-eshop',\n  'social_media': 'paperless-ngx-socialni-site',\n  'system_notifications': 'paperless-ngx-systemove-notifikace',\n  'unclear': 'paperless-ngx-nejasne',\n  'spam': 'paperless-ngx-spam'\n};\n\n// 1. Kategorie tag (povinný)\nconst category = $json.category || 'unclear';\ntags.push(CATEGORIES[category] || CATEGORIES.unclear);\n\n// 2. Correspondent tag\nif ($json.correspondent && $json.correspondent !== 'unknown') {\n  tags.push(`correspondent:${$json.correspondent}`);\n}\n\n// 3. Typ dokumentu\ntags.push(`type:${$json.documentType}`);\nif ($json.czechInvoiceData && $json.czechInvoiceData.is_czech_invoice) {\n  tags.push('subtype:czech_invoice');\n}\n\n// 4. Metadata z české faktury\nif ($json.czechInvoiceData) {\n  if ($json.czechInvoiceData.ico) {\n    tags.push(`ico:${$json.czechInvoiceData.ico}`);\n  }\n  if ($json.czechInvoiceData.dic) {\n    tags.push(`dic:${$json.czechInvoiceData.dic}`);\n  }\n  if ($json.czechInvoiceData.amount) {\n    const amount = parseFloat($json.czechInvoiceData.amount.replace(',', '.').replace(/\\s/g, ''));\n    if (amount > 10000) {\n      tags.push('velka-faktura');\n    } else {\n      tags.push('mala-faktura');\n    }\n  }\n}\n\n// 5. Variabilní symbol\nconst vsMatch = ($json.text || '').match(/VS:?\\s*(\\d+)/);\nif (vsMatch) {\n  tags.push(`vs:${vsMatch[1]}`);\n}\n\n// 6. Rok a měsíc\nconst year = now.getFullYear();\nconst months = [\n  'leden', 'unor', 'brezen', 'duben',\n  'kveten', 'cerven', 'cervenec', 'srpen',\n  'zari', 'rijen', 'listopad', 'prosinec'\n];\n\n// Detekce roku\nfor (let y = year; y >= year - 2; y--) {\n  if ($json.text && $json.text.includes(y.toString())) {\n    tags.push(y.toString());\n    break;\n  }\n}\n\n// Aktuální měsíc\ntags.push(months[now.getMonth()]);\n\n// 7. Confidence\ntags.push(`konfidence-${$json.confidence}`);\n\n// 8. Skóre\nif ($json.totalScore) {\n  tags.push(`score-${$json.totalScore}`);\n}\n\n// 9. Zdroj\ntags.push('import-mbw-batch');\ntags.push('n8n-workflow');\n\n// Odstraň duplicity\nconst uniqueTags = [...new Set(tags)];\n\nreturn {\n  json: {\n    ...($json),\n    tags: uniqueTags,\n    title: `${$json.correspondent || ''} - ${$json.documentType} - ${$json.filename}`.substring(0, 128)\n  }\n};"
+      },
+      "id": "k7l8m9n0-tags",
+      "name": "🏷️ Generate Tags",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1650, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/tags/",
+        "method": "GET",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 24a855c09689e061afe7bd363dc5e02983fcba1b"
+            }
+          ]
+        }
+      },
+      "id": "o1p2q3r4-gettags",
+      "name": "📥 Get Existing Tags",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1850, 200]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Create missing tags\nconst existingTags = $node[\"📥 Get Existing Tags\"].json.results || [];\nconst existingTagNames = existingTags.map(t => t.name);\nconst requiredTags = $json.tags || [];\nconst tagsToCreate = [];\n\n// Barvy podle typu tagu\nconst getTagColor = (tagName) => {\n  if (tagName.startsWith('paperless-ngx-')) return '#0066CC';\n  if (tagName.startsWith('correspondent:')) return '#009900';\n  if (tagName.startsWith('type:')) return '#CC6600';\n  if (tagName.startsWith('ico:') || tagName.startsWith('dic:')) return '#9900CC';\n  if (tagName.startsWith('vs:')) return '#CC0099';\n  if (tagName.includes('faktura')) return '#FF0000';\n  if (['leden', 'unor', 'brezen', 'duben', 'kveten', 'cerven',\n       'cervenec', 'srpen', 'zari', 'rijen', 'listopad', 'prosinec'].includes(tagName)) {\n    return '#00CCCC';\n  }\n  return '#808080';\n};\n\n// Najdi tagy které je potřeba vytvořit\nfor (const tagName of requiredTags) {\n  if (!existingTagNames.includes(tagName)) {\n    tagsToCreate.push({\n      name: tagName,\n      color: getTagColor(tagName),\n      is_inbox_tag: false,\n      matching_algorithm: 1,\n      match: tagName,\n      is_insensitive: true\n    });\n  }\n}\n\nreturn tagsToCreate.map(tag => ({json: tag}));"
+      },
+      "id": "s5t6u7v8-createtags",
+      "name": "🔨 Prepare Tags to Create",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [2050, 200]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/tags/",
+        "method": "POST",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{JSON.stringify($json)}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 24a855c09689e061afe7bd363dc5e02983fcba1b"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        }
+      },
+      "id": "w9x0y1z2-posttag",
+      "name": "➕ Create Tag",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [2250, 200]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Prepare final upload data\nconst allTags = $node[\"📥 Get Existing Tags\"].json.results || [];\nconst createdTags = $node[\"➕ Create Tag\"].json || [];\n\n// Merge all tags\nconst tagMap = {};\nfor (const tag of allTags) {\n  tagMap[tag.name] = tag.id;\n}\nfor (const tag of createdTags) {\n  if (tag.id) tagMap[tag.name] = tag.id;\n}\n\n// Get tag IDs for our document\nconst tagIds = [];\nfor (const tagName of $json.tags) {\n  if (tagMap[tagName]) {\n    tagIds.push(tagMap[tagName]);\n  }\n}\n\nreturn {\n  json: {\n    title: $json.title,\n    tags: tagIds,\n    filename: $json.filename,\n    filePath: $json.filePath\n  },\n  binary: $binary\n};"
+      },
+      "id": "a3b4c5d6-prepare",
+      "name": "📦 Prepare Upload",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [2450, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{$json.title}}"
+            },
+            {
+              "name": "tags",
+              "value": "={{$json.tags.join(',')}}"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 24a855c09689e061afe7bd363dc5e02983fcba1b"
+            }
+          ]
+        }
+      },
+      "id": "e7f8g9h0-upload",
+      "name": "📤 Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [2650, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Log success or failure\nif ($json.statusCode === 200 || $json.statusCode === 201) {\n  return {\n    json: {\n      status: 'success',\n      document_id: $json.body,\n      title: $node[\"📦 Prepare Upload\"].json.title,\n      tags_count: $node[\"📦 Prepare Upload\"].json.tags.length,\n      filename: $node[\"📦 Prepare Upload\"].json.filename\n    }\n  };\n} else {\n  return {\n    json: {\n      status: 'failed',\n      error: $json.body,\n      filename: $node[\"📦 Prepare Upload\"].json.filename\n    }\n  };\n}"
+      },
+      "id": "i1j2k3l4-result",
+      "name": "📊 Process Result",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [2850, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "📁 Read PDF Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📁 Read PDF Files": {
+      "main": [
+        [
+          {
+            "node": "📝 Filename Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📝 Filename Analysis": {
+      "main": [
+        [
+          {
+            "node": "MCP Available?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Available?": {
+      "main": [
+        [
+          {
+            "node": "🔍 AnyParser API",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "🖥️ Local pdftotext",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔍 AnyParser API": {
+      "main": [
+        [
+          {
+            "node": "🔍 Pattern Matching",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📄 PDF.co API": {
+      "main": [
+        [
+          {
+            "node": "🔍 Pattern Matching",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🖥️ Local pdftotext": {
+      "main": [
+        [
+          {
+            "node": "🔍 Pattern Matching",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔍 Pattern Matching": {
+      "main": [
+        [
+          {
+            "node": "🏢 Correspondent Detection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🏢 Correspondent Detection": {
+      "main": [
+        [
+          {
+            "node": "🏷️ Generate Tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🏷️ Generate Tags": {
+      "main": [
+        [
+          {
+            "node": "📥 Get Existing Tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📥 Get Existing Tags": {
+      "main": [
+        [
+          {
+            "node": "🔨 Prepare Tags to Create",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🔨 Prepare Tags to Create": {
+      "main": [
+        [
+          {
+            "node": "➕ Create Tag",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "➕ Create Tag": {
+      "main": [
+        [
+          {
+            "node": "📦 Prepare Upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📦 Prepare Upload": {
+      "main": [
+        [
+          {
+            "node": "📤 Upload to Paperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📤 Upload to Paperless": {
+      "main": [
+        [
+          {
+            "node": "📊 Process Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCreatedBy": "Claude Code Assistant",
+    "description": "MBW Document Processing workflow podle CLAUDE.md pravidel"
+  },
+  "tags": []
+}

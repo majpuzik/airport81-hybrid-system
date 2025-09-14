@@ -1,0 +1,168 @@
+{
+  "batch_start": 6000,
+  "batch_end": 7000,
+  "timestamp": "2025-08-02T20:33:13.959273",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 513,
+    "order": 178,
+    "receipt": 33,
+    "unknown": 197,
+    "subscription": 7,
+    "shipping": 17,
+    "notification": 38,
+    "bank_statement": 5,
+    "contract": 12
+  },
+  "metadata_samples": [
+    {
+      "file": "Vyšívání pro každého 🧵✂🍀 ZDARMA poštovné ❤ Podro-202502240950-Předprodej l KONČÍ.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 4184
+    },
+    {
+      "file": "Softel Consulting s.r.o., náhlé ochlazení_ Tyto oh-202501241203-Klarstein výprodeje.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1739
+    },
+    {
+      "file": "🖥 Getting a new PC_ Microsoft wants to make it ea-202505131357-_XDA_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 6682
+    },
+    {
+      "file": "Jestli ti to nezachutná, vhazuju bílej ručník-202505141003-Tomáš Dytrych _ Grilování.cz.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1957
+    },
+    {
+      "file": "⏳ Prime Sales Days Ending Soon - Save up to 55% on-202407170730-_Sensibo_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1300
+    },
+    {
+      "file": "Re_směnka-202411121349-Mgr. Michal Ševčík.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 6136
+    },
+    {
+      "file": "Obraz Aloise Kalvody v aukci-202410021313-aukční galerie Artia.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1173
+    },
+    {
+      "file": "Golem.de_ Sennheiser-Mikrofone im Test - Systeme v-202503101215-_Golem.de Redaktion_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 16220
+    },
+    {
+      "file": "Neues frei stehendes Haus zu Ihrer Suche_ Häuser; -202412011104-_idealista_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1271
+    },
+    {
+      "file": "🛠 Ulehčete si život s navijákem na stlačený vzduc-202502190652-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 131,
+      "metadata": {
+        "ico": "27425134",
+        "dic": "CZ27425134"
+      },
+      "text_length": 5874
+    },
+    {
+      "file": "Happy holidays from Devolutions! 🎄-202412251412-_Devolutions_.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1614
+    },
+    {
+      "file": "Statistic Dům-202410140005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 229
+    },
+    {
+      "file": "Úchvatný Island o prázdninách - posledních 5 míst-202505131216-_ESO travel_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 2586
+    },
+    {
+      "file": "Žhavé aukce_ minerály, drahokamy, meteority 23. 7.-202407231112-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 34,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2696
+    },
+    {
+      "file": "IFRS v praxi_ Získejte jistotu v účetních standard-202502101400-Ing. Markéta Přikrylová.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2759
+    },
+    {
+      "file": "Hands-On With The Tri-Fold Smartphone_ Huawei Mate-202409220850-_Medium Daily Digest_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2856
+    },
+    {
+      "file": "NOVINKA! Elegoo Mars 5 řada + Two Trees TTC450 Pro-202407141021-3DJake Česká republika.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1219
+    },
+    {
+      "file": "Retro Runner in neuen Farben_ Narzisse & Braun!-202503300815-_Giesswein_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1676
+    },
+    {
+      "file": "Neu_ 2 Treffer für inkaman01-202501271359-_eBay_.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {},
+      "text_length": 2269
+    },
+    {
+      "file": "Celý nákup o 40% levnější! Využijte 40% slevu na v-202501231155-_Filip z PostovneZDARMA.cz_.pdf",
+      "type": "invoice",
+      "score": 111,
+      "metadata": {},
+      "text_length": 22338
+    }
+  ],
+  "error_count": 0
+}

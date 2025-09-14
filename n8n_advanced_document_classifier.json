@@ -1,0 +1,253 @@
+{
+  "name": "Advanced Document Classifier with GUI",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "document-classifier",
+        "responseMode": "lastNode",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              }
+            ]
+          }
+        }
+      },
+      "id": "webhook",
+      "name": "Webhook Entry",
+      "type": "n8n-nodes-base.webhook",
+      "position": [200, 300],
+      "webhookId": "classifier-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse input parameters from GUI\nconst config = {\n  // Source configuration\n  source: $json.source || 'gmail', // 'gmail' or 'files'\n  \n  // Email configuration\n  emailCount: parseInt($json.emailCount) || 10,\n  daysBack: parseInt($json.daysBack) || 300,\n  \n  // File configuration\n  inputPath: $json.inputPath || '',\n  fileTypes: $json.fileTypes || ['pdf', 'eml', 'msg'],\n  \n  // Output configuration\n  outputBasePath: $json.outputPath || '/Users/m.a.j.puzik/classified_documents',\n  deleteOldFiles: $json.deleteOldFiles === true,\n  \n  // Processing options\n  convertToPDF: $json.convertToPDF !== false,\n  tagForPaperless: $json.tagForPaperless !== false,\n  mergeAttachments: $json.mergeAttachments !== false\n};\n\n// Calculate date range for emails\nconst endDate = new Date();\nconst startDate = new Date();\nstartDate.setDate(startDate.getDate() - config.daysBack);\n\nconfig.dateRange = {\n  start: startDate.toISOString().split('T')[0],\n  end: endDate.toISOString().split('T')[0]\n};\n\n// Create output folders structure\nconst outputFolders = [\n  'faktury',\n  'platby',\n  'bankovni_vypisy',\n  'smlouvy',\n  'objednavky',\n  'dodaci_listy',\n  'upominky',\n  'uredni_korespondence',\n  'soudni_dokumenty',\n  'obchodni_korespondence',\n  'nabidky',\n  'reklamy',\n  'ostatni'\n];\n\nconfig.outputFolders = outputFolders.reduce((acc, folder) => {\n  acc[folder] = `${config.outputBasePath}/${folder}`;\n  return acc;\n}, {});\n\nreturn [{json: config}];"
+      },
+      "id": "configParser",
+      "name": "Parse Configuration",
+      "type": "n8n-nodes-base.code",
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.source }}",
+              "rightValue": "gmail",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        }
+      },
+      "id": "sourceRouter",
+      "name": "Route by Source",
+      "type": "n8n-nodes-base.if",
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "message",
+        "operation": "getAll",
+        "q": "={{ 'after:' + $json.dateRange.start + ' before:' + $json.dateRange.end }}",
+        "format": "full",
+        "additionalFields": {
+          "maxResults": "={{ $json.emailCount }}"
+        }
+      },
+      "id": "gmailFetch",
+      "name": "Fetch Gmail Messages",
+      "type": "n8n-nodes-base.gmail",
+      "position": [800, 200]
+    },
+    {
+      "parameters": {
+        "command": "find {{ $json.inputPath }} -type f \\( -iname '*.pdf' -o -iname '*.eml' -o -iname '*.msg' -o -iname '*.doc' -o -iname '*.docx' \\) | head -{{ $json.emailCount }}"
+      },
+      "id": "fileScanner",
+      "name": "Scan Files",
+      "type": "n8n-nodes-base.executeCommand",
+      "position": [800, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Enhanced document classification with all document types\nconst documentPatterns = {\n  // Úřední a soudní dokumenty\n  'soudni_obesilka': {\n    keywords: ['soudní obsílka', 'předvolání k soudu', 'soudní řízení', 'žaloba', 'rozsudek'],\n    identifiers: [/soud\\s+v/i, /č\\.\\s*j\\.\\s*\\d+/i, /sp\\.\\s*zn\\./i],\n    priority: 1,\n    confidence: 0.95\n  },\n  'predvolani_policie': {\n    keywords: ['předvolání', 'policie české republiky', 'policie čr', 'vyšetřovatel'],\n    identifiers: [/policie/i, /čvs:\\s*\\d+/i, /přestupek/i],\n    priority: 1,\n    confidence: 0.95\n  },\n  'uredni_korespondence': {\n    keywords: ['úřad', 'ministerstvo', 'finanční úřad', 'čssz', 'zdravotní pojišťovna'],\n    identifiers: [/č\\.\\s*j\\./i, /datová schránka/i, /úřední razítko/i],\n    priority: 2,\n    confidence: 0.9\n  },\n  \n  // Obchodní dokumenty\n  'faktura': {\n    keywords: ['faktura', 'invoice', 'daňový doklad', 'tax invoice'],\n    identifiers: [/faktura\\s*č/i, /ičo:\\s*\\d+/i, /dič:\\s*cz\\d+/i, /variabilní symbol/i],\n    priority: 2,\n    confidence: 0.9\n  },\n  'smlouva': {\n    keywords: ['smlouva', 'contract', 'dohoda', 'agreement', 'smluvní strany', 'uzavřeli'],\n    identifiers: [/článek\\s+\\d+/i, /smluvní strany/i, /platnost smlouvy/i, /podpis/i],\n    priority: 2,\n    confidence: 0.85\n  },\n  'objednavka': {\n    keywords: ['objednávka', 'order', 'purchase order', 'objednáváme'],\n    identifiers: [/objednávka\\s*č/i, /dodací lhůta/i, /celková cena/i],\n    priority: 3,\n    confidence: 0.85\n  },\n  'platba': {\n    keywords: ['potvrzení o platbě', 'payment confirmation', 'platba přijata'],\n    identifiers: [/platba\\s+ve\\s+výši/i, /připsáno\\s+na\\s+účet/i],\n    priority: 2,\n    confidence: 0.9\n  },\n  'bankovni_vypis': {\n    keywords: ['výpis z účtu', 'bank statement', 'výpis z bankovního účtu'],\n    identifiers: [/výpis\\s*č/i, /počáteční\\s+zůstatek/i, /konečný\\s+zůstatek/i],\n    priority: 2,\n    confidence: 0.95\n  },\n  'upominka': {\n    keywords: ['upomínka', 'urgence', 'reminder', 'nedoplatek', 'po splatnosti'],\n    identifiers: [/upomínka\\s*č/i, /po\\s+splatnosti/i, /dlužná\\s+částka/i],\n    priority: 1,\n    confidence: 0.9\n  },\n  \n  // Obchodní korespondence\n  'obchodni_korespondence': {\n    keywords: ['vážený pane', 'vážená paní', 'děkujeme za', 'odpověď na', 're:'],\n    identifiers: [/vážen[ýá]/i, /s\\s+pozdravem/i, /děkujeme/i],\n    priority: 4,\n    confidence: 0.7\n  },\n  'nabidka': {\n    keywords: ['nabídka', 'offer', 'cenová nabídka', 'proposal', 'prezentace'],\n    identifiers: [/nabídka\\s+na/i, /cenová\\s+kalkulace/i, /platnost\\s+nabídky/i],\n    priority: 3,\n    confidence: 0.8\n  },\n  \n  // Spam a reklamy\n  'reklama': {\n    keywords: ['sleva', 'akce', 'výprodej', 'newsletter', 'odhlásit', 'unsubscribe'],\n    identifiers: [/sleva\\s*\\d+\\s*%/i, /black\\s+friday/i, /zdarma/i],\n    priority: 10,\n    confidence: 0.85\n  }\n};\n\n// Známí obchodní partneři (whitelist)\nconst trustedSenders = [\n  // Banky\n  '@csob.cz', '@kb.cz', '@csas.cz', '@moneta.cz', '@airbank.cz',\n  '@fio.cz', '@mbank.cz', '@unicreditbank.cz', '@revolut.com',\n  \n  // Úřady\n  '@mfcr.cz', '@cssz.cz', '@vzp.cz', '@cnb.cz',\n  \n  // Dodavatelé\n  '@cez.cz', '@eon.cz', '@pre.cz', '@o2.cz', '@t-mobile.cz',\n  \n  // Známé firmy\n  '@alza.cz', '@mall.cz', '@czc.cz'\n];\n\nconst items = [];\n\nfor (const item of $input.all()) {\n  const document = item.json;\n  \n  // Extract text for analysis\n  const textToAnalyze = (\n    (document.subject || '') + ' ' +\n    (document.emailText || '') + ' ' +\n    (document.content || '')\n  ).toLowerCase();\n  \n  // Check sender trust level\n  const senderEmail = document.from || '';\n  const isTrustedSender = trustedSenders.some(domain => \n    senderEmail.toLowerCase().includes(domain)\n  );\n  \n  // Classify document\n  const classifications = [];\n  \n  for (const [docType, pattern] of Object.entries(documentPatterns)) {\n    let score = 0;\n    const matches = [];\n    \n    // Check keywords\n    for (const keyword of pattern.keywords) {\n      if (textToAnalyze.includes(keyword.toLowerCase())) {\n        score += 0.3;\n        matches.push(`keyword: ${keyword}`);\n      }\n    }\n    \n    // Check regex patterns\n    for (const identifier of pattern.identifiers) {\n      if (identifier.test(textToAnalyze)) {\n        score += 0.5;\n        matches.push(`pattern match`);\n      }\n    }\n    \n    // Boost score for trusted senders\n    if (isTrustedSender && docType !== 'reklama') {\n      score += 0.2;\n    }\n    \n    if (score > 0) {\n      classifications.push({\n        type: docType,\n        score: Math.min(score, 1),\n        confidence: score * pattern.confidence,\n        priority: pattern.priority,\n        matches: matches\n      });\n    }\n  }\n  \n  // Sort by confidence\n  classifications.sort((a, b) => b.confidence - a.confidence);\n  \n  // Determine primary type\n  let primaryType = classifications[0]?.type || 'ostatni';\n  \n  // Special handling for unknown senders with offers\n  if (!isTrustedSender && textToAnalyze.includes('nabídka') && primaryType === 'ostatni') {\n    primaryType = 'nabidka';\n  }\n  \n  document.classification = {\n    type: primaryType,\n    confidence: classifications[0]?.confidence || 0,\n    priority: classifications[0]?.priority || 5,\n    isTrustedSender: isTrustedSender,\n    allClassifications: classifications,\n    requiresUrgentAction: classifications[0]?.priority <= 1,\n    outputFolder: primaryType.replace(/_/g, '_')\n  };\n  \n  items.push({json: document});\n}\n\nreturn items;"
+      },
+      "id": "advancedClassifier",
+      "name": "Advanced Document Classifier",
+      "type": "n8n-nodes-base.code",
+      "position": [1000, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "method": "POST",
+        "body": {
+          "model": "mistral:7b-instruct",
+          "prompt": "Analyzuj tento dokument a urči jeho přesný typ. Zvláštní pozornost věnuj úředním a soudním dokumentům.\n\nMožné typy:\n- SOUDNI_OBESILKA - soudní předvolání, obsílka\n- PREDVOLANI_POLICIE - policejní předvolání\n- UREDNI_DOKUMENT - úřední korespondence\n- FAKTURA - daňový doklad\n- SMLOUVA - právní smlouva\n- OBJEDNAVKA - objednávka zboží/služeb\n- PLATBA - potvrzení platby\n- BANKOVNI_VYPIS - výpis z účtu\n- UPOMINKA - upomínka platby\n- OBCHODNI_KORESPONDENCE - běžná obchodní komunikace\n- NABIDKA - obchodní nabídka\n- REKLAMA - reklamní sdělení\n- OSTATNI - jiné\n\nText dokumentu:\n{{ $json.emailText || $json.content }}\n\nOdpověz POUZE typem dokumentu:",
+          "stream": false,
+          "options": {
+            "temperature": 0.1,
+            "top_p": 0.9,
+            "num_predict": 20
+          }
+        }
+      },
+      "id": "mistralAnalysis",
+      "name": "Mistral Deep Analysis",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge classifications and prepare output\nconst items = [];\n\nfor (const item of $input.all()) {\n  const document = item.json;\n  \n  // Parse Mistral response if available\n  if (document.response) {\n    const mistralType = document.response.trim().toUpperCase();\n    \n    // If Mistral has high confidence in critical documents, override\n    if (['SOUDNI_OBESILKA', 'PREDVOLANI_POLICIE', 'UREDNI_DOKUMENT'].includes(mistralType)) {\n      document.classification.type = mistralType.toLowerCase();\n      document.classification.priority = 1;\n      document.classification.requiresUrgentAction = true;\n    }\n  }\n  \n  // Determine output path\n  const config = $node[\"configParser\"].json;\n  const outputFolder = config.outputFolders[document.classification.type] || \n                      config.outputFolders['ostatni'];\n  \n  document.outputPath = outputFolder;\n  document.needsPDFConversion = config.convertToPDF;\n  document.needsPaperlessTags = config.tagForPaperless;\n  \n  // Generate filename\n  const date = new Date().toISOString().split('T')[0];\n  const type = document.classification.type;\n  const sender = (document.from || 'unknown').replace(/[^a-z0-9]/gi, '_').substring(0, 30);\n  \n  document.outputFilename = `${date}_${type}_${sender}.pdf`;\n  \n  items.push({json: document});\n}\n\nreturn items;"
+      },
+      "id": "outputPreparer",
+      "name": "Prepare Output",
+      "type": "n8n-nodes-base.code",
+      "position": [1400, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Create folder structure and clean old files if requested\nconst fs = require('fs');\nconst path = require('path');\nconst config = $node[\"configParser\"].json;\n\n// Create output folders\nfor (const [type, folderPath] of Object.entries(config.outputFolders)) {\n  if (!fs.existsSync(folderPath)) {\n    fs.mkdirSync(folderPath, { recursive: true });\n    console.log(`Created folder: ${folderPath}`);\n  } else if (config.deleteOldFiles) {\n    // Clean old files\n    const files = fs.readdirSync(folderPath);\n    files.forEach(file => {\n      fs.unlinkSync(path.join(folderPath, file));\n    });\n    console.log(`Cleaned folder: ${folderPath}`);\n  }\n}\n\nreturn $input.all();"
+      },
+      "id": "folderManager",
+      "name": "Manage Folders",
+      "type": "n8n-nodes-base.code",
+      "position": [1600, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Convert documents to PDF with attachments\nconst PDFDocument = require('pdfkit');\nconst fs = require('fs');\nconst path = require('path');\n\nconst items = [];\n\nfor (const item of $input.all()) {\n  const document = item.json;\n  \n  if (document.needsPDFConversion) {\n    // Create PDF\n    const doc = new PDFDocument();\n    const outputPath = path.join(document.outputPath, document.outputFilename);\n    \n    doc.pipe(fs.createWriteStream(outputPath));\n    \n    // Add metadata\n    doc.info['Title'] = document.subject || 'Document';\n    doc.info['Author'] = document.from || 'Unknown';\n    doc.info['Keywords'] = document.classification.type;\n    \n    // Add header\n    doc.fontSize(16).text('Document Classification Report', 50, 50);\n    doc.fontSize(12).text(`Type: ${document.classification.type}`, 50, 80);\n    doc.text(`Priority: ${document.classification.priority}`, 50, 100);\n    doc.text(`Confidence: ${(document.classification.confidence * 100).toFixed(1)}%`, 50, 120);\n    doc.text(`From: ${document.from || 'Unknown'}`, 50, 140);\n    doc.text(`Date: ${new Date().toISOString()}`, 50, 160);\n    \n    // Add content\n    doc.moveDown();\n    doc.fontSize(14).text('Content:', 50, 200);\n    doc.fontSize(10).text(document.emailText || document.content || '', 50, 220, {\n      width: 500,\n      align: 'left'\n    });\n    \n    // Add attachments info\n    if (document.attachments && document.attachments.length > 0) {\n      doc.addPage();\n      doc.fontSize(14).text('Attachments:', 50, 50);\n      document.attachments.forEach((att, idx) => {\n        doc.fontSize(10).text(`${idx + 1}. ${att.filename} (${att.mimeType})`, 50, 80 + (idx * 20));\n      });\n    }\n    \n    // Add Paperless tags\n    if (document.needsPaperlessTags) {\n      doc.addPage();\n      doc.fontSize(14).text('Paperless-ngx Tags:', 50, 50);\n      const tags = [\n        document.classification.type,\n        document.classification.priority <= 2 ? 'urgent' : 'normal',\n        document.classification.isTrustedSender ? 'trusted' : 'unknown',\n        document.classification.requiresUrgentAction ? 'action-required' : ''\n      ].filter(tag => tag);\n      \n      tags.forEach((tag, idx) => {\n        doc.fontSize(10).text(`- ${tag}`, 50, 80 + (idx * 20));\n      });\n    }\n    \n    doc.end();\n    \n    document.pdfPath = outputPath;\n    document.pdfCreated = true;\n  }\n  \n  items.push({json: document});\n}\n\nreturn items;"
+      },
+      "id": "pdfConverter",
+      "name": "Convert to PDF",
+      "type": "n8n-nodes-base.code",
+      "position": [1800, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 9d51c86467e7b7e17a8748722ff1a24226c94a7e"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "document",
+              "value": "={{ $json.pdfPath }}"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.subject || $json.outputFilename }}"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{ $json.from }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $json.classification.type }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.classification.type }},{{ $json.classification.priority <= 2 ? 'urgent' : 'normal' }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "paperlessUpload",
+      "name": "Upload to Paperless-ngx",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [2000, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate summary report\nconst summary = {\n  totalProcessed: $input.all().length,\n  byType: {},\n  urgent: [],\n  errors: [],\n  outputPaths: {}\n};\n\nfor (const item of $input.all()) {\n  const doc = item.json;\n  const type = doc.classification.type;\n  \n  // Count by type\n  summary.byType[type] = (summary.byType[type] || 0) + 1;\n  \n  // Track urgent documents\n  if (doc.classification.requiresUrgentAction) {\n    summary.urgent.push({\n      type: type,\n      from: doc.from,\n      subject: doc.subject,\n      path: doc.pdfPath\n    });\n  }\n  \n  // Track output paths\n  if (!summary.outputPaths[type]) {\n    summary.outputPaths[type] = doc.outputPath;\n  }\n}\n\n// Generate HTML report\nconst htmlReport = `\n<!DOCTYPE html>\n<html>\n<head>\n  <title>Document Classification Report</title>\n  <style>\n    body { font-family: Arial, sans-serif; margin: 20px; }\n    .summary { background: #f0f0f0; padding: 15px; border-radius: 5px; }\n    .urgent { background: #ffe6e6; padding: 10px; margin: 10px 0; border-left: 5px solid red; }\n    .type-count { display: inline-block; margin: 10px; padding: 10px; background: white; border-radius: 5px; }\n    table { width: 100%; border-collapse: collapse; margin: 20px 0; }\n    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }\n    th { background: #4CAF50; color: white; }\n  </style>\n</head>\n<body>\n  <h1>Document Classification Report</h1>\n  <div class=\"summary\">\n    <h2>Summary</h2>\n    <p>Total documents processed: <strong>${summary.totalProcessed}</strong></p>\n    <p>Urgent documents requiring action: <strong>${summary.urgent.length}</strong></p>\n  </div>\n  \n  <h2>Documents by Type</h2>\n  <div>\n    ${Object.entries(summary.byType).map(([type, count]) => \n      `<div class=\"type-count\">${type}: <strong>${count}</strong></div>`\n    ).join('')}\n  </div>\n  \n  ${summary.urgent.length > 0 ? `\n    <h2 class=\"urgent\">⚠️ Urgent Documents Requiring Action</h2>\n    <table>\n      <tr>\n        <th>Type</th>\n        <th>From</th>\n        <th>Subject</th>\n        <th>File Path</th>\n      </tr>\n      ${summary.urgent.map(doc => `\n        <tr>\n          <td>${doc.type}</td>\n          <td>${doc.from || 'Unknown'}</td>\n          <td>${doc.subject || 'No subject'}</td>\n          <td>${doc.path}</td>\n        </tr>\n      `).join('')}\n    </table>\n  ` : ''}\n  \n  <h2>Output Locations</h2>\n  <table>\n    <tr>\n      <th>Document Type</th>\n      <th>Output Folder</th>\n    </tr>\n    ${Object.entries(summary.outputPaths).map(([type, path]) => `\n      <tr>\n        <td>${type}</td>\n        <td>${path}</td>\n      </tr>\n    `).join('')}\n  </table>\n  \n  <p style=\"margin-top: 30px; color: #666;\">\n    Report generated: ${new Date().toLocaleString('cs-CZ')}\n  </p>\n</body>\n</html>\n`;\n\nreturn [{json: {summary, htmlReport}}];"
+      },
+      "id": "reportGenerator",
+      "name": "Generate Report",
+      "type": "n8n-nodes-base.code",
+      "position": [2200, 300]
+    },
+    {
+      "parameters": {
+        "value": "={{ $json.htmlReport }}",
+        "dataPropertyName": "report"
+      },
+      "id": "htmlResponse",
+      "name": "Return HTML Report",
+      "type": "n8n-nodes-base.set",
+      "position": [2400, 300]
+    }
+  ],
+  "connections": {
+    "webhook": {
+      "main": [[{"node": "configParser", "type": "main", "index": 0}]]
+    },
+    "configParser": {
+      "main": [[{"node": "sourceRouter", "type": "main", "index": 0}]]
+    },
+    "sourceRouter": {
+      "main": [
+        [{"node": "gmailFetch", "type": "main", "index": 0}],
+        [{"node": "fileScanner", "type": "main", "index": 0}]
+      ]
+    },
+    "gmailFetch": {
+      "main": [[{"node": "advancedClassifier", "type": "main", "index": 0}]]
+    },
+    "fileScanner": {
+      "main": [[{"node": "advancedClassifier", "type": "main", "index": 0}]]
+    },
+    "advancedClassifier": {
+      "main": [[{"node": "mistralAnalysis", "type": "main", "index": 0}]]
+    },
+    "mistralAnalysis": {
+      "main": [[{"node": "outputPreparer", "type": "main", "index": 0}]]
+    },
+    "outputPreparer": {
+      "main": [[{"node": "folderManager", "type": "main", "index": 0}]]
+    },
+    "folderManager": {
+      "main": [[{"node": "pdfConverter", "type": "main", "index": 0}]]
+    },
+    "pdfConverter": {
+      "main": [[{"node": "paperlessUpload", "type": "main", "index": 0}]]
+    },
+    "paperlessUpload": {
+      "main": [[{"node": "reportGenerator", "type": "main", "index": 0}]]
+    },
+    "reportGenerator": {
+      "main": [[{"node": "htmlResponse", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  }
+}

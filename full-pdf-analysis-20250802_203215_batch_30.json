@@ -1,0 +1,166 @@
+{
+  "batch_start": 30000,
+  "batch_end": 31000,
+  "timestamp": "2025-08-02T20:36:33.941097",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 495,
+    "subscription": 24,
+    "unknown": 203,
+    "notification": 35,
+    "order": 188,
+    "receipt": 27,
+    "shipping": 19,
+    "contract": 9
+  },
+  "metadata_samples": [
+    {
+      "file": "⚠ You should stop dual-booting Windows and Linux �-202504021551-_XDA_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 6089
+    },
+    {
+      "file": "Znáte nejlepší destinace na golfovou dovolenou_-202407251316-Eliška z TeeTime.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 5869
+    },
+    {
+      "file": "5 Genius Ways to Keep Sand Out of Your Food at the-202407111232-_CNET Home_.pdf",
+      "type": "subscription",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2328
+    },
+    {
+      "file": "Act Fast, M.A.J.! Only 40 CEO Ultimate Pack 2025 B-202412161121-_ACDSee_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3082
+    },
+    {
+      "file": "Krb nad 68C-202503130023-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 179
+    },
+    {
+      "file": "Re_NB-202503280833-Pavel Brzák.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1526
+    },
+    {
+      "file": "Láska je ve vzduchu – dubnový výběr 5 romantických-202505051636-_prima+_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2732
+    },
+    {
+      "file": "[Sonderangebot] Holen Sie sich vollen Zugriff auf -202406291508-_Soda PDF_.pdf",
+      "type": "notification",
+      "score": 2,
+      "metadata": {},
+      "text_length": 979
+    },
+    {
+      "file": "Network alert on AZURO2G-202505162325-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 933
+    },
+    {
+      "file": "Tim Cook Drops Hint on iPhone SE's Launch for Tomo-202502181231-_CNET - Mobile_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2403
+    },
+    {
+      "file": "📣 Black Friday pro milovníky vína. 🍷-202411231001-_Michaela z Bevande_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2870
+    },
+    {
+      "file": "206 nových nabídek, které Vás zajímají-202406160328-_oznameni Aukro.cz_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {
+        "ico": "05360722"
+      },
+      "text_length": 1008
+    },
+    {
+      "file": "Talk about these at the holiday table-202412240301-_Kickstarter New & Trending_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3048
+    },
+    {
+      "file": "Žhavé aukce_ minerály, drahokamy, meteority 24. 9.-202409241126-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 33,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 3030
+    },
+    {
+      "file": "TOP 10 _ DUBEN 2025 🔝-202505061559-_Oneplay - novinky_.pdf",
+      "type": "invoice",
+      "score": 21,
+      "metadata": {},
+      "text_length": 3813
+    },
+    {
+      "file": "WIRED BEST z uplynulého týdne-202501240719-_WIRED_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 4209
+    },
+    {
+      "file": "Exklusive Auswahl für Sie-202408091612-_BestSecret_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1288
+    },
+    {
+      "file": "Letuška.cz _ Zájezdy _ Dechberoucí Sicílie _ Rodin-202503061009-Letuška.cz.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2388
+    },
+    {
+      "file": "Ends Today_ Shop Our Semi-Annual Deals Now-202406301004-_SainSmart_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 1539
+    },
+    {
+      "file": "Starke und kompatible Office-Alternative - Ashampo-202502171104-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 6341
+    }
+  ],
+  "error_count": 0
+}

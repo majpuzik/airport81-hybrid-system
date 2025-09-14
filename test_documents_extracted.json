@@ -1,0 +1,148 @@
+{
+  "invoices": [
+    {
+      "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Sante_Faktura_110240606_ID_304391 (2).pdf",
+      "filename": "Sante_Faktura_110240606_ID_304391 (2).pdf",
+      "pages": 1,
+      "metadata": {
+        "CreationDate": "D:20240301134636+01'00'",
+        "ModDate": "D:20240301134636+01'00'",
+        "Producer": "eDocEngine VCL 5.0.0.577",
+        "Author": "Eliška Žaloudková",
+        "Creator": "HELIOS iNuvio"
+      },
+      "extraction_method": "PyPDF2",
+      "error": null,
+      "analysis": {
+        "document_type": "invoice",
+        "has_ico": true,
+        "has_dic": false,
+        "has_amount": true,
+        "has_date": false,
+        "language": "cs",
+        "key_patterns": [],
+        "ico": "61854093",
+        "amount": " "
+      },
+      "text_preview": "Pen. ústav : Bank. spojení : UniCredit Bank Czech Republic, a.s. KS: 2110388236 / 2700\nIBAN : CZ6027000000002110388236 SWIFT : BACXCZPPPštrossova 192/24\n11000 Praha 1 - Nové Město\nDIČ IČ 61854093 CZ699003671Dodavatel :\n: :TeamPrevent-Santé, s.r.o.\nMěstský soud v Praze , oddíl C, vložka 31359\n110240606 Variabilní symbol :\nObjednávka :\nOdběratel :MyBrainWorks s.r.o.\nOcelkova 643/20\n198 00Praha\nIČ DIČ 03981428: :IČIČIČIČ:\n03981428 DIČ :Telefon : E-mail : fakturace@teamprevent.cz\nDatum vystavení daňového dokladuDatum splatnosti\n::\n01.03.202415.03.2024\nDatum uskutečnění zdanitelného plnění :01.03.2024 Způsob dopravy :Popis dodávky :Platebním příkazem: Forma úhradyD A Ň O V Ý   D O K L A D FAKTURA 110240606\nMnožství Popis dodávky J. cena bez DPH Celkem bez DPH DPH % Celkem s DPH Období od - do\nFakturujeme Vám:\n1,00 15 900,00 15 900,00 Zdravotní služby v rozsahu bronzové karty 15 900,00 0 28.02.2025 01.03.2024\n15 900,00 15 900,00\n15 900,00 Fakturace celkem  Kč\n% Základ DPH Celkem SazbaRekapit...",
+      "text_length": 1196,
+      "full_text_available": true
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/NB Ucetnictvi_V_241029.pdf",
+      "filename": "NB Ucetnictvi_V_241029.pdf",
+      "pages": 1,
+      "metadata": {
+        "Author": "pavel",
+        "CreationDate": "D:20240709100912"
+      },
+      "extraction_method": "PyPDF2",
+      "error": null,
+      "analysis": {
+        "document_type": "invoice",
+        "has_ico": true,
+        "has_dic": true,
+        "has_amount": false,
+        "has_date": false,
+        "language": "cs",
+        "key_patterns": [],
+        "ico": "25757377",
+        "dic": "CZ25757377"
+      },
+      "text_preview": "Peněžní ústav: ČSOB241029 FAKTURA - DAŇOVÝ DOKLAD č.\nObjednávka: Dod. list:23.07.2024\nForma úhrady: Převodním příkazemDatum uskutečnění zdanitelného plnění: 09.07.2024Datum vystavení: 09.07.2024\nFakturujeme VámZapsán v Obchodním rejstříku  u Obchodního soudu\nPraha, oddíl C, vl.67502, pavelb@nbucetnictvi.czDodavatel:\nNB účetnictví s.r.o.\nZelená 945\n160 00 Praha  6\nDIČ: CZ25757377 IČ: 25757377Variabilní symbol: 241029\nČíslo účtu: 154642241/0300\nSWIFT kód: CEKOCZCP\nIBAN kód: CZ9703000000000154642241Konstantní symbol: 0308\nDatum splatnosti:\nZpůsob dopravy: Přílohy:MyBrainWorks s.r.o.\nOcelkova 643/20, Černý Most\n198 00  Praha 9CZ03981428 DIČ: 03981428IČ:\nČeská republikaOdběratel:\nPříjemce:\nZakázka:\nNázev položky Počet / MJ Cena/MJ Cena DPH % Celkem Sleva % DPH\nzpracování účetnictví a  daň.přiznání za rok 2023 15 000,00 21 18 150,00 20231 15 000,00 0,00 3 150,00\n15 000,00 18 150,00\nZáloha: 0,00Celkem: 3 150,00\nZaokrouhlení: 0,00\nKč Zbývá uhradit v 18 150,00Rekapitulace DPH v Kč\nZáklad\n0,00\n0...",
+      "text_length": 1290,
+      "full_text_available": true
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/RFIshop_202437341.pdf",
+      "filename": "RFIshop_202437341.pdf",
+      "pages": 1,
+      "metadata": {
+        "Creator": "Chromium",
+        "Producer": "Skia/PDF m109",
+        "CreationDate": "D:20241223103718+00'00'",
+        "ModDate": "D:20241223103718+00'00'"
+      },
+      "extraction_method": "PyPDF2",
+      "error": null,
+      "analysis": {
+        "document_type": "invoice",
+        "has_ico": false,
+        "has_dic": false,
+        "has_amount": false,
+        "has_date": false,
+        "language": "cs",
+        "key_patterns": []
+      },
+      "text_preview": "Faktura - da ň ový doklad 202437341\nDODAVATEL\nZonepi s.r.o.\nPlavská 490\n37007 Roudné\nI ČO: 08139105\nDI Č: CZ08139105\nTelefon: +420 603 716 789\nE-mail: obchod@rpishop.cz\nDodavatel je zapsán pod spisovou zna č kou\nC 28810/KSCB u Krajského soudu v\nČeských Bud ě jovicíchODB Ě RATEL\nMyBrainWorks s.r.o.\nI ČO: 03981428\nTelefon: +420 739 922 366\nE-mail: martin.puzik@gmail.com\nFaktura č ní\nadresa:\nOcelkova 643/20\n198 00 Praha\nCZDodací adresa:\nMilan Pu ž ík\nSlune č ná 661\n252 28 Č erno š ice\nCZDatum vystavení:23.12.2024\nDatum splatnosti:04.01.2025\nForma úhrady: Online kreditní kartou\nBankovní Ú č et: 2501638394/2010\nVariabilní symbol:577082\nDUZP: 23.12.2024\nOrder: 577082\nDatum objednávky:21.12.2024 15:00\nDopravce: PPL\nVariabilní symbol\n577082Datum splatnosti\n04.01.2025Suma na úhradu\n0,00 K č\nKód Dodané zbo ž í / slu ž by Po čet Cena ks DPH DPH Celkem\nDSK00652Pi - Transparentní akrylová krabi č ka s chladi č i pro\nRaspberry Pi 51,00 304,96 K č 21,00 % 64,04 K č 369,00 K č\nOFI120 Raspberry Pi 27W ...",
+      "text_length": 1543,
+      "full_text_available": true
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2952181547.pdf",
+      "filename": "Alza_2952181547.pdf",
+      "pages": 2,
+      "metadata": {
+        "Author": "alza.cz",
+        "Subject": "FastReport PDF export",
+        "Creator": "PDFGen 1.40",
+        "Producer": "FastReport PrintTask",
+        "CreationDate": "D:20250112172802+01'00'",
+        "ModDate": "D:20250112172802+01'00'"
+      },
+      "extraction_method": "PyPDF2",
+      "error": null,
+      "analysis": {
+        "document_type": "invoice",
+        "has_ico": true,
+        "has_dic": true,
+        "has_amount": true,
+        "has_date": false,
+        "language": "cs",
+        "key_patterns": [],
+        "ico": "27082440",
+        "dic": "CZ27082440",
+        "amount": "2 174,00"
+      },
+      "text_preview": "- záruční a dodací listFaktura - Daňový doklad - 2952181547\nProdávající: Alza.cz a.s.\nJankovcova 1522/53, 17000 Praha 7, IČ: 27082440, DIČ: CZ27082440, Internet: www.alza.cz, Kontakt: www.alza.cz/kontakt, Telefon:\n+420225340111\nZapsána v OR u MS v Praze, oddíl B, vložka 8573.\nDaňový doklad:\nDatum vystavení:\nDatum splatnosti:\nZpůsob úhrady:16.04.202416.04.202416.04.2024Faktura\nKartou InternetemDatum uskut. zdaň. plnění:\nBankovní účet:Datum převzetí: 16.04.2024\nNázev Banky: Česká spořitelna, a.s.\nČíslo účtu: 2171532/0800\nVariabilní symbol: 5054274261Kupující:\nMyBrainWorks s.r.o.\nOcelkova 643\nPraha 19800\nIČ: 03981428 DIČ: \nE-mail: martin.puzik@gmail.com\nTel: +420739922366 \nKód Popis Ks Cena ks bez DPH DPH Cena Záruka DPH%\n139,67 APWCB\n500NfVideo kabel AlzaPower AluCore HDMI\n1.4 High Speed 4K 1.5m černý2 279,34 58,66 21 338,00 24 \n1 148,76 SMARTS\nm22Powerbanka 4smarts Pocket Slim\n10000mAh 45W black1 1 148,76 241,24 21 1 390,00 24 \n338,02 Anker24\n_003Napájecí kabel Anker 322 USB-C to\nUSB-C ...",
+      "text_length": 2616,
+      "full_text_available": true
+    }
+  ],
+  "bank_statements": [],
+  "receipts": [
+    {
+      "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Potten und Pannen_1124115359.pdf",
+      "filename": "Potten und Pannen_1124115359.pdf",
+      "pages": 2,
+      "metadata": {
+        "Creator": "Aspose Pty Ltd.",
+        "Producer": "Aspose.PDF for .NET 24.11.0",
+        "CreationDate": "D:20241212152033Z00'00'",
+        "ModDate": "D:20241212152033+00'00'"
+      },
+      "extraction_method": "PyPDF2",
+      "error": null,
+      "analysis": {
+        "document_type": "invoice",
+        "has_ico": true,
+        "has_dic": true,
+        "has_amount": true,
+        "has_date": false,
+        "language": "cs",
+        "key_patterns": [],
+        "ico": "25730452",
+        "dic": "CZ25730452",
+        "amount": " "
+      },
+      "text_preview": "Dodavatel\nZákazník\nPotten & Pannen - Staněk group, a.s.\nMartin Pužík - Mybrainworks s.r.o.\nHoráčkova 1222/5\nHrdlořezská 32/3\n140 00 Praha 4\n190 00 Praha\nČeská republika\nDIČ\nCZ25730452\nDIČ\nIČ\n25730452\nIČ\nSpolečnost zapsána v obchodním rejstříku vedeném Městským soudem v Praze, odd. B, vložka 24011\nwww.pottenpannen.cz, E-mail: info@pottenpannen.cz, Tel.: +420 725 855 050\nČíslo bankovního účtu\n9691442/5500\nDatum dokladu\n12. 12. 2024\nIBAN\nCZ4055000000000009691442\nDatum DPH\n11. 12. 2024\nKód SWIFT\nRZBCCZPP\nDatum splatnosti\n22. 12. 2024\nVariabilní symbol\n8984615067\nPlatební podmínky\nDo 10 dnů\nZpůsob platby\nOnline\nEshopové objednávky\nPříjemce\nČíslo objednávky\nE2400098477\nMartin Pužík - Mybrainworks s.r.o.\nProdejní dodávky\n2407115327\nHrdlořezská 32/3\nZpůsob dodávky\nS dodáním v místě určení\n190 00 Praha\nPřepravce\nPPL\nČeská republika\nStředisko\n50\nE-mail: martin.puzik@gmail.com\nTel.: +420739922366\nČíslo\nPopis\nMnožství\nMJ\nCena za MJ vč. \nDPH\nSleva \n%\nDPH \n%\nCelkem vč. \nDPH\n11-7309-0020 / \nA0058942\n...",
+      "text_length": 1828,
+      "full_text_available": true
+    }
+  ],
+  "summary": {
+    "total_processed": 5,
+    "successful": 5,
+    "failed": 0
+  }
+}

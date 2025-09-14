@@ -1,0 +1,74 @@
+{
+  "name": "Czech Document Classifier - Ollama",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "document-classifier",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {
+          "timeout": 30000
+        },
+        "bodyParametersJson": "{\n  \"model\": \"czech-finance:latest\",\n  \"prompt\": \"Klasifikuj tento český dokument do JEDNÉ z těchto kategorií:\\n- faktura\\n- smlouva\\n- platba\\n- bankovni_vypis\\n- soudni_obesilka\\n- uredni_korespondence\\n- objednavka\\n- upominka\\n- reklama\\n- ostatni\\n\\nDokument:\\n{{ $json.text || $json.testText || $json.documentText || 'No text' }}\\n\\nOdpověz POUZE názvem kategorie (jedno slovo):\",\n  \"stream\": false,\n  \"temperature\": 0.1\n}"
+      },
+      "id": "ollama",
+      "name": "Czech Finance Model",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Parse Ollama response\nconst ollamaResponse = $input.item.json;\nlet classification = 'ostatni';\n\nif (ollamaResponse.response) {\n  // Extract first word from response\n  classification = ollamaResponse.response\n    .trim()\n    .toLowerCase()\n    .split(/[\\s,\\.]+/)[0]\n    .replace(/[^a-z_]/g, '');\n}\n\n// Valid document types\nconst validTypes = [\n  'faktura', 'smlouva', 'platba', 'bankovni_vypis',\n  'soudni_obesilka', 'uredni_korespondence', 'objednavka',\n  'upominka', 'reklama', 'ostatni'\n];\n\n// Ensure valid type\nconst docType = validTypes.includes(classification) ? classification : 'ostatni';\n\n// Extract additional info\nconst originalText = $node[\"webhook\"].json.text || \n                    $node[\"webhook\"].json.testText || \n                    $node[\"webhook\"].json.documentText || '';\n\nlet extracted = {};\n\n// Extract IČO\nconst icoMatch = originalText.match(/IČO?:?\\s*(\\d{8})/i);\nif (icoMatch) extracted.ico = icoMatch[1];\n\n// Extract amount\nconst amountMatch = originalText.match(/(\\d{1,3}(?:[\\s.]\\d{3})*(?:,\\d{2})?)\\s*Kč/i);\nif (amountMatch) extracted.amount = amountMatch[1].replace(/\\s/g, '');\n\n// Extract VS\nconst vsMatch = originalText.match(/VS:?\\s*(\\d+)/i);\nif (vsMatch) extracted.variable_symbol = vsMatch[1];\n\nreturn {\n  json: {\n    success: true,\n    classification: {\n      type: docType,\n      model: 'ollama/czech-finance',\n      confidence: 0.95,\n      extracted: extracted\n    },\n    originalText: originalText.substring(0, 200),\n    timestamp: new Date().toISOString(),\n    processingTime: ollamaResponse.eval_duration ? \n      Math.round(ollamaResponse.eval_duration / 1000000) + 'ms' : 'N/A'\n  }\n};"
+      },
+      "id": "process",
+      "name": "Process Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "webhook": {
+      "main": [
+        [
+          {
+            "node": "ollama",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ollama": {
+      "main": [
+        [
+          {
+            "node": "process",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": []
+}

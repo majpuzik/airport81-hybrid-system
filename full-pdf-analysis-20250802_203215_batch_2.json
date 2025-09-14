@@ -1,0 +1,168 @@
+{
+  "batch_start": 2000,
+  "batch_end": 3000,
+  "timestamp": "2025-08-02T20:32:41.697206",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 162,
+    "invoice": 542,
+    "order": 172,
+    "shipping": 17,
+    "notification": 44,
+    "receipt": 30,
+    "subscription": 20,
+    "contract": 11,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Re_Pozvání na kontrolu ohledně invalidity-202502061252-Stichová Jana, MUDr..pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 705
+    },
+    {
+      "file": "Pouze za 100 Kč! Nezmeškejte akci a nakupte za sto-202504230834-_Levnoshop.cz_.pdf",
+      "type": "invoice",
+      "score": 39,
+      "metadata": {
+        "ico": "04676408",
+        "dic": "CZ04676408"
+      },
+      "text_length": 4913
+    },
+    {
+      "file": "Are paid Gemini plans right for you, M.A.J._-202410110011-_Google AI Studio_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3221
+    },
+    {
+      "file": "6-figure DFY Business With AI Pilot AI APP - Grab -202406081741-_WordPress_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1725
+    },
+    {
+      "file": "Brand new category added 💥-202408191203-_Security & Fire Excellence Awards_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3447
+    },
+    {
+      "file": "Statistic L2-202412310027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 227
+    },
+    {
+      "file": "UniFi Network Updates_ Network 9.0 _ Flex 2.5G Ser-202501071814-_Ubiquiti_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1653
+    },
+    {
+      "file": "Statistic Dům-202406260005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 228
+    },
+    {
+      "file": "Loka Chai Maker - Make The Best Chai In The World-202407171420-_BackerHive_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1851
+    },
+    {
+      "file": "Record Breaking Hashprice on NiceHash-202409131912-_NiceHash_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1998
+    },
+    {
+      "file": "New in __ Our first ever light-responsive frames-202408061511-_Ray-Ban_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1860
+    },
+    {
+      "file": "Žhavé aukce_ 5. 5. 2025-202505051402-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 36,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2492
+    },
+    {
+      "file": "Neue Anzeigen heute-202502190743-_idealista_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2227
+    },
+    {
+      "file": "Softel Consulting s.r.o., jarní únava_ Naše zahrad-202504161303-Klarstein výprodeje.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1942
+    },
+    {
+      "file": "Neuer Treffer für deine Volkswagen, Bis zu 50.000 -202502271202-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 2972
+    },
+    {
+      "file": "Přehledné srovnání programů Trumpa a Harrisové; Gm-202410180600-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 3162
+    },
+    {
+      "file": "Naše špičkové opasky opět skladem! 🚀-202410171002-_HERO_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 1442
+    },
+    {
+      "file": "License Details for your Recent Purchase - MacUncl-202503041950-_Support Team_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1526
+    },
+    {
+      "file": "🚨 Only 15 copies left, M.A.J.! Exclusive CEO offe-202502211123-_ACDSee_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2855
+    },
+    {
+      "file": "Trade-in promotion - Save up to 25% on your next s-202505051214-_SHINING 3D_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1711
+    }
+  ],
+  "error_count": 0
+}

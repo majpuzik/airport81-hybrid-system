@@ -1,0 +1,161 @@
+{
+  "batch_start": 13000,
+  "batch_end": 14000,
+  "timestamp": "2025-08-02T20:34:12.900561",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 528,
+    "order": 187,
+    "unknown": 182,
+    "shipping": 21,
+    "notification": 34,
+    "receipt": 30,
+    "subscription": 13,
+    "contract": 5
+  },
+  "metadata_samples": [
+    {
+      "file": "🚘 1 neues Fahrzeug für Dich-202504010827-_mobile.de Suchauftrag_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1284
+    },
+    {
+      "file": "Dernière chance 🕓-202503142002-_Patrick _ RaspberryTips_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 721
+    },
+    {
+      "file": "A New Tool in the Fight Against Deepfakes-202408230001-_CNET Insider_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2708
+    },
+    {
+      "file": "MASSIVE Amazon Sale — Incredible Early Black Frida-202410191532-_Tom's Guide_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2082
+    },
+    {
+      "file": "🔥Trvale zlevněné AzureFilm filamenty!-202504210930-3DJake Česká republika.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 690
+    },
+    {
+      "file": "Milan Puzik, máte Smart Match! (9. Červenec 2024)-202407090725-_MyHeritage Smart Matches_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1896
+    },
+    {
+      "file": "12 Monate 50 % Rabatt-202412021521-_Handelsblatt_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1137
+    },
+    {
+      "file": "This lightweight titanium hip flask is leak-proof-202503251540-_KickstarNow_.pdf",
+      "type": "order",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1580
+    },
+    {
+      "file": "Order Now, Milan — We’ve Run Out Of Stock Before-202412192117-_Mark (Xtra-PC)_.pdf",
+      "type": "order",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2575
+    },
+    {
+      "file": "Statistic Trouba-202502070027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 236
+    },
+    {
+      "file": "Heute meistgelesen_ Der überforderte Bürger_ 1,7 M-202412111644-Neue Zürcher Zeitung.pdf",
+      "type": "order",
+      "score": 8,
+      "metadata": {},
+      "text_length": 3256
+    },
+    {
+      "file": "SketchUp Promo_ Sleva 20% SketchUp Pro a Studio-202406180937-SketchUp pro Česko.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1578
+    },
+    {
+      "file": "Heute meistgelesen_ Alijew führt Putin vor – der a-202412311639-Neue Zürcher Zeitung.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3484
+    },
+    {
+      "file": "Gerade eingetroffen_ Dein Wochenrückblick für Volk-202503251324-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "order",
+      "score": 10,
+      "metadata": {},
+      "text_length": 1865
+    },
+    {
+      "file": "Vaše zásilka byla přijata k přepravě-202412161939-Zásilkovna.pdf",
+      "type": "shipping",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1001
+    },
+    {
+      "file": "iUmeni.cz - Srpnové knižní novinky a tipy-202408220912-_iUmeni.cz_.pdf",
+      "type": "invoice",
+      "score": 45,
+      "metadata": {},
+      "text_length": 8670
+    },
+    {
+      "file": "Statistic Bazénová technologie-202501250027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 279
+    },
+    {
+      "file": "Migration, Wirtschaft, Sicherheit_ Harte Fronten i-202502100606-_Epoch Guten Morgen_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 6107
+    },
+    {
+      "file": "Save Big on Our Hottest-Selling Items - Shop Now!�-202501300923-_MOVE SPEED_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 946
+    },
+    {
+      "file": "Potvrzení o odeslání 3264413817-202404281410-_lidl-shop.cz_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 2646
+    }
+  ],
+  "error_count": 0
+}

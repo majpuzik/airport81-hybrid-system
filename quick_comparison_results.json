@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-08-30T14:45:58.973094",
+  "results": [
+    {
+      "filename": "NB Ucetnictvi_V_241029.pdf",
+      "file_size": 442.314453125,
+      "file_type": ".pdf",
+      "pdfco": {
+        "success": true,
+        "time": 6.08178973197937,
+        "text_length": 3587,
+        "doc_type": "Faktura"
+      },
+      "anyparser": {
+        "success": true,
+        "time": 0.753046989440918,
+        "text_length": 1,
+        "doc_type": "Neznámý"
+      }
+    },
+    {
+      "filename": "Alza_2968364466.pdf",
+      "file_size": 476.4033203125,
+      "file_type": ".pdf",
+      "pdfco": {
+        "success": true,
+        "time": 6.230364084243774,
+        "text_length": 3887,
+        "doc_type": "Faktura - Alza"
+      },
+      "anyparser": {
+        "success": true,
+        "time": 0.6176388263702393,
+        "text_length": 1,
+        "doc_type": "Faktura - Alza"
+      }
+    },
+    {
+      "filename": "Benzin_scan_026.jpg",
+      "file_size": 503.0625,
+      "file_type": ".jpg",
+      "pdfco": {
+        "success": true,
+        "time": 0,
+        "skipped": true,
+        "doc_type": "Účtenka (obrázek)"
+      },
+      "anyparser": {
+        "success": true,
+        "time": 1.8945560455322266,
+        "text_length": 1,
+        "doc_type": "Účtenka - Benzín"
+      }
+    },
+    {
+      "filename": "Cisteni vozu_scan_040.jpg",
+      "file_size": 668.6767578125,
+      "file_type": ".jpg",
+      "pdfco": {
+        "success": true,
+        "time": 0,
+        "skipped": true,
+        "doc_type": "Účtenka (obrázek)"
+      },
+      "anyparser": {
+        "success": true,
+        "time": 1.6349408626556396,
+        "text_length": 1,
+        "doc_type": "Účtenka - Čištění"
+      }
+    },
+    {
+      "filename": "Moebelix_scan_079.jpg",
+      "file_size": 932.5400390625,
+      "file_type": ".jpg",
+      "pdfco": {
+        "success": true,
+        "time": 0,
+        "skipped": true,
+        "doc_type": "Účtenka (obrázek)"
+      },
+      "anyparser": {
+        "success": true,
+        "time": 2.0939769744873047,
+        "text_length": 1,
+        "doc_type": "Účtenka - Nábytek"
+      }
+    }
+  ]
+}

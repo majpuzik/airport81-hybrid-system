@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "total_documents": 10,
+    "recognized": 6,
+    "unknown": 4,
+    "success_rate": 0.6,
+    "generated_at": "2025-08-02T12:09:57.788166"
+  },
+  "type_analysis": {
+    "bank_statement": {
+      "count": 4,
+      "confidence_scores": [
+        0.6,
+        0.4666666666666667,
+        0.6,
+        0.4666666666666667
+      ],
+      "raw_scores": [
+        9,
+        7,
+        9,
+        7
+      ],
+      "examples": [
+        "Výpis z účtu - Česká spořitelna",
+        "ČSOB - Transakce na vašem účtu",
+        "Revolut - Your monthly statement",
+        "N26 - Transaction notification"
+      ],
+      "senders": [
+        "no-reply@n26.com",
+        "statements@revolut.com",
+        "info@csob.cz",
+        "vypisy@csas.cz"
+      ],
+      "avg_confidence": 0.5333333333333333,
+      "avg_score": 8.0
+    },
+    "contract": {
+      "count": 1,
+      "confidence_scores": [
+        0.4
+      ],
+      "raw_scores": [
+        6
+      ],
+      "examples": [
+        "Smlouva o dílo - programování"
+      ],
+      "senders": [
+        "smlouvy@firma.cz"
+      ],
+      "avg_confidence": 0.4,
+      "avg_score": 6.0
+    },
+    "tax_document": {
+      "count": 1,
+      "confidence_scores": [
+        0.4666666666666667
+      ],
+      "raw_scores": [
+        7
+      ],
+      "examples": [
+        "Daňové přiznání 2024 - připomínka"
+      ],
+      "senders": [
+        "podpora@daneprofi.cz"
+      ],
+      "avg_confidence": 0.4666666666666667,
+      "avg_score": 7.0
+    }
+  },
+  "confidence_analysis": {
+    "levels": {
+      "very_high": 0,
+      "high": 0,
+      "medium": 2,
+      "low": 4,
+      "very_low": 0
+    },
+    "distribution": [
+      0.6,
+      0.4,
+      0.4666666666666667,
+      0.6,
+      0.4666666666666667,
+      0.4666666666666667
+    ],
+    "average": 0.5,
+    "median": 0.4666666666666667
+  },
+  "sender_analysis": {
+    "csas.cz": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "bank_statement"
+      ],
+      "success_rate": 1.0
+    },
+    "firma.cz": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "contract"
+      ],
+      "success_rate": 1.0
+    },
+    "csob.cz": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "bank_statement"
+      ],
+      "success_rate": 1.0
+    },
+    "revolut.com": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "bank_statement"
+      ],
+      "success_rate": 1.0
+    },
+    "daneprofi.cz": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "tax_document"
+      ],
+      "success_rate": 1.0
+    },
+    "n26.com": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "bank_statement"
+      ],
+      "success_rate": 1.0
+    },
+    "aerohostin.cz": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "invoice"
+      ],
+      "success_rate": 1.0
+    },
+    "tesco.cz": {
+      "total": 1,
+      "recognized": 1,
+      "types": [
+        "receipt"
+      ],
+      "success_rate": 1.0
+    },
+    "obchod.cz": {
+      "total": 1,
+      "recognized": 0,
+      "types": [],
+      "success_rate": 0.0
+    },
+    "pojistovna.cz": {
+      "total": 1,
+      "recognized": 0,
+      "types": [],
+      "success_rate": 0.0
+    }
+  }
+}

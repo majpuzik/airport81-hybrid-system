@@ -1,0 +1,573 @@
+{
+  "timestamp": "2025-09-07T18:40:03.633507",
+  "total_documents": 200,
+  "test_duration_seconds": 29.47,
+  "statistics": {
+    "total_documents": 200,
+    "versions": {
+      "original": {
+        "found": 188,
+        "not_found": 5,
+        "errors": 0,
+        "y_html_bug": 7,
+        "total_time": 8.259999999999998,
+        "with_ico": 5,
+        "with_dic": 7,
+        "avg_confidence": 70.0,
+        "sources": {
+          "document_header": 188
+        },
+        "success_rate": 94.0,
+        "avg_time": 0.041
+      },
+      "v1": {
+        "found": 177,
+        "not_found": 23,
+        "errors": 0,
+        "y_html_bug": 0,
+        "total_time": 8.262000000000004,
+        "with_ico": 3,
+        "with_dic": 7,
+        "avg_confidence": 69.4,
+        "sources": {
+          "document_header": 168,
+          "email_mapping": 3,
+          "domain_mapping": 1,
+          "email_domain": 5
+        },
+        "success_rate": 88.5,
+        "avg_time": 0.041
+      },
+      "v2": {
+        "found": 35,
+        "not_found": 165,
+        "errors": 0,
+        "y_html_bug": 0,
+        "total_time": 8.179000000000004,
+        "with_ico": 2,
+        "with_dic": 7,
+        "avg_confidence": 58.6,
+        "sources": {
+          "document_header": 16,
+          "email_mapping": 3,
+          "domain_mapping": 1,
+          "email_domain": 15
+        },
+        "success_rate": 17.5,
+        "avg_time": 0.041
+      },
+      "v3": {
+        "found": 0,
+        "not_found": 200,
+        "errors": 0,
+        "y_html_bug": 0,
+        "total_time": 4.606999999999994,
+        "with_ico": 0,
+        "with_dic": 0,
+        "avg_confidence": 0,
+        "sources": {},
+        "success_rate": 0.0,
+        "avg_time": 0.023
+      }
+    },
+    "improvements": {
+      "v3_vs_original": {
+        "success_rate_change": -94.0,
+        "speed_improvement": 43.9,
+        "new_found": -181
+      }
+    },
+    "category_analysis": {
+      "faktury": {
+        "total": 3,
+        "success_rate": {}
+      },
+      "ostatni": {
+        "total": 187,
+        "success_rate": {}
+      },
+      "vypisy": {
+        "total": 3,
+        "success_rate": {}
+      },
+      "uctenky": {
+        "total": 7,
+        "success_rate": {}
+      }
+    },
+    "performance": {},
+    "errors": {}
+  },
+  "detailed_results": [
+    {
+      "filename": "20250904_193003_Vase_faktura.pdf",
+      "file_size_kb": 147.05,
+      "file_hash": "f4bfb728",
+      "versions": {
+        "original": {
+          "name": "Hornbach.cz (no reply",
+          "ico": "47117559",
+          "dic": "CZ47117559",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.05,
+          "error": null
+        },
+        "v1": {
+          "name": "Firma HORNBACH BAUMARKT CS spol. s r. o",
+          "ico": "47117559",
+          "dic": "CZ47117559",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.043,
+          "error": null
+        },
+        "v2": {
+          "name": "Firma HORNBACH BAUMARKT CS spol. s r. o",
+          "ico": "47117559",
+          "dic": "CZ47117559",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.042,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.024,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_193053_Important_update_Credits_as_our_new_billing_unit_are_coming_tomorrow.pdf",
+      "file_size_kb": 62.56,
+      "file_hash": "de066e87",
+      "versions": {
+        "original": {
+          "name": "Make",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v1": {
+          "name": "Make",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.021,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_193232_Faktura_k_objednavce_c._IC2501273.pdf",
+      "file_size_kb": 143.71,
+      "file_hash": "b4871179",
+      "versions": {
+        "original": {
+          "name": "Cubee",
+          "ico": "16188047",
+          "dic": "CZ16188047",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v1": {
+          "name": "Cube IT a.s",
+          "ico": "16188047",
+          "dic": "CZ16188047",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v2": {
+          "name": "Cube IT a.s",
+          "ico": "16188047",
+          "dic": "CZ16188047",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.022,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_185027_Faktura_Alza.cz_#123456.pdf",
+      "file_size_kb": 48.86,
+      "file_hash": "15bfb1e7",
+      "versions": {
+        "original": {
+          "name": "y.html 1/1",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v1": {
+          "name": "Alza.cz a.s.",
+          "ico": null,
+          "dic": null,
+          "source": "email_mapping",
+          "confidence": 85,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v2": {
+          "name": "Alza.cz a.s.",
+          "ico": null,
+          "dic": null,
+          "source": "email_mapping",
+          "confidence": 85,
+          "ocr_quality": null,
+          "time": 0.043,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.022,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_185030_N26_Monthly_Statement.pdf",
+      "file_size_kb": 50.44,
+      "file_hash": "d0a6ceec",
+      "versions": {
+        "original": {
+          "name": "y.html 1/1",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v1": {
+          "name": "N26 Bank GmbH",
+          "ico": null,
+          "dic": null,
+          "source": "domain_mapping",
+          "confidence": 75,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v2": {
+          "name": "N26 Bank GmbH",
+          "ico": null,
+          "dic": null,
+          "source": "domain_mapping",
+          "confidence": 75,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.022,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_191541_[August_Release_Notes]_New_Account_Balance_Management,_Expanded_OPUS_Audio_Options.pdf",
+      "file_size_kb": 74.22,
+      "file_hash": "2ab2e426",
+      "versions": {
+        "original": {
+          "name": "SignalWire",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v1": {
+          "name": "SignalWire",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.04,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.022,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_185027_Komercni_banka_-_mesicni_vypis.pdf",
+      "file_size_kb": 50.46,
+      "file_hash": "70f64206",
+      "versions": {
+        "original": {
+          "name": "y.html 1/1",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v1": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.022,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_190737_[August_Release_Notes]_New_Account_Balance_Management,_Expanded_OPUS_Audio_Options.pdf",
+      "file_size_kb": 74.14,
+      "file_hash": "4441ce7d",
+      "versions": {
+        "original": {
+          "name": "SignalWire",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.04,
+          "error": null
+        },
+        "v1": {
+          "name": "SignalWire",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.051,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.04,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.023,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_185026_Vypis_z_uctu_CSOB_-_leden_2025.pdf",
+      "file_size_kb": 52.38,
+      "file_hash": "51ab80cf",
+      "versions": {
+        "original": {
+          "name": "y.html 1/1",
+          "ico": null,
+          "dic": null,
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.036,
+          "error": null
+        },
+        "v1": {
+          "name": "ČSOB a.s.",
+          "ico": null,
+          "dic": null,
+          "source": "email_mapping",
+          "confidence": 85,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v2": {
+          "name": "ČSOB a.s.",
+          "ico": null,
+          "dic": null,
+          "source": "email_mapping",
+          "confidence": 85,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.022,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "20250904_193201_Your_receipt_from_Eleven_Labs_Inc._#2251-4009-6303.pdf",
+      "file_size_kb": 110.69,
+      "file_hash": "053b1d1d",
+      "versions": {
+        "original": {
+          "name": "Eleven Labs Inc",
+          "ico": null,
+          "dic": "CZ16188047",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.04,
+          "error": null
+        },
+        "v1": {
+          "name": "Eleven Labs Inc",
+          "ico": null,
+          "dic": "CZ16188047",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.042,
+          "error": null
+        },
+        "v2": {
+          "name": "Eleven Labs Inc",
+          "ico": null,
+          "dic": "CZ16188047",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.042,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.023,
+          "error": null
+        }
+      }
+    }
+  ]
+}

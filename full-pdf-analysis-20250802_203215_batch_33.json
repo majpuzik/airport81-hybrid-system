@@ -1,0 +1,172 @@
+{
+  "batch_start": 33000,
+  "batch_end": 34000,
+  "timestamp": "2025-08-02T20:36:59.010826",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 508,
+    "unknown": 179,
+    "order": 191,
+    "notification": 31,
+    "shipping": 27,
+    "receipt": 30,
+    "bank_statement": 3,
+    "subscription": 25,
+    "contract": 6
+  },
+  "metadata_samples": [
+    {
+      "file": "$29 for one year ends soon!-202409291608-_Business Insider_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 617
+    },
+    {
+      "file": "Statistic L1-202411150022-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 226
+    },
+    {
+      "file": "[192.168.10.35] Kontejner angelika-backend v nástr-202504211753-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 575
+    },
+    {
+      "file": "New_ Innovative Under-sink Shelves for Modern Home-202407071707-_DECOVRY_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1882
+    },
+    {
+      "file": "Just Launched🎊TKBIRD_ Best Smart-Vision Bird Feed-202505081501-_BackerViews_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1720
+    },
+    {
+      "file": "🛠 Oblíbené dílenské stoly máme opět skladem.-202502280734-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 2524
+    },
+    {
+      "file": "Už to chystáme. _ Obj. č. 505884814-202404212329-_Alza.cz_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {
+        "ico": "27082440",
+        "vs": "505884814"
+      },
+      "text_length": 2236
+    },
+    {
+      "file": "Bestellung 3039281852666343_ Bestellauftrag bestät-202408032056-_AliExpress_.pdf",
+      "type": "invoice",
+      "score": 20,
+      "metadata": {},
+      "text_length": 1632
+    },
+    {
+      "file": "The first smart COLOUR E-Ink frame-202503211306-_KickstarNow_.pdf",
+      "type": "order",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1761
+    },
+    {
+      "file": "Neue Treffer für deine Volkswagen, Bis zu 50.000 €-202505140848-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "order",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2432
+    },
+    {
+      "file": "Léto s OlifeEnergy _ SECTRON Tip-202407171306-_SECTRON News_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1973
+    },
+    {
+      "file": "🌞 Letní výprodej právě začala!-202407031734-_Huawei.cz_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 722
+    },
+    {
+      "file": "„Architekt“_ Stanley Cowton International – Direct-202505082314-Upozornění na nové pracovní příležitosti LinkedIn.pdf",
+      "type": "notification",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1567
+    },
+    {
+      "file": "🛠 S finskou kozou jedním řezem desítky polínek.-202409140749-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 87,
+      "metadata": {
+        "ico": "27425134"
+      },
+      "text_length": 4303
+    },
+    {
+      "file": "Žhavé aukce_ minerály, drahokamy, meteority 30. 7.-202407301118-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 34,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2778
+    },
+    {
+      "file": "Začalo první mistrovství světa v ledním hokeji, kt-202504230558-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3242
+    },
+    {
+      "file": "M.A.J., přidejte si mě do své sítě na LinkedIn-202409201818-Pavlína Boháčová.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1413
+    },
+    {
+      "file": "🔥 Sleva 15 % na fitness 🔥-202501150958-_MARIMEX.CZ_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {
+        "ico": "64942422"
+      },
+      "text_length": 919
+    },
+    {
+      "file": "The Fascinating Jumping Hour-202504292130-_Chrono24_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1932
+    },
+    {
+      "file": "Your AI-Translated Video is Ready!-202503161915-_The HeyGen Team_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 589
+    }
+  ],
+  "error_count": 0
+}

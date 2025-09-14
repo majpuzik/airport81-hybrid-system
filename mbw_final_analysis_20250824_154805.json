@@ -1,0 +1,1159 @@
+{
+  "timestamp": "20250824_154805",
+  "total_documents": 125,
+  "recognized": 122,
+  "unrecognized": 3,
+  "errors": 0,
+  "success_rate": 97.6,
+  "improvement": 28.799999999999997,
+  "type_statistics": {
+    "ÚČTENKA": 49,
+    "FAKTURA": 50,
+    "BANKOVNÍ VÝPIS": 23
+  },
+  "method_statistics": {
+    "tesseract": 3,
+    "filename": 61,
+    "pdftotext": 56,
+    "enhanced_filename": 1,
+    "layoutlm_lite": 1
+  },
+  "documents": {
+    "recognized": [
+      {
+        "file": "scan_044 (5 files merged).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "confidence": 80,
+        "subtype": null,
+        "method": "tesseract",
+        "text_length": 3830
+      },
+      {
+        "file": "FilmTechnika_scan_036 (2 files merged).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "filmová technika",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: filmová technika"
+      },
+      {
+        "file": "WG34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3607
+      },
+      {
+        "file": "815d046a-8d38-44e5-a095-385d3ad6e911.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3242
+      },
+      {
+        "file": "Cisteni vozu_scan_040.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "čištění vozu",
+        "confidence": 95,
+        "method": "enhanced_filename"
+      },
+      {
+        "file": "wg59a84f01-aa67-410a-8bdb-3b4df96c2586.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3515
+      },
+      {
+        "file": "havas01-0324najem.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 2526
+      },
+      {
+        "file": "aerohosting-proforma-224002311 (1).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3723
+      },
+      {
+        "file": "Sklenarstvi_02 (5 files merged).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "sklenářství",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: sklenářství"
+      },
+      {
+        "file": "KancTechnika_scan_037.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "kancelářská technika",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: kancelářská technika"
+      },
+      {
+        "file": "Benzin_scan_035 (19 files merged).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "havas-najem04-0624.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 2526
+      },
+      {
+        "file": "Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "autoservis",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: autoservis"
+      },
+      {
+        "file": "scan_044 (8 files merged).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "confidence": 100,
+        "subtype": null,
+        "method": "tesseract",
+        "text_length": 6540
+      },
+      {
+        "file": "468d67ec-0b41-4067-a316-9c68fad3255c.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 2526
+      },
+      {
+        "file": "f7f84e85-b71e-4389-bbaf-4247cc1763cc.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 2526
+      },
+      {
+        "file": "priloha_1554077270_0_Vyrozumění_k_prostudování_tr__spisu-Milan_PUŽÍK__Michal_Hrnčíř_ze_dne_18_7_2025.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "confidence": 58,
+        "method": "layoutlm_lite"
+      },
+      {
+        "file": "Vymena oleje_scan_20250112_18120375_0029.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "autoservis",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: autoservis"
+      },
+      {
+        "file": "FilmTechnika_scan_036.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "filmová technika",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: filmová technika"
+      },
+      {
+        "file": "Sante_Faktura_110240606_ID_304391 (2).pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3157
+      },
+      {
+        "file": "NB Ucetnictvi_V_241029.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3529
+      },
+      {
+        "file": "Moebelix_scan_079.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "nábytek",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: nábytek"
+      },
+      {
+        "file": "RFIshop_202437341.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3602
+      },
+      {
+        "file": "KancTechnika_scan_037.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "kancelářská technika",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: kancelářská technika"
+      },
+      {
+        "file": "Moebelix_scan_081.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "nábytek",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: nábytek"
+      },
+      {
+        "file": "Cerveny_Vymena Kol_2024.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "autoservis",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: autoservis"
+      },
+      {
+        "file": "Potten und Pannen_1124115359.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3936
+      },
+      {
+        "file": "Klice nahradni_scan_20250112_18195910_0034.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "zámečnictví",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: zámečnictví"
+      },
+      {
+        "file": "Tonery_scan_027.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "kancelářské potřeby",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: kancelářské potřeby"
+      },
+      {
+        "file": "scan_065.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "confidence": 70,
+        "subtype": null,
+        "method": "tesseract",
+        "text_length": 327
+      },
+      {
+        "file": "Benzin_scan_20250112_18160923_0032.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_030.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_026.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18094216_0027.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18214313_0035.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_035.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18141213_0031.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18063044_0025.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18180595_0033.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_078.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_041.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18104590_0028.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_080.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_042.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_20250112_18080951_0026.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_038.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_039.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_029.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Benzin_scan_028.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_023.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_022.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_020.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_008.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_009.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_021.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_019.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_025.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_024.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_018.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_002.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_016.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_017.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_003.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_015.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_001.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_014.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_004.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_005.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_011.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_007.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_013.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_012.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "scan_2024_Benzin_006.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "ÚČTENKA",
+        "subtype": "benzín",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: benzín"
+      },
+      {
+        "file": "Alza_2952181547.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4691
+      },
+      {
+        "file": "Alza_2953935588.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3899
+      },
+      {
+        "file": "Alza_2951183978.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4888
+      },
+      {
+        "file": "Alza_2951183979.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3519
+      },
+      {
+        "file": "Alza_2948969515.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4544
+      },
+      {
+        "file": "Alza_2954575008.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3165
+      },
+      {
+        "file": "Alza_2959006300.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4775
+      },
+      {
+        "file": "Alza_2954574204.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3165
+      },
+      {
+        "file": "Alza_2957661862.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3519
+      },
+      {
+        "file": "Alza_2954344013.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3773
+      },
+      {
+        "file": "Alza_2957661865.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3560
+      },
+      {
+        "file": "Alza_2962972780.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4662
+      },
+      {
+        "file": "Alza_2964361092.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3551
+      },
+      {
+        "file": "Alza_2964880864.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3224
+      },
+      {
+        "file": "Alza_2953936374.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 3527
+      },
+      {
+        "file": "Alza_2964361091.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4483
+      },
+      {
+        "file": "Alza_2948803072.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4658
+      },
+      {
+        "file": "Alza_2968364466.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4130
+      },
+      {
+        "file": "Alza_2949397329.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 100,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 4233
+      },
+      {
+        "file": "Sklenarstvi_01.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "sklenářství",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: sklenářství"
+      },
+      {
+        "file": "Sklenarstvi_02.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "sklenářství",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: sklenářství"
+      },
+      {
+        "file": "Sklenarstvi_03.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "sklenářství",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: sklenářství"
+      },
+      {
+        "file": "Sklenarstvi_04.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "sklenářství",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: sklenářství"
+      },
+      {
+        "file": "Sklenarstvi_05.jpg",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "subtype": "sklenářství",
+        "confidence": 92,
+        "method": "filename",
+        "reason": "Rozpoznáno podle názvu: sklenářství"
+      },
+      {
+        "file": "bitfaktura.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 85,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 66326
+      },
+      {
+        "file": "269290450_20240731_7_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 9828
+      },
+      {
+        "file": "269290450_20240331_3_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 6039
+      },
+      {
+        "file": "297465924_20241231_12_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 3100
+      },
+      {
+        "file": "297465924_20240229_2_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2776
+      },
+      {
+        "file": "297465924_20241130_11_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2728
+      },
+      {
+        "file": "297465924_20240630_6_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2783
+      },
+      {
+        "file": "269290450_20240131_1_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 7254
+      },
+      {
+        "file": "269290450_20240831_8_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 6502
+      },
+      {
+        "file": "269290450_20240531_5_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "FAKTURA",
+        "confidence": 50,
+        "subtype": "",
+        "method": "pdftotext",
+        "text_length": 9129
+      },
+      {
+        "file": "297465924_20240930_9_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 3418
+      },
+      {
+        "file": "297465924_20240430_4_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2776
+      },
+      {
+        "file": "297465924_20241031_10_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2795
+      },
+      {
+        "file": "269290450_20240630_6_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 8632
+      },
+      {
+        "file": "269290450_20241130_11_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 7347
+      },
+      {
+        "file": "269290450_20240229_2_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 7737
+      },
+      {
+        "file": "297465924_20240331_3_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2776
+      },
+      {
+        "file": "297465924_20240731_7_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 3467
+      },
+      {
+        "file": "269290450_20241231_12_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 7579
+      },
+      {
+        "file": "269290450_20240430_4_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 9095
+      },
+      {
+        "file": "269290450_20240930_9_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 8803
+      },
+      {
+        "file": "269290450_20241031_10_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 8121
+      },
+      {
+        "file": "297465924_20240531_5_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 3224
+      },
+      {
+        "file": "297465924_20240831_8_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2776
+      },
+      {
+        "file": "297465924_20240131_1_MCZB.pdf",
+        "status": "ROZPOZNÁNO",
+        "type": "BANKOVNÍ VÝPIS",
+        "confidence": 90,
+        "subtype": "csob",
+        "method": "pdftotext",
+        "text_length": 2922
+      }
+    ],
+    "unrecognized": [
+      {
+        "file": "scan_043.jpg",
+        "status": "NEROZPOZNÁNO",
+        "max_confidence": 45,
+        "method": "tesseract",
+        "text_length": 624,
+        "details": {
+          "bank": 10,
+          "receipt": 5,
+          "invoice": 45
+        }
+      },
+      {
+        "file": "scan_044.jpg",
+        "status": "NEROZPOZNÁNO",
+        "max_confidence": 45,
+        "method": "tesseract",
+        "text_length": 846,
+        "details": {
+          "bank": 0,
+          "receipt": 5,
+          "invoice": 45
+        }
+      },
+      {
+        "file": "Cisteni vozu_scan_040.jpg",
+        "status": "NEROZPOZNÁNO",
+        "max_confidence": 50,
+        "method": "tesseract",
+        "text_length": 561,
+        "details": {
+          "bank": 10,
+          "receipt": 50,
+          "invoice": 45
+        }
+      }
+    ],
+    "errors": []
+  }
+}

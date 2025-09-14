@@ -1,0 +1,164 @@
+{
+  "batch_start": 11000,
+  "batch_end": 12000,
+  "timestamp": "2025-08-02T20:33:55.603263",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 169,
+    "invoice": 526,
+    "notification": 39,
+    "contract": 11,
+    "order": 183,
+    "receipt": 25,
+    "shipping": 28,
+    "subscription": 15,
+    "bank_statement": 4
+  },
+  "metadata_samples": [
+    {
+      "file": "Statistic Dům-202409260005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 228
+    },
+    {
+      "file": "Increase kuba-komora.cz's daily visitors with our -202408312352-_WordPress_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 839
+    },
+    {
+      "file": "NOVINKA - Raspberry Pi Pico 2 W-202411250919-_RPishop.cz_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2682
+    },
+    {
+      "file": "New_ Jan--Mac-mini @ MAJSYNO5-202503241900-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 737
+    },
+    {
+      "file": "Está pasando 19_08_2024 -202408190912-_idealista_news_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 8524
+    },
+    {
+      "file": "Network alert on AZURO2G-202406181616-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 918
+    },
+    {
+      "file": "SketchUp Promo_ Sleva 20% SketchUp Pro a Studio-202406171240-SketchUp pro Česko.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1597
+    },
+    {
+      "file": "Upozornění_ začátek události je čtvrtek, duben 3, -202504032045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 524
+    },
+    {
+      "file": "Přežila vraždění Hamásu. „Vlastní máma mě nepoznal-202406271322-Týdeník Echo.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2659
+    },
+    {
+      "file": "🌷 Even more Software, same price – Check it now!-202504010822-_Nero News_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1806
+    },
+    {
+      "file": "Join Ancestry at RootsTech-the largest family hist-202502041710-_Ancestry_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 960
+    },
+    {
+      "file": "Heute meistgelesen_ Fed-Chef Powell bietet Trump w-202504171638-Neue Zürcher Zeitung.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 3821
+    },
+    {
+      "file": "FW_ Info mzdy 2025-202501151552-Daniela Pauknerová.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1603
+    },
+    {
+      "file": "Statistic L3-202407010005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 224
+    },
+    {
+      "file": "RealDefense nabírá_ Director of Business Developme-202409231723-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1687
+    },
+    {
+      "file": "Neuer Treffer für deine Volkswagen, Bis zu 50.000 -202505121447-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "order",
+      "score": 15,
+      "metadata": {},
+      "text_length": 3012
+    },
+    {
+      "file": "🗓 The Summary_ Your free reads next week-202503161910-_Blinkist_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1144
+    },
+    {
+      "file": "Lagebericht 13.07.2024-202407131502-_Kopp Report_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1040
+    },
+    {
+      "file": "Neue Anzeigen heute-202502280711-_idealista_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2453
+    },
+    {
+      "file": "OS_ 🚂 Hurá na výlet za železniční historií-202406061105-České dráhy.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {
+        "ico": "70994226"
+      },
+      "text_length": 869
+    }
+  ],
+  "error_count": 0
+}

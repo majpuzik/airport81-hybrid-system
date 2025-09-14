@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-08-29T19:07:05.528695",
+  "test_type": "Final verification",
+  "total_files": 3,
+  "processed": 3,
+  "success_rate": 100.0,
+  "average_confidence": 0.9166666666666666,
+  "results": [
+    {
+      "filename": "SOFAR nastaveni parametru RS485pdf.pdf",
+      "document_type": "SOFAR dokumentace",
+      "confidence": 0.9,
+      "language": "Němčina",
+      "text_length": 7084,
+      "metadata": {},
+      "text_preview": "                                                       0  »\r \r                                                                                                                     (oe    Pavel Tresnak\r                                                                                                    ",
+      "credits_used": 21,
+      "remaining_credits": 25327
+    },
+    {
+      "filename": "evcc.pdf",
+      "document_type": "EVCC konfigurace",
+      "confidence": 0.9,
+      "language": "Němčina",
+      "text_length": 78713,
+      "metadata": {
+        "model": "Sofar Solar HYD",
+        "ip_adresy": [
+          "192.168.158.13",
+          "192.168.158.13",
+          "192.168.158.13"
+        ],
+        "porty": [
+          "8899",
+          "8899",
+          "8899"
+        ],
+        "verze": [
+          "1.09",
+          "1.12"
+        ]
+      },
+      "text_preview": "[Link]\r /evcc-io\r [Link]\r /evcc-io/evcc\r [Link]\r /evcc-io/evcc\r [Link]\r /evcc-io/evcc/issues\r [Link]\r /evcc-io/evcc/pulls\r [Link]\r /evcc-io/evcc/discussions\r [Link]\r /evcc-io/evcc/actions\r [Link]\r /evcc-io/evcc/projects\r [Link]\r /evcc-io/evcc/wiki\r [Link]\r /evcc-io/evcc/security\r [Link]\r /evcc-io/ev",
+      "credits_used": 483,
+      "remaining_credits": 24837
+    },
+    {
+      "filename": "Sofar nastaveni intervalu dotazu .pdf",
+      "document_type": "SOFAR RS485 nastavení",
+      "confidence": 0.95,
+      "language": "Němčina",
+      "text_length": 29347,
+      "metadata": {
+        "model": "Sofar2mqtt \r\n           "
+      },
+      "text_preview": "           // Disclaimer: 2023 Jiri Sasek \r            // This code  was written to fulfil my needs and is presented \"AS IS\" \r            // without any even the implied waranty. \r            // Code run with my HYD 10kTL-3PH inverter and I have been inspired by: \r            //      https://github.",
+      "credits_used": 273,
+      "remaining_credits": 24557
+    }
+  ]
+}

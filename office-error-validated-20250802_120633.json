@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "subject": "Faktura č. 2024001 - Aerohosting s.r.o.",
+    "sender": "fakturace@aerohostin.cz",
+    "classification": {
+      "type": "invoice",
+      "score": 4,
+      "confidence": 0.26666666666666666,
+      "all_scores": {
+        "invoice": 4,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": true,
+    "attachment_count": 1,
+    "original_classification": {
+      "type": "invoice",
+      "score": 10,
+      "confidence": 1.0,
+      "all_scores": {
+        "invoice": 10,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 6,
+    "subject": "Účtenka Tesco - nákup potravin",
+    "sender": "noreply@tesco.cz",
+    "classification": {
+      "type": "receipt",
+      "score": 4,
+      "confidence": 0.26666666666666666,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 4,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": true,
+    "attachment_count": 1,
+    "original_classification": {
+      "type": "receipt",
+      "score": 6,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 2,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 6,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 3,
+    "subject": "Newsletter - Letní akce 50% sleva",
+    "sender": "marketing@obchod.cz",
+    "classification": {
+      "type": "unknown",
+      "score": 0,
+      "confidence": 0.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "failed"
+    },
+    "has_attachments": false,
+    "attachment_count": 0,
+    "original_classification": {
+      "type": "unknown",
+      "score": 0,
+      "confidence": 0.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 9,
+    "subject": "Reklamní nabídka - pojištění",
+    "sender": "nabidky@pojistovna.cz",
+    "classification": {
+      "type": "unknown",
+      "score": 0,
+      "confidence": 0.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "failed"
+    },
+    "has_attachments": false,
+    "attachment_count": 0,
+    "original_classification": {
+      "type": "unknown",
+      "score": 0,
+      "confidence": 0.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,342 @@
+{
+  "name": "Complete Document Classification System",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "/document-classify",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [200, 300],
+      "webhookId": "doc-classify-webhook"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Extract and validate input data\nconst inputData = $input.item.json;\n\n// Default values\nconst data = {\n  source: inputData.source || 'text',\n  text: inputData.text || '',\n  emailCount: inputData.emailCount || 10,\n  daysBack: inputData.daysBack || 300,\n  folderPath: inputData.folderPath || '',\n  model: inputData.model || 'ollama',\n  deleteOld: inputData.deleteOld || false,\n  convertPdf: inputData.convertPdf || false,\n  paperlessUpload: inputData.paperlessUpload || false,\n  useMcp: inputData.useMcp || false\n};\n\n// Validate required fields\nif (data.source === 'text' && !data.text) {\n  throw new Error('Text is required for text source');\n}\nif (data.source === 'folder' && !data.folderPath) {\n  throw new Error('Folder path is required for folder source');\n}\n\nreturn {\n  json: data\n};"
+      },
+      "id": "validate-input",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "leftValue": "",
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "gmail-condition",
+              "leftValue": "={{ $json.source }}",
+              "rightValue": "gmail",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "source-switch",
+      "name": "Source Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8889/process-complete",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "timeout": 120000,
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "id": "process-documents",
+      "name": "Process Documents",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [800, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Parse and format results\nconst response = $input.item.json;\n\nif (!response.success) {\n  throw new Error(response.error || 'Processing failed');\n}\n\n// Format results for output\nconst results = {\n  success: true,\n  processed: response.processed,\n  statistics: response.statistics || {},\n  documents: response.documents || [],\n  summary: {\n    total: response.processed,\n    timestamp: new Date().toISOString(),\n    categories: Object.keys(response.statistics || {})\n  }\n};\n\n// Add detailed processing info\nif (response.documents && response.documents.length > 0) {\n  results.processing_details = response.documents.map(doc => ({\n    title: doc.title,\n    classification: doc.classification,\n    tags: doc.tags || [],\n    pdf_created: doc.pdf_created || false,\n    paperless_uploaded: !!doc.paperless_id\n  }));\n}\n\nreturn {\n  json: results\n};"
+      },
+      "id": "format-results",
+      "name": "Format Results",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1000, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"model\": \"czech-finance:latest\",\n  \"prompt\": \"Klasifikuj tento dokument do kategorie:\\n\\nKATEGORIE:\\n- faktura: faktury, daňové doklady, účty\\n- platba: platební příkazy, potvrzení plateb\\n- bankovni_vypis: bankovní výpisy, přehledy transakcí\\n- smlouva: smlouvy, dohody, kontrakty\\n- soudni_obesilka: soudní obsílky, předvolání k soudu\\n- policejni_obesilka: policejní předvolání, oznámení\\n- uredni_korespondence: úřední dopisy, rozhodnutí\\n- objednavka: objednávky, potvrzení objednávek\\n- upominka: upomínky, urgence plateb\\n- obchodni_korespondence: obchodní dopisy\\n- reklama: reklamní nabídky, newslettery, spam\\n- ostatni: vše ostatní\\n\\nTEXT DOKUMENTU:\\n\" + ($json.text || 'Žádný text') + \"\\n\\nOdpověz POUZE názvem kategorie:\",\n  \"stream\": false,\n  \"temperature\": 0.1\n}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "ollama-classify",
+      "name": "Ollama Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [600, 500]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:1234/v1/completions",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"prompt\": \"Klasifikuj tento dokument do kategorie: faktura, smlouva, platba, bankovni_vypis, soudni_obesilka, policejni_obesilka, uredni_korespondence, objednavka, upominka, obchodni_korespondence, reklama, ostatni\\n\\nText: \" + ($json.text || 'Žádný text') + \"\\n\\nOdpověz POUZE názvem kategorie:\",\n  \"temperature\": 0.1,\n  \"max_tokens\": 50\n}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "lmstudio-classify",
+      "name": "LM Studio Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [600, 600]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 9d51c86467e7b7e17a8748722ff1a24226c94a7e"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"title\": $json.title || 'Untitled Document',\n  \"content\": $json.content || '',\n  \"document_type\": $json.classification || 'ostatni',\n  \"tags\": ($json.tags || []).join(','),\n  \"created\": new Date().toISOString()\n}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "paperless-upload",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// MCP Server Communication\n// This node handles communication with MCP server for advanced AI processing\n\nconst inputData = $input.item.json;\n\n// Simulate MCP server communication\nconst mcpResponse = {\n  model: inputData.model || 'ollama',\n  classification: 'ostatni',\n  confidence: 0.85,\n  tags: ['processed_by_mcp'],\n  enhanced_data: {\n    entities_extracted: true,\n    language_detected: 'cs',\n    document_structure: 'simple_text'\n  }\n};\n\n// In real implementation, this would call actual MCP server:\n// const mcpResult = await fetch('http://localhost:3001/mcp/process', {\n//   method: 'POST',\n//   headers: { 'Content-Type': 'application/json' },\n//   body: JSON.stringify({\n//     text: inputData.text,\n//     model: inputData.model,\n//     task: 'document_classification'\n//   })\n// });\n\nreturn {\n  json: {\n    ...inputData,\n    mcp_processed: true,\n    mcp_result: mcpResponse\n  }\n};"
+      },
+      "id": "mcp-server",
+      "name": "MCP Server Communication",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [400, 500]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "leftValue": "",
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "pdf-convert-condition",
+              "leftValue": "={{ $json.convertPdf }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "pdf-convert-switch",
+      "name": "PDF Convert Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [1000, 500]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Adobe Acrobat PDF Conversion\n// This simulates PDF conversion using Adobe Acrobat DC\n\nconst inputData = $input.item.json;\n\n// In real implementation, this would call Adobe Acrobat:\n// - Create HTML file with document content\n// - Use Adobe Acrobat API or AppleScript to convert to PDF\n// - Return PDF path\n\nconst timestamp = new Date().toISOString().replace(/[:.]/g, '-');\nconst pdfPath = `/Users/m.a.j.puzik/classified_documents/pdfs/${timestamp}_${inputData.title || 'document'}.pdf`;\n\n// Simulate PDF creation\nconst pdfResult = {\n  success: true,\n  pdf_path: pdfPath,\n  pdf_created: true,\n  adobe_processed: true,\n  file_size: '1.2MB',\n  pages: 1\n};\n\nreturn {\n  json: {\n    ...inputData,\n    pdf_conversion: pdfResult\n  }\n};"
+      },
+      "id": "adobe-pdf-convert",
+      "name": "Adobe PDF Convert",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1200, 500]
+    }
+  ],
+  "connections": {
+    "webhook-trigger": {
+      "main": [
+        [
+          {
+            "node": "validate-input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "validate-input": {
+      "main": [
+        [
+          {
+            "node": "source-switch",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "mcp-server",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "source-switch": {
+      "main": [
+        [
+          {
+            "node": "process-documents",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        []
+      ]
+    },
+    "process-documents": {
+      "main": [
+        [
+          {
+            "node": "format-results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "format-results": {
+      "main": [
+        [
+          {
+            "node": "pdf-convert-switch",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "paperless-upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "mcp-server": {
+      "main": [
+        [
+          {
+            "node": "ollama-classify",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "lmstudio-classify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "pdf-convert-switch": {
+      "main": [
+        [
+          {
+            "node": "adobe-pdf-convert",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2024-08-07T19:30:00.000Z",
+      "updatedAt": "2024-08-07T19:30:00.000Z",
+      "id": "doc-classification",
+      "name": "Document Classification"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2024-08-07T19:30:00.000Z",
+  "versionId": "complete-v1.0"
+}

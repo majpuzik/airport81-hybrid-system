@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "total_processed": 100,
+    "successful": 0,
+    "failed": 100,
+    "spam_detected": 0,
+    "info_emails": 0,
+    "important_docs": 0,
+    "document_types": {},
+    "tags_frequency": {},
+    "top_correspondents": {},
+    "validation_issues_count": 0
+  },
+  "results": [],
+  "validation_issues": []
+}

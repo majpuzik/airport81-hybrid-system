@@ -1,0 +1,9 @@
+{
+  "client_credentials": {
+    "client_id": "YOUR_ADOBE_CLIENT_ID_HERE",
+    "client_secret": "YOUR_ADOBE_CLIENT_SECRET_HERE"
+  },
+  "service_principal_credentials": {
+    "organization_id": "YOUR_ADOBE_ORG_ID_HERE"
+  }
+}

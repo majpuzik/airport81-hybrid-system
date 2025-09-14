@@ -1,0 +1,170 @@
+{
+  "batch_start": 40000,
+  "batch_end": 41000,
+  "timestamp": "2025-08-02T20:37:56.468241",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "shipping": 26,
+    "order": 169,
+    "invoice": 513,
+    "subscription": 21,
+    "receipt": 27,
+    "unknown": 192,
+    "notification": 39,
+    "bank_statement": 4,
+    "contract": 9
+  },
+  "metadata_samples": [
+    {
+      "file": "Vaše vzpomínky z tohoto dne-202406170841-_OneDrive_.pdf",
+      "type": "shipping",
+      "score": 1,
+      "metadata": {},
+      "text_length": 767
+    },
+    {
+      "file": "Luck - The Smart Hummingbird Feeder-202409021757-_BackerHive_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1251
+    },
+    {
+      "file": "Teamprevent-Santé - informace o rezervaci termínu-202407151120-.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 972
+    },
+    {
+      "file": "Place your order now! Order fulfillment will be en-202501121443-_NEWYES_.pdf",
+      "type": "order",
+      "score": 13,
+      "metadata": {},
+      "text_length": 1248
+    },
+    {
+      "file": "Zahlung fehgeschlagen-202211181002-_Starlink_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 678
+    },
+    {
+      "file": "Připraveno v Alzaboxu _ Obj. č. 513553052-202407251127-_Alza.cz_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {
+        "ico": "27082440"
+      },
+      "text_length": 2236
+    },
+    {
+      "file": "🍇 Předprodej Beaujolais Nouveau 2024 startuje. Re-202410081604-_Winehouse.cz_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {
+        "ico": "24251267"
+      },
+      "text_length": 1708
+    },
+    {
+      "file": "Až 40% sleva na praktické organizéry iDesign -202408041911-_Bonami.cz_.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 1849
+    },
+    {
+      "file": "Potvrzení o platbě faktury č. 3552056883 a přístup-202502101415-SEND Předplatné.pdf",
+      "type": "subscription",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2329
+    },
+    {
+      "file": "Informace o stavu kreditu na klubové karte TeeTime-202503170946-.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 593
+    },
+    {
+      "file": "Chinese apps surge in the US-202504211307-_Bloomberg Technology_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 3204
+    },
+    {
+      "file": "Statistic Varná deska-202406280005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 252
+    },
+    {
+      "file": "Skandál! Hity těchto Vánoc odhaleny 👀-202412121341-Za 12 dní to přijde.pdf",
+      "type": "invoice",
+      "score": 23,
+      "metadata": {},
+      "text_length": 4744
+    },
+    {
+      "file": "Víkendový výprodej začíná již brzy... Připravte se-202501311902-_Expondo.cz_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1709
+    },
+    {
+      "file": " Jeden podpis  dělí Arizonu od BTC rezervy-202505011012-_Dominika z Coinmate_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 5045
+    },
+    {
+      "file": "Golem.de_ Rezension von Die Schlacht der Rohirrim -202412121244-_Golem.de Redaktion_.pdf",
+      "type": "order",
+      "score": 20,
+      "metadata": {},
+      "text_length": 12094
+    },
+    {
+      "file": "Kód LETO50 platí už jen dnes a zítra ☀ Využijte sl-202407031627-Dobré Knihy.pdf",
+      "type": "invoice",
+      "score": 41,
+      "metadata": {
+        "ico": "08618313"
+      },
+      "text_length": 6248
+    },
+    {
+      "file": "326 nových nabídek, které Vás zajímají-202412070334-_oznameni Aukro.cz_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {
+        "ico": "05360722"
+      },
+      "text_length": 1008
+    },
+    {
+      "file": "3 NOVINKY = SLEVA 15%-202409250915-Prahavino _ Italbest.cz - Chuť Itálie s.r.o.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1784
+    },
+    {
+      "file": "💪 Boosting motivation_ How to stay focussed and p-202505012021-_We.Team_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 871
+    }
+  ],
+  "error_count": 0
+}

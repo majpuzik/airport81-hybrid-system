@@ -1,0 +1,72 @@
+{
+  "name": "Document Classifier with Ollama",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "document-classifier",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook-1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "{\n  \"model\": \"mistral\",\n  \"prompt\": \"Klasifikuj tento dokument do jedné z kategorií: faktura, smlouva, platba, bankovni_vypis, soudni_obesilka, uredni_korespondence, objednavka, upominka, reklama, ostatni.\\n\\nDokument:\\n{{ $json.text || $json.testText || 'No text' }}\\n\\nOdpověz pouze názvem kategorie:\",\n  \"stream\": false\n}"
+      },
+      "id": "ollama-1",
+      "name": "Ollama Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Parse Ollama response\nconst ollamaResponse = $input.item.json;\nconst classification = ollamaResponse.response?.trim().toLowerCase() || 'ostatni';\n\n// Map to correct format\nconst validTypes = [\n  'faktura', 'smlouva', 'platba', 'bankovni_vypis',\n  'soudni_obesilka', 'uredni_korespondence', 'objednavka',\n  'upominka', 'reklama', 'ostatni'\n];\n\nconst docType = validTypes.includes(classification) ? classification : 'ostatni';\n\nreturn {\n  json: {\n    success: true,\n    classification: {\n      type: docType,\n      model: 'ollama/mistral',\n      confidence: 0.95\n    },\n    originalText: $node[\"webhook-1\"].json.text || $node[\"webhook-1\"].json.testText,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "process-1",
+      "name": "Process Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "webhook-1": {
+      "main": [
+        [
+          {
+            "node": "ollama-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ollama-1": {
+      "main": [
+        [
+          {
+            "node": "process-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": []
+}

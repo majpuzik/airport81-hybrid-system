@@ -1,0 +1,162 @@
+{
+  "batch_start": 41000,
+  "batch_end": 42000,
+  "timestamp": "2025-08-02T20:38:05.112282",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 516,
+    "unknown": 173,
+    "notification": 39,
+    "order": 176,
+    "subscription": 20,
+    "contract": 14,
+    "receipt": 30,
+    "shipping": 30,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Knihy i čtečky, které vás zahřejí víc než deka!-202504040928-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 29,
+      "metadata": {},
+      "text_length": 3556
+    },
+    {
+      "file": "Network alert on AZURO2G-202408201256-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 933
+    },
+    {
+      "file": "Lagebericht 20.06.2024-202406201506-_Kopp Report_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1002
+    },
+    {
+      "file": "Valentýnské tipy ❤ na dárky pro vás -202501301250-ČistéDřevo.cz.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2368
+    },
+    {
+      "file": "Láska si zaslouží druhou šanci… a tahle sleva taky-202502021540-_Profimed.cz_.pdf",
+      "type": "invoice",
+      "score": 27,
+      "metadata": {},
+      "text_length": 3131
+    },
+    {
+      "file": "How to install Windows 11 on your Raspberry Pi-202501022143-_Milan Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 308
+    },
+    {
+      "file": "Upozornění na nezdařenou platbu za služby Kuki-202410031405-_Kuki.cz_.pdf",
+      "type": "notification",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1475
+    },
+    {
+      "file": "🎁 10 % na vše v povánoční výprodeji! 🏷-202412251001-_Balistas.cz_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1639
+    },
+    {
+      "file": "Ähnliche Angebote wie Mercedes-Benz GLC (alle), Me-202502241317-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2799
+    },
+    {
+      "file": "✋SenseCAP Watcher Launches on Kickstarter 9_12🔥 S-202409051535-_Seeed Studio_.pdf",
+      "type": "order",
+      "score": 19,
+      "metadata": {},
+      "text_length": 7075
+    },
+    {
+      "file": "M.A.J. Puzik, poslední připomínka k položkám v koš-202505071617-_Temu_.pdf",
+      "type": "notification",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1033
+    },
+    {
+      "file": "[New Terminal Login] Account Security-202408101148-.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 573
+    },
+    {
+      "file": "Jak si začít budovat dlouhodobé zásoby potravin – -202412131632-_Inspirace od Epoch Times_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 3721
+    },
+    {
+      "file": "M.A.J._ Více než 30 nových pracovních příležitostí-202412260014-Upozornění na nové pracovní příležitosti LinkedIn.pdf",
+      "type": "notification",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1718
+    },
+    {
+      "file": "Statistic L1-202411140005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 226
+    },
+    {
+      "file": "Upozornění_ začátek události je sobota, září 14, 2-202409142045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 522
+    },
+    {
+      "file": "Epic Deals on Epic Gear-202407162154-_Canon U.S.A._.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1813
+    },
+    {
+      "file": "Powering a World of Creativity-202501160959-_Pixlr_.pdf",
+      "type": "subscription",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1531
+    },
+    {
+      "file": "Why your screenplay needs to be written now 🤔-202408232116-_Final Draft_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3302
+    },
+    {
+      "file": "🚀Shop and Save Up to 46% _ Dreame Summer Prime Da-202407161604-_Dreame US_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 705
+    }
+  ],
+  "error_count": 0
+}

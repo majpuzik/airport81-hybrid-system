@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+
+# Credentials and sensitive files
+adobe_credentials.json
+API_TOKENS_INVENTORY.md
+credentials.json
+google-cloud-credentials.json
+*_credentials.json
+*.pem
+*.key
+n8n_import_instructions.md
+MCP_SERVER_V4_DUAL_PAPERLESS_DOCUMENTATION.md
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# WordPress
+wordpress/
+airport81-install/
+
+# Backups
+*.tar.gz
+*.zip
+*-backup*/

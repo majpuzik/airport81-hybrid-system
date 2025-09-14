@@ -1,0 +1,40 @@
+[
+  {
+    "id": 3,
+    "subject": "Newsletter - Letní akce 50% sleva",
+    "sender": "marketing@obchod.cz",
+    "classification": {
+      "type": "unknown",
+      "score": 0,
+      "confidence": 0.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  },
+  {
+    "id": 9,
+    "subject": "Reklamní nabídka - pojištění",
+    "sender": "nabidky@pojistovna.cz",
+    "classification": {
+      "type": "unknown",
+      "score": 0,
+      "confidence": 0.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    },
+    "has_attachments": false,
+    "attachment_count": 0
+  }
+]

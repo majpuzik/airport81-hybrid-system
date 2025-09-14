@@ -1,0 +1,32 @@
+{
+  "test_date": "2025-08-31T19:03:31.565363",
+  "documents_tested": 3,
+  "invoice_count": 0,
+  "email_count": 3,
+  "results": [
+    {
+      "filename": "MBW • Faktura za STK náklady 8000 Kč-202504091306-Martin Pužík_1.pdf",
+      "document_type": "email_communication",
+      "extraction_method": "fallback_with_validation",
+      "found_invoice_fields": 0,
+      "fields": {},
+      "text_length": 950
+    },
+    {
+      "filename": "MBW - další nejasné platby-202406281637-Martin Pužík.pdf",
+      "document_type": "email_communication",
+      "extraction_method": "fallback_with_validation",
+      "found_invoice_fields": 0,
+      "fields": {},
+      "text_length": 1654
+    },
+    {
+      "filename": "Re_MBW pohyby na účtu 2023-202406261403-Pavel Brzák.pdf",
+      "document_type": "email_communication",
+      "extraction_method": "fallback_with_validation",
+      "found_invoice_fields": 0,
+      "fields": {},
+      "text_length": 1384
+    }
+  ]
+}

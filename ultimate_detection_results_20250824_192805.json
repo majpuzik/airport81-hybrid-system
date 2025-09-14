@@ -1,0 +1,673 @@
+{
+  "timestamp": "20250824_192805",
+  "configuration": {
+    "sample_size": 30,
+    "use_ocr": false,
+    "use_ml": true
+  },
+  "statistics": {
+    "recognized": 29,
+    "unrecognized": 1,
+    "errors": 0,
+    "success_rate": 96.66666666666667,
+    "avg_confidence": 61.89655172413793,
+    "elapsed_seconds": 101.34156203269958,
+    "seconds_per_document": 3.378052067756653
+  },
+  "categories": {
+    "SOCIÁLNÍ": 2,
+    "SYSTÉM": 3,
+    "KURÝRNÍ": 10,
+    "ZDRAVOTNÍ": 3,
+    "INZERCE": 5,
+    "ÚŘEDNÍ": 2,
+    "FINANČNÍ": 3,
+    "TECHNICKÉ": 1
+  },
+  "subtypes": {
+    "sociální_obecný": 1,
+    "container": 2,
+    "dhl": 3,
+    "zdravotní_obecný": 2,
+    "auto": 3,
+    "úřední_obecný": 1,
+    "soud": 1,
+    "účtenka": 1,
+    "předpis": 1,
+    "kurýrní_obecný": 7,
+    "finanční_obecný": 2,
+    "inzerce_obecný": 2,
+    "nas_storage": 1,
+    "linkedin": 1,
+    "firmware": 1
+  },
+  "methods": {
+    "text_extraction:pdftotext": 26,
+    "ml": 26,
+    "filename": 11
+  },
+  "new_categories_count": {
+    "ÚŘEDNÍ": 2,
+    "ZDRAVOTNÍ": 3,
+    "PRÁVNÍ": 0,
+    "FIREMNÍ": 0,
+    "OBČANSKÉ": 0
+  },
+  "examples": {
+    "recognized": [
+      {
+        "file": "20250502-Vaše vzpomínky z tohoto dne-1449.pdf",
+        "category": "SOCIÁLNÍ",
+        "subtype": "sociální_obecný",
+        "confidence": 40.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:obsah",
+          "regex:Z\\d+",
+          "text:vzpomínka",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 15.0,
+          "KURÝRNÍ": 25.0,
+          "SOCIÁLNÍ": 40.0
+        }
+      },
+      {
+        "file": "20250407-[192.168.10.35] Kontejner paperless-web v nástroji-6244.pdf",
+        "category": "SYSTÉM",
+        "subtype": "container",
+        "confidence": 30.0,
+        "methods": [
+          "filename"
+        ],
+        "patterns": [
+          "filename:kontejner"
+        ],
+        "all_scores": {
+          "SYSTÉM": 30.0
+        }
+      },
+      {
+        "file": "20250418-Veselé Velikonoce s růžovou inspirací z Itálie 🌸_-4071.pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "dhl",
+        "confidence": 100,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:předpis",
+          "text:plat",
+          "regex:IČO:\\s*\\d{8}",
+          "text:ičo",
+          "text:dič",
+          "regex:IČO:\\s*\\d{8}",
+          "text:fik",
+          "text:závěr",
+          "text:odhlásit",
+          "regex:\\d{2}\\s*\\d{3}\\s*\\d{3}\\s*\\d{3}"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 40.0,
+          "FINANČNÍ": 70.0,
+          "PUBLIKACE": 30.0,
+          "KURÝRNÍ": 100.0,
+          "SYSTÉM": 15.0,
+          "INZERCE": 15.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250427-Your Octoparse subscription is expiring...-2487.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "filename",
+          "ml"
+        ],
+        "patterns": [
+          "filename:ct",
+          "text:ct",
+          "text:lease",
+          "text:purchase",
+          "regex:Z\\d+",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 45.0,
+          "OBČANSKÉ": 30.0,
+          "KURÝRNÍ": 25.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250503-Ähnliche Angebote wie Bis zu 75.000 €-1142.pdf",
+        "category": "INZERCE",
+        "subtype": "auto",
+        "confidence": 100,
+        "methods": [
+          "text_extraction:pdftotext",
+          "filename",
+          "ml"
+        ],
+        "patterns": [
+          "filename:angebot",
+          "text:gericht",
+          "regex:Z\\d+",
+          "text:fahrzeug",
+          "text:auto",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+",
+          "regex:€\\s*\\d+\\.\\d+",
+          "text:haus",
+          "text:angebot",
+          "regex:€\\s*\\d+"
+        ],
+        "all_scores": {
+          "INZERCE": 165.0,
+          "ÚŘEDNÍ": 15.0,
+          "KURÝRNÍ": 25.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250327-Kash Patel SHUTS DOWN angry Democrat trying to bul-7890.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:judge",
+          "text:investigation",
+          "text:ct",
+          "text:lease",
+          "text:unsubscribe",
+          "text:subscribe",
+          "regex:Z\\d+",
+          "text:offer",
+          "text:deal",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 30.0,
+          "ZDRAVOTNÍ": 15.0,
+          "OBČANSKÉ": 15.0,
+          "PUBLIKACE": 30.0,
+          "KURÝRNÍ": 25.0,
+          "INZERCE": 30.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "GDPR (ZOA50006844).pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "soud",
+        "confidence": 55.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:odvolání",
+          "regex:sp\\.\\s*zn\\..*\\d+.*\\d{4}",
+          "text:předpis",
+          "text:ct",
+          "text:zmocnitel",
+          "text:plat",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:ukončení",
+          "text:kredit"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 55.0,
+          "ZDRAVOTNÍ": 30.0,
+          "PRÁVNÍ": 15.0,
+          "FIREMNÍ": 55.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 55.0,
+          "PUBLIKACE": 15.0,
+          "KURÝRNÍ": 25.0,
+          "SYSTÉM": 15.0,
+          "INZERCE": 40.0,
+          "SOCIÁLNÍ": 50.0
+        }
+      },
+      {
+        "file": "20250427-DUEX Float 2.0 & Fino V - Ending Soon On Kickstart-2458.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "účtenka",
+        "confidence": 40.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:eet",
+          "regex:EET",
+          "text:unsubscribe",
+          "text:subscribe",
+          "regex:Z\\d+",
+          "text:nas",
+          "text:storage",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FINANČNÍ": 40.0,
+          "PUBLIKACE": 30.0,
+          "KURÝRNÍ": 25.0,
+          "SYSTÉM": 30.0,
+          "INZERCE": 25.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250324-Vaše zahrada tohle potřebuje!-8485.pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "dhl",
+        "confidence": 75.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:užívání",
+          "text:plat",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:dič",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:odhlásit",
+          "regex:Z\\d+",
+          "text:dhl",
+          "institution:dhl",
+          "text:pod"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 40.0,
+          "FINANČNÍ": 40.0,
+          "PUBLIKACE": 15.0,
+          "KURÝRNÍ": 75.0,
+          "SYSTÉM": 15.0,
+          "INZERCE": 25.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250419-Víkend pokračuje až s 50% slevou na celý nákup!-3940.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "předpis",
+        "confidence": 40.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:věřitel",
+          "text:lék",
+          "regex:\\d+\\s*ml",
+          "text:věřitel",
+          "text:newsletter",
+          "regex:Z\\d+",
+          "text:pod",
+          "text:sleva",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "ZDRAVOTNÍ": 40.0,
+          "OBČANSKÉ": 15.0,
+          "PUBLIKACE": 15.0,
+          "KURÝRNÍ": 25.0,
+          "SYSTÉM": 15.0,
+          "INZERCE": 15.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "neuveritelne-uveritelne-prihody-z-hor.pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "kurýrní_obecný",
+        "confidence": 75.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:věřitel",
+          "text:plat",
+          "text:kupující",
+          "text:věřitel",
+          "regex:\\d{2}\\s*\\d{3}\\s*\\d{3}\\s*\\d{3}",
+          "regex:\\d{12}",
+          "regex:\\d{10,11}",
+          "text:auto",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "FIREMNÍ": 15.0,
+          "OBČANSKÉ": 30.0,
+          "KURÝRNÍ": 75.0,
+          "INZERCE": 40.0
+        }
+      },
+      {
+        "file": "20250505-Transfer №GENE-990.pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "kurýrní_obecný",
+        "confidence": 25.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:plat",
+          "regex:Z\\d+",
+          "text:auto",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 15.0,
+          "KURÝRNÍ": 25.0,
+          "INZERCE": 15.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250417-Oblíbený prodejce_ Probuďte svou zahradu 🌳-4254.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "finanční_obecný",
+        "confidence": 80.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "filename",
+          "ml"
+        ],
+        "patterns": [
+          "filename:prodej",
+          "text:ověření",
+          "regex:IČO:\\s*\\d{8}",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:kupující",
+          "text:ičo",
+          "text:dič",
+          "regex:IČO:\\s*\\d{8}",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "INZERCE": 60.0,
+          "PRÁVNÍ": 15.0,
+          "FIREMNÍ": 50.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 80.0,
+          "PUBLIKACE": 15.0,
+          "KURÝRNÍ": 75.0,
+          "SYSTÉM": 30.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250324-Informace o vaší platbě z www.ikiosek.cz-8498.pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "kurýrní_obecný",
+        "confidence": 50.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "filename",
+          "ml"
+        ],
+        "patterns": [
+          "filename:plat",
+          "text:plat",
+          "text:platba",
+          "regex:Z\\d+",
+          "regex:\\d{10,11}",
+          "text:pod",
+          "text:auto",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 45.0,
+          "FINANČNÍ": 15.0,
+          "KURÝRNÍ": 50.0,
+          "SYSTÉM": 15.0,
+          "INZERCE": 40.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "20250407-[192.168.10.35] Kontejner paperless-web v nástroji-6250.pdf",
+        "category": "SYSTÉM",
+        "subtype": "container",
+        "confidence": 30.0,
+        "methods": [
+          "filename"
+        ],
+        "patterns": [
+          "filename:kontejner"
+        ],
+        "all_scores": {
+          "SYSTÉM": 30.0
+        }
+      },
+      {
+        "file": "20250513-Che succede 13_05_2025-42856.pdf",
+        "category": "INZERCE",
+        "subtype": "auto",
+        "confidence": 70.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:sono",
+          "text:newsletter",
+          "regex:Z\\d+",
+          "text:nas",
+          "text:program",
+          "text:auto",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+",
+          "text:offer",
+          "text:deal",
+          "regex:@\\w+"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 15.0,
+          "KURÝRNÍ": 25.0,
+          "SYSTÉM": 30.0,
+          "INZERCE": 70.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      },
+      {
+        "file": "VNA Softel Software AG.pdf",
+        "category": "INZERCE",
+        "subtype": "auto",
+        "confidence": 70.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:police",
+          "text:fahrzeug",
+          "text:wagen",
+          "text:mercedes",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "INZERCE": 70.0
+        }
+      },
+      {
+        "file": "X-plus（Software）.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:lease",
+          "text:flash"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "OBČANSKÉ": 15.0,
+          "TECHNICKÉ": 15.0
+        }
+      },
+      {
+        "file": "utajene-dejiny-spojenych-statu (1).pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "kurýrní_obecný",
+        "confidence": 75.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:recept",
+          "text:ct",
+          "text:plat",
+          "text:kupující",
+          "regex:\\d{2}\\s*\\d{3}\\s*\\d{3}\\s*\\d{3}",
+          "regex:\\d{12}",
+          "regex:\\d{10,11}",
+          "text:pod",
+          "text:auto",
+          "regex:\\d{4}\\s+\\w+\\s+\\w+"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 30.0,
+          "FIREMNÍ": 15.0,
+          "OBČANSKÉ": 15.0,
+          "KURÝRNÍ": 75.0,
+          "SYSTÉM": 15.0,
+          "INZERCE": 55.0
+        }
+      },
+      {
+        "file": "20250408-✨ Autogramiáda Vyšehrad Dvje a Dny Marianne - slev-5955.pdf",
+        "category": "KURÝRNÍ",
+        "subtype": "dhl",
+        "confidence": 100,
+        "methods": [
+          "text_extraction:pdftotext",
+          "filename",
+          "ml"
+        ],
+        "patterns": [
+          "filename:auto",
+          "text:soud",
+          "text:lék",
+          "text:ct",
+          "text:ičo",
+          "text:newsletter",
+          "text:odhlásit",
+          "regex:\\d{2}\\s*\\d{3}\\s*\\d{3}\\s*\\d{3}",
+          "regex:\\d{12}",
+          "regex:Z\\d+"
+        ],
+        "all_scores": {
+          "INZERCE": 85.0,
+          "ÚŘEDNÍ": 15.0,
+          "ZDRAVOTNÍ": 30.0,
+          "FINANČNÍ": 15.0,
+          "PUBLIKACE": 30.0,
+          "KURÝRNÍ": 150.0,
+          "SYSTÉM": 30.0,
+          "SOCIÁLNÍ": 25.0
+        }
+      }
+    ],
+    "unrecognized": [
+      {
+        "file": "Cooking_Koch_und_Genuss-Magazin_vom_27_Juni_2025.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [],
+        "patterns": [],
+        "all_scores": {}
+      }
+    ],
+    "official": [
+      {
+        "file": "20250327-Kash Patel SHUTS DOWN angry Democrat trying to bul-7890.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 30.0,
+        "patterns": [
+          "text:judge",
+          "text:investigation",
+          "text:ct"
+        ]
+      },
+      {
+        "file": "GDPR (ZOA50006844).pdf",
+        "subtype": "soud",
+        "confidence": 55.0,
+        "patterns": [
+          "text:soud",
+          "text:odvolání",
+          "regex:sp\\.\\s*zn\\..*\\d+.*\\d{4}"
+        ]
+      }
+    ],
+    "medical": [
+      {
+        "file": "20250427-Your Octoparse subscription is expiring...-2487.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "patterns": [
+          "filename:ct",
+          "text:ct",
+          "text:lease"
+        ]
+      },
+      {
+        "file": "20250419-Víkend pokračuje až s 50% slevou na celý nákup!-3940.pdf",
+        "subtype": "předpis",
+        "confidence": 40.0,
+        "patterns": [
+          "text:věřitel",
+          "text:lék",
+          "regex:\\d+\\s*ml"
+        ]
+      },
+      {
+        "file": "X-plus（Software）.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct",
+          "text:lease",
+          "text:flash"
+        ]
+      }
+    ],
+    "legal": []
+  }
+}

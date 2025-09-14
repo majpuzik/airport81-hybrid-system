@@ -1,0 +1,2154 @@
+[
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 11947,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 7736,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/STM32Cube_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 5647,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/STM32Cube_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 4795,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32670/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3748,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/STM32Cube_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3738,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32660/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3450,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CKIT064B0S2_4343W/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3446,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/STM32Cube_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3384,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/STM32Cube_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3366,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CYW9P62S1_43012EVB_01/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3314,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CYW9P62S1_43438EVB_01/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3312,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/STM32Cube_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3312,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CPROTO_062S3_4343W/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3297,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CKIT_062_WIFI_BT/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3274,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CPROTO_062_4343W/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3224,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CKIT_062S2_43012/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3223,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M480/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3181,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_NUC472/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3168,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M460/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3137,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M2354/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 3075,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CYTFM_064B0S2_4343W/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2891,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CKIT_062_BLE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2826,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_K82F/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2725,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M261/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2612,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M251/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2472,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Silicon_Labs/TARGET_EFM32/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2329,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2289,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_K66F/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2188,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_NANO100/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2134,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_KL43Z/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2126,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_CM3DS_MPS2/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2087,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M451/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2084,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CYSBSYSKIT_01/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 2077,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_KW41Z/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1871,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MUSCA_S1/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1865,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Samsung/TARGET_SIDK_S5JS100/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1852,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32630/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1835,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32620C/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1820,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MUSCA_B1/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1710,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularstack/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1661,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularstack/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1661,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32625/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1630,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_TOSHIBA/TARGET_TMPM4G9/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1620,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1603,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_TOSHIBA/TARGET_TMPM46B/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1576,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K22F/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1440,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellulardevice/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1415,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellulardevice/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1415,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/UNITTESTS/netsocket/NetworkStack/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1389,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/UNITTESTS/netsocket/NetworkStack/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1389,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1380,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M2354/TARGET_TFM/TARGET_NU_M2354/COMPONENT_TFM_S_FW/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1373,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/middleware/wireless/TARGET_FRAMEWORK_5_3_3/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1334,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/middleware/wireless/TARGET_FRAMEWORK_5_3_3/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1334,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/cellularcontext/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1317,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/cellularcontext/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1317,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1290,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/wifi/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1260,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/wifi/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1260,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/cellularstatemachine/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1235,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/cellularstatemachine/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1235,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularcontext/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1226,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularcontext/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1226,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Samsung/TARGET_SIDK_S1SBP6A/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1222,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1198,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/cellulardevice/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1159,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/cellulardevice/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1159,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularnetwork/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1149,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularnetwork/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1149,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32GG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1134,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/athandler/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1127,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/athandler/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1127,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularsms/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1081,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularsms/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1081,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularinformation/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1068,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/at_cellularinformation/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1068,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFR32MG12/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1051,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1049,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32GG11/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1049,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/emac/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1041,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/emac/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1041,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32625/device/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 1018,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K22F/TARGET_MCU_K22F512/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 982,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_KLXX/TARGET_KL46Z/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 937,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 895,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/UNITTESTS/netsocket/NetworkInterface/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 887,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/UNITTESTS/netsocket/NetworkInterface/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 887,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/usb/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 880,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 878,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 856,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 855,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F767xI/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 854,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MPS2/TARGET_MPS2_M0/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 829,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L072xZ/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 829,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/TARGET_STM32U575xI/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 825,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 824,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/TARGET_STM32U585xI/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 824,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L073xZ/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 823,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F070xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 823,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F072xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 823,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F091xC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 823,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L152xE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 823,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 823,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MPS2/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 821,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MPS2/TARGET_MPS2_M0P/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 809,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/UNITTESTS/doubles/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 806,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MPS2/TARGET_MPS2_M7/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 805,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MPS2/TARGET_MPS2_M3/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 800,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/TARGET_MPS2/TARGET_MPS2_M4/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 800,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F756xG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 800,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F722xE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 800,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F769xI/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 799,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L151xC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 798,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L152xC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 798,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 793,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 790,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103xE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 767,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103x8/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 766,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/TARGET_STM32U575xG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 766,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L151xBA/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 752,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/multihoming/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 750,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/multihoming/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 750,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L053x8/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L071xZ/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L082xZ/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L071xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F030x8/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L151xD/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L151xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L151xE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L152xD/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L152xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L162xD/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L162xC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L162xE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L100xC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L100xB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103xG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103xD/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103xC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 743,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 716,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/UNITTESTS/AnalogIn/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 680,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/UNITTESTS/Watchdog/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 679,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/interface/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 679,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/interface/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 679,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Silicon_Labs/TARGET_SL_RAIL/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 667,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/UNITTESTS/PwmOut/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 644,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/l3ip/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 621,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/netsocket/tests/TESTS/network/l3ip/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 621,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/tools/cmake/tests/mbed_test_mode/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 605,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/requirements.txt",
+    "ext": ".txt",
+    "size": 591,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_KLXX/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 589,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 584,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/common/util/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 580,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/common/util/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 580,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/utest/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 553,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/utest/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 553,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L151xC/TARGET_XDOT_L151CC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 529,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/abstraction-rtos/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 497,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/COMPONENT_FPGA_CI_TEST_SHIELD/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 492,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/COMPONENT_FPGA_CI_TEST_SHIELD/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 492,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/platform/tests/TESTS/mbed_platform/crash_reporting/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 474,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/platform/tests/TESTS/mbed_platform/crash_reporting/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 474,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_ARM_SSG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 473,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 455,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/ticker/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 454,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/unbuffered_serial/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 448,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/buffered_serial/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 446,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/watchdog_reset/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 445,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/generic_tests/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 444,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/reset_reason/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 443,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/stl_features/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 443,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/lp_timeout/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 441,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/timerevent/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 441,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/sleep_lock/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 441,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/race_test/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 440,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/lp_ticker/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 440,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/c_strings/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 440,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/mem_trace/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 440,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M2354/TARGET_TFM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 440,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/lp_timer/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 439,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/dev_null/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 439,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/flashiap/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 439,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/watchdog/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 439,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/timeout/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 438,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/timer/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 436,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/echo/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 435,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/crc/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 434,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/mbed_drivers/rtc/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 434,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/common/list/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 428,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/common/list/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 428,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 424,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/device_key/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 422,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/tools/cmake/tests/multiple_executables/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 418,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/TARGET_SDT64B/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 408,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F767xI/TARGET_UHURU_RAVEN/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 397,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/TARGET_HEXIWEAR/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 384,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Silicon_Labs/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 383,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L072xZ/TARGET_DISCO_L072CZ_LRWAN1/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 379,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/TARGET_NUCLEO_F746ZG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 378,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F767xI/TARGET_NUCLEO_F767ZI/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 378,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F756xG/TARGET_NUCLEO_F756ZG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 378,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F722xE/TARGET_NUCLEO_F722ZE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 378,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Cypress/TARGET_PSOC6/COMPONENT_SCL/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 377,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F769xI/TARGET_DISCO_F769NI/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 374,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/TARGET_DISCO_F746NG/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 374,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_TOSHIBA/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 370,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L152xC/TARGET_MOTE_L152RC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 370,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32625/TARGET_MAX32625PICO/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 367,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/TARGET_STM32U575xI/TARGET_NUCLEO_U575ZI_Q/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 363,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32U5/TARGET_STM32U585xI/TARGET_B_U585I_IOT02A/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 359,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/TARGET_FRDM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 357,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_K66F/TARGET_FRDM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 357,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/AT/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 356,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/AT/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 356,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L0/TARGET_STM32L073xZ/TARGET_NUCLEO_L073RZ/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 355,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F070xB/TARGET_NUCLEO_F070RB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 355,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F072xB/TARGET_NUCLEO_F072RB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 355,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F0/TARGET_STM32F091xC/TARGET_NUCLEO_F091RC/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 355,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32L1/TARGET_STM32L152xE/TARGET_NUCLEO_L152RE/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 355,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_STM/TARGET_STM32F1/TARGET_STM32F103xB/TARGET_NUCLEO_F103RB/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 355,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/mbed-client-cli/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 354,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/mbed-client-cli/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 354,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32630/TARGET_MAX32630FTHR/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 349,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K22F/TARGET_MCU_K22F512/TARGET_FRDM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 346,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_KW41Z/TARGET_FRDM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 333,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_KL43Z/TARGET_FRDM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 328,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_K82F/TARGET_FRDM/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 325,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 313,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/AT/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 313,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/greentea-client/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 304,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/greentea-client/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 304,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32625/TARGET_MAX32625MBED/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 295,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32670/TARGET_MAX32670EVKIT/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 290,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32660/TARGET_MAX32660EVSYS/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 290,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/pinn-lite (1)/config.txt",
+    "ext": ".txt",
+    "size": 285,
+    "reason": "skip pattern",
+    "basename": "config.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32620C/TARGET_MAX32620FTHR/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 280,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32625/TARGET_SDT32625B/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 277,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Maxim/TARGET_MAX32620C/TARGET_SDT32620B/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 271,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/device/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 249,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/mbed-greentea-io/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 249,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/device/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 249,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/mbed-greentea-io/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 249,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/unity/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 238,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/features/frameworks/unity/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 238,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 228,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/device/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 228,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/pinn-lite (1)/cmdline.txt",
+    "ext": ".txt",
+    "size": 217,
+    "reason": "skip pattern",
+    "basename": "cmdline.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/common/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 207,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/common/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 207,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_Samsung/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 205,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/UNITTESTS/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 198,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/targets/TARGET_NUVOTON/TARGET_M2354/TARGET_TFM/TARGET_NU_M2354/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 190,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/tools/cmake/tests/multiple_executables/app2/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 188,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/tools/cmake/tests/multiple_executables/app1/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 188,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 165,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 165,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/source/framework/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 165,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 165,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/tools/cmake/requirements.txt",
+    "ext": ".txt",
+    "size": 148,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/common/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 140,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní(2)/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/connectivity/cellular/tests/UNITTESTS/framework/common/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 140,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/tests/TESTS/CMakeLists.txt",
+    "ext": ".txt",
+    "size": 132,
+    "reason": "skip pattern",
+    "basename": "CMakeLists.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Dropbox/1M4 backup/default_25_05_06_16:26:14/requirements.txt",
+    "ext": ".txt",
+    "size": 108,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Dropbox/MACM4-backup/requirements.txt",
+    "ext": ".txt",
+    "size": 108,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/bugzilla-5.2/bugzilla-5.2/docs/requirements.txt",
+    "ext": ".txt",
+    "size": 71,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": null
+  },
+  {
+    "path": "Dropbox/1M4 backup/email-to-pdf-docker-synology/requirements.txt",
+    "ext": ".txt",
+    "size": 49,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": true
+  },
+  {
+    "path": "Library/CloudStorage/OneDrive-Osobní/Software/mbed-os-6.17.0/ARMmbed-mbed-os-ac7bd50/drivers/usb/tests/TESTS/usb_device/hid/requirements.txt",
+    "ext": ".txt",
+    "size": 22,
+    "reason": "skip pattern",
+    "basename": "requirements.txt",
+    "likely_user": null
+  }
+]

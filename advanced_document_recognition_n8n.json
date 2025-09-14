@@ -1,0 +1,300 @@
+{
+  "name": "Advanced Document Recognition for Paperless-ngx",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "minutes", "minutesInterval": 5}]
+        }
+      },
+      "id": "trigger",
+      "name": "Check Emails",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [200, 400]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "message",
+        "operation": "getAll",
+        "q": "is:unread",
+        "format": "full",
+        "additionalFields": {
+          "maxResults": 50
+        }
+      },
+      "id": "gmail",
+      "name": "Gmail Messages",
+      "type": "n8n-nodes-base.gmail",
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// KROK 1: Filtrovat reklamní a marketingové emaily\nconst spamKeywords = [\n  // Marketing\n  'unsubscribe', 'odhlásit', 'newsletter', 'marketing',\n  'promo', 'sale', 'sleva', 'akce', 'výprodej', 'discount',\n  'limited offer', 'special offer', 'nabídka dne',\n  \n  // Spam indikátory\n  'click here', 'klikněte zde', 'act now', 'jednejte nyní',\n  'free', 'zdarma', 'win', 'vyhrajte', 'congratulations',\n  \n  // Social media\n  'facebook', 'instagram', 'linkedin', 'twitter',\n  'social media', 'follow us', 'sledujte nás'\n];\n\nconst trustedDomains = [\n  // Banky\n  'csob.cz', 'kb.cz', 'csas.cz', 'moneta.cz', 'airbank.cz',\n  'fio.cz', 'mbank.cz', 'unicreditbank.cz', 'revolut.com',\n  \n  // Dodavatelé energie\n  'cez.cz', 'eon.cz', 'pre.cz', 'innogy.cz',\n  \n  // Telco\n  'o2.cz', 't-mobile.cz', 'vodafone.cz',\n  \n  // Známé firmy\n  'alza.cz', 'mall.cz', 'rohlik.cz'\n];\n\nconst items = [];\n\nfor (const item of $input.all()) {\n  const email = item.json;\n  const headers = email.payload?.headers || [];\n  \n  // Získat důležité hlavičky\n  const subject = headers.find(h => h.name === 'Subject')?.value || '';\n  const from = headers.find(h => h.name === 'From')?.value || '';\n  const to = headers.find(h => h.name === 'To')?.value || '';\n  const returnPath = headers.find(h => h.name === 'Return-Path')?.value || '';\n  const listUnsubscribe = headers.find(h => h.name === 'List-Unsubscribe')?.value;\n  \n  // Extrahovat doménu odesílatele\n  const fromDomain = from.match(/@([^\\s>]+)/)?.[1]?.toLowerCase() || '';\n  \n  // Skóre pro spam (0-100, vyšší = více spam)\n  let spamScore = 0;\n  const spamReasons = [];\n  \n  // 1. List-Unsubscribe header = téměř jistě marketing\n  if (listUnsubscribe) {\n    spamScore += 40;\n    spamReasons.push('Has unsubscribe header');\n  }\n  \n  // 2. Kontrola spam keywords\n  const textToCheck = (subject + ' ' + from).toLowerCase();\n  for (const keyword of spamKeywords) {\n    if (textToCheck.includes(keyword.toLowerCase())) {\n      spamScore += 15;\n      spamReasons.push(`Contains: ${keyword}`);\n    }\n  }\n  \n  // 3. No-reply adresy\n  if (from.toLowerCase().includes('no-reply') || from.toLowerCase().includes('noreply')) {\n    spamScore += 25;\n    spamReasons.push('No-reply address');\n  }\n  \n  // 4. Důvěryhodné domény snižují skóre\n  if (trustedDomains.some(domain => fromDomain.includes(domain))) {\n    spamScore -= 30;\n    spamReasons.push('Trusted domain');\n  }\n  \n  // 5. Return-Path nesouhlasí s From\n  const returnDomain = returnPath.match(/@([^\\s>]+)/)?.[1]?.toLowerCase() || '';\n  if (returnDomain && returnDomain !== fromDomain) {\n    spamScore += 20;\n    spamReasons.push('Return-path mismatch');\n  }\n  \n  // Přidat analýzu\n  email.spamAnalysis = {\n    score: Math.max(0, Math.min(100, spamScore)),\n    reasons: spamReasons,\n    fromDomain: fromDomain,\n    isSpam: spamScore > 50,\n    isTrusted: trustedDomains.some(domain => fromDomain.includes(domain))\n  };\n  \n  // Přidat základní metadata\n  email.metadata = {\n    subject,\n    from,\n    fromDomain,\n    to,\n    date: headers.find(h => h.name === 'Date')?.value,\n    messageId: email.id\n  };\n  \n  items.push({json: email});\n}\n\nreturn items;"
+      },
+      "id": "spamFilter",
+      "name": "Spam & Marketing Filter",
+      "type": "n8n-nodes-base.code",
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.spamAnalysis.isSpam }}",
+              "rightValue": false,
+              "operator": {"type": "boolean", "operation": "equals"}
+            }
+          ]
+        }
+      },
+      "id": "filterSpam",
+      "name": "Remove Spam",
+      "type": "n8n-nodes-base.filter",
+      "position": [800, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// KROK 2: Extrakce a analýza příloh\nconst items = [];\n\nfor (const item of $input.all()) {\n  const email = item.json;\n  const attachments = [];\n  \n  // Funkce pro dekódování base64 názvu souboru\n  function decodeFilename(filename) {\n    if (filename.startsWith('=?') && filename.endsWith('?=')) {\n      // RFC 2047 encoded filename\n      const match = filename.match(/=\\?(.+?)\\?([BQ])\\?(.+?)\\?=/i);\n      if (match) {\n        const charset = match[1];\n        const encoding = match[2].toUpperCase();\n        const encoded = match[3];\n        \n        if (encoding === 'B') {\n          return Buffer.from(encoded, 'base64').toString('utf8');\n        } else if (encoding === 'Q') {\n          return encoded.replace(/_/g, ' ').replace(/=([0-9A-F]{2})/gi, \n            (match, hex) => String.fromCharCode(parseInt(hex, 16)));\n        }\n      }\n    }\n    return filename;\n  }\n  \n  // Procházet části emailu\n  function processEmailParts(parts, parentMimeType = '') {\n    if (!parts) return;\n    \n    for (const part of parts) {\n      // Rekurzivně zpracovat vnořené části\n      if (part.parts) {\n        processEmailParts(part.parts, part.mimeType);\n      }\n      \n      // Je to příloha?\n      if (part.filename && part.filename !== '') {\n        const decodedFilename = decodeFilename(part.filename);\n        const extension = decodedFilename.split('.').pop().toLowerCase();\n        \n        attachments.push({\n          filename: decodedFilename,\n          originalFilename: part.filename,\n          mimeType: part.mimeType,\n          size: part.body?.size || 0,\n          attachmentId: part.body?.attachmentId,\n          extension: extension,\n          // Kategorizace podle typu\n          category: categorizeByExtension(extension),\n          needsOCR: ['pdf', 'jpg', 'jpeg', 'png', 'tiff', 'bmp'].includes(extension)\n        });\n      }\n    }\n  }\n  \n  function categorizeByExtension(ext) {\n    const categories = {\n      'pdf': 'document',\n      'doc': 'document', 'docx': 'document',\n      'xls': 'spreadsheet', 'xlsx': 'spreadsheet', 'csv': 'spreadsheet',\n      'xml': 'data', 'json': 'data',\n      'jpg': 'image', 'jpeg': 'image', 'png': 'image', 'tiff': 'image',\n      'eml': 'email', 'msg': 'email',\n      'zip': 'archive', 'rar': 'archive', '7z': 'archive',\n      'p7s': 'signature', 'p7m': 'signed'\n    };\n    return categories[ext] || 'other';\n  }\n  \n  // Zpracovat email části\n  if (email.payload?.parts) {\n    processEmailParts(email.payload.parts);\n  }\n  \n  // Získat text emailu pro analýzu\n  let emailText = '';\n  function extractText(parts) {\n    if (!parts) return;\n    for (const part of parts) {\n      if (part.mimeType === 'text/plain' && part.body?.data) {\n        emailText += Buffer.from(part.body.data, 'base64').toString('utf8') + '\\n';\n      } else if (part.parts) {\n        extractText(part.parts);\n      }\n    }\n  }\n  \n  if (email.payload?.parts) {\n    extractText(email.payload.parts);\n  } else if (email.payload?.body?.data) {\n    emailText = Buffer.from(email.payload.body.data, 'base64').toString('utf8');\n  }\n  \n  // Přidat výsledky\n  email.attachmentAnalysis = {\n    hasAttachments: attachments.length > 0,\n    attachmentCount: attachments.length,\n    attachments: attachments,\n    documentAttachments: attachments.filter(a => a.category === 'document'),\n    needsOCR: attachments.some(a => a.needsOCR)\n  };\n  \n  email.emailText = emailText.substring(0, 5000); // Limit textu\n  \n  items.push({json: email});\n}\n\nreturn items;"
+      },
+      "id": "attachmentAnalysis",
+      "name": "Attachment Analysis",
+      "type": "n8n-nodes-base.code",
+      "position": [1000, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// KROK 3: Předběžná klasifikace dokumentů podle obsahu emailu\nconst documentPatterns = {\n  'faktura': {\n    keywords: [\n      'faktura', 'invoice', 'daňový doklad', 'tax invoice',\n      'fakturujeme', 'vyúčtování', 'platba za', 'účtujeme'\n    ],\n    identifiers: [\n      /faktura\\s*č\\.?\\s*\\d+/i,\n      /invoice\\s*no\\.?\\s*\\d+/i,\n      /variabilní symbol/i,\n      /ičo:\\s*\\d+/i,\n      /dič:\\s*CZ\\d+/i\n    ],\n    confidence: 0.9\n  },\n  'proforma': {\n    keywords: [\n      'proforma', 'pro forma', 'pro-forma', 'zálohová faktura',\n      'předfaktura', 'draft invoice'\n    ],\n    identifiers: [\n      /proforma\\s*č\\.?\\s*\\d+/i,\n      /není\\s*daňový\\s*doklad/i\n    ],\n    confidence: 0.85\n  },\n  'platba': {\n    keywords: [\n      'potvrzení o platbě', 'payment confirmation', 'platba přijata',\n      'uhrazeno', 'zaplaceno', 'payment received'\n    ],\n    identifiers: [\n      /platba\\s*ve\\s*výši/i,\n      /připsáno\\s*na\\s*účet/i,\n      /transaction\\s*id/i\n    ],\n    confidence: 0.9\n  },\n  'bankovni_vypis': {\n    keywords: [\n      'výpis z účtu', 'bank statement', 'výpis z bankovního účtu',\n      'account statement', 'měsíční výpis'\n    ],\n    identifiers: [\n      /výpis\\s*č\\.?\\s*\\d+/i,\n      /období\\s*od.*do/i,\n      /počáteční\\s*zůstatek/i,\n      /konečný\\s*zůstatek/i\n    ],\n    confidence: 0.95\n  },\n  'potvrzeni_prevodu': {\n    keywords: [\n      'potvrzení o převodu', 'transfer confirmation', 'příkaz k úhradě',\n      'payment order', 'převod prostředků'\n    ],\n    identifiers: [\n      /z\\s*účtu.*na\\s*účet/i,\n      /IBAN/i,\n      /BIC|SWIFT/i\n    ],\n    confidence: 0.85\n  },\n  'smlouva': {\n    keywords: [\n      'smlouva', 'contract', 'agreement', 'dohoda',\n      'smluvní strany', 'uzavřeli', 'terms and conditions'\n    ],\n    identifiers: [\n      /článek\\s*\\d+/i,\n      /smluvní\\s*strany/i,\n      /platnost\\s*smlouvy/i,\n      /podpis/i\n    ],\n    confidence: 0.8\n  },\n  'objednavka': {\n    keywords: [\n      'objednávka', 'order', 'purchase order', 'nákupní objednávka',\n      'objednáváme', 'order confirmation'\n    ],\n    identifiers: [\n      /objednávka\\s*č\\.?\\s*\\d+/i,\n      /order\\s*no\\.?\\s*\\d+/i,\n      /dodací\\s*lhůta/i\n    ],\n    confidence: 0.85\n  },\n  'dodaci_list': {\n    keywords: [\n      'dodací list', 'delivery note', 'packing list',\n      'expedice', 'převzal', 'doručeno'\n    ],\n    identifiers: [\n      /dodací\\s*list\\s*č\\.?\\s*\\d+/i,\n      /datum\\s*dodání/i,\n      /převzal/i\n    ],\n    confidence: 0.8\n  }\n};\n\nconst items = [];\n\nfor (const item of $input.all()) {\n  const email = item.json;\n  const textToAnalyze = (\n    email.metadata.subject + ' ' + \n    email.emailText + ' ' +\n    email.attachmentAnalysis.attachments.map(a => a.filename).join(' ')\n  ).toLowerCase();\n  \n  // Analyzovat každý typ dokumentu\n  const classifications = [];\n  \n  for (const [docType, pattern] of Object.entries(documentPatterns)) {\n    let score = 0;\n    const matches = [];\n    \n    // Kontrola klíčových slov\n    for (const keyword of pattern.keywords) {\n      if (textToAnalyze.includes(keyword.toLowerCase())) {\n        score += 0.3;\n        matches.push(`keyword: ${keyword}`);\n      }\n    }\n    \n    // Kontrola identifikátorů (regex)\n    for (const identifier of pattern.identifiers) {\n      if (identifier.test(textToAnalyze)) {\n        score += 0.5;\n        matches.push(`pattern: ${identifier.source}`);\n      }\n    }\n    \n    // Přidat klasifikaci pokud je skóre dostatečné\n    if (score > 0) {\n      classifications.push({\n        type: docType,\n        score: Math.min(score, 1),\n        confidence: score * pattern.confidence,\n        matches: matches\n      });\n    }\n  }\n  \n  // Seřadit podle confidence\n  classifications.sort((a, b) => b.confidence - a.confidence);\n  \n  // Určit primární typ dokumentu\n  const primaryType = classifications[0]?.confidence > 0.5 ? classifications[0].type : 'unknown';\n  \n  email.documentClassification = {\n    primaryType: primaryType,\n    confidence: classifications[0]?.confidence || 0,\n    allClassifications: classifications,\n    needsManualReview: classifications[0]?.confidence < 0.7\n  };\n  \n  items.push({json: email});\n}\n\nreturn items;"
+      },
+      "id": "documentClassification",
+      "name": "Document Type Classification",
+      "type": "n8n-nodes-base.code",
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "downloadAttachment",
+        "messageId": "={{ $json.metadata.messageId }}",
+        "attachmentId": "={{ $json.attachmentAnalysis.documentAttachments[0].attachmentId }}"
+      },
+      "id": "downloadAttachment",
+      "name": "Download Document",
+      "type": "n8n-nodes-base.gmail",
+      "position": [1400, 300]
+    },
+    {
+      "parameters": {
+        "mode": "passThrough",
+        "output": "both",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "fileData",
+              "name": "fileData",
+              "type": "string",
+              "value": "={{ $json.data }}"
+            }
+          ]
+        }
+      },
+      "id": "prepareFile",
+      "name": "Prepare File Data",
+      "type": "n8n-nodes-base.set",
+      "position": [1600, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4-vision-preview",
+        "messages": {
+          "values": [
+            {
+              "role": "system", 
+              "content": "Jsi expert na analýzu business dokumentů. Tvým úkolem je PŘESNĚ určit typ dokumentu a extrahovat klíčové informace.\n\nTYPY DOKUMENTŮ které musíš rozpoznat:\n1. FAKTURA - daňový doklad s IČO, DIČ, částkou k úhradě\n2. PROFORMA - předfaktura, není daňový doklad\n3. BANKOVNÍ VÝPIS - výpis z účtu s transakcemi\n4. POTVRZENÍ O PLATBĚ - potvrzení o přijaté/odeslané platbě\n5. POTVRZENÍ O PŘEVODU - potvrzení bankovního převodu\n6. SMLOUVA - právní dokument s podmínkami\n7. OBJEDNÁVKA - objednávka zboží/služeb\n8. DODACÍ LIST - potvrzení o dodání\n9. UPOMÍNKA - upomínka k platbě\n10. JINÝ - pokud nespadá do výše uvedených\n\nVRAŤ JSON:\n{\n  \"documentType\": \"přesný_typ\",\n  \"confidence\": 0.0-1.0,\n  \"vendor\": \"název_dodavatele\",\n  \"documentNumber\": \"číslo_dokumentu\",\n  \"date\": \"datum_vystavení\",\n  \"amount\": číslo_nebo_null,\n  \"currency\": \"CZK/EUR/USD\",\n  \"variableSymbol\": \"VS_pokud_existuje\",\n  \"dueDate\": \"datum_splatnosti\",\n  \"extractedData\": {další_důležité_údaje}\n}"
+            },
+            {
+              "role": "user",
+              "content": "Analyzuj tento dokument:\nNázev souboru: {{ $('attachmentAnalysis').item.json.attachmentAnalysis.documentAttachments[0].filename }}\nPředběžná klasifikace: {{ $('documentClassification').item.json.documentClassification.primaryType }}\n\n[Zde bude obsah dokumentu po OCR]"
+            }
+          ]
+        },
+        "options": {
+          "temperature": 0.1,
+          "maxTokens": 1000
+        }
+      },
+      "id": "aiDocumentAnalysis",
+      "name": "AI Deep Document Analysis",
+      "type": "n8n-nodes-base.openAi",
+      "position": [1800, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// KROK 4: Finální klasifikace a příprava pro Paperless-ngx\nconst item = $input.first();\nconst email = item.json;\nconst aiAnalysis = JSON.parse($('aiDocumentAnalysis').first().json.content || '{}');\n\n// Mapování typů dokumentů na Paperless-ngx tagy\nconst paperlessTags = {\n  'faktura': ['invoice', 'financial', 'unpaid'],\n  'proforma': ['proforma', 'financial', 'draft'],\n  'bankovni_vypis': ['bank-statement', 'financial', 'monthly'],\n  'potvrzeni_platba': ['payment-confirmation', 'financial', 'paid'],\n  'potvrzeni_prevod': ['transfer-confirmation', 'financial'],\n  'smlouva': ['contract', 'legal', 'important'],\n  'objednavka': ['purchase-order', 'procurement'],\n  'dodaci_list': ['delivery-note', 'logistics'],\n  'upominka': ['payment-reminder', 'urgent', 'unpaid']\n};\n\n// Určit finální typ dokumentu\nconst finalType = aiAnalysis.documentType || email.documentClassification.primaryType;\nconst tags = paperlessTags[finalType] || ['unclassified'];\n\n// Přidat dodavatele jako tag pokud existuje\nif (aiAnalysis.vendor) {\n  tags.push(aiAnalysis.vendor.toLowerCase().replace(/\\s+/g, '-'));\n}\n\n// Přidat rok jako tag\nif (aiAnalysis.date) {\n  const year = new Date(aiAnalysis.date).getFullYear();\n  tags.push(`year-${year}`);\n}\n\n// Vytvořit titulek pro Paperless\nlet title = '';\nif (aiAnalysis.documentNumber) {\n  title = `${aiAnalysis.vendor || 'Unknown'} - ${finalType} ${aiAnalysis.documentNumber}`;\n} else {\n  title = `${aiAnalysis.vendor || email.metadata.fromDomain} - ${finalType} - ${aiAnalysis.date || new Date().toISOString().split('T')[0]}`;\n}\n\n// Vytvořit metadata pro Paperless-ngx\nconst paperlessDocument = {\n  title: title,\n  correspondent: aiAnalysis.vendor || email.metadata.fromDomain,\n  document_type: finalType,\n  tags: tags,\n  created_date: aiAnalysis.date || email.metadata.date,\n  // Custom fields\n  custom_fields: {\n    amount: aiAnalysis.amount,\n    currency: aiAnalysis.currency,\n    variable_symbol: aiAnalysis.variableSymbol,\n    due_date: aiAnalysis.dueDate,\n    document_number: aiAnalysis.documentNumber,\n    email_from: email.metadata.from,\n    email_subject: email.metadata.subject,\n    confidence_score: aiAnalysis.confidence || email.documentClassification.confidence\n  },\n  // Původní soubor\n  file_data: email.fileData,\n  filename: email.attachmentAnalysis.documentAttachments[0].filename\n};\n\n// Určit prioritu pro zpracování\nlet priority = 'normal';\nif (finalType === 'upominka') priority = 'urgent';\nelse if (finalType === 'faktura' && aiAnalysis.dueDate) {\n  const dueDate = new Date(aiAnalysis.dueDate);\n  const today = new Date();\n  const daysUntilDue = Math.floor((dueDate - today) / (1000 * 60 * 60 * 24));\n  if (daysUntilDue < 7) priority = 'high';\n}\n\nreturn {\n  json: {\n    ...email,\n    finalClassification: {\n      type: finalType,\n      confidence: aiAnalysis.confidence || email.documentClassification.confidence,\n      aiAnalysis: aiAnalysis,\n      tags: tags,\n      priority: priority\n    },\n    paperlessDocument: paperlessDocument\n  }\n};"
+      },
+      "id": "preparePaperless",
+      "name": "Prepare for Paperless-ngx",
+      "type": "n8n-nodes-base.code",
+      "position": [2000, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://paperless-ngx:8000/api/documents/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "multipart/form-data"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{ $json.paperlessDocument.title }}"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{ $json.paperlessDocument.correspondent }}"
+            },
+            {
+              "name": "document_type", 
+              "value": "={{ $json.paperlessDocument.document_type }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.paperlessDocument.tags.join(',') }}"
+            },
+            {
+              "name": "created",
+              "value": "={{ $json.paperlessDocument.created_date }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "uploadToPaperless",
+      "name": "Upload to Paperless-ngx",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [2200, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "paperlessAuth",
+          "name": "Paperless-ngx API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "addLabel",
+        "messageId": "={{ $json.metadata.messageId }}",
+        "labelIds": ["Processed", "{{ $json.finalClassification.type }}"]
+      },
+      "id": "markAsProcessed",
+      "name": "Mark Email as Processed",
+      "type": "n8n-nodes-base.gmail",
+      "position": [2400, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "summary",
+              "value": "=📄 Dokument zpracován\\n\\nTyp: {{ $json.finalClassification.type }}\\nDodavatel: {{ $json.paperlessDocument.correspondent }}\\nČíslo: {{ $json.paperlessDocument.custom_fields.document_number }}\\nČástka: {{ $json.paperlessDocument.custom_fields.amount }} {{ $json.paperlessDocument.custom_fields.currency }}\\nSplatnost: {{ $json.paperlessDocument.custom_fields.due_date }}\\nPriorita: {{ $json.finalClassification.priority }}\\nJistota: {{ $json.finalClassification.confidence }}\\n\\nTagy: {{ $json.paperlessDocument.tags.join(', ') }}"
+            }
+          ]
+        }
+      },
+      "id": "createSummary",
+      "name": "Create Summary",
+      "type": "n8n-nodes-base.set",
+      "position": [2600, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "channel": "#documents",
+        "text": "={{ $json.summary }}",
+        "otherOptions": {
+          "attachments": {
+            "attachments": [
+              {
+                "color": "={{ $json.finalClassification.priority === 'urgent' ? '#ff0000' : $json.finalClassification.priority === 'high' ? '#ff9900' : '#36a64f' }}",
+                "fields": {
+                  "item": [
+                    {
+                      "short": true,
+                      "title": "Dokument",
+                      "value": "{{ $json.paperlessDocument.title }}"
+                    },
+                    {
+                      "short": true,
+                      "title": "Stav",
+                      "value": "✅ Uloženo do Paperless-ngx"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "id": "notifySlack",
+      "name": "Notify Slack",
+      "type": "n8n-nodes-base.slack",
+      "position": [2800, 300]
+    }
+  ],
+  "connections": {
+    "trigger": {
+      "main": [[{"node": "gmail", "type": "main", "index": 0}]]
+    },
+    "gmail": {
+      "main": [[{"node": "spamFilter", "type": "main", "index": 0}]]
+    },
+    "spamFilter": {
+      "main": [[{"node": "filterSpam", "type": "main", "index": 0}]]
+    },
+    "filterSpam": {
+      "main": [[{"node": "attachmentAnalysis", "type": "main", "index": 0}]]
+    },
+    "attachmentAnalysis": {
+      "main": [[{"node": "documentClassification", "type": "main", "index": 0}]]
+    },
+    "documentClassification": {
+      "main": [[{"node": "downloadAttachment", "type": "main", "index": 0}]]
+    },
+    "downloadAttachment": {
+      "main": [[{"node": "prepareFile", "type": "main", "index": 0}]]
+    },
+    "prepareFile": {
+      "main": [[{"node": "aiDocumentAnalysis", "type": "main", "index": 0}]]
+    },
+    "aiDocumentAnalysis": {
+      "main": [[{"node": "preparePaperless", "type": "main", "index": 0}]]
+    },
+    "preparePaperless": {
+      "main": [[{"node": "uploadToPaperless", "type": "main", "index": 0}]]
+    },
+    "uploadToPaperless": {
+      "main": [[{"node": "markAsProcessed", "type": "main", "index": 0}]]
+    },
+    "markAsProcessed": {
+      "main": [[{"node": "createSummary", "type": "main", "index": 0}]]
+    },
+    "createSummary": {
+      "main": [[{"node": "notifySlack", "type": "main", "index": 0}]]
+    }
+  }
+}

@@ -1,0 +1,1485 @@
+{
+  "incomplete_isdocs": [
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "completeness_score": 20,
+      "missing_required": [
+        "issue_date",
+        "total_amount",
+        "customer_name"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "completeness_score": 20,
+      "missing_required": [
+        "issue_date",
+        "total_amount",
+        "customer_name"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "completeness_score": 20,
+      "missing_required": [
+        "issue_date",
+        "total_amount",
+        "customer_name"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "completeness_score": 20,
+      "missing_required": [
+        "issue_date",
+        "total_amount",
+        "customer_name"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "invoice_number"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "completeness_score": 20,
+      "missing_required": [
+        "issue_date",
+        "total_amount",
+        "customer_name"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "completeness_score": 20,
+      "missing_required": [
+        "issue_date",
+        "total_amount",
+        "customer_name"
+      ],
+      "reason": "Neúplná ISDOC data"
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "completeness_score": 40,
+      "missing_required": [
+        "currency"
+      ],
+      "reason": "Neúplná ISDOC data"
+    }
+  ],
+  "timestamp": "2025-08-03T19:48:17.359203",
+  "total_count": 163
+}

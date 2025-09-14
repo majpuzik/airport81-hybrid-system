@@ -1,0 +1,57 @@
+{
+  "banks": {
+    "revolut": {
+      "enabled": false,
+      "priority": 1,
+      "config_file": "/usr/src/paperless/data/bank_configs/revolut_config.json"
+    },
+    "n26": {
+      "enabled": false,
+      "priority": 2,
+      "config_file": "/usr/src/paperless/data/bank_configs/n26_config.json"
+    },
+    "csob": {
+      "enabled": false,
+      "priority": 3,
+      "config_file": "/usr/src/paperless/data/bank_configs/csob_config.json"
+    },
+    "kb": {
+      "enabled": false,
+      "priority": 4,
+      "config_file": "/usr/src/paperless/data/bank_configs/kb_config.json"
+    },
+    "raiffeisen": {
+      "enabled": false,
+      "priority": 5,
+      "config_file": "/usr/src/paperless/data/bank_configs/raiffeisen_config.json"
+    }
+  },
+  "paperless": {
+    "url": "http://localhost:8000",
+    "token": "REPLACE_WITH_YOUR_TOKEN"
+  },
+  "sync": {
+    "cron_schedule": "0 8,20 * * *",
+    "max_concurrent_banks": 2,
+    "retry_attempts": 3
+  },
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587,
+      "from": "paperless@your-domain.com",
+      "to": "admin@your-domain.com"
+    },
+    "telegram": {
+      "enabled": false,
+      "bot_token": "YOUR_BOT_TOKEN",
+      "chat_id": "YOUR_CHAT_ID"
+    }
+  },
+  "security": {
+    "encrypt_configs": true,
+    "vault_password": "CHANGE_THIS_PASSWORD",
+    "audit_log": true
+  }
+}

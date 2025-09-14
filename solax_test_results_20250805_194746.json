@@ -1,0 +1,150 @@
+{
+  "timestamp": "2025-08-05T19:47:46.454885",
+  "tests": {
+    "network_connectivity": {
+      "SOLAX přímé připojení": {
+        "status": "failed",
+        "host": "192.168.10.51",
+        "port": 502,
+        "error": "Connection refused"
+      },
+      "Multiplexer endpoint": {
+        "status": "success",
+        "host": "192.168.10.83",
+        "port": 5020
+      },
+      "Localhost multiplexer": {
+        "status": "success",
+        "host": "localhost",
+        "port": 5020
+      },
+      "127.0.0.1 multiplexer": {
+        "status": "success",
+        "host": "127.0.0.1",
+        "port": 5020
+      }
+    },
+    "network": {
+      "SOLAX přímé připojení": {
+        "status": "failed",
+        "host": "192.168.10.51",
+        "port": 502,
+        "error": "Connection refused"
+      },
+      "Multiplexer endpoint": {
+        "status": "success",
+        "host": "192.168.10.83",
+        "port": 5020
+      },
+      "Localhost multiplexer": {
+        "status": "success",
+        "host": "localhost",
+        "port": 5020
+      },
+      "127.0.0.1 multiplexer": {
+        "status": "success",
+        "host": "127.0.0.1",
+        "port": 5020
+      }
+    },
+    "multiplexer_container": {
+      "status": "docker_not_found"
+    },
+    "integration_config": {
+      "host": "192.168.10.83",
+      "port": 5020,
+      "modbus_addr": 4,
+      "plugin": "solax",
+      "scan_interval": 15,
+      "disabled": false
+    },
+    "solax_direct": {
+      "connection": "failed"
+    },
+    "multiplexer": {
+      "connection": "success",
+      "registers": {
+        "0x1c": {
+          "name": "Battery SOC %",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x16": {
+          "name": "Battery Power W",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x46": {
+          "name": "Grid Power W",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x94": {
+          "name": "PV Power W",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x00": {
+          "name": "Inverter Status",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x01": {
+          "name": "Inverter Mode",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x0a": {
+          "name": "DC Voltage 1",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x0b": {
+          "name": "DC Current 1",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x0c": {
+          "name": "DC Power 1",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x18": {
+          "name": "AC Power Total",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x19": {
+          "name": "AC Frequency",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x1a": {
+          "name": "AC Voltage R",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        },
+        "0x1b": {
+          "name": "AC Current R",
+          "error": "ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'unit'",
+          "status": "exception"
+        }
+      }
+    },
+    "ha_container": {
+      "status": "error",
+      "error": "[Errno 2] No such file or directory: 'docker'"
+    }
+  },
+  "summary": {
+    "total_tests": 0,
+    "successful_tests": 0,
+    "failed_tests": 0,
+    "recommendations": [
+      "✅ Multiplexer endpoint je dostupný",
+      "⚠️ Modbus připojení OK, ale registry neodpovídají"
+    ],
+    "network_connectivity": "3/4",
+    "modbus_registers": "0/13"
+  }
+}

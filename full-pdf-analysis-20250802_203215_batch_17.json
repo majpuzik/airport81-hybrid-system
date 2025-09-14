@@ -1,0 +1,162 @@
+{
+  "batch_start": 17000,
+  "batch_end": 18000,
+  "timestamp": "2025-08-02T20:34:46.217490",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 491,
+    "unknown": 204,
+    "contract": 13,
+    "order": 165,
+    "notification": 34,
+    "subscription": 21,
+    "shipping": 24,
+    "receipt": 47,
+    "bank_statement": 1
+  },
+  "metadata_samples": [
+    {
+      "file": "Fwd_ PO August-202409111313-_Martin Puzik_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1570
+    },
+    {
+      "file": "Real-time translations, lip syncing, & more _ Dece-202412311344-_Mike from Maestra_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1134
+    },
+    {
+      "file": "🎉 Které pomůcky bude potřebovat každý student_ 🤔-202408270844-_Davona.cz_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 2059
+    },
+    {
+      "file": "From Photography to Parties_ The Ulanzi Fog Machin-202412241601-_Ulanzi_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1323
+    },
+    {
+      "file": "Čeká na tebe slevový kód 📩-202501171000-_HERO_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 1779
+    },
+    {
+      "file": "Sie haben Fragen_ Hier kommen die Antworten-202406201835-_Hymer_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3080
+    },
+    {
+      "file": "One-Step Video Saving_ Copy Link, Paste and Hit Do-202501091111-_EaseUS_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 3508
+    },
+    {
+      "file": "Discover a Secret I've Been Loving_ Your Invitatio-202406102153-_WordPress_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 911
+    },
+    {
+      "file": "Hi M.A.J., our promise to you_ On-time delivery!-202501180124-_Alibaba.com_.pdf",
+      "type": "order",
+      "score": 20,
+      "metadata": {},
+      "text_length": 2159
+    },
+    {
+      "file": "Upozornění_ začátek události je sobota, květen 10,-202505102045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 529
+    },
+    {
+      "file": "Milan, FINAL HOURS! ⏳ Save 30% on unlimited downlo-202412021104-_Envato_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1095
+    },
+    {
+      "file": "Only 7 days left to earn CZK1,250💰-202411260840-_Revolut_.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 4333
+    },
+    {
+      "file": "Re_Recept-202410231603-_Dispecink SANTE_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 717
+    },
+    {
+      "file": "Grow your MeliáRewards account-202504291120-MeliáRewards.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 3304
+    },
+    {
+      "file": "Democrats Harris, Walz to campaign in crucial Mich-202408071526-_Best of MSN (Start Unfold)_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3568
+    },
+    {
+      "file": "🛍 Black Friday Sale starts NOW-202411270940-_Sygic GPS Navigation_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1240
+    },
+    {
+      "file": "Back in Stock!-202503201503-_DJI_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1028
+    },
+    {
+      "file": "Aktuální novinky a inovace ve světě Mercedes-Benz-202409181605-Mercedes-Benz Česká republika.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1866
+    },
+    {
+      "file": "Řecko –  chuť skutečné dovolené-202505120842-_Greece Tours_.pdf",
+      "type": "invoice",
+      "score": 25,
+      "metadata": {},
+      "text_length": 3925
+    },
+    {
+      "file": "Alex Ahndoril = Lars Kepler se slevou 50 %-202412081157-_KNIHCENTRUM.cz_.pdf",
+      "type": "invoice",
+      "score": 25,
+      "metadata": {},
+      "text_length": 3955
+    }
+  ],
+  "error_count": 0
+}

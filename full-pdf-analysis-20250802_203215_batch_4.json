@@ -1,0 +1,162 @@
+{
+  "batch_start": 4000,
+  "batch_end": 5000,
+  "timestamp": "2025-08-02T20:32:57.941055",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 529,
+    "shipping": 19,
+    "notification": 33,
+    "unknown": 169,
+    "order": 184,
+    "subscription": 19,
+    "contract": 10,
+    "receipt": 34,
+    "bank_statement": 3
+  },
+  "metadata_samples": [
+    {
+      "file": "Certifikační školení AX Pro a Interkomy-202503060930-_VIAKOM.CZ_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1469
+    },
+    {
+      "file": "iDNES Premium Bez reklam_ Pouze obsah, žádné rekla-202409141001-_iDNES Premium_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 874
+    },
+    {
+      "file": "Sleva 47% na krémovou kvalitní kávu Palombini 🇮🇹-202502071233-_Tomas Bohman Caffe_.pdf",
+      "type": "shipping",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1786
+    },
+    {
+      "file": "Upozornění_ začátek události je neděle, srpna 4, 2-202408042045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 521
+    },
+    {
+      "file": "Zaplacené školné #202412036-202411031549-_Michal Fiala_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 546
+    },
+    {
+      "file": "Statistic Varná deska-202406300005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 252
+    },
+    {
+      "file": "🚨 Big news_ ParlerPay is now Kyvo-202504171357-_Taylor at Parler_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1858
+    },
+    {
+      "file": "🎃 Your October Internet Performance Report-202411010023-_Fing_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 10089
+    },
+    {
+      "file": "Three Israeli hostages released under Gaza ceasefi-202502081315-_MSN Daily_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1313
+    },
+    {
+      "file": "[ProtonMail] Pending request_ Chrome_ Pass extensi-202411031801-.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1805
+    },
+    {
+      "file": "Novinka - Raspberry Pi Pico 2-202408081848-_RPishop.cz_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2711
+    },
+    {
+      "file": "🏒 Jak na sportovní fotky_ rychlost vyhrává-202501251058-_Redakce Milujemefotografii.cz_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1706
+    },
+    {
+      "file": "Project Update #20_ YASHICA Vision binocular night-202408301458-_Kickstarter_.pdf",
+      "type": "order",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3962
+    },
+    {
+      "file": "NEW In - Google Pixel 9, 9 Pro XL-202408161201-_Etoren Team_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 736
+    },
+    {
+      "file": "Could the Huawei MateBook 14 Tempt Me From the Mac-202410100850-_Medium Daily Digest_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3176
+    },
+    {
+      "file": "Sie haben noch 2 Tage Zeit, sich 20 % Rabatt auf a-202407061001-_DxO Team_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 4123
+    },
+    {
+      "file": " Krmivo Marp s dárkem!   -202505111137-_Pethome.cz_.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 3625
+    },
+    {
+      "file": "Prohlédněte si fakturu za Microsoft 365 Business B-202407021232-_Microsoft_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1526
+    },
+    {
+      "file": "How to Read NetGalley Books on Kindle_Kobo_ReMarka-202503301546-_Epubor Studio_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1801
+    },
+    {
+      "file": "Daily Overview for Bressner-202410071135-_Manage It_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 546
+    }
+  ],
+  "error_count": 0
+}

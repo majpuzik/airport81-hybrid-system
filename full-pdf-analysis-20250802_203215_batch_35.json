@@ -1,0 +1,162 @@
+{
+  "batch_start": 35000,
+  "batch_end": 36000,
+  "timestamp": "2025-08-02T20:37:15.501003",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 486,
+    "order": 197,
+    "unknown": 181,
+    "shipping": 13,
+    "notification": 40,
+    "receipt": 38,
+    "bank_statement": 4,
+    "contract": 13,
+    "subscription": 28
+  },
+  "metadata_samples": [
+    {
+      "file": "M.A.J._ Více než 30 nových pracovních příležitostí-202406142152-Upozornění na nové pracovní příležitosti LinkedIn.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1806
+    },
+    {
+      "file": "Discover Exlicon L- Precision Golden Ratio Tools f-202406101607-_Kickstarter Channel_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2841
+    },
+    {
+      "file": "Lost Product Key_ Recover and Backup All Your Prod-202505141401-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 4098
+    },
+    {
+      "file": "🚀 Calling Hackers to Join Embodied AI Hackathon d-202502271406-_Seeed Studio_-1.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 5342
+    },
+    {
+      "file": "Gemini’s Best Paid Features Are Now Free — Here’s -202503132300-Amanda at Tom’s AI Guide.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3233
+    },
+    {
+      "file": "Why miss out_ 75% OFF sale for Lunar New Year ends-202502021610-_Rita from Luminar Neo_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1008
+    },
+    {
+      "file": "Canon Sommer Sofortrabatte & neue Aktionen ☀-202505010924-_Jonas von Foto Erhardt_.pdf",
+      "type": "invoice",
+      "score": 20,
+      "metadata": {},
+      "text_length": 3926
+    },
+    {
+      "file": "Iris Apfel and Barry Humphries at Christie’s-202502221512-_MutualArt Magazine_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2259
+    },
+    {
+      "file": "Nové e-knihy právě dorazily, nakrmte si čtečku-202504051041-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2193
+    },
+    {
+      "file": "The new Easy Backup 2025 - Automatically back up d-202502130114-_Abelssoft_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2264
+    },
+    {
+      "file": "Shipping Update-202504180449-_PledgeBox_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 991
+    },
+    {
+      "file": "Alexandra vám právě poslal(a) zprávu-202501250218-Alexandra Wangenheim přes LinkedIn.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 863
+    },
+    {
+      "file": "(No Subject)-202504240254-_matuszalepa_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 380
+    },
+    {
+      "file": "Robot Arm With Gripper-202503091341-_Instructables_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2580
+    },
+    {
+      "file": "Tired of slow Wi-Fi_ Here's the secret to getting -202503212150-_About Milan's Wi-Fi..._.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2423
+    },
+    {
+      "file": "Y&T_ Registrace zájemce _ zájemců-202405161122-_Veronika Petana_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 644
+    },
+    {
+      "file": "M.A.J., Up to 60% Off! Agoda's 20th Birthday Sale -202505170524-_Agoda Deals_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 2214
+    },
+    {
+      "file": "Intel CEO Shows Off Panther Lake CPU Sample at Len-202410191301-_Tom's Hardware_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3420
+    },
+    {
+      "file": "Jak na chytré zavlažování; požární senzory-202405281000-_Chytre vypinace_.pdf",
+      "type": "shipping",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1422
+    },
+    {
+      "file": "Německem zmítá skandál kolem miliardových podvodů -202412140559-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3833
+    }
+  ],
+  "error_count": 0
+}

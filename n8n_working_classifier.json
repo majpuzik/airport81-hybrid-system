@@ -1,0 +1,67 @@
+{
+  "name": "Document Classifier Working",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "document-classifier",
+        "responseMode": "lastNode"
+      },
+      "id": "e1b8c49e-5b12-4b3f-8f1a-2a3b4c5d6e7f",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8888/classify",
+        "responseFormat": "json",
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "{\n  \"text\": \"{{ $json.testText || $json.documentText || $json.text || 'Test document' }}\"\n}"
+      },
+      "id": "a2b3c4d5-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Process the classification result\nconst item = $input.item;\nconst classification = item.json;\n\n// Add metadata\nconst result = {\n  ...classification,\n  processed_at: new Date().toISOString(),\n  webhook_data: $node[\"Webhook\"].json,\n  status: 'processed'\n};\n\nreturn {\n  json: result\n};"
+      },
+      "id": "b3c4d5e6-7f8a-9b0c-1d2e-3f4a5b6c7d8e",
+      "name": "Function",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Function",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "tags": []
+}

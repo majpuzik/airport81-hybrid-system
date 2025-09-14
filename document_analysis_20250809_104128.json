@@ -1,0 +1,1101 @@
+{
+  "timestamp": "2025-08-09T10:41:28.424526",
+  "folder": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf",
+  "documents_count": 272,
+  "tags": {
+    "rok_2025": 270,
+    "datováno": 272,
+    "objednávka": 7,
+    "e-shop": 10,
+    "faktura": 45,
+    "rok_2018": 1,
+    "banka": 5,
+    "platba": 5,
+    "rok_2024": 1
+  },
+  "document_types": {
+    "PDF": 220,
+    "Objednávka": 7,
+    "Faktura": 45
+  },
+  "correspondents": {
+    "Elli": 9,
+    "Alza": 9,
+    "Google Play": 20,
+    "ZEMITH.COM": 2,
+    "Martin Broz": 2,
+    "Milan Puzik": 18,
+    "NaOperak.cz": 7,
+    "Proton": 37,
+    "notifikace@mojedatovaschranka.cz": 9,
+    "Sreedhar Josyula": 2,
+    "TeeTime": 3,
+    "Ing. Zuzana Puzikova": 7,
+    "Mail Delivery Subsystem": 3,
+    "M.A.J. Puzik": 6,
+    "e-shop@atrea.cz": 3,
+    "Nordic Telecom": 3,
+    "Info@kartal.cz": 1,
+    "Biem Michal": 1,
+    "KREA.AI, Inc.": 2,
+    "TONERMAX, s.r.o. - www.tonermax.cz": 1,
+    "Info _ BitFaktura.cz": 2,
+    "N26": 2,
+    "Jan Mosinger": 9,
+    "Adobe": 2,
+    "GitHub": 2,
+    "Marketa Kunst": 1,
+    "Temu": 1,
+    "Eleven Labs Inc.": 2,
+    "CZECHIA.COM": 4,
+    "Certus Mercatus": 1,
+    "predplatne@predplatne.cncenter.cz": 1,
+    "WinKey podpora": 1,
+    "CSOB": 2,
+    "Abby Chen": 1,
+    "Jakub Janda": 1,
+    "Microsoft": 2,
+    "Pekro - IT eshop ale se sluzbami": 1,
+    "DeepL": 2,
+    "Chatbot App": 1,
+    "MyBrainWorks s.r.o.": 1,
+    "Midjourney Inc": 2,
+    "Moje O2": 3,
+    "Celonis Inc.": 2,
+    "Michnova9": 1,
+    "Fr. Strohriegl": 1,
+    "Cleverbridge _ Piriform Software Ltd": 1,
+    "Air Bank": 1,
+    "REVOLUT": 1,
+    "Martin Puzik": 3,
+    "Stability AI Ltd": 2,
+    "Mobil Pohotovost": 1,
+    "WIRED CZ - Czechoslovak Media, s.r.o.": 2,
+    "Pavel Poucha": 1,
+    "Mall": 1
+  },
+  "documents": [
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upomínka platby za fakturu 830100440881 ze dne 31.-202504010530-_Elli_.pdf",
+      "filename": "Upomínka platby za fakturu 830100440881 ze dne 31.-202504010530-_Elli_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Elli",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Už to chystáme. _ Obj. č. 542464511-202504011936-_Alza.cz_.pdf",
+      "filename": "Už to chystáme. _ Obj. č. 542464511-202504011936-_Alza.cz_.pdf",
+      "tags": [
+        "objednávka",
+        "e-shop",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Alza",
+      "document_type": "Objednávka"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 23. 3. 202-202503232301-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 23. 3. 202-202503232301-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your receipt from ZEMITH.COM #2415-7573-202504132053-_ZEMITH.COM_.pdf",
+      "filename": "Your receipt from ZEMITH.COM #2415-7573-202504132053-_ZEMITH.COM_.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "ZEMITH.COM",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_zadost o nabidku-202505121214-_Martin Broz_.pdf",
+      "filename": "Re_zadost o nabidku-202505121214-_Martin Broz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Martin Broz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/prodej zbrani-202504262128-_Milan Puzik_.pdf",
+      "filename": "prodej zbrani-202504262128-_Milan Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Milan Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Akční nabídky Volvo_ V60 od 7.990 Kč, X60 od 10.72-202505151318-_NaOperak.cz_.pdf",
+      "filename": "Akční nabídky Volvo_ V60 od 7.990 Kč, X60 od 10.72-202505151318-_NaOperak.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "NaOperak.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je čtvrtek, březen 13-202503132045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je čtvrtek, březen 13-202503132045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je sobota, březen 8, -202503082045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je sobota, březen 8, -202503082045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_Import z banky-202505121436-_Milan Puzik_.pdf",
+      "filename": "Re_Import z banky-202505121436-_Milan Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Milan Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 24. 4. 202-202504240001-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 24. 4. 202-202504240001-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Datové schránky_ Nová zpráva (schránka_ bjk23uw)-202505071321-_notifikace@mojedatovaschranka.cz_.pdf",
+      "filename": "Datové schránky_ Nová zpráva (schránka_ bjk23uw)-202505071321-_notifikace@mojedatovaschranka.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "notifikace@mojedatovaschranka.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Datové schránky_ Nová zpráva do vlastních rukou (s-202504171031-_notifikace@mojedatovaschranka.cz_.pdf",
+      "filename": "Datové schránky_ Nová zpráva do vlastních rukou (s-202504171031-_notifikace@mojedatovaschranka.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "notifikace@mojedatovaschranka.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_PRODUCT Manager (lighting and LED technology) _-202504041028-_Sreedhar Josyula_.pdf",
+      "filename": "Re_PRODUCT Manager (lighting and LED technology) _-202504041028-_Sreedhar Josyula_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Sreedhar Josyula",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Výpis-202504210322-_TeeTime_.pdf",
+      "filename": "Výpis-202504210322-_TeeTime_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "TeeTime",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Výpis-202504280340-_TeeTime_.pdf",
+      "filename": "Výpis-202504280340-_TeeTime_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "TeeTime",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Poslední upomínka platby za fakturu 830100440881 z-202504290003-_Elli_.pdf",
+      "filename": "Poslední upomínka platby za fakturu 830100440881 z-202504290003-_Elli_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Elli",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ allianz-202503271436-_Ing. Zuzana Puzikova_.pdf",
+      "filename": "Fwd_ allianz-202503271436-_Ing. Zuzana Puzikova_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Ing. Zuzana Puzikova",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FW_ Faktura číslo FV2025_03_1-202504151120-Martin Pužík.pdf",
+      "filename": "FW_ Faktura číslo FV2025_03_1-202504151120-Martin Pužík.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ Faktura O2-202503251228-Fotograf Aleš Kartal.pdf",
+      "filename": "Fwd_ Faktura O2-202503251228-Fotograf Aleš Kartal.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Delivery Status Notification (Delay)-202504292311-_Mail Delivery Subsystem_.pdf",
+      "filename": "Delivery Status Notification (Delay)-202504292311-_Mail Delivery Subsystem_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Mail Delivery Subsystem",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Beleg für deine Google Play-Bestellung vom 08.05.2-202505081245-_Google Play_.pdf",
+      "filename": "Beleg für deine Google Play-Bestellung vom 08.05.2-202505081245-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FRITZ! App Wi-Fi - TCL T612B - Measure Wi-Fi azzur-202503251559-_M.A.J. Puzik_.pdf",
+      "filename": "FRITZ! App Wi-Fi - TCL T612B - Measure Wi-Fi azzur-202503251559-_M.A.J. Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "M.A.J. Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Vaše objednávka č. 992025400807 je připravena k ex-202505141157-_e-shop@atrea.cz_.pdf",
+      "filename": "Vaše objednávka č. 992025400807 je připravena k ex-202505141157-_e-shop@atrea.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "e-shop@atrea.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FRITZ! App Wi-Fi - TCL T612B - Measure Wi-Fi Majsy-202503251602-_M.A.J. Puzik_.pdf",
+      "filename": "FRITZ! App Wi-Fi - TCL T612B - Measure Wi-Fi Majsy-202503251602-_M.A.J. Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "M.A.J. Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je neděle, únor 23, 2-202502232045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je neděle, únor 23, 2-202502232045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Vyúčtování služeb-202504011153-_Nordic Telecom_.pdf",
+      "filename": "Vyúčtování služeb-202504011153-_Nordic Telecom_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Nordic Telecom",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Škoda Fabia 3x jinak - skladem od 4287 Kč bez DPH -202503260714-_NaOperak.cz_.pdf",
+      "filename": "Škoda Fabia 3x jinak - skladem od 4287 Kč bez DPH -202503260714-_NaOperak.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "NaOperak.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je pátek, únor 28, 21-202502282045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je pátek, únor 28, 21-202502282045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ Moje O2 - vyúčtování za služby-202504051141-_Info@kartal.cz_.pdf",
+      "filename": "Fwd_ Moje O2 - vyúčtování za služby-202504051141-_Info@kartal.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Info@kartal.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/ELK_ Děkujeme za váš zájem-202504012255-_Biem Michal_.pdf",
+      "filename": "ELK_ Děkujeme za váš zájem-202504012255-_Biem Michal_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Biem Michal",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je sobota, březen 15,-202503152045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je sobota, březen 15,-202503152045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ Faktura zahrada-202505101242-_Ing. Zuzana Puzikova_.pdf",
+      "filename": "Fwd_ Faktura zahrada-202505101242-_Ing. Zuzana Puzikova_.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Ing. Zuzana Puzikova",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Poslední upomínka platby za fakturu 871100006523 z-202503210011-_Elli_.pdf",
+      "filename": "Poslední upomínka platby za fakturu 871100006523 z-202503210011-_Elli_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Elli",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/2025000480-202504161202-Bazénydnes s.r.o..pdf",
+      "filename": "2025000480-202504161202-Bazénydnes s.r.o..pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je úterý, březen 18, -202503182045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je úterý, březen 18, -202503182045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your receipt from KREA.AI, Inc. #2800-3135-202504272002-_KREA.AI, Inc._.pdf",
+      "filename": "Your receipt from KREA.AI, Inc. #2800-3135-202504272002-_KREA.AI, Inc._.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "KREA.AI, Inc.",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je pátek, březen 14, -202503142045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je pátek, březen 14, -202503142045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Finalni FA - Hosting-202504021312-Fotograf Aleš Kartal.pdf",
+      "filename": "Finalni FA - Hosting-202504021312-Fotograf Aleš Kartal.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Faktura-202504030800-Patrik Tomšů.pdf",
+      "filename": "Faktura-202504030800-Patrik Tomšů.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Byl s vámi sdílen soubor „Klinik Floridsdorf_ENTLA-202505181419-_M.A.J. Puzik_.pdf",
+      "filename": "Byl s vámi sdílen soubor „Klinik Floridsdorf_ENTLA-202505181419-_M.A.J. Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "M.A.J. Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky č. 12144956 _ Zálohová faktur-202504191714-_TONERMAX, s.r.o. - www.tonermax.cz_.pdf",
+      "filename": "Potvrzení objednávky č. 12144956 _ Zálohová faktur-202504191714-_TONERMAX, s.r.o. - www.tonermax.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "TONERMAX, s.r.o. - www.tonermax.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Doklad na přijatou platbu pekro.cz-202505131105-.pdf",
+      "filename": "Doklad na přijatou platbu pekro.cz-202505131105-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/UPS zásilka - HV236138VHQ - 1ZHV23610400672018-202504220929-.pdf",
+      "filename": "UPS zásilka - HV236138VHQ - 1ZHV23610400672018-202504220929-.pdf",
+      "tags": [
+        "rok_2018",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_FW_ RE_ Re_ Import z banky-202505142051-_Info _ BitFaktura.cz_.pdf",
+      "filename": "Re_FW_ RE_ Re_ Import z banky-202505142051-_Info _ BitFaktura.cz_.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Info _ BitFaktura.cz",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Datové schránky_ Nová zpráva (schránka_ bjk23uw)-202504231618-_notifikace@mojedatovaschranka.cz_.pdf",
+      "filename": "Datové schránky_ Nová zpráva (schránka_ bjk23uw)-202504231618-_notifikace@mojedatovaschranka.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "notifikace@mojedatovaschranka.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Příprava nabídky do výběrového řízení - krok za kr-202504280836-V. Petrová.pdf",
+      "filename": "Příprava nabídky do výběrového řízení - krok za kr-202504280836-V. Petrová.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ Faktura - rostlinný materiál-202504241207-_Ing. Zuzana Puzikova_.pdf",
+      "filename": "Fwd_ Faktura - rostlinný materiál-202504241207-_Ing. Zuzana Puzikova_.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Ing. Zuzana Puzikova",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Mzdy-202503-202504041001-Daniela Pauknerová.pdf",
+      "filename": "Mzdy-202503-202504041001-Daniela Pauknerová.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FW_ n26-202504301532-_Milan Puzik_.pdf",
+      "filename": "FW_ n26-202504301532-_Milan Puzik_.pdf",
+      "tags": [
+        "banka",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "N26",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Faktura 825035097 [Active24]-202503271415-Tým Active24.pdf",
+      "filename": "Faktura 825035097 [Active24]-202503271415-Tým Active24.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Vynechani uderu srdce-202504101525-_M.A.J. Puzik_.pdf",
+      "filename": "Vynechani uderu srdce-202504101525-_M.A.J. Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "M.A.J. Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_DCH - MK - duplicita.-202503191525-Mgr. Michal Ševčík.pdf",
+      "filename": "Re_DCH - MK - duplicita.-202503191525-Mgr. Michal Ševčík.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ Penta Clinic-202503241246-Martin Pužík.pdf",
+      "filename": "Fwd_ Penta Clinic-202503241246-Martin Pužík.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Vaše vyúčtování zelené energie VS 7917005955-202504101108-.pdf",
+      "filename": "Vaše vyúčtování zelené energie VS 7917005955-202504101108-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je pondělí, březen 10-202503102045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je pondělí, březen 10-202503102045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FW_ Daň NV, SC s.r.o., PZ, rok 2025., -202504171936-_Jan Mosinger_.pdf",
+      "filename": "FW_ Daň NV, SC s.r.o., PZ, rok 2025., -202504171936-_Jan Mosinger_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Jan Mosinger",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/sedivak Bobwhite-202504031038-_Milan Puzik_.pdf",
+      "filename": "sedivak Bobwhite-202504031038-_Milan Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Milan Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je úterý, únor 25, 21-202502252045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je úterý, únor 25, 21-202502252045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je neděle, březen 9, -202503092045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je neděle, březen 9, -202503092045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Změna pracoviště-202505121002-Recepce Urosanté.pdf",
+      "filename": "Změna pracoviště-202505121002-Recepce Urosanté.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Steuerfreie Transaktion mit Adobe-202504260620-_Adobe_.pdf",
+      "filename": "Steuerfreie Transaktion mit Adobe-202504260620-_Adobe_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Adobe",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Dobíjení kreditu ISDS – Vaše platba byla přijata a-202504071906-.pdf",
+      "filename": "Dobíjení kreditu ISDS – Vaše platba byla přijata a-202504071906-.pdf",
+      "tags": [
+        "platba",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/[GitHub] Payment Receipt for majpuzik-202504242015-_GitHub_.pdf",
+      "filename": "[GitHub] Payment Receipt for majpuzik-202504242015-_GitHub_.pdf",
+      "tags": [
+        "faktura",
+        "platba",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "GitHub",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Doručili jsme Vaši zásilku č. 13855082688723-202505150810-.pdf",
+      "filename": "Doručili jsme Vaši zásilku č. 13855082688723-202505150810-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 15. 5. 202-202505151219-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 15. 5. 202-202505151219-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Přijetí objednávky s digitálním obsahem-202503241220-.pdf",
+      "filename": "Přijetí objednávky s digitálním obsahem-202503241220-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FW_ Společenství vlastníků pro dům Kobylisy 1853, -202505010853-_Jan Mosinger_.pdf",
+      "filename": "FW_ Společenství vlastníků pro dům Kobylisy 1853, -202505010853-_Jan Mosinger_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Jan Mosinger",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_Prodej přebytečné techniky-202505131414-Michal Bumbálek.pdf",
+      "filename": "Re_Prodej přebytečné techniky-202505131414-Michal Bumbálek.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je pondělí, březen 3,-202503032045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je pondělí, březen 3,-202503032045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Zrušeno_ Praha_Karlín_zbraně Informace-202504121339-Rezervační systém QCal.pdf",
+      "filename": "Zrušeno_ Praha_Karlín_zbraně Informace-202504121339-Rezervační systém QCal.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Datové schránky_ Nová zpráva (schránka_ 7ujzhir)-202505161428-_notifikace@mojedatovaschranka.cz_.pdf",
+      "filename": "Datové schránky_ Nová zpráva (schránka_ 7ujzhir)-202505161428-_notifikace@mojedatovaschranka.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "notifikace@mojedatovaschranka.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky-202505142259-.pdf",
+      "filename": "Potvrzení objednávky-202505142259-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_Prodej přebytečné techniky-202505130816-Michal Bumbálek.pdf",
+      "filename": "Re_Prodej přebytečné techniky-202505130816-Michal Bumbálek.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Fwd_ OPG snímek - Kunst Maxmilián-202503261904-_Marketa Kunst_.pdf",
+      "filename": "Fwd_ OPG snímek - Kunst Maxmilián-202503261904-_Marketa Kunst_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Marketa Kunst",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je neděle, březen 16,-202503162045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je neděle, březen 16,-202503162045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Faktura-202505051005-Patrik Tomšů.pdf",
+      "filename": "Faktura-202505051005-Patrik Tomšů.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Váš balícek je na ceste-202505131802-.pdf",
+      "filename": "Váš balícek je na ceste-202505131802-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Temu (#PO-053-200675262623111-202504020022-_Temu_.pdf",
+      "filename": "Potvrzení objednávky Temu (#PO-053-200675262623111-202504020022-_Temu_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Temu",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your receipt from Eleven Labs Inc. #2460-3168-202504222059-_Eleven Labs Inc._.pdf",
+      "filename": "Your receipt from Eleven Labs Inc. #2460-3168-202504222059-_Eleven Labs Inc._.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Eleven Labs Inc.",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/🏒 Fanděte hokeji a získejte 4K monitor v hodnotě -202505061746-_CZECHIA.COM_.pdf",
+      "filename": "🏒 Fanděte hokeji a získejte 4K monitor v hodnotě -202505061746-_CZECHIA.COM_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "CZECHIA.COM",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Informace o vyřízení reklamace RD-647_2025-202503200804-_Certus Mercatus_.pdf",
+      "filename": "Informace o vyřízení reklamace RD-647_2025-202503200804-_Certus Mercatus_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Certus Mercatus",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky-202503241223-_predplatne@predplatne.cncenter.cz_.pdf",
+      "filename": "Potvrzení objednávky-202503241223-_predplatne@predplatne.cncenter.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "predplatne@predplatne.cncenter.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Home Assistant Cloud subscription receipt-202505180057-.pdf",
+      "filename": "Home Assistant Cloud subscription receipt-202505180057-.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Vaše vyúčtování zelené energie VS 7917007602-202505141604-.pdf",
+      "filename": "Vaše vyúčtování zelené energie VS 7917007602-202505141604-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 22. 4. 202-202504221151-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 22. 4. 202-202504221151-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/hovno-202504301547-_M.A.J. Puzik_.pdf",
+      "filename": "hovno-202504301547-_M.A.J. Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "M.A.J. Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je středa, březen 12,-202503122045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je středa, březen 12,-202503122045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/FW_ Your receipt from Celonis Inc. #2709-5043-202504292044-_M.A.J. Puzik_.pdf",
+      "filename": "FW_ Your receipt from Celonis Inc. #2709-5043-202504292044-_M.A.J. Puzik_.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "M.A.J. Puzik",
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your A-ROSA Booking Confirmation 589585-202505112115-.pdf",
+      "filename": "Your A-ROSA Booking Confirmation 589585-202505112115-.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Win 11 Pro-202505140803-_WinKey podpora_.pdf",
+      "filename": "Win 11 Pro-202505140803-_WinKey podpora_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "WinKey podpora",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Akční nabídka na skladové vozy - Kia Sportage a Ce-202504021018-_NaOperak.cz_.pdf",
+      "filename": "Akční nabídka na skladové vozy - Kia Sportage a Ce-202504021018-_NaOperak.cz_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "NaOperak.cz",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Re_Import z banky-202505121431-_Milan Puzik_.pdf",
+      "filename": "Re_Import z banky-202505121431-_Milan Puzik_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Milan Puzik",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 13. 4. 202-202504131518-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 13. 4. 202-202504131518-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/CEB Info_ Nový elektronický výpis-202505011216-_CSOB Notification_.pdf",
+      "filename": "CEB Info_ Nový elektronický výpis-202505011216-_CSOB Notification_.pdf",
+      "tags": [
+        "banka",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "CSOB",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je neděle, březen 2, -202503022045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je neděle, březen 2, -202503022045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Už to chystáme. _ Obj. č. 546578720-202505121318-_Alza.cz_.pdf",
+      "filename": "Už to chystáme. _ Obj. č. 546578720-202505121318-_Alza.cz_.pdf",
+      "tags": [
+        "objednávka",
+        "e-shop",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Alza",
+      "document_type": "Objednávka"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Upozornění_ začátek události je sobota, březen 1, -202503012045-_Proton_.pdf",
+      "filename": "Upozornění_ začátek události je sobota, březen 1, -202503012045-_Proton_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Proton",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 16. 4. 202-202504160722-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 16. 4. 202-202504160722-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Potvrzení objednávky Google Play ze dne 15. 4. 202-202504151350-_Google Play_.pdf",
+      "filename": "Potvrzení objednávky Google Play ze dne 15. 4. 202-202504151350-_Google Play_.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": "Google Play",
+      "document_type": "PDF"
+    }
+  ]
+}

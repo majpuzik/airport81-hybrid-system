@@ -1,0 +1,134 @@
+{
+  "timestamp": "2025-08-27T15:15:49.976939",
+  "total_documents": 9,
+  "wrong_detections": 4,
+  "accuracy": "55.6%",
+  "details": [
+    {
+      "file": "account-statement_2023-01-01_2025-08-01_cs-cz_a1cb79.pdf",
+      "path": "/Users/m.a.j.puzik/Downloads/account-statement_2023-01-01_2025-08-01_cs-cz_a1cb79.pdf",
+      "wrong_detection": {
+        "type": "Bankovní výpis",
+        "reason": "Detekováno podle názvu souboru"
+      },
+      "correct_detection": {
+        "type": "Bankovní výpis",
+        "reason": "obsahuje zůstatky, bankovní identifikátory",
+        "confidence": 5
+      },
+      "match": true
+    },
+    {
+      "file": "faktura_25700617.pdf",
+      "path": "/Users/m.a.j.puzik/Downloads/faktura_25700617.pdf",
+      "wrong_detection": {
+        "type": "Faktura",
+        "reason": "Detekováno podle názvu souboru"
+      },
+      "correct_detection": {
+        "type": "Faktura",
+        "reason": "IČO/DIČ, datum splatnosti",
+        "confidence": 3
+      },
+      "match": true
+    },
+    {
+      "file": "faktura_25700617 (1).pdf",
+      "path": "/Users/m.a.j.puzik/Downloads/faktura_25700617 (1).pdf",
+      "wrong_detection": {
+        "type": "Faktura",
+        "reason": "Detekováno podle názvu souboru"
+      },
+      "correct_detection": {
+        "type": "Faktura",
+        "reason": "IČO/DIČ, datum splatnosti",
+        "confidence": 3
+      },
+      "match": true
+    },
+    {
+      "file": "faktura_120825.pdf",
+      "path": "/Users/m.a.j.puzik/Downloads/faktura_120825.pdf",
+      "wrong_detection": {
+        "type": "Faktura",
+        "reason": "Detekováno podle názvu souboru"
+      },
+      "correct_detection": {
+        "type": "Faktura",
+        "reason": "IČO/DIČ, datum splatnosti",
+        "confidence": 3
+      },
+      "match": true
+    },
+    {
+      "file": "Your receipt from ZEMITH.COM #2415-7573-202504132053-_ZEMITH.COM_.pdf",
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your receipt from ZEMITH.COM #2415-7573-202504132053-_ZEMITH.COM_.pdf",
+      "wrong_detection": {
+        "type": "Neznámý",
+        "reason": "Název neodpovídá vzoru"
+      },
+      "correct_detection": {
+        "type": "Potvrzení o platbě",
+        "reason": "obsahuje receipt markery",
+        "confidence": 2
+      },
+      "match": false
+    },
+    {
+      "file": "Your receipt from KREA.AI, Inc. #2800-3135-202504272002-_KREA.AI, Inc._.pdf",
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your receipt from KREA.AI, Inc. #2800-3135-202504272002-_KREA.AI, Inc._.pdf",
+      "wrong_detection": {
+        "type": "Neznámý",
+        "reason": "Název neodpovídá vzoru"
+      },
+      "correct_detection": {
+        "type": "Potvrzení o platbě",
+        "reason": "obsahuje receipt markery",
+        "confidence": 2
+      },
+      "match": false
+    },
+    {
+      "file": "Your receipt from Eleven Labs Inc. #2460-3168-202504222059-_Eleven Labs Inc._.pdf",
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your receipt from Eleven Labs Inc. #2460-3168-202504222059-_Eleven Labs Inc._.pdf",
+      "wrong_detection": {
+        "type": "Neznámý",
+        "reason": "Název neodpovídá vzoru"
+      },
+      "correct_detection": {
+        "type": "Potvrzení o platbě",
+        "reason": "obsahuje receipt markery",
+        "confidence": 2
+      },
+      "match": false
+    },
+    {
+      "file": "Vyuctovaci_faktura_bD_VS_7917001141_vystaveno_13012025.pdf",
+      "path": "/Users/m.a.j.puzik/Desktop/Vyuctovaci_faktura_bD_VS_7917001141_vystaveno_13012025.pdf",
+      "wrong_detection": {
+        "type": "Faktura",
+        "reason": "Detekováno podle názvu souboru"
+      },
+      "correct_detection": {
+        "type": "Faktura",
+        "reason": "IČO/DIČ, datum splatnosti",
+        "confidence": 3
+      },
+      "match": true
+    },
+    {
+      "file": "Your DeepL Pro invoice-202504221447-_DeepL_.pdf",
+      "path": "/Users/m.a.j.puzik/Documents/Thunderbird-to-pdf/Your DeepL Pro invoice-202504221447-_DeepL_.pdf",
+      "wrong_detection": {
+        "type": "Faktura",
+        "reason": "Detekováno podle názvu souboru"
+      },
+      "correct_detection": {
+        "type": "Nerozpoznáno",
+        "reason": "Nízké skóre detekce",
+        "confidence": 0
+      },
+      "match": false
+    }
+  ]
+}

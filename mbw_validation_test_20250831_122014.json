@@ -1,0 +1,103 @@
+{
+  "test_date": "2025-08-31T12:20:14.799824",
+  "documents_tested": 5,
+  "results": [
+    {
+      "filepath": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/MBW • Faktura za STK náklady 8000 Kč-202504091306-Martin Pužík_1.pdf",
+      "filename": "MBW • Faktura za STK náklady 8000 Kč-202504091306-Martin Pužík_1.pdf",
+      "type": "neznamy",
+      "confidence": 0.0,
+      "source": "content_analysis",
+      "fields": {},
+      "all_scores": {
+        "faktura": 0.0,
+        "bankovni_vypis": 0.0,
+        "ucetnictvi_komunikace": 0.0
+      },
+      "text_length": 950
+    },
+    {
+      "filepath": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/Re_MBW pohyby na účtu 2023-202406261403-Pavel Brzák.pdf",
+      "filename": "Re_MBW pohyby na účtu 2023-202406261403-Pavel Brzák.pdf",
+      "type": "ucetnictvi_komunikace",
+      "confidence": 0.9,
+      "source": "content_analysis",
+      "fields": {
+        "predmet": "RE:",
+        "odesilatel": "Brzák",
+        "rok": "2023"
+      },
+      "all_scores": {
+        "ucetnictvi_komunikace": 0.9,
+        "email_notifikace": 0.7333333333333333,
+        "faktura": 0.0
+      },
+      "text_length": 1384
+    },
+    {
+      "filepath": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/Nedoručitelná_ Re_ Ucetnictvi MBWs za 2023-202406251540-_Microsoft Outlook_.pdf",
+      "filename": "Nedoručitelná_ Re_ Ucetnictvi MBWs za 2023-202406251540-_Microsoft Outlook_.pdf",
+      "type": "ucetnictvi_komunikace",
+      "confidence": 1.0,
+      "source": "content_analysis",
+      "fields": {
+        "predmet": "Re:",
+        "odesilatel": "puzik",
+        "rok": "2023",
+        "dokumenty": "doklady"
+      },
+      "all_scores": {
+        "ucetnictvi_komunikace": 1.0,
+        "email_notifikace": 1.0,
+        "faktura": 0.0
+      },
+      "text_length": 28880
+    },
+    {
+      "filepath": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/MBW - další nejasné platby-202406281637-Martin Pužík.pdf",
+      "filename": "MBW - další nejasné platby-202406281637-Martin Pužík.pdf",
+      "type": "platebni_informace",
+      "confidence": 1.0,
+      "source": "content_analysis",
+      "fields": {
+        "castka": "421,08",
+        "typ": "nejasné",
+        "firma": "MBW",
+        "datum": "2023"
+      },
+      "all_scores": {
+        "platebni_informace": 1.0,
+        "faktura": 0.8666666666666667,
+        "ucetnictvi_komunikace": 0.8
+      },
+      "text_length": 1654
+    },
+    {
+      "filepath": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/1allpdf/Accepted_ Poslat účetnictví MBWs pan Brzak @ Mon F-202406251815-Martin Pužík.pdf",
+      "filename": "Accepted_ Poslat účetnictví MBWs pan Brzak @ Mon F-202406251815-Martin Pužík.pdf",
+      "type": "email_notifikace",
+      "confidence": 0.8666666666666667,
+      "source": "content_analysis",
+      "fields": {
+        "typ": "Accepted",
+        "odesilatel": "gmail"
+      },
+      "all_scores": {
+        "email_notifikace": 0.8666666666666667,
+        "ucetnictvi_komunikace": 0.8,
+        "faktura": 0.0
+      },
+      "text_length": 1686
+    }
+  ],
+  "statistics": {
+    "type_counts": {
+      "neznamy": 1,
+      "ucetnictvi_komunikace": 2,
+      "platebni_informace": 1,
+      "email_notifikace": 1
+    },
+    "average_confidence": 0.7533333333333333,
+    "high_confidence_count": 4
+  }
+}

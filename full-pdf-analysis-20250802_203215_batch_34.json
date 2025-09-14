@@ -1,0 +1,162 @@
+{
+  "batch_start": 34000,
+  "batch_end": 35000,
+  "timestamp": "2025-08-02T20:37:07.362025",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 531,
+    "unknown": 158,
+    "order": 179,
+    "receipt": 39,
+    "subscription": 17,
+    "shipping": 22,
+    "notification": 40,
+    "contract": 10,
+    "bank_statement": 4
+  },
+  "metadata_samples": [
+    {
+      "file": "NOVINKY! GIGA nálož nově přidaných produktů je tu.-202504201032-GIGACOMPUTER TÝM.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2429
+    },
+    {
+      "file": "Statistic Zadní část-202409170005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 249
+    },
+    {
+      "file": "Tragédie v Magdeburku_ Řidič vjel autem na vánoční-202412210559-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 4053
+    },
+    {
+      "file": "You are eligible for the upgrade - WinOptimizer 27-202502151401-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 6129
+    },
+    {
+      "file": "Deine neue Sportjacke wartet!-202405220915-_Giesswein_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1288
+    },
+    {
+      "file": "How Much Will the iPhone 16 Cost_ Here's What We E-202409071232-_CNET Mobile_.pdf",
+      "type": "receipt",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2529
+    },
+    {
+      "file": "DxOs Angebote zum Cyber Monday sind UNGLAUBLICH – -202412011531-_DxO Team_-1.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {},
+      "text_length": 2279
+    },
+    {
+      "file": "Only a few hours left_ The best software for cloni-202406081400-_Ashampoo News_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3910
+    },
+    {
+      "file": "rewind pro iphone-202504302306-_Milan Puzik_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 650
+    },
+    {
+      "file": "Your Coinbase Wallet  has not yet been verified-202505180056-Coinbase Wallet.pdf",
+      "type": "receipt",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2935
+    },
+    {
+      "file": "Milan_ Check out your account summary-202504110152-_Hertz Gold Plus Rewards_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3422
+    },
+    {
+      "file": "Inaktives NiceHash Konto_ Die Servicegebühr wurde -202411150509-_NiceHash_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 923
+    },
+    {
+      "file": "Inspirace pro bydlení za akční ceny-202410261051-Kaufland marketplace – newsletter.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1350
+    },
+    {
+      "file": "New_ majRB3 @ MAJSYNO5-202501102219-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 709
+    },
+    {
+      "file": "Limited Time Offer_ 20% Off on Stylish Finish Outd-202406011433-_DECOVRY_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 930
+    },
+    {
+      "file": "Sauvignon, la sélection de vins blancs minéraux et-202501020700-_Guide Hachette des Vins_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2391
+    },
+    {
+      "file": "Google Alert – tesla-202501301941-_Google Alerts_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3048
+    },
+    {
+      "file": "Automate Data and Build Prep with Magics' SDK-202410071406-_David from Materialise Software_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 2919
+    },
+    {
+      "file": "Y&T_ Registrace zájemce _ zájemců-202404151549-_Veronika Petana_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 644
+    },
+    {
+      "file": "Bitcoin down -6.11%  in the last 7d-202406171805-_Blockchain.com_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 3079
+    }
+  ],
+  "error_count": 0
+}

@@ -1,0 +1,173 @@
+{
+  "batch_start": 7000,
+  "batch_end": 8000,
+  "timestamp": "2025-08-02T20:33:22.197879",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 517,
+    "order": 181,
+    "notification": 36,
+    "unknown": 180,
+    "shipping": 27,
+    "contract": 4,
+    "receipt": 31,
+    "subscription": 21,
+    "bank_statement": 3
+  },
+  "metadata_samples": [
+    {
+      "file": "Naše podmínky a ujednání se mění 📄-202408291121-_Revolut_.pdf",
+      "type": "invoice",
+      "score": 34,
+      "metadata": {
+        "ico": "08804411"
+      },
+      "text_length": 16709
+    },
+    {
+      "file": "Nová švédská tepelná čerpadla a nové ceny-202503260750-IVT Tepelná čerpadla.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {
+        "ico": "05583004",
+        "dic": "CZ05583004"
+      },
+      "text_length": 2011
+    },
+    {
+      "file": "[192.168.10.34] V zařízení NAS4 byla zjištěna bezp-202505130419-_NAS4 - Synology DiskStation_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 525
+    },
+    {
+      "file": "Order by today at 12PM EST to get your gift on tim-202502121510-_Ray-Ban_.pdf",
+      "type": "order",
+      "score": 12,
+      "metadata": {},
+      "text_length": 3146
+    },
+    {
+      "file": "Get the Best Deals on the Hottest Items!-202505151021-_MOVE SPEED_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1094
+    },
+    {
+      "file": "Upozornění_ začátek události je pátek, ledna 3, 21-202501032045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 518
+    },
+    {
+      "file": "Projects We Love-202408231507-_Kickstarter News_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2417
+    },
+    {
+      "file": "Exclusive Early Bird Offers on OnePlus 13-202412181226-_OnePlus_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 643
+    },
+    {
+      "file": "Photographing fashion with the planet in mind-202501141300-_Canon_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 875
+    },
+    {
+      "file": "MicroStrategy je ve stovce nejvýznamnějších firem -202412191415-Kryštof z Coinmate.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 6639
+    },
+    {
+      "file": "🚚 Aktualisierte Kaufbestätigung_ FRANCE LOUIS XVI-202405131643-_eBay_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2439
+    },
+    {
+      "file": "Hot Kickstarter Projects Special Pick up for You-202412241641-_PledgeBox_.pdf",
+      "type": "order",
+      "score": 18,
+      "metadata": {},
+      "text_length": 2231
+    },
+    {
+      "file": "Jsem smutný, přesto mám pro Vás dárek.-202410090803-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1543
+    },
+    {
+      "file": "Zobrazit mou žádost o spojení-202412161214-František Soudek 🚀 Productway.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1352
+    },
+    {
+      "file": "Stvrzenka za vaši platbu příjemci Restore Technolo-202406272045-_service@intl.paypal.com_.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {},
+      "text_length": 1807
+    },
+    {
+      "file": "Žhavé aukce_ sběratelské předměty WW2 a Třetí říše-202407251105-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 37,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2985
+    },
+    {
+      "file": "Project Update #17_ Rokid AR Lite, Your First AR G-202410120950-_Kickstarter_.pdf",
+      "type": "order",
+      "score": 17,
+      "metadata": {},
+      "text_length": 6786
+    },
+    {
+      "file": "Neue Woche_ Neue Deals!-202407011112-_eBay_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 1969
+    },
+    {
+      "file": "Luck - The Smart Hummingbird Feeder-202409171959-_BackerHive_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1247
+    },
+    {
+      "file": "🛠 Sada soustružnických dlát pro kreativní ručičky-202411220721-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 88,
+      "metadata": {
+        "ico": "27425134",
+        "dic": "CZ27425134"
+      },
+      "text_length": 4498
+    }
+  ],
+  "error_count": 0
+}

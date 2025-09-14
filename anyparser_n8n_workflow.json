@@ -1,0 +1,196 @@
+{
+  "name": "AnyParser Document Processing",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://anyparserapi.com/parse/v1",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ap-29644980581060103a820f936e3356a8da481ac7afffd85d"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "format",
+              "value": "json"
+            },
+            {
+              "name": "model",
+              "value": "text"
+            },
+            {
+              "name": "image",
+              "value": "true"
+            },
+            {
+              "name": "table",
+              "value": "true"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "anyparser-parse",
+      "name": "AnyParser Parse Document",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.text}}",
+              "operation": "contains",
+              "value2": "faktura"
+            }
+          ]
+        }
+      },
+      "id": "check-invoice",
+      "name": "Check if Invoice",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Extrahuj metadata z textu\nconst text = $input.first().json.text || '';\nconst metadata = {};\n\n// IČO\nconst icoMatch = text.match(/IČO:?\\s*(\\d{8})/);\nif (icoMatch) metadata.ico = icoMatch[1];\n\n// DIČ\nconst dicMatch = text.match(/DIČ:?\\s*(CZ\\d{8,10})/);\nif (dicMatch) metadata.dic = dicMatch[1];\n\n// Částka\nconst amountMatch = text.match(/(?:celkem|total)[\\s:]*?([\\d\\s]+(?:[,.]?\\d{2})?)\\s*(?:Kč|CZK)/i);\nif (amountMatch) {\n  const amount = amountMatch[1].replace(/\\s/g, '').replace(',', '.');\n  metadata.amount = parseFloat(amount);\n}\n\n// Číslo faktury\nconst invoiceMatch = text.match(/(?:číslo faktury|invoice no)[:\\s]*([A-Z0-9\\-\\/]+)/i);\nif (invoiceMatch) metadata.invoiceNumber = invoiceMatch[1];\n\nreturn {\n  json: {\n    documentType: 'invoice',\n    metadata: metadata,\n    text: text.substring(0, 500)\n  }\n};"
+      },
+      "id": "extract-metadata",
+      "name": "Extract Invoice Metadata",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 250]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 0f57f058dbe5d56e9ddd63b74251fd7655ed0932"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{$json.documentType}} - {{$json.metadata.invoiceNumber || 'Unknown'}}"
+            },
+            {
+              "name": "notes",
+              "value": "IČO: {{$json.metadata.ico}}\nDIČ: {{$json.metadata.dic}}\nČástka: {{$json.metadata.amount}} Kč"
+            }
+          ]
+        }
+      },
+      "id": "upload-paperless",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1050, 250]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "documentType",
+              "value": "other"
+            }
+          ]
+        }
+      },
+      "id": "set-other",
+      "name": "Set as Other Document",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [850, 350]
+    }
+  ],
+  "connections": {
+    "manual-trigger": {
+      "main": [
+        [
+          {
+            "node": "anyparser-parse",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "anyparser-parse": {
+      "main": [
+        [
+          {
+            "node": "check-invoice",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "check-invoice": {
+      "main": [
+        [
+          {
+            "node": "extract-metadata",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "set-other",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "extract-metadata": {
+      "main": [
+        [
+          {
+            "node": "upload-paperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-01-30T17:00:00.000Z",
+  "versionId": "1"
+}

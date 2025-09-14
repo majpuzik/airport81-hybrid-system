@@ -1,0 +1,164 @@
+{
+  "batch_start": 32000,
+  "batch_end": 33000,
+  "timestamp": "2025-08-02T20:36:50.353953",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 176,
+    "invoice": 520,
+    "order": 176,
+    "notification": 40,
+    "receipt": 34,
+    "shipping": 24,
+    "subscription": 21,
+    "contract": 8,
+    "bank_statement": 1
+  },
+  "metadata_samples": [
+    {
+      "file": "Pomáháme obětem záplav ▶-202409221004-_zoohit info_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1169
+    },
+    {
+      "file": "Kostenexplosion 2025_ Diese Änderungen werden das -202501020549-_Epoch Guten Morgen_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 5867
+    },
+    {
+      "file": "🍃 Nečekejte, až voda zezelená – zasáhněte včas-202505150742-_Chlorito.cz_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {
+        "ico": "03389821"
+      },
+      "text_length": 3146
+    },
+    {
+      "file": "No Need for Expensive Voice-Over Artists M.a.j. (E-202411102243-_Kate @ Pictory_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1183
+    },
+    {
+      "file": "Ideas for summer fun 💡-202407051803-_Kickstarter Projects We Love_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2720
+    },
+    {
+      "file": "Daily Overview for Bressner-202502061034-_Manage It_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 545
+    },
+    {
+      "file": "📐 Přesnost nade vše_ Měřidla, která ocení každý m-202503240622-_Radim z uni-maxu_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 3947
+    },
+    {
+      "file": "Cyber Week_ Save up to 80% now-202411251402-_Ashampoo News_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1283
+    },
+    {
+      "file": "Máte více než 10 nových pozvání-202412241920-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1448
+    },
+    {
+      "file": "Robert F. Kennedy Jr. – Ansprache an die Nation vo-202408261806-_Kopp Verlag_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1207
+    },
+    {
+      "file": "Stvrzenka za vaši platbu příjemci GitHub, Inc.-202411241908-_PayPal_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 1798
+    },
+    {
+      "file": "See the world through a fresh lens with Flying Blu-202408142151-_Flying Blue_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2458
+    },
+    {
+      "file": "Statistic Trouba-202409110005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 237
+    },
+    {
+      "file": "Pure Air, Pure Savings—48-Hour Weekend Sale! 🍃-202409201432-_Sensibo_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1213
+    },
+    {
+      "file": "Všechno nejlepší k narozeninám, Zuzano-202504161609-_Adam _ Knihobot_.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 4561
+    },
+    {
+      "file": "Upozornění_ začátek události je pondělí, září 16, -202409162045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 525
+    },
+    {
+      "file": "SHARPEN #4 professional - Give your photos the per-202409051401-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 4032
+    },
+    {
+      "file": "Neues von Ihrem gespeicherten Verkäufer_ manysello-202407171822-_eBay_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2114
+    },
+    {
+      "file": "Autorizovali jste platbu obchodníkovi Canal+ Luxem-202501080910-_service@intl.paypal.com_.pdf",
+      "type": "invoice",
+      "score": 25,
+      "metadata": {},
+      "text_length": 2778
+    },
+    {
+      "file": "How to Build a Million-Dollar One-Person Business -202411221502-_Glasp_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 4347
+    }
+  ],
+  "error_count": 0
+}

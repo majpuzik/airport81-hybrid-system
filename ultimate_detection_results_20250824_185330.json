@@ -1,0 +1,725 @@
+{
+  "timestamp": "20250824_185330",
+  "configuration": {
+    "sample_size": 500,
+    "use_ocr": true,
+    "use_ml": true
+  },
+  "statistics": {
+    "recognized": 444,
+    "unrecognized": 56,
+    "errors": 0,
+    "success_rate": 88.8,
+    "avg_confidence": 34.70036972280558,
+    "elapsed_seconds": 2298.814301967621,
+    "seconds_per_document": 4.597628603935242
+  },
+  "categories": {
+    "ÚŘEDNÍ": 80,
+    "PUBLIKACE": 116,
+    "OBČANSKÉ": 19,
+    "ZDRAVOTNÍ": 90,
+    "FIREMNÍ": 39,
+    "FINANČNÍ": 95,
+    "PRÁVNÍ": 5
+  },
+  "subtypes": {
+    "policie": 41,
+    "newsletter": 84,
+    "občanské_obecný": 16,
+    "zdravotní_obecný": 76,
+    "firemní_obecný": 32,
+    "předpis": 12,
+    "výpověď": 7,
+    "úřední_obecný": 36,
+    "účtenka": 47,
+    "finanční_obecný": 26,
+    "soud": 3,
+    "faktura": 14,
+    "publikace_obecný": 21,
+    "notář": 1,
+    "výpis": 8,
+    "časopis": 4,
+    "právní_obecný": 3,
+    "kniha": 5,
+    "nájem": 3,
+    "vyšetření": 2,
+    "kniha-velký_soubor": 2,
+    "advokát": 1
+  },
+  "methods": {
+    "text_extraction:pdftotext": 429,
+    "ml": 429,
+    "filename": 47,
+    "ocr": 17
+  },
+  "new_categories_count": {
+    "ÚŘEDNÍ": 80,
+    "ZDRAVOTNÍ": 90,
+    "PRÁVNÍ": 5,
+    "FIREMNÍ": 39,
+    "OBČANSKÉ": 19
+  },
+  "examples": {
+    "recognized": [
+      {
+        "file": "20250323-Týdenní přehled z iDNES Premium-8586.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "policie",
+        "confidence": 60.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:policie",
+          "text:policejní",
+          "text:police",
+          "text:plat"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 60.0,
+          "FIREMNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250326-Essential AI strategies for PMs ⚡-8130.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250323-To pair with what you purchased-8666.pdf",
+        "category": "OBČANSKÉ",
+        "subtype": "občanské_obecný",
+        "confidence": 60.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext",
+          "filename"
+        ],
+        "patterns": [
+          "filename:purchase",
+          "text:ct",
+          "text:lease",
+          "text:purchase",
+          "text:eet",
+          "regex:EET",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "OBČANSKÉ": 60.0,
+          "ZDRAVOTNÍ": 15.0,
+          "FINANČNÍ": 40.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250412-Zahrajte si na jiných hřištích s Kredit Play-5170.pdf",
+        "category": "OBČANSKÉ",
+        "subtype": "občanské_obecný",
+        "confidence": 45.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext",
+          "filename"
+        ],
+        "patterns": [
+          "filename:kredit",
+          "text:plat",
+          "text:kredit"
+        ],
+        "all_scores": {
+          "OBČANSKÉ": 45.0,
+          "FIREMNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250511-Gaia, Portugal 🇵🇹 Direct Ocean View Apartments-42455.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "methods": [
+          "ml",
+          "text_extraction:pdftotext",
+          "filename"
+        ],
+        "patterns": [
+          "filename:ct",
+          "text:ct",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 45.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250407-[192.168.10.35] Kontejner paperless-web v nástroji-6287.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "policie",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:protokol"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250419-🔩 Řízněte si vlastní závit – do neděle o 40 % lev-3959.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "firemní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:dič"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 15.0,
+          "FINANČNÍ": 15.0
+        }
+      },
+      {
+        "file": "Lekarna Magnolia.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "předpis",
+        "confidence": 50.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:lék",
+          "institution:lékárna",
+          "text:plat",
+          "text:faktura",
+          "text:platba",
+          "text:číslo"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 50.0,
+          "FIREMNÍ": 15.0,
+          "FINANČNÍ": 30.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "23_11_23_Podminky-vykupu-mikrozdroje.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "výpověď",
+        "confidence": 55.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "regex:sp\\.\\s*zn\\..*\\d+.*\\d{4}",
+          "text:plat",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:ukončení",
+          "text:kupní cena",
+          "text:dič",
+          "regex:DIČ:\\s*CZ\\d+"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 25.0,
+          "FIREMNÍ": 55.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 40.0
+        }
+      },
+      {
+        "file": "20250428-Arbeiten ohne Grenzen – mit Wireless-Produkten von-2244.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:gericht",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250415-📢 Last Day Alert – Spring Sale Ends Tonight! Don’-4723.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250413-Potvrzení objednávky Google Play ze dne 13. 4. 202-5038.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "účtenka",
+        "confidence": 55.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:předpis",
+          "text:plat",
+          "text:eet",
+          "regex:EET",
+          "text:platba",
+          "text:obsah",
+          "text:číslo"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 15.0,
+          "FINANČNÍ": 55.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "Nova adresa firem.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "policie",
+        "confidence": 40.0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [
+          "ocr:soud",
+          "ocr:oznámení",
+          "ocr:předpis",
+          "ocr:ukončení",
+          "ocr:nájem",
+          "ocr:vyúčtování",
+          "ocr:výpis"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 40.0,
+          "ZDRAVOTNÍ": 20.0,
+          "FIREMNÍ": 20.0,
+          "OBČANSKÉ": 20.0,
+          "FINANČNÍ": 40.0
+        }
+      },
+      {
+        "file": "20250326-Merino Runners sind zurück – jetzt den Favoriten s-8196.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:gericht"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250510-Idee per arredare cucine piccole e strette-11.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:sono"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250430-Přijďte si prohlédnout a osahat vzorky našich prod-1951.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:newsletter",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250417-Powerball Drawing Info-4342.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250425-Trhy, data, výsledky_ Alphabet překonává očekávání-2697.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 55.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "regex:\\d+\\s*ml",
+          "text:výsledek",
+          "text:ct",
+          "text:úrok",
+          "text:eet",
+          "regex:EET",
+          "text:časopis"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 55.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 40.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250429-Grill party 🌞 Nažhavte léto na max-1988.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "firemní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250411-Neuer Treffer für deine Volkswagen, Bis zu 50.000 -5467.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:gericht"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0
+        }
+      }
+    ],
+    "unrecognized": [
+      {
+        "file": "20250513-[192.168.10.35] Plánovač úloh dokončil naplánovano-42768.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250323-Lust auf eine spontane Auszeit_-8589.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250513-🤩 Největší knižní akce roku_-42857.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ocr",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "X-plus（Hardware）(1).pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250320-Entfesseln Sie Kreativität mit dem Creality Hi Com-9089.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250509-Google Alert – tesla-121.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250316-Upozornění Google – iot-9661.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250325-Die richtigen Essentials für jede Reise-8344.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250513-One_ Vaši zásilku 77B03588462 jsme převzali k přep-42783.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "raybenfoto.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [],
+        "patterns": [],
+        "all_scores": {}
+      }
+    ],
+    "official": [
+      {
+        "file": "20250323-Týdenní přehled z iDNES Premium-8586.pdf",
+        "subtype": "policie",
+        "confidence": 60.0,
+        "patterns": [
+          "text:soud",
+          "text:policie",
+          "text:policejní"
+        ]
+      },
+      {
+        "file": "20250407-[192.168.10.35] Kontejner paperless-web v nástroji-6287.pdf",
+        "subtype": "policie",
+        "confidence": 15.0,
+        "patterns": [
+          "text:protokol"
+        ]
+      },
+      {
+        "file": "20250428-Arbeiten ohne Grenzen – mit Wireless-Produkten von-2244.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht",
+          "text:newsletter"
+        ]
+      },
+      {
+        "file": "Nova adresa firem.pdf",
+        "subtype": "policie",
+        "confidence": 40.0,
+        "patterns": [
+          "ocr:soud",
+          "ocr:oznámení",
+          "ocr:předpis"
+        ]
+      },
+      {
+        "file": "20250326-Merino Runners sind zurück – jetzt den Favoriten s-8196.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:gericht"
+        ]
+      }
+    ],
+    "medical": [
+      {
+        "file": "20250511-Gaia, Portugal 🇵🇹 Direct Ocean View Apartments-42455.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "patterns": [
+          "filename:ct",
+          "text:ct",
+          "text:unsubscribe"
+        ]
+      },
+      {
+        "file": "Lekarna Magnolia.pdf",
+        "subtype": "předpis",
+        "confidence": 50.0,
+        "patterns": [
+          "text:lék",
+          "institution:lékárna",
+          "text:plat"
+        ]
+      },
+      {
+        "file": "20250415-📢 Last Day Alert – Spring Sale Ends Tonight! Don’-4723.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct"
+        ]
+      },
+      {
+        "file": "20250510-Idee per arredare cucine piccole e strette-11.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:sono"
+        ]
+      },
+      {
+        "file": "20250425-Trhy, data, výsledky_ Alphabet překonává očekávání-2697.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 55.0,
+        "patterns": [
+          "regex:\\d+\\s*ml",
+          "text:výsledek",
+          "text:ct"
+        ]
+      }
+    ],
+    "legal": [
+      {
+        "file": "PuzikPenzeSberbank.pdf",
+        "subtype": "notář",
+        "confidence": 40.0,
+        "patterns": [
+          "ocr:soud",
+          "ocr:předpis",
+          "ocr:ověření"
+        ]
+      },
+      {
+        "file": "Softel Vollmacht kollektiv.pdf",
+        "subtype": "právní_obecný",
+        "confidence": 30.0,
+        "patterns": [
+          "filename:vollmacht"
+        ]
+      },
+      {
+        "file": "Plna moc komora_2020-12-14_165744.pdf",
+        "subtype": "advokát",
+        "confidence": 40.0,
+        "patterns": [
+          "ocr:soud",
+          "ocr:advokát",
+          "ocr:plná moc"
+        ]
+      },
+      {
+        "file": "20250416-🚘 3 neue Fahrzeuge für Dich-4383.pdf",
+        "subtype": "právní_obecný",
+        "confidence": 25.0,
+        "patterns": [
+          "text:gericht",
+          "regex:N\\s*\\d+/\\d{4}",
+          "text:fik"
+        ]
+      },
+      {
+        "file": "20250325-🚘 2 neue Fahrzeuge für Dich-8236.pdf",
+        "subtype": "právní_obecný",
+        "confidence": 25.0,
+        "patterns": [
+          "text:gericht",
+          "regex:N\\s*\\d+/\\d{4}",
+          "text:fik"
+        ]
+      }
+    ]
+  }
+}

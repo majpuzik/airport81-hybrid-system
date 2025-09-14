@@ -1,0 +1,165 @@
+{
+  "batch_start": 28000,
+  "batch_end": 29000,
+  "timestamp": "2025-08-02T20:36:17.449114",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 504,
+    "order": 192,
+    "unknown": 181,
+    "notification": 27,
+    "subscription": 23,
+    "receipt": 34,
+    "shipping": 29,
+    "contract": 9,
+    "bank_statement": 1
+  },
+  "metadata_samples": [
+    {
+      "file": "Prozkoumejte svět a leťte kamkoliv ✈-202406060927-_Skyscanner_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 959
+    },
+    {
+      "file": "Superprémiové růže Red Naomi! od 49 Kč tento týden-202407241002-_Florea_.pdf",
+      "type": "invoice",
+      "score": 21,
+      "metadata": {
+        "ico": "02777606",
+        "dic": "CZ02777606"
+      },
+      "text_length": 3858
+    },
+    {
+      "file": "1M Computers Infected, Amazon Echo Warning, Best B-202503191900-_Stephen from Fing_.pdf",
+      "type": "order",
+      "score": 11,
+      "metadata": {},
+      "text_length": 4031
+    },
+    {
+      "file": "Network alert on AZURO2G-202504140619-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 927
+    },
+    {
+      "file": "You'll Love AirVot_ 4-in-1 Tire Inflator With Up t-202504161730-_Kickstarter Trend_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2557
+    },
+    {
+      "file": "🐮  Milan, diese Staffel wird noch kuh-ler!-202409291706-_Sky X_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1829
+    },
+    {
+      "file": "Upozornění_ začátek události je pátek, prosince 27-202412272045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 533
+    },
+    {
+      "file": "40 Life Lessons I Know at 40 (That I Wish I Knew a-202409300850-_Medium Daily Digest_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 3178
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202504071521-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    },
+    {
+      "file": "Máš poslední šanci zatočit si ruletou!-202408081604-_Samsung_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 3125
+    },
+    {
+      "file": "[192.168.10.35] Kontejner n8n v nástroji Container-202504121946-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 523
+    },
+    {
+      "file": "Autorizovali jste platbu obchodníkovi Proton Europ-202408131211-_service@intl.paypal.com_.pdf",
+      "type": "invoice",
+      "score": 28,
+      "metadata": {},
+      "text_length": 2355
+    },
+    {
+      "file": "Grieving mother puts CNN host IN HER PLACE_ Stop p-202409161814-_Free Speech Daily_.pdf",
+      "type": "subscription",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1276
+    },
+    {
+      "file": "Statistic Varná deska-202411250005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 253
+    },
+    {
+      "file": "🇵🇹 Introducing São Bento, Lisbon, Portugal-202406271907-_Benoit Properties_.pdf",
+      "type": "receipt",
+      "score": 4,
+      "metadata": {},
+      "text_length": 424
+    },
+    {
+      "file": "Fw_ 🛑 Vyčerpali jste všechny své operace — scénář-202412181113-_M.AJ. Puzik_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1155
+    },
+    {
+      "file": "Keep your folders clean!-202410091439-_SaneBox_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 599
+    },
+    {
+      "file": "Celebrate Our New Milestone! 🎉-202405281901-_CGTrader Team_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1514
+    },
+    {
+      "file": "Der Wool Cross X Alpine ist zurück!-202501260815-_Giesswein_-1.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1739
+    },
+    {
+      "file": "Kopp Vital® Granatapfel fermentiert – für Ihre täg-202410071703-_Kopp Verlag_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1228
+    }
+  ],
+  "error_count": 0
+}

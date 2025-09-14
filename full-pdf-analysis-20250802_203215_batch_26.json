@@ -1,0 +1,164 @@
+{
+  "batch_start": 26000,
+  "batch_end": 27000,
+  "timestamp": "2025-08-02T20:36:00.537369",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "contract": 14,
+    "invoice": 495,
+    "shipping": 31,
+    "order": 178,
+    "receipt": 31,
+    "unknown": 183,
+    "subscription": 18,
+    "notification": 47,
+    "bank_statement": 3
+  },
+  "metadata_samples": [
+    {
+      "file": "Re_SE BA, 162871134-202407291147-_Chotova, Lenka_.pdf",
+      "type": "contract",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2634
+    },
+    {
+      "file": "Stvrzenka za vaši platbu příjemci 深圳创启悦动科技有限公司-202408270758-_service@intl.paypal.com_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 1885
+    },
+    {
+      "file": "Golem.de_ RTX 5090 im Mini-PC - Das neue Raspberry-202502051224-_Golem.de Redaktion_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {},
+      "text_length": 8761
+    },
+    {
+      "file": "📅 Plánovaná odstávka vysokých cen 🔥-202406270624-🛠 HobyNaradi.cz.pdf",
+      "type": "invoice",
+      "score": 16,
+      "metadata": {},
+      "text_length": 2524
+    },
+    {
+      "file": "👜 Značkové kryty Guess, Karl Lagerfeld, DKNY se s-202412070256-_AppleMix.cz_.pdf",
+      "type": "shipping",
+      "score": 13,
+      "metadata": {},
+      "text_length": 1748
+    },
+    {
+      "file": "You'll Love Daran R100_ Compact Power Station for -202503031657-_Kickstarter Trend_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2725
+    },
+    {
+      "file": "Newsletter firmy _  Lze se spolehnout pouze na ele-202412310906-_GRANTEX_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {
+        "ico": "29147832"
+      },
+      "text_length": 5697
+    },
+    {
+      "file": "134855 je tvůj šestimístný kód-202502062100-_Klarna_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1045
+    },
+    {
+      "file": "Verfassungsschutz_ Gesamte AfD ist „gesichert rech-202505021152-_Epoch Times _ TOP-AKTUELL_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 679
+    },
+    {
+      "file": "NOVÉ 🧘 Čistá mysl + Sleva 20 % na dětskou kategor-202407300931-_Tchibo Newsletter_.pdf",
+      "type": "receipt",
+      "score": 9,
+      "metadata": {},
+      "text_length": 5114
+    },
+    {
+      "file": "Letzte Chance_ Form 4 Webinar online oder vor Ort -202406031604-_Vincent von 3Dmensionals_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3222
+    },
+    {
+      "file": "Capture Every Trail – Find Your Perfect Camera Bac-202503092300-_Ulanzi_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 840
+    },
+    {
+      "file": "Skype 5. května 2025 skončí – podívejte se, co můž-202505061858-_Skype_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3261
+    },
+    {
+      "file": "'SNL' Spoofs Trump-Zelensky Oval Office Showdown W-202503021411-_Best of MSN (MSN Unfold)_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3428
+    },
+    {
+      "file": "Po přihlášení ke svému účtu na webu Microsoft Lear-202504282301-_Microsoft Learn_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1828
+    },
+    {
+      "file": "Objednávka je odeslána a sledovací číslo Packeta j-202407271019-_Temu_.pdf",
+      "type": "shipping",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2212
+    },
+    {
+      "file": "🚘 2 neue Fahrzeuge für Dich-202504300818-_mobile.de Suchauftrag_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1417
+    },
+    {
+      "file": "Vezeme Vám zásilku DR4611854025U-202503070717-Česká pošta.pdf",
+      "type": "shipping",
+      "score": 10,
+      "metadata": {},
+      "text_length": 1727
+    },
+    {
+      "file": "[192.168.10.35] Projekt paperless nelze vytvořit-202504061405-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 347
+    },
+    {
+      "file": "Kabely, jističe, krabičky, DPS-202406101100-Internetový obchod www.vpcentrum.eu.pdf",
+      "type": "shipping",
+      "score": 1,
+      "metadata": {},
+      "text_length": 692
+    }
+  ],
+  "error_count": 0
+}

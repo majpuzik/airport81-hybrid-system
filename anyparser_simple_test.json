@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-08-30T14:36:21.739287",
+  "results": [
+    {
+      "filename": "Frankfurt Hotel1.pdf",
+      "size_kb": 700.337890625,
+      "time_s": 1.141528,
+      "doc_type": "Hotel/Cestovní",
+      "text_length": 1,
+      "amounts": []
+    },
+    {
+      "filename": "O2 vypoved.pdf",
+      "size_kb": 957.3369140625,
+      "time_s": 2.300813,
+      "doc_type": "Výpověď",
+      "text_length": 1,
+      "amounts": []
+    },
+    {
+      "filename": "Benzin_scan_026.jpg",
+      "size_kb": 503.0625,
+      "time_s": 2.017977,
+      "doc_type": "Účtenka - Benzín",
+      "text_length": 1,
+      "amounts": []
+    },
+    {
+      "filename": "Alza_2968364466.pdf",
+      "size_kb": 476.4033203125,
+      "time_s": 0.561657,
+      "doc_type": "Faktura - Alza",
+      "text_length": 1,
+      "amounts": []
+    }
+  ]
+}

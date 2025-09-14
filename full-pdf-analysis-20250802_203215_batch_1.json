@@ -1,0 +1,162 @@
+{
+  "batch_start": 1000,
+  "batch_end": 2000,
+  "timestamp": "2025-08-02T20:32:33.465248",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "shipping": 25,
+    "unknown": 169,
+    "notification": 47,
+    "invoice": 507,
+    "contract": 15,
+    "order": 178,
+    "subscription": 24,
+    "receipt": 32,
+    "bank_statement": 3
+  },
+  "metadata_samples": [
+    {
+      "file": "Pozvánka na webinář_ Aktuální výzvy v globálním ob-202505121516-_DHL Express_.pdf",
+      "type": "shipping",
+      "score": 18,
+      "metadata": {},
+      "text_length": 2670
+    },
+    {
+      "file": "A Recommended Recipe on IFTTT_ send IFTTTrigger-2 -202502201800-_IFTTT via IFTTT_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 466
+    },
+    {
+      "file": "Statistic Varná deska-202406040005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 251
+    },
+    {
+      "file": "Upozornění_ začátek události je úterý, října 15, 1-202410151115-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 524
+    },
+    {
+      "file": "Erinnerung_ Termin beginnt am Dienstag, Juni 11 um-202406112045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 561
+    },
+    {
+      "file": "Our Best Routing Yet – No Detours, No Delays, Just-202505011036-_Sygic GPS Navigation_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1941
+    },
+    {
+      "file": "Neue Indikationen für alte Wirkstoffe _ Fall von s-202410041114-_Medscape Nachrichten_.pdf",
+      "type": "contract",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2227
+    },
+    {
+      "file": "[DeepL] Re_ Request no. 530712 - [EXT] Fw_ Your De-202412131514-_Support_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1409
+    },
+    {
+      "file": "Puzik, it's me again, talking digital factory.-202407231016-_Kyle at Autodesk_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3253
+    },
+    {
+      "file": "💙 Winterblues_ Hier kommt dein Stimmungs-Boost (5-202501160934-_Blinkist_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1947
+    },
+    {
+      "file": "D'Prompt Theatre nabírá_ Saraswati – Goddess of Kn-202504110914-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1893
+    },
+    {
+      "file": "TOP nabídka týdne! Slevy až 57 % – jen na chvíli.-202502121040-_Kokiskashop.cz_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 2143
+    },
+    {
+      "file": "Network alert on AZURO2G-202408061259-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 894
+    },
+    {
+      "file": "This magnetic quick-release flashlight is recharge-202406281142-_KickstarNow_.pdf",
+      "type": "order",
+      "score": 8,
+      "metadata": {},
+      "text_length": 2745
+    },
+    {
+      "file": "https___t.me_cryptaxbot_17_Irorceft12bix-202407031545-_WordPress_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 410
+    },
+    {
+      "file": "Re_KONTAKT-202403221831-_AK Ondrej Machala_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2437
+    },
+    {
+      "file": "25% New Hi-Res _ Pink Floyd's David Gilmour, 10,00-202409081732-_HDtracks_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 3073
+    },
+    {
+      "file": "Edinburgh Festival Fringe-202408021803-_The MICHELIN Guide_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1218
+    },
+    {
+      "file": "Potvrzení objednávky Google Play ze dne 28. 10. 20-202410281441-_Google Play_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 3333
+    },
+    {
+      "file": "Milá drobnost nebo velký dar_ Inspirujte se na dár-202412110806-_4home.cz_.pdf",
+      "type": "invoice",
+      "score": 29,
+      "metadata": {},
+      "text_length": 2900
+    }
+  ],
+  "error_count": 0
+}

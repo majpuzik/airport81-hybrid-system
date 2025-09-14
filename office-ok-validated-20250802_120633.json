@@ -1,0 +1,194 @@
+[
+  {
+    "id": 2,
+    "subject": "Výpis z účtu - Česká spořitelna",
+    "sender": "vypisy@csas.cz",
+    "classification": {
+      "type": "bank_statement",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 9,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": true,
+    "attachment_count": 1,
+    "original_classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.8,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 8,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 4,
+    "subject": "Smlouva o dílo - programování",
+    "sender": "smlouvy@firma.cz",
+    "classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.4,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 6,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": true,
+    "attachment_count": 1,
+    "original_classification": {
+      "type": "contract",
+      "score": 6,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 6,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 5,
+    "subject": "ČSOB - Transakce na vašem účtu",
+    "sender": "info@csob.cz",
+    "classification": {
+      "type": "bank_statement",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 7,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": false,
+    "attachment_count": 0,
+    "original_classification": {
+      "type": "bank_statement",
+      "score": 5,
+      "confidence": 0.5,
+      "all_scores": {
+        "invoice": 4,
+        "bank_statement": 5,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 7,
+    "subject": "Revolut - Your monthly statement",
+    "sender": "statements@revolut.com",
+    "classification": {
+      "type": "bank_statement",
+      "score": 9,
+      "confidence": 0.6,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 9,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": true,
+    "attachment_count": 1,
+    "original_classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.8,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 8,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  },
+  {
+    "id": 8,
+    "subject": "Daňové přiznání 2024 - připomínka",
+    "sender": "podpora@daneprofi.cz",
+    "classification": {
+      "type": "tax_document",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 7
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": true,
+    "attachment_count": 1,
+    "original_classification": {
+      "type": "tax_document",
+      "score": 14,
+      "confidence": 1.0,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 0,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 14
+      }
+    }
+  },
+  {
+    "id": 10,
+    "subject": "N26 - Transaction notification",
+    "sender": "no-reply@n26.com",
+    "classification": {
+      "type": "bank_statement",
+      "score": 7,
+      "confidence": 0.4666666666666667,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 7,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      },
+      "validation": "enhanced"
+    },
+    "has_attachments": false,
+    "attachment_count": 0,
+    "original_classification": {
+      "type": "bank_statement",
+      "score": 8,
+      "confidence": 0.8,
+      "all_scores": {
+        "invoice": 0,
+        "bank_statement": 8,
+        "contract": 0,
+        "receipt": 0,
+        "tax_document": 0
+      }
+    }
+  }
+]

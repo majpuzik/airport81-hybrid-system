@@ -1,0 +1,169 @@
+{
+  "batch_start": 20000,
+  "batch_end": 21000,
+  "timestamp": "2025-08-02T20:35:10.329224",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 517,
+    "order": 183,
+    "notification": 39,
+    "receipt": 25,
+    "shipping": 20,
+    "unknown": 183,
+    "contract": 10,
+    "subscription": 23
+  },
+  "metadata_samples": [
+    {
+      "file": "A €50 Reward Awaits You with the K2 Plus Combo💰-202504231121-_CREALITY_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 1358
+    },
+    {
+      "file": "Novinky od LDO Motors_ Milo 1.5 a Positron V3.2!-202406230910-3DJake Česká republika.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1538
+    },
+    {
+      "file": "A single software for design and product library_ -202505061041-_Sun Ballast_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1079
+    },
+    {
+      "file": "Žhavé aukce_ knihy o umění 12. 3. 2025-202503121304-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 36,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2911
+    },
+    {
+      "file": "Here’s what password health looks like around the -202410021725-_Dashlane_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1598
+    },
+    {
+      "file": "Capture More Leads Today 📥-202505052225-_cloudHQ_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2759
+    },
+    {
+      "file": "Shape the Future of UBHOME M10.-202410222319-_UBHOME Team_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1137
+    },
+    {
+      "file": "Your monthly Finnair Plus statement-202406141333-_Finnair_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1495
+    },
+    {
+      "file": "ICYMI_ Next-level electronics-202504200852-_AliExpress_.pdf",
+      "type": "invoice",
+      "score": 28,
+      "metadata": {},
+      "text_length": 1468
+    },
+    {
+      "file": "Upozornění_ začátek události je pondělí, leden 6, -202501062045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 524
+    },
+    {
+      "file": "[Bambu Lab Community Forum] Summary-202408050153-_Bambu Lab Community Forum_.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 4502
+    },
+    {
+      "file": "Only a few hours left_ Topseller only € 12-202407161020-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1343
+    },
+    {
+      "file": "Ing. málo soukromí ve vlastní zahradě_ 🏡 Máme řeš-202405211947-_Lea z Bestent.cz_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {
+        "ico": "47485353"
+      },
+      "text_length": 2591
+    },
+    {
+      "file": "Uber Is Launching Driverless Rides With Waymo_ Her-202409181231-_CNET Cars_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2389
+    },
+    {
+      "file": "NOVÉ 🏃 Aktivní léto-202406180845-_Tchibo Newsletter_.pdf",
+      "type": "invoice",
+      "score": 17,
+      "metadata": {},
+      "text_length": 4650
+    },
+    {
+      "file": "🗓 The Summary_ Your free reads next week-202504061822-_Blinkist_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1155
+    },
+    {
+      "file": "Heute meistgelesen_ Empörung über Elon Musk_ Die V-202503061640-Neue Zürcher Zeitung.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 3552
+    },
+    {
+      "file": "Děkujeme, že jste s námi!-202412200931-_TopeniLevne.cz_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {
+        "ico": "27508412",
+        "dic": "CZ27508412"
+      },
+      "text_length": 1641
+    },
+    {
+      "file": "Kód na 20% slevu platí už jen dnes.-202503231013-Potten & Pannen - Staněk.pdf",
+      "type": "shipping",
+      "score": 2,
+      "metadata": {},
+      "text_length": 833
+    },
+    {
+      "file": "50% SLEVA_ Tato akce právě začala-202504151136-_Wix.com_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1143
+    }
+  ],
+  "error_count": 0
+}

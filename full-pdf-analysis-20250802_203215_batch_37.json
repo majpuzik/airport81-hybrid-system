@@ -1,0 +1,171 @@
+{
+  "batch_start": 37000,
+  "batch_end": 38000,
+  "timestamp": "2025-08-02T20:37:31.683424",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 525,
+    "order": 169,
+    "unknown": 180,
+    "subscription": 20,
+    "receipt": 36,
+    "notification": 34,
+    "shipping": 26,
+    "contract": 8,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Israel Sends 100 Jet Fighters to Hit Lebanon in Pr-202408251505-_Best of MSN (Start Unfold)_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 3422
+    },
+    {
+      "file": "Had your eye on this_-202411201045-_AliExpress_.pdf",
+      "type": "invoice",
+      "score": 31,
+      "metadata": {},
+      "text_length": 1507
+    },
+    {
+      "file": "Where the Wild Things Learn_ The Magic of a Forest-202410170850-_Medium Daily Digest_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3645
+    },
+    {
+      "file": "Network alert on AZURO2G-202504170932-_Fing Alert_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 927
+    },
+    {
+      "file": "Creality teases the Space Pi X4 filament dryer, bu-202504080307-_All3DP_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 4839
+    },
+    {
+      "file": "„Paracetamolová výzva“ na TikToku ohrožuje děti; T-202502100545-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3663
+    },
+    {
+      "file": "Žhavé aukce_ minerály, drahokamy, meteority 17. 9.-202409171124-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 33,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 3008
+    },
+    {
+      "file": "Blíží se Valentýn ❤-202502050854-Trenýrkárna.cz.pdf",
+      "type": "invoice",
+      "score": 25,
+      "metadata": {
+        "ico": "24209139",
+        "dic": "CZ24209139"
+      },
+      "text_length": 3082
+    },
+    {
+      "file": "Zuzana už není ve vaší rodinné skupině.-202501161727-_Microsoft Family Safety_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 604
+    },
+    {
+      "file": "Winter Special Offers_ up to 50%-202501141226-_DECOVRY_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1259
+    },
+    {
+      "file": "New Limited-Edition Ray-Ban Meta Coming Soon-202503081500-_Ray-Ban_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1380
+    },
+    {
+      "file": "Faktura 120462625 - datum splatnosti_ 24.02.2025-202502120410-.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 529
+    },
+    {
+      "file": "Discover GRIND Z_ Recycled Coffee Ground Pencil Le-202406201614-_Kickstarter Channel_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2663
+    },
+    {
+      "file": "Ends Soon! The best back-to-school software deals -202409271808-_EaseUS_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 2626
+    },
+    {
+      "file": "Dubnové akce startují_ -300 Kč na Vichy, -150 Kč n-202504021130-_Vitalpoint_.pdf",
+      "type": "invoice",
+      "score": 28,
+      "metadata": {
+        "ico": "25663585",
+        "dic": "CZ25663585"
+      },
+      "text_length": 2781
+    },
+    {
+      "file": "🛑 Vyčerpali jste všechny své operace — scénáře js-202501070944-_Make_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 913
+    },
+    {
+      "file": "Chystané zvýšení ceny předplatného YouTube-202411182250-_Google Play_.pdf",
+      "type": "subscription",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1056
+    },
+    {
+      "file": "Skončil londýnský summit; Proč se Německo obává Tr-202503030557-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2802
+    },
+    {
+      "file": "Neobvyklá přihlašovací aktivita u účtu Microsoft-202411291603-Tým, který se stará o účty Microsoft-1.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1075
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202505021451-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    }
+  ],
+  "error_count": 0
+}

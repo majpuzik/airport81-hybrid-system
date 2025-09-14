@@ -1,0 +1,7 @@
+{
+  "refresh_interval": 30,
+  "llm_timeout": 30,
+  "max_concurrent_tests": 5,
+  "test_history_days": 30,
+  "auto_test_enabled": true
+}

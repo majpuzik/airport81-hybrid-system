@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "timestamp": "2025-07-30T18:26:14.022063",
+    "total_count": 3,
+    "description": "Nerozpoznané a neotagované emaily"
+  },
+  "emails": [
+    {
+      "subject": "Re: Meeting tomorrow",
+      "sender": "john.doe@randomcompany.com",
+      "description": "Personal business email - should be unrecognized",
+      "confidence": 0.0,
+      "category": "NEROZPOZNANO",
+      "document_type": "Nespecifikovano",
+      "tags": [
+        "Nerozpoznané"
+      ],
+      "classification_quality": "SPATNE"
+    },
+    {
+      "subject": "Invoice #12345",
+      "sender": "billing@unknownservice.net",
+      "description": "Unknown service invoice - should be partially recognized",
+      "confidence": 0.0,
+      "category": "NEROZPOZNANO",
+      "document_type": "Nespecifikovano",
+      "tags": [
+        "Nerozpoznané"
+      ],
+      "classification_quality": "SPATNE"
+    },
+    {
+      "subject": "Project Update",
+      "sender": "team@startup.io",
+      "description": "Internal project communication - should be unrecognized",
+      "confidence": 0.0,
+      "category": "NEROZPOZNANO",
+      "document_type": "Nespecifikovano",
+      "tags": [
+        "Nerozpoznané"
+      ],
+      "classification_quality": "SPATNE"
+    }
+  ]
+}

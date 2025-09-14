@@ -1,0 +1,162 @@
+{
+  "batch_start": 3000,
+  "batch_end": 4000,
+  "timestamp": "2025-08-02T20:32:49.719657",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 523,
+    "unknown": 173,
+    "order": 175,
+    "notification": 39,
+    "receipt": 29,
+    "contract": 18,
+    "subscription": 22,
+    "bank_statement": 2,
+    "shipping": 19
+  },
+  "metadata_samples": [
+    {
+      "file": "Nový mílník ve vystupování z _komunistické strany_-202412090546-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 3383
+    },
+    {
+      "file": "Statistic Dům-202406120005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 228
+    },
+    {
+      "file": "Hlasujte pro MojeID v Křišťálové Lupě-202410101553-Tým MojeID.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1372
+    },
+    {
+      "file": "Byl udělen nový komentář (Pozitivní)-202501221729-_oznameni Aukro.cz_-2.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 790
+    },
+    {
+      "file": "Evropa na rozcestí-202502231015-Jana Novotná _ Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3891
+    },
+    {
+      "file": "Lagebericht 26.09.2024-202409261511-_Kopp Report_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1099
+    },
+    {
+      "file": "Přichází nová služba Oneplay! 💛-202503061755-_Voyo_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 4175
+    },
+    {
+      "file": "💬 New service alert_ Google Chat integrations 💬-202408212313-_IFTTT_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1275
+    },
+    {
+      "file": "You'll Love MagAttach_ Seamless Coffee Scale with -202504171730-_Kickstarter Trend_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2626
+    },
+    {
+      "file": "Letní akce Hikvision-202408150932-_VIAKOM.CZ_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1416
+    },
+    {
+      "file": "Re_Návrh na zastavení trestního stíhání-202501271330-Patrik Tomšů.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2822
+    },
+    {
+      "file": "Oznámení_ Doplnit chlor - so 25. kvě 2024 17_00 - -202405251630-Kalendář Google.pdf",
+      "type": "notification",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1017
+    },
+    {
+      "file": "Google Alert – tesla-202412281906-_Google Alerts_.pdf",
+      "type": "receipt",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3121
+    },
+    {
+      "file": "Přínosy máty peprné; Vítězství lidstva nad algorit-202410231516-Zdraví od Epoch Times.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 4944
+    },
+    {
+      "file": "Statistic L3-202502010027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 224
+    },
+    {
+      "file": "Customer account confirmation-202501222004-_PremiumCDKeys.com_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 442
+    },
+    {
+      "file": "Chinese Art Market at Hong Kong Spring Auctions-202504091601-_MutualArt Pulse_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2683
+    },
+    {
+      "file": "Ať tento víkend stojí za to - se slevami na více n-202502141900-_Expondo.cz_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1746
+    },
+    {
+      "file": "Čína - dokonalý poznávací okruh-202407041100-_ESO travel_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 4374
+    },
+    {
+      "file": "Your Dashlane security snapshot-202408221725-_Dashlane_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 966
+    }
+  ],
+  "error_count": 0
+}

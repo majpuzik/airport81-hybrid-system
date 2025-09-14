@@ -1,0 +1,232 @@
+{
+  "name": "AnyParser Working Solution",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "list",
+        "path": "/Users/m.a.j.puzik/Desktop",
+        "options": {
+          "recursive": false
+        }
+      },
+      "id": "listFiles",
+      "name": "List PDF Files",
+      "type": "n8n-nodes-base.localFileTrigger",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Filtruj jen PDF soubory\nconst files = $input.all();\nconst pdfFiles = files.filter(f => f.json.name && f.json.name.endsWith('.pdf'));\n\nif (pdfFiles.length === 0) {\n  throw new Error('No PDF files found on Desktop');\n}\n\n// Vyber první PDF\nconst selectedFile = pdfFiles[0];\nreturn [{\n  json: {\n    filepath: selectedFile.json.path,\n    filename: selectedFile.json.name\n  }\n}];"
+      },
+      "id": "selectPdf",
+      "name": "Select First PDF",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "filePath": "={{ $json.filepath }}"
+      },
+      "id": "readFile",
+      "name": "Read PDF File",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.anyparser.com/v1/extract",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer d623f513-19a2-4e7d-809d-eba9429669b0"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "options": {}
+      },
+      "id": "anyparserApi",
+      "name": "AnyParser Extract",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1050, 300],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $json;\nconst filename = $node['selectPdf'].json.filename;\n\nif (response.error) {\n  // Zkus druhý API klíč\n  return [{\n    json: {\n      status: 'RETRY',\n      filename: filename,\n      error: response.error,\n      useSecondKey: true\n    }\n  }];\n}\n\nconst text = (response.text || response.content || response.markdown || '').toLowerCase();\n\n// Klasifikace dokumentu\nlet docType = 'unknown';\nif (text.includes('faktura') || text.includes('invoice')) docType = 'faktura';\nelse if (text.includes('účtenka') || text.includes('receipt')) docType = 'uctenka';\nelse if (text.includes('výpis') || text.includes('statement')) docType = 'vypis';\nelse if (text.includes('smlouva') || text.includes('contract')) docType = 'smlouva';\n\n// Najdi korespondenta\nlet correspondent = 'Unknown';\nif (text.includes('čsob') || text.includes('csob')) correspondent = 'CSOB';\nelse if (text.includes('alza')) correspondent = 'Alza';\nelse if (text.includes('lidl')) correspondent = 'Lidl';\n\n// Custom fields\nconst customFields = {};\nconst tags = [docType];\n\nif (correspondent !== 'Unknown') {\n  tags.push(correspondent.toLowerCase());\n}\n\n// Parsování pro fakturu\nif (docType === 'faktura') {\n  const icoMatch = text.match(/ičo?:?\\s*(\\d{8})/i);\n  if (icoMatch) {\n    customFields.ico = icoMatch[1];\n    tags.push('ico-' + icoMatch[1]);\n  }\n  \n  const vsMatch = text.match(/vs:?\\s*(\\d+)/i);\n  if (vsMatch) {\n    customFields.variable_symbol = vsMatch[1];\n    tags.push('vs-' + vsMatch[1]);\n  }\n}\n\nreturn [{\n  json: {\n    status: 'SUCCESS',\n    filename: filename,\n    document_type: docType,\n    correspondent: correspondent,\n    tags: tags,\n    custom_fields: customFields,\n    text_preview: text.substring(0, 500)\n  }\n}];"
+      },
+      "id": "parseDocument",
+      "name": "Parse Document",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "RETRY",
+              "operation": "equal"
+            }
+          ]
+        }
+      },
+      "id": "checkRetry",
+      "name": "Need Retry?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1450, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.anyparser.com/v1/extract",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer cf40fbf6-96d6-4559-bff5-46699069fdfa"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "options": {}
+      },
+      "id": "anyparserRetry",
+      "name": "AnyParser Retry",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1650, 400],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $json;\n\nreturn [{\n  json: {\n    '✅ STATUS': data.status,\n    '📄 File': data.filename,\n    '📑 Type': data.document_type,\n    '👤 Correspondent': data.correspondent,\n    '🏷️ Tags': data.tags.join(', '),\n    '📝 Custom Fields': JSON.stringify(data.custom_fields, null, 2),\n    '📊 Preview': data.text_preview\n  }\n}];"
+      },
+      "id": "displayResult",
+      "name": "Display Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1850, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "List PDF Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List PDF Files": {
+      "main": [
+        [
+          {
+            "node": "Select First PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select First PDF": {
+      "main": [
+        [
+          {
+            "node": "Read PDF File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read PDF File": {
+      "main": [
+        [
+          {
+            "node": "AnyParser Extract",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AnyParser Extract": {
+      "main": [
+        [
+          {
+            "node": "Parse Document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Document": {
+      "main": [
+        [
+          {
+            "node": "Need Retry?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Need Retry?": {
+      "main": [
+        [
+          {
+            "node": "Display Result",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AnyParser Retry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AnyParser Retry": {
+      "main": [
+        [
+          {
+            "node": "Parse Document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "anyparser_working"
+}

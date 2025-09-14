@@ -1,0 +1,118 @@
+/* 
+ * CUSTOM CSS - Zde můžeš upravovat styly přímo
+ * Tyto styly přepíší výchozí Tailwind styly
+ */
+
+/* Změna barev */
+:root {
+  --airport-primary: #3b82f6;  /* Modrá - změň na co chceš */
+  --airport-secondary: #a855f7; /* Fialová */
+  --airport-accent: #10b981;   /* Zelená */
+  --airport-dark: #1e293b;
+  --airport-light: #f8fafc;
+}
+
+/* Departure Board úpravy */
+.departure-board {
+  background: #000;
+  color: #fbbf24;
+  font-family: 'Courier New', monospace;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* Hover efekty pro dock karty */
+.dock-card {
+  transition: all 0.3s ease;
+}
+
+.dock-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+/* Animace pro gate status */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.gate-status.boarding {
+  animation: pulse-green 2s infinite;
+}
+
+/* DEMO: Pokročilé úpravy - přesun objektů, 3D efekty */
+
+/* 3D perspektivní doky - řádek s doky má perspektivu */
+#docks .container {
+  perspective: 1000px;
+  padding: 3rem 1rem;
+}
+
+/* Jednotlivé dock karty - 3D rotace + přesun */
+.dock-card {
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dock-card:nth-child(1) {
+  transform: translateX(-20px) rotateY(-5deg);
+}
+
+.dock-card:nth-child(2) {
+  transform: translateX(-10px) rotateY(-2deg);
+}
+
+.dock-card:nth-child(3) {
+  transform: translateX(10px) rotateY(2deg);
+}
+
+.dock-card:nth-child(4) {
+  transform: translateX(20px) rotateY(5deg);
+}
+
+.dock-card:hover {
+  transform: translateY(-20px) translateZ(50px) rotateY(0deg) scale(1.05);
+  box-shadow: 0 40px 80px rgba(59, 130, 246, 0.3);
+}
+
+/* Floating akce pro hlavní nadpis */
+h1 {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Postupné objevování elementů */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideIn 1s ease forwards;
+}
+
+.section:nth-child(1) { animation-delay: 0.2s; }
+.section:nth-child(2) { animation-delay: 0.4s; }
+.section:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Vlastní úpravy zde: */
+
+/* Marquee animace pro ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

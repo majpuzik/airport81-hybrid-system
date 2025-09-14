@@ -1,0 +1,164 @@
+{
+  "batch_start": 0,
+  "batch_end": 1000,
+  "timestamp": "2025-08-02T20:32:24.774664",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 513,
+    "order": 211,
+    "receipt": 22,
+    "unknown": 160,
+    "notification": 38,
+    "contract": 13,
+    "subscription": 17,
+    "shipping": 21,
+    "bank_statement": 5
+  },
+  "metadata_samples": [
+    {
+      "file": "Obchodujte jako profík. S TradingView 📈-202410021236-_Coinmate_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2739
+    },
+    {
+      "file": "NOVINKY! GIGA nálož nově přidaných produktů je tu.-202503231037-GIGACOMPUTER TÝM.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 2585
+    },
+    {
+      "file": "Lagebericht 23.09.2024-202409231504-_Kopp Report_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1128
+    },
+    {
+      "file": "🐣5-Day Easter Blitz_ Up to $500 Off Your Faves!-202504161703-_xTool_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1905
+    },
+    {
+      "file": "Watch your setup burst to life-202406061903-_Elgato_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 657
+    },
+    {
+      "file": "Softel Consulting s.r.o., ⏰ Dubnové slevy pomalu k-202504251304-Klarstein výprodeje.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 1971
+    },
+    {
+      "file": "D.A. backs resentencing Menendez brothers, paving -202410251327-_Start Daily_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1390
+    },
+    {
+      "file": "Domaine de la Lôyane _ domaine incontournable du G-202408270700-_Guide Hachette des Vins_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2075
+    },
+    {
+      "file": "Wired Science Hub #46-202504010702-_WIRED_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 4833
+    },
+    {
+      "file": "Re_Last Call for CNC'ers-202408091527-_CNCCookbook_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1696
+    },
+    {
+      "file": "Die KI hat für euch in die Sterne geschaut-202406282056-.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 6210
+    },
+    {
+      "file": "Výhody vlastního bytu oproti nájmu - posuďte sami-202407241903-_CENTRAL GROUP_.pdf",
+      "type": "receipt",
+      "score": 5,
+      "metadata": {},
+      "text_length": 4606
+    },
+    {
+      "file": "Efficient Disk Cloning Software for Windows 11_10_-202501101035-_EaseUS_.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 4192
+    },
+    {
+      "file": "Fwd_ Fw_ nabidka na registraci u naseho praktickeh-202504081107-Martin Pužík.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1147
+    },
+    {
+      "file": "BIQU CryoGrip Pro - vynikající přilnavost při poko-202504060924-3DJake Česká republika.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 719
+    },
+    {
+      "file": "Vyberte si své Apple Watch!-202407221106-►DATART◄.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {
+        "ico": "49973053"
+      },
+      "text_length": 2367
+    },
+    {
+      "file": "Perfekte Portraits auf Knopfdruck – ohne aufwändig-202504231104-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3562
+    },
+    {
+      "file": "🔌 Elektrocentrály skladem_ Připravte se na cokoli-202409170624-🛠 HobyNaradi.cz.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 2197
+    },
+    {
+      "file": "Nutzen deine Liebsten Firefox_-202407300804-_Firefox_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1150
+    },
+    {
+      "file": "Tajný řád udržující rovnováhu mezi dobrem a zlem, -202412191401-_Voyo_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2703
+    }
+  ],
+  "error_count": 0
+}

@@ -1,0 +1,166 @@
+{
+  "batch_start": 42000,
+  "batch_end": 43000,
+  "timestamp": "2025-08-02T20:38:13.644819",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 497,
+    "unknown": 187,
+    "receipt": 32,
+    "order": 212,
+    "subscription": 10,
+    "contract": 11,
+    "notification": 29,
+    "shipping": 21,
+    "bank_statement": 1
+  },
+  "metadata_samples": [
+    {
+      "file": "📣 Zpátky do formy • Knižní inspirace se slevou až-202412291734-Dobré Knihy.pdf",
+      "type": "invoice",
+      "score": 29,
+      "metadata": {
+        "ico": "08618313"
+      },
+      "text_length": 6263
+    },
+    {
+      "file": "Get the NEW Dreame R10 Pure at a steal Now! 🚀 Don-202504151808-_Dreame US_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1557
+    },
+    {
+      "file": "Snuggle Up to Autumn with Cosy Cushions, Mid-Centu-202410110904-_DECOVRY Special_-1.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1789
+    },
+    {
+      "file": "Nové články a návody-202407261200-_Chytre vypinace_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1279
+    },
+    {
+      "file": "Trhy, data, výsledky_ Týdenní výhled, Philip Morri-202504281713-_Patria Finance_.pdf",
+      "type": "invoice",
+      "score": 25,
+      "metadata": {},
+      "text_length": 10443
+    },
+    {
+      "file": "vonwaldek, usnadnili jsme vám návrat na Instagram-202503151921-_Instagram_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 990
+    },
+    {
+      "file": "Valentýn_ Čas na rozchod!-202502041451-_Adam _ Knihobot_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 4336
+    },
+    {
+      "file": "A gift for Mom + 30% off for you-202505061655-_Animoto_.pdf",
+      "type": "receipt",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1466
+    },
+    {
+      "file": "Travelers love these spots in Brighton…-202406141050-_Tripadvisor_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1436
+    },
+    {
+      "file": "Top zájezdy do předvánoční Vídně, Drážďan a dalšíc-202410051249-Nastartujte těšení.pdf",
+      "type": "invoice",
+      "score": 23,
+      "metadata": {},
+      "text_length": 4692
+    },
+    {
+      "file": "Samsung's Galaxy S25 Edge Is Slim and Full of Feat-202505131804-_CNET Insider_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3214
+    },
+    {
+      "file": "📩 Ing. Zuzana, Your Questions Answered! -202408141328-Renata Cekić.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 3513
+    },
+    {
+      "file": "Rozsvítíme vaše Vánoce 🎄 i nový rok novými svítid-202412201442-_LEDVANCE e-shop_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {
+        "ico": "04617754"
+      },
+      "text_length": 2344
+    },
+    {
+      "file": "Milan, this special membership offer is waiting.-202503221618-_Ancestry_.pdf",
+      "type": "subscription",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1441
+    },
+    {
+      "file": "https___goo.su_wxRN7G-202407180643-_WordPress_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 890
+    },
+    {
+      "file": "🤔 MetalFab FAQs solved. ⏰ Only 3 days left to sav-202505161659-_xTool_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 3426
+    },
+    {
+      "file": "Bryan Johnson’s Don’t Die Summit_ Was It Worth $60-202503041101-_Macromo_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 922
+    },
+    {
+      "file": "Trump to rally in Minnesota, seeking to blunt Harr-202407271308-_Start Daily_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1519
+    },
+    {
+      "file": "++ Brand-new_ Save up to 70% ++ Ashampoo Money 26 -202504101402-_Ashampoo News_.pdf",
+      "type": "order",
+      "score": 13,
+      "metadata": {},
+      "text_length": 5086
+    },
+    {
+      "file": "Oppo Find N5 Review_ A Remarkably Thin and Practic-202504171231-_CNET Mobile_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1693
+    }
+  ],
+  "error_count": 0
+}

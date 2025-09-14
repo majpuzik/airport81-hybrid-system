@@ -1,0 +1,737 @@
+{
+  "timestamp": "20250824_181045",
+  "configuration": {
+    "sample_size": 100,
+    "use_ocr": true,
+    "use_ml": true
+  },
+  "statistics": {
+    "recognized": 90,
+    "unrecognized": 10,
+    "errors": 0,
+    "success_rate": 90.0,
+    "avg_confidence": 37.94444444444444,
+    "elapsed_seconds": 545.5641222000122,
+    "seconds_per_document": 5.455641222000122
+  },
+  "categories": {
+    "OBČANSKÉ": 5,
+    "ZDRAVOTNÍ": 18,
+    "PUBLIKACE": 24,
+    "ÚŘEDNÍ": 14,
+    "FIREMNÍ": 10,
+    "FINANČNÍ": 15,
+    "PRÁVNÍ": 4
+  },
+  "subtypes": {
+    "občanské_obecný": 4,
+    "zdravotní_obecný": 13,
+    "kniha": 2,
+    "soud": 2,
+    "výpověď": 3,
+    "newsletter": 17,
+    "firemní_obecný": 7,
+    "policie": 5,
+    "úřední_obecný": 7,
+    "účtenka": 7,
+    "notář": 2,
+    "předpis": 4,
+    "nájem": 1,
+    "faktura": 3,
+    "právní_obecný": 2,
+    "finanční_obecný": 2,
+    "výpis": 3,
+    "publikace_obecný": 4,
+    "vyšetření": 1,
+    "časopis": 1
+  },
+  "methods": {
+    "text_extraction:pdftotext": 83,
+    "ml": 83,
+    "filename": 14,
+    "ocr": 7
+  },
+  "new_categories_count": {
+    "ÚŘEDNÍ": 14,
+    "ZDRAVOTNÍ": 18,
+    "PRÁVNÍ": 4,
+    "FIREMNÍ": 10,
+    "OBČANSKÉ": 5
+  },
+  "examples": {
+    "recognized": [
+      {
+        "file": "20250512-Rhino News - Training for Trainers Workshop-42633.pdf",
+        "category": "OBČANSKÉ",
+        "subtype": "občanské_obecný",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:lease",
+          "text:credit",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "OBČANSKÉ": 30.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250505-Darujte své mamince něco krásného 🥰-868.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "za-oponou-valky.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "kniha",
+        "confidence": 70.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:isbn",
+          "regex:ISBN[\\s\\-]*[\\d\\-X]+",
+          "text:číslo",
+          "text:zpravodaj"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 70.0
+        }
+      },
+      {
+        "file": "1priloha_962714570_0_predvolanibyv.jedn.1101519.5.PDF",
+        "category": "ÚŘEDNÍ",
+        "subtype": "soud",
+        "confidence": 100,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:usnesení",
+          "text:odvolání",
+          "text:soudce",
+          "regex:\\d+\\s*[A-Z]+\\s*\\d+/\\d{4}",
+          "text:dlužník",
+          "text:ct",
+          "text:advokát",
+          "text:plat",
+          "regex:IČO:\\s*\\d{8}"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 100.0,
+          "ZDRAVOTNÍ": 15.0,
+          "PRÁVNÍ": 15.0,
+          "FIREMNÍ": 55.0,
+          "OBČANSKÉ": 30.0,
+          "FINANČNÍ": 40.0
+        }
+      },
+      {
+        "file": "20250505-Nové e-knihy právě dorazily, nakrmte si čtečku-964.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "výpověď",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:ukončení",
+          "text:newsletter",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 30.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250504-🗓 The Summary_ Your free reads next week-1035.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "soud",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:court",
+          "text:gericht",
+          "text:ct",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 30.0,
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250509-“M. Puzik” mentioned by “Dietbert Hahn”-115.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250506-Armband- und Taschenuhren _ Contemporary Week-738.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250511-Dobře zaseto-42440.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:plat",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250420-Temno před rozedněním-3840.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "firemní_obecný",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250408-Kennedy’s CDC Move_ Do Vaccines = Injuries_-6104.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250502-[192.168.10.35] Kontejner paperless-web v nástroji-1317.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "policie",
+        "confidence": 15.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:protokol"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250506-Lagebericht 06.05.2025-727.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "úřední_obecný",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:urteil",
+          "text:richter",
+          "text:ct",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 30.0,
+          "ZDRAVOTNÍ": 15.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "komu-je-dneska-dobre- (1).pdf",
+        "category": "PUBLIKACE",
+        "subtype": "kniha",
+        "confidence": 40.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:kupující",
+          "text:isbn",
+          "regex:ISBN[\\s\\-]*[\\d\\-X]+"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 15.0,
+          "OBČANSKÉ": 15.0,
+          "PUBLIKACE": 40.0
+        }
+      },
+      {
+        "file": "20250424-Your April member update-3001.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 30.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:ct",
+          "text:lease",
+          "text:statement",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 15.0,
+          "PUBLIKACE": 30.0
+        }
+      },
+      {
+        "file": "20250323-Týdenní přehled z iDNES Premium-8586.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "policie",
+        "confidence": 60.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:policie",
+          "text:policejní",
+          "text:police",
+          "text:plat"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 60.0,
+          "FIREMNÍ": 15.0
+        }
+      },
+      {
+        "file": "20250425-Belmond's Monthly Newsletter-2762.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "newsletter",
+        "confidence": 100,
+        "methods": [
+          "filename",
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "filename:newsletter",
+          "text:ct",
+          "text:lease",
+          "text:eet",
+          "regex:EET",
+          "regex:No\\.\\s*\\d+",
+          "text:newsletter",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "PUBLIKACE": 100.0,
+          "ZDRAVOTNÍ": 15.0,
+          "OBČANSKÉ": 15.0,
+          "FINANČNÍ": 40.0
+        }
+      },
+      {
+        "file": "20250429-Nářadí Bosch, co maká líp než většina kolegů 💪-2085.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "firemní_obecný",
+        "confidence": 40.0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "text:užívání",
+          "text:plat",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:dič",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:odhlásit"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 15.0,
+          "FIREMNÍ": 40.0,
+          "FINANČNÍ": 40.0,
+          "PUBLIKACE": 15.0
+        }
+      },
+      {
+        "file": "20250415-M.A.J., top price drops in London, selected for yo-4590.pdf",
+        "category": "ZDRAVOTNÍ",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "methods": [
+          "filename",
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [
+          "filename:ct",
+          "text:ct",
+          "text:eet",
+          "regex:EET"
+        ],
+        "all_scores": {
+          "ZDRAVOTNÍ": 45.0,
+          "FINANČNÍ": 40.0
+        }
+      },
+      {
+        "file": "Revizni zprava k UTP. p. Puzikova.pdf",
+        "category": "FIREMNÍ",
+        "subtype": "výpověď",
+        "confidence": 20.0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [
+          "ocr:ukončení"
+        ],
+        "all_scores": {
+          "FIREMNÍ": 20.0
+        }
+      }
+    ],
+    "unrecognized": [
+      {
+        "file": "Sofar rizeni Chovanec1.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250427-Ab 549 €_ Kleine Auszeit zum kleinen Preis-2456.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250416-Martin Cigler reagoval(a) na příspěvek_ USA_ obcho-4400.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "RADOVE DOMY.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "Sofar wifi dongle.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250409-Neues Landhaus zu Ihrer Suche_ Häuser; Landhäuser,-5794.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "X-plus（Hardware）(1).pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250321-Podívejte se na video „Die 10 besten AI Agenten To-8901.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "20250327-Máte více než 10 nových pozvání-7916.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "text_extraction:pdftotext",
+          "ml"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      },
+      {
+        "file": "Sofar a LOXONE komunikace.pdf",
+        "category": "NEROZPOZNÁNO",
+        "subtype": null,
+        "confidence": 0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [],
+        "all_scores": {}
+      }
+    ],
+    "official": [
+      {
+        "file": "1priloha_962714570_0_predvolanibyv.jedn.1101519.5.PDF",
+        "subtype": "soud",
+        "confidence": 100,
+        "patterns": [
+          "text:soud",
+          "text:usnesení",
+          "text:odvolání"
+        ]
+      },
+      {
+        "file": "20250504-🗓 The Summary_ Your free reads next week-1035.pdf",
+        "subtype": "soud",
+        "confidence": 30.0,
+        "patterns": [
+          "text:court",
+          "text:gericht",
+          "text:ct"
+        ]
+      },
+      {
+        "file": "20250502-[192.168.10.35] Kontejner paperless-web v nástroji-1317.pdf",
+        "subtype": "policie",
+        "confidence": 15.0,
+        "patterns": [
+          "text:protokol"
+        ]
+      },
+      {
+        "file": "20250506-Lagebericht 06.05.2025-727.pdf",
+        "subtype": "úřední_obecný",
+        "confidence": 30.0,
+        "patterns": [
+          "text:urteil",
+          "text:richter",
+          "text:ct"
+        ]
+      },
+      {
+        "file": "20250323-Týdenní přehled z iDNES Premium-8586.pdf",
+        "subtype": "policie",
+        "confidence": 60.0,
+        "patterns": [
+          "text:soud",
+          "text:policie",
+          "text:policejní"
+        ]
+      }
+    ],
+    "medical": [
+      {
+        "file": "20250505-Darujte své mamince něco krásného 🥰-868.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct",
+          "text:odhlásit"
+        ]
+      },
+      {
+        "file": "20250506-Armband- und Taschenuhren _ Contemporary Week-738.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct",
+          "text:newsletter"
+        ]
+      },
+      {
+        "file": "20250511-Dobře zaseto-42440.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 15.0,
+        "patterns": [
+          "text:ct",
+          "text:plat",
+          "text:newsletter"
+        ]
+      },
+      {
+        "file": "20250415-M.A.J., top price drops in London, selected for yo-4590.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "patterns": [
+          "filename:ct",
+          "text:ct",
+          "text:eet"
+        ]
+      },
+      {
+        "file": "Grblcontrol(Candle_1.1.7 ) Introduction.pdf",
+        "subtype": "zdravotní_obecný",
+        "confidence": 45.0,
+        "patterns": [
+          "filename:ct",
+          "text:ct"
+        ]
+      }
+    ],
+    "legal": [
+      {
+        "file": "PuzikPenzeSberbank.pdf",
+        "subtype": "notář",
+        "confidence": 40.0,
+        "patterns": [
+          "ocr:soud",
+          "ocr:předpis",
+          "ocr:ověření"
+        ]
+      },
+      {
+        "file": "20250325-🚘 2 neue Fahrzeuge für Dich-8236.pdf",
+        "subtype": "právní_obecný",
+        "confidence": 25.0,
+        "patterns": [
+          "text:gericht",
+          "regex:N\\s*\\d+/\\d{4}",
+          "text:fik"
+        ]
+      },
+      {
+        "file": "20250416-🚘 3 neue Fahrzeuge für Dich-4383.pdf",
+        "subtype": "právní_obecný",
+        "confidence": 25.0,
+        "patterns": [
+          "text:gericht",
+          "regex:N\\s*\\d+/\\d{4}",
+          "text:fik"
+        ]
+      },
+      {
+        "file": "PuzikPenzeSberbank.pdf",
+        "subtype": "notář",
+        "confidence": 40.0,
+        "patterns": [
+          "ocr:soud",
+          "ocr:předpis",
+          "ocr:ověření"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,574 @@
+{
+  "timestamp": "20250803_200314",
+  "summary": {
+    "total_processed": 20,
+    "successful_fixes": 20,
+    "failed_fixes": 0,
+    "verified_fixes": 20
+  },
+  "successful_fixes": [
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "original_score": 20,
+      "fixes": [
+        "customer_name: mátu ISDOC 6.0.1..."
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025031",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": null,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Milan Puzik",
+        "customer_name": "mátu ISDOC 6.0.1",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n87654321\nDodavatel:\nMilan Puzik\nCelková Iástka:\n0.00 CZK\nNázev souboru:\n20250731_170204_ISDOC_Milan Puzik_Re Faktura Iíslo FV2025031.isdo\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nRe: Faktura Iíslo FV2025/03/1\nOd:\nMilan Puzik &lt;puzik@outlook.com&gt;\nDatum:\nTue, 15 Apr 2025 10:03:07 +0000\nSmutn. Zmenim M.A.J. Puzik ________________________________ From: Martin Puk\n<martin.puzik@gmail.com> Sent: Tuesday, April 15, 2025 11:20:40 AM To: M.A.J. Puzik\n<puzik@outlook.com> Subject: FW: Faktura slo FV2025/03/1 Ahoj, peposlm dotaz ohledne faktury\nod spolenosti ALFAvita. Pedlat klienta na fakture. Zda mon. Moc ti dkuj, M"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ],
+      "enhanced_data": {
+        "invoice_number": "CZ01440578",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": 13107.93,
+        "currency": "CZK",
+        "variable_symbol": "1817024169",
+        "supplier_name": "VLTAVA LABE MEDIA a.s.",
+        "customer_name": "TESLA LIGHTING s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n1\nDodavatel:\nVLTAVA LABE MEDIA a.s.\nCelková Iástka:\n10833.00 CZK\nNázev souboru:\n20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADI .isdoc\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nFAKTURA K ÚHRADI\nOd:\nPišiová Zdena &lt;zdena.pisiova@vlmedia.cz&gt;\nDatum:\nWed, 25 Sep 2019 08:54:46 +0000\nDobr den, doplate prosm fakturu v ploze stle evidujeme nedoplatek 3.000 K. Zrove pikldm Vmi\npotvrzenou objednvku. Dkuji. S pozdravem Zdeka Piiov Vedouc odd. zadvn a fakturace\n[cid:image001.png@01D5738F.A1A6ABF0]<www.vlmedia.cz> VLTAVA LABE MEDIA a.s. Kladsk\n17 500 03 Hradec Krlov Tel.: 495 800 812 Mobil: 602 603 600 Email:\nzdena"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ],
+      "enhanced_data": {
+        "invoice_number": "CZ01440578",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": 13107.93,
+        "currency": "CZK",
+        "variable_symbol": "1817024169",
+        "supplier_name": "VLTAVA LABE MEDIA a.s.",
+        "customer_name": "TESLA LIGHTING s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n1\nDodavatel:\nVLTAVA LABE MEDIA a.s.\nCelková Iástka:\n10833.00 CZK\nNázev souboru:\n20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADI .isdoc\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nFAKTURA K ÚHRADI\nOd:\nPišiová Zdena &lt;zdena.pisiova@vlmedia.cz&gt;\nDatum:\nWed, 25 Sep 2019 08:54:46 +0000\nDobr den, doplate prosm fakturu v ploze stle evidujeme nedoplatek 3.000 K. Zrove pikldm Vmi\npotvrzenou objednvku. Dkuji. S pozdravem Zdeka Piiov Vedouc odd. zadvn a fakturace\n[cid:image001.png@01D5738F.A1A6ABF0]<www.vlmedia.cz> VLTAVA LABE MEDIA a.s. Kladsk\n17 500 03 Hradec Krlov Tel.: 495 800 812 Mobil: 602 603 600 Email:\nzdena"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ],
+      "enhanced_data": {
+        "invoice_number": "CZ01440578",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": 13107.93,
+        "currency": "CZK",
+        "variable_symbol": "1817024169",
+        "supplier_name": "VLTAVA LABE MEDIA a.s.",
+        "customer_name": "TESLA LIGHTING s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n1\nDodavatel:\nVLTAVA LABE MEDIA a.s.\nCelková Iástka:\n10833.00 CZK\nNázev souboru:\n20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADI .isdoc\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nFAKTURA K ÚHRADI\nOd:\nPišiová Zdena &lt;zdena.pisiova@vlmedia.cz&gt;\nDatum:\nWed, 25 Sep 2019 08:54:46 +0000\nDobr den, doplate prosm fakturu v ploze stle evidujeme nedoplatek 3.000 K. Zrove pikldm Vmi\npotvrzenou objednvku. Dkuji. S pozdravem Zdeka Piiov Vedouc odd. zadvn a fakturace\n[cid:image001.png@01D5738F.A1A6ABF0]<www.vlmedia.cz> VLTAVA LABE MEDIA a.s. Kladsk\n17 500 03 Hradec Krlov Tel.: 495 800 812 Mobil: 602 603 600 Email:\nzdena"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ],
+      "enhanced_data": {
+        "invoice_number": "CZ01440578",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": 13107.93,
+        "currency": "CZK",
+        "variable_symbol": "1817024169",
+        "supplier_name": "VLTAVA LABE MEDIA a.s.",
+        "customer_name": "TESLA LIGHTING s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n1\nDodavatel:\nVLTAVA LABE MEDIA a.s.\nCelková Iástka:\n10833.00 CZK\nNázev souboru:\n20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADI .isdoc\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nFAKTURA K ÚHRADI\nOd:\nPišiová Zdena &lt;zdena.pisiova@vlmedia.cz&gt;\nDatum:\nWed, 25 Sep 2019 08:54:46 +0000\nDobr den, doplate prosm fakturu v ploze stle evidujeme nedoplatek 3.000 K. Zrove pikldm Vmi\npotvrzenou objednvku. Dkuji. S pozdravem Zdeka Piiov Vedouc odd. zadvn a fakturace\n[cid:image001.png@01D5738F.A1A6ABF0]<www.vlmedia.cz> VLTAVA LABE MEDIA a.s. Kladsk\n17 500 03 Hradec Krlov Tel.: 495 800 812 Mobil: 602 603 600 Email:\nzdena"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ],
+      "enhanced_data": {
+        "invoice_number": "CZ01440578",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": 13107.93,
+        "currency": "CZK",
+        "variable_symbol": "1817024169",
+        "supplier_name": "VLTAVA LABE MEDIA a.s.",
+        "customer_name": "TESLA LIGHTING s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n1\nDodavatel:\nVLTAVA LABE MEDIA a.s.\nCelková Iástka:\n10833.00 CZK\nNázev souboru:\n20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADI .isdoc\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nFAKTURA K ÚHRADI\nOd:\nPišiová Zdena &lt;zdena.pisiova@vlmedia.cz&gt;\nDatum:\nWed, 25 Sep 2019 08:54:46 +0000\nDobr den, doplate prosm fakturu v ploze stle evidujeme nedoplatek 3.000 K. Zrove pikldm Vmi\npotvrzenou objednvku. Dkuji. S pozdravem Zdeka Piiov Vedouc odd. zadvn a fakturace\n[cid:image001.png@01D5738F.A1A6ABF0]<www.vlmedia.cz> VLTAVA LABE MEDIA a.s. Kladsk\n17 500 03 Hradec Krlov Tel.: 495 800 812 Mobil: 602 603 600 Email:\nzdena"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ],
+      "enhanced_data": {
+        "invoice_number": "CZ01440578",
+        "issue_date": null,
+        "due_date": null,
+        "total_amount": 13107.93,
+        "currency": "CZK",
+        "variable_symbol": "1817024169",
+        "supplier_name": "VLTAVA LABE MEDIA a.s.",
+        "customer_name": "TESLA LIGHTING s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nI Dokument obsahuje ISDOC\nTento PDF dokument obsahuje elektronickou fakturu ve formátu ISDOC 6.0.1\nPro extrakci ISDOC:\n1. OtevIete PDF v Adobe Acrobat Reader\n2. Zvolte View → Navigation Panels → Attachments\n3. Dvojklik na soubor .isdoc pro export\nFormát:\nISDOC 6.0.1\nIíslo faktury:\n1\nDodavatel:\nVLTAVA LABE MEDIA a.s.\nCelková Iástka:\n10833.00 CZK\nNázev souboru:\n20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADI .isdoc\nII ISDOC je standardizovaný formát pro elektronické faktury podporovaný vItšinou úIetních systémI v IR\n\n--- STRÁNKA 2 ---\nFAKTURA K ÚHRADI\nOd:\nPišiová Zdena &lt;zdena.pisiova@vlmedia.cz&gt;\nDatum:\nWed, 25 Sep 2019 08:54:46 +0000\nDobr den, doplate prosm fakturu v ploze stle evidujeme nedoplatek 3.000 K. Zrove pikldm Vmi\npotvrzenou objednvku. Dkuji. S pozdravem Zdeka Piiov Vedouc odd. zadvn a fakturace\n[cid:image001.png@01D5738F.A1A6ABF0]<www.vlmedia.cz> VLTAVA LABE MEDIA a.s. Kladsk\n17 500 03 Hradec Krlov Tel.: 495 800 812 Mobil: 602 603 600 Email:\nzdena"
+      }
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ],
+      "enhanced_data": {
+        "invoice_number": "2025-07-31",
+        "issue_date": "2024-07-01",
+        "due_date": "2024-07-01",
+        "total_amount": 10.89,
+        "currency": "CZK",
+        "variable_symbol": null,
+        "supplier_name": "Allegro Retail, a.s.",
+        "customer_name": "Softel Consulting s.r.o.",
+        "full_text_preview": "\n--- STRÁNKA 1 ---\nKärcher tlakový cistic Faktura k dorucene dodavce.PDF\nOd:\n\"M.A.J. Puzik\" &lt;puzik@outlook.com&gt;\nDatum:\nMon, 1 Jul 2024 15:27:11 +0000\nM.A.J. Puzik M.A.J. Puzik\nPIílohy:\n• Faktura k dorucene dodavce.PDF (60,120 bytI)\n\n--- STRÁNKA 2 ---\nDodavatel:\nAllegro Retail, a.s.\nU garáží 1611/1\n170 00 Praha 7 - Holešovice\nIČO: 26204967\nDIČ: CZ26204967\nVar.symbol (uvádějte při platbě)\n5087281794\nKonstantní symbol    8\nStrana č.1\nFaktura - daňový doklad č.\n5087281794\nOdběratel:\nSoftel Consulting s.r.o.\nOcelkova 20\n198 00 Praha\nDIČ: CZ16188047\nDatum vystavení dokladu:\n01.07.2024\nDatum zdanitelného plnění:\n01.07.2024\nDatum splatnosti:\n01.07.2024\nDodací list:\n1177230273\nVaše značka:\n0154553030\nObjednávka:\n154553030\nKód \nzboží\nNázev zboží\nMnožství/MJ\nCena za jednotku\nbez DPH\nCena celkem\nbez DPH\nCena celkem\ns DPH\nSazba\nDPH\n2871253\nKÄRCHER K 5 Tlaková myčka Power C (13245500)\n     1 KS \n        5.404,96\n          5.404,96\n        6.540,00\n21,0%\n    Recyklační příspěvek: 10,89 CZK/MJ b"
+      }
+    }
+  ],
+  "failed_fixes": [],
+  "verification_results": [
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "filename": "20250731_170204_ISDOC_Milan Puzik_Re Faktura číslo FV2025031.pdf",
+      "verified": true,
+      "original_score": 20,
+      "fixes": [
+        "customer_name: mátu ISDOC 6.0.1..."
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "filename": "20250731_170127_ISDOC_Pišiová Zdena_FAKTURA K ÚHRADĚ .pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "invoice_number: CZ01440578"
+      ]
+    },
+    {
+      "file": "/Users/m.a.j.puzik/majconvert-gmail-isdoc/20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "filename": "20250731_165145_ISDOC_MAJ Puzik_Kärcher tlakový cistic Faktura k dorucene dodavceP.pdf",
+      "verified": true,
+      "original_score": 40,
+      "fixes": [
+        "currency: CZK"
+      ]
+    }
+  ]
+}

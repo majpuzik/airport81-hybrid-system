@@ -1,0 +1,172 @@
+{
+  "batch_start": 15000,
+  "batch_end": 16000,
+  "timestamp": "2025-08-02T20:34:29.622589",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 167,
+    "invoice": 548,
+    "receipt": 28,
+    "order": 169,
+    "shipping": 24,
+    "notification": 40,
+    "subscription": 17,
+    "contract": 5,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Statistic Dům-202502120027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 228
+    },
+    {
+      "file": "$10.00 payment to KREA.AI, Inc. was unsuccessful-202503271900-_KREA.AI, Inc._.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 571
+    },
+    {
+      "file": "Startuje akce 5 knih za 350 Kč 📚 Nové diáře A Cup-202409181654-Dobré Knihy.pdf",
+      "type": "invoice",
+      "score": 49,
+      "metadata": {
+        "ico": "08618313"
+      },
+      "text_length": 6029
+    },
+    {
+      "file": "[Herbonia] Vaše registrace-202501272347-_Herbonia_.pdf",
+      "type": "receipt",
+      "score": 12,
+      "metadata": {},
+      "text_length": 767
+    },
+    {
+      "file": "Pravda o ALEO ťažbe-202504271320-Ako-Ťažiť-Kryptomeny.sk.pdf",
+      "type": "invoice",
+      "score": 87,
+      "metadata": {
+        "ico": "53804996"
+      },
+      "text_length": 9994
+    },
+    {
+      "file": "Statistic L1-202409060005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 224
+    },
+    {
+      "file": "Potvrďte prosím obdržení zboží-202407160630-_oznameni Aukro.cz_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {
+        "ico": "05360722"
+      },
+      "text_length": 1515
+    },
+    {
+      "file": "Ihr nächstes Reiseziel_ Split, Kroatien-202505081209-_Tripadvisor_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1880
+    },
+    {
+      "file": "Faktura  č.  24FVH37718-202409161819-_AppleMix.cz_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 496
+    },
+    {
+      "file": "Daily Overview for Bressner-202409231132-_Manage It_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 546
+    },
+    {
+      "file": "Víte, jak na správné opalování_-202505091043-_Dr. Max E-shop_.pdf",
+      "type": "invoice",
+      "score": 19,
+      "metadata": {
+        "ico": "28511298"
+      },
+      "text_length": 5109
+    },
+    {
+      "file": "⏳ Last Chance for Smarter Comfort – Weekend Sale E-202502091801-_Sensibo_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 932
+    },
+    {
+      "file": "✨The Ultimate Webinar for EinScan Pro HD and Quick-202405291102-_SHINING 3D_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2493
+    },
+    {
+      "file": "Stvrzenka za vaši platbu příjemci Golem Media GmbH-202410010830-_service@intl.paypal.com_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {},
+      "text_length": 787
+    },
+    {
+      "file": "Planetární rachot s Michaelou Merglovou a Martinem-202503201630-Dobré Knihy.pdf",
+      "type": "invoice",
+      "score": 30,
+      "metadata": {
+        "ico": "08618313"
+      },
+      "text_length": 7431
+    },
+    {
+      "file": "Upgrade Your Dental Practice_ Exclusive Discounts -202412271503-_CHITUBOX_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1835
+    },
+    {
+      "file": "New Media MUST defeat the Mainstream Media-202505052008-_PolitiBrawl_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 3592
+    },
+    {
+      "file": "🛠 Nejlepší kousky roku 2024 a nejen to.-202501290653-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 44,
+      "metadata": {},
+      "text_length": 4027
+    },
+    {
+      "file": "Na Vašem názoru záleží! Věnujte nám, prosím, 2 min-202409180442-_DHL Express_.pdf",
+      "type": "shipping",
+      "score": 12,
+      "metadata": {},
+      "text_length": 1921
+    },
+    {
+      "file": "⏳ Super slevy na poslední kusy skladem! 🛒-202405210730-🛠 HobyNaradi.cz.pdf",
+      "type": "invoice",
+      "score": 13,
+      "metadata": {},
+      "text_length": 2143
+    }
+  ],
+  "error_count": 0
+}

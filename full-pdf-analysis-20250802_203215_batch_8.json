@@ -1,0 +1,167 @@
+{
+  "batch_start": 8000,
+  "batch_end": 9000,
+  "timestamp": "2025-08-02T20:33:30.509180",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 520,
+    "order": 181,
+    "unknown": 174,
+    "notification": 33,
+    "receipt": 28,
+    "bank_statement": 2,
+    "shipping": 26,
+    "subscription": 22,
+    "contract": 14
+  },
+  "metadata_samples": [
+    {
+      "file": "Váš Lidl leták na příští týden se specialitami v a-202406141027-_Lidl_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {
+        "ico": "26178541"
+      },
+      "text_length": 2054
+    },
+    {
+      "file": "Šumavský statek bez nevkusu — Historický poklad na-202411280916-_ASB eNoviny_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 4918
+    },
+    {
+      "file": "Jeff VanderMeer’s Annihilation and Absolution-202409281100-_MutualArt Magazine_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2341
+    },
+    {
+      "file": "Podívejte se na video „I Tried All The AI Glasses -202408122043-_M.A.J. Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 343
+    },
+    {
+      "file": "Ends tomorrow_ 30% off 3D Models-202412301813-_TurboSquid_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 902
+    },
+    {
+      "file": "Ein Jahr Handelsblatt mit 30 % Ersparnis genießen-202503071703-_Handelsblatt_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1462
+    },
+    {
+      "file": "New xTool course! Master Material Settings Like a -202503111432-_xTool EU_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1738
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202504061805-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    },
+    {
+      "file": "✅ Zuzano, zlevnili jsme náplně i do vaší tiskárny-202505190844-_TonerPartner_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1883
+    },
+    {
+      "file": "Výhra v kalendáři 3000 Kč + tipy na nejlepší dárky-202412051329-Dárky do 200 Kč.pdf",
+      "type": "invoice",
+      "score": 36,
+      "metadata": {},
+      "text_length": 4078
+    },
+    {
+      "file": "1 Vlastník role obsazená ve společnosti Veeam Soft-202410111817-_LinkedIn_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1452
+    },
+    {
+      "file": "3D Printing Inspiration_ Training, Tips, and Tools-202502061404-_David from Materialise Software_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2873
+    },
+    {
+      "file": "Statistic Varná deska-202410020005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 252
+    },
+    {
+      "file": "Stay Updated with Real-Time Alerts on Trump’s Cryp-202503071355-_CryptoCompare_.pdf",
+      "type": "notification",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1204
+    },
+    {
+      "file": "Statistic L1-202501100027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 225
+    },
+    {
+      "file": "Extra Deals _ 30% Rabatt-202501251648-_BESTSECRET_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1497
+    },
+    {
+      "file": "Dejte si refresh znalostí i certifikace v Campusu-202505121634-_Loxone s.r.o._.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 456
+    },
+    {
+      "file": "Legge di bilancio 2025, tutte le misure in arrivo-202410171601-_idealista_.pdf",
+      "type": "receipt",
+      "score": 3,
+      "metadata": {},
+      "text_length": 974
+    },
+    {
+      "file": "Žhavé aukce_ sběratelské předměty WW2 a Třetí říše-202412121320-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 38,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 3520
+    },
+    {
+      "file": "Výpis z účtu-202404010646-_Banka CREDITAS_.pdf",
+      "type": "bank_statement",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1129
+    }
+  ],
+  "error_count": 0
+}

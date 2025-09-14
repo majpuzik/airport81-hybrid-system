@@ -1,0 +1,415 @@
+{
+  "timestamp": "20250730_190407",
+  "comparison_results": {
+    "mistral_ocr": {
+      "success": 0,
+      "failed": 15,
+      "total_time": 9.04553484916687,
+      "classifications": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "qwen2vl": {
+      "success": 15,
+      "failed": 0,
+      "total_time": 16.870081186294556,
+      "classifications": [
+        {
+          "category": "INFO",
+          "document_type": "Google notifikace",
+          "confidence": 0.8,
+          "key_elements": [
+            "Google",
+            "notification"
+          ],
+          "reasoning": "Qwen2-VL detected Google notification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "SPAM",
+          "document_type": "Email marketing",
+          "confidence": 0.75,
+          "key_elements": [
+            "marketing",
+            "promotional"
+          ],
+          "reasoning": "Qwen2-VL detected marketing email",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "DULEZITE",
+          "document_type": "PayPal platba",
+          "confidence": 0.85,
+          "key_elements": [
+            "PayPal",
+            "payment",
+            "transaction"
+          ],
+          "reasoning": "Qwen2-VL detected PayPal payment document",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "DULEZITE",
+          "document_type": "PayPal platba",
+          "confidence": 0.85,
+          "key_elements": [
+            "PayPal",
+            "payment",
+            "transaction"
+          ],
+          "reasoning": "Qwen2-VL detected PayPal payment document",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "SPAM",
+          "document_type": "Email marketing",
+          "confidence": 0.75,
+          "key_elements": [
+            "marketing",
+            "promotional"
+          ],
+          "reasoning": "Qwen2-VL detected marketing email",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Obecný email",
+          "confidence": 0.6,
+          "key_elements": [
+            "email",
+            "message"
+          ],
+          "reasoning": "Qwen2-VL generic classification",
+          "model": "qwen2vl",
+          "model_name": "Qwen2-VL"
+        }
+      ]
+    },
+    "florence2": {
+      "success": 4,
+      "failed": 11,
+      "total_time": 13.938943862915039,
+      "classifications": [
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "DULEZITE",
+          "document_type": "Platební dokument",
+          "confidence": 0.9,
+          "key_elements": [
+            "payment",
+            "financial",
+            "transaction"
+          ],
+          "reasoning": "Florence-2 detected payment document",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "DULEZITE",
+          "document_type": "Platební dokument",
+          "confidence": 0.9,
+          "key_elements": [
+            "payment",
+            "financial",
+            "transaction"
+          ],
+          "reasoning": "Florence-2 detected payment document",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "DULEZITE",
+          "document_type": "Dopravní dokument",
+          "confidence": 0.85,
+          "key_elements": [
+            "shipping",
+            "delivery",
+            "postal"
+          ],
+          "reasoning": "Florence-2 detected shipping document",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "INFO",
+          "document_type": "Nespecifikovaný dokument",
+          "confidence": 0.4,
+          "key_elements": [
+            "document",
+            "text"
+          ],
+          "reasoning": "Florence-2 uncertain classification",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        },
+        {
+          "category": "DULEZITE",
+          "document_type": "Dopravní dokument",
+          "confidence": 0.85,
+          "key_elements": [
+            "shipping",
+            "delivery",
+            "postal"
+          ],
+          "reasoning": "Florence-2 detected shipping document",
+          "model": "florence2",
+          "model_name": "Florence-2 Microsoft"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_models_tested": 3,
+    "models": [
+      "Mistral OCR",
+      "Qwen2-VL",
+      "Florence-2"
+    ]
+  }
+}

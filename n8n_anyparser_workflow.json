@@ -1,0 +1,233 @@
+{
+  "name": "AnyParser Document Processing with Validation",
+  "nodes": [
+    {
+      "id": "webhook",
+      "name": "Webhook - Document Input",
+      "type": "n8n-nodes-base.webhook",
+      "position": [250, 300],
+      "webhookId": "anyparser-document-processor",
+      "parameters": {
+        "path": "process-document",
+        "responseMode": "lastNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "anyparser_validator",
+      "name": "AnyParser with Validation",
+      "type": "n8n-nodes-base.function",
+      "position": [450, 300],
+      "parameters": {
+        "functionCode": "// AnyParser Document Processor with Validation\n// Rozlišuje mezi skutečnými fakturami a emaily o fakturách\n\nconst document = items[0].json;\nconst pdfContent = document.content || '';\n\n// Email detection patterns\nconst emailPatterns = [\n  /(from|od|odesílatel)\\s*:\\s*[^\\n]+/i,\n  /(to|komu|příjemce)\\s*:\\s*[^\\n]+/i,\n  /(subject|předmět)\\s*:\\s*[^\\n]+/i,\n  /s\\s*pozdravem/i,\n  /best\\s*regards/i,\n  /dobrý\\s*den/i,\n  /vážený\\s*pane/i,\n  /děkuji/i,\n  /prosím/i,\n  /zasíláme\\s*vám/i,\n  /v\\s*příloze/i,\n  /attachment/i,\n  /přeposílám/i\n];\n\n// Invoice required fields patterns\nconst invoicePatterns = {\n  invoice_number: /(?:faktura|invoice|daňový\\s*doklad)\\s*(?:č\\.|číslo|number|no\\.)\\s*:?\\s*([A-Z0-9\\-\\/]+)/i,\n  ico: /(?:ičo?|company\\s*id)\\s*:?\\s*(\\d{8})/i,\n  dic: /(?:dič?|vat\\s*id)\\s*:?\\s*(CZ\\d{8,10})/i,\n  issue_date: /(?:datum\\s*vystavení|date\\s*of\\s*issue)\\s*:?\\s*(\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{2,4})/i,\n  due_date: /(?:datum\\s*splatnosti|due\\s*date)\\s*:?\\s*(\\d{1,2}[.\\-\\/]\\d{1,2}[.\\-\\/]\\d{2,4})/i,\n  total_amount: /(?:celkem|total|k\\s*úhradě)\\s*:?\\s*([\\d\\s,]+[,.]?\\d*)\\s*(?:kč|czk|eur)/i,\n  supplier: /(?:dodavatel|supplier|vendor)\\s*:?\\s*([^\\n]+)/i,\n  customer: /(?:odběratel|customer|bill\\s*to)\\s*:?\\s*([^\\n]+)/i,\n  variable_symbol: /(?:variabilní\\s*symbol|vs)\\s*:?\\s*(\\d+)/i,\n  bank_account: /(?:číslo\\s*účtu|account\\s*number)\\s*:?\\s*([\\d\\-\\/]+)/i\n};\n\n// Step 1: Check if it's an email\nlet emailScore = 0;\nfor (const pattern of emailPatterns) {\n  if (pattern.test(pdfContent)) {\n    emailScore++;\n  }\n}\n\nif (emailScore >= 3) {\n  // It's an email communication about invoices\n  return {\n    json: {\n      document_type: 'email_communication',\n      validation: 'rejected',\n      reason: 'Email nebo komunikace o faktuře, ne skutečná faktura',\n      email_score: emailScore,\n      original: document\n    }\n  };\n}\n\n// Step 2: Extract invoice fields\nconst extractedFields = {};\nlet fieldsFound = 0;\n\nfor (const [field, pattern] of Object.entries(invoicePatterns)) {\n  const match = pdfContent.match(pattern);\n  if (match) {\n    extractedFields[field] = match[1];\n    fieldsFound++;\n  }\n}\n\n// Step 3: Validate as invoice (need at least 4 fields)\nif (fieldsFound >= 4) {\n  // It's a valid invoice\n  return {\n    json: {\n      document_type: 'invoice',\n      validation: 'accepted',\n      confidence: fieldsFound / Object.keys(invoicePatterns).length,\n      extracted_fields: extractedFields,\n      fields_found: fieldsFound,\n      original: document\n    }\n  };\n} else {\n  // Unknown or insufficient data\n  return {\n    json: {\n      document_type: 'unknown',\n      validation: 'insufficient_data',\n      reason: `Nalezeno pouze ${fieldsFound} z minimálně 4 požadovaných polí`,\n      extracted_fields: extractedFields,\n      fields_found: fieldsFound,\n      original: document\n    }\n  };\n}"
+      }
+    },
+    {
+      "id": "route",
+      "name": "Route by Document Type",
+      "type": "n8n-nodes-base.switch",
+      "position": [650, 300],
+      "parameters": {
+        "dataType": "string",
+        "value1": "={{$json.document_type}}",
+        "rules": [
+          {
+            "value2": "invoice",
+            "output": 0
+          },
+          {
+            "value2": "email_communication",
+            "output": 1
+          },
+          {
+            "value2": "unknown",
+            "output": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "process_invoice",
+      "name": "Process Invoice",
+      "type": "n8n-nodes-base.function",
+      "position": [850, 200],
+      "parameters": {
+        "functionCode": "// Process valid invoice\nconst invoice = items[0].json;\n\n// Prepare for Paperless upload\nconst paperlessData = {\n  title: `Faktura ${invoice.extracted_fields.invoice_number || 'Bez čísla'}`,\n  document_type: 'faktura',\n  tags: [],\n  custom_fields: invoice.extracted_fields\n};\n\n// Generate semantic tags\nif (invoice.extracted_fields.total_amount) {\n  const amount = parseFloat(invoice.extracted_fields.total_amount.replace(/[^0-9.,]/g, '').replace(',', '.'));\n  paperlessData.tags.push(`amount-${Math.round(amount)}`);\n  \n  if (amount < 1000) {\n    paperlessData.tags.push('amount-small');\n  } else if (amount < 10000) {\n    paperlessData.tags.push('amount-medium');\n  } else {\n    paperlessData.tags.push('amount-large');\n  }\n}\n\nif (invoice.extracted_fields.ico) {\n  paperlessData.tags.push(`ico-${invoice.extracted_fields.ico}`);\n}\n\nif (invoice.extracted_fields.variable_symbol) {\n  paperlessData.tags.push(`vs-${invoice.extracted_fields.variable_symbol}`);\n}\n\nif (invoice.extracted_fields.supplier) {\n  paperlessData.correspondent = invoice.extracted_fields.supplier;\n}\n\nreturn {\n  json: {\n    ...invoice,\n    paperless_data: paperlessData,\n    status: 'ready_for_upload'\n  }\n};"
+      }
+    },
+    {
+      "id": "reject_email",
+      "name": "Reject Email",
+      "type": "n8n-nodes-base.function",
+      "position": [850, 300],
+      "parameters": {
+        "functionCode": "// Reject email communications\nconst email = items[0].json;\n\nreturn {\n  json: {\n    ...email,\n    status: 'rejected',\n    message: 'Dokument je email nebo komunikace, ne skutečná faktura',\n    suggestion: 'Zkontrolujte přílohy emailu pro skutečné faktury'\n  }\n};"
+      }
+    },
+    {
+      "id": "manual_review",
+      "name": "Manual Review Required",
+      "type": "n8n-nodes-base.function", 
+      "position": [850, 400],
+      "parameters": {
+        "functionCode": "// Send for manual review\nconst unknown = items[0].json;\n\nreturn {\n  json: {\n    ...unknown,\n    status: 'manual_review_required',\n    message: 'Nedostatek informací pro automatickou klasifikaci',\n    extracted_data: unknown.extracted_fields,\n    suggestion: 'Dokument vyžaduje manuální kontrolu'\n  }\n};"
+      }
+    },
+    {
+      "id": "paperless_upload",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1050, 200],
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "method": "POST",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Token 0219d92798426d2e114bb8daa654aff2b4fab202"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{$json.paperless_data.title}}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{$json.paperless_data.document_type}}"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{$json.paperless_data.correspondent}}"
+            },
+            {
+              "name": "tags",
+              "value": "={{$json.paperless_data.tags}}"
+            },
+            {
+              "name": "custom_fields",
+              "value": "={{JSON.stringify($json.paperless_data.custom_fields)}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [1250, 300],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{JSON.stringify($json)}}"
+      }
+    }
+  ],
+  "connections": {
+    "webhook": {
+      "main": [
+        [
+          {
+            "node": "anyparser_validator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "anyparser_validator": {
+      "main": [
+        [
+          {
+            "node": "route",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "route": {
+      "main": [
+        [
+          {
+            "node": "process_invoice",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "reject_email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "manual_review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "process_invoice": {
+      "main": [
+        [
+          {
+            "node": "paperless_upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "paperless_upload": {
+      "main": [
+        [
+          {
+            "node": "response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "reject_email": {
+      "main": [
+        [
+          {
+            "node": "response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "manual_review": {
+      "main": [
+        [
+          {
+            "node": "response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  }
+}

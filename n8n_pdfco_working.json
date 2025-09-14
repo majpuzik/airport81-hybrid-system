@@ -1,0 +1,187 @@
+{
+  "name": "PDFco Working Solution",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "filepath",
+              "value": "/Users/m.a.j.puzik/Desktop/scan_20250808_094531_ocr.pdf"
+            }
+          ]
+        }
+      },
+      "id": "setFile",
+      "name": "Set File",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "url": "=https://api.pdf.co/v1/file/upload/get-presigned-url?name={{$json.filepath.split('/').pop()}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "getPresignedUrl",
+      "name": "Get Upload URL",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "filePath": "={{ $node['setFile'].json.filepath }}"
+      },
+      "id": "readFile",
+      "name": "Read PDF",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $node['getPresignedUrl'].json.presignedUrl }}",
+        "requestMethod": "PUT",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/pdf"
+            }
+          ]
+        },
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "options": {}
+      },
+      "id": "uploadFile",
+      "name": "Upload File",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.pdf.co/v1/pdf/convert/to/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyType": "json",
+        "jsonBody": "={\"url\": \"{{$node['getPresignedUrl'].json.url}}\", \"inline\": true}",
+        "options": {}
+      },
+      "id": "extractText",
+      "name": "Extract Text",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = ($json.body || $json.text || '').toLowerCase();\nconst filename = $node['setFile'].json.filepath.split('/').pop();\n\n// Klasifikace\nlet docType = 'unknown';\nif (text.includes('vyúčtování') || text.includes('vyuctovani')) docType = 'vyuctovani';\nelse if (text.includes('faktura') || text.includes('invoice')) docType = 'faktura';\nelse if (text.includes('účtenka') || text.includes('uctenka')) docType = 'uctenka';\nelse if (text.includes('výpis') || text.includes('vypis')) docType = 'vypis';\nelse if (text.includes('smlouva')) docType = 'smlouva';\n\n// Korespondent\nlet correspondent = 'Unknown';\nif (text.includes('bezdodavatele')) correspondent = 'BezDodavatele';\nelse if (text.includes('čsob') || text.includes('csob')) correspondent = 'CSOB';\nelse if (text.includes('alza')) correspondent = 'Alza';\n\n// Custom fields\nconst customFields = {};\nconst tags = [docType];\n\nif (correspondent !== 'Unknown') {\n  tags.push(correspondent.toLowerCase());\n}\n\n// Parsování\nif (docType === 'vyuctovani' || docType === 'faktura') {\n  // Číslo faktury\n  const invoiceMatch = text.match(/vyúčtování.*č\\.\\s*(\\d+)/i);\n  if (invoiceMatch) {\n    customFields.invoice_number = invoiceMatch[1];\n  }\n  \n  // Období\n  const periodMatch = text.match(/období:\\s*([^\\n]+)/i);\n  if (periodMatch) {\n    customFields.period = periodMatch[1].trim();\n  }\n  \n  // Částka\n  const amountMatch = text.match(/celkem s dph\\s*([\\d\\s]+[,.]?\\d*)\\s*kč/i);\n  if (amountMatch) {\n    customFields.amount = amountMatch[1].replace(/\\s/g, '');\n  }\n  \n  // Splatnost\n  const dueMatch = text.match(/splatnost:\\s*([\\d.]+)/i);\n  if (dueMatch) {\n    customFields.due_date = dueMatch[1];\n  }\n}\n\nreturn [{\n  json: {\n    '✅ STATUS': 'SUCCESS',\n    '📄 File': filename,\n    '📑 Type': docType,\n    '👤 Correspondent': correspondent,\n    '🏷️ Tags': tags.join(', '),\n    '📝 Custom Fields': customFields,\n    '📊 Text Length': text.length + ' chars',\n    '💡 Preview': text.substring(0, 300)\n  }\n}];"
+      },
+      "id": "parseResult",
+      "name": "Parse & Display",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1450, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Set File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set File": {
+      "main": [
+        [
+          {
+            "node": "Get Upload URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Upload URL": {
+      "main": [
+        [
+          {
+            "node": "Read PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read PDF": {
+      "main": [
+        [
+          {
+            "node": "Upload File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload File": {
+      "main": [
+        [
+          {
+            "node": "Extract Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Text": {
+      "main": [
+        [
+          {
+            "node": "Parse & Display",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "pdfco_working"
+}

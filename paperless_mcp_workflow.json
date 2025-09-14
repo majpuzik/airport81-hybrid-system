@@ -1,0 +1,358 @@
+{
+  "name": "Paperless-NGX Document Recognition via MCP Server V4",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "/paperless-upload",
+        "httpMethod": "POST",
+        "responseMode": "responseNode",
+        "options": {
+          "rawBody": true
+        }
+      },
+      "id": "file-upload-webhook",
+      "name": "File Upload Interface",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [200, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Zpracování nahraného souboru z form data\nconst body = $input.first().body;\nconst headers = $input.first().headers;\n\n// Simulace file upload zpracování\n// V reálném systému by zde bylo parsování multipart/form-data\n\n// Pro demo vrátíme test data\nconst uploadedFile = {\n  document_id: Math.floor(Math.random() * 1000) + 1000,\n  file_path: '/tmp/uploaded_document.pdf',\n  title: 'Uploaded Document',\n  original_filename: 'user_document.pdf',\n  upload_timestamp: new Date().toISOString()\n};\n\nreturn uploadedFile;"
+      },
+      "id": "process-upload",
+      "name": "Process File Upload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [400, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"status\": \"success\",\n  \"message\": \"File uploaded and processing started\",\n  \"document_id\": \"{{$json.document_id}}\",\n  \"timestamp\": \"{{$json.upload_timestamp}}\"\n}",
+        "options": {}
+      },
+      "id": "upload-response",
+      "name": "Upload Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [2400, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Validace a příprava dat z Paperless-ngx webhook\nconst documentId = $input.first().json.document_id;\nconst documentPath = $input.first().json.file_path;\nconst documentTitle = $input.first().json.title || '';\n\nif (!documentId) {\n  throw new Error('Missing document_id from Paperless webhook');\n}\n\n// MCP Server V4 konfigurace\nconst MCP_SERVER_URL = 'http://localhost:5002';\n\nreturn {\n  documentId,\n  documentPath,\n  documentTitle,\n  MCP_SERVER_URL,\n  timestamp: new Date().toISOString()\n};"
+      },
+      "id": "init-processing",
+      "name": "Initialize Document Processing",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [400, 200]
+    },
+    {
+      "parameters": {
+        "url": "={{$node[\"Initialize Document Processing\"].json[\"MCP_SERVER_URL\"]}}",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {
+          "headers": {
+            "Content-Type": "application/json"
+          }
+        },
+        "bodyParametersJson": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"paperless_get_documents\",\n    \"arguments\": {\n      \"document_id\": \"{{$node[\"Initialize Document Processing\"].json[\"documentId\"]}}\",\n      \"paperless_instance\": \"8050\"\n    }\n  }\n}"
+      },
+      "id": "get-document-mcp",
+      "name": "Get Document via MCP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [600, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Příprava pro paralelní analýzy přes MCP Server V4\nconst documentData = $node[\"Get Document via MCP\"].json.result;\nconst documentId = $node[\"Initialize Document Processing\"].json.documentId;\nconst mcpUrl = $node[\"Initialize Document Processing\"].json.MCP_SERVER_URL;\n\n// Vytvoří 4 paralelní požadavky pro různé MCP nástroje\nconst analysisRequests = [\n  {\n    service: 'google_vision_ocr',\n    mcpCall: {\n      jsonrpc: \"2.0\",\n      id: 1,\n      method: \"tools/call\", \n      params: {\n        name: \"google_vision_ocr\",\n        arguments: {\n          document_id: documentId,\n          extract_text: true,\n          detect_tables: true\n        }\n      }\n    },\n    mcpUrl,\n    priority: 1\n  },\n  {\n    service: 'google_document_ai_process',\n    mcpCall: {\n      jsonrpc: \"2.0\",\n      id: 2,\n      method: \"tools/call\",\n      params: {\n        name: \"google_document_ai_process\", \n        arguments: {\n          document_id: documentId,\n          processor_type: \"form_parser\"\n        }\n      }\n    },\n    mcpUrl,\n    priority: 2\n  },\n  {\n    service: 'anyparser_extract_structured',\n    mcpCall: {\n      jsonrpc: \"2.0\",\n      id: 3,\n      method: \"tools/call\",\n      params: {\n        name: \"anyparser_extract_structured\",\n        arguments: {\n          document_id: documentId,\n          extract_type: \"invoice_receipt_bank_statement\"\n        }\n      }\n    },\n    mcpUrl,\n    priority: 3\n  },\n  {\n    service: 'pdf_convert_to_text',\n    mcpCall: {\n      jsonrpc: \"2.0\",\n      id: 4,\n      method: \"tools/call\",\n      params: {\n        name: \"pdf_convert_to_text\",\n        arguments: {\n          document_id: documentId,\n          ocr_enabled: true,\n          extract_invoice_data: true\n        }\n      }\n    },\n    mcpUrl,\n    priority: 4\n  }\n];\n\nreturn analysisRequests;"
+      },
+      "id": "prepare-mcp-analyses",
+      "name": "Prepare MCP Analysis Calls",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [800, 200]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "split-batch",
+      "name": "Split Into Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [1000, 200]
+    },
+    {
+      "parameters": {
+        "url": "={{$json.mcpUrl}}",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {
+          "headers": {
+            "Content-Type": "application/json"
+          }
+        },
+        "bodyParametersJson": "{{JSON.stringify($json.mcpCall)}}"
+      },
+      "id": "execute-mcp-call",
+      "name": "Execute MCP Analysis",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1200, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// SKÓROVACÍ ALGORITMUS PRO ROZPOZNÁNÍ DOKUMENTŮ\n// Komunikace POUZE přes MCP Server V4.x\n\nconst allResults = $items().map(item => item.json);\n\nclass DocumentScorerMCP {\n  constructor(mcpResults) {\n    // Parsování výsledků z MCP\n    this.results = {};\n    mcpResults.forEach(res => {\n      if (res.result) {\n        this.results[res.service] = res.result;\n      }\n    });\n    \n    // Kombinovaný text ze všech MCP zdrojů\n    this.combinedText = this.extractAllTextFromMCP();\n  }\n  \n  extractAllTextFromMCP() {\n    let texts = [];\n    \n    // Google Vision přes MCP\n    if (this.results.google_vision_ocr?.extracted_text) {\n      texts.push(this.results.google_vision_ocr.extracted_text);\n    }\n    \n    // Document AI přes MCP \n    if (this.results.google_document_ai_process?.document_text) {\n      texts.push(this.results.google_document_ai_process.document_text);\n    }\n    \n    // AnyParser přes MCP\n    if (this.results.anyparser_extract_structured?.structured_data) {\n      texts.push(JSON.stringify(this.results.anyparser_extract_structured.structured_data));\n    }\n    \n    // PDF.co přes MCP\n    if (this.results.pdf_convert_to_text?.text_content) {\n      texts.push(this.results.pdf_convert_to_text.text_content);\n    }\n    \n    return texts.join('\\n').toLowerCase();\n  }\n  \n  // ROZPOZNÁNÍ FAKTUR - 100% JISTOTA POVINNÁ\n  recognizeInvoice() {\n    const text = this.combinedText;\n    let score = 0;\n    let confidence = 'UNKNOWN';\n    let region = 'UNKNOWN';\n    let details = [];\n    \n    // KRITICKÉ PRVKY (30 bodů každý)\n    const invoiceKeywords = {\n      'CZ': ['faktura', 'faktura č.', 'daňový doklad'],\n      'DE': ['rechnung', 'rechnung nr.', 'rechnungsnummer'], \n      'AT': ['rechnung', 'rechnung nr.'],\n      'US': ['invoice', 'invoice #', 'invoice number'],\n      'CN': ['发票', '增值税发票']\n    };\n    \n    // Detekce regionu a základního klíčového slova\n    for (const [reg, keywords] of Object.entries(invoiceKeywords)) {\n      for (const keyword of keywords) {\n        if (text.includes(keyword.toLowerCase())) {\n          score += 30;\n          region = reg;\n          details.push(`Klíčové slovo: ${keyword}`);\n          break;\n        }\n      }\n      if (region !== 'UNKNOWN') break;\n    }\n    \n    // POVINNÉ NÁLEŽITOSTI podle regionu (25 bodů každý)\n    const taxIdentifiers = {\n      'CZ': [/ičo\\s*:?\\s*\\d{8}/, /dič\\s*:?\\s*cz\\d{8,10}/, /dph\\s+21%/],\n      'DE': [/ust[.-]?idnr\\.?\\s*:?\\s*de\\d{9}/, /steuernummer/, /(mwst\\.|mehrwertsteuer)\\s*(19|7)%/],\n      'AT': [/uid[.-]?nr\\.?\\s*:?\\s*atu\\d{8}/, /ust\\.?\\s*(20|10|13)%/],\n      'US': [/tax\\s+id/, /sales\\s+tax/, /\\$[\\d,]+\\.\\d{2}/],\n      'CN': [/纳税人识别号.*?\\d{15,18}/, /¥[\\d,]+\\.?\\d*/, /增值税/]\n    };\n    \n    if (region !== 'UNKNOWN' && taxIdentifiers[region]) {\n      for (const pattern of taxIdentifiers[region]) {\n        if (pattern.test(text)) {\n          score += 25;\n          details.push(`Daňový identifikátor: ${pattern}`);\n        }\n      }\n    }\n    \n    // NEGATIVNÍ BODY - vyloučení\n    if (text.includes('proforma')) {\n      score -= 40;\n      details.push('NEGATIVNÍ: Proforma faktura');\n    }\n    if (text.includes('nabídka') || text.includes('quote')) {\n      score -= 30;\n      details.push('NEGATIVNÍ: Nabídka');\n    }\n    \n    // URČENÍ CONFIDENCE\n    if (score >= 90) confidence = 'VERY_HIGH';\n    else if (score >= 75) confidence = 'HIGH';\n    else if (score >= 50) confidence = 'MEDIUM';\n    else confidence = 'LOW';\n    \n    return {\n      type: 'INVOICE',\n      score,\n      confidence,\n      region,\n      details,\n      isValid: confidence === 'VERY_HIGH' || confidence === 'HIGH'\n    };\n  }\n  \n  // ROZPOZNÁNÍ BANKOVNÍHO VÝPISU - 100% JISTOTA POVINNÁ\n  recognizeBankStatement() {\n    const text = this.combinedText;\n    let score = 0;\n    let confidence = 'UNKNOWN';\n    let region = 'UNKNOWN';\n    let details = [];\n    \n    // KLÍČOVÁ SLOVA (35 bodů)\n    const statementKeywords = {\n      'CZ': ['výpis z účtu', 'bankovní výpis'],\n      'DE': ['kontoauszug', 'auszug'],\n      'AT': ['kontoauszug', 'bankauszug']\n    };\n    \n    for (const [reg, keywords] of Object.entries(statementKeywords)) {\n      for (const keyword of keywords) {\n        if (text.includes(keyword)) {\n          score += 35;\n          region = reg;\n          details.push(`Klíčové slovo: ${keyword}`);\n          break;\n        }\n      }\n      if (region !== 'UNKNOWN') break;\n    }\n    \n    // BANKA MUSÍ BÝT SKUTEČNÁ (KRITICKÉ!)\n    const realBanks = [\n      'čsob', 'česká spořitelna', 'komerční banka', 'raiffeisenbank',\n      'fio banka', 'moneta', 'unicredit', 'air bank',\n      'deutsche bank', 'commerzbank', 'sparkasse', 'postbank'\n    ];\n    \n    const notBanks = [\n      'microsoft', 'google', 'apple', 'amazon', 'alza', 'facebook'\n    ];\n    \n    for (const bank of realBanks) {\n      if (text.includes(bank)) {\n        score += 25;\n        details.push(`Skutečná banka: ${bank}`);\n        break;\n      }\n    }\n    \n    // NEGATIVNÍ BODY za ne-banky\n    for (const notBank of notBanks) {\n      if (text.includes(notBank)) {\n        score -= 50;\n        details.push(`NEGATIVNÍ: Ne-banka ${notBank}`);\n        break;\n      }\n    }\n    \n    // URČENÍ CONFIDENCE\n    if (score >= 80) confidence = 'VERY_HIGH';\n    else if (score >= 60) confidence = 'HIGH';\n    else if (score >= 40) confidence = 'MEDIUM';\n    else confidence = 'LOW';\n    \n    return {\n      type: 'BANK_STATEMENT',\n      score,\n      confidence,\n      region,\n      details,\n      isValid: confidence === 'VERY_HIGH' || confidence === 'HIGH'\n    };\n  }\n  \n  // HLAVNÍ ANALÝZA\n  analyze() {\n    const invoice = this.recognizeInvoice();\n    const bankStatement = this.recognizeBankStatement();\n    \n    const results = [invoice, bankStatement].sort((a, b) => b.score - a.score);\n    const bestResult = results[0];\n    \n    return {\n      bestMatch: bestResult,\n      allResults: results,\n      documentId: $node[\"Initialize Document Processing\"].json.documentId,\n      mcpResults: this.results,\n      timestamp: new Date().toISOString()\n    };\n  }\n}\n\nconst scorer = new DocumentScorerMCP(allResults);\nreturn scorer.analyze();"
+      },
+      "id": "document-scoring",
+      "name": "Document Scoring Algorithm",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1400, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition1",
+              "leftValue": "={{$json.bestMatch.isValid}}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true"
+              }
+            }
+          ],
+          "combineOperation": "all"
+        },
+        "options": {}
+      },
+      "id": "confidence-check",
+      "name": "Check Confidence",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1600, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Příprava tagů podle typu dokumentu\nconst analysis = $json;\nconst documentType = analysis.bestMatch.type;\nconst confidence = analysis.bestMatch.confidence;\nconst region = analysis.bestMatch.region;\n\nconst tags = [];\n\n// Základní tagy\nif (documentType === 'INVOICE') {\n  tags.push('typ:faktura');\n  tags.push('paperless-ngx-faktury');\n  if (region && region !== 'UNKNOWN') {\n    tags.push(`faktura-${region.toLowerCase()}`);\n  }\n} else if (documentType === 'BANK_STATEMENT') {\n  tags.push('typ:bankovní-výpis');\n  tags.push('paperless-ngx-bankovnictví');\n}\n\n// Confidence tagy\ntags.push(`confidence:${confidence.toLowerCase()}`);\n\n// Rok tag\ntags.push(new Date().getFullYear().toString());\n\nreturn {\n  documentId: analysis.documentId,\n  documentType,\n  tags,\n  confidence,\n  region,\n  updateRequired: true\n};"
+      },
+      "id": "prepare-tags",
+      "name": "Prepare Document Tags",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1800, 150]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:5002",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {
+          "headers": {
+            "Content-Type": "application/json"
+          }
+        },
+        "bodyParametersJson": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": {{Math.random()}},\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"paperless_update_document\",\n    \"arguments\": {\n      \"document_id\": \"{{$json.documentId}}\",\n      \"tags\": {{JSON.stringify($json.tags)}},\n      \"document_type\": \"{{$json.documentType}}\",\n      \"paperless_instance\": \"8050\",\n      \"custom_fields\": {\n        \"confidence\": \"{{$json.confidence}}\",\n        \"region\": \"{{$json.region}}\",\n        \"processed_by\": \"MCP_V4_Workflow\"\n      }\n    }\n  }\n}"
+      },
+      "id": "update-paperless",
+      "name": "Update Paperless via MCP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [2000, 150]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Dokument s nízkou confidence - potřeba manuální revize\nconst analysis = $json;\n\nreturn {\n  documentId: analysis.documentId,\n  status: 'MANUAL_REVIEW_REQUIRED',\n  reason: 'Low confidence score',\n  bestMatch: analysis.bestMatch,\n  message: `Document ${analysis.documentId} requires manual review. Best match: ${analysis.bestMatch.type} with confidence ${analysis.bestMatch.confidence} (score: ${analysis.bestMatch.score})`,\n  timestamp: new Date().toISOString()\n};"
+      },
+      "id": "manual-review",
+      "name": "Flag for Manual Review",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1800, 250]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Finální report\nconst result = $json;\n\nreturn {\n  status: 'COMPLETED',\n  documentId: result.documentId || result.arguments?.document_id,\n  processing: {\n    type: result.documentType || 'UNKNOWN',\n    confidence: result.confidence || 'N/A',\n    tags_added: result.tags ? result.tags.length : 0,\n    mcp_server: 'V4.x',\n    mcp_compliance: true\n  },\n  timestamp: new Date().toISOString(),\n  message: 'Document processing completed via MCP Server V4'\n};"
+      },
+      "id": "final-report",
+      "name": "Generate Final Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2200, 200]
+    }
+  ],
+  "connections": {
+    "Manual File Upload": {
+      "main": [
+        [
+          {
+            "node": "Process File Upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process File Upload": {
+      "main": [
+        [
+          {
+            "node": "Initialize Document Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Initialize Document Processing": {
+      "main": [
+        [
+          {
+            "node": "Get Document via MCP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Document via MCP": {
+      "main": [
+        [
+          {
+            "node": "Prepare MCP Analysis Calls",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare MCP Analysis Calls": {
+      "main": [
+        [
+          {
+            "node": "Split Into Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Into Batches": {
+      "main": [
+        [
+          {
+            "node": "Execute MCP Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute MCP Analysis": {
+      "main": [
+        [
+          {
+            "node": "Split Into Batches",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Document Scoring Algorithm",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Document Scoring Algorithm": {
+      "main": [
+        [
+          {
+            "node": "Check Confidence",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Confidence": {
+      "main": [
+        [
+          {
+            "node": "Prepare Document Tags",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Flag for Manual Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Document Tags": {
+      "main": [
+        [
+          {
+            "node": "Update Paperless via MCP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Paperless via MCP": {
+      "main": [
+        [
+          {
+            "node": "Generate Final Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Flag for Manual Review": {
+      "main": [
+        [
+          {
+            "node": "Generate Final Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z",
+      "id": "paperless-mcp",
+      "name": "Paperless MCP"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2024-01-01T00:00:00.000Z",
+  "versionId": "2.0"
+}

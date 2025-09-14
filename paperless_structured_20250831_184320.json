@@ -1,0 +1,62 @@
+{
+  "total": 29,
+  "processed": 10,
+  "updated": 10,
+  "failed": 0,
+  "extracted_data": {
+    "2": {
+      "cislo_faktury": "za",
+      "banka": "omatem.",
+      "document_type": "faktura"
+    },
+    "18": {
+      "cislo_faktury": "za",
+      "banka": "KB",
+      "document_type": "faktura"
+    },
+    "26": {
+      "cislo_faktury": "za",
+      "banka": "omatem.",
+      "document_type": "faktura"
+    },
+    "41": {
+      "cislo_faktury": "pro",
+      "cislo_uctu": "11/2023",
+      "banka": "KB",
+      "document_type": "faktura"
+    },
+    "44": {
+      "cislo_faktury": "za",
+      "banka": "KB",
+      "document_type": "faktura"
+    },
+    "15": {
+      "cislo_faktury": "CE",
+      "banka": "KB",
+      "document_type": "faktura"
+    },
+    "30": {
+      "cislo_faktury": "za",
+      "banka": "KB",
+      "document_type": "faktura"
+    },
+    "36": {
+      "cislo_faktury": "za",
+      "celkova_castka": 121.0,
+      "ico": "03981428",
+      "cislo_uctu": "700822/9921",
+      "banka": "107-717330277/0100, SWIFT KOMBCZPPXXX",
+      "document_type": "faktura"
+    },
+    "25": {
+      "cislo_faktury": "za",
+      "banka": "omatem.",
+      "document_type": "faktura"
+    },
+    "53": {
+      "cislo_faktury": "ktura",
+      "banka": "KB",
+      "document_type": "faktura"
+    }
+  }
+}

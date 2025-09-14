@@ -1,0 +1,372 @@
+{
+  "name": "Email Automation Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "value": 5
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 20,
+        "filters": {
+          "labelIds": ["INBOX"],
+          "q": "is:unread"
+        }
+      },
+      "id": "2", 
+      "name": "Gmail - Get Unread",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [460, 200],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_creds",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message", 
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 20,
+        "filters": {
+          "folder": "inbox",
+          "filter": "$filter=isRead eq false"
+        }
+      },
+      "id": "3",
+      "name": "Outlook - Get Unread", 
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [460, 400],
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "outlook_creds", 
+          "name": "Microsoft Outlook OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "mergeByIndex"
+      },
+      "id": "4",
+      "name": "Merge Emails",
+      "type": "n8n-nodes-base.merge", 
+      "typeVersion": 2.1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Email Classification Logic\nconst classifyEmail = (subject, sender, body) => {\n  const text = (subject + ' ' + sender + ' ' + body).toLowerCase();\n  \n  // Reklamy - nejvyšší priorita\n  const adKeywords = [\n    'newsletter', 'unsubscribe', 'offer', 'deal', 'sale',\n    'discount', 'promo', 'marketing', 'campaign', 'alert',\n    'daily', 'weekly', 'digest', 'free', 'special',\n    'sleva', 'akce', 'nabídka', 'výprodej', 'zdarma'\n  ];\n  \n  if (adKeywords.some(keyword => text.includes(keyword))) {\n    return {\n      category: 'advertisement',\n      tags: ['reklama'],\n      action: 'archive',\n      priority: 1\n    };\n  }\n  \n  // Faktury\n  if ((text.includes('invoice') || text.includes('faktura') || text.includes('bill')) \n      && /\\d{4,}/.test(text)) {\n    return {\n      category: 'invoice',\n      tags: ['faktura'],\n      action: 'move_to_folder',\n      folder: 'Faktury',\n      priority: 5\n    };\n  }\n  \n  // Bankovní výpisy\n  if (text.includes('bank') || text.includes('výpis') || text.includes('statement')) {\n    return {\n      category: 'banking',\n      tags: ['banka'],\n      action: 'move_to_folder', \n      folder: 'Banking',\n      priority: 4\n    };\n  }\n  \n  // Potvrzení plateb\n  if (text.includes('payment') || text.includes('platba') || text.includes('stvrzenka')) {\n    return {\n      category: 'payment',\n      tags: ['platba'],\n      action: 'move_to_folder',\n      folder: 'Payments',\n      priority: 3\n    };\n  }\n  \n  // Ostatní - ponechat v inbox\n  return {\n    category: 'other',\n    tags: ['nezařazeno'],\n    action: 'keep_inbox',\n    priority: 0\n  };\n};\n\n// Zpracování každého e-mailu\nconst results = [];\nconst items = $input.all();\n\nfor (const item of items) {\n  const email = item.json;\n  \n  // Základní info z e-mailu\n  const subject = email.subject || '';\n  const sender = email.from?.emailAddress?.address || email.from || '';\n  const body = email.bodyPreview || email.body?.content || '';\n  \n  // Klasifikace\n  const classification = classifyEmail(subject, sender, body);\n  \n  // Výsledek\n  results.push({\n    json: {\n      ...email,\n      classification,\n      processed_at: new Date().toISOString(),\n      source: email.webLink ? 'outlook' : 'gmail'\n    }\n  });\n}\n\nconsole.log(`Processed ${results.length} emails`);\nreturn results;"
+      },
+      "id": "5",
+      "name": "Classify Emails",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "ad_condition",
+              "leftValue": "={{ $json.classification.category }}",
+              "rightValue": "advertisement",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "6",
+      "name": "Is Advertisement?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1120, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "invoice_condition", 
+              "leftValue": "={{ $json.classification.category }}",
+              "rightValue": "invoice",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "7",
+      "name": "Is Invoice?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1120, 400]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "addLabels",
+        "messageId": "={{ $json.id }}",
+        "labelIds": ["IMPORTANT"]
+      },
+      "id": "8",
+      "name": "Gmail - Archive Ads",
+      "type": "n8n-nodes-base.gmail", 
+      "typeVersion": 2.1,
+      "position": [1340, 120],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_creds",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "update",
+        "messageId": "={{ $json.id }}",
+        "updateFields": {
+          "isRead": true
+        }
+      },
+      "id": "9",
+      "name": "Outlook - Archive Ads",
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [1340, 180],
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "outlook_creds",
+          "name": "Microsoft Outlook OAuth2 API" 
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Process invoice attachments\nconst results = [];\nconst items = $input.all();\n\nfor (const item of items) {\n  const email = item.json;\n  const attachments = email.attachments || [];\n  \n  // Najít PDF přílohy\n  const pdfAttachments = attachments.filter(att => \n    att.name?.toLowerCase().endsWith('.pdf') ||\n    att.filename?.toLowerCase().endsWith('.pdf')\n  );\n  \n  if (pdfAttachments.length > 0) {\n    for (const pdf of pdfAttachments) {\n      results.push({\n        json: {\n          ...email,\n          attachment: pdf,\n          pdf_filename: pdf.name || pdf.filename,\n          should_download: true\n        }\n      });\n    }\n  } else {\n    // Email bez PDF příloh\n    results.push({\n      json: {\n        ...email,\n        should_download: false\n      }\n    });\n  }\n}\n\nreturn results;"
+      },
+      "id": "10",
+      "name": "Process Attachments",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8050/api/documents/post_document/",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyContentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{ $json.pdf_filename?.replace('.pdf', '') || $json.subject }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.classification.tags.join(',') }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "11",
+      "name": "Send to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1560, 400],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "paperless_auth",
+          "name": "Paperless Auth"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Statistics and reporting\nconst items = $input.all();\n\nconst stats = {\n  timestamp: new Date().toISOString(),\n  total_processed: items.length,\n  advertisements: items.filter(i => i.json.classification?.category === 'advertisement').length,\n  invoices: items.filter(i => i.json.classification?.category === 'invoice').length,\n  banking: items.filter(i => i.json.classification?.category === 'banking').length,\n  payments: items.filter(i => i.json.classification?.category === 'payment').length,\n  other: items.filter(i => i.json.classification?.category === 'other').length,\n  pdfs_sent_to_paperless: items.filter(i => i.json.should_download).length\n};\n\nconsole.log('📊 Email Processing Stats:', JSON.stringify(stats, null, 2));\n\nreturn [{ json: stats }];"
+      },
+      "id": "12",
+      "name": "Generate Statistics",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2, 
+      "position": [1780, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Gmail - Get Unread",
+            "type": "main", 
+            "index": 0
+          },
+          {
+            "node": "Outlook - Get Unread",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gmail - Get Unread": {
+      "main": [
+        [
+          {
+            "node": "Merge Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Outlook - Get Unread": {
+      "main": [
+        [
+          {
+            "node": "Merge Emails", 
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge Emails": {
+      "main": [
+        [
+          {
+            "node": "Classify Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Classify Emails": {
+      "main": [
+        [
+          {
+            "node": "Is Advertisement?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Is Invoice?", 
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Statistics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Advertisement?": {
+      "main": [
+        [
+          {
+            "node": "Gmail - Archive Ads",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Outlook - Archive Ads",
+            "type": "main", 
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Invoice?": {
+      "main": [
+        [
+          {
+            "node": "Process Attachments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Attachments": {
+      "main": [
+        [
+          {
+            "node": "Send to Paperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-08-04T15:00:00.000Z",
+      "updatedAt": "2025-08-04T15:00:00.000Z", 
+      "id": "email_automation",
+      "name": "Email Automation"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2025-08-04T15:00:00.000Z",
+  "versionId": "1"
+}

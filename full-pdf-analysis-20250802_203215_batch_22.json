@@ -1,0 +1,171 @@
+{
+  "batch_start": 22000,
+  "batch_end": 23000,
+  "timestamp": "2025-08-02T20:35:26.957574",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 546,
+    "unknown": 159,
+    "shipping": 24,
+    "order": 168,
+    "notification": 40,
+    "contract": 11,
+    "receipt": 30,
+    "bank_statement": 3,
+    "subscription": 19
+  },
+  "metadata_samples": [
+    {
+      "file": "Získáváte odměnu-202502070724-_Booking.com_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1825
+    },
+    {
+      "file": "NOVINKY! GIGA nálož nově přidaných produktů je tu.-202502091033-GIGACOMPUTER TÝM.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2711
+    },
+    {
+      "file": "🚘 6 neue Fahrzeuge für Dich-202504012212-_mobile.de Suchauftrag_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1778
+    },
+    {
+      "file": "Daily Overview for Bressner-202407291113-_Manage It_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 546
+    },
+    {
+      "file": "Scandinavian Style_ 3 Brands You Should Be Watchin-202410061702-_DECOVRY_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1502
+    },
+    {
+      "file": "Cocinas abiertas, ¿sí o no_ _ Descuentazos 🔝 en l-202503121526-_Revista El Mueble_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2729
+    },
+    {
+      "file": "Vaše sleva na míru!-202503051211-_Expondo.cz_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 1429
+    },
+    {
+      "file": "Návrat Ellie ★ „Jsem Elizabeth Blacková. Myslím, ž-202505081201-_Zoner Press_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2944
+    },
+    {
+      "file": "Ven z českého rybníčku a ještě dál_-202407070616-_Forbes Digest_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1166
+    },
+    {
+      "file": "💥 Speed Meets Capacity – Thunderbolt 5 Mac Mini H-202504091218-_RayCue_.pdf",
+      "type": "shipping",
+      "score": 1,
+      "metadata": {},
+      "text_length": 615
+    },
+    {
+      "file": "BACK IN STOCK Automatic calendar Havana - for a li-202502252248-_Tufina Watches_.pdf",
+      "type": "order",
+      "score": 6,
+      "metadata": {},
+      "text_length": 2982
+    },
+    {
+      "file": "Bezpečnostní upozornění ohledně účtu majpuzik@gmai-202503131105-_Google_.pdf",
+      "type": "notification",
+      "score": 4,
+      "metadata": {},
+      "text_length": 875
+    },
+    {
+      "file": "Statistic Trouba-202410110005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 238
+    },
+    {
+      "file": "💙 MS v hokeji_ Kdy hrají Češi_ 🇨🇿-202505071648-Maruška ze SledovaniTV.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {
+        "ico": "01607910"
+      },
+      "text_length": 1622
+    },
+    {
+      "file": "$10.00 payment to KREA.AI, Inc. was unsuccessful a-202504031901-_KREA.AI, Inc._.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 609
+    },
+    {
+      "file": "Moje O2 - vyúčtování za služby-202405070810-_Moje O2_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "metadata": {
+        "ico": "60193336",
+        "dic": "CZ60193336",
+        "vs": "5243870921"
+      },
+      "text_length": 1311
+    },
+    {
+      "file": "📄 _Mariánské poutní místo Sepekov a prameny k záz-202408291447-PDF By Hedvika Kuchařová.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2292
+    },
+    {
+      "file": "😍 Sleva 50 % 😍-202504230842-Trenýrkárna.cz.pdf",
+      "type": "invoice",
+      "score": 24,
+      "metadata": {
+        "ico": "24209139",
+        "dic": "CZ24209139"
+      },
+      "text_length": 2780
+    },
+    {
+      "file": "Vaše členství Geni bylo úspěšně prodlouženo-202408071224-_Geni_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {},
+      "text_length": 1519
+    },
+    {
+      "file": "Ähnliche Angebote wie Tesla Model X, Tesla Model S-202505060958-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2012
+    }
+  ],
+  "error_count": 0
+}

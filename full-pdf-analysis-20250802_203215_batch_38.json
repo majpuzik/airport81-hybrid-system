@@ -1,0 +1,166 @@
+{
+  "batch_start": 38000,
+  "batch_end": 39000,
+  "timestamp": "2025-08-02T20:37:39.852754",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 173,
+    "invoice": 522,
+    "shipping": 20,
+    "receipt": 29,
+    "contract": 9,
+    "order": 177,
+    "notification": 45,
+    "subscription": 25
+  },
+  "metadata_samples": [
+    {
+      "file": "Vyšetření Karlovo náměstí 1.8.-202406101553-_M.A.J. Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 211
+    },
+    {
+      "file": "Re_Poptávka různých stavebnich praci-202407081935-Вася Рибак.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 633
+    },
+    {
+      "file": "🚀 Say Goodbye to Pixelation-202503130954-_Pixlr_.pdf",
+      "type": "shipping",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1349
+    },
+    {
+      "file": "Za každého z přátel, kterému doporučíte Revolut, z-202503060847-_Revolut_.pdf",
+      "type": "invoice",
+      "score": 15,
+      "metadata": {},
+      "text_length": 4575
+    },
+    {
+      "file": "Statistic L2-202411060005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 225
+    },
+    {
+      "file": "Statistic Varná deska-202411180005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 253
+    },
+    {
+      "file": "Today is your lucky day!-202501192353-_Team Trump_.pdf",
+      "type": "receipt",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2486
+    },
+    {
+      "file": "Jaká e-kniha je podle čtenářů nejlepší_-202504081537-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {},
+      "text_length": 2060
+    },
+    {
+      "file": "Instantly protect Milan Augustin puzik's credit ca-202503131935-_Your Card Is At Risk_.pdf",
+      "type": "receipt",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2653
+    },
+    {
+      "file": "No More Interruptions—Move LightGo Lets You Frame -202504270501-_Ulanzi_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1080
+    },
+    {
+      "file": "Žhavé aukce_ počítače 4. 5. 2025-202505040922-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 42,
+      "metadata": {
+        "ico": "05360722",
+        "dic": "CZ05360722"
+      },
+      "text_length": 2918
+    },
+    {
+      "file": "Zásilka je připravena k výdeji-202407151139-Zásilkovna.pdf",
+      "type": "shipping",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1209
+    },
+    {
+      "file": "How to Send Secret Encrypted Messages Using Your i-202410011231-_CNET Mobile_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2600
+    },
+    {
+      "file": "3 pilíře investování. Znáte všechny_-202406141459-_Fondee_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 3675
+    },
+    {
+      "file": "Celebrate Holly Jolly July with 50% Cashback!-202407270911-_PlayHugeLottos_.pdf",
+      "type": "receipt",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1465
+    },
+    {
+      "file": "Váš Lidl leták na další týden s produkty vyrobeným-202410180933-_Lidl_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {
+        "ico": "26178541"
+      },
+      "text_length": 1822
+    },
+    {
+      "file": "Statistic L1-202406100005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 225
+    },
+    {
+      "file": "Y&T_ Aktualizovaná nabídka-202410040910-_Yulia Kokovina_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2387
+    },
+    {
+      "file": "There's no way Milan Augustin puzik will remember -202503191435-_I Hate Passwords!_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3935
+    },
+    {
+      "file": "Urosante _ připomenutí termínu - 18.11.2024-202410280905-_Urosante_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 910
+    }
+  ],
+  "error_count": 0
+}

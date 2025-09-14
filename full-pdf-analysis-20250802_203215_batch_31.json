@@ -1,0 +1,166 @@
+{
+  "batch_start": 31000,
+  "batch_end": 32000,
+  "timestamp": "2025-08-02T20:36:42.032734",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "unknown": 178,
+    "invoice": 503,
+    "order": 184,
+    "receipt": 39,
+    "notification": 43,
+    "shipping": 22,
+    "subscription": 17,
+    "contract": 10,
+    "bank_statement": 4
+  },
+  "metadata_samples": [
+    {
+      "file": "Abundant Life Christian School shooting latest_ Lo-202412181312-_MSN Daily_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1480
+    },
+    {
+      "file": "Knižní novinky, po kterých teď voní naše knihkupec-202503281400-_KnihyDobrovsky.cz_.pdf",
+      "type": "invoice",
+      "score": 28,
+      "metadata": {},
+      "text_length": 3446
+    },
+    {
+      "file": "Find My Device_ Which Is Better, iOS or Android_-202406202127-_CNET Insider_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 2299
+    },
+    {
+      "file": "Unfortunately, Milan’s 77% discount on the viral p-202504282025-_ThePhotoStick OMNI_.pdf",
+      "type": "order",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2382
+    },
+    {
+      "file": "Nakupte knihy, dostanete den plný her!-202406192245-Hravý Adam _ Knihobot.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1290
+    },
+    {
+      "file": "Join HeyGen’s new online community hub!-202411270859-_HeyGen Community Team_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1623
+    },
+    {
+      "file": "Informace o stavu kreditu na klubové karte TeeTime-202503110951-.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 593
+    },
+    {
+      "file": "Reminder -- Response needed to deliver your reward-202410141855-_PledgeBox_.pdf",
+      "type": "notification",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1148
+    },
+    {
+      "file": "Výprodej posledních kousků na skladě-202408231740-_MALL.CZ_.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {
+        "ico": "26204967"
+      },
+      "text_length": 2226
+    },
+    {
+      "file": "50% OFF _ LALAL.AI Summer Sale Is Here!-202406040831-_LALAL.AI_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1416
+    },
+    {
+      "file": "New_ USW-Ultra @ MAJSYNO5-202504251033-_Fing Alert_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 690
+    },
+    {
+      "file": "Velikonoční nadílka. Získejte zkoušečku Deli zdarm-202504201800-_Smart Switch.cz_.pdf",
+      "type": "shipping",
+      "score": 1,
+      "metadata": {},
+      "text_length": 715
+    },
+    {
+      "file": "Oznámení o zpracování objednávky - Mikromarz.com --202502141358-.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {},
+      "text_length": 1013
+    },
+    {
+      "file": "Exkluzivní zahradnické nabídky 🌼-202503241936-Zuzana – TopRabat.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 978
+    },
+    {
+      "file": "Bestätigungscode-202504271942-_Adobe_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1194
+    },
+    {
+      "file": "Upozornění_ začátek události je úterý, září 3, 21_-202409032045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 516
+    },
+    {
+      "file": "⚽ Sleva 20 % na kompresory ABAC + míč EURO 2024 zd-202407040908-_Kompresory Vzduchotechnika s.r.o._.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 895
+    },
+    {
+      "file": "♨ 2v1 ▪ Finská sauna a infrasauna v jedné 🔥-202410111250-_MARIMEX.CZ_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {
+        "ico": "64942422"
+      },
+      "text_length": 1120
+    },
+    {
+      "file": "matuszalepa-202411232139-_matuszalepa_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 187
+    },
+    {
+      "file": "15 restaurants you (and your pet) will love-202410231027-_Tripadvisor_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1119
+    }
+  ],
+  "error_count": 0
+}

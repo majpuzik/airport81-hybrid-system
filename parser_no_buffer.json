@@ -1,0 +1,217 @@
+{
+  "name": "PDF Parser No Buffer",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "command": "ls /Users/m.a.j.puzik/Desktop/*.pdf 2>/dev/null | head -5"
+      },
+      "id": "listPdfs",
+      "name": "List PDFs",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const files = ($json.stdout || '').split('\\n').filter(f => f.trim());\n\nif (files.length === 0) {\n  throw new Error('No PDF files found');\n}\n\nconst FILE_NUMBER = 1;\nconst selectedFile = files[FILE_NUMBER - 1];\n\nconsole.log('Selected: ' + selectedFile);\n\n// Uložíme cestu do souboru pro další použití\nconst fs = require('fs');\nfs.writeFileSync('/tmp/selected_pdf.txt', selectedFile);\n\nreturn [{json: {\n  filepath: selectedFile,\n  filename: selectedFile.split('/').pop()\n}}];"
+      },
+      "id": "selectFile",
+      "name": "Select File",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.pdf.co/v1/file/upload/get-presigned-url",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyType": "json",
+        "jsonBody": "={\"name\": \"{{$json.filename}}\", \"contentType\": \"application/pdf\"}",
+        "options": {}
+      },
+      "id": "getPresignedUrl",
+      "name": "Get Presigned URL",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [800, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const presignedUrl = $json.presignedUrl;\nconst fileUrl = $json.url;\nconst filepath = $node['selectFile'].json.filepath;\nconst filename = $node['selectFile'].json.filename;\n\nif (!presignedUrl || !fileUrl) {\n  throw new Error('Failed to get upload URL');\n}\n\n// Uložíme URL pro další krok\nconst fs = require('fs');\nfs.writeFileSync('/tmp/upload_url.txt', presignedUrl);\nfs.writeFileSync('/tmp/file_url.txt', fileUrl);\n\nreturn [{json: {\n  presignedUrl: presignedUrl,\n  fileUrl: fileUrl,\n  filepath: filepath,\n  filename: filename\n}}];"
+      },
+      "id": "saveUrls",
+      "name": "Save URLs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1000, 300]
+    },
+    {
+      "parameters": {
+        "command": "FILE=$(cat /tmp/selected_pdf.txt); URL=$(cat /tmp/upload_url.txt); curl -X PUT \"$URL\" --upload-file \"$FILE\" -H 'Content-Type: application/pdf' -s -o /dev/null -w '%{http_code}'"
+      },
+      "id": "uploadFile",
+      "name": "Upload File",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const uploadStatus = $json.stdout;\nconst fileUrl = require('fs').readFileSync('/tmp/file_url.txt', 'utf8');\n\nif (uploadStatus !== '200') {\n  throw new Error('Upload failed with status: ' + uploadStatus);\n}\n\nreturn [{json: {\n  fileUrl: fileUrl,\n  uploadStatus: uploadStatus,\n  filename: $node['selectFile'].json.filename\n}}];"
+      },
+      "id": "checkUpload",
+      "name": "Check Upload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1400, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.pdf.co/v1/pdf/convert/to/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "puzik@outlook.com_jBTKYojSItt25GcgtQakogOdYCwf63GXQDKUW46uhRQmJStwMG4ozND282mVn6Bf"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyType": "json",
+        "jsonBody": "={\"url\": \"{{$json.fileUrl}}\", \"inline\": true}",
+        "options": {}
+      },
+      "id": "extractText",
+      "name": "Extract Text",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1600, 300],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = ($json.body || $json.text || '');\nconst textLower = text.toLowerCase();\nconst filename = $node['selectFile'].json.filename;\n\n// KLASIFIKACE\nlet docType = 'unknown';\nif (textLower.includes('faktura') || textLower.includes('invoice')) docType = 'faktura';\nelse if (textLower.includes('účtenka') || textLower.includes('uctenka')) docType = 'uctenka';\nelse if (textLower.includes('výpis') || textLower.includes('vypis')) docType = 'vypis';\nelse if (textLower.includes('smlouva')) docType = 'smlouva';\n\n// KORESPONDENT\nlet correspondent = 'Unknown';\nif (textLower.includes('čsob') || textLower.includes('csob')) correspondent = 'CSOB';\nelse if (textLower.includes('alza')) correspondent = 'Alza';\nelse if (textLower.includes('lidl')) correspondent = 'Lidl';\n\n// CUSTOM FIELDS\nconst customFields = {};\nconst tags = [docType];\n\nif (correspondent !== 'Unknown') {\n  tags.push(correspondent.toLowerCase());\n}\n\n// PARSOVANI PRO FAKTURU\nif (docType === 'faktura') {\n  const icoMatch = text.match(/IČO?:?\\s*(\\d{8})/i);\n  if (icoMatch) {\n    customFields.ico = icoMatch[1];\n    tags.push('ico-' + icoMatch[1]);\n  }\n  \n  const vsMatch = text.match(/VS:?\\s*(\\d+)/i);\n  if (vsMatch) {\n    customFields.variable_symbol = vsMatch[1];\n    tags.push('vs-' + vsMatch[1]);\n  }\n  \n  const amountMatch = text.match(/celkem:?\\s*([\\d\\s]+[,.]?\\d*)\\s*(?:Kč|CZK)/i);\n  if (amountMatch) {\n    customFields.amount = amountMatch[1].replace(/\\s/g, '');\n  }\n}\n\nreturn [{json: {\n  '✅ STATUS': 'SUCCESS',\n  '📄 File': filename,\n  '📑 Type': docType,\n  '👤 Correspondent': correspondent,\n  '🏷️ Tags': tags.join(', '),\n  '📝 Custom Fields': JSON.stringify(customFields, null, 2),\n  '📊 Text Length': text.length + ' chars'\n}}];"
+      },
+      "id": "parseAndResult",
+      "name": "Parse & Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1800, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "List PDFs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List PDFs": {
+      "main": [
+        [
+          {
+            "node": "Select File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select File": {
+      "main": [
+        [
+          {
+            "node": "Get Presigned URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Presigned URL": {
+      "main": [
+        [
+          {
+            "node": "Save URLs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save URLs": {
+      "main": [
+        [
+          {
+            "node": "Upload File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload File": {
+      "main": [
+        [
+          {
+            "node": "Check Upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Upload": {
+      "main": [
+        [
+          {
+            "node": "Extract Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Text": {
+      "main": [
+        [
+          {
+            "node": "Parse & Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "parser_no_buffer"
+}

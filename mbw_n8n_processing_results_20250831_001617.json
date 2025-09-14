@@ -1,0 +1,20 @@
+{
+  "total_files": 100,
+  "processed": 100,
+  "successful": 100,
+  "failed": 0,
+  "errors": [],
+  "start_time": "2025-08-31T00:16:17.951692",
+  "types_detected": {
+    "unknown": 77,
+    "faktura": 22,
+    "smlouva": 1
+  },
+  "correspondents": {
+    "MBW": 100
+  },
+  "total_fields": 344,
+  "total_tags": 338,
+  "end_time": "2025-08-31T00:16:17.996350",
+  "duration_seconds": 0.044658
+}

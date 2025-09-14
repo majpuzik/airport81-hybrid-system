@@ -1,0 +1,169 @@
+{
+  "batch_start": 12000,
+  "batch_end": 13000,
+  "timestamp": "2025-08-02T20:34:04.201789",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 514,
+    "unknown": 189,
+    "order": 179,
+    "shipping": 23,
+    "contract": 11,
+    "subscription": 17,
+    "bank_statement": 6,
+    "receipt": 31,
+    "notification": 30
+  },
+  "metadata_samples": [
+    {
+      "file": "🏠 Kupte domeček a získejte bazén zdarma 🌊-202504040944-_MARIMEX.CZ_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {
+        "ico": "64942422"
+      },
+      "text_length": 909
+    },
+    {
+      "file": "Odesíláme obj. 3283032. www.knihobot.cz-202502122014-_Knihobot_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 750
+    },
+    {
+      "file": "🆕Home Assistant SkyConnect Update⚡A Real Retracta-202406271501-_Seeed Studio_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 3900
+    },
+    {
+      "file": "Připraveno v Alzaboxu _ Obj. č. 520511008-202410070428-_Alza.cz_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {
+        "ico": "27082440"
+      },
+      "text_length": 2117
+    },
+    {
+      "file": "Ovládá někdo naše počasí_ _ Mýty a fakta-202405040932-_Ing. Zuzana Puzikova_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 292
+    },
+    {
+      "file": "Just dropped_ This week’s top 10 global deals-202501032216-_Viator_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1790
+    },
+    {
+      "file": "Ultimatives Readiris PDF 23 Paket_ Letzte Chance, -202410091006-_IRIS, a Canon company_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3101
+    },
+    {
+      "file": "Adventní kalendář slev_ Manikúrní sada -50 %-202412050832-_Ignazrosler.cz_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1583
+    },
+    {
+      "file": "Beey.io_ Vylepšený editor pro překlad a další novi-202408211052-_Beey.io_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1321
+    },
+    {
+      "file": "🏝 All you need to know on OpenAI's o3 and o4-mini-202504202305-_TheWhiteBox by Nacho de Gregorio_.pdf",
+      "type": "order",
+      "score": 19,
+      "metadata": {},
+      "text_length": 31319
+    },
+    {
+      "file": "Diese Woche auf MUBI - REGELN GELTEN NICHT_ KURZFI-202504101403-_MUBI_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1168
+    },
+    {
+      "file": "🆕 Brandneu_ Diese Neuerscheinungen warten im Apri-202504171519-_ALTERNATE_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1664
+    },
+    {
+      "file": "Está pasando 22_04_2025 -202504220946-_idealista_news_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 11510
+    },
+    {
+      "file": "Ähnliche Angebote wie Suchauftrag 06.07.24-202503090532-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2085
+    },
+    {
+      "file": "Confirmation de votre commande de certificat de qu-202403151945-.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1137
+    },
+    {
+      "file": "Statistic Trouba-202409070005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 236
+    },
+    {
+      "file": "Nová kniha _Předválečný deník_-202410192105-Ladislav Větvička.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1554
+    },
+    {
+      "file": "🟣 AI Assistant, Text Processing, and Ticket Givea-202410171753-_Kate at Make_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2757
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202504071448-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    },
+    {
+      "file": "🛠 Je třeba srazit hranu obrobku, nebo snad přiost-202410040721-_uni-max_.pdf",
+      "type": "invoice",
+      "score": 87,
+      "metadata": {
+        "ico": "27425134",
+        "dic": "CZ27425134"
+      },
+      "text_length": 4572
+    }
+  ],
+  "error_count": 0
+}

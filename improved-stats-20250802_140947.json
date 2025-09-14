@@ -1,0 +1,13 @@
+{
+  "total_emails": 22200,
+  "processed": 22196,
+  "invoices": 36,
+  "receipts": 2,
+  "bank_statements": 18,
+  "contracts": 136,
+  "tax_documents": 56,
+  "unknown": 21948,
+  "errors": 4,
+  "high_confidence_invoices": 4,
+  "high_confidence_receipts": 0
+}

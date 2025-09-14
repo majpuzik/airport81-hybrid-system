@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-09-07T19:04:23.761356",
+  "results": {
+    "total": 65,
+    "found": 22,
+    "not_found": 43,
+    "errors": 0,
+    "ocr_used": 0,
+    "sources": {
+      "document_header": 3,
+      "ico_database": 19
+    },
+    "correspondents": {
+      "MyBrainWorks s.r.o": 1,
+      "je zapsán pod spisovou značkou Ocelkova 643/20 Slunečná 661": 1,
+      "Zákazník": 1,
+      "Alza.cz a.s.": 19
+    },
+    "scan_success": 0,
+    "scan_total": 8
+  },
+  "scan_results": [],
+  "elapsed_seconds": 92.69
+}

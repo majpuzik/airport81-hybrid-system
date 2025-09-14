@@ -1,0 +1,293 @@
+{
+  "test_suite": "MCP Server V5 Complete Test",
+  "target_server": "http://192.168.10.35:8081",
+  "timestamp": "2025-09-11T20:37:18.789278",
+  "summary": {
+    "total_tests": 14,
+    "successful": 14,
+    "failed": 0,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "endpoint": "GET /health",
+      "status_code": 200,
+      "response_time": "7.42ms",
+      "success": true,
+      "response_size": 266,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.728188",
+      "response": {
+        "status": "healthy",
+        "server": "MCP V5 Server",
+        "location": "Synology NAS",
+        "version": "4.0.1",
+        "port": "8080",
+        "timestamp": "2025-09-11T18:37:18.755Z",
+        "apis": [
+          "loxone",
+          "solax",
+          "ote",
+          "gmail",
+          "openai",
+          "gemini",
+          "homeAssistant",
+          "n8n",
+          "pdfco",
+          "anyparser"
+        ],
+        "paperless_loaded": true
+      },
+      "response_preview": "{\"status\": \"healthy\", \"server\": \"MCP V5 Server\", \"location\": \"Synology NAS\", \"version\": \"4.0.1\", \"port\": \"8080\", \"timestamp\": \"2025-09-11T18:37:18.755Z\", \"apis\": [\"loxone\", \"solax\", \"ote\", \"gmail\", \"o..."
+    },
+    {
+      "endpoint": "GET /",
+      "status_code": 200,
+      "response_time": "2.23ms",
+      "success": true,
+      "response_size": 719,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.730460",
+      "response": {
+        "message": "🚀 Unified General MCP Server v4.0.1 na Synology NAS",
+        "status": "online",
+        "access": "http://192.168.10.35:8081",
+        "integrations": {
+          "📡 Loxone": "http://192.168.10.68:8080",
+          "☀️ Solax": "https://www.solaxcloud.com:9443 (SNNTF49WK7)",
+          "⚡ OTE": "https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/denni-trh/ceny-elektriny",
+          "📧 Gmail": "majpuzik@gmail.com (imap.gmail.com)",
+          "🐙 GitHub": "m.a.j.puzik",
+          "✨ Gemini": "gemini-1.5-flash",
+          "🔄 N8N": "http://localhost:5678",
+          "🏡 Home Assistant": "http://localhost:8123",
+          "📄 PDF.co": "https://api.pdf.co/v1",
+          "🔍 AnyParser": "https://api.anyparser.com",
+          "📋 Paperless": "Available"
+        },
+        "cache": {
+          "Solax": "120s",
+          "OTE": "24h",
+          "HA": "60s",
+          "PDF.co": "300s",
+          "AnyParser": "300s"
+        }
+      },
+      "response_preview": "{\"message\": \"\\ud83d\\ude80 Unified General MCP Server v4.0.1 na Synology NAS\", \"status\": \"online\", \"access\": \"http://192.168.10.35:8081\", \"integrations\": {\"\\ud83d\\udce1 Loxone\": \"http://192.168.10.68:8..."
+    },
+    {
+      "endpoint": "GET /api/status",
+      "status_code": 200,
+      "response_time": "2.55ms",
+      "success": true,
+      "response_size": 307,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.733064",
+      "response": {
+        "server": "MCP V5 Server",
+        "version": "4.0.1",
+        "environment": "production",
+        "uptime": 346.042280665,
+        "memory": {
+          "rss": 73449472,
+          "heapTotal": 19333120,
+          "heapUsed": 17858984,
+          "external": 3976974,
+          "arrayBuffers": 465252
+        },
+        "apis_available": 10,
+        "location": "Synology NAS",
+        "network": "192.168.10.35:8081",
+        "paperless_status": "loaded"
+      },
+      "response_preview": "{\"server\": \"MCP V5 Server\", \"version\": \"4.0.1\", \"environment\": \"production\", \"uptime\": 346.042280665, \"memory\": {\"rss\": 73449472, \"heapTotal\": 19333120, \"heapUsed\": 17858984, \"external\": 3976974, \"arr..."
+    },
+    {
+      "endpoint": "GET /api/system",
+      "status_code": 200,
+      "response_time": "2.79ms",
+      "success": true,
+      "response_size": 287,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.735887",
+      "response": {
+        "node_version": "v20.19.5",
+        "platform": "linux",
+        "arch": "x64",
+        "uptime": 346.045250682,
+        "memory": {
+          "rss": 73502720,
+          "heapTotal": 19595264,
+          "heapUsed": 18151416,
+          "external": 3977014,
+          "arrayBuffers": 465252
+        },
+        "env": "production",
+        "location": "Synology NAS",
+        "container": "Docker",
+        "network": "192.168.10.35:8081"
+      },
+      "response_preview": "{\"node_version\": \"v20.19.5\", \"platform\": \"linux\", \"arch\": \"x64\", \"uptime\": 346.045250682, \"memory\": {\"rss\": 73502720, \"heapTotal\": 19595264, \"heapUsed\": 18151416, \"external\": 3977014, \"arrayBuffers\": ..."
+    },
+    {
+      "endpoint": "POST /api/loxone/status",
+      "status_code": 200,
+      "response_time": "32.3ms",
+      "success": true,
+      "response_size": 128,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.768227",
+      "response": {
+        "endpoint": "loxone/status",
+        "status": "ready",
+        "message": "loxone/status integration ready",
+        "timestamp": "2025-09-11T18:37:18.795Z"
+      },
+      "response_preview": "{\"endpoint\": \"loxone/status\", \"status\": \"ready\", \"message\": \"loxone/status integration ready\", \"timestamp\": \"2025-09-11T18:37:18.795Z\"}..."
+    },
+    {
+      "endpoint": "GET /api/solax/current",
+      "status_code": 200,
+      "response_time": "2.16ms",
+      "success": true,
+      "response_size": 128,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.770426",
+      "response": {
+        "endpoint": "solax/current",
+        "status": "ready",
+        "message": "solax/current integration ready",
+        "timestamp": "2025-09-11T18:37:18.798Z"
+      },
+      "response_preview": "{\"endpoint\": \"solax/current\", \"status\": \"ready\", \"message\": \"solax/current integration ready\", \"timestamp\": \"2025-09-11T18:37:18.798Z\"}..."
+    },
+    {
+      "endpoint": "GET /api/ote/current-prices",
+      "status_code": 200,
+      "response_time": "1.51ms",
+      "success": true,
+      "response_size": 138,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.771957",
+      "response": {
+        "endpoint": "ote/current-prices",
+        "status": "ready",
+        "message": "ote/current-prices integration ready",
+        "timestamp": "2025-09-11T18:37:18.799Z"
+      },
+      "response_preview": "{\"endpoint\": \"ote/current-prices\", \"status\": \"ready\", \"message\": \"ote/current-prices integration ready\", \"timestamp\": \"2025-09-11T18:37:18.799Z\"}..."
+    },
+    {
+      "endpoint": "POST /api/gmail/search",
+      "status_code": 200,
+      "response_time": "2.69ms",
+      "success": true,
+      "response_size": 126,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.774668",
+      "response": {
+        "endpoint": "gmail/search",
+        "status": "ready",
+        "message": "gmail/search integration ready",
+        "timestamp": "2025-09-11T18:37:18.802Z"
+      },
+      "response_preview": "{\"endpoint\": \"gmail/search\", \"status\": \"ready\", \"message\": \"gmail/search integration ready\", \"timestamp\": \"2025-09-11T18:37:18.802Z\"}..."
+    },
+    {
+      "endpoint": "POST /api/openai/completion",
+      "status_code": 200,
+      "response_time": "2.16ms",
+      "success": true,
+      "response_size": 136,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.776847",
+      "response": {
+        "endpoint": "openai/completion",
+        "status": "ready",
+        "message": "openai/completion integration ready",
+        "timestamp": "2025-09-11T18:37:18.804Z"
+      },
+      "response_preview": "{\"endpoint\": \"openai/completion\", \"status\": \"ready\", \"message\": \"openai/completion integration ready\", \"timestamp\": \"2025-09-11T18:37:18.804Z\"}..."
+    },
+    {
+      "endpoint": "POST /api/gemini/completion",
+      "status_code": 200,
+      "response_time": "2.4ms",
+      "success": true,
+      "response_size": 136,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.779269",
+      "response": {
+        "endpoint": "gemini/completion",
+        "status": "ready",
+        "message": "gemini/completion integration ready",
+        "timestamp": "2025-09-11T18:37:18.806Z"
+      },
+      "response_preview": "{\"endpoint\": \"gemini/completion\", \"status\": \"ready\", \"message\": \"gemini/completion integration ready\", \"timestamp\": \"2025-09-11T18:37:18.806Z\"}..."
+    },
+    {
+      "endpoint": "GET /api/homeassistant/states",
+      "status_code": 200,
+      "response_time": "1.93ms",
+      "success": true,
+      "response_size": 142,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.781228",
+      "response": {
+        "endpoint": "homeassistant/states",
+        "status": "ready",
+        "message": "homeassistant/states integration ready",
+        "timestamp": "2025-09-11T18:37:18.808Z"
+      },
+      "response_preview": "{\"endpoint\": \"homeassistant/states\", \"status\": \"ready\", \"message\": \"homeassistant/states integration ready\", \"timestamp\": \"2025-09-11T18:37:18.808Z\"}..."
+    },
+    {
+      "endpoint": "GET /api/n8n/workflows",
+      "status_code": 200,
+      "response_time": "3.05ms",
+      "success": true,
+      "response_size": 128,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.784301",
+      "response": {
+        "endpoint": "n8n/workflows",
+        "status": "ready",
+        "message": "n8n/workflows integration ready",
+        "timestamp": "2025-09-11T18:37:18.811Z"
+      },
+      "response_preview": "{\"endpoint\": \"n8n/workflows\", \"status\": \"ready\", \"message\": \"n8n/workflows integration ready\", \"timestamp\": \"2025-09-11T18:37:18.811Z\"}..."
+    },
+    {
+      "endpoint": "POST /api/pdfco/process",
+      "status_code": 200,
+      "response_time": "2.31ms",
+      "success": true,
+      "response_size": 128,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.786630",
+      "response": {
+        "endpoint": "pdfco/process",
+        "status": "ready",
+        "message": "pdfco/process integration ready",
+        "timestamp": "2025-09-11T18:37:18.814Z"
+      },
+      "response_preview": "{\"endpoint\": \"pdfco/process\", \"status\": \"ready\", \"message\": \"pdfco/process integration ready\", \"timestamp\": \"2025-09-11T18:37:18.814Z\"}..."
+    },
+    {
+      "endpoint": "POST /api/anyparser/parse",
+      "status_code": 200,
+      "response_time": "2.59ms",
+      "success": true,
+      "response_size": 132,
+      "content_type": "application/json; charset=utf-8",
+      "timestamp": "2025-09-11T20:37:18.789240",
+      "response": {
+        "endpoint": "anyparser/parse",
+        "status": "ready",
+        "message": "anyparser/parse integration ready",
+        "timestamp": "2025-09-11T18:37:18.816Z"
+      },
+      "response_preview": "{\"endpoint\": \"anyparser/parse\", \"status\": \"ready\", \"message\": \"anyparser/parse integration ready\", \"timestamp\": \"2025-09-11T18:37:18.816Z\"}..."
+    }
+  ]
+}

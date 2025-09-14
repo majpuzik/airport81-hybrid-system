@@ -1,0 +1,177 @@
+{
+  "name": "Simple Document Classifier",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "document-classifier",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "webhookId": "document-classifier-webhook"
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8888/classify",
+        "responseFormat": "json",
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "text",
+              "value": "={{ $json.testText || $json.documentText || 'No text provided' }}"
+            }
+          ]
+        }
+      },
+      "id": "classifyDocument",
+      "name": "Classify Document",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Process classification result\nconst classification = $input.item.json;\n\n// Determine output folder based on type\nconst outputFolders = {\n  'faktura': '/Users/m.a.j.puzik/classified_documents/faktury',\n  'smlouva': '/Users/m.a.j.puzik/classified_documents/smlouvy',\n  'platba': '/Users/m.a.j.puzik/classified_documents/platby',\n  'bankovni_vypis': '/Users/m.a.j.puzik/classified_documents/bankovni_vypisy',\n  'soudni_obesilka': '/Users/m.a.j.puzik/classified_documents/soudni_dokumenty',\n  'uredni_korespondence': '/Users/m.a.j.puzik/classified_documents/uredni_korespondence',\n  'objednavka': '/Users/m.a.j.puzik/classified_documents/objednavky',\n  'upominka': '/Users/m.a.j.puzik/classified_documents/upominky',\n  'reklama': '/Users/m.a.j.puzik/classified_documents/reklamy',\n  'ostatni': '/Users/m.a.j.puzik/classified_documents/ostatni'\n};\n\nconst docType = classification.classification?.type || 'ostatni';\nconst outputFolder = outputFolders[docType] || outputFolders['ostatni'];\n\n// Prepare response\nreturn {\n  json: {\n    success: true,\n    classification: classification.classification,\n    outputFolder: outputFolder,\n    originalRequest: $node[\"webhook\"].json,\n    timestamp: new Date().toISOString(),\n    message: `Document classified as: ${docType} with confidence ${classification.classification?.confidence || 0}`\n  }\n};"
+      },
+      "id": "processResult",
+      "name": "Process Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.originalRequest.source }}",
+              "rightValue": "gmail",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        }
+      },
+      "id": "checkSource",
+      "name": "Is Gmail?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "passwordBasedAuthentication",
+        "resource": "message",
+        "operation": "getAll",
+        "q": "is:unread",
+        "format": "full",
+        "additionalFields": {
+          "maxResults": 5
+        }
+      },
+      "id": "gmailFetch",
+      "name": "Fetch Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2,
+      "position": [1050, 200],
+      "credentials": {
+        "gmailPasswordBasedAuthentication": {
+          "id": "gmail-credentials",
+          "name": "Gmail majpuzik"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Return simple success message if not Gmail\nreturn {\n  json: {\n    success: true,\n    message: 'Document classification completed',\n    result: $input.item.json\n  }\n};"
+      },
+      "id": "returnResult",
+      "name": "Return Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1050, 400]
+    }
+  ],
+  "connections": {
+    "webhook": {
+      "main": [
+        [
+          {
+            "node": "classifyDocument",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "classifyDocument": {
+      "main": [
+        [
+          {
+            "node": "processResult",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "processResult": {
+      "main": [
+        [
+          {
+            "node": "checkSource",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checkSource": {
+      "main": [
+        [
+          {
+            "node": "gmailFetch",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "returnResult",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "gmailFetch": {
+      "main": [
+        [
+          {
+            "node": "returnResult",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

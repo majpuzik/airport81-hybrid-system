@@ -1,0 +1,1505 @@
+{
+  "timestamp": "2025-08-31T20:18:58.839150",
+  "stats": {
+    "total": 65,
+    "processed": 56,
+    "invoices": 0,
+    "receipts": 0,
+    "bank_statements": 0,
+    "contracts": 0,
+    "unknown": 1,
+    "rejected": 1,
+    "uploaded": 0,
+    "failed": 64
+  },
+  "results": [
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/scan_044 (5 files merged).pdf",
+      "filename": "scan_044 (5 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/FilmTechnika_scan_036 (2 files merged).pdf",
+      "filename": "FilmTechnika_scan_036 (2 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/WG34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf",
+      "filename": "WG34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "2495077747",
+        "supplier_ico": "16188047",
+        "supplier_dic": "CZ26159708",
+        "variable_symbol": "302205001",
+        "issue_date": "02.08.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "invoice:2495077747",
+        "ico:16188047",
+        "dic:CZ26159708",
+        "vs:302205001",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/815d046a-8d38-44e5-a095-385d3ad6e911.pdf",
+      "filename": "815d046a-8d38-44e5-a095-385d3ad6e911.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ26159708",
+        "variable_symbol": "302205001",
+        "due_date": "14.11.2024",
+        "issue_date": "19.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:03981428",
+        "dic:CZ26159708",
+        "vs:302205001",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Cisteni vozu_scan_040.pdf",
+      "filename": "Cisteni vozu_scan_040.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/wg59a84f01-aa67-410a-8bdb-3b4df96c2586.pdf",
+      "filename": "wg59a84f01-aa67-410a-8bdb-3b4df96c2586.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "2495123107",
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ26159708",
+        "variable_symbol": "302205001",
+        "issue_date": "20.11.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "invoice:2495123107",
+        "ico:03981428",
+        "dic:CZ26159708",
+        "vs:302205001",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/havas01-0324najem.pdf",
+      "filename": "havas01-0324najem.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "15/05/2024",
+        "issue_date": "15/04/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:04",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/aerohosting-proforma-224002311 (1).pdf",
+      "filename": "aerohosting-proforma-224002311 (1).pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "224002311",
+        "supplier_ico": "28589131",
+        "supplier_dic": "CZ28589131",
+        "variable_symbol": "224002311",
+        "due_date": "3.1.2025",
+        "issue_date": "20.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:224002311",
+        "ico:28589131",
+        "dic:CZ28589131",
+        "vs:224002311",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Sklenarstvi_02 (5 files merged).pdf",
+      "filename": "Sklenarstvi_02 (5 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/KancTechnika_scan_037.pdf",
+      "filename": "KancTechnika_scan_037.pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Benzin_scan_035 (19 files merged).pdf",
+      "filename": "Benzin_scan_035 (19 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/havas-najem04-0624.pdf",
+      "filename": "havas-najem04-0624.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "07/08/2024",
+        "issue_date": "08/07/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+      "filename": "Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/scan_044 (8 files merged).pdf",
+      "filename": "scan_044 (8 files merged).pdf",
+      "status": "failed",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nelze extrahovat text nebo příliš krátký"
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/468d67ec-0b41-4067-a316-9c68fad3255c.pdf",
+      "filename": "468d67ec-0b41-4067-a316-9c68fad3255c.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "06/11/2024",
+        "issue_date": "07/10/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/f7f84e85-b71e-4389-bbaf-4247cc1763cc.pdf",
+      "filename": "f7f84e85-b71e-4389-bbaf-4247cc1763cc.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "No",
+        "due_date": "06/11/2024",
+        "issue_date": "07/10/2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "invoice:No",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/priloha_1554077270_0_Vyrozumění_k_prostudování_tr__spisu-Milan_PUŽÍK__Michal_Hrnčíř_ze_dne_18_7_2025.pdf",
+      "filename": "priloha_1554077270_0_Vyrozumění_k_prostudování_tr__spisu-Milan_PUŽÍK__Michal_Hrnčíř_ze_dne_18_7_2025.pdf",
+      "status": "rejected",
+      "document_type": "unknown",
+      "extracted_data": {},
+      "tags": [],
+      "document_id": null,
+      "error": "Nízká confidence (0%) nebo neznámý typ",
+      "confidence": 0
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Sante_Faktura_110240606_ID_304391 (2).pdf",
+      "filename": "Sante_Faktura_110240606_ID_304391 (2).pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "61854093",
+        "supplier_dic": "CZ699003671",
+        "variable_symbol": "110240606",
+        "due_date": "15.03.2024",
+        "issue_date": "15.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "ico:61854093",
+        "dic:CZ699003671",
+        "vs:110240606",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/NB Ucetnictvi_V_241029.pdf",
+      "filename": "NB Ucetnictvi_V_241029.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ03981428",
+        "variable_symbol": "241029",
+        "due_date": "23.07.2024",
+        "issue_date": "09.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "ico:03981428",
+        "dic:CZ03981428",
+        "vs:241029",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/RFIshop_202437341.pdf",
+      "filename": "RFIshop_202437341.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ08139105",
+        "total_amount": 0.0,
+        "variable_symbol": "577082",
+        "due_date": "04.01.2025",
+        "issue_date": "23.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "ico:03981428",
+        "dic:CZ08139105",
+        "vs:577082",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 80
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Potten und Pannen_1124115359.pdf",
+      "filename": "Potten und Pannen_1124115359.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "25730452",
+        "supplier_dic": "CZ25730452",
+        "variable_symbol": "8984615067"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2025",
+        "month:08",
+        "ico:25730452",
+        "dic:CZ25730452",
+        "vs:8984615067",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2952181547.pdf",
+      "filename": "Alza_2952181547.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2174.0,
+        "variable_symbol": "5054274261",
+        "due_date": "16.04.2024",
+        "issue_date": "16.04.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:04",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5054274261",
+        "amount:2174",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2953935588.pdf",
+      "filename": "Alza_2953935588.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2198.0,
+        "variable_symbol": "5078215391",
+        "due_date": "16.05.2024",
+        "issue_date": "16.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5078215391",
+        "amount:2198",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2951183978.pdf",
+      "filename": "Alza_2951183978.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2112.72,
+        "variable_symbol": "5040285141",
+        "due_date": "28.03.2024",
+        "issue_date": "28.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5040285141",
+        "amount:2112",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2951183979.pdf",
+      "filename": "Alza_2951183979.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 179.0,
+        "variable_symbol": "5040285152",
+        "due_date": "28.03.2024",
+        "issue_date": "28.03.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5040285152",
+        "amount:179",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2948969515.pdf",
+      "filename": "Alza_2948969515.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 4139.33,
+        "variable_symbol": "5009066721",
+        "due_date": "16.02.2024",
+        "issue_date": "16.02.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5009066721",
+        "amount:4139",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2954575008.pdf",
+      "filename": "Alza_2954575008.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 40.0,
+        "variable_symbol": "1269819141",
+        "due_date": "29.05.2024",
+        "issue_date": "28.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:1269819141",
+        "amount:40",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2959006300.pdf",
+      "filename": "Alza_2959006300.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2824.1,
+        "variable_symbol": "5129073791",
+        "due_date": "06.08.2024",
+        "issue_date": "06.08.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5129073791",
+        "amount:2824",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2954574204.pdf",
+      "filename": "Alza_2954574204.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 52.0,
+        "variable_symbol": "1269816651",
+        "due_date": "29.05.2024",
+        "issue_date": "28.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:1269816651",
+        "amount:52",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2957661862.pdf",
+      "filename": "Alza_2957661862.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 699.0,
+        "variable_symbol": "5129073802",
+        "due_date": "16.07.2024",
+        "issue_date": "16.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5129073802",
+        "amount:699",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2954344013.pdf",
+      "filename": "Alza_2954344013.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2990.0,
+        "variable_symbol": "5083671211",
+        "due_date": "23.05.2024",
+        "issue_date": "23.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5083671211",
+        "amount:2990",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2957661865.pdf",
+      "filename": "Alza_2957661865.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 395.61,
+        "variable_symbol": "5129073813",
+        "due_date": "16.07.2024",
+        "issue_date": "16.07.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5129073813",
+        "amount:395",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2962972780.pdf",
+      "filename": "Alza_2962972780.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 689.0,
+        "variable_symbol": "5202565991",
+        "due_date": "03.10.2024",
+        "issue_date": "03.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5202565991",
+        "amount:689",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2964361092.pdf",
+      "filename": "Alza_2964361092.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 658.0,
+        "variable_symbol": "5221589972",
+        "due_date": "20.10.2024",
+        "issue_date": "20.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5221589972",
+        "amount:658",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2964880864.pdf",
+      "filename": "Alza_2964880864.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 299.0,
+        "variable_symbol": "1278738841",
+        "due_date": "27.11.2024",
+        "issue_date": "28.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:1278738841",
+        "amount:299",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2953936374.pdf",
+      "filename": "Alza_2953936374.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 99.0,
+        "variable_symbol": "5078215402",
+        "due_date": "16.05.2024",
+        "issue_date": "16.05.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5078215402",
+        "amount:99",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2964361091.pdf",
+      "filename": "Alza_2964361091.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 1922.2,
+        "variable_symbol": "5221589961",
+        "due_date": "20.10.2024",
+        "issue_date": "20.10.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5221589961",
+        "amount:1922",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2948803072.pdf",
+      "filename": "Alza_2948803072.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2660.11,
+        "variable_symbol": "5006701051",
+        "due_date": "13.02.2024",
+        "issue_date": "13.02.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5006701051",
+        "amount:2660",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2968364466.pdf",
+      "filename": "Alza_2968364466.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 371.0,
+        "variable_symbol": "5277282171",
+        "due_date": "01.12.2024",
+        "issue_date": "01.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5277282171",
+        "amount:371",
+        "amount:small",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/vydaj/Alza/Alza_2949397329.pdf",
+      "filename": "Alza_2949397329.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "supplier_ico": "27082440",
+        "supplier_dic": "CZ27082440",
+        "total_amount": 2318.52,
+        "variable_symbol": "5015142221",
+        "due_date": "24.02.2024",
+        "issue_date": "24.02.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "ico:27082440",
+        "dic:CZ27082440",
+        "vs:5015142221",
+        "amount:2318",
+        "amount:medium",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 70
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/prijem/bitfaktura.pdf",
+      "filename": "bitfaktura.pdf",
+      "status": "failed",
+      "document_type": "invoice",
+      "extracted_data": {
+        "invoice_number": "FV2024/12/1",
+        "supplier_ico": "03981428",
+        "supplier_dic": "CZ26717484",
+        "total_amount": 88400.0,
+        "variable_symbol": "2024121",
+        "due_date": "15.01.2025",
+        "issue_date": "19.12.2024"
+      },
+      "tags": [
+        "type:invoice",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "invoice:FV2024121",
+        "ico:03981428",
+        "dic:CZ26717484",
+        "vs:2024121",
+        "amount:88400",
+        "amount:large",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240731_7_MCZB.pdf",
+      "filename": "269290450_20240731_7_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "13.07.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240331_3_MCZB.pdf",
+      "filename": "269290450_20240331_3_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "23.03.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20241231_12_MCZB.pdf",
+      "filename": "297465924_20241231_12_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240229_2_MCZB.pdf",
+      "filename": "297465924_20240229_2_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20241130_11_MCZB.pdf",
+      "filename": "297465924_20241130_11_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240630_6_MCZB.pdf",
+      "filename": "297465924_20240630_6_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240131_1_MCZB.pdf",
+      "filename": "269290450_20240131_1_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "30.12.2023"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2023",
+        "month:12",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240831_8_MCZB.pdf",
+      "filename": "269290450_20240831_8_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "31.07.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:07",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240531_5_MCZB.pdf",
+      "filename": "269290450_20240531_5_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "13.05.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:05",
+        "account:269290450",
+        "bank:csob",
+        "confidence:medium"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 75
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240930_9_MCZB.pdf",
+      "filename": "297465924_20240930_9_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240430_4_MCZB.pdf",
+      "filename": "297465924_20240430_4_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20241031_10_MCZB.pdf",
+      "filename": "297465924_20241031_10_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240630_6_MCZB.pdf",
+      "filename": "269290450_20240630_6_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "03.06.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:06",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20241130_11_MCZB.pdf",
+      "filename": "269290450_20241130_11_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "04.11.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:11",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240229_2_MCZB.pdf",
+      "filename": "269290450_20240229_2_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "09.02.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:02",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240331_3_MCZB.pdf",
+      "filename": "297465924_20240331_3_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240731_7_MCZB.pdf",
+      "filename": "297465924_20240731_7_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20241231_12_MCZB.pdf",
+      "filename": "269290450_20241231_12_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "01.12.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:12",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240430_4_MCZB.pdf",
+      "filename": "269290450_20240430_4_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "28.03.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:03",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20240930_9_MCZB.pdf",
+      "filename": "269290450_20240930_9_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "30.08.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:08",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/269290450_20241031_10_MCZB.pdf",
+      "filename": "269290450_20241031_10_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "269290450",
+        "issue_date": "02.10.2024"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2024",
+        "month:10",
+        "account:269290450",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240531_5_MCZB.pdf",
+      "filename": "297465924_20240531_5_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240831_8_MCZB.pdf",
+      "filename": "297465924_20240831_8_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    },
+    {
+      "file_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/20250221_42796603_EV_183343/297465924_20240131_1_MCZB.pdf",
+      "filename": "297465924_20240131_1_MCZB.pdf",
+      "status": "failed",
+      "document_type": "bank_statement",
+      "extracted_data": {
+        "account_number": "297465924"
+      },
+      "tags": [
+        "type:bank_statement",
+        "company:mbw",
+        "year:2974",
+        "month:65",
+        "account:297465924",
+        "bank:csob",
+        "confidence:high"
+      ],
+      "document_id": null,
+      "error": "'str' object has no attribute 'get'",
+      "confidence": 100
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "method": "POST",
+    "url": "http://host.docker.internal:11434/api/generate",
+    "sendHeaders": true,
+    "headerParameters": {
+      "parameters": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={\n  \"model\": \"llama3.3:70b\",\n  \"prompt\": \"Jsi expert na analýzu business dokumentů. Tvým úkolem je PŘESNĚ určit typ dokumentu a extrahovat klíčové informace.\\n\\nTYPY DOKUMENTŮ které musíš rozpoznat:\\n1. FAKTURA - daňový doklad s IČO, DIČ, částkou k úhradě\\n2. PROFORMA - předfaktura, není daňový doklad\\n3. BANKOVNÍ VÝPIS - výpis z účtu s transakcemi\\n4. POTVRZENÍ O PLATBĚ - potvrzení o přijaté/odeslané platbě\\n5. POTVRZENÍ O PŘEVODU - potvrzení bankovního převodu\\n6. SMLOUVA - právní dokument s podmínkami\\n7. OBJEDNÁVKA - objednávka zboží/služeb\\n8. DODACÍ LIST - potvrzení o dodání\\n9. UPOMÍNKA - upomínka k platbě\\n10. JINÝ - pokud nespadá do výše uvedených\\n\\nAnalyzuj tento dokument:\\nNázev souboru: {{ $json.attachmentAnalysis.documentAttachments[0].filename }}\\nPředběžná klasifikace: {{ $json.documentClassification.primaryType }}\\nObsah emailu: {{ $json.emailText }}\\n\\nVRAŤ POUZE JSON bez dalšího textu:\\n{\\n  \\\"documentType\\\": \\\"přesný_typ\\\",\\n  \\\"confidence\\\": 0.0-1.0,\\n  \\\"vendor\\\": \\\"název_dodavatele\\\",\\n  \\\"documentNumber\\\": \\\"číslo_dokumentu\\\",\\n  \\\"date\\\": \\\"datum_vystavení\\\",\\n  \\\"amount\\\": číslo_nebo_null,\\n  \\\"currency\\\": \\\"CZK/EUR/USD\\\",\\n  \\\"variableSymbol\\\": \\\"VS_pokud_existuje\\\",\\n  \\\"dueDate\\\": \\\"datum_splatnosti\\\",\\n  \\\"extractedData\\\": {}\\n}\",\n  \"stream\": false,\n  \"options\": {\n    \"temperature\": 0.1,\n    \"num_predict\": 1000\n  }\n}",
+    "options": {
+      "timeout": 60000
+    }
+  },
+  "id": "ollamaAnalysis",
+  "name": "Ollama Document Analysis",
+  "type": "n8n-nodes-base.httpRequest",
+  "typeVersion": 4.2,
+  "position": [1800, 300]
+}

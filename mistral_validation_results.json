@@ -1,0 +1,1005 @@
+{
+  "stats": {
+    "total": 100,
+    "successful": 100,
+    "failed": 0,
+    "categories": {
+      "INFO": 78,
+      "SPAM": 8,
+      "DULEZITE": 14
+    },
+    "document_types": {
+      "Newsletter": 78,
+      "Spam": 8,
+      "Email": 10,
+      "E-mailová zpráva": 3,
+      "Potvrzení o platbě": 1
+    },
+    "top_tags": {
+      "Newsletter": 78,
+      "Email": 14,
+      "Nevyžádané": 12,
+      "Spam": 8,
+      "American Express": 3,
+      "PayPal": 3,
+      "Transakce": 2,
+      "Platba schválena": 1
+    },
+    "validation_issues_count": 3,
+    "unrecognized_types": {
+      "E-mailová zpráva": 3
+    },
+    "missing_tags": {}
+  },
+  "results": [
+    {
+      "file": "20250730_162149_Jan, Jooble_Kateřinská Hotel, s.r.o. hledá Receptionist a 24 d.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:19.997000",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162145_Elementor_Jumpstart your website—skip the manual work.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:21.889841",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162138_Fing Alert_New espressif @ MAJSYNO5.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:23.447901",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162207_MyHeritage SuperSearch Alerts_Marie Vilhelmina Karaskova - 7 nových výsledků.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:24.844515",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162221_CNET Home_Recall Alert SharkNinja Pressure Cookers Could Bur.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:26.141443",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162213_Jaroslav Foltánek_Oprava chyby Velká šance získat nedostupné knihy. .pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:27.627479",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162133_Letuška.cz_Letuška.cz Objevte svět s Turkish Airlines Zájezdy.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:29.088514",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162208_PayPal_Stvrzenka za vaši platbu příjemci Google Payment I.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:30.663261",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162155_AliExpress_Packstück DR9707549115F In Ihrem Land Ihrer Region.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:32.230659",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162147_Epoch Vital_Darmspiegelung Große Studie zeigt überraschendes E.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:34.200532",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162135_Vlna veder_Kdepak! Vlna nezapomenutelných zážitků 🤩.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:49:35.959601",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162201_ZEMITH.COM_Your receipt from ZEMITH.COM #2717-3387.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:49:37.628072",
+      "doc_type": "Email",
+      "correspondent": "ZEMITH.COM",
+      "tags": [
+        "Email",
+        "Nevyžádané"
+      ],
+      "description": "E-mailová zpráva o účtovnictví od ZEMITH.COM."
+    },
+    {
+      "file": "20250730_162212_Chatbot App_Your subscription for CHATBOT APP has been cancele.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:42.758789",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162147_Balíkovna_Potvrzení o převzetí balíku DR9707549115F.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:44.693255",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162154_Epoch Times ČR_Migrační krize a pasivita veřejných složek; Asisto.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:46.167293",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162216_Google_Archivierung von Google-Daten angefordert.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:47.425697",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162154_Jan, Jooble_🔔 M.A.J., VINCI Construction CS a.s. hledá pracovn.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:49.249401",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162210_AliExpress_Neue Auswahl in „rayban meta“.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:50.968338",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162136_AutoScout24 Fahrzeugsuche_Neue Treffer für deine Volkswagen, Bis zu 50.000 €.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:49:52.814123",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162132_AIDA News_Jetzt buchbar Neue Reisen mit AIDAprima.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:54.474577",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162222_Allegro_🎁 Využijte 300Kč kupón na Allegro Days nabídky!.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:49:56.007840",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162212_Anthropic, PBC_Your receipt from Anthropic, PBC #2699-2800-2984.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:49:57.576525",
+      "doc_type": "E-mailová zpráva",
+      "correspondent": "Anthropic, PBC",
+      "tags": [
+        "Email"
+      ],
+      "description": "E-mailová zpráva od Anthropic, PBC s informacemi o platbě a fakturaci."
+    },
+    {
+      "file": "20250730_162143_Inspirace od Epoch Times ČR_Jak postavit dům v Karibiku za 100 tisíc; Beethove.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:00.520549",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162206_NOREPLY MSCrew_[MSCREW] milan, your subscription automatically re.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:02.079513",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162151_Jan, Jooble_Společnost hledá IT Project Manager for Enegry&Uti.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:50:03.786234",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162220_Chargemap_No queues this summer 🔌☀️.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:05.691250",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162201_PayPal_Stvrzenka za vaši platbu příjemci Proton Europe S..pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:07.621691",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162136_Manage It_Daily Overview for Bressner.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:09.132393",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162215_AliExpress_Bestellung 3057315516276343 Bestellung versandt.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:50:10.615408",
+      "doc_type": "Email",
+      "correspondent": "AllExpress",
+      "tags": [
+        "Email",
+        "Nevyžádané"
+      ],
+      "description": "Sdělení od AllExpress."
+    },
+    {
+      "file": "20250730_162151_AliExpress_Packstück DR9707549115F mit lokalem Kurier.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:50:13.896536",
+      "doc_type": "Email",
+      "correspondent": "American Express",
+      "tags": [
+        "Email",
+        "American Express"
+      ],
+      "description": "E-mailová zpráva od American Express s transakčním identifikátorem a odkazem na lokální kurier."
+    },
+    {
+      "file": "20250730_162147_IFTTT via IFTTT_A Recommended Recipe on IFTTT Add Spotify to your .pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:18.801583",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162154_AliExpress_Zollabfertigung für DR9707549115F wurde beendet.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:50:20.332640",
+      "doc_type": "Email",
+      "correspondent": "American Express",
+      "tags": [
+        "Email",
+        "American Express"
+      ],
+      "description": "Zpráva o transakci od American Express."
+    },
+    {
+      "file": "20250730_162207_Jaroslav Foltánek_Super knihy a mapa od afolta Aukro. Mega veletrh K.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:23.764872",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162145_Myfxbook_New message From DNA Funded.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:25.177835",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162215_Google Alerts_Upozornění Google – Bitcoin.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:50:26.916792",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162203_OpenAI_[Novinky o úloze] Global politics and security upd.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:28.410453",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162158_Jan, Jooble_Euro-Center Prague, s.r.o. hledá Assistance Coordi.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:29.879386",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162206_MyHeritage Notification_Váš ověřovací kód pro přihlášení na MyHeritage.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:31.389657",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162209_n8n.io_Your free n8n license key to unlock selected paid .pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:32.958972",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162135_Jotform_Announcing Gmail Agent.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:34.418880",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162140_pauknerova_RE Neschopenka Martin Puzik.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:50:36.142230",
+      "doc_type": "Email",
+      "correspondent": "Národní báze vědní technické literatury",
+      "tags": [
+        "Email"
+      ],
+      "description": "Emailová komunikace mezi Daniela Pauknerová a Martin Puzik o záležitostech souvisejících s neschopenkou."
+    },
+    {
+      "file": "20250730_162153_Jan, Jooble_SearchTeam hledá IT Security Specialist - Financia.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:39.553860",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162208_prima+_Nové severské kriminálky a opravdové zločiny na pr.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:41.271978",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162156_Rokid_Join Us and Explore More on Rokid Glasses, John Ti.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:43.096814",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162221_Leonardo.Ai_TASTE, No. 4 Let The Mirage Guide You.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:44.931154",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162149_Jaroslav Foltánek_Mega veletrh Knižní prázdniny probíhá. Přidáno dal.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:48.044239",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162142_Celonis Inc._Your receipt from Celonis Inc. #2717-4289.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:50:49.971511",
+      "doc_type": "E-mailová zpráva",
+      "correspondent": "Celonis Inc.",
+      "tags": [
+        "Email"
+      ],
+      "description": "E-mailová zpráva od Celonis Inc. obsahující fakturu za 10,59 USD za měsíční předplatné Make Core planu."
+    },
+    {
+      "file": "20250730_162220_Montblanc_Ein Montblanc Original, neu interpretiert.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:53.158439",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162202_Fing Alert_Network alert on AZURO2G.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:54.763023",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162214_Inspirace od Epoch Times ČR_Fantastické porcelánové květiny; Původ harfy; Poho.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:56.202567",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162134_AliExpress_Passend zu dem, was Sie gekauft haben.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:57.925108",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162146_Jan, Jooble_🔔 M.A.J., DISPONERO s.r.o. hledá pracovníky na poz.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:50:59.981927",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162157_AppleMix.cz_Novinky a slevy na e-shopu.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:01.728353",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162137_Meshy_Discover Meshy’s Premium Features and Claim Your O.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:03.199537",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162217_Epoch Times ČR_V Česku začíná fungovat nová Inspekce silniční dop.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:05.271521",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162148_Balíkovna_Vezeme Vám balík DR9707549115F.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:06.978845",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162206_OpenWeather Team_OpenWeatherMap Account confirmation.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:08.692899",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162137_Sun Ballast_One support, two functions Try Sun Ballast system!.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:51:10.592176",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162214_PayPal_Stvrzenka za vaši platbu příjemci BP Imperial SA.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:51:12.400400",
+      "doc_type": "Email",
+      "correspondent": "Stvrzenka za váš platbu půjčení BP Imperial SA",
+      "tags": [
+        "Email",
+        "PayPal",
+        "Platba schválena"
+      ],
+      "description": "Email obsahující stvrzenku za platbu půjčení od BP Imperial SA."
+    },
+    {
+      "file": "20250730_162213_eBay_Kaufabwicklung nicht abgeschlossen Microsoft Surfa.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:16.162510",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162211_LM Studio Team_LM Studio is now free for use at work.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:17.613960",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162150_PayPal_Stvrzenka za vaši platbu příjemci ASPIEGEL SE.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:19.438023",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162205_eToro_Security Alert — Login detected from a new device.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:22.151932",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162208_Stability AI Ltd_Your Stability AI Ltd subscription will renew soon.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:25.695512",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162200_Jaroslav Foltánek_Velká aukce končí. Unikátní knihy budou fuč. Mega .pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:27.331387",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162144_PayPal_Stvrzenka za vaši platbu příjemci GitHub, Inc..pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:29.206843",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162134_mobile.de Suchauftrag_🚘 2 neue Fahrzeuge für Dich.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:51:30.860250",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162148_AliExpress_Paket DR9707549115F ist im Zustellungszentrum ange.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:32.351244",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162215_AliExpress_Bestellung 3057315516306343 Bestellauftrag bestäti.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:51:34.044775",
+      "doc_type": "Email",
+      "correspondent": "American Express",
+      "tags": [
+        "Email",
+        "American Express"
+      ],
+      "description": "Emailová zpráva od American Express s transakčním identifikátorem a odkazem na jejich web."
+    },
+    {
+      "file": "20250730_162223_OpenAI_Tvoji naplánovanou úlohu nelze dokončit.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:37.966998",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162158_Epoch Times ČR_Vysoké ceny „předprodeje“ emisních povolenek na bu.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:39.418673",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162147_Ancestry_Milan, check out these new and updated collections.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:40.772646",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162211_Chargemap_Top up for less this summer ☀️🚙.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:42.675183",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162203_Epoch Times ČR_USA zavedou od 1. srpna na zboží z EU clo 30 proce.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:44.150430",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162145_support@freshworks.com_Odstranit vaši Freshworks organizaci.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:45.887587",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162147_MacZone.CZ_Nový OWC Thunderbolt 5 Dock.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:47.510639",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162209_Google Alerts_Google Alert – tesla.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:49.363927",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162144_PayPal_Stvrzenka za vaši platbu příjemci Google Payment I.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:51.041371",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162151_IFTTT via IFTTT_A Recommended Recipe on IFTTT Fitbit and iOS Healt.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:52.423242",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162143_Myfxbook_Myfxbook Weekly Economic Calendar For Jul 27, 2025.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:53.980194",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162220_prima+_Nové krimi seriály a napínavé novinky na prima+.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:55.756388",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162205_OpenAI_[Novinky o úloze] Latest updates from global regio.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:57.244302",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162224_Fing Alert_New tomass-iPad.localdomain @ MAJSYNO5.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:51:58.861432",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162218_PayPal_Stvrzenka za vaši platbu příjemci Golem Media GmbH.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:00.368339",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162209_Genmo_Vaše předplatné Genmo se brzy obnoví.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:52:01.860788",
+      "doc_type": "Email",
+      "correspondent": "Genmo",
+      "tags": [
+        "Email",
+        "Nevyžádané"
+      ],
+      "description": "Sdílení informací o platbě a aktualizaci platby pro Genmo playground."
+    },
+    {
+      "file": "20250730_162143_Ela Excellence Resort Belek_FEEL WELL, FEEL LOVE.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:05.359165",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162210_Epoch Times ČR_Analýza geopolitického bojiště vzácných zemin; EU .pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:07.594420",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162135_expondo.cz_Nastal čas dát svému podnikání impuls - využijte s.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:52:09.485436",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162136_AppleMix.cz_Novinky a slevy na e-shopu.pdf",
+      "category": "SPAM",
+      "timestamp": "2025-07-30T16:52:11.354880",
+      "doc_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ]
+    },
+    {
+      "file": "20250730_162222_KnihyDobrovsky.cz_Nové e-knihy právě dorazily, nakrmte si čtečku.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:52:13.086318",
+      "doc_type": "Email",
+      "correspondent": "Kriný Dobrovský",
+      "tags": [
+        "Email",
+        "Nevyžádané"
+      ],
+      "description": "Nový e-knižní portál, nabízí dorazily, nakrmte si"
+    },
+    {
+      "file": "20250730_162203_Medium Daily Digest_GPT-5 Is Coming in July 2025 — And Everything Will.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:16.826983",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162150_PayPal_Stvrzenka za vaši platbu příjemci MUBI.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:18.396955",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162141_Krea_Your receipt from Krea #2708-0465.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:52:20.196370",
+      "doc_type": "Potvrzení o platbě",
+      "correspondent": "Krea",
+      "tags": [
+        "Email",
+        "Transakce",
+        "PayPal"
+      ],
+      "description": "Potvrzení o platbě za Krea v hodnotě 10,00 USD."
+    },
+    {
+      "file": "20250730_162140_pauknerova_RE Neschopenka Martin Puzik_1.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:52:23.382813",
+      "doc_type": "Email",
+      "correspondent": "Národní ústav pro vzdělávání, s. r. o.",
+      "tags": [
+        "Email"
+      ],
+      "description": "Email o potvrzení nákupu"
+    },
+    {
+      "file": "20250730_162212_Moje O2_Moje O2 - vyúčtování za služby.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:26.463338",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162201_Nelumbo Tým_Vaše solární elektrárna může víc vydělávejte i chr.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:28.042536",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162148_Quora Digest_I died in 2016….pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:29.646649",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162153_Stability AI Ltd_Your receipt from Stability AI Ltd #2215-6810.pdf",
+      "category": "DULEZITE",
+      "timestamp": "2025-07-30T16:52:32.303434",
+      "doc_type": "E-mailová zpráva",
+      "correspondent": "Stability AI Ltd",
+      "tags": [
+        "Email",
+        "Transakce",
+        "PayPal"
+      ],
+      "description": "E-mailová zpráva od Stability AI Ltd o příjmu s detailem platby."
+    },
+    {
+      "file": "20250730_162208_Findandloc-Zrušení předplatnéh_Zrušení předplatného.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:36.151776",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    },
+    {
+      "file": "20250730_162220_Inspirace od Epoch Times ČR_Johnny Cash jinak návrat ke kořenům; Co je víc – p.pdf",
+      "category": "INFO",
+      "timestamp": "2025-07-30T16:52:37.558250",
+      "doc_type": "Newsletter",
+      "tags": [
+        "Newsletter"
+      ]
+    }
+  ],
+  "validation_issues": [
+    {
+      "file": "20250730_162212_Anthropic, PBC_Your receipt from Anthropic, PBC #2699-2800-2984.pdf",
+      "issue": "unrecognized_type",
+      "value": "E-mailová zpráva",
+      "suggestion": "Email"
+    },
+    {
+      "file": "20250730_162142_Celonis Inc._Your receipt from Celonis Inc. #2717-4289.pdf",
+      "issue": "unrecognized_type",
+      "value": "E-mailová zpráva",
+      "suggestion": "Email"
+    },
+    {
+      "file": "20250730_162153_Stability AI Ltd_Your receipt from Stability AI Ltd #2215-6810.pdf",
+      "issue": "unrecognized_type",
+      "value": "E-mailová zpráva",
+      "suggestion": "Email"
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+[
+  {
+    "file": "scan_044 (5 files merged).pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/scan_044 (5 files merged).pdf",
+    "size_kb": 2895.1826171875,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 36734,
+        "readable_lines": 163,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "5",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "FilmTechnika_scan_036 (2 files merged).pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/FilmTechnika_scan_036 (2 files merged).pdf",
+    "size_kb": 1883.3837890625,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 24068,
+        "readable_lines": 87,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "2",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "Cisteni vozu_scan_040.pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Cisteni vozu_scan_040.pdf",
+    "size_kb": 617.669921875,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 7818,
+        "readable_lines": 58,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "1",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "Sklenarstvi_02 (5 files merged).pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Sklenarstvi_02 (5 files merged).pdf",
+    "size_kb": 1837.3017578125,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 23780,
+        "readable_lines": 154,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "5",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "KancTechnika_scan_037.pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/KancTechnika_scan_037.pdf",
+    "size_kb": 1635.556640625,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 21599,
+        "readable_lines": 69,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "1",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "Benzin_scan_035 (19 files merged).pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Benzin_scan_035 (19 files merged).pdf",
+    "size_kb": 9055.5537109375,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 115713,
+        "readable_lines": 552,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "19",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/Cerveny_Vymena Kol_2024 (3 files merged).pdf",
+    "size_kb": 2404.2041015625,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 30456,
+        "readable_lines": 126,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "3",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  },
+  {
+    "file": "scan_044 (8 files merged).pdf",
+    "path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW/scan_044 (8 files merged).pdf",
+    "size_kb": 5298.7568359375,
+    "methods": {
+      "pdftotext": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_simple": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "pdftotext_page1": {
+        "success": true,
+        "text_length": 0,
+        "has_readable_text": false,
+        "preview": ""
+      },
+      "strings": {
+        "success": true,
+        "total_strings": 67148,
+        "readable_lines": 269,
+        "has_readable_text": true,
+        "preview": "<</Type /Page\n/Parent 1 0 R\n/Resources 2 0 R\n/Contents 4 0 R>>\n<</Filter /FlateDecode /Length 71>>\n<"
+      },
+      "pdfinfo": {
+        "success": true,
+        "pages": "8",
+        "producer": "Online2PDF.com",
+        "creator": "Online2PDF.com",
+        "pdf_version": "1.4",
+        "tagged": "no",
+        "form": "none"
+      }
+    },
+    "analysis": {
+      "is_scan": false,
+      "needs_ocr": true,
+      "has_any_text": true
+    }
+  }
+]

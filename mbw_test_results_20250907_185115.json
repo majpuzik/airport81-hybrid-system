@@ -1,0 +1,543 @@
+{
+  "timestamp": "2025-09-07T18:51:15.419688",
+  "base_path": "/Users/m.a.j.puzik/Library/CloudStorage/OneDrive-Osobní/MBW",
+  "total_documents": 65,
+  "test_duration_seconds": 10.94,
+  "analysis": {
+    "total": 65,
+    "categories": {
+      "other": {
+        "count": 63,
+        "files": [
+          "scan_044 (5 files merged).pdf",
+          "filmtechnika_scan_036 (2 files merged).pdf",
+          "wg34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf"
+        ]
+      },
+      "invoice": {
+        "count": 2,
+        "files": [
+          "sante_faktura_110240606_id_304391 (2).pdf",
+          "bitfaktura.pdf"
+        ]
+      }
+    },
+    "size_distribution": {
+      "small": 33,
+      "medium": 24,
+      "large": 8
+    },
+    "samples": []
+  },
+  "statistics": {
+    "original": {
+      "found": 53,
+      "not_found": 12,
+      "errors": 0,
+      "total_time": 2.7169999999999987,
+      "sources": {
+        "document_header": 53
+      },
+      "with_ico": 53,
+      "with_dic": 28
+    },
+    "v1": {
+      "found": 57,
+      "not_found": 8,
+      "errors": 0,
+      "total_time": 2.725,
+      "sources": {
+        "document_header": 38,
+        "ico_database": 19
+      },
+      "with_ico": 53,
+      "with_dic": 13
+    },
+    "v2": {
+      "found": 56,
+      "not_found": 9,
+      "errors": 0,
+      "total_time": 2.69,
+      "sources": {
+        "document_header": 37,
+        "ico_database": 19
+      },
+      "with_ico": 52,
+      "with_dic": 13
+    },
+    "v3": {
+      "found": 23,
+      "not_found": 42,
+      "errors": 0,
+      "total_time": 2.8009999999999997,
+      "sources": {
+        "document_header": 4,
+        "ico_database": 19
+      },
+      "with_ico": 19,
+      "with_dic": 4
+    }
+  },
+  "sample_results": [
+    {
+      "filename": "scan_044 (5 files merged).pdf",
+      "file_size_kb": 2895.18,
+      "versions": {
+        "original": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.045,
+          "error": null
+        },
+        "v1": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.04,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.0,
+          "time": 0.039,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "FilmTechnika_scan_036 (2 files merged).pdf",
+      "file_size_kb": 1883.38,
+      "versions": {
+        "original": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v1": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.0,
+          "time": 0.037,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "WG34e3aca2-dacd-47a3-86ce-8b7619833b8a.pdf",
+      "file_size_kb": 31.0,
+      "versions": {
+        "original": {
+          "name": "Webglobe, s.r.o",
+          "ico": "16188047",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v1": {
+          "name": "Webglobe, s.r.o",
+          "ico": "16188047",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.04,
+          "error": null
+        },
+        "v2": {
+          "name": "Webglobe, s.r.o",
+          "ico": "16188047",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": "CZ26159708",
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.25,
+          "time": 0.04,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "815d046a-8d38-44e5-a095-385d3ad6e911.pdf",
+      "file_size_kb": 35.93,
+      "versions": {
+        "original": {
+          "name": "Webglobe, s.r.o",
+          "ico": "03981428",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v1": {
+          "name": "Webglobe, s.r.o",
+          "ico": "03981428",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v2": {
+          "name": "Webglobe, s.r.o",
+          "ico": "03981428",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": "CZ26159708",
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.26,
+          "time": 0.039,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "Cisteni vozu_scan_040.pdf",
+      "file_size_kb": 617.67,
+      "versions": {
+        "original": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.035,
+          "error": null
+        },
+        "v1": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.036,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.036,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.0,
+          "time": 0.037,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "wg59a84f01-aa67-410a-8bdb-3b4df96c2586.pdf",
+      "file_size_kb": 30.94,
+      "versions": {
+        "original": {
+          "name": "Webglobe, s.r.o",
+          "ico": "03981428",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v1": {
+          "name": "Webglobe, s.r.o",
+          "ico": "03981428",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v2": {
+          "name": "Webglobe, s.r.o",
+          "ico": "03981428",
+          "dic": "CZ26159708",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": "CZ26159708",
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.25,
+          "time": 0.039,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "havas01-0324najem.pdf",
+      "file_size_kb": 83.55,
+      "versions": {
+        "original": {
+          "name": null,
+          "ico": null,
+          "dic": "CZ63079054",
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v1": {
+          "name": "Havas Worldwide Prague a.s",
+          "ico": null,
+          "dic": "CZ63079054",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.038,
+          "error": null
+        },
+        "v2": {
+          "name": "Havas Worldwide Prague a.s",
+          "ico": null,
+          "dic": "CZ63079054",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.037,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": "CZ63079054",
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.34,
+          "time": 0.041,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "aerohosting-proforma-224002311 (1).pdf",
+      "file_size_kb": 49.55,
+      "versions": {
+        "original": {
+          "name": "Variabilní symbol: 224002311",
+          "ico": "28589131",
+          "dic": "CZ28589131",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v1": {
+          "name": "AERO Trip PRO s.r.o",
+          "ico": "28589131",
+          "dic": "CZ28589131",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v2": {
+          "name": "AERO Trip PRO s.r.o",
+          "ico": "28589131",
+          "dic": "CZ28589131",
+          "source": "document_header",
+          "confidence": 70,
+          "ocr_quality": null,
+          "time": 0.042,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": "CZ28589131",
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.23,
+          "time": 0.047,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "Sklenarstvi_02 (5 files merged).pdf",
+      "file_size_kb": 1837.3,
+      "versions": {
+        "original": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.043,
+          "error": null
+        },
+        "v1": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.042,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.041,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.0,
+          "time": 0.041,
+          "error": null
+        }
+      }
+    },
+    {
+      "filename": "KancTechnika_scan_037.pdf",
+      "file_size_kb": 1635.56,
+      "versions": {
+        "original": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.039,
+          "error": null
+        },
+        "v1": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.046,
+          "error": null
+        },
+        "v2": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": null,
+          "time": 0.043,
+          "error": null
+        },
+        "v3": {
+          "name": null,
+          "ico": null,
+          "dic": null,
+          "source": null,
+          "confidence": 0,
+          "ocr_quality": 0.0,
+          "time": 0.041,
+          "error": null
+        }
+      }
+    }
+  ]
+}

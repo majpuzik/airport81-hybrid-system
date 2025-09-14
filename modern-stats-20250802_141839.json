@@ -1,0 +1,15 @@
+{
+  "total": 11100,
+  "processed": 11100,
+  "invoices": 97,
+  "receipts": 302,
+  "bank_statements": 71,
+  "contracts": 12,
+  "tax_documents": 0,
+  "unknown": 10618,
+  "by_method": {
+    "invoice2data": 0,
+    "rule_based": 847,
+    "ai_classified": 0
+  }
+}

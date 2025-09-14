@@ -1,0 +1,1033 @@
+{
+  "timestamp": "2025-08-09T10:41:41.299554",
+  "folder": "/Users/m.a.j.puzik/majconvert-gmail-all",
+  "documents_count": 7101,
+  "tags": {
+    "rok_2025": 7101,
+    "datováno": 7101,
+    "objednávka": 80,
+    "platba": 36,
+    "faktura": 19,
+    "e-shop": 72,
+    "banka": 80,
+    "upomínka": 17
+  },
+  "document_types": {
+    "PDF": 7002,
+    "Objednávka": 80,
+    "Faktura": 19
+  },
+  "correspondents": {
+    "Kaufland": 33,
+    "Mall": 35,
+    "KB": 75,
+    "REVOLUT": 5,
+    "Alza": 1,
+    "Amazon": 3
+  },
+  "documents": [
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_213838_CNET Mobile_Dont Get Lost on Summer Vacation Download Offline .pdf",
+      "filename": "20250731_213838_CNET Mobile_Dont Get Lost on Summer Vacation Download Offline .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_052316_Medium Daily Digest_Write a React Component Like a Pro  Selcuk Ozdemir.pdf",
+      "filename": "20250801_052316_Medium Daily Digest_Write a React Component Like a Pro  Selcuk Ozdemir.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_164616_Medium Daily Digest_Forewarned  Scott Galloway.pdf",
+      "filename": "20250731_164616_Medium Daily Digest_Forewarned  Scott Galloway.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_094700_Medium Daily Digest_Level Up Testing 1 Play with Tests  David Rodenas .pdf",
+      "filename": "20250801_094700_Medium Daily Digest_Level Up Testing 1 Play with Tests  David Rodenas .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_094503_MAJ Puzik_Podívejte se na video I Tried All The AI Glasses S.pdf",
+      "filename": "20250801_094503_MAJ Puzik_Podívejte se na video I Tried All The AI Glasses S.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_155029_Golemde-Redaktion_Golem Plus 23092024.pdf",
+      "filename": "20250801_155029_Golemde-Redaktion_Golem Plus 23092024.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_163816_Voyo_Všechny tyto májové květinky brzy rozkvetou.pdf",
+      "filename": "20250731_163816_Voyo_Všechny tyto májové květinky brzy rozkvetou.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_011535_PDF By Matúš Peklanský_ Obytný soubor na ul Pastviny v Brně - Komíně by M.pdf",
+      "filename": "20250801_011535_PDF By Matúš Peklanský_ Obytný soubor na ul Pastviny v Brně - Komíně by M.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_233626_Tripadvisor_Imperial.pdf",
+      "filename": "20250731_233626_Tripadvisor_Imperial.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_154529_Seeed Studio_𝐥𝐚𝐭𝐞𝐬𝐭 𝟐𝟎𝟐𝟒 𝐏𝐫𝐨𝐝𝐮𝐜𝐭 𝐂𝐚𝐭𝐚𝐥𝐨𝐠 has been updated HA Gr.pdf",
+      "filename": "20250731_154529_Seeed Studio_𝐥𝐚𝐭𝐞𝐬𝐭 𝟐𝟎𝟐𝟒 𝐏𝐫𝐨𝐝𝐮𝐜𝐭 𝐂𝐚𝐭𝐚𝐥𝐨𝐠 has been updated HA Gr.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_104500_prima_Nová porce akce a napětí míří na prima.pdf",
+      "filename": "20250731_104500_prima_Nová porce akce a napětí míří na prima.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_142342_Fing Alert_Your Fingbox MAJSYNO5 is offline.pdf",
+      "filename": "20250731_142342_Fing Alert_Your Fingbox MAJSYNO5 is offline.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_110822_DFRobot Service_New Arrival Compact Voice Prompt Module Just 790.pdf",
+      "filename": "20250801_110822_DFRobot Service_New Arrival Compact Voice Prompt Module Just 790.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_125754_AutoScout24_Preisalarm Der Mercedes-Benz GLC 400 ist jetzt gün.pdf",
+      "filename": "20250801_125754_AutoScout24_Preisalarm Der Mercedes-Benz GLC 400 ist jetzt gün.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_161247_MAJ Puzik_Fw 4 neue Resorts die dich begeistern werden .pdf",
+      "filename": "20250801_161247_MAJ Puzik_Fw 4 neue Resorts die dich begeistern werden .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_174035_Voyo_Odznak Vysočina je zpátky .pdf",
+      "filename": "20250731_174035_Voyo_Odznak Vysočina je zpátky .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_143215_Fing Alert_ Internet security alert.pdf",
+      "filename": "20250731_143215_Fing Alert_ Internet security alert.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_171140_Tripadvisor_Try our new AI itinerary builder.pdf",
+      "filename": "20250731_171140_Tripadvisor_Try our new AI itinerary builder.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_013517_Canon_Maj Puzik vytvořte vlétě zábavu pro všechny.pdf",
+      "filename": "20250801_013517_Canon_Maj Puzik vytvořte vlétě zábavu pro všechny.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_092905_Epoch Guten Morgen_Die Theorie der Begeisterung Über die Kraft aufric.pdf",
+      "filename": "20250801_092905_Epoch Guten Morgen_Die Theorie der Begeisterung Über die Kraft aufric.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_210901_PDF By Simon Olanipekun_ THE CLEM ENGINE PART 1 by Simon Olanipekun.pdf",
+      "filename": "20250731_210901_PDF By Simon Olanipekun_ THE CLEM ENGINE PART 1 by Simon Olanipekun.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_144113_Allegro_Váš 300Kč kupón dnes vyprší .pdf",
+      "filename": "20250801_144113_Allegro_Váš 300Kč kupón dnes vyprší .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_155052_Montblanc_Entdecken Sie das hundertjährige Meisterstück.pdf",
+      "filename": "20250731_155052_Montblanc_Entdecken Sie das hundertjährige Meisterstück.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_043535_CNET Insider_How to Get the Cheapest Internet in Every State.pdf",
+      "filename": "20250801_043535_CNET Insider_How to Get the Cheapest Internet in Every State.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_134825_EaseUS_Master Your iPhone 16 Effortless Data Transfer Bac.pdf",
+      "filename": "20250801_134825_EaseUS_Master Your iPhone 16 Effortless Data Transfer Bac.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_095352_AutoScout24_Preisalarm Der Mercedes-Benz GLC 400 ist jetzt gün.pdf",
+      "filename": "20250801_095352_AutoScout24_Preisalarm Der Mercedes-Benz GLC 400 ist jetzt gün.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_190400_Blinkist_ The Summary Your free reads next week.pdf",
+      "filename": "20250731_190400_Blinkist_ The Summary Your free reads next week.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_153235__Členské vstupenky ND.pdf",
+      "filename": "20250731_153235__Členské vstupenky ND.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_072225_Manage It_Daily Overview for Bressner.pdf",
+      "filename": "20250801_072225_Manage It_Daily Overview for Bressner.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_145810_Golf Resort Black Bridge_Vyberte si z našeho podzimího turnajového menu .pdf",
+      "filename": "20250801_145810_Golf Resort Black Bridge_Vyberte si z našeho podzimího turnajového menu .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_232615_Google Alerts_Google Alert  tesla.pdf",
+      "filename": "20250731_232615_Google Alerts_Google Alert  tesla.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_175751_Skyscanner_Nabídky letů zletiště Brno-Tuřany od 744 Kč.pdf",
+      "filename": "20250731_175751_Skyscanner_Nabídky letů zletiště Brno-Tuřany od 744 Kč.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_165900_Tripadvisor_Travelers have spoken Top hotels for 2024.pdf",
+      "filename": "20250731_165900_Tripadvisor_Travelers have spoken Top hotels for 2024.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_171928_AIDA Club_So schön verlockend Festtage auf dem Meer.pdf",
+      "filename": "20250801_171928_AIDA Club_So schön verlockend Festtage auf dem Meer.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_140101_Aukro_Žhavé aukce numismatika 15 4 2024.pdf",
+      "filename": "20250731_140101_Aukro_Žhavé aukce numismatika 15 4 2024.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_143813_xTool_Wow Your Neighbors with Must-Try Halloween Ideas.pdf",
+      "filename": "20250801_143813_xTool_Wow Your Neighbors with Must-Try Halloween Ideas.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_081945_Stephen from Fing_Crowdstrike Outage Affected Devices Phone Numbers .pdf",
+      "filename": "20250801_081945_Stephen from Fing_Crowdstrike Outage Affected Devices Phone Numbers .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_042132_Epoch Vital_Ärztin sieht bei Nahtod ihr Leben in buntem Licht .pdf",
+      "filename": "20250801_042132_Epoch Vital_Ärztin sieht bei Nahtod ihr Leben in buntem Licht .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_121850_AliExpress_Order 3040201454716343 awaiting payment.pdf",
+      "filename": "20250801_121850_AliExpress_Order 3040201454716343 awaiting payment.pdf",
+      "tags": [
+        "objednávka",
+        "platba",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Objednávka"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_153751_Google Datenexport_Ihre Google-Daten können jetzt heruntergeladen wer.pdf",
+      "filename": "20250731_153751_Google Datenexport_Ihre Google-Daten können jetzt heruntergeladen wer.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_144448_Google Alerts_Google Alert  tesla.pdf",
+      "filename": "20250801_144448_Google Alerts_Google Alert  tesla.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_134122_alisourceproservicealibaba_Discover better deals with RFQ.pdf",
+      "filename": "20250731_134122_alisourceproservicealibaba_Discover better deals with RFQ.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_001137_HERO_Trička HERO jsou teď ještě lepší.pdf",
+      "filename": "20250801_001137_HERO_Trička HERO jsou teď ještě lepší.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_174601_Alibabacom_Hi MAJ our promise to you On-time delivery.pdf",
+      "filename": "20250801_174601_Alibabacom_Hi MAJ our promise to you On-time delivery.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_043357_Kam k moři_No přece do Polska Chceteříct proč .pdf",
+      "filename": "20250801_043357_Kam k moři_No přece do Polska Chceteříct proč .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_181316_CREALITY_Creality Ender-3 V3 Plus ist da.pdf",
+      "filename": "20250731_181316_CREALITY_Creality Ender-3 V3 Plus ist da.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_101615_Montblanc_Zeit für die neue Uhrensaison.pdf",
+      "filename": "20250731_101615_Montblanc_Zeit für die neue Uhrensaison.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_005231_eBay_20 Rabatt auf 100 was du suchst Milan.pdf",
+      "filename": "20250801_005231_eBay_20 Rabatt auf 100 was du suchst Milan.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_211250_Montblanc_Nicht verpassen unsere unverzichtbaren Kreationen.pdf",
+      "filename": "20250731_211250_Montblanc_Nicht verpassen unsere unverzichtbaren Kreationen.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_120103_AliExpress_To pair with what you purchased.pdf",
+      "filename": "20250731_120103_AliExpress_To pair with what you purchased.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_063724_GravGoods_Back to Uni Save 15 on all Chargers.pdf",
+      "filename": "20250801_063724_GravGoods_Back to Uni Save 15 on all Chargers.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_150130_PDF By martin hemelík_ Vize osobnostní společnosti by martin hemelík.pdf",
+      "filename": "20250801_150130_PDF By martin hemelík_ Vize osobnostní společnosti by martin hemelík.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_031747_Eva Hanf Gesundheit_Neuheit CBD Bonbons.pdf",
+      "filename": "20250801_031747_Eva Hanf Gesundheit_Neuheit CBD Bonbons.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_212220_Skrzcz_10 hotelů s vířivkou na pokoji .pdf",
+      "filename": "20250731_212220_Skrzcz_10 hotelů s vířivkou na pokoji .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_144701_Nomad_Help us shape our data plans.pdf",
+      "filename": "20250801_144701_Nomad_Help us shape our data plans.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_133526_Viator_Top 10 travel deals this week.pdf",
+      "filename": "20250801_133526_Viator_Top 10 travel deals this week.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_215310_AEGEAN_Few hours left for our sales party to end Will you.pdf",
+      "filename": "20250731_215310_AEGEAN_Few hours left for our sales party to end Will you.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_150925_Skrzcz_Proč k moři včervnu Už za 8 289Kč seženete zájezd .pdf",
+      "filename": "20250731_150925_Skrzcz_Proč k moři včervnu Už za 8 289Kč seženete zájezd .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_110532_Eva HappyKoalacz_Chcete slevu.pdf",
+      "filename": "20250731_110532_Eva HappyKoalacz_Chcete slevu.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_083910_plusgolemde_Alles was man aus dem letzten Monat zu Development.pdf",
+      "filename": "20250801_083910_plusgolemde_Alles was man aus dem letzten Monat zu Development.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_232738_Fing Alert_New SurfaceGo3  MAJSYNO5.pdf",
+      "filename": "20250731_232738_Fing Alert_New SurfaceGo3  MAJSYNO5.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_191851_vysledkyurosantecz_Urosante - výsledek laboratorních testů.pdf",
+      "filename": "20250731_191851_vysledkyurosantecz_Urosante - výsledek laboratorních testů.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_172234_Medium Daily Digest_If buying isnt owning piracyisnt stealing  Cory Do.pdf",
+      "filename": "20250731_172234_Medium Daily Digest_If buying isnt owning piracyisnt stealing  Cory Do.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_052421_Aukro_Žhavé aukce numismatika 15 7 2024.pdf",
+      "filename": "20250801_052421_Aukro_Žhavé aukce numismatika 15 7 2024.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_092126_Medium_Medium Day schedule Now live.pdf",
+      "filename": "20250801_092126_Medium_Medium Day schedule Now live.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_164706_Manage It_Daily Overview for Bressner.pdf",
+      "filename": "20250731_164706_Manage It_Daily Overview for Bressner.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_104038_Google Alerts_Google Alert  tesla.pdf",
+      "filename": "20250731_104038_Google Alerts_Google Alert  tesla.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_161617_Maestra_Your receipt from Maestra 2142-5067.pdf",
+      "filename": "20250801_161617_Maestra_Your receipt from Maestra 2142-5067.pdf",
+      "tags": [
+        "faktura",
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "Faktura"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_220620_Ubiquiti_UniFi 7 Innovations U7 Pro Max  U7 Pro Wall  U7 Ou.pdf",
+      "filename": "20250731_220620_Ubiquiti_UniFi 7 Innovations U7 Pro Max  U7 Pro Wall  U7 Ou.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_144521_Epoch Times ČR_Další den rozsáhlých povodní Debata o slučování ob.pdf",
+      "filename": "20250801_144521_Epoch Times ČR_Další den rozsáhlých povodní Debata o slučování ob.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_102418_Alibabacom_Hi MAJ we have recommendations for you.pdf",
+      "filename": "20250801_102418_Alibabacom_Hi MAJ we have recommendations for you.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_130324_NAS4 - Synology DiskStation_1921681034 V zařízení NAS4 byla zjištěna bezpečnos.pdf",
+      "filename": "20250801_130324_NAS4 - Synology DiskStation_1921681034 V zařízení NAS4 byla zjištěna bezpečnos.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_073554_Ultrahuman Ring_Ring ring Your weekly health insights are here .pdf",
+      "filename": "20250801_073554_Ultrahuman Ring_Ring ring Your weekly health insights are here .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_011839_expondocz_Poslední šance na bezkonkurenční nabídku.pdf",
+      "filename": "20250801_011839_expondocz_Poslední šance na bezkonkurenční nabídku.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_135803_eBay_Ihr Konto wird mit einem neuen Gerät genutzt.pdf",
+      "filename": "20250801_135803_eBay_Ihr Konto wird mit einem neuen Gerät genutzt.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_091100_Google Alerts_Google Alert  tesla.pdf",
+      "filename": "20250801_091100_Google Alerts_Google Alert  tesla.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_012406_AutoScout24_Preisalarm Der Audi Q8 e-tron ist jetzt günstiger.pdf",
+      "filename": "20250801_012406_AutoScout24_Preisalarm Der Audi Q8 e-tron ist jetzt günstiger.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_034132_Stephen from Fing_Router Authentication Bypass iPhone Motion Sicknes.pdf",
+      "filename": "20250801_034132_Stephen from Fing_Router Authentication Bypass iPhone Motion Sicknes.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_101730_EaseUS_Record Edit and Share Your Screen Effortlessly wit.pdf",
+      "filename": "20250801_101730_EaseUS_Record Edit and Share Your Screen Effortlessly wit.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_173839_Instructables_AI Self Driving Car.pdf",
+      "filename": "20250731_173839_Instructables_AI Self Driving Car.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_092831_Forbes Digest_Dárek za všechny prachy.pdf",
+      "filename": "20250801_092831_Forbes Digest_Dárek za všechny prachy.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_142143_Stephen from Fing_Most Secure Email Providers NAS Vulnerability Pass.pdf",
+      "filename": "20250731_142143_Stephen from Fing_Most Secure Email Providers NAS Vulnerability Pass.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_192159__Členské vstupenky.pdf",
+      "filename": "20250731_192159__Členské vstupenky.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_123824_Kalendář Google_Oznámení s forecast AM CloudsPM With a high of 77F.pdf",
+      "filename": "20250731_123824_Kalendář Google_Oznámení s forecast AM CloudsPM With a high of 77F.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_215114_Epoch Times  TOP-AKTUELL_Exklusiv Rechtsstreit um COVID-Impfung  Bundeswehr.pdf",
+      "filename": "20250731_215114_Epoch Times  TOP-AKTUELL_Exklusiv Rechtsstreit um COVID-Impfung  Bundeswehr.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_151451_Fing Alert_Network alert on AZURO2G.pdf",
+      "filename": "20250731_151451_Fing Alert_Network alert on AZURO2G.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_124446_DECOVRY_New Innovative Racks for Modern Homes.pdf",
+      "filename": "20250731_124446_DECOVRY_New Innovative Racks for Modern Homes.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_231950_xTool_Crafty Friday Guide to Craft Relief Colorful and F.pdf",
+      "filename": "20250731_231950_xTool_Crafty Friday Guide to Craft Relief Colorful and F.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_152019_Manage It_Daily Overview for Bressner.pdf",
+      "filename": "20250731_152019_Manage It_Daily Overview for Bressner.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_170918_Chrono24_Five Rolex Watches That Fly Under the Radar.pdf",
+      "filename": "20250801_170918_Chrono24_Five Rolex Watches That Fly Under the Radar.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_201941_Epoch Vital_Impfnebenwirkungen CDC erschüttert von plötzlichen.pdf",
+      "filename": "20250731_201941_Epoch Vital_Impfnebenwirkungen CDC erschüttert von plötzlichen.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_091329_To je nálož_Čeho No relaxu vlázních přece .pdf",
+      "filename": "20250801_091329_To je nálož_Čeho No relaxu vlázních přece .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_180442_Montblanc_Ein Montblanc Kurzfilm von Wes Anderson.pdf",
+      "filename": "20250731_180442_Montblanc_Ein Montblanc Kurzfilm von Wes Anderson.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_215518_Skrzcz_Luxusní hotely u moře .pdf",
+      "filename": "20250731_215518_Skrzcz_Luxusní hotely u moře .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_054659_Productboard_ See whats new at Productboard.pdf",
+      "filename": "20250801_054659_Productboard_ See whats new at Productboard.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_182332_Eliška z TeeTime_Kup fee a získej třídenní vstupenku na Tipsport Cz.pdf",
+      "filename": "20250731_182332_Eliška z TeeTime_Kup fee a získej třídenní vstupenku na Tipsport Cz.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250731_183736_eBay_Ihr Wunschartikel ist jetzt EUR 8000 günstiger.pdf",
+      "filename": "20250731_183736_eBay_Ihr Wunschartikel ist jetzt EUR 8000 günstiger.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_013248_Už jste viděli_TOP 10 pobytů Kde snítrelaxovat a objevovat .pdf",
+      "filename": "20250801_013248_Už jste viděli_TOP 10 pobytů Kde snítrelaxovat a objevovat .pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_122829_Skrz  Last minute_ K moři do 10 000Kč Letenky hotel i strava v ceně.pdf",
+      "filename": "20250801_122829_Skrz  Last minute_ K moři do 10 000Kč Letenky hotel i strava v ceně.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    },
+    {
+      "path": "/Users/m.a.j.puzik/majconvert-gmail-all/20250801_142212_HDtracks_25 Off New Hi-Res   Frank Zappa Velvet Underground.pdf",
+      "filename": "20250801_142212_HDtracks_25 Off New Hi-Res   Frank Zappa Velvet Underground.pdf",
+      "tags": [
+        "rok_2025",
+        "datováno"
+      ],
+      "correspondent": null,
+      "document_type": "PDF"
+    }
+  ]
+}

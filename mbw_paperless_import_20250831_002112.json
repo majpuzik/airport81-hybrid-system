@@ -1,0 +1,11 @@
+{
+  "import_stats": {
+    "total": 100,
+    "uploaded": 0,
+    "failed": 100,
+    "success_rate": "0.0%",
+    "duration_seconds": 2.329303,
+    "start_time": "2025-08-31T00:21:10.577610",
+    "end_time": "2025-08-31T00:21:12.906913"
+  }
+}

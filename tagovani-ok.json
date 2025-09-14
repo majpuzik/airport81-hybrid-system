@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "timestamp": "2025-07-30T18:26:14.022063",
+    "total_count": 16,
+    "description": "Správně rozpoznané a otagované emaily"
+  },
+  "emails": [
+    {
+      "subject": "Bewerten Sie Ihren Kauf - Rate your purchase",
+      "sender": "noreply@aliexpress.com",
+      "description": "AliExpress dotazník spokojenosti (německy)",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Dotazník spokojenosti",
+      "tags": [
+        "AliExpress",
+        "Spokojenost zákazníka",
+        "Dotazník"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Balíkovna - Váš balík je připraven k vyzvednutí",
+      "sender": "info@balikovna.cz",
+      "description": "Balíkovna potvrzení převzetí balíku",
+      "confidence": 0.9,
+      "category": "DŮLEŽITÉ",
+      "document_type": "Potvrzení převzetí balíku",
+      "tags": [
+        "Balíkovna",
+        "Převzetí balíku",
+        "Doprava"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Google Takeout - Data Export Ready",
+      "sender": "noreply@accounts.google.com",
+      "description": "Google možnosti stažení dat",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Export dat",
+      "tags": [
+        "Google",
+        "Export dat",
+        "Systémové upozornění"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "AliExpress - Zollabfertigung für Ihre Bestellung",
+      "sender": "service@aliexpress.de",
+      "description": "AliExpress celní řízení (německy)",
+      "confidence": 0.9,
+      "category": "DŮLEŽITÉ",
+      "document_type": "Celní řízení",
+      "tags": [
+        "AliExpress",
+        "Celní úřad",
+        "Mezinárodní doprava"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Knihy Dobrovsky - Novinky v našem sortimentu",
+      "sender": "newsletter@knihydobrovsky.cz",
+      "description": "Knihy Dobrovsky informační email",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Knihovní newsletter",
+      "tags": [
+        "KnihyDobrovsky",
+        "Jaroslav Foltánek",
+        "Knihovní novinky"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Quora Digest - Your weekly summary",
+      "sender": "digest@quora.com",
+      "description": "Quora Digest pravidelné informace",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Digest novinky",
+      "tags": [
+        "Quora",
+        "Digest",
+        "Sociální sítě"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Dropbox - New sign-in to your account",
+      "sender": "no-reply@dropbox.com",
+      "description": "Dropbox informace o přihlášení",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Informace o přihlášení",
+      "tags": [
+        "Dropbox",
+        "Systémové upozornění",
+        "Bezpečnost"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Česká pošta - Důležité: Blížící se dodání zásilky",
+      "sender": "info@ceskaposta.cz",
+      "description": "Česká pošta důležité dodání zásilky",
+      "confidence": 0.9,
+      "category": "DŮLEŽITÉ",
+      "document_type": "Notifikace o zásilce",
+      "tags": [
+        "Česká pošta",
+        "Doprava",
+        "Zboží na cestě"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Nooz Optics - Exkluzivní nabídka brýlí",
+      "sender": "offers@noozoptics.com",
+      "description": "Nooz Optics nabídka brýlí",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Výprodejová nabídka",
+      "tags": [
+        "Nooz Optics",
+        "Výprodej",
+        "Brýle"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Montblanc - Prémiové hodinky limitované edice",
+      "sender": "newsletter@montblanc.com",
+      "description": "Montblanc nabídka hodinek",
+      "confidence": 0.85,
+      "category": "INFO",
+      "document_type": "Výprodejová nabídka",
+      "tags": [
+        "Montblanc",
+        "Výprodej",
+        "Hodinky"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "ČSOB - Výpis z účtu za leden 2025",
+      "sender": "info@csob.cz",
+      "description": "ČSOB bankovní výpis",
+      "confidence": 0.9,
+      "category": "DŮLEŽITÉ",
+      "document_type": "Transakční výpis",
+      "tags": [
+        "Banka",
+        "Transakce",
+        "Bankovní výpis"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "PayPal - Payment Confirmation",
+      "sender": "service@paypal.com",
+      "description": "PayPal potvrzení platby",
+      "confidence": 0.9,
+      "category": "DŮLEŽITÉ",
+      "document_type": "Potvrzení o platbě",
+      "tags": [
+        "PayPal",
+        "Platba schválena",
+        "Transakce"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Visa Card Statement - February 2025",
+      "sender": "statements@visa.com",
+      "description": "Visa výpis karty",
+      "confidence": 0.8,
+      "category": "DŮLEŽITÉ",
+      "document_type": "Výpis z kreditní karty",
+      "tags": [
+        "Kreditní karta",
+        "Výpis karty"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Tech Newsletter - Weekly Update",
+      "sender": "newsletter@techsite.com",
+      "description": "Obecný tech newsletter",
+      "confidence": 0.7,
+      "category": "INFO",
+      "document_type": "Newsletter",
+      "tags": [
+        "Newsletter",
+        "Informační"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "Velká výprodejová akce - 50% sleva!",
+      "sender": "marketing@eshop.cz",
+      "description": "Obecná marketingová nabídka",
+      "confidence": 0.6,
+      "category": "INFO",
+      "document_type": "Marketingová nabídka",
+      "tags": [
+        "Marketing",
+        "Nabídka"
+      ],
+      "classification_quality": "OK"
+    },
+    {
+      "subject": "URGENT!!! You have won $1,000,000 - Claim now!!!",
+      "sender": "lottery@suspicious.com",
+      "description": "Obvious spam email",
+      "confidence": 0.95,
+      "category": "SPAM",
+      "document_type": "Spam",
+      "tags": [
+        "Spam",
+        "Nevyžádané"
+      ],
+      "classification_quality": "OK"
+    }
+  ]
+}

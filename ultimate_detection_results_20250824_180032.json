@@ -1,0 +1,811 @@
+{
+  "timestamp": "20250824_180032",
+  "configuration": {
+    "sample_size": 100,
+    "use_ocr": true,
+    "use_ml": true
+  },
+  "statistics": {
+    "recognized": 100,
+    "unrecognized": 0,
+    "errors": 0,
+    "success_rate": 100.0,
+    "avg_confidence": 93.81,
+    "elapsed_seconds": 1153.1149351596832,
+    "seconds_per_document": 11.531149351596833
+  },
+  "categories": {
+    "ÚŘEDNÍ": 88,
+    "PUBLIKACE": 2,
+    "FINANČNÍ": 1,
+    "OSTATNÍ": 8,
+    "ZDRAVOTNÍ": 1
+  },
+  "subtypes": {
+    "rozsudek": 25,
+    "rozhodnutí": 6,
+    "exekuce": 54,
+    "marketing": 1,
+    "finanční_obecný": 1,
+    "ostatní_obecný": 8,
+    "protokol": 3,
+    "manuál": 1,
+    "recept": 1
+  },
+  "methods": {
+    "ml": 90,
+    "text:pdftotext": 90,
+    "ocr": 1
+  },
+  "new_categories_count": {
+    "ÚŘEDNÍ": 88,
+    "ZDRAVOTNÍ": 1,
+    "PRÁVNÍ": 0,
+    "FIREMNÍ": 0,
+    "OBČANSKÉ": 0
+  },
+  "examples": {
+    "recognized": [
+      {
+        "file": "Plyn22-23.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:soudní",
+          "text:řízení",
+          "text:jednání",
+          "text:úřad",
+          "text:výsledek",
+          "text:ozp",
+          "text:plátce",
+          "text:doplatek",
+          "text:vyúčtování",
+          "text:právo",
+          "text:povinnost",
+          "text:výpověď",
+          "text:započtení",
+          "text:ručení"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1386.9401410222054,
+          "ZDRAVOTNÍ": 859.3663278222084,
+          "PRÁVNÍ": 846.0237056016922,
+          "FIREMNÍ": 957.1721351146698,
+          "OBČANSKÉ": 674.9782490730286,
+          "FINANČNÍ": 1045.6092882156372,
+          "PUBLIKACE": 855.1169580221176
+        }
+      },
+      {
+        "file": "20250429-Escape the Netflix Trap_ Simplify Your Choices-2004.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozhodnutí",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:decision",
+          "text:ct",
+          "institution:ct",
+          "text:nda",
+          "regex:NDA",
+          "filename:net",
+          "text:net",
+          "text:dar",
+          "text:fee",
+          "text:reference",
+          "text:unsubscribe",
+          "text:subscribe",
+          "text:daily",
+          "regex:unsubscribe",
+          "ml:soudní dokument:1.39"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1432.5694760680199,
+          "ZDRAVOTNÍ": 868.613343834877,
+          "PRÁVNÍ": 728.0715316534042,
+          "FIREMNÍ": 863.4480321407318,
+          "OBČANSKÉ": 408.806654214859,
+          "FINANČNÍ": 705.9972441196442,
+          "PUBLIKACE": 734.4960916042328
+        }
+      },
+      {
+        "file": "20250425-Never Miss a UCL Goal Again! 40% OFF to Download &-2795.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:nda",
+          "regex:NDA",
+          "text:net",
+          "text:lease",
+          "text:eet",
+          "text:pos",
+          "regex:EET",
+          "text:transfer",
+          "text:sepa",
+          "regex:No\\.\\s*\\d+",
+          "text:unsubscribe",
+          "text:subscribe",
+          "text:campaign"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1125.6697162985802,
+          "ZDRAVOTNÍ": 777.9532217979431,
+          "PRÁVNÍ": 667.6153281331062,
+          "FIREMNÍ": 603.8860535621643,
+          "OBČANSKÉ": 324.0976905822754,
+          "FINANČNÍ": 565.4894733428955,
+          "PUBLIKACE": 836.4803403615952
+        }
+      },
+      {
+        "file": "20250508-Ihr nächstes Reiseziel_ Split, Kroatien-378.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:gericht",
+          "text:ung",
+          "text:urlaub",
+          "text:ein",
+          "regex:©\\s*20\\d{2}",
+          "regex:@",
+          "ml:soudní dokument:1.30",
+          "ml:exekuční příkaz:1.29",
+          "ml:dohoda o provedení práce:1.23",
+          "ml:advokátní dokument:1.21",
+          "ml:úřední dokument:1.20",
+          "ml:mzdový list:1.15",
+          "ml:účtenka:1.15",
+          "ml:časopis:1.12",
+          "ml:lékařský předpis:1.12"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1062.733228802681,
+          "ZDRAVOTNÍ": 736.3691806793213,
+          "PRÁVNÍ": 653.3897712826729,
+          "FIREMNÍ": 628.0913960933685,
+          "OBČANSKÉ": 317.7103042602539,
+          "FINANČNÍ": 546.8096113204956,
+          "PUBLIKACE": 540.5867519974709
+        }
+      },
+      {
+        "file": "20250327-100 Kč sleva na vaše dobrodružství mezi regály 📚-7979.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:plat",
+          "text:pracovní pozice",
+          "text:ukončení",
+          "regex:Kč",
+          "text:seller",
+          "text:dar",
+          "text:zdarma",
+          "text:vat",
+          "text:dph",
+          "filename:sleva",
+          "text:sleva",
+          "text:akce",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1311.8991807103157,
+          "ZDRAVOTNÍ": 955.9000462293625,
+          "PRÁVNÍ": 799.6417719125748,
+          "FIREMNÍ": 786.4965045452118,
+          "OBČANSKÉ": 494.62066769599915,
+          "FINANČNÍ": 775.7695782184601,
+          "PUBLIKACE": 910.0466305017471
+        }
+      },
+      {
+        "file": "20250414-🚘 1 neues Fahrzeug für Dich-4804.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:gericht",
+          "regex:§\\s*\\d+",
+          "institution:amtsgericht",
+          "text:amt",
+          "text:ung",
+          "regex:§\\s*\\d+",
+          "text:ein",
+          "text:steuer",
+          "text:gst",
+          "text:fik",
+          "regex:@",
+          "ml:dohoda o provedení práce:0.77",
+          "ml:úřední dokument:0.75",
+          "ml:soudní dokument:0.75",
+          "ml:soudní rozsudek:0.73"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 749.2003414034843,
+          "ZDRAVOTNÍ": 450.7295060157776,
+          "PRÁVNÍ": 384.20419812202454,
+          "FIREMNÍ": 356.4069974422455,
+          "OBČANSKÉ": 182.0879876613617,
+          "FINANČNÍ": 284.6233093738556,
+          "PUBLIKACE": 274.4075010716915
+        }
+      },
+      {
+        "file": "20250512-Ndax 📢 Weekly TL;DR-42690.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:judge",
+          "text:appeal",
+          "text:execution",
+          "text:ct",
+          "institution:ct",
+          "text:agreement",
+          "filename:nda",
+          "text:nda",
+          "text:settlement",
+          "regex:NDA",
+          "text:lease",
+          "text:purchase",
+          "text:apr",
+          "institution:bank",
+          "text:dar"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1416.5831583738327,
+          "ZDRAVOTNÍ": 922.7090865373611,
+          "PRÁVNÍ": 835.7012405991554,
+          "FIREMNÍ": 874.3459391593933,
+          "OBČANSKÉ": 543.5520935058594,
+          "FINANČNÍ": 802.1738278865814,
+          "PUBLIKACE": 1074.1214710474014
+        }
+      },
+      {
+        "file": "20250423-Network alert on AZURO2G-3147.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "filename:net",
+          "text:net",
+          "text:reference",
+          "text:newsletter",
+          "text:newsletter",
+          "text:unsubscribe",
+          "text:subscribe",
+          "ml:soudní dokument:1.23",
+          "ml:lékařský předpis:1.14",
+          "ml:exekuční příkaz:1.12",
+          "ml:dohoda o provedení práce:1.12",
+          "ml:mzdový list:1.10",
+          "ml:advokátní dokument:0.81"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 858.17801207304,
+          "ZDRAVOTNÍ": 564.3299621343613,
+          "PRÁVNÍ": 350.41030049324036,
+          "FIREMNÍ": 578.7992596626282,
+          "OBČANSKÉ": 172.4049985408783,
+          "FINANČNÍ": 366.3696825504303,
+          "PUBLIKACE": 364.00198459625244
+        }
+      },
+      {
+        "file": "20250415-Easy News – April (includes release notes)-4745.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:plat",
+          "filename:lease",
+          "text:lease",
+          "filename:apr",
+          "text:apr",
+          "text:eet",
+          "text:pos",
+          "regex:EET",
+          "text:account",
+          "text:chapter",
+          "regex:p\\.\\s*\\d+",
+          "text:unsubscribe",
+          "text:subscribe"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 864.010666012764,
+          "ZDRAVOTNÍ": 574.7917532920837,
+          "PRÁVNÍ": 455.26605904102325,
+          "FIREMNÍ": 463.7312889099121,
+          "OBČANSKÉ": 383.43310356140137,
+          "FINANČNÍ": 373.8326680660248,
+          "PUBLIKACE": 683.7732943892479
+        }
+      },
+      {
+        "file": "20250424-Jen za stovku! Pokračuje akce téměř ZDARMA!-3041.pdf",
+        "category": "PUBLIKACE",
+        "subtype": "marketing",
+        "confidence": 85,
+        "method": "special_pattern",
+        "patterns": [
+          "sleva",
+          "akce",
+          "výprodej"
+        ]
+      },
+      {
+        "file": "Vitocal-200-S-navod-k-obsluze.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:řízení",
+          "regex:\\d+\\s*[A-Z]+\\s*\\d+/\\d{4}",
+          "text:oznámení",
+          "text:oznámení",
+          "text:předpis",
+          "text:užívání",
+          "text:ozp",
+          "institution:ozp",
+          "text:odpor",
+          "text:odkaz",
+          "text:oprávnění",
+          "text:povinnost",
+          "text:ručení",
+          "text:plat",
+          "text:nda"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1658.221778869629,
+          "ZDRAVOTNÍ": 1144.3716642260551,
+          "PRÁVNÍ": 1133.4577590227127,
+          "FIREMNÍ": 964.1929829120636,
+          "OBČANSKÉ": 629.8320722579956,
+          "FINANČNÍ": 950.2628135681152,
+          "PUBLIKACE": 1105.7840293645859
+        }
+      },
+      {
+        "file": "20240901_esco_vseobecne_podminky_elektrina (1).pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozhodnutí",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:soudní",
+          "text:řízení",
+          "text:jednání",
+          "regex:§\\s*\\d+",
+          "text:předpis",
+          "text:užívání",
+          "text:výsledek",
+          "text:ct",
+          "institution:ct",
+          "text:podání",
+          "text:odpor",
+          "text:oprávnění",
+          "regex:oprávněn.*jednat",
+          "text:právní úkon"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1723.0264979600906,
+          "ZDRAVOTNÍ": 1254.0600821375847,
+          "PRÁVNÍ": 1297.6639112830162,
+          "FIREMNÍ": 1090.9336352348328,
+          "OBČANSKÉ": 852.39373087883,
+          "FINANČNÍ": 1182.6633083820343,
+          "PUBLIKACE": 1064.713282585144
+        }
+      },
+      {
+        "file": "Document_22102022_0001.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:vat",
+          "text:strana",
+          "ml:exekuční příkaz:1.29",
+          "ml:soudní rozsudek:1.23",
+          "ml:soudní dokument:1.22",
+          "ml:dohoda o provedení práce:1.22",
+          "ml:advokátní dokument:1.13",
+          "ml:úřední dokument:1.13",
+          "ml:zdravotní dokument:1.10",
+          "ml:pracovní smlouva:1.06",
+          "ml:lékařská zpráva:0.84",
+          "ml:nájemní smlouva:0.83",
+          "ml:kniha:0.83",
+          "ml:lékařský předpis:0.81"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1196.949015557766,
+          "ZDRAVOTNÍ": 656.5135538578033,
+          "PRÁVNÍ": 555.6962049007416,
+          "FIREMNÍ": 614.8338997364044,
+          "OBČANSKÉ": 319.15343284606934,
+          "FINANČNÍ": 481.65521144866943,
+          "PUBLIKACE": 475.4655358195305
+        }
+      },
+      {
+        "file": "Troubleshooting_EN.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:plat",
+          "text:nda",
+          "regex:NDA",
+          "text:lease",
+          "text:purchase",
+          "text:ein",
+          "text:eet",
+          "text:pos",
+          "text:sale",
+          "text:return",
+          "regex:www\\.",
+          "regex:http",
+          "regex:@"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1179.7812375426292,
+          "ZDRAVOTNÍ": 805.9271687269211,
+          "PRÁVNÍ": 662.6663517951965,
+          "FIREMNÍ": 683.736732006073,
+          "OBČANSKÉ": 329.48416233062744,
+          "FINANČNÍ": 616.490341424942,
+          "PUBLIKACE": 589.0174400806427
+        }
+      },
+      {
+        "file": "20250505-MAGA rising star CALLS OUT Jasmine Crockett in fro-908.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:government",
+          "text:ct",
+          "institution:ct",
+          "text:nda",
+          "regex:NDA",
+          "text:bill",
+          "text:tax",
+          "text:eet",
+          "text:pos",
+          "regex:EET",
+          "text:unsubscribe",
+          "text:subscribe",
+          "text:daily",
+          "text:social media",
+          "regex:unsubscribe"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1357.9273587465286,
+          "ZDRAVOTNÍ": 845.8833426237106,
+          "PRÁVNÍ": 835.729258954525,
+          "FIREMNÍ": 760.824521780014,
+          "OBČANSKÉ": 456.41019344329834,
+          "FINANČNÍ": 742.5343978404999,
+          "PUBLIKACE": 873.9499649405479
+        }
+      },
+      {
+        "file": "20250420-Temno před rozedněním-3840.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:plat",
+          "text:nda",
+          "regex:NDA",
+          "text:dar",
+          "text:vat",
+          "text:pos",
+          "text:pin",
+          "text:newsletter",
+          "text:newsletter",
+          "text:news",
+          "regex:©\\s*20\\d{2}",
+          "regex:@",
+          "ml:soudní rozsudek:1.44",
+          "ml:dohoda o provedení práce:1.44",
+          "ml:zdravotní dokument:1.43"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1496.5748727321625,
+          "ZDRAVOTNÍ": 1045.2528923749924,
+          "PRÁVNÍ": 1002.8611600399017,
+          "FIREMNÍ": 901.5639185905457,
+          "OBČANSKÉ": 572.246298789978,
+          "FINANČNÍ": 863.8300108909607,
+          "PUBLIKACE": 904.0860825777054
+        }
+      },
+      {
+        "file": "Sofar-Manual-komplet_FVE_1.1_ofic.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:soud",
+          "text:řízení",
+          "text:předpis",
+          "text:užívání",
+          "text:ct",
+          "institution:ct",
+          "text:závěr",
+          "text:oprávnění",
+          "text:odpovědnost",
+          "text:ručení",
+          "text:plat",
+          "regex:DIČ:\\s*CZ\\d+",
+          "text:nda",
+          "regex:NDA",
+          "text:net"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1525.31457811594,
+          "ZDRAVOTNÍ": 1142.042699456215,
+          "PRÁVNÍ": 1064.535174369812,
+          "FIREMNÍ": 966.7201709747314,
+          "OBČANSKÉ": 608.916631937027,
+          "FINANČNÍ": 976.2587511539459,
+          "PUBLIKACE": 1194.7071266174316
+        }
+      },
+      {
+        "file": "20250429-Nový Dan Brown - tentokrát v Praze_! -2019.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:plat",
+          "text:pracovní pozice",
+          "text:ukončení",
+          "regex:Kč",
+          "text:seller",
+          "text:dar",
+          "text:zdarma",
+          "text:vat",
+          "text:dph",
+          "text:akce",
+          "text:autor",
+          "text:newsletter",
+          "text:newsletter"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1489.358800649643,
+          "ZDRAVOTNÍ": 1074.185772240162,
+          "PRÁVNÍ": 994.2276746034622,
+          "FIREMNÍ": 882.1635150909424,
+          "OBČANSKÉ": 574.1043555736542,
+          "FINANČNÍ": 845.9357607364655,
+          "PUBLIKACE": 1002.3451375961304
+        }
+      },
+      {
+        "file": "Firmy sidla1.pdf",
+        "category": "FINANČNÍ",
+        "subtype": "finanční_obecný",
+        "confidence": 96.0,
+        "methods": [
+          "ocr"
+        ],
+        "patterns": [
+          "ocr:text:soud",
+          "ocr:text:řízení",
+          "ocr:text:oznámení",
+          "ocr:text:předpis",
+          "ocr:text:ct",
+          "ocr:institution:ct",
+          "ocr:text:smluvní strany",
+          "ocr:text:nárok",
+          "ocr:text:právo",
+          "ocr:text:plat",
+          "ocr:text:odměna",
+          "ocr:text:ukončení",
+          "ocr:text:nájem",
+          "ocr:text:pronájem",
+          "ocr:text:byt"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 60.0,
+          "ZDRAVOTNÍ": 56.0,
+          "PRÁVNÍ": 56.0,
+          "FIREMNÍ": 80.0,
+          "OBČANSKÉ": 88.0,
+          "FINANČNÍ": 96.0
+        }
+      },
+      {
+        "file": "20250506-Welcome to Workik - Elevate Your Development Exper-689.pdf",
+        "category": "ÚŘEDNÍ",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "methods": [
+          "ml",
+          "text:pdftotext"
+        ],
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "institution:pet",
+          "filename:vat",
+          "text:vat",
+          "text:eet",
+          "regex:EET",
+          "regex:@",
+          "ml:dohoda o provedení práce:1.22",
+          "ml:advokátní dokument:1.21",
+          "ml:soudní rozsudek:1.19",
+          "ml:soudní dokument:1.14",
+          "ml:nájemní smlouva:1.12",
+          "ml:laboratorní výsledky:1.10",
+          "ml:pracovní smlouva:1.10"
+        ],
+        "all_scores": {
+          "ÚŘEDNÍ": 1060.7858562469482,
+          "ZDRAVOTNÍ": 731.1832273006439,
+          "PRÁVNÍ": 616.6743016242981,
+          "FIREMNÍ": 620.6349635124207,
+          "OBČANSKÉ": 441.2952661514282,
+          "FINANČNÍ": 444.3955600261688,
+          "PUBLIKACE": 363.20582300424576
+        }
+      }
+    ],
+    "unrecognized": [],
+    "official": [
+      {
+        "file": "Plyn22-23.pdf",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "patterns": [
+          "text:soud",
+          "text:soudní",
+          "text:řízení"
+        ]
+      },
+      {
+        "file": "20250429-Escape the Netflix Trap_ Simplify Your Choices-2004.pdf",
+        "subtype": "rozhodnutí",
+        "confidence": 100,
+        "patterns": [
+          "text:decision",
+          "text:ct",
+          "institution:ct"
+        ]
+      },
+      {
+        "file": "20250425-Never Miss a UCL Goal Again! 40% OFF to Download &-2795.pdf",
+        "subtype": "rozsudek",
+        "confidence": 100,
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:nda"
+        ]
+      },
+      {
+        "file": "20250508-Ihr nächstes Reiseziel_ Split, Kroatien-378.pdf",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "patterns": [
+          "text:gericht",
+          "text:ung",
+          "text:urlaub"
+        ]
+      },
+      {
+        "file": "20250327-100 Kč sleva na vaše dobrodružství mezi regály 📚-7979.pdf",
+        "subtype": "exekuce",
+        "confidence": 100,
+        "patterns": [
+          "text:ct",
+          "institution:ct",
+          "text:plat"
+        ]
+      }
+    ],
+    "medical": [
+      {
+        "file": "20250504-Nehmen Sie am Webinar teil-1092.pdf",
+        "subtype": "recept",
+        "confidence": 100,
+        "patterns": [
+          "text:nda",
+          "regex:NDA",
+          "regex:©\\s*20\\d{2}"
+        ]
+      }
+    ],
+    "legal": []
+  }
+}

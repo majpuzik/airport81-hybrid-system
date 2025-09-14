@@ -1,0 +1,133 @@
+{
+  "timestamp": "2025-08-30T11:56:32.032409",
+  "stats": {
+    "total": 7,
+    "processed": 5,
+    "failed": 2,
+    "types": {
+      "Registrace": 3,
+      "Platba": 1,
+      "Neznámý": 1
+    }
+  },
+  "average_confidence": 0.42000000000000004,
+  "results": [
+    {
+      "filename": "[SOLAR STATION] Vaše registrace.pdf",
+      "file_size_kb": 142.32421875,
+      "text_length": 4405,
+      "analysis": {
+        "document_type": "Registrace",
+        "confidence": 0.8,
+        "score": 40,
+        "language": "Němčina",
+        "metadata": {
+          "Email": [
+            "Puzik@outlook.com",
+            "lukas.jezny@gmail.com",
+            "Puzik@outlook.com",
+            "lukas.jezny@gmail.com"
+          ]
+        },
+        "amounts": [],
+        "dates": []
+      },
+      "text_preview": "[Link]\r https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.solar-station.cz%2F&data=05%7C02%7C%7C8c2b38eb88fe4cfe54c708dcebb1c4cf%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638644395951420341%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn",
+      "credits_used": 42,
+      "remaining_credits": 24501
+    },
+    {
+      "filename": "ALTERNATE – Zahlungseingang.pdf",
+      "file_size_kb": 389.609375,
+      "text_length": 5184,
+      "analysis": {
+        "document_type": "Registrace",
+        "confidence": 0.2,
+        "score": 10,
+        "language": "Němčina",
+        "metadata": {},
+        "amounts": [
+          1103.6
+        ],
+        "dates": []
+      },
+      "text_preview": "[Link]\r https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.alternate-b2b.de%2F&data=05%7C02%7C%7Cd46dacc91c8d412c925408dd45c5bec6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638743437807304278%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIk",
+      "credits_used": 42,
+      "remaining_credits": 24452
+    },
+    {
+      "filename": "ALTERNATE – Stornierung.pdf",
+      "file_size_kb": 408.8828125,
+      "text_length": 7549,
+      "analysis": {
+        "document_type": "Registrace",
+        "confidence": 0.4,
+        "score": 20,
+        "language": "Němčina",
+        "metadata": {},
+        "amounts": [
+          2007.56,
+          2007.56,
+          178.91,
+          178.91,
+          12.0
+        ],
+        "dates": []
+      },
+      "text_preview": "[Link]\r https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.alternate-b2b.de%2F&data=05%7C02%7C%7Ce6de32c3564345a42b9308dd30912ab7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638720122236919386%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIk",
+      "credits_used": 63,
+      "remaining_credits": 24382
+    },
+    {
+      "filename": "2. Upomínka platby za fakturu 823000005229 ze dne 31.03.2024.pdf",
+      "file_size_kb": 183.7919921875,
+      "text_length": 3194,
+      "analysis": {
+        "document_type": "Platba",
+        "confidence": 0.4,
+        "score": 20,
+        "language": "Angličtina",
+        "metadata": {
+          "Betrag|Amount|Částka": [
+            "349,00",
+            "349,00"
+          ],
+          "Invoice|Rechnung|Faktura": "je"
+        },
+        "amounts": [
+          349.0,
+          349.0
+        ],
+        "dates": [
+          "31.03.2024",
+          "31.03.2024",
+          "31.03.2024"
+        ]
+      },
+      "text_preview": "[Link]\r https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Feu.adyen.link%2FPL5D638DF4B525382A6&data=05%7C02%7C%7C0baf71c25a70457ec90108dd5c3ab5d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638768129398206103%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOi",
+      "credits_used": 42,
+      "remaining_credits": 24333
+    },
+    {
+      "filename": "Cestovni povoleni Bressner1.docx",
+      "file_size_kb": 12.7392578125,
+      "text_length": 601,
+      "analysis": {
+        "document_type": "Neznámý",
+        "confidence": 0.3,
+        "score": 0,
+        "language": "Angličtina",
+        "metadata": {},
+        "amounts": [],
+        "dates": [
+          "23.4.1962",
+          "26.2.2021",
+          "3.3.2021"
+        ]
+      },
+      "text_preview": "                                                     Čestné prohlášení\r                 Já, ing. Zuzana Pužíková, datum narozeni 23.4.1962, cislo občanského průkazu\r                pobytem 252 28 Černošice, Slunečná 661, opouštím místo trvalého pobytu za účelem návštěvy mého\r                 pracovi",
+      "credits_used": 21,
+      "remaining_credits": 24284
+    }
+  ]
+}

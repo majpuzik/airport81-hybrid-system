@@ -1,0 +1,812 @@
+{
+  "stats": {
+    "total_files": 207,
+    "analyzed_files": 200,
+    "document_type_distribution": {
+      "Email": 176,
+      "Faktura": 9,
+      "Potvrzení o platbě": 14,
+      "Spam": 1
+    },
+    "tag_distribution": {
+      "Email": 176,
+      "Faktura": 9,
+      "PayPal": 14,
+      "Platba schválena": 14,
+      "Transakce": 14,
+      "spam": 1,
+      "nevyžádané": 1
+    },
+    "correspondent_distribution": {
+      "162146": 2,
+      "162201": 4,
+      "162203": 5,
+      "162205": 6,
+      "162150": 5,
+      "162156": 4,
+      "162134": 4,
+      "162137": 4,
+      "162155": 4,
+      "162158": 4,
+      "162200": 5,
+      "162147": 5,
+      "162154": 3,
+      "162216": 6,
+      "162223": 4,
+      "162133": 5,
+      "162215": 3,
+      "162139": 3,
+      "162135": 3,
+      "162152": 3,
+      "162210": 3,
+      "162212": 3,
+      "162202": 4,
+      "162206": 5,
+      "162222": 4,
+      "162157": 3,
+      "162220": 4,
+      "162151": 5,
+      "162136": 3,
+      "162145": 4,
+      "162211": 5,
+      "162213": 2,
+      "162144": 5,
+      "162143": 3,
+      "162204": 4,
+      "162159": 2,
+      "162149": 5,
+      "162209": 4,
+      "162153": 5,
+      "162140": 2,
+      "162221": 3,
+      "162208": 5,
+      "162148": 4,
+      "162141": 2,
+      "162207": 4,
+      "162142": 3,
+      "162138": 4,
+      "162132": 2,
+      "162218": 3,
+      "162131": 2,
+      "162217": 2,
+      "162130": 2,
+      "162224": 1,
+      "162219": 3,
+      "162214": 3
+    },
+    "invalid_doc_types": [],
+    "invalid_tags": [],
+    "spam_patterns": [
+      "Samsung_Tvůj bonus k předobjednávce"
+    ],
+    "payment_patterns": [],
+    "validation_suggestions": [
+      {
+        "file": "20250730_162211_Samsung_Tvůj bonus k předobjednávce.pdf",
+        "issues": [
+          "Neplatné tagy: ['spam', 'nevyžádané']"
+        ],
+        "suggestions": [
+          "Nahradit tag 'spam' → 'Spam'",
+          "Nahradit tag 'nevyžádané' → 'Nevyžádané'"
+        ]
+      }
+    ]
+  },
+  "analysis_results": [
+    {
+      "file": "20250730_162146_Jan, Jooble_🔔 M.A.J., DISPONERO s.r.o. hledá pracovníky na poz.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162146",
+        "subject": "Jan, Jooble_🔔 M.A.J., DISPONERO s.r.o. hledá pracovníky na poz",
+        "full_name": "20250730_162146_Jan, Jooble_🔔 M.A.J., DISPONERO s.r.o. hledá pracovníky na poz.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162201_Epoch Guten Morgen_Geplatzte Richterwahl – die Union im Krisenmodus.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162201",
+        "subject": "Epoch Guten Morgen_Geplatzte Richterwahl – die Union im Krisenmodus",
+        "full_name": "20250730_162201_Epoch Guten Morgen_Geplatzte Richterwahl – die Union im Krisenmodus.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162203_Medium Daily Digest_GPT-5 Is Coming in July 2025 — And Everything Will.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162203",
+        "subject": "Medium Daily Digest_GPT-5 Is Coming in July 2025 — And Everything Will",
+        "full_name": "20250730_162203_Medium Daily Digest_GPT-5 Is Coming in July 2025 — And Everything Will.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162205_AliExpress_Your bestsellers selected.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162205",
+        "subject": "AliExpress_Your bestsellers selected",
+        "full_name": "20250730_162205_AliExpress_Your bestsellers selected.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162150_OpenAI_[Novinky o úloze] EU US trade tensions and tariffs.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162150",
+        "subject": "OpenAI_[Novinky o úloze] EU US trade tensions and tariffs",
+        "full_name": "20250730_162150_OpenAI_[Novinky o úloze] EU US trade tensions and tariffs.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162156_Rokid_Join Us and Explore More on Rokid Glasses, John Ti.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162156",
+        "subject": "Rokid_Join Us and Explore More on Rokid Glasses, John Ti",
+        "full_name": "20250730_162156_Rokid_Join Us and Explore More on Rokid Glasses, John Ti.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162134_mobile.de Suchauftrag_🚘 2 neue Fahrzeuge für Dich.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162134",
+        "subject": "mobile.de Suchauftrag_🚘 2 neue Fahrzeuge für Dich",
+        "full_name": "20250730_162134_mobile.de Suchauftrag_🚘 2 neue Fahrzeuge für Dich.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162137_Sun Ballast_One support, two functions Try Sun Ballast system!.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162137",
+        "subject": "Sun Ballast_One support, two functions Try Sun Ballast system!",
+        "full_name": "20250730_162137_Sun Ballast_One support, two functions Try Sun Ballast system!.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162155_AliExpress_Packstück DR9707549115F In Ihrem Land Ihrer Region.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162155",
+        "subject": "AliExpress_Packstück DR9707549115F In Ihrem Land Ihrer Region",
+        "full_name": "20250730_162155_AliExpress_Packstück DR9707549115F In Ihrem Land Ihrer Region.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162158_Epoch Guten Morgen_Debatte um Epstein-Akten Trump mahnt zur Ruhe und .pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162158",
+        "subject": "Epoch Guten Morgen_Debatte um Epstein-Akten Trump mahnt zur Ruhe und ",
+        "full_name": "20250730_162158_Epoch Guten Morgen_Debatte um Epstein-Akten Trump mahnt zur Ruhe und .pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162200_invideo AI_invideo AI v4.0 Discover what's new! 🔭.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162200",
+        "subject": "invideo AI_invideo AI v4.0 Discover what's new! 🔭",
+        "full_name": "20250730_162200_invideo AI_invideo AI v4.0 Discover what's new! 🔭.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162147_Balíkovna_Potvrzení o převzetí balíku DR9707549115F.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162147",
+        "subject": "Balíkovna_Potvrzení o převzetí balíku DR9707549115F",
+        "full_name": "20250730_162147_Balíkovna_Potvrzení o převzetí balíku DR9707549115F.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162154_Jan, Jooble_🔔 M.A.J., VINCI Construction CS a.s. hledá pracovn.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162154",
+        "subject": "Jan, Jooble_🔔 M.A.J., VINCI Construction CS a.s. hledá pracovn",
+        "full_name": "20250730_162154_Jan, Jooble_🔔 M.A.J., VINCI Construction CS a.s. hledá pracovn.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162201_ZEMITH.COM_Your receipt from ZEMITH.COM #2717-3387.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162201",
+        "subject": "ZEMITH.COM_Your receipt from ZEMITH.COM #2717-3387",
+        "full_name": "20250730_162201_ZEMITH.COM_Your receipt from ZEMITH.COM #2717-3387.pdf"
+      },
+      "detected_type": "Faktura",
+      "detected_tags": [
+        "Faktura"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162216_Nooz Optics_[ARCHIVE SALE] Bis zu -60 %.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162216",
+        "subject": "Nooz Optics_[ARCHIVE SALE] Bis zu -60 %",
+        "full_name": "20250730_162216_Nooz Optics_[ARCHIVE SALE] Bis zu -60 %.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162223_MeliáRewards_Have you booked yet Take advantage of Wonder Week.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162223",
+        "subject": "MeliáRewards_Have you booked yet Take advantage of Wonder Week",
+        "full_name": "20250730_162223_MeliáRewards_Have you booked yet Take advantage of Wonder Week.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162133_Letuška.cz_Letuška.cz Objevte svět s Turkish Airlines Zájezdy.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162133",
+        "subject": "Letuška.cz_Letuška.cz Objevte svět s Turkish Airlines Zájezdy",
+        "full_name": "20250730_162133_Letuška.cz_Letuška.cz Objevte svět s Turkish Airlines Zájezdy.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162156_dresden_52222 - Puzik, Milan.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162156",
+        "subject": "dresden_52222 - Puzik, Milan",
+        "full_name": "20250730_162156_dresden_52222 - Puzik, Milan.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162215_AliExpress_Bestellung 3057315516306343 Bestellauftrag bestäti.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162215",
+        "subject": "AliExpress_Bestellung 3057315516306343 Bestellauftrag bestäti",
+        "full_name": "20250730_162215_AliExpress_Bestellung 3057315516306343 Bestellauftrag bestäti.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162139_Anthropic Team_Important updates to your Max account usage limits.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162139",
+        "subject": "Anthropic Team_Important updates to your Max account usage limits",
+        "full_name": "20250730_162139_Anthropic Team_Important updates to your Max account usage limits.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162205_Google Alerts_Upozornění Google – Bitcoin.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162205",
+        "subject": "Google Alerts_Upozornění Google – Bitcoin",
+        "full_name": "20250730_162205_Google Alerts_Upozornění Google – Bitcoin.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162135_Vlna veder_Kdepak! Vlna nezapomenutelných zážitků 🤩.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162135",
+        "subject": "Vlna veder_Kdepak! Vlna nezapomenutelných zážitků 🤩",
+        "full_name": "20250730_162135_Vlna veder_Kdepak! Vlna nezapomenutelných zážitků 🤩.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162152_support@nabucasa.com_Home Assistant Cloud subscription receipt.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162152",
+        "subject": "support@nabucasa.com_Home Assistant Cloud subscription receipt",
+        "full_name": "20250730_162152_support@nabucasa.com_Home Assistant Cloud subscription receipt.pdf"
+      },
+      "detected_type": "Faktura",
+      "detected_tags": [
+        "Faktura"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162210_Epoch Guten Morgen_Brandbrief an Kanzler Merz Betriebsräte schlagen A.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162210",
+        "subject": "Epoch Guten Morgen_Brandbrief an Kanzler Merz Betriebsräte schlagen A",
+        "full_name": "20250730_162210_Epoch Guten Morgen_Brandbrief an Kanzler Merz Betriebsräte schlagen A.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162215_AliExpress_Bestellung 3057315516276343 Bestellung versandt.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162215",
+        "subject": "AliExpress_Bestellung 3057315516276343 Bestellung versandt",
+        "full_name": "20250730_162215_AliExpress_Bestellung 3057315516276343 Bestellung versandt.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162212_Moje O2_Moje O2 - vyúčtování za služby.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162212",
+        "subject": "Moje O2_Moje O2 - vyúčtování za služby",
+        "full_name": "20250730_162212_Moje O2_Moje O2 - vyúčtování za služby.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162202_Fing Alert_Network alert on AZURO2G.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162202",
+        "subject": "Fing Alert_Network alert on AZURO2G",
+        "full_name": "20250730_162202_Fing Alert_Network alert on AZURO2G.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162202_Juraj Skovajsa Epoch Times ČR_Misky vah.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162202",
+        "subject": "Juraj Skovajsa Epoch Times ČR_Misky vah",
+        "full_name": "20250730_162202_Juraj Skovajsa Epoch Times ČR_Misky vah.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162147_Epoch Vital_Darmspiegelung Große Studie zeigt überraschendes E.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162147",
+        "subject": "Epoch Vital_Darmspiegelung Große Studie zeigt überraschendes E",
+        "full_name": "20250730_162147_Epoch Vital_Darmspiegelung Große Studie zeigt überraschendes E.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162206_OpenWeather Team_OpenWeatherMap Account confirmation.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162206",
+        "subject": "OpenWeather Team_OpenWeatherMap Account confirmation",
+        "full_name": "20250730_162206_OpenWeather Team_OpenWeatherMap Account confirmation.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162222_KnihyDobrovsky.cz_Nové e-knihy právě dorazily, nakrmte si čtečku.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162222",
+        "subject": "KnihyDobrovsky.cz_Nové e-knihy právě dorazily, nakrmte si čtečku",
+        "full_name": "20250730_162222_KnihyDobrovsky.cz_Nové e-knihy právě dorazily, nakrmte si čtečku.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162157_service@intl.paypal.com_Stvrzenka k vaší platbě přes PayPal.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162157",
+        "subject": "service@intl.paypal.com_Stvrzenka k vaší platbě přes PayPal",
+        "full_name": "20250730_162157_service@intl.paypal.com_Stvrzenka k vaší platbě přes PayPal.pdf"
+      },
+      "detected_type": "Potvrzení o platbě",
+      "detected_tags": [
+        "PayPal",
+        "Platba schválena",
+        "Transakce"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162223_OpenAI_Tvoji naplánovanou úlohu nelze dokončit.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162223",
+        "subject": "OpenAI_Tvoji naplánovanou úlohu nelze dokončit",
+        "full_name": "20250730_162223_OpenAI_Tvoji naplánovanou úlohu nelze dokončit.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162139_AI AUTOMATION CREW_VEO 3 PROMPTING GUIDE.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162139",
+        "subject": "AI AUTOMATION CREW_VEO 3 PROMPTING GUIDE",
+        "full_name": "20250730_162139_AI AUTOMATION CREW_VEO 3 PROMPTING GUIDE.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162212_Chatbot App_Your subscription for CHATBOT APP has been cancele.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162212",
+        "subject": "Chatbot App_Your subscription for CHATBOT APP has been cancele",
+        "full_name": "20250730_162212_Chatbot App_Your subscription for CHATBOT APP has been cancele.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162150_Jan, Jooble_hello jobs hledá Truck Driver in Germany - Your Ch.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162150",
+        "subject": "Jan, Jooble_hello jobs hledá Truck Driver in Germany - Your Ch",
+        "full_name": "20250730_162150_Jan, Jooble_hello jobs hledá Truck Driver in Germany - Your Ch.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162220_prima+_Nové krimi seriály a napínavé novinky na prima+.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162220",
+        "subject": "prima+_Nové krimi seriály a napínavé novinky na prima+",
+        "full_name": "20250730_162220_prima+_Nové krimi seriály a napínavé novinky na prima+.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162151_IFTTT via IFTTT_A Recommended Recipe on IFTTT Fitbit and iOS Healt.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162151",
+        "subject": "IFTTT via IFTTT_A Recommended Recipe on IFTTT Fitbit and iOS Healt",
+        "full_name": "20250730_162151_IFTTT via IFTTT_A Recommended Recipe on IFTTT Fitbit and iOS Healt.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162136_AutoScout24 Fahrzeugsuche_Neue Treffer für deine Volkswagen, Bis zu 50.000 €.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162136",
+        "subject": "AutoScout24 Fahrzeugsuche_Neue Treffer für deine Volkswagen, Bis zu 50.000 €",
+        "full_name": "20250730_162136_AutoScout24 Fahrzeugsuche_Neue Treffer für deine Volkswagen, Bis zu 50.000 €.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162145_Eleven Labs Inc._Your receipt from Eleven Labs Inc. #2672-6798-9015.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162145",
+        "subject": "Eleven Labs Inc._Your receipt from Eleven Labs Inc. #2672-6798-9015",
+        "full_name": "20250730_162145_Eleven Labs Inc._Your receipt from Eleven Labs Inc. #2672-6798-9015.pdf"
+      },
+      "detected_type": "Faktura",
+      "detected_tags": [
+        "Faktura"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162210_AliExpress_Neue Auswahl in „rayban meta“.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162210",
+        "subject": "AliExpress_Neue Auswahl in „rayban meta“",
+        "full_name": "20250730_162210_AliExpress_Neue Auswahl in „rayban meta“.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162211_Samsung_Tvůj bonus k předobjednávce.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162211",
+        "subject": "Samsung_Tvůj bonus k předobjednávce",
+        "full_name": "20250730_162211_Samsung_Tvůj bonus k předobjednávce.pdf"
+      },
+      "detected_type": "Spam",
+      "detected_tags": [
+        "spam",
+        "nevyžádané"
+      ],
+      "validation_issues": [
+        "Neplatné tagy: ['spam', 'nevyžádané']"
+      ]
+    },
+    {
+      "file": "20250730_162213_Jaroslav Foltánek_Oprava chyby Velká šance získat nedostupné knihy. .pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162213",
+        "subject": "Jaroslav Foltánek_Oprava chyby Velká šance získat nedostupné knihy. ",
+        "full_name": "20250730_162213_Jaroslav Foltánek_Oprava chyby Velká šance získat nedostupné knihy. .pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162144_PayPal_Stvrzenka za vaši platbu příjemci Adobe Systems So.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162144",
+        "subject": "PayPal_Stvrzenka za vaši platbu příjemci Adobe Systems So",
+        "full_name": "20250730_162144_PayPal_Stvrzenka za vaši platbu příjemci Adobe Systems So.pdf"
+      },
+      "detected_type": "Potvrzení o platbě",
+      "detected_tags": [
+        "PayPal",
+        "Platba schválena",
+        "Transakce"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162143_Ela Excellence Resort Belek_FEEL WELL, FEEL LOVE.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162143",
+        "subject": "Ela Excellence Resort Belek_FEEL WELL, FEEL LOVE",
+        "full_name": "20250730_162143_Ela Excellence Resort Belek_FEEL WELL, FEEL LOVE.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162204_Epoch Guten Morgen_Minuspreise beim Strom explodieren Volkswirt nennt.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162204",
+        "subject": "Epoch Guten Morgen_Minuspreise beim Strom explodieren Volkswirt nennt",
+        "full_name": "20250730_162204_Epoch Guten Morgen_Minuspreise beim Strom explodieren Volkswirt nennt.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162145_support@freshworks.com_Odstranit vaši Freshworks organizaci.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162145",
+        "subject": "support@freshworks.com_Odstranit vaši Freshworks organizaci",
+        "full_name": "20250730_162145_support@freshworks.com_Odstranit vaši Freshworks organizaci.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162159_Samsung_Zdravotní trenér na tvém zápěstí. Řada Galaxy Watc.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162159",
+        "subject": "Samsung_Zdravotní trenér na tvém zápěstí. Řada Galaxy Watc",
+        "full_name": "20250730_162159_Samsung_Zdravotní trenér na tvém zápěstí. Řada Galaxy Watc.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162149_MyHeritage.com_👉 Nabídka prodloužena Získejte mnohem více s pláne.pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162149",
+        "subject": "MyHeritage.com_👉 Nabídka prodloužena Získejte mnohem více s pláne",
+        "full_name": "20250730_162149_MyHeritage.com_👉 Nabídka prodloužena Získejte mnohem více s pláne.pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    },
+    {
+      "file": "20250730_162209_Dropbox_Hallo M.A.J. Puzik, wir haben eine neue Anmeldung .pdf",
+      "file_info": {
+        "date": "20250730",
+        "sender": "162209",
+        "subject": "Dropbox_Hallo M.A.J. Puzik, wir haben eine neue Anmeldung ",
+        "full_name": "20250730_162209_Dropbox_Hallo M.A.J. Puzik, wir haben eine neue Anmeldung .pdf"
+      },
+      "detected_type": "Email",
+      "detected_tags": [
+        "Email"
+      ],
+      "validation_issues": []
+    }
+  ],
+  "recommendations": {
+    "new_document_types": [],
+    "new_tags": {
+      "spam": 1,
+      "nevyžádané": 1
+    }
+  }
+}

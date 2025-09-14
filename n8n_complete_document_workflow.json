@@ -1,0 +1,379 @@
+{
+  "name": "Complete Document Classifier with Ollama",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## 📄 Document Classification Workflow\n\n### Vstupní body:\n1. **Gmail** - načte emaily\n2. **Složka** - načte PDF soubory\n3. **Manual trigger** - ruční spuštění\n\n### Klasifikace pomocí Ollama:\n- czech-finance model\n- 99% české dokumenty\n\n### Výstup:\n- Třídění do složek podle typu\n- Upload do Paperless-ngx",
+        "height": 283.5985915492958,
+        "width": 384.0422535211268
+      },
+      "id": "note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [380, 240]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "manual",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [820, 240]
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute",
+              "minute": 10
+            }
+          ]
+        },
+        "mailbox": "INBOX",
+        "format": "simple",
+        "property": "textPlain",
+        "options": {
+          "customEmailConfig": "majpuzik@gmail.com=imap.gmail.com",
+          "allowUnauthorizedCerts": true,
+          "forceReconnect": 300
+        }
+      },
+      "id": "gmail",
+      "name": "Gmail Trigger",
+      "type": "n8n-nodes-base.emailReadImap",
+      "typeVersion": 2,
+      "position": [820, 420],
+      "credentials": {
+        "imap": {
+          "id": "gmail-imap",
+          "name": "Gmail IMAP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "/Users/m.a.j.puzik/Documents",
+        "recursive": false,
+        "fileSelector": "*.pdf",
+        "options": {}
+      },
+      "id": "files",
+      "name": "Read PDF Files",
+      "type": "n8n-nodes-base.filesReadWrite",
+      "typeVersion": 1,
+      "position": [820, 600]
+    },
+    {
+      "parameters": {
+        "mode": "passThrough",
+        "output": "input2"
+      },
+      "id": "merge",
+      "name": "Merge Sources",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2,
+      "position": [1040, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract text from various sources\nlet documentText = '';\nlet documentTitle = '';\nlet documentSource = '';\n\n// Check if from Gmail\nif ($input.item.json.textPlain) {\n  documentText = $input.item.json.textPlain || $input.item.json.textHtml || '';\n  documentTitle = $input.item.json.subject || 'Email bez předmětu';\n  documentSource = 'gmail';\n}\n// Check if from file\nelse if ($input.item.binary) {\n  const fileName = Object.keys($input.item.binary)[0];\n  documentTitle = fileName;\n  documentSource = 'file';\n  // For PDF, we'd need OCR - for now use filename\n  documentText = `PDF File: ${fileName}`;\n}\n// Manual input\nelse if ($input.item.json.text) {\n  documentText = $input.item.json.text;\n  documentTitle = $input.item.json.title || 'Manual document';\n  documentSource = 'manual';\n}\n\nreturn {\n  json: {\n    text: documentText.substring(0, 2000), // Limit to 2000 chars\n    title: documentTitle,\n    source: documentSource,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "prepare",
+      "name": "Prepare Document",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1240, 420]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "authentication": "none",
+        "requestMethod": "POST",
+        "jsonParameters": true,
+        "options": {
+          "timeout": 30000
+        },
+        "bodyParametersJson": "{\n  \"model\": \"czech-finance:latest\",\n  \"prompt\": \"Klasifikuj tento český dokument do JEDNÉ kategorie:\\n\\nKategorie:\\n- faktura (faktury, daňové doklady)\\n- smlouva (smlouvy, dohody, kontrakty)\\n- platba (platební příkazy, potvrzení platby)\\n- bankovni_vypis (výpisy z účtu)\\n- soudni_obesilka (soudní obsílky, předvolání)\\n- policejni_obesilka (policejní obsílky, předvolání)\\n- uredni_korespondence (úřední dopisy, rozhodnutí)\\n- objednavka (objednávky, poptávky)\\n- upominka (upomínky, výzvy k platbě)\\n- obchodni_korespondence (obchodní dopisy, komunikace)\\n- nabidka (nabídky, reklamy, newslettery)\\n- ostatni\\n\\nDokument:\\n{{ $json.text }}\\n\\nOdpověz POUZE názvem kategorie:\",\n  \"stream\": false,\n  \"temperature\": 0.1\n}"
+      },
+      "id": "ollama",
+      "name": "Ollama Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1440, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Ollama response and prepare classification\nconst ollamaResponse = $input.item.json;\nconst originalData = $node[\"prepare\"].json;\n\nlet classification = 'ostatni';\nif (ollamaResponse.response) {\n  classification = ollamaResponse.response\n    .trim()\n    .toLowerCase()\n    .replace(/[^a-z_]/g, '')\n    .split(/[\\s,\\.]+/)[0];\n}\n\n// Valid categories\nconst validCategories = [\n  'faktura', 'smlouva', 'platba', 'bankovni_vypis',\n  'soudni_obesilka', 'policejni_obesilka', 'uredni_korespondence',\n  'objednavka', 'upominka', 'obchodni_korespondence',\n  'nabidka', 'ostatni'\n];\n\nif (!validCategories.includes(classification)) {\n  classification = 'ostatni';\n}\n\n// Extract additional info from text\nconst text = originalData.text || '';\nlet extracted = {};\n\n// Extract IČO\nconst icoMatch = text.match(/IČO?:?\\s*(\\d{8})/i);\nif (icoMatch) extracted.ico = icoMatch[1];\n\n// Extract amount\nconst amountMatch = text.match(/(\\d{1,3}(?:[\\s.]\\d{3})*(?:,\\d{2})?)\\s*Kč/i);\nif (amountMatch) extracted.amount = amountMatch[1];\n\n// Extract VS\nconst vsMatch = text.match(/VS:?\\s*(\\d+)/i);\nif (vsMatch) extracted.variable_symbol = vsMatch[1];\n\n// Extract date\nconst dateMatch = text.match(/(\\d{1,2})[\\.\\/](\\d{1,2})[\\.\\/](\\d{4})/);  \nif (dateMatch) extracted.date = `${dateMatch[3]}-${dateMatch[2]}-${dateMatch[1]}`;\n\n// Determine folder path\nconst outputFolders = {\n  'faktura': '/Users/m.a.j.puzik/classified_documents/faktury',\n  'smlouva': '/Users/m.a.j.puzik/classified_documents/smlouvy',\n  'platba': '/Users/m.a.j.puzik/classified_documents/platby',\n  'bankovni_vypis': '/Users/m.a.j.puzik/classified_documents/bankovni_vypisy',\n  'soudni_obesilka': '/Users/m.a.j.puzik/classified_documents/soudni_dokumenty',\n  'policejni_obesilka': '/Users/m.a.j.puzik/classified_documents/policejni_dokumenty',\n  'uredni_korespondence': '/Users/m.a.j.puzik/classified_documents/uredni_korespondence',\n  'objednavka': '/Users/m.a.j.puzik/classified_documents/objednavky',\n  'upominka': '/Users/m.a.j.puzik/classified_documents/upominky',\n  'obchodni_korespondence': '/Users/m.a.j.puzik/classified_documents/obchodni_korespondence',\n  'nabidka': '/Users/m.a.j.puzik/classified_documents/nabidky_reklamy',\n  'ostatni': '/Users/m.a.j.puzik/classified_documents/ostatni'\n};\n\nconst outputFolder = outputFolders[classification];\n\nreturn {\n  json: {\n    classification: classification,\n    title: originalData.title,\n    source: originalData.source,\n    outputFolder: outputFolder,\n    extracted: extracted,\n    processingTime: ollamaResponse.eval_duration ? \n      Math.round(ollamaResponse.eval_duration / 1000000) + 'ms' : 'N/A',\n    timestamp: new Date().toISOString(),\n    shouldDelete: false, // Set to true to delete old files\n    paperlessUpload: true // Set to true to upload to Paperless\n  }\n};"
+      },
+      "id": "process",
+      "name": "Process Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1640, 420]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c0b6a7f3-eb24-4543-a4a1-17b7757ed1ef",
+              "leftValue": "={{ $json.source }}",
+              "rightValue": "gmail",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "ifGmail",
+      "name": "Is Gmail?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1840, 420]
+    },
+    {
+      "parameters": {
+        "fileSelector": "={{ $json.outputFolder }}/{{ $json.title.replace(/[^a-zA-Z0-9]/g, '_') }}.pdf",
+        "options": {
+          "append": false
+        }
+      },
+      "id": "saveFile",
+      "name": "Save to Folder",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [2040, 320]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8050/api/documents/",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "requestMethod": "POST",
+        "jsonParameters": false,
+        "options": {},
+        "bodyParametersUi": {
+          "parameter": [
+            {
+              "name": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $json.classification }}"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.classification }}"
+            }
+          ]
+        }
+      },
+      "id": "paperless",
+      "name": "Upload to Paperless",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2240, 420],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "paperless-api",
+          "name": "Paperless API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "paperless-check",
+              "leftValue": "={{ $json.paperlessUpload }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "ifPaperless",
+      "name": "Upload to Paperless?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2040, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Create output summary\nconst results = $input.all();\n\nconst summary = {\n  total: results.length,\n  byCategory: {},\n  bySource: {},\n  errors: []\n};\n\nfor (const item of results) {\n  const data = item.json;\n  \n  // Count by category\n  if (!summary.byCategory[data.classification]) {\n    summary.byCategory[data.classification] = 0;\n  }\n  summary.byCategory[data.classification]++;\n  \n  // Count by source\n  if (!summary.bySource[data.source]) {\n    summary.bySource[data.source] = 0;\n  }\n  summary.bySource[data.source]++;\n}\n\nreturn {\n  json: {\n    summary: summary,\n    timestamp: new Date().toISOString(),\n    message: `Zpracováno ${summary.total} dokumentů`\n  }\n};"
+      },
+      "id": "summary",
+      "name": "Create Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2440, 420]
+    }
+  ],
+  "connections": {
+    "manual": {
+      "main": [
+        [
+          {
+            "node": "merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "gmail": {
+      "main": [
+        [
+          {
+            "node": "merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "files": {
+      "main": [
+        [
+          {
+            "node": "merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "merge": {
+      "main": [
+        [
+          {
+            "node": "prepare",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "prepare": {
+      "main": [
+        [
+          {
+            "node": "ollama",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ollama": {
+      "main": [
+        [
+          {
+            "node": "process",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "process": {
+      "main": [
+        [
+          {
+            "node": "ifGmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ifGmail": {
+      "main": [
+        [
+          {
+            "node": "saveFile",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "ifPaperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "saveFile": {
+      "main": [
+        [
+          {
+            "node": "ifPaperless",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ifPaperless": {
+      "main": [
+        [
+          {
+            "node": "paperless",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "paperless": {
+      "main": [
+        [
+          {
+            "node": "summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": []
+}

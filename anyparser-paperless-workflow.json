@@ -1,0 +1,295 @@
+{
+  "name": "AnyParser → Paperless Document Processor",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "anyparser-upload",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*",
+          "rawBody": true
+        }
+      },
+      "id": "webhook-input",
+      "name": "Webhook - File Upload",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "webhookId": "anyparser-upload"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.filename }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "validate-input",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "document_type",
+              "name": "document_type",
+              "value": "={{ $json.document_type || 'auto' }}",
+              "type": "string"
+            },
+            {
+              "id": "file_data",
+              "name": "file_data", 
+              "value": "={{ $json.file }}",
+              "type": "object"
+            },
+            {
+              "id": "filename",
+              "name": "filename",
+              "value": "={{ $json.filename }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "prepare-data",
+      "name": "Prepare Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.cambioml.com/v1/parse",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ap-6339380810039441f1f04952188b6c9dee638be509cf8e21"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "file",
+              "value": "={{ $json.file_data }}",
+              "parameterType": "formBinaryData"
+            },
+            {
+              "name": "extract_instruction",
+              "value": "={% set instructions = {\n  'invoice': 'Extract from this Czech/Slovak invoice: Číslo faktury, Datum vystavení, Datum splatnosti, Dodavatel with IČO and DIČ, Odběratel, Celková částka, Variabilní symbol, DPH. Return as JSON.',\n  'bank_statement': 'Extract from this bank statement: Název banky, Číslo účtu, Období výpisu, Zůstatky, Transakce with dates and amounts. Return as JSON.',\n  'contract': 'Extract from this contract: Typ smlouvy, Smluvní strany, Datum podpisu, Platnost, Předmět, Cena. Return as JSON.',\n  'receipt': 'Extract from this receipt: Obchodník, Datum, Celková částka, DPH, Způsob platby, Položky. Return as JSON.',\n  'auto': 'Analyze this document. Determine type (faktura/bankovní výpis/smlouva/účtenka/úřední dokument) and extract all relevant information. Return as JSON with document_type and extracted_data.'\n} %}\n{{ instructions.get($json.document_type, instructions['auto']) }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 60000,
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "id": "anyparser-call",
+      "name": "AnyParser API Call",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Create Paperless tags from AnyParser result\nconst parsedData = $input.first().json.extracted_data || $input.first().json;\nconst filename = $input.first().json.filename || 'document';\nconst documentType = $input.first().json.document_type || 'auto';\n\n// Tag mapping\nconst typeMapping = {\n  'invoice': 'faktura',\n  'faktura': 'faktura', \n  'bank_statement': 'bankovni-vypis',\n  'bankovní výpis': 'bankovni-vypis',\n  'contract': 'smlouva',\n  'receipt': 'uctenka',\n  'účtenka': 'uctenka',\n  'official': 'uredni-dokument'\n};\n\nconst tags = [];\nconst metadata = {\n  title: filename.replace(/\\.[^/.]+$/, \"\"),\n  correspondent: null,\n  document_type: null,\n  created: new Date().toISOString().split('T')[0]\n};\n\n// Document type tag\nfor (const [key, value] of Object.entries(typeMapping)) {\n  if (documentType.toLowerCase().includes(key) || filename.toLowerCase().includes(key)) {\n    tags.push(value);\n    metadata.document_type = value;\n    break;\n  }\n}\n\n// Correspondent extraction\nif (parsedData.dodavatel) {\n  metadata.correspondent = parsedData.dodavatel;\n  tags.push(`korespondent-${parsedData.dodavatel.toLowerCase().replace(/\\s+/g, '-')}`);\n} else if (parsedData.banka) {\n  metadata.correspondent = parsedData.banka;\n  tags.push(`banka-${parsedData.banka.toLowerCase().replace(/\\s+/g, '-')}`);\n} else if (parsedData.obchodnik) {\n  metadata.correspondent = parsedData.obchodnik;\n  tags.push(`obchodnik-${parsedData.obchodnik.toLowerCase().replace(/\\s+/g, '-')}`);\n}\n\n// Amount tags\nif (parsedData.celkova_castka || parsedData.total_amount) {\n  const amount = parsedData.celkova_castka || parsedData.total_amount;\n  const numAmount = parseFloat(amount.toString().replace(/[^\\d.,]/g, '').replace(',', '.'));\n  \n  if (numAmount > 10000) {\n    tags.push('velka-faktura');\n  } else if (numAmount > 1000) {\n    tags.push('stredni-faktura');\n  } else {\n    tags.push('mala-faktura');\n  }\n}\n\n// Date tags\nconst currentYear = new Date().getFullYear();\ntags.push(`rok-${currentYear}`);\n\nconst months = ['leden', 'unor', 'brezen', 'duben', 'kveten', 'cerven', \n               'cervenec', 'srpen', 'zari', 'rijen', 'listopad', 'prosinec'];\nconst currentMonth = months[new Date().getMonth()];\ntags.push(`mesic-${currentMonth}`);\n\n// IČO/DIČ tags\nif (parsedData.ico) {\n  tags.push(`ico-${parsedData.ico}`);\n}\nif (parsedData.dic) {\n  tags.push(`dic-${parsedData.dic}`);\n}\n\n// Source tag\ntags.push('import-anyparser');\n\nreturn [{\n  json: {\n    ...metadata,\n    tags: tags.join(','),\n    parsed_data: parsedData,\n    original_filename: filename\n  }\n}];"
+      },
+      "id": "create-tags",
+      "name": "Create Paperless Tags",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3001/process-document",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "multipart/form-data"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "file",
+              "value": "={{ $('Webhook - File Upload').first().json.file }}",
+              "parameterType": "formBinaryData"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.tags }}"
+            },
+            {
+              "name": "title", 
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "correspondent",
+              "value": "={{ $json.correspondent || '' }}"
+            },
+            {
+              "name": "document_type",
+              "value": "={{ $json.document_type || '' }}"
+            },
+            {
+              "name": "created",
+              "value": "={{ $json.created }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "upload-paperless",
+      "name": "Upload to Paperless via MCP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"success\": true,\n  \"filename\": $json.original_filename,\n  \"paperless_id\": $json.id || $json.task_id,\n  \"tags\": $json.tags.split(','),\n  \"correspondent\": $json.correspondent,\n  \"document_type\": $json.document_type,\n  \"processing_time\": new Date().toISOString()\n} }}"
+      },
+      "id": "success-response",
+      "name": "Success Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1560, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"success\": false,\n  \"filename\": $json.filename || 'unknown',\n  \"error\": $json.error || 'Processing failed',\n  \"timestamp\": new Date().toISOString()\n} }}",
+        "options": {
+          "responseCode": 500
+        }
+      },
+      "id": "error-response", 
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1560, 500]
+    }
+  ],
+  "connections": {
+    "Webhook - File Upload": {
+      "main": [
+        [
+          {
+            "node": "Validate Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Input": {
+      "main": [
+        [
+          {
+            "node": "Prepare Data",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Data": {
+      "main": [
+        [
+          {
+            "node": "AnyParser API Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AnyParser API Call": {
+      "main": [
+        [
+          {
+            "node": "Create Paperless Tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Paperless Tags": {
+      "main": [
+        [
+          {
+            "node": "Upload to Paperless via MCP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload to Paperless via MCP": {
+      "main": [
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-08-30T10:00:00.000Z",
+  "versionId": "1"
+}

@@ -1,0 +1,2070 @@
+{
+  "statistics": {
+    "total_emails": 100,
+    "processed_emails": 100,
+    "classified_documents": 21,
+    "uploaded_to_paperless": 21,
+    "errors": 0,
+    "document_types": {
+      "unclear": 79,
+      "spam": 12,
+      "invoice": 5,
+      "official": 1,
+      "contract": 2,
+      "medical": 1
+    },
+    "processing_start": "2025-08-29 15:14:12.636597",
+    "processing_end": "2025-08-29 15:32:06.642203",
+    "processing_duration": 1074.005606
+  },
+  "documents": [
+    {
+      "message_id": "<175593425614.1.634338861175083922@notifications-worker-5444f66448-fgtrm>",
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Global=20news=20summary=20for=20August=2023?=",
+      "sender": "OpenAI <noreply@tm.openai.com>",
+      "date": "2025-08-23T07:30:56+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<gK8daUu_RxC7IsIcji7r0w@geopod-ismtpd-16>",
+      "subject": "puzik@outlook.com has invited you to edit MyBox -\r\n =?UTF-8?B?SW50ZWxpZ2VudG7DrSBzeXN0w6lt?= pro\r\n =?UTF-8?B?ZG9ydcSNb3bDoW7DrSBiYWzDrWvFrw==?= presentation",
+      "sender": "\"puzik@outlook.com (via Beautiful.ai)\" <share@beautiful.ai>",
+      "date": "2025-08-23T14:16:54+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<1755982415285_113709_354807_918.sc-10-2-255-199-inbound0@user-service.klingai.com>",
+      "subject": "=?utf-8?q?Kling_2=2E1_Start_=26_End_Frames=EF=BC=9AEvery_Frame_in_Control?=\r\n =?utf-8?q?=2E?=",
+      "sender": "kling@user-service.klingai.com",
+      "date": "2025-08-24T04:53:35+08:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<rLjBphf5QfOslxKTuLabkQ@geopod-ismtpd-12>",
+      "subject": "It just came out =?UTF-8?B?8J+RgA==?=",
+      "sender": "Chargemap <hello@chargemap.com>",
+      "date": "2025-08-23T15:01:49+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 758,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<52.04.11206.B7A3AA86@ccg14mail03>",
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_Google_Payment?=\r\n  =?UTF-8?Q?_Irela=2E=2E=2E?=",
+      "sender": "PayPal <service@intl.paypal.com>",
+      "date": "2025-08-23T15:02:35-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<740c588d-c0b2-8bd7-c0ef-c11d71f94324@em9000.epochtimes.cz>",
+      "subject": "Iluze",
+      "sender": "=?UTF-8?Q?Juraj_Skovajsa_/_Epoch_Times_=C4=8CR?=\r\n <newsletter@epochtimes.cz>",
+      "date": "2025-08-24T08:28:05+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198dbfe11cb-f1f243dd-efda-4a5c-a688-783408386426-000000@email.amazonses.com>",
+      "subject": "Your receipt from NANONOBLE PTE. LTD. #2837-8481",
+      "sender": "\"NANONOBLE PTE. LTD.\" <invoice+statements+acct_1PyWu4P2vIwxtQPn@stripe.com>",
+      "date": "2025-08-24T12:11:57+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [
+        "/tmp/gmail_processing/Invoice-AIOHPABS-0001.pdf",
+        "/tmp/gmail_processing/Receipt-2837-8481.pdf"
+      ],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<55.FC.43344.C030BA86@i-055823298938f455e.mta3vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?TmVqbGVwxaHDrSBuYWLDrWRreSBtaW51bMOpaG8gdMO9ZG5lIA==?=\r\n\t=?utf-8?B?4piFIDUqIGhvdGVsIGEga3LDoXNuw6kgdmlsa3kgdiBwb2xza8O9Y2ggS3Jr?=\r\n\t=?utf-8?B?b25vxaHDrWNoOiBzbsOtZGFuxJsgbmVibyBwb2xvcGVuemUgaSB2c3R1cCBk?=\r\n\t=?utf-8?B?byB3ZWxsbmVzcyBzIHRlcm3DoWxuw60gdm9kb3U=?=",
+      "sender": "\"Slevomat.cz\" <info@vas.slevomat.cz>",
+      "date": "2025-08-24T12:18:20+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<751652b523172d4c7e02f7565.f15a5afed4.20250824122655.ed25c4cb71.106c9a0a@mail48.suw11.mcdlv.net>",
+      "subject": "=?utf-8?Q?Welcome=20to=20AI=2FML=20API=21=20=F0=9F=91=8B?=",
+      "sender": "Team AI/ML API <hello@aimlapi.com>",
+      "date": "2025-08-24T12:26:59+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 8243,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198dc0d744b-ebdb6835-75a7-4e67-9985-8b36ec6d84a1-000000@email.amazonses.com>",
+      "subject": "Your receipt from AIMLAPI #2844-1818",
+      "sender": "AIMLAPI <invoice+statements+acct_1P5rIGAbCvH6pBgm@stripe.com>",
+      "date": "2025-08-24T12:28:46+00:00",
+      "document_type": "invoice",
+      "confidence": 0.62,
+      "paperless_id": 4719,
+      "attachments": [
+        "/tmp/gmail_processing/Invoice-678900E8-188425.pdf",
+        "/tmp/gmail_processing/Receipt-2844-1818.pdf"
+      ],
+      "classification": {
+        "document_type": "DocumentType.INVOICE",
+        "confidence": 0.62,
+        "details": {
+          "file": "Invoice-678900E8-188425.pdf",
+          "is_invoice": true,
+          "confidence": 62.0,
+          "confidence_level": "MEDIUM",
+          "region": "US",
+          "score_breakdown": {
+            "critical_elements": 30,
+            "mandatory_elements": 0,
+            "regional_specifics": 7,
+            "visual_elements": 0,
+            "financial_data": 15,
+            "formatting": 0,
+            "bonus_points": 10,
+            "negative_points": 0,
+            "total_score": 62
+          },
+          "details": {
+            "found_elements": [
+              "Invoice keyword: invoice",
+              "Invoice number found",
+              "Currency $ found",
+              "9 amounts found",
+              "Financial calculations present"
+            ],
+            "negative_elements": [],
+            "region": "US"
+          },
+          "recommendation": "⚠️ Možná faktura - vyžaduje manuální kontrolu"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<FRLgn0LWS168dJ1UeuKXQQ@geopod-ismtpd-35>",
+      "subject": "Fuel Cell Powered Robot",
+      "sender": "Instructables <no-reply@mail.newsletter.instructables.com>",
+      "date": "2025-08-24T12:44:25+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<BA.F8.09557.A412BA86@ccg13mail06>",
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_Adobe_Systems?=\r\n  =?UTF-8?Q?_Softwa=2E=2E=2E?=",
+      "sender": "PayPal <service@intl.paypal.com>",
+      "date": "2025-08-24T07:27:22-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<751652b523172d4c7e02f7565.f15a5afed4.20250824142752.b6bc75e4b6.e4230408@mail169.suw12.mcsv.net>",
+      "subject": "=?utf-8?Q?Adventure=20Awaits=20=E2=80=93=20Click=20to=20Begin=20=F0=9F=9A=80?=",
+      "sender": "AI/ML API Team <hello@aimlapi.com>",
+      "date": "2025-08-24T14:27:56+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01010198dc880d81-6c98fdfd-1e0f-4e80-bfb0-82f50b836e32-000000@us-west-2.amazonses.com>",
+      "subject": "Steuerfreie Transaktion mit Adobe",
+      "sender": "Adobe <message@adobe.com>",
+      "date": "2025-08-24T14:42:40+00:00",
+      "document_type": "invoice",
+      "confidence": 0.55,
+      "paperless_id": 9011,
+      "attachments": [
+        "/tmp/gmail_processing/Adobe_Transaction_No_3197425661_20250824.pdf"
+      ],
+      "classification": {
+        "document_type": "DocumentType.INVOICE",
+        "confidence": 0.55,
+        "details": {
+          "file": "Adobe_Transaction_No_3197425661_20250824.pdf",
+          "is_invoice": true,
+          "confidence": 55.00000000000001,
+          "confidence_level": "MEDIUM",
+          "region": "DE",
+          "score_breakdown": {
+            "critical_elements": 15,
+            "mandatory_elements": 0,
+            "regional_specifics": 15,
+            "visual_elements": 5,
+            "financial_data": 15,
+            "formatting": 0,
+            "bonus_points": 5,
+            "negative_points": 0,
+            "total_score": 55
+          },
+          "details": {
+            "found_elements": [
+              "Invoice keyword: rechnung",
+              "VAT rate 0% found",
+              "Currency EUR found",
+              "Table structure detected",
+              "8 amounts found",
+              "Financial calculations present"
+            ],
+            "negative_elements": [],
+            "region": "DE"
+          },
+          "recommendation": "⚠️ Možná faktura - vyžaduje manuální kontrolu"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<BA.FD.13347.EEA4BA86@i-07f2d4481de636190.mta3vrest.sd.prd.sparkpost>",
+      "subject": "Ensure Your Emails Reach Inboxes  ",
+      "sender": "\"Elementor\" <team@news-mail.elementor.com>",
+      "date": "2025-08-24T17:25:02+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<3E.2B.02882.0845BA86@ccg14mail06>",
+      "subject": "=?UTF-8?Q?Stvrzenka_za_va=C5=A1i_platbu_p=C5=99=C3=ADjemci_GitHub=2C?=\r\n  =?UTF-8?Q?_Inc=2E?=",
+      "sender": "PayPal <service@intl.paypal.com>",
+      "date": "2025-08-24T11:05:52-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<175610700591.1.10915337861644695676@notifications-worker-dcc77b659-sfgdd>",
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Global=20political=20and=20security=20trends?=",
+      "sender": "OpenAI <noreply@tm.openai.com>",
+      "date": "2025-08-25T07:30:06+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<175610714660.1.571785077345269523@notifications-worker-dcc77b659-5lbg7>",
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Po=C5=A1li=20denn=C3=AD=20p=C5=99ehled=20zpr=C3=A1v=20s=20datem?=",
+      "sender": "OpenAI <noreply@tm.openai.com>",
+      "date": "2025-08-25T07:32:26+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<3ca8633d-27ba-3c5d-a7f7-3508faf6e27a@mail.uber.com>",
+      "subject": "=?UTF-8?b?VcWhZXTFmWkgdGVuaGxlIHTDvWRlbiBuYSBqw616ZMOhY2g=?=",
+      "sender": "Uber <uber@uber.com>",
+      "date": "2025-08-25T14:39:14+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01K3H5CDSMGPAXVTGFDEK97WED@klaviyomail.com>",
+      "subject": "=?UTF-8?q?=F0=9F=9A=80_Big_day_tomorrow_=E2=80=93_we=E2=80=99re_going_LIV?=\r\n =?UTF-8?q?E!?=",
+      "sender": "\"Rokid\" <backer@rokid.com>",
+      "date": "2025-08-25T18:00:24+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<18aca462-c2f7-447b-aebc-8960aa018704@starship>",
+      "subject": "vonvaldek hat eine Nachricht gesendet zu Apple MacBook Pro 14\" 2023\r\n M2 Pro 16GB 512GB Space Grau QWERTZ MwSt. ausweisbar #376493036146",
+      "sender": "eBay - vonvaldek <member@ebay.com>",
+      "date": "2025-08-25T11:23:29-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<02390330-558d-4c14-8a9c-08a37fd826c3@starship>",
+      "subject": "Betreff: vonvaldek hat eine Nachricht gesendet zu Apple MacBook Pro\r\n 14\" 2023 M2 Pro 16GB 512GB Space Grau QWERTZ MwSt. ausweisbar #376493036146",
+      "sender": "eBay - hajdishop <hajdis_fwn4208nb@members.ebay.de>",
+      "date": "2025-08-25T11:29:45-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<f99caeaa-49d9-4417-a878-cb61b48f9891@starship>",
+      "subject": "Betreff: vonvaldek hat eine Nachricht gesendet zu Apple MacBook Pro\r\n 14\" 2023 M2 Pro 16GB 512GB Space Grau QWERTZ MwSt. ausweisbar #376493036146",
+      "sender": "eBay - hajdishop <hajdis_fwn4208nb@members.ebay.de>",
+      "date": "2025-08-25T11:37:17-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<bee3f143-9419-45c9-894d-a161037206c8@starship>",
+      "subject": "Betreff: vonvaldek hat eine Nachricht gesendet zu Apple MacBook Pro\r\n 14\" 2023 M2 Pro 16GB 512GB Space Grau QWERTZ MwSt. ausweisbar #376493036146",
+      "sender": "eBay - hajdishop <hajdis_fwn4208nb@members.ebay.de>",
+      "date": "2025-08-25T11:44:03-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250825193550.8113b7a7502046fd@cio113585.email.heygen.com>",
+      "subject": "Something new is coming tomorrow",
+      "sender": "HeyGen <no_reply@email.heygen.com>",
+      "date": "2025-08-25T19:35:50+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 8306,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<68aca69a.050a0220.33d1be.5364googlealerts@google.com>",
+      "subject": "=?UTF-8?Q?Google_Alert_=E2=80=93_tesla?=",
+      "sender": "Google Alerts <googlealerts-noreply@google.com>",
+      "date": "2025-08-25T11:08:26-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<DU0PR10MB7310866A764BFACFAEA4936DA939A@DU0PR10MB7310.EURPRD10.PROD.OUTLOOK.COM>",
+      "subject": "Fw: Imagine More With Video",
+      "sender": "\"M.A.J. Puzik\" <majpuzik@gmail.com>",
+      "date": "2025-08-26T07:32:01+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<8ISB0xh0SC-P19dJ4WUSrA@geopod-ismtpd-10>",
+      "subject": "Lety od 737 =?UTF-8?B?S8SN?=",
+      "sender": "Skyscanner <no-reply@sender.skyscanner.com>",
+      "date": "2025-08-26T09:38:56+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<98.A4.17364.8268DA86@i-09dc9bf4be0c4b9ea.mta1vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?UnljaGzDqSBleHRlcm7DrSBib3h5IGEgcMWZw61zbHXFoWVuc3R2?=\r\n\t=?utf-8?B?w60gcHJvIHbDocWhIE1hYw==?=",
+      "sender": "\"MacZone.CZ\" <info@mailer.mczone.cz>",
+      "date": "2025-08-26T10:02:06+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<D7jMU2VgVFLogZQCAe56gQjuTpkIqBvoovdgFZpY@newsletter.esotravel.cz>",
+      "subject": "=?utf-8?Q?Silvestr_origin=C3=A1ln=C4=9B=3F_Filip=C3=ADny!?=",
+      "sender": "ESO travel <info@esotravel.cz>",
+      "date": "2025-08-26T11:11:31+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01K3K362WK395HPM8651TNEA8B@klaviyomail.com>",
+      "subject": "=?UTF-8?q?=F0=9F=8E=89_We=E2=80=99re_LIVE_=E2=80=93_your_VIP_perks_are_wa?=\r\n =?UTF-8?q?iting!?=",
+      "sender": "\"Rokid\" <backer@rokid.com>",
+      "date": "2025-08-26T12:05:34+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<175621151047.1.9553271418011323472@notifications-worker-767b98555d-z94kf>",
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Surprising=20AI=20news=20and=20breakthroughs?=",
+      "sender": "OpenAI <noreply@tm.openai.com>",
+      "date": "2025-08-26T12:31:51+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<97.78.47279.DFCADA86@i-0b58becc6a0caabc8.mta1vrest.sd.prd.sparkpost>",
+      "subject": "New workflows and ways to create",
+      "sender": "\"Runway\" <no-reply@comms.runwayml.com>",
+      "date": "2025-08-26T12:47:57+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<UO4bo_ObQrODoV3DdNRL5Q@geopod-ismtpd-4>",
+      "subject": "Don't Forget! puzik@outlook.com invited you to edit MyBox -\r\n =?UTF-8?B?SW50ZWxpZ2VudG7DrSBzeXN0w6lt?= pro\r\n =?UTF-8?B?ZG9ydcSNb3bDoW7DrSBiYWzDrWvFrw==?=",
+      "sender": "\"puzik@outlook.com (via Beautiful.ai)\" <share@beautiful.ai>",
+      "date": "2025-08-26T14:17:01+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<751652b523172d4c7e02f7565.f15a5afed4.20250826142955.5323199c40.82ffe67b@mail169.suw12.mcsv.net>",
+      "subject": "=?utf-8?Q?=F0=9F=92=8C=20Call=20Invitation?=",
+      "sender": "AI/ML API Team <hello@aimlapi.com>",
+      "date": "2025-08-26T14:29:59+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 9872,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<EC.89.43180.0A1DDA86@i-0813610608afa6125.mta3vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?Q2VzdHVqZXRlIGRvIGRlc3RpbmFjZSBIdXJnaGFkYT8gWmRlIGpz?=\r\n\t=?utf-8?B?b3UgYWt0dcOhbG7DrSBjZW55IPCfk6k=?=",
+      "sender": "\"Booking.com\" <email.campaign@sg.booking.com>",
+      "date": "2025-08-26T15:24:16+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<d334ab423fb03d91fc1e35bae0e22788@el1.automatorplugin.com>",
+      "subject": "What's Up With WhatsApp Automation?",
+      "sender": "Uncanny Automator <support@automatorplugin.com>",
+      "date": "2025-08-26T15:28:48+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<68add2cd.170a0220.29a7de.8994SMTPIN_ADDED_BROKEN@mx.google.com>",
+      "subject": "Orienta Czech s.r.o. =?utf-8?b?aGxlZMOh?= Production Operator a 24\r\n =?utf-8?b?ZGFsxaHDrWNoIG5vdsO9Y2ggcHJhY292bsOtY2g=?= pozic",
+      "sender": "\"Jan, Jooble\" <subscribe@cz.jooble.org>",
+      "date": "2025-08-26T15:29:17+00:00",
+      "document_type": "official",
+      "confidence": 0.6,
+      "paperless_id": 6366,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.OFFICIAL",
+        "confidence": 0.6,
+        "details": {
+          "method": "text_patterns",
+          "matched": "official_keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<699672808.22920476@emlgrid.com699672808>",
+      "subject": "=?UTF-8?Q?=F0=9F=8E=A7_=C4=8Clov=C4=9Bk_vs._Marsovsk=C3=A1_hore=C4=8Dk?=\r\n =?UTF-8?Q?a_|_nov=C3=BD_sci-fi_audioseri=C3=A1l_=E2=AD=90=EF=B8=8F?=",
+      "sender": "Audioteka <audioknihy@audioteka.com>",
+      "date": "2025-08-26T17:42:00+02:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 9882,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<sKMrE4qYSfOx5F9lWtOvAA@geopod-ismtpd-4>",
+      "subject": "Details About the First iPhone Foldable Are Coming Into Focus",
+      "sender": "CNET Insider <team@email.cnet.com>",
+      "date": "2025-08-26T16:01:43+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<A2.F8.54706.8ECDDA86@i-04c9f90d4495e38a4.mta1vrest.sd.prd.sparkpost>",
+      "subject": "Can You Guess What's Coming?",
+      "sender": "\"Leonardo.Ai\" <hello@m.leonardo.ai>",
+      "date": "2025-08-26T16:12:24+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250826163029.feebee77578c295f@cio51825.make.com>",
+      "subject": "Important update: Credits as our new billing unit are coming tomorrow",
+      "sender": "Make <info@make.com>",
+      "date": "2025-08-26T16:30:29+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<majpCOWS_113662_$6c2e6486441b430f8fb0e4759125ac26@deals.aliexpress.com>",
+      "subject": "=?UTF-8?Q?F=C3=BCr_nur_0.01=E2=82=AC_ist_dieser_Artikel_Ihrer?=",
+      "sender": "AliExpress <ae-market.ae0@deals.aliexpress.com>",
+      "date": "2025-08-26T09:38:44-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<6ee8cc52-829d-11f0-85b2-bb1127e97249@novinky.oneplay.cz>",
+      "subject": "=?UTF-8?B?SGVsbOKAmXMgS2l0Y2hlbiAyIGplIHR1ISBBIHDFmWljaMOhesOt?=\r\n =?UTF-8?B?IGkgTmEgbm/FvmUgU0sgYSBGYXJtYSBTSyDwn6Wz?=",
+      "sender": "\"Oneplay - novinky\" <novinky@novinky.oneplay.cz>",
+      "date": "2025-08-26T16:55:11+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<WRuelYWSv_knnvCYveoa3cnEWrCaedodrs0cbs7Huy5kXUcTDuroyi9YKqMx5rYqX2SBhOGfCYeRdW8MsAiPyF5Jd0VsdjcRqKxaykmWLJfdqfP-7in-7hzwBFMo9hAmIY2iGA_DUmKa2YgWAAECAA==@t1.msgid.quoramail.com>",
+      "subject": "=?utf-8?q?War_Adolf_Hitler_daf=C3=BCr_bekannt=2C_ein_Workaholic_zu_sein=3F?=",
+      "sender": "Quora Digest <german-personalized-digest@quora.com>",
+      "date": "2025-08-26T16:59:09+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<D3.41.34775.139EDA86@i-06bb23131ad381290.mta3vrest.sd.prd.sparkpost>",
+      "subject": "Entdecke beliebte Alternativen zu: Skoda Enyaq",
+      "sender": "\"AutoScout24 Fahrzeugsuche\" <savedsearches@notifications.autoscout24.com>",
+      "date": "2025-08-26T17:04:49+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<b593c6ecbe1d4c1f8b1492e0d9a98465@easeus.com>",
+      "subject": "Ready for Faster Video Downloads? Discover How!",
+      "sender": "EaseUS <knowledgebase@easeus.com>",
+      "date": "2025-08-26T17:24:54+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 4951,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<68adf75d.050a0220.33d1be.d9c1googlealerts@google.com>",
+      "subject": "=?UTF-8?Q?Google_Alert_=E2=80=93_tesla?=",
+      "sender": "Google Alerts <googlealerts-noreply@google.com>",
+      "date": "2025-08-26T11:05:17-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<4F.B6.12665.D68FDA86@i-0623289eec09cd383.mta3vrest.sd.prd.sparkpost>",
+      "subject": "Give your website its special vibe  ",
+      "sender": "\"Elementor\" <team@user-mail.elementor.com>",
+      "date": "2025-08-26T18:09:49+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250826195027.c1dd10c209c5fcfb@cio113585.email.heygen.com>",
+      "subject": "Avatar IV Digital Twin is here",
+      "sender": "HeyGen <no_reply@email.heygen.com>",
+      "date": "2025-08-26T19:50:27+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 4924,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<k0QVJPaSTtCzOsr20vFIsg@geopod-ismtpd-32>",
+      "subject": "4 =?UTF-8?B?cHJvYmzDqW3Frw==?= konzistence nalezeno na Puzikovi Web\r\n Site (26. srpna 2025)",
+      "sender": "MyHeritage Tree Consistency Checker <notification@myheritage.com>",
+      "date": "2025-08-26T20:03:55+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250826202630.916b7ff9f32f55b8@email.anthropic.com>",
+      "subject": "[Research preview] Help us develop safe browser AI",
+      "sender": "Anthropic Team <team@email.anthropic.com>",
+      "date": "2025-08-26T20:26:30+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<1756266994749_113709_2265726_2530.sc-10-2-255-203-inbound0@user-service.klingai.com>",
+      "subject": "=?utf-8?q?Introducing_Ultra_Plan!_Get_26=2C000_Credits_Monthly_at_Just_36?=\r\n =?utf-8?q?=25_of_the_Price?=",
+      "sender": "kling@user-service.klingai.com",
+      "date": "2025-08-27T11:56:34+08:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01010198ea4383f9-8ae893c3-7491-4ca4-b90c-d4d8911f7b02-000000@us-west-2.amazonses.com>",
+      "subject": "Your Orbital Labs subscription will renew soon",
+      "sender": "Orbital Labs <upcoming-invoice@billing.orbstack.dev>",
+      "date": "2025-08-27T06:42:30+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<83.A4.36811.04DAEA86@i-07d1f31f9d533d2c6.mta3vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?SmXFoXTEmyBWw6FzIHphasOtbcOhIGRlc3RpbmFjZSBIdXJnaGFk?=\r\n\t=?utf-8?B?YT8gTcOhbWUgbmFiw61ka3kgamnFviBvZCA5MSBLxI0h?=",
+      "sender": "\"Booking.com\" <email.campaign@sg.booking.com>",
+      "date": "2025-08-27T07:01:20+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<175627983227.1.16198161155449034321@notifications-worker-854b69cd56-6xtz9>",
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Latest=20global=20news=20summary?=",
+      "sender": "OpenAI <noreply@tm.openai.com>",
+      "date": "2025-08-27T07:30:34+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<175627987265.1.3943219971584824421@notifications-worker-5885449d4d-4xcqj>",
+      "subject": "=?utf-8?Q?[Novinky=20o=20=C3=BAloze]=20Global=20trade=20and=20security=20updates?=",
+      "sender": "OpenAI <noreply@tm.openai.com>",
+      "date": "2025-08-27T07:31:13+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<E8.79.08675.464BEA86@i-003b1fd951a8e785d.mta1vrest.sd.prd.sparkpost>",
+      "subject": "Master Character, Style & Content Reference",
+      "sender": "\"Leonardo.Ai\" <hello@m.leonardo.ai>",
+      "date": "2025-08-27T07:31:48+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<68aeb496.630a0220.17fe06.e854SMTPIN_ADDED_MISSING@mx.google.com>",
+      "subject": "=?utf-8?q?Zuzana_Puzikova_Softel_Consulting_sroIng=2E=2CThank_you=26=2439_Special_Gift_for__you?=",
+      "sender": "weiwei.niu@rokid.com",
+      "date": "2025-08-27T00:32:38-07:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250827110321.MKT24179198830@mailing.applemix.cz>",
+      "subject": "Novinky a slevy na e-shopu",
+      "sender": "\"AppleMix.cz\" <info@mailing.applemix.cz>",
+      "date": "2025-08-27T11:03:21+02:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 2184,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<1e9e88d2-29be-45da-bdc4-df492ba9a688.yixuan.li@rokid.com>",
+      "subject": "=?UTF-8?B?WnV6YW5hIFB1emlrb3ZhIFNvZnRlbCBDb25zdWx0aW5nIHNyb0luZyxUaGFuayB5b3UmJDM5?=\r\n  =?UTF-8?B?IFNwZWNpYWwgR2lmdCBmb3IgeW91?=",
+      "sender": "\"=?UTF-8?B?5p2O6Iuh6JCx?=\" <yixuan.li@rokid.com>",
+      "date": "2025-08-27T17:17:23+08:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198eb32304f-ba8c1971-d2f6-4921-b1c0-6040c03fbd96-000000@email.amazonses.com>",
+      "subject": "=?UTF-8?Q?Turn_Any_Website_into_an_App_?=\r\n =?UTF-8?Q?=E2=80=94_Because_Users_Live_on_Mobile?=",
+      "sender": "Appy Pie <noreply@appypie.com>",
+      "date": "2025-08-27T11:03:11+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250827170028.45a53b419c75a59c@admin.manus.im>",
+      "subject": "Stop Copy/Paste. Just Forward Emails to Manus.",
+      "sender": "Manus <info@admin.manus.im>",
+      "date": "2025-08-27T17:00:28+00:00",
+      "document_type": "contract",
+      "confidence": 0.7,
+      "paperless_id": 2520,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.CONTRACT",
+        "confidence": 0.7,
+        "details": {
+          "method": "text_patterns",
+          "matched": "contract_keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198eca684ff-c22322ce-56d1-4b01-9c5d-da3256837b97-000000@email.amazonses.com>",
+      "subject": "Your receipt from Celonis Inc. #2217-4825",
+      "sender": "\"Celonis Inc.\" <invoice+statements@make.com>",
+      "date": "2025-08-27T17:49:52+00:00",
+      "document_type": "invoice",
+      "confidence": 0.62,
+      "paperless_id": 8496,
+      "attachments": [
+        "/tmp/gmail_processing/Invoice-AFF400B5-0008.pdf",
+        "/tmp/gmail_processing/Receipt-2217-4825.pdf"
+      ],
+      "classification": {
+        "document_type": "DocumentType.INVOICE",
+        "confidence": 0.62,
+        "details": {
+          "file": "Invoice-AFF400B5-0008.pdf",
+          "is_invoice": true,
+          "confidence": 62.0,
+          "confidence_level": "MEDIUM",
+          "region": "US",
+          "score_breakdown": {
+            "critical_elements": 15,
+            "mandatory_elements": 10,
+            "regional_specifics": 7,
+            "visual_elements": 0,
+            "financial_data": 15,
+            "formatting": 0,
+            "bonus_points": 15,
+            "negative_points": 0,
+            "total_score": 62
+          },
+          "details": {
+            "found_elements": [
+              "Invoice keyword: invoice",
+              "Tax ID found",
+              "Currency $ found",
+              "6 amounts found",
+              "Financial calculations present"
+            ],
+            "negative_elements": [],
+            "region": "US"
+          },
+          "recommendation": "⚠️ Možná faktura - vyžaduje manuální kontrolu"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01010198ecb111ea-b74bd318-0f0f-4048-944f-68fb095985ae-000000@us-west-2.amazonses.com>",
+      "subject": "Your receipt from Krea #2224-2180",
+      "sender": "Krea <invoice+statements+acct_1LPa3lEv2gutweVt@stripe.com>",
+      "date": "2025-08-27T18:01:24+00:00",
+      "document_type": "invoice",
+      "confidence": 0.57,
+      "paperless_id": 2683,
+      "attachments": [
+        "/tmp/gmail_processing/Invoice-0CD12EE1-0011.pdf",
+        "/tmp/gmail_processing/Receipt-2224-2180.pdf"
+      ],
+      "classification": {
+        "document_type": "DocumentType.INVOICE",
+        "confidence": 0.57,
+        "details": {
+          "file": "Receipt-2224-2180.pdf",
+          "is_invoice": true,
+          "confidence": 56.99999999999999,
+          "confidence_level": "MEDIUM",
+          "region": "US",
+          "score_breakdown": {
+            "critical_elements": 30,
+            "mandatory_elements": 10,
+            "regional_specifics": 7,
+            "visual_elements": 0,
+            "financial_data": 15,
+            "formatting": 0,
+            "bonus_points": 10,
+            "negative_points": -15,
+            "total_score": 57
+          },
+          "details": {
+            "found_elements": [
+              "Invoice keyword: invoice",
+              "Invoice number found",
+              "Tax ID found",
+              "Currency $ found",
+              "7 amounts found",
+              "Financial calculations present"
+            ],
+            "negative_elements": [
+              "Negative indicator: receipt"
+            ],
+            "region": "US"
+          },
+          "recommendation": "⚠️ Možná faktura - vyžaduje manuální kontrolu"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<6F.A3.00764.5C84FA86@i-093db9b5346472a44.mta3vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?ICBZb3XigJlyZSBJbnZpdGVkIHRvIFVwZ3JhZGUgdG8gYSBIaWdo?=\r\n\t=?utf-8?B?ZXIgUGxhbg==?=",
+      "sender": "\"Elementor\" <team@user-mail.elementor.com>",
+      "date": "2025-08-27T18:04:53+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<4356e64ddf31edc83b680ada45c0d32f@ekonomicke-stavby.cz>",
+      "subject": "=?utf-8?Q?Pohodov=C3=A1?= stavba =?utf-8?Q?=E2=80=93?= stavte\r\n =?utf-8?Q?bezpe=C4=8Dn=C4=9B=2C_zapla=C5=A5te_d=C5=AFm_a=C5=BE?= po\r\n =?utf-8?Q?nast=C4=9Bhov=C3=A1n=C3=AD?=",
+      "sender": "=?utf-8?Q?Ekonomick=C3=A9?= stavby =?utf-8?Q?s=2Er=2Eo=2E?=\r\n <newsletter@ekonomicke-stavby.cz>",
+      "date": "2025-08-27T23:00:06+02:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<a3a29ab1-564d-74df-d0b5-e0ebbebfa82d@em9000.epochtimes.de>",
+      "subject": "=?UTF-8?Q?=E2=80=9EKI_f=C3=BCr_Demokratie=E2=80=9C?=\r\n =?UTF-8?Q?_findet_rechtes_Gedankengut_f=C3=BCr_Beh?=\r\n =?UTF-8?Q?=C3=B6rden=2C_Medien_und_NGOs?=",
+      "sender": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "2025-08-28T04:01:25+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<INXCOM3.prd-hornbach-cz.x.ncx7bbfv2ejfkvtmlrmq.vcmbldmvrzel3e2kwggmh2yiwq@tr.inxmail-commerce.com>",
+      "subject": "=?UTF-8?Q?Va=C5=A1e_objedn=C3=A1vka_DV9043230152?=",
+      "sender": "\"Hornbach.cz (no reply)\" <no-reply@hornbach.cz>",
+      "date": "2025-08-28T06:00:36+00:00",
+      "document_type": "contract",
+      "confidence": 0.7,
+      "paperless_id": 8073,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.CONTRACT",
+        "confidence": 0.7,
+        "details": {
+          "method": "text_patterns",
+          "matched": "contract_keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<DU0PR10MB73108D69144E14914D711E68A93BA@DU0PR10MB7310.EURPRD10.PROD.OUTLOOK.COM>",
+      "subject": "=?windows-1250?Q?Re:_Novinka_-_Sa=FAdsk=E1_Ar=E1bie_a_Bahrajn!?=",
+      "sender": "\"majpuzik@gmail.com\" <majpuzik@gmail.com>",
+      "date": "2025-08-28T10:03:41+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<INXCOM3.prd-hornbach-cz.x.ncyfvsjebr46wn4xmtea.6g4nduwyr5bgtm2gds5ujt3cru@tr.inxmail-commerce.com>",
+      "subject": "=?UTF-8?Q?Va=C5=A1e_objedn=C3=A1vka_je_na_cest=C4=9B?=",
+      "sender": "\"Hornbach.cz (no reply)\" <no-reply@hornbach.cz>",
+      "date": "2025-08-28T13:34:01+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<1756398622489_113709_1213523_1490.sc-10-2-255-198-inbound0@user-service.klingai.com>",
+      "subject": "=?utf-8?q?Exclusive_Offer=3A_KLING_2=2E1_Master_40=25_OFF_for_Subscribers?=\r\n =?utf-8?q?!?=",
+      "sender": "kling@user-service.klingai.com",
+      "date": "2025-08-29T00:30:22+08:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<INXCOM3.prd-hornbach-cz.x.ncyix5zebr46wn42asyq.aua6acrd2rachou3y2j2gzqkze@tr.inxmail-commerce.com>",
+      "subject": "=?UTF-8?Q?Va=C5=A1e_faktura?=",
+      "sender": "\"Hornbach.cz (no reply)\" <no-reply@hornbach.cz>",
+      "date": "2025-08-28T17:03:51+00:00",
+      "document_type": "invoice",
+      "confidence": 0.7,
+      "paperless_id": 7899,
+      "attachments": [
+        "/tmp/gmail_processing/3027957899.pdf"
+      ],
+      "classification": {
+        "document_type": "DocumentType.INVOICE",
+        "confidence": 0.7,
+        "details": {
+          "file": "3027957899.pdf",
+          "is_invoice": true,
+          "confidence": 70.0,
+          "confidence_level": "MEDIUM",
+          "region": "CZ",
+          "score_breakdown": {
+            "critical_elements": 15,
+            "mandatory_elements": 20,
+            "regional_specifics": 15,
+            "visual_elements": 0,
+            "financial_data": 15,
+            "formatting": 0,
+            "bonus_points": 5,
+            "negative_points": 0,
+            "total_score": 70
+          },
+          "details": {
+            "found_elements": [
+              "Invoice keyword: faktura",
+              "Tax ID found",
+              "VAT ID found",
+              "VAT rate 21% found",
+              "Currency CZK found",
+              "19 amounts found",
+              "Financial calculations present"
+            ],
+            "negative_elements": [],
+            "region": "CZ"
+          },
+          "recommendation": "⚠️ Možná faktura - vyžaduje manuální kontrolu"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<DJvl_9vw-NnDohhPP3j3wBS-GL6-_JH4644_Kj-KoMpdizBu1qzVA719Z8QG8_T23cpmgOUjL4Sxul_BgU8tpKRj_u6xHKHWlQtg_ruUXAfrd5Fj8FJWWYOMjblHQo2kqvh5rRVufAnjyAABAgA=@t1.msgid.quoramail.com>",
+      "subject": "=?utf-8?q?Are_Jews_mainly_ukranian_Russian_and_German=3F?=",
+      "sender": "Quora Digest <english-quora-digest@quora.com>",
+      "date": "2025-08-28T17:40:14+00:00",
+      "document_type": "medical",
+      "confidence": 0.65,
+      "paperless_id": 5832,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.MEDICAL",
+        "confidence": 0.65,
+        "details": {
+          "method": "text_patterns",
+          "matched": "medical_keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<d0fe3ace-9028-4e95-b675-3a180a5d558d@DPD-POSTMAN.dpd.cz>",
+      "subject": "V���� bal��cek je na ceste",
+      "sender": "<NOREPLY@dpd.cz>",
+      "date": "2025-08-28T18:17:59+02:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [
+        "/tmp/gmail_processing/header.png",
+        "/tmp/gmail_processing/footer.png",
+        "/tmp/gmail_processing/spacer.gif"
+      ],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<dea5577c-1094-493f-914c-64b639f092be@iad4s12mta347.xt.local>",
+      "subject": "Shop Back to School Sales for GeForce Laptops",
+      "sender": "\"NVIDIA GeForce\" <gaming@nvgaming.nvidia.com>",
+      "date": "2025-08-28T14:12:07-06:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198f362a468-119ee491-e32e-4832-ace6-1a495762fcfe-000000@email.amazonses.com>",
+      "subject": "=?UTF-8?Q?We=E2=80=99re_Updating_our_Consumer_Terms_and_Privacy_Policy?=",
+      "sender": "Anthropic Team <notice@email.anthropic.com>",
+      "date": "2025-08-29T01:13:04+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 1828,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<958e4b5a-ce08-0f98-9bee-c071c1b6ad03@em9000.epochtimes.cz>",
+      "subject": "=?UTF-8?Q?N=C4=9Bmecko_identifikovalo_podez=C5=99e?=\r\n =?UTF-8?Q?l=C3=A9_ze_sabot=C3=A1=C5=BEe_na_Nord_St?=\r\n =?UTF-8?Q?ream=3B_Ma=C4=8Farsko_za=C5=BEalovalo_EU?=\r\n =?UTF-8?Q?_kv=C5=AFli_obejit=C3=AD_veta=3B_Farm?=\r\n =?UTF-8?Q?=C3=A1=C5=99i_a_um=C4=9Bl=C3=A1_intelige?= =?UTF-8?Q?nce=20?=",
+      "sender": "=?UTF-8?Q?Epoch_Times_=C4=8CR?= <newsletter@epochtimes.cz>",
+      "date": "2025-08-29T03:53:35+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<3b3b6c77-d41f-6634-a3c3-6cc28cf40e18@em9000.epochtimes.de>",
+      "subject": "=?UTF-8?Q?USA_widerruft_Notfallzulassung_f=C3=BCr_?=\r\n =?UTF-8?Q?COVID-19-Impfstoffe_=E2=80=93_CDC-Direkt?=\r\n =?UTF-8?Q?orin_entlassen?=",
+      "sender": "Epoch Guten Morgen <newsletter@epochtimes.de>",
+      "date": "2025-08-29T04:00:54+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<_LB5kmf5Ih47w0R4fHl6NUN4D_n_tJbzMJqMo2GP8W1Omjn3WnztU4pdn4PSuHRMGwyk6fVhjz1nCr_yen66k_ABNj5dNTH6nUvllguNB_CCjvj73n1iHYyAaFeO5MgwNlaIMoY_ygmv95F-AAECAA==@t1.msgid.quoramail.com>",
+      "subject": "=?utf-8?q?Meine_Tochter_hat_sich_in_einen_syrischen_Fl=C3=BCchtling_verliebt?=\r\n =?utf-8?q?=2E_Muss_ich_mir_Sorgen_ma=2E=2E=2E=3F?=",
+      "sender": "Quora Digest <german-personalized-digest@quora.com>",
+      "date": "2025-08-29T04:35:08+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<dd5228c0-1dd1-42e9-96e9-66ac819a8065@iad4s12mta355.xt.local>",
+      "subject": "NVIDIA Blackwell RTX is coming to the cloud",
+      "sender": "\"NVIDIA GeForce NOW\" <gaming@nvgaming.nvidia.com>",
+      "date": "2025-08-28T21:02:11-06:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<A8.46.38563.14F41B86@i-0e7ab2fdf9aa000f5.mta3vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?QWt0dcOhbG7EmyB2IElzY2hpaSDigJMgdnliZXJ0ZSBzaSB0eSBu?=\r\n\t=?utf-8?B?ZWpsZXDFocOtIGNlbnk=?=",
+      "sender": "\"Booking.com\" <email.campaign@sg.booking.com>",
+      "date": "2025-08-29T06:57:05+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 2445,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<6f287bf5-2a5e-46fd-9285-3556c0e31cd5@DPD-POSTMAN.dpd.cz>",
+      "subject": "Dnes V��m doru����me bal����ek",
+      "sender": "<NOREPLY@dpd.cz>",
+      "date": "2025-08-29T10:00:37+02:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [
+        "/tmp/gmail_processing/header.png",
+        "/tmp/gmail_processing/footer.png",
+        "/tmp/gmail_processing/spacer.gif"
+      ],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<1756458024720.62ee303a-689e-4253-982c-b71301e77f52@bf53x.hubspotemail.net>",
+      "subject": "=?utf-8?Q?You_shipped_a_Website_builder_overnight_=F0=9F=AA=84?=",
+      "sender": "Suren from 10Web <product@10web.io>",
+      "date": "2025-08-29T13:00:25+04:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<PATT3L1124_44858188_a7saeZnCKK8LcyjA-nycE1S1cUUuhsgyXHYkliHhADIIHCBP3Sjj-7AYBh8seKtrzCXbKGX8opo5MnOzizK7vvWqPE7R2UH9sIFAVJlM55W-nBd/stkso7QBAcbOFmya.8A66@webgride176.slgnt.de>",
+      "subject": "=?utf-8?B?Q09ESUpZIENvbG9yaXplciBQUk/igaAg?=\r\n =?utf-8?B?LSBXZXJkZSB6dW0gTWVpc3RlciBkZQ==?=\r\n =?utf-8?B?ciBGYXJia29sb3JpZXJ1bmch?=",
+      "sender": "\"Ashampoo News\" <info@news.ashampoo.com>",
+      "date": "2025-08-29T09:06:46+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<ZbVGHH9jT7q6t2RhaTkylg@geopod-ismtpd-1>",
+      "subject": "Cestujete do destinace Ischia? Zde jsou\r\n =?UTF-8?B?YWt0dcOhbG7DrSBjZW55IPCfk6k=?=",
+      "sender": "\"Booking.com\" <email.campaign@sg.booking.com>",
+      "date": "2025-08-29T09:07:08+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<202529081133327EA6804A4D$6903B48512@minkner.eu>",
+      "subject": "Newsletter | Minkner & Bonitz",
+      "sender": "\"Minkner & Partner S.L. | Mallorca Immobilien\" <Newsletter@minkner.eu>",
+      "date": "2025-08-29T11:33:33+02:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01020198f537bd6c-fb380a62-6ae0-4a48-990c-51419974a2ba-000000@eu-west-1.amazonses.com>",
+      "subject": "Network alert on AZURO2G",
+      "sender": "Fing Alert <alert@fing.com>",
+      "date": "2025-08-29T09:45:27+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01020198f537f3d8-0e152a0c-7aa5-4547-b76c-b2d7f8a1e46d-000000@eu-west-1.amazonses.com>",
+      "subject": "New: cubee @ MAJSYNO5",
+      "sender": "Fing Alert <alert@fing.com>",
+      "date": "2025-08-29T09:45:41+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198f540e6f6-10314b55-fb26-42e3-86df-a663c2273b16-000000@email.amazonses.com>",
+      "subject": "Daily Overview for Bressner",
+      "sender": "Manage It <noreply@manageitapp.com>",
+      "date": "2025-08-29T09:55:28+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<E1020005-186034BEDBD26C77-EBE83350@shopify.com>",
+      "subject": "=?UTF-8?B?8J+RiSBUb2dldGhlciwgd2XigJlyZQ==?= the RayCue Retro\r\n Series:Old-school look. New-school brains.",
+      "sender": "RayCue <support@raycue.com>",
+      "date": "2025-08-29T10:04:09+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<0.0.2F.DC6.1DC18CDE6368508.0@mta-2d56747f.ip4.emsmtp.us>",
+      "subject": "=?UTF-8?Q?=E2=9A=A1Flash=20Sale!=20Save=20Up=20to=20=35=30=25?=",
+      "sender": "\"Creality EU\" <marketing@send.store.creality.com>",
+      "date": "2025-08-29T12:15:52+02:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 9117,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<20250829112348.b30a0f9f3e7d5ff6@moje.sledovanitv.cz>",
+      "subject": "=?UTF-8?b?8J+SmSBOZXp2cmF0bsO9IG9zdWQ6IFBva3Jldm7DrSBsaW5pZSBpIG1hcmF0?=\r\n =?UTF-8?b?b24gWnLDoWRjxa8=?=",
+      "sender": "=?utf-8?b?TWFydcWha2EgemUgU2xlZG92YW5pVFY=?= <info@moje.sledovanitv.cz>",
+      "date": "2025-08-29T11:23:48+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<063c2b27-41e8-fd16-7aad-63f7a74b3239@em9000.epochtimes.cz>",
+      "subject": "=?UTF-8?Q?Man=C5=BEelka_Bruce_Willise_o_hercov?=\r\n =?UTF-8?Q?=C4=9B_boji_s_t=C4=9B=C5=BEkou_nemoc?=\r\n =?UTF-8?Q?=C3=AD=3B_Dvoj=C4=8Data_porodila_t=C3=A9?=\r\n =?UTF-8?Q?m=C4=9B=C5=99_ve_stejn=C3=BD_den=3B_Fasc?=\r\n =?UTF-8?Q?inuj=C3=ADc=C3=AD_kr=C3=A1sa_zv=C3=AD?= =?UTF-8?Q?=C5=99ete?=",
+      "sender": "=?UTF-8?Q?Inspirace_od_Epoch_Times_=C4=8CR?=\r\n <newsletter@epochtimes.cz>",
+      "date": "2025-08-29T11:27:59+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198f59ce4f0-5c8bcad2-ed76-4505-a8f3-716867fe542b-000000@email.amazonses.com>",
+      "subject": "=?UTF-8?Q?=F0=9F=8C=8D_You_can_have_all_of_Wikipe?=\r\n =?UTF-8?Q?dia_for_yourself_with_just_a_R?=\r\n =?UTF-8?Q?aspberry_Pi_=E2=98=A0=EF=B8=8F_R.I.P_to_a_Wind?=\r\n =?UTF-8?Q?ows_app_we_didn't_know_existed?=",
+      "sender": "XDA <newsletter@xda-developers.com>",
+      "date": "2025-08-29T11:35:56+00:00",
+      "document_type": "spam",
+      "confidence": 0.95,
+      "paperless_id": 429,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.SPAM",
+        "confidence": 0.95,
+        "details": {
+          "spam_indicators": "Contains spam keywords"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<notificationstwo.20250829113735.345c7dd97174079c45ce5530e8da4d68dc5a6757@allegro.pl>",
+      "subject": "=?UTF-8?Q?Kup=C3=B3n_na_300_K=C4=8D_brzy_vypr=C5=A1=C3=AD!?=",
+      "sender": "=?utf-8?q?Allegro?= <info@notifikace.allegro.cz>",
+      "date": "2025-08-29T13:37:35+02:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<99.A8.27181.5B791B86@i-023220bd6c5741581.mta1vrest.sd.prd.sparkpost>",
+      "subject": "=?utf-8?B?TcOhdGUgY2hhb3MgdiBtYXJrZXRpbmd1PyBOZW9kcG92w61kYWo=?=\r\n\t=?utf-8?B?w60gdsOhbSBuYSBlLW1haWx5PyBNw6FtZSDFmWXFoWVuw60u?=",
+      "sender": "\"Everbot\" <info@everbot.cz>",
+      "date": "2025-08-29T12:06:09+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<88ba0907-4dee-4bfc-914d-f7fa6026d8b4@cdg3s51mta264.xt.local>",
+      "subject": "=?UTF-8?B?8J+amCAxIG5ldWVzIEZhaHJ6ZXVnIGbDvHIgZGljaA==?=",
+      "sender": "\"mobile.de Suchauftrag\" <noreply@dein.mobile.de>",
+      "date": "2025-08-29T06:12:19-06:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<Or_3pVZySvqVYSIEQADoHw@geopod-ismtpd-1>",
+      "subject": "=?UTF-8?B?NMKga3Jva3kga8KgbGV2bsSbasWhw61tIGxldMWvbSDinIjvuI8=?=",
+      "sender": "Skyscanner <no-reply@sender.skyscanner.com>",
+      "date": "2025-08-29T12:30:55+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    },
+    {
+      "message_id": "<01000198f5de3502-073c50e3-184b-4b62-a681-ffe772f54762-000000@email.amazonses.com>",
+      "subject": "=?UTF-8?Q?=F0=9F=93=84_=22Hradn=C3=AD_kaple_na?=\r\n =?UTF-8?Q?_Hasi=C5=A1tejn=C4=9B._In:_Hrady_=C4=8Desk=C3=A9ho?=\r\n =?UTF-8?Q?_severoz=C3=A1padu,_Sborn=C3=ADk_k_=C5=BEivotn=C3=ADmu_jubileu?=\r\n =?UTF-8?Q?_prof._Tom=C3=A1=C5=A1e_Durd=C3=ADka._Ed._Jana_Kuljavceva?=\r\n =?UTF-8?Q?_Hlavov=C3=A1_/_Old=C5=99ich_Kotyza_/_Milan_S=C3=BDkora,?=\r\n =?UTF-8?Q?_=C3=9Ast=C3=AD_nad_Labem_2012,_287-304=22_by_Franti=C5=A1ek?=\r\n =?UTF-8?Q?_Z=C3=A1ruba?=",
+      "sender": "=?UTF-8?B?UERGIEJ5IEZyYW50acWhZWsgWsOhcnViYQ==?= <updates@academia-mail.com>",
+      "date": "2025-08-29T12:47:17+00:00",
+      "document_type": "unclear",
+      "confidence": 0.3,
+      "paperless_id": null,
+      "attachments": [],
+      "classification": {
+        "document_type": "DocumentType.UNCLEAR",
+        "confidence": 0.3,
+        "details": {
+          "method": "text_patterns",
+          "matched": "none"
+        },
+        "method": "combined_analysis"
+      }
+    }
+  ]
+}

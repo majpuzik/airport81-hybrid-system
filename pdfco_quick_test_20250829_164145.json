@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-08-29T16:41:45.568617",
+  "results": [
+    {
+      "filename": "Plyn22-23.pdf",
+      "document_type": "faktura",
+      "confidence": 0.8,
+      "text_length": 21344,
+      "metadata": {
+        "IČO": "16188047",
+        "částka": "                            43 220 "
+      },
+      "first_200_chars": "[Link]\r\nhttps://moje.mnd.cz/login\r\n                                                                       #I2319225#203#304409928#\r\n\r\n                                          Číslo daňového dokladu: "
+    },
+    {
+      "filename": "Dealerská smlouva Cubee.pdf",
+      "document_type": "faktura",
+      "confidence": 0.8,
+      "text_length": 25780,
+      "metadata": {
+        "IČO": "07906081",
+        "datum": "8.8.2025"
+      },
+      "first_200_chars": "               Dealerská smlouva \r\n                            DEALERSKÁ SMLOUVA \r\n                                      (Smlouva o obchodní spolupráci) \r\n                   kterou níže uvedeného dne,"
+    },
+    {
+      "filename": "CertifikatTestu-1 –covid puzik.pdf",
+      "document_type": "certifikát",
+      "confidence": 0.75,
+      "text_length": 4531,
+      "metadata": {},
+      "first_200_chars": "[Link]\r\nhttps://reopen.europa.eu/en\r\n           EU Digital \r\n      COVID Certificate\r\n         Certifikát EU \r\n        COVID-19\r\n                                                          Surname(s) an"
+    }
+  ]
+}

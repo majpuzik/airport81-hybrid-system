@@ -1,0 +1,368 @@
+{
+  "timestamp": "2025-08-02T20:29:21.371675",
+  "total_processed": 1000,
+  "successful_extractions": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 582,
+    "unknown": 276,
+    "receipt": 16,
+    "subscription": 20,
+    "order": 64,
+    "contract": 35,
+    "bank_statement": 7
+  },
+  "error_types": {},
+  "sample_results": [
+    {
+      "file": "Obchodujte jako profík. S TradingView 📈-202410021236-_Coinmate_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "text_length": 2707,
+      "text_preview": "Subject: Obchodujte jako profík. S TradingView \n📈From: \"Coinmate\" <crypto@voice.coinmate.io>Date: 10/2/24, 12:36 PMTo: <majpuzik@gmail.com>Pokud se vám email nezobrazuje, klikněte zde\nVíce než 100 růz..."
+    },
+    {
+      "file": "NOVINKY! GIGA nálož nově přidaných produktů je tu.-202503231037-GIGACOMPUTER TÝM.pdf",
+      "type": "invoice",
+      "score": 13,
+      "text_length": 2520,
+      "text_preview": "Subject: NOVINKY! GIGA nálož nově přidaných produktů je tu.From: GIGACOMPUTER TÝM <gigacomputer@vm.gigacomputer.cz>Date: 3/23/25, 10:37 AMTo: <puzik@outlook.com>\nOtevřít v prohlížeči\nNOVINKY! GIGA nál..."
+    },
+    {
+      "file": "Lagebericht 23.09.2024-202409231504-_Kopp Report_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 1100,
+      "text_preview": "Lagebericht vom 23.09.2024\n+++ Ostwahlen, die Dritte: Das »Brandenburger Konzert« des AfD-Verhinderungskartells +++Subject: Lagebericht 23.09.2024From: \"Kopp Report\" <newsletter@kopp-verlag.de>Date: 9..."
+    },
+    {
+      "file": "🐣5-Day Easter Blitz_ Up to $500 Off Your Faves!-202504161703-_xTool_.pdf",
+      "type": "invoice",
+      "score": 8,
+      "text_length": 1874,
+      "text_preview": "Subject: \n🐣5-Day Easter Blitz: Up to $500 Off Your Faves!From: \"xTool\" <marketing@edm.xtool.com>Date: 4/16/25, 5:03 PMTo: <majpuzik@gmail.com>If this e-mail is not displayed properly, click here.\n🐣5-D..."
+    },
+    {
+      "file": "Watch your setup burst to life-202406061903-_Elgato_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 638,
+      "text_preview": "Subject: Watch your setup burst to lifeFrom: \"Elgato\" <elgato@news.elgato.com>Date: 6/6/24, 7:03 PMTo: <puzikmilan@protonmail.ch>\nWatch your setup burst to life\n1 of 45/21/25, 7:25 AM$49.99Buy\nWatch y..."
+    },
+    {
+      "file": "Softel Consulting s.r.o., ⏰ Dubnové slevy pomalu k-202504251304-Klarstein výprodeje.pdf",
+      "type": "invoice",
+      "score": 12,
+      "text_length": 1912,
+      "text_preview": "Subject: Softel Consulting s.r.o., \n⏰ Dubnové slevy pomalu končí: stihnete je ještě využít?From: Klarstein výprodeje <news@mg.klarstein.com>Date: 4/25/25, 1:04 PMTo: <puzik@outlook.com>\nVinotékyProhlé..."
+    },
+    {
+      "file": "D.A. backs resentencing Menendez brothers, paving -202410251327-_Start Daily_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1363,
+      "text_preview": "Subject: D.A. backs resentencing Menendez brothers, paving possible path to freedomFrom: \"Start Daily\" <microsoft.start@email2.microsoft.com>Date: 10/25/24, 1:27 PMTo: <majpuzik@hotmail.com>\nStart Dai..."
+    },
+    {
+      "file": "Domaine de la Lôyane _ domaine incontournable du G-202408270700-_Guide Hachette des Vins_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "text_length": 2040,
+      "text_preview": "Subject: Domaine de la Lôyane : domaine incontournable du Guide Hachette !From: \"Guide Hachette des Vins\" <contact@news.hachette-vins.com>Date: 8/27/24, 7:00 AMTo: <puzik@outlook.com>Si vous avez des ..."
+    },
+    {
+      "file": "Wired Science Hub #46-202504010702-_WIRED_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "text_length": 4744,
+      "text_preview": "Subject: Wired Science Hub #46From: \"WIRED\" <info@wired.cz>Date: 4/1/25, 7:02 AMTo: <puzik@outlook.com>\nJak těhotenství změní ženské tělo? Proč ženy mnohem častěji než muži trpíAlzheimerovou chorobou?..."
+    },
+    {
+      "file": "Re_Last Call for CNC'ers-202408091527-_CNCCookbook_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1664,
+      "text_preview": "[LAST CALL] Sale endingThis is your last call for securing savings on our CNC Software, because I'm shutting thesale down Saturday (tomorrow).We have all our G-Wizard software on sale at great prices,..."
+    },
+    {
+      "file": "Die KI hat für euch in die Sterne geschaut-202406282056-.pdf",
+      "type": "invoice",
+      "score": 5,
+      "text_length": 6090,
+      "text_preview": "Subject: Die KI hat für euch in die Sterne geschautFrom: <plus@golem.de>Date: 6/28/24, 8:56 PMTo: <majpuzik@gmail.com>\nMehr Wissen, mehr Hintergründe.Informationen zu Ihrem Plus-AboDas KI-Horoskop für..."
+    },
+    {
+      "file": "Výhody vlastního bytu oproti nájmu - posuďte sami-202407241903-_CENTRAL GROUP_.pdf",
+      "type": "receipt",
+      "score": 5,
+      "text_length": 4486,
+      "text_preview": "Subject: Výhody vlastního bytu oproti nájmu - posuďte samiFrom: \"CENTRAL GROUP\" <novinky@central-group.cz>Date: 7/24/24, 7:03 PMTo: Vážená paní inženýrko, <puzik@outlook.com>Otevřít zprávu v prohlížeč..."
+    },
+    {
+      "file": "Efficient Disk Cloning Software for Windows 11_10_-202501101035-_EaseUS_.pdf",
+      "type": "subscription",
+      "score": 1,
+      "text_length": 4112,
+      "text_preview": "Subject: Efficient Disk Cloning Software for Windows 11/10/8/7, Manage Data Smooth and EasyFrom: \"EaseUS\" <vipnotification@easeus.com>Date: 1/10/25, 10:35 AMTo: <puzik@outlook.com>View this email in y..."
+    },
+    {
+      "file": "Fwd_ Fw_ nabidka na registraci u naseho praktickeh-202504081107-Martin Pužík.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1120,
+      "text_preview": "Subject: Fwd: Fw: nabidka na registraci u naseho praktickeho lekare!!!From: Martin Pužík <martin.puzik@gmail.com>Date: 4/8/25, 11:07 AMTo: \"M.A.J. Puzik\" <puzik@outlook.com>Našel jsem ten mail.-------..."
+    },
+    {
+      "file": "BIQU CryoGrip Pro - vynikající přilnavost při poko-202504060924-3DJake Česká republika.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 705,
+      "text_preview": "Subject: BIQU CryoGrip Pro - vynikající přilnavost při pokojové teplotě!From: 3DJake Česká republika <newsletter@3djake.com>Date: 4/6/25, 9:24 AMTo: <puzik@outlook.com>\nNevidíte žádné obrázky? Zobrazi..."
+    },
+    {
+      "file": "Vyberte si své Apple Watch!-202407221106-►DATART◄.pdf",
+      "type": "invoice",
+      "score": 10,
+      "text_length": 2297,
+      "text_preview": "Subject: Vyberte si svéApple Watch!To: <puzik@outlook.com>\n#elektrospecialista\nChytré hodinky Apple WatchSeries 9 GPS 41mm pouzdroz temně inkoustového hliníku- temně inkoustový sportovnířemínek - M/L ..."
+    },
+    {
+      "file": "Perfekte Portraits auf Knopfdruck – ohne aufwändig-202504231104-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "text_length": 3506,
+      "text_preview": "Subject: Perfekte Portraits auf Knopfdruck – ohne aufwändige Bildbearbeitung - Anthropics PortraitPro 24From: \"Ashampoo News\" <info@news.ashampoo.com>Date: 4/23/25, 11:04 AMTo: <majpuzik@gmail.com>Qua..."
+    },
+    {
+      "file": "🔌 Elektrocentrály skladem_ Připravte se na cokoli-202409170624-🛠 HobyNaradi.cz.pdf",
+      "type": "order",
+      "score": 9,
+      "text_length": 2166,
+      "text_preview": "Subject: \n🔌 Elektrocentrály skladem: Připravte se na cokoliv! \n⚡From: \n🛠 HobyNaradi.cz <info@hobynaradi.cz>Date: 9/17/24, 6:24 AMTo: <puzik@outlook.com>\nMáme opět skladem elektrocentrály na 230V i 380..."
+    },
+    {
+      "file": "Nutzen deine Liebsten Firefox_-202407300804-_Firefox_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 1363,
+      "text_preview": "Subject: Nutzen deine Liebsten Firefox?From: \"Firefox\" <ﬁrefox@mail.mozilla.org>Date: 7/30/24, 8:04 AMTo: <puzik@outlook.com>\nDD ee i i nn ee   a a r r m m ee nn   FF r r ee uu nn dd * * i i nn nn ee ..."
+    },
+    {
+      "file": "Tajný řád udržující rovnováhu mezi dobrem a zlem, -202412191401-_Voyo_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "text_length": 2633,
+      "text_preview": "Subject: Tajný řád udržující rovnováhu mezi dobrem a zlem, tajemství Illuminátů a závod s časemči Chantal v roli Šípkové Růženky!From: \"Voyo\" <novinky@novinky.voyo.cz>Date: 12/19/24, 2:01 PMTo: <majpu..."
+    },
+    {
+      "file": "Erstellt, verwaltet und sichert Deine Passwörter m-202409171104-_Ashampoo News_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "text_length": 3514,
+      "text_preview": "Subject: Erstellt, verwaltet und sichert Deine Passwörter mit maximaler Verschlüsselung - Sticky Password PremiumFrom: \"Ashampoo News\" <info@news.ashampoo.com>Date: 9/17/24, 11:04 AMTo: <majpuzik@gmai..."
+    },
+    {
+      "file": "Special Update_ 3-in-1 Smart Battery Charger, Test-202406271740-_PledgeBox_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 1499,
+      "text_preview": "Subject: Special Update: 3-in-1 Smart Battery Charger, Tester & OrganizerFrom: \"PledgeBox\" <newsletter@pledgebox.com>Date: 6/27/24, 5:40 PMTo: \"Dipl.\" <puzik@outlook.com>\n OO l l i i g g h h t t   OO ..."
+    },
+    {
+      "file": "PF 2025-202412311336-Ing. Jiří Klán.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 292,
+      "text_preview": "Subject: PF 2025From: Ing. Jiří Klán <jiri.klan@centrum.cz>Date: 12/31/24, 1:36 PMTo: \"M.A.J. Puzik\" <puzik@outlook.com>Subject: obrázek  Obrázek 2024-12-31 .jpgPF 2025\n1 of 35/20/25, 9:40 AMPF 2025\n2..."
+    },
+    {
+      "file": "20 case rustiche in vendita-202503181026-_idealista_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 731,
+      "text_preview": "Subject: 20 case rustiche in venditaFrom: \"idealista\" <idealista@mailing.idealista.it>Date: 3/18/25, 10:26 AMTo: \"puzik@outlook.com\" <puzik@outlook.com>\nCiao,\nScopri il fascino naturale dei tanti casa..."
+    },
+    {
+      "file": "Statistic Trouba-202501290027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 227,
+      "text_preview": "Subject: Statistic TroubaFrom: Miniserver Softel - Černošice <noreply@mail.loxonecloud.com>Date: 1/29/25, 12:27 AMTo: <puzik@outlook.com>Empty MessageAttachments:Statistic Trouba.csv2.0 KBStatistic Tr..."
+    },
+    {
+      "file": "The lightest & thinnest tempered glass mouse pad-202504181405-_KickstarNow_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1671,
+      "text_preview": "Subject: The lightest & thinnest tempered glass mouse padFrom: \"KickstarNow\" <team@kickstarnow.com>Date: 4/18/25, 2:05 PMTo: <puzik@outlook.com>IPASON Yao: The Lightest & Thinnest Tempered Glass Mouse..."
+    },
+    {
+      "file": "Upozornění! Váš tok není spuštěn-202502281240-_Microsoft Power Automate_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 870,
+      "text_preview": "Subject: Upozornění! Váš tok není spuštěnFrom: \"Microsoft Power Automate\" <PowerAutomateNoReply@microsoft.com>Date: 2/28/25, 12:40 PMTo: <puzik@outlook.com>\nPower AutomateVšimli jsme si, že váš tok v ..."
+    },
+    {
+      "file": "Heute meistgelesen_ Trumps Konterrevolution_ Woke -202501311638-Neue Zürcher Zeitung.pdf",
+      "type": "order",
+      "score": 2,
+      "text_length": 3368,
+      "text_preview": "Subject: Heute meistgelesen: Trumps Konterrevolution: Woke als progressive Leitkultur ist amEndeFrom: Neue Zürcher Zeitung <heutemeistgelesench@mailings.nzz.ch>Date: 1/31/25, 4:38 PMTo: <puzik@outlook..."
+    },
+    {
+      "file": "⏰💰 Ušetřete čas i peníze díky balíčkům pro školák-202505130958-_SEVT.cz_.pdf",
+      "type": "invoice",
+      "score": 30,
+      "text_length": 3759,
+      "text_preview": "Subject: \n⏰\n💰 Ušetřete čas i peníze díky balíčkům pro školáky a předškolákyFrom: \"SEVT.cz\" <marketing@mailing.sevt.cz>Date: 5/13/25, 9:58 AMTo: \"Milan Puzik\" <puzik@outlook.com>Zobrazit newsletter na ..."
+    },
+    {
+      "file": "🏝 Let Me Give You a Dose of AI Reality-202504272305-_Ignacio de Gregorio Noblejas_.pdf",
+      "type": "contract",
+      "score": 7,
+      "text_length": 16378,
+      "text_preview": "Subject: \n🏝 Let Me Give You a Dose of AI RealityFrom: \"Ignacio de Gregorio Noblejas\" <newsletter@mail.thetechoasis.com>Date: 4/27/25, 11:05 PMTo: \"puzik@outlook.com\" <puzik@outlook.com>April 27, 2025 ..."
+    },
+    {
+      "file": "Extra sleva navíc uvnitř!-202411221638-_Samsung_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "text_length": 1967,
+      "text_preview": "Subject: Extra sleva navíc uvnitř!From: \"Samsung\" <no-reply@m1.email.samsung.com>Date: 11/22/24, 4:38 PMTo: <majpuzik@gmail.com>Samsung Black Weekend začínáZobrazit online verzi\nExtra sleva 5 % v apli..."
+    },
+    {
+      "file": "You'll Love Virtusan Biometrics - App and ring duo-202411262117-_Kickstarter Trend_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1523,
+      "text_preview": "Subject: You'll Love Virtusan Biometrics - App and ring duo to help improve your wellbeingFrom: \"Kickstarter Trend\" <email@kickstartrends.com>Date: 11/26/24, 9:17 PMTo: <puzik@outlook.com>You'll Love ..."
+    },
+    {
+      "file": "Teamprevent-Santé - informace o rezervaci termínu-202403151310-.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 1233,
+      "text_preview": "Subject: Teamprevent-Santé - informace o rezervaci termínuFrom: <dispecink@teamprevent.cz>Date: 3/15/24, 1:10 PMTo: <puzik@outlook.com>Pro:  Milan Pužík , r. 1947,Vážený kliente,dovolujeme si Vás pozv..."
+    },
+    {
+      "file": "Žhavé aukce_ starožitnosti orient a exotika 24. 11-202411240901-_Aukro_.pdf",
+      "type": "invoice",
+      "score": 33,
+      "text_length": 2734,
+      "text_preview": "Subject: Žhavé aukce: starožitnosti orient a exotika 24. 11. 2024From: \"Aukro\" <novinky@aukro.cz>Date: 11/24/24, 9:01 AMTo: <majpuzik@gmail.com>\nŽhavé aukce\nDŘEVĚNÁ AFRICKÁ MASKA- AFRIKA - DŘEVO /2796..."
+    },
+    {
+      "file": "Lepší služební cesty_ Tipy pro sledování cestovníh-202504240820-_Booking.com_.pdf",
+      "type": "invoice",
+      "score": 10,
+      "text_length": 3608,
+      "text_preview": "Subject: Lepší služební cesty: Tipy pro sledování cestovního rozpočtu a výdajůFrom: \"Booking.com\" <email.campaign@sg.booking.com>Date: 4/24/25, 8:20 AMTo: <majpuzik@gmail.com>\nPodrobnější pohled na ce..."
+    },
+    {
+      "file": "5 Must-have Apps for iOS _ All-in-one iPhone Toolk-202412181036-_EaseUS_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 3273,
+      "text_preview": "Subject: 5 Must-have Apps for iOS | All-in-one iPhone Toolkit to Solve All iPhone ProblemsFrom: \"EaseUS\" <vipnotification@easeus.com>Date: 12/18/24, 10:36 AMTo: <puzik@outlook.com>View this email in y..."
+    },
+    {
+      "file": "„Pomocné“ látky v potravinách; Zlomeniny krčku; Do-202408141417-Zdraví od Epoch Times.pdf",
+      "type": "invoice",
+      "score": 5,
+      "text_length": 6752,
+      "text_preview": "Subject: „Pomocné“ látky v potravinách; Zlomeniny krčku; Doplňky stravyFrom: Zdraví od Epoch Times <newsletter@epochtimes.cz>Date: 8/14/24, 2:17 PMTo: <puzik@outlook.com>\n„Základem zdraví a štěstí je ..."
+    },
+    {
+      "file": "1+1 ZDARMA na vaše oblíbené produkty 🤑 Platí jen -202408201201-_Marek z Balistas_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "text_length": 4093,
+      "text_preview": "Pusťte se do svých koníčků s Balistas.czSubject: 1+1 ZDARMA na vaše oblíbené produkty \n🤑 Platí jen chvíli \n⌛From: \"Marek z Balistas\" <info@balistas.cz>Date: 8/20/24, 12:01 PMTo: \"M.A.J. Puzik\" <puzik@..."
+    },
+    {
+      "file": "This Is The Most Underrated Apple Intelligence Fea-202412191901-Tom’s AI Guide.pdf",
+      "type": "contract",
+      "score": 1,
+      "text_length": 3002,
+      "text_preview": "Subject: This Is The Most Underrated Apple Intelligence FeatureFrom: Tom’s AI Guide <tomsguideai@smartbrief.com>Date: 12/19/24, 7:01 PMTo: <puzik@outlook.com>\nCreated for puzik@outlook.com |  Web Vers..."
+    },
+    {
+      "file": "Lighting up the sky and your mind.-202505021352-_Taylor at Parler_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "text_length": 1221,
+      "text_preview": "Featured CreatorKnowledge is powerFrom deep stoic wisdom to mind-blowing facts—Did You Know keepsyour brain buzzing. Follow for dailymental fuel. \n🧠\n✨Know more >\nOptio Community@optiocommunity • Parle..."
+    },
+    {
+      "file": "Unsere handverlesene Auswahl an Eröffnungen-202410241006-_Radisson Rewards_.pdf",
+      "type": "contract",
+      "score": 2,
+      "text_length": 3375,
+      "text_preview": "Online ansehenClub  |   0   | 6015995336671555\nERLEBEN SIE DEN PULS DES RED DANANGWillkommen im Radisson RED Danang, wo mit Konventionen gespielt wird! UnserHotel liegt im Herzen dieser dynamischen St..."
+    },
+    {
+      "file": "Nowy rok! Nowe ceny! Sprawdź już teraz!👈 Instalat-202501071300-Instalator-pv Sklep Pełen Energii.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1380,
+      "text_preview": "Subject: Nowy rok! Nowe ceny! Sprawdź już teraz!\n👈 Instalator-pv.plFrom: Instalator-pv Sklep Pełen Energii <biuro@instalator-pv.pl>Date: 1/7/25, 1:00 PMTo: <puzik@outlook.com>OMail nieczytelny? Zobacz..."
+    },
+    {
+      "file": "Den štěstí 🍀 20% SLEVA-202503200850-_Tchibo Newsletter_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "text_length": 4974,
+      "text_preview": "Subject: Den štěstí \n🍀 20% SLEVAFrom: \"Tchibo Newsletter\" <news@newsletter.tchibo.cz>Date: 3/20/25, 8:50 AMTo: <maj@puzik.cz>Online verze zde\nStylové jaro >\nJarní probuzení >\nDětská móda >\nV květinové..."
+    },
+    {
+      "file": "Puzik, get your next product from concept to marke-202405280942-_Fred at Autodesk_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "text_length": 2999,
+      "text_preview": "Save your seatLIVE WEBINARElevating product development:A guide to NPI with Autodesk PLM\nImage creditSubject: Puzik, get your next product from concept to market quickly.From: \"Fred at Autodesk\" <Fred..."
+    },
+    {
+      "file": "Pípni si pro výprodejové trháky! 💣🔥-202406131736-Smarty.cz _ Stačí pípnout.pdf",
+      "type": "invoice",
+      "score": 22,
+      "text_length": 3259,
+      "text_preview": "Pokud se ti e-mail nezobrazuje správně, klikni zde\nPípni si pro výprodejové trháky, které nám doslova mizí před očima! V nabídcenajdeš spoustu skvělých produktů za exkluzivní ceny!Subject: Pípni si pr..."
+    },
+    {
+      "file": "YOLOv8 Computer Vision Model Introduction and Guid-202406140919-_DFRobot Service_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "text_length": 2649,
+      "text_preview": "A Comprehensive and Detailed Introduction to YOLOv8The newest version of the YOLO model, YOLOv8, which is an advanced real-time object detection framework, has attracted the attention of the researchc..."
+    },
+    {
+      "file": "It can be dangerous running AI locally _ Tech-Prac-202412230750-_Medium Daily Digest_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 3281,
+      "text_preview": "Subject: It can be dangerous running AI locally | Tech-PracticeFrom: \"Medium Daily Digest\" <noreply@medium.com>Date: 12/23/24, 7:50 AMTo: <majpuzik@gmail.com>\nStories for M.A.J. Puzik@majpuzik·Member\n..."
+    },
+    {
+      "file": "Wayfarer_ your ticket to an unforgettable summer -202407311514-_Ray-Ban_.pdf",
+      "type": "order",
+      "score": 4,
+      "text_length": 2539,
+      "text_preview": "Subject: Wayfarer: your ticket to an unforgettable summerFrom: \"Ray-Ban\" <news@e.ray-ban.com>Date: 7/31/24, 3:14 PMTo :  <puzik@outlook.com>Please click here if the email below is not displayed correc..."
+    },
+    {
+      "file": "[Last chance] New Feature Spotlight_ See Cobuilder-202407291906-_The Airtable Team_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "text_length": 1532,
+      "text_preview": "Subject: [Last chance] New Feature Spotlight: See Cobuilder in actionFrom: \"The Airtable Team\" <team@mail.airtable.com>Date: 7/29/24, 7:06 PMTo: <majpuzik@gmail.com>\nAirtable New Feature SpotlightLive..."
+    },
+    {
+      "file": "Final Hours_ Grab Your Bargains Before It's Over!-202502280809-_MOVE SPEED_.pdf",
+      "type": "order",
+      "score": 1,
+      "text_length": 1056,
+      "text_preview": "Subject: Final Hours: Grab Your Bargains Before It's Over!From: \"MOVE SPEED\" <support@movespeed.com>Date: 2/28/25, 8:09 AMTo: \"puzik\" <puzik@outlook.com>\nHello,The clock is ticking on our current prom..."
+    }
+  ]
+}

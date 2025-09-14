@@ -1,0 +1,164 @@
+{
+  "batch_start": 10000,
+  "batch_end": 11000,
+  "timestamp": "2025-08-02T20:33:47.466546",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 540,
+    "order": 184,
+    "unknown": 165,
+    "subscription": 21,
+    "shipping": 22,
+    "receipt": 32,
+    "notification": 22,
+    "contract": 12,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Rozzařte svůj interiér stylovým osvětlením LEDVANC-202501301831-_LEDVANCE e-shop_.pdf",
+      "type": "invoice",
+      "score": 9,
+      "metadata": {
+        "ico": "04617754"
+      },
+      "text_length": 2407
+    },
+    {
+      "file": "Supercharge Stablecoins-202503122156-_Blockchain.com_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 2056
+    },
+    {
+      "file": "Jetzt NEU im Sortiment!-202409251704-_Kopp Verlag_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 5349
+    },
+    {
+      "file": "NEW Firmware Update for PowerShot V10-202406212155-_Canon U.S.A._.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2268
+    },
+    {
+      "file": "Gaming-Deals_ Bis zu 40% sparen-202408130946-_computeruniverse_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 3246
+    },
+    {
+      "file": "Shoďte kila tím, že se zbavíte nepořádku,  pište r-202505071534-Zdraví od Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 4998
+    },
+    {
+      "file": "Tigo Energy Delivers Installer Services and Produc-202408281524-_Mike Gazzano_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 5314
+    },
+    {
+      "file": "Mark Cuban's Biggest Regret_-202502240736-_Mode Mobile_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2862
+    },
+    {
+      "file": "Re_Výměna motoru-202405021910-_M.AJ. Puzik_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 793
+    },
+    {
+      "file": "✏ Rough prompt → 🎯 Perfect prompt-202505121015-_Prompt Perfect_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 563
+    },
+    {
+      "file": "Bishop Takes Rook_ You'll Be Able to Learn Chess o-202505031231-_CNET Mobile_.pdf",
+      "type": "subscription",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1815
+    },
+    {
+      "file": "Statistic Varná deska-202501130027-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 252
+    },
+    {
+      "file": "🌱Vybavte svou firmu k růstu a vneste do ní závan -202503051202-_expondo.cz_.pdf",
+      "type": "shipping",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1949
+    },
+    {
+      "file": "Nenechte si ujít bezplatnou zkušební verzi včetně -202406061102-_PlanRadar_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1209
+    },
+    {
+      "file": "A je to tady_ odkryjte nejnižší ceny-202412250822-🛠 HobyNaradi.cz.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 1627
+    },
+    {
+      "file": "☀ Get Ready for Summer with Sensibo Smart AC Colle-202406041832-_Sensibo_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1580
+    },
+    {
+      "file": "Angry old man CHALLENGES Charlie Kirk to a fist fi-202504271915-_PolitiBrawl_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 5958
+    },
+    {
+      "file": "Ihr Paket kommt heute an-202502170928-_UPS_.pdf",
+      "type": "shipping",
+      "score": 5,
+      "metadata": {},
+      "text_length": 642
+    },
+    {
+      "file": "💖 Save over 70% on ERIKALUST—because pleasure is -202503162031-_Erika Lust_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1336
+    },
+    {
+      "file": "Samsung festival je tady!-202409181700-_Samsung_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1297
+    }
+  ],
+  "error_count": 0
+}

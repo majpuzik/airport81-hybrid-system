@@ -1,0 +1,168 @@
+{
+  "batch_start": 14000,
+  "batch_end": 15000,
+  "timestamp": "2025-08-02T20:34:21.196360",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "order": 184,
+    "unknown": 177,
+    "invoice": 503,
+    "notification": 51,
+    "contract": 14,
+    "receipt": 23,
+    "subscription": 20,
+    "shipping": 26,
+    "bank_statement": 2
+  },
+  "metadata_samples": [
+    {
+      "file": "Need some trip inspo_ We've got you.-202409010903-_Tripadvisor_.pdf",
+      "type": "order",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1122
+    },
+    {
+      "file": "[192.168.10.35] Kontejner paperless-web v nástroji-202504082009-_Synology Notification System_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 562
+    },
+    {
+      "file": "Jak vypadá valentýnská nabídka v Knihy ABB_ Jednod-202502140835-Adam B. Bartoš.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 6999
+    },
+    {
+      "file": "Daily Overview for Bressner-202406131116-_Manage It_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 546
+    },
+    {
+      "file": "Re_Potvrzení přijetí objednávky č. 3514408948 + Zá-202405141852-_M.AJ. Puzik_.pdf",
+      "type": "invoice",
+      "score": 26,
+      "metadata": {
+        "ico": "16188047",
+        "dic": "CZ16188047"
+      },
+      "text_length": 3054
+    },
+    {
+      "file": "Praha se cítí podvedena SPD; Připravuje se na návr-202409070547-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 3130
+    },
+    {
+      "file": "Oznámení_ Jan nesvítí svetla bazenu - po 3. čvn 20-202406022329-Kalendář Google.pdf",
+      "type": "notification",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1226
+    },
+    {
+      "file": "The Ultimate Docking and Macro Solution-202502091403-_KickstarNow_.pdf",
+      "type": "order",
+      "score": 8,
+      "metadata": {},
+      "text_length": 1450
+    },
+    {
+      "file": "HEYfold Notebook_ Write Forever, Super Slim—Your D-202503251758-_Frank_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 4752
+    },
+    {
+      "file": "🇺🇸 Florida 3 Bed Houses _ 299,900 USD-202502131418-_Benoit Properties_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 404
+    },
+    {
+      "file": "Milan_ Your 2025 holidays will be incredible with -202501121534-_AI Pocket Translator_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1882
+    },
+    {
+      "file": "Už to chystáme. _ Obj. č. 509873417-202406111939-_Alza.cz_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {
+        "ico": "27082440",
+        "vs": "509873417"
+      },
+      "text_length": 2164
+    },
+    {
+      "file": "this bendable all-in-1 ear rod is cost-effective-202411231229-_KickstarNow_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 1639
+    },
+    {
+      "file": "Unsere TOP 10 Bücher im September!-202410091703-_Kopp Verlag_.pdf",
+      "type": "invoice",
+      "score": 11,
+      "metadata": {},
+      "text_length": 2731
+    },
+    {
+      "file": "Osvojte si umění rezervovat levněji.-202503141339-_Skyscanner_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2010
+    },
+    {
+      "file": "DJI Easter Specials!-202504141612-_DJI_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1349
+    },
+    {
+      "file": "🤩Project Inspiration_ Bring Olympic Innovation to-202407301428-_xTool EU_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2274
+    },
+    {
+      "file": "Unlock HUGE Savings on Jiffys_ Your Ultimate Stick-202408081732-_PledgeBox_.pdf",
+      "type": "order",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1708
+    },
+    {
+      "file": "What Creators Are Saying About Move LightGo 🔦🎬-202505110301-_Ulanzi_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 973
+    },
+    {
+      "file": "NiceHash QuickMiner Update_ PyrinHash-202408232039-_NiceHash_.pdf",
+      "type": "invoice",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1911
+    }
+  ],
+  "error_count": 0
+}

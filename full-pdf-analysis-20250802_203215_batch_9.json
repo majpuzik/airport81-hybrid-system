@@ -1,0 +1,164 @@
+{
+  "batch_start": 9000,
+  "batch_end": 10000,
+  "timestamp": "2025-08-02T20:33:38.965122",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 494,
+    "receipt": 35,
+    "order": 200,
+    "unknown": 175,
+    "subscription": 19,
+    "notification": 39,
+    "shipping": 22,
+    "contract": 15,
+    "bank_statement": 1
+  },
+  "metadata_samples": [
+    {
+      "file": "Neuer Treffer für deine Mercedes-Benz GLC (alle), -202504110041-_AutoScout24 Fahrzeugsuche_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1450
+    },
+    {
+      "file": "Aufgepasst, hier kommen Deine Suchergebnisse der W-202504272158-_mobile.de Suchauftrag_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {},
+      "text_length": 1993
+    },
+    {
+      "file": "Tell us about your recent purchase experience-202502190301-_Alibaba.com_.pdf",
+      "type": "receipt",
+      "score": 2,
+      "metadata": {},
+      "text_length": 1019
+    },
+    {
+      "file": "[GitHub] Payment Receipt for majpuzik-202504242015-_GitHub_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 846
+    },
+    {
+      "file": "Fw_ Ihre anfrage Ray-Ban - CAS-2541636-T9J5Z8 CRM_-202411011212-_M.AJ. Puzik_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 885
+    },
+    {
+      "file": "You'll Love Kissi_ Learns Your Body, Guides Your P-202505062200-_Kickstarter Trend_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1498
+    },
+    {
+      "file": "Statistic Bazénová technologie-202412170005-Miniserver Softel - Černošice.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 281
+    },
+    {
+      "file": "Trump rally shooter identified as 20-year-old Penn-202407140957-_Start Daily_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1300
+    },
+    {
+      "file": "No matter where Milan goes, take Wi-Fi along —— Wo-202502131835-_Wi-Fi On-The-Go_.pdf",
+      "type": "order",
+      "score": 20,
+      "metadata": {},
+      "text_length": 5619
+    },
+    {
+      "file": "What color is your IT collar_ 👔-202407011704-_Spiceworks Poll_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 1707
+    },
+    {
+      "file": " Diese Woche auf MUBI - Ira Sachs_ Die frühen Jahr-202408291403-_MUBI_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1019
+    },
+    {
+      "file": "New Released_ xTool P2S 🚀-202409190508-_xTool_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 867
+    },
+    {
+      "file": "☀ Time is running out for Summer Savings! ☀-202406271836-_Final Draft_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 765
+    },
+    {
+      "file": "Levné, levnější, nejlevnější! Čím větší nákup, tím-202502041051-_Filip z PostovneZDARMA.cz_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 2869
+    },
+    {
+      "file": "Fall mit merkwürdigen Läsionen im Mund _ 5 Steuert-202407261340-_Medscape Nachrichten_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 2185
+    },
+    {
+      "file": "💥 SLEVY až 1000 Kč a doprava ZDARMA 🛍-202409091506-_MARIMEX.CZ_.pdf",
+      "type": "invoice",
+      "score": 6,
+      "metadata": {
+        "ico": "64942422"
+      },
+      "text_length": 889
+    },
+    {
+      "file": "Your payment information has been updated-202412292252-_Netflix_.pdf",
+      "type": "subscription",
+      "score": 4,
+      "metadata": {},
+      "text_length": 883
+    },
+    {
+      "file": "Respond to emails automatically with GPT Gmail-202412101815-_GPT Workspace_.pdf",
+      "type": "order",
+      "score": 5,
+      "metadata": {},
+      "text_length": 754
+    },
+    {
+      "file": "Jaký bude tvůj Valentýn_ Nech se inspirovat!-202502121503-_SEXSHOP CZ_.pdf",
+      "type": "invoice",
+      "score": 5,
+      "metadata": {},
+      "text_length": 2521
+    },
+    {
+      "file": "Heute meistgelesen_ Eine günstige Gelegenheit, den-202410111648-Neue Zürcher Zeitung.pdf",
+      "type": "order",
+      "score": 3,
+      "metadata": {},
+      "text_length": 3840
+    }
+  ],
+  "error_count": 0
+}

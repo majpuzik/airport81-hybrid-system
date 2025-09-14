@@ -1,0 +1,166 @@
+{
+  "batch_start": 25000,
+  "batch_end": 26000,
+  "timestamp": "2025-08-02T20:35:52.302155",
+  "processed": 1000,
+  "successful": 1000,
+  "errors": 0,
+  "document_types": {
+    "invoice": 529,
+    "receipt": 27,
+    "unknown": 187,
+    "order": 177,
+    "notification": 31,
+    "contract": 16,
+    "subscription": 15,
+    "shipping": 18
+  },
+  "metadata_samples": [
+    {
+      "file": "Ukrajina přijímá americký návrh na plné příměří; U-202503120557-Epoch Times ČR.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3144
+    },
+    {
+      "file": "Pro příjemné chvíle ☀-202505030804-_Tchibo Newsletter_.pdf",
+      "type": "receipt",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3433
+    },
+    {
+      "file": "From the Thunderbird team, thank you!!-202501191126-_Thunderbird_.pdf",
+      "type": "receipt",
+      "score": 11,
+      "metadata": {},
+      "text_length": 1523
+    },
+    {
+      "file": "Lagebericht 11.02.2025-202502111505-_Kopp Report_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 1162
+    },
+    {
+      "file": "⌛ Už jen do neděle-202406141129-_Allegro_.pdf",
+      "type": "invoice",
+      "score": 14,
+      "metadata": {},
+      "text_length": 2118
+    },
+    {
+      "file": "Aukce   Zajatci močálu 13 měsíců v koncentračním t-202501210827-_oznameni Aukro.cz_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {
+        "ico": "05360722"
+      },
+      "text_length": 1060
+    },
+    {
+      "file": "Hast du unsere Topangebote schon gesehen_-202501151103-_Coolblue_.pdf",
+      "type": "invoice",
+      "score": 12,
+      "metadata": {},
+      "text_length": 2116
+    },
+    {
+      "file": "Trump returns to site of assassination attempt in -202410051334-_Start Daily_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 1372
+    },
+    {
+      "file": "Re_vaše pozvánka-202504241111-_Editee.com_.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 698
+    },
+    {
+      "file": "Coming Soon-xTool M1 Ultra_ 4-in-1 Craft Machine-202407011149-_xTool EU_-2.pdf",
+      "type": "unknown",
+      "score": 0,
+      "metadata": {},
+      "text_length": 679
+    },
+    {
+      "file": "☹ Windows 11 25H2 may be underwhelming 🏃 ♂ Some P-202504251515-_XDA_.pdf",
+      "type": "order",
+      "score": 9,
+      "metadata": {},
+      "text_length": 5601
+    },
+    {
+      "file": "Děkujeme za objednávku, už jen zaplatit _ Obj.č 52-202411102321-_Alza.cz_.pdf",
+      "type": "invoice",
+      "score": 18,
+      "metadata": {
+        "ico": "27082440",
+        "vs": "524547763"
+      },
+      "text_length": 2351
+    },
+    {
+      "file": "Könnte Ihnen diese Bildbearbeitungssoftware eine n-202501171603-_DxO Team_.pdf",
+      "type": "invoice",
+      "score": 3,
+      "metadata": {},
+      "text_length": 2766
+    },
+    {
+      "file": "Vaše vzpomínky z tohoto dne-202504211558-_OneDrive_.pdf",
+      "type": "invoice",
+      "score": 1,
+      "metadata": {},
+      "text_length": 645
+    },
+    {
+      "file": "Erinnerung_ Termin beginnt am Freitag, Juni 14 um -202406142045-_Proton_.pdf",
+      "type": "notification",
+      "score": 6,
+      "metadata": {},
+      "text_length": 558
+    },
+    {
+      "file": "You'll Love CYANSKY Vanguard_ Slide-Action Fidget -202502282146-_Kickstarter Trend_.pdf",
+      "type": "order",
+      "score": 4,
+      "metadata": {},
+      "text_length": 1731
+    },
+    {
+      "file": "🇵🇹 Nazaré, Portugal _ European Surf Capital-202502201324-_Benoit Properties_.pdf",
+      "type": "invoice",
+      "score": 4,
+      "metadata": {},
+      "text_length": 428
+    },
+    {
+      "file": "[Novinky o úloze] May 19 news round-up-202505190934-_OpenAI_.pdf",
+      "type": "contract",
+      "score": 1,
+      "metadata": {},
+      "text_length": 424
+    },
+    {
+      "file": "Chip.cz_ vesmírná podívaná, sledování mobilem, zák-202405160542-Časopis CHIP.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3849
+    },
+    {
+      "file": "News_ 4th July 2024-202407050601-_Blockchain.com_.pdf",
+      "type": "invoice",
+      "score": 7,
+      "metadata": {},
+      "text_length": 3287
+    }
+  ],
+  "error_count": 0
+}
